@@ -1,0 +1,70 @@
+p3d_beg_desc P3D_ROBOT
+
+p3d_beg_desc_jnt P3D_FREEFLYER  #1
+  p3d_set_prev_jnt   0
+  p3d_set_pos_xyz 0.0 0.0 0.0 0.0 0.0 0.0
+  p3d_set_dof      0 0 0  0   0   0
+  p3d_set_dof_vmin -3 -6 0 -180 -180 -180
+  p3d_set_dof_vmax 12 1 2 180 180 180
+p3d_end_desc
+
+p3d_beg_desc P3D_BODY shelf
+p3d_add_desc_box side1 0.02 0.02 0.75
+p3d_set_prim_pos side1 0.1475 0.1925 0.375 0 0 0
+
+p3d_add_desc_box side2 0.02 0.02 0.75
+p3d_set_prim_pos side2 -0.1475 -0.1925 0.375 0 0 0
+
+p3d_add_desc_box side3 0.02 0.02 0.75
+p3d_set_prim_pos side3 -0.1475 0.1925 0.375 0 0 0
+
+p3d_add_desc_box side4 0.02 0.02 0.75
+p3d_set_prim_pos side4 0.1475 -0.1925 0.375 0 0 0
+
+p3d_add_desc_box bottom1 0.02 0.385 0.02
+p3d_set_prim_pos bottom1 0.1475 0 0.01 0 0 0
+
+p3d_add_desc_box bottom2 0.02 0.385 0.02
+p3d_set_prim_pos bottom2 -0.1475 0 0.01 0 0 0
+
+p3d_add_desc_box top1 0.305 0.02 0.02
+p3d_set_prim_pos top1 0 0.1925 0.75 0 0 0
+
+p3d_add_desc_box top2 0.305 0.02 0.02
+p3d_set_prim_pos top2 0 -0.1925 0.75 0 0 0
+
+p3d_add_desc_box bottomshelf 0.295 0.385 0.01
+p3d_set_prim_pos bottomshelf 0 0 0.085 0 0 0
+
+p3d_add_desc_box topshelf 0.295 0.385 0.01
+p3d_set_prim_pos topshelf 0 0 0.65 0 0 0
+
+p3d_add_desc_box midshelf 0.295 0.385 0.01
+p3d_set_prim_pos midshelf 0.1475 0 0.50 0 90 0
+
+p3d_add_desc_box markerw 0.21 0.295 0.011
+p3d_set_prim_pos markerw 0.1475 0 0.50 0 90 0
+
+p3d_add_desc_box markerb 0.155 0.155 0.012
+p3d_set_prim_pos markerb 0.1475 0 0.50 0 90 0
+
+p3d_add_desc_box top 0.29 0.72 0.02
+p3d_set_prim_pos top 0.0 0 0.77 0 0 0
+	
+p3d_end_desc
+p3d_end_desc
+
+p3d_set_body_poly_color shelf 1 Grey
+p3d_set_body_poly_color shelf 2 Grey
+p3d_set_body_poly_color shelf 3 Grey
+p3d_set_body_poly_color shelf 4 Grey
+p3d_set_body_poly_color shelf 5 Grey
+p3d_set_body_poly_color shelf 6 Grey
+p3d_set_body_poly_color shelf 7 Grey
+p3d_set_body_poly_color shelf 8 Grey
+p3d_set_body_poly_color shelf 9 Any 0.83 0.11 0.72
+p3d_set_body_poly_color shelf 10 Any 0.83 0.11 0.72
+p3d_set_body_poly_color shelf 11 Any 0.83 0.11 0.72
+p3d_set_body_poly_color shelf 12 White
+p3d_set_body_poly_color shelf 13 Black
+p3d_set_body_poly_color shelf 14 Black

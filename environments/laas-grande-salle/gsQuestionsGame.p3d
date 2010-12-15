@@ -1,0 +1,75 @@
+p3d_beg_desc P3D_ENV grande_salle
+
+# ************* SCENARIO SPECIFIC OBJECTS *************
+
+p3d_read_macro Disambiguate/sqr_s_o.macro ORANGEBOX
+
+
+# ************* ROBOTS ***************
+
+p3d_read_macro jidoHriGripperHorizontal.macro JIDO_ROBOT
+
+
+# ************* HUMANS ***************
+
+p3d_read_macro AchileM.macro ACHILE_HUMAN1
+
+# ************* MOVABLE OBJECTS **************
+
+# ***** FURNITURE
+
+p3d_read_macro tablebot.macro LOWTABLE
+p3d_read_macro fautbot.macro CHAIR1
+p3d_read_macro fautbot.macro CHAIR2
+p3d_read_macro trash.macro TRASHBIN
+p3d_read_macro shelf.macro SHELF
+p3d_read_macro hrp2table.macro HRP2TABLE
+
+# ***** MANIPULABLE OBJECTS
+
+p3d_read_macro toolbox.macro ACCESSKIT
+p3d_read_macro Cup_with_handle.macro CUPHANDLE
+p3d_read_macro SpaceNav_Box.macro SPACENAVBOX
+p3d_read_macro bottleBlue.macro BLUE_BOTTLE
+p3d_read_macro bottleOrange.macro ORANGE_BOTTLE
+p3d_read_macro bottleYellow.macro YELLOW_BOTTLE
+p3d_read_macro bottleRed.macro RED_BOTTLE
+# ************* INTERNAL OBJECTS ***************
+
+#p3d_read_macro rhand.macro lhand
+#p3d_read_macro rhand.macro rhand
+#p3d_read_macro head.macro head
+#p3d_read_macro disc.macro track
+
+# *************** STATIC/UNMOVABLE OBSTACLES *************
+
+# ****** FURNITURE
+
+p3d_read_macro desk.macro BARTABLE1
+p3d_set_obst_pos BARTABLE1 2.11 -5.67 0 0 0 0
+
+p3d_read_macro desk.macro BARTABLE2
+p3d_set_obst_pos BARTABLE2 3.21 -5.94 0 0 0 90
+
+p3d_read_macro desk.macro BARTABLE3
+p3d_set_obst_pos BARTABLE3 4.94 -5.94 0 0 0 90
+
+p3d_read_macro bookcase2.macro library1
+p3d_set_obst_pos library1 0.3 -1.64 0.0 0 0 -90
+
+p3d_read_macro bookcase2.macro library2
+p3d_set_obst_pos library2 0.3 -2.67 0.0 0 0 -90
+
+p3d_read_macro bookcase2.macro library3
+p3d_set_obst_pos library3 0.3 -3.67 0.0 0 0 -90
+
+p3d_read_macro bookcase2.macro library4
+p3d_set_obst_pos library4 -0.48 -3.91 0.0 0 0 -180
+
+p3d_read_macro tablereunion.macro TABLEREUNION
+p3d_set_obst_pos TABLEREUNION -1 -2 .0 .0 .0 0
+
+p3d_read_macro GsWalls.macro Walls
+
+p3d_set_env_box -2 11.84286 -6.04226 1.06978 0 3
+

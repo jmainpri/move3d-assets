@@ -1,0 +1,229 @@
+p3d_beg_desc P3D_ENV grande_salle
+
+# ************* SCENARIO SPECIFIC OBJECTS *************
+
+p3d_read_macro MovingBox.macro      MOVING_BOX
+p3d_read_macro LotrTape.macro       LOTR_TAPE
+p3d_read_macro WalleTape.macro      WALLE_TAPE
+p3d_read_macro GreyK7.macro         GREY_K7
+p3d_read_macro GreyVideoTape.macro  GREY_TAPE
+
+# ************* HUMANS ***************
+
+p3d_read_macro AchileM.macro ACHILE_HUMAN1
+
+#p3d_read_macro batmansmall.macro SUPERMAN_HUMAN2
+
+# ************* MOVABLE OBJECTS **************
+
+# ***** FURNITURE
+
+p3d_read_macro tablebot.macro LOWTABLE
+p3d_read_macro fautbot.macro CHAIR1
+p3d_read_macro fautbot.macro CHAIR2
+p3d_read_macro trash.macro TRASHBIN
+p3d_read_macro shelf.macro SHELF
+p3d_read_macro hrp2table.macro HRP2TABLE
+p3d_read_macro simplechair.macro SIMPLECHAIR
+p3d_read_macro ./Objects/Movable/HRP2BarTable.macro HRP2BARTable
+
+# ***** MANIPULABLE OBJECTS
+
+p3d_read_macro toolbox.macro ACCESSKIT
+#p3d_read_macro Cup_with_handle.macro CUPHANDLE
+p3d_read_macro SpaceNav_Box.macro SPACENAVBOX
+#p3d_read_macro BlueBottle.macro BLUE_BOTTLE
+#p3d_read_macro OrangeBottle.macro ORANGE_BOTTLE
+#p3d_read_macro YellowBottle.macro YELLOW_BOTTLE
+#p3d_read_macro RedBottle.macro RED_BOTTLE
+#p3d_read_macro CoffeeJar.macro COFFEEJAR
+
+# ************* INTERNAL OBJECTS ***************
+
+p3d_read_macro visballsmall.macro VISBALL_INTERNAL
+p3d_read_macro SAHandRight_robot.macro SAHandRight
+
+# *************** STATIC/UNMOVABLE OBSTACLES *************
+
+# ****** FURNITURE
+
+p3d_read_macro desk.macro BARTABLE1
+p3d_set_obst_pos BARTABLE1 2.11 -5.67 0 0 0 0
+
+p3d_read_macro desk.macro BARTABLE2
+p3d_set_obst_pos BARTABLE2 3.21 -5.94 0 0 0 90
+
+p3d_read_macro desk.macro BARTABLE3
+p3d_set_obst_pos BARTABLE3 4.94 -5.94 0 0 0 90
+
+p3d_read_macro bookcase2.macro library1
+p3d_set_obst_pos library1 0.3 -1.64 0.0 0 0 -90
+
+p3d_read_macro bookcase2.macro library2
+p3d_set_obst_pos library2 0.3 -2.67 0.0 0 0 -90
+
+p3d_read_macro bookcase2.macro library3
+p3d_set_obst_pos library3 0.3 -3.67 0.0 0 0 -90
+
+p3d_read_macro bookcase2.macro library4
+p3d_set_obst_pos library4 -0.48 -3.91 0.0 0 0 -180
+
+p3d_read_macro tablereunion.macro TABLEREUNION
+p3d_set_obst_pos TABLEREUNION -1 -2 .0 .0 .0 0
+
+
+p3d_read_macro GsWalls.macro Walls
+
+
+# ************* ROBOTS ***************
+
+# NOTE: Jido must be declared at the end 
+
+p3d_read_macro jidoKukaSAHand.macro JIDOKUKA_ROBOT
+
+p3d_end_desc
+
+
+p3d_set_env_box -2 11.84286 -6.04226 1.06978 0 3
+
+
+#################################
+##### COLLISION DEACTIVATION ####
+#################################
+
+# For Jido
+p3d_add_desc_rob_col_init JIDOKUKA_ROBOT
+
+p3d_desactivate_col_check automatic
+
+p3d_desactivate_col_check platform.platformGhost pan.Gpan
+p3d_desactivate_col_check platform.platformGhost topCameras.GtopCameras 
+p3d_desactivate_col_check platform.platformGhost base.GkukaBase
+p3d_desactivate_col_check platform.platformGhost kuka1.Gkuka1
+
+p3d_desactivate_col_check base.GkukaBase pan.Gpan
+p3d_desactivate_col_check base.GkukaBase topCameras.GtopCameras
+p3d_desactivate_col_check base.GkukaBase kuka2.Gkuka2
+p3d_desactivate_col_check base.GkukaBase kuka3.Gkuka3
+p3d_desactivate_col_check base.GkukaBase kuka4.Gkuka4
+p3d_desactivate_col_check base.GkukaBase kuka5.Gkuka5
+p3d_desactivate_col_check base.GkukaBase kuka6.Gkuka6
+p3d_desactivate_col_check base.GkukaBase kuka7.kuka7
+
+p3d_desactivate_col_check kuka1.Gkuka1 pan.Gpan
+p3d_desactivate_col_check kuka1.Gkuka1 topCameras.GtopCameras
+p3d_desactivate_col_check kuka1.Gkuka1 kuka3.Gkuka3
+p3d_desactivate_col_check kuka1.Gkuka1 kuka4.Gkuka4
+p3d_desactivate_col_check kuka1.Gkuka1 kuka5.Gkuka5
+p3d_desactivate_col_check kuka1.Gkuka1 kuka6.Gkuka6
+p3d_desactivate_col_check kuka1.Gkuka1 kuka7.kuka7
+
+p3d_desactivate_col_check kuka2.Gkuka2 pan.Gpan
+p3d_desactivate_col_check kuka2.Gkuka2 topCameras.GtopCameras
+p3d_desactivate_col_check kuka2.Gkuka2 kuka4.Gkuka4
+p3d_desactivate_col_check kuka2.Gkuka2 kuka5.Gkuka5
+p3d_desactivate_col_check kuka2.Gkuka2 kuka6.Gkuka6
+p3d_desactivate_col_check kuka2.Gkuka2 kuka7.kuka7
+
+p3d_desactivate_col_check kuka3.Gkuka3 kuka5.Gkuka5
+p3d_desactivate_col_check kuka3.Gkuka3 kuka6.Gkuka6
+p3d_desactivate_col_check kuka3.Gkuka3 kuka7.kuka7
+
+p3d_desactivate_col_check kuka4.Gkuka4 kuka6.Gkuka6
+p3d_desactivate_col_check kuka4.Gkuka4 kuka7.kuka7
+
+p3d_desactivate_col_check kuka5.Gkuka5 kuka7.kuka7
+
+#Arm vs Hands Autocol
+#Right Arm/hand
+p3d_desactivate_col_check kuka4.Gkuka4 hand1.palm
+p3d_desactivate_col_check kuka4.Gkuka4 hand1.finger2.proximalPhalanx
+p3d_desactivate_col_check kuka4.Gkuka4 hand1.finger2.middlePhalanx
+p3d_desactivate_col_check kuka4.Gkuka4 hand1.finger2.fingertip
+p3d_desactivate_col_check kuka4.Gkuka4 hand1.finger3.proximalPhalanx
+p3d_desactivate_col_check kuka4.Gkuka4 hand1.finger3.middlePhalanx
+p3d_desactivate_col_check kuka4.Gkuka4 hand1.finger3.fingertip
+p3d_desactivate_col_check kuka4.Gkuka4 hand1.finger4.proximalPhalanx
+p3d_desactivate_col_check kuka4.Gkuka4 hand1.finger4.middlePhalanx
+p3d_desactivate_col_check kuka4.Gkuka4 hand1.finger4.fingertip
+
+p3d_desactivate_col_check kuka5.Gkuka5 hand1.palm
+p3d_desactivate_col_check kuka5.Gkuka5 hand1.finger1.proximalPhalanx
+p3d_desactivate_col_check kuka5.Gkuka5 hand1.finger1.middlePhalanx
+p3d_desactivate_col_check kuka5.Gkuka5 hand1.finger1.fingertip
+p3d_desactivate_col_check kuka5.Gkuka5 hand1.finger2.proximalPhalanx
+p3d_desactivate_col_check kuka5.Gkuka5 hand1.finger2.middlePhalanx
+p3d_desactivate_col_check kuka5.Gkuka5 hand1.finger2.fingertip
+p3d_desactivate_col_check kuka5.Gkuka5 hand1.finger3.proximalPhalanx
+p3d_desactivate_col_check kuka5.Gkuka5 hand1.finger3.middlePhalanx
+p3d_desactivate_col_check kuka5.Gkuka5 hand1.finger3.fingertip
+p3d_desactivate_col_check kuka5.Gkuka5 hand1.finger4.proximalPhalanx
+p3d_desactivate_col_check kuka5.Gkuka5 hand1.finger4.middlePhalanx
+p3d_desactivate_col_check kuka5.Gkuka5 hand1.finger4.fingertip
+
+p3d_desactivate_col_check kuka6.Gkuka6 hand1.palm
+p3d_desactivate_col_check kuka6.Gkuka6 hand1.thumbBase
+p3d_desactivate_col_check kuka6.Gkuka6 hand1.finger1.proximalPhalanx
+p3d_desactivate_col_check kuka6.Gkuka6 hand1.finger1.middlePhalanx
+p3d_desactivate_col_check kuka6.Gkuka6 hand1.finger1.fingertip
+p3d_desactivate_col_check kuka6.Gkuka6 hand1.finger2.proximalPhalanx
+p3d_desactivate_col_check kuka6.Gkuka6 hand1.finger2.middlePhalanx
+p3d_desactivate_col_check kuka6.Gkuka6 hand1.finger2.fingertip
+p3d_desactivate_col_check kuka6.Gkuka6 hand1.finger3.proximalPhalanx
+p3d_desactivate_col_check kuka6.Gkuka6 hand1.finger3.middlePhalanx
+p3d_desactivate_col_check kuka6.Gkuka6 hand1.finger3.fingertip
+p3d_desactivate_col_check kuka6.Gkuka6 hand1.finger4.proximalPhalanx
+p3d_desactivate_col_check kuka6.Gkuka6 hand1.finger4.middlePhalanx
+p3d_desactivate_col_check kuka6.Gkuka6 hand1.finger4.fingertip
+
+p3d_desactivate_col_check kuka7.kuka7 hand1.palm
+p3d_desactivate_col_check kuka7.kuka7 hand1.thumbBase
+p3d_desactivate_col_check kuka7.kuka7 hand1.finger1.proximalPhalanx
+p3d_desactivate_col_check kuka7.kuka7 hand1.finger1.middlePhalanx
+p3d_desactivate_col_check kuka7.kuka7 hand1.finger1.fingertip
+p3d_desactivate_col_check kuka7.kuka7 hand1.finger2.proximalPhalanx
+p3d_desactivate_col_check kuka7.kuka7 hand1.finger2.middlePhalanx
+p3d_desactivate_col_check kuka7.kuka7 hand1.finger2.fingertip
+p3d_desactivate_col_check kuka7.kuka7 hand1.finger3.proximalPhalanx
+p3d_desactivate_col_check kuka7.kuka7 hand1.finger3.middlePhalanx
+p3d_desactivate_col_check kuka7.kuka7 hand1.finger3.fingertip
+p3d_desactivate_col_check kuka7.kuka7 hand1.finger4.proximalPhalanx
+p3d_desactivate_col_check kuka7.kuka7 hand1.finger4.middlePhalanx
+p3d_desactivate_col_check kuka7.kuka7 hand1.finger4.fingertip
+
+# There are plenty of collision tests to deactivate with the hand.
+# Some deactivations are redundent but they are listed in order to be methodic, so let them.
+# right hand:
+p3d_desactivate_col_check hand1.palm hand1.finger2.proximalPhalanx
+p3d_desactivate_col_check hand1.palm hand1.finger2.middlePhalanx
+p3d_desactivate_col_check hand1.palm hand1.finger2.fingertip
+
+p3d_desactivate_col_check hand1.palm hand1.finger3.proximalPhalanx
+p3d_desactivate_col_check hand1.palm hand1.finger3.middlePhalanx
+p3d_desactivate_col_check hand1.palm hand1.finger3.fingertip
+
+p3d_desactivate_col_check hand1.palm hand1.finger4.proximalPhalanx
+p3d_desactivate_col_check hand1.palm hand1.finger4.middlePhalanx
+p3d_desactivate_col_check hand1.palm hand1.finger4.fingertip
+
+p3d_desactivate_col_check hand1.thumbBase hand1.finger1.proximalPhalanx
+p3d_desactivate_col_check hand1.thumbBase hand1.finger1.middlePhalanx
+p3d_desactivate_col_check hand1.thumbBase hand1.finger1.fingertip
+
+p3d_desactivate_col_check hand1.thumbBase hand1.finger2.proximalPhalanx
+p3d_desactivate_col_check hand1.thumbBase hand1.finger2.middlePhalanx
+p3d_desactivate_col_check hand1.thumbBase hand1.finger2.fingertip
+
+p3d_desactivate_col_check hand1.thumbBase hand1.finger3.proximalPhalanx
+p3d_desactivate_col_check hand1.thumbBase hand1.finger3.middlePhalanx
+p3d_desactivate_col_check hand1.thumbBase hand1.finger3.fingertip
+
+p3d_desactivate_col_check hand1.thumbBase hand1.finger4.proximalPhalanx
+p3d_desactivate_col_check hand1.thumbBase hand1.finger4.middlePhalanx
+p3d_desactivate_col_check hand1.thumbBase hand1.finger4.fingertip
+
+p3d_desactivate_col_check hand1.finger1.proximalPhalanx hand1.finger1.fingertip
+p3d_desactivate_col_check hand1.finger2.proximalPhalanx hand1.finger2.fingertip
+p3d_desactivate_col_check hand1.finger3.proximalPhalanx hand1.finger3.fingertip
+p3d_desactivate_col_check hand1.finger4.proximalPhalanx hand1.finger4.fingertip
+
