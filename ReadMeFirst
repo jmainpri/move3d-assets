@@ -1,0 +1,21 @@
+Read this file before using theses Model.
+
+Using any move3d model in many scenarios, causes a duplication of datas. The Idea here is to have a directory where the models are stocked, and to create symbolic links to this directory in each custom scenario folder.
+
+For example : In the Move3DDemos folder, my custom scenario is in the directory "custom"
+I will need in this directory a MACROS folder, and at least one p3d file 'custom.p3d'
+
+To use the any object model or scene, first step is to put symbolic links to the folder Object
+
+The command to do that is :
+
+cd ~/Move3DDemos/custom/MACROS;
+ln -s  ../../Objects .;
+
+Then write your p3d file as usual. You can access to the objects in the p3d file by : ./Object/Static/myObject.macro
+
+If no one of the present objects macros corresponds to what you want to do, create a new one in Static or Movable Folder or if you want to create a scene in the root of "./Object". DO NOT CREATE IT IN YOU CUSTOM SCENARIO FOLDER !!!!
+
+Thanks to respect this.
+
+Mokhtar by 20/11/2009
