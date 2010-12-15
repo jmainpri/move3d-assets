@@ -1,0 +1,13 @@
+p3d_beg_desc P3D_ENV humanTestEnv
+
+  p3d_beg_desc P3D_OBSTACLE Corner
+		p3d_add_desc_box obs 0.2 0.2 0.2
+		p3d_end_desc
+		p3d_set_obst_pos Corner -5.0 -5.0 -5.0 0 0 0
+ p3d_set_obst_poly_color Corner 1 Red
+
+  p3d_read_macro AchileSafetyZonesM.macro Achile
+
+p3d_end_desc
+
+p3d_set_env_box -5.000 5.000 -5.000 5.000 -5.000 5.000
