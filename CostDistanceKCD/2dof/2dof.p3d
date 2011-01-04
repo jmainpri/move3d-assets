@@ -1,0 +1,182 @@
+p3d_beg_desc P3D_ENV 2dof
+
+# BOUNDING OBSTACLES (ONLY FOR FIGURES)
+	
+	p3d_beg_desc P3D_OBSTACLE bounding_box
+	
+	p3d_add_desc_box bb_l 1.0 100.0 10.0
+	p3d_set_prim_pos bb_l -5.0 35.0 0.5 0.0 0.0 0.0 
+	p3d_set_prim_color bb_l Black
+	
+	p3d_add_desc_box bb_r 1.0 100.0 10.0
+	p3d_set_prim_pos bb_r 90.0 35.0 0.5 0.0 0.0 0.0 
+	p3d_set_prim_color bb_r Black
+	
+	p3d_add_desc_box bb_t 100.0 1.0 10.0
+	p3d_set_prim_pos bb_t 42.5 82.5 0.5 0.0 0.0 0.0 
+	p3d_set_prim_color bb_t Black
+	
+	p3d_add_desc_box bb_b 100.0 1.0 10.0
+	p3d_set_prim_pos bb_b 42.5 -12.5 0.5 0.0 0.0 0.0 
+	p3d_set_prim_color bb_b Black
+	
+	p3d_end_desc
+	
+	# ROBOTS ----------------------------------------------------------
+		p3d_beg_desc P3D_ROBOT barre
+
+		p3d_beg_desc_jnt P3D_FREEFLYER
+		    p3d_set_name Barre
+		    p3d_set_prev_jnt 0
+		    p3d_set_pos_xyz 0 0 0 0 0 0
+		    p3d_set_dof 65.0 50.0 -3.0 0.0 0.0 0.0
+		    p3d_set_dof_vmin 0  0 -10  0 0 0
+		    p3d_set_dof_vmax 100 100 10 0 0 0
+		p3d_end_desc
+		 
+		 p3d_beg_desc P3D_BODY barre
+		 	p3d_add_desc_sphere base1 1.0 P3D_REAL
+		  	p3d_set_prim_pos base1  0 0 0 0 0 0
+		 p3d_end_desc
+		 
+		  p3d_beg_desc P3D_BODY protection
+		  	p3d_add_desc_sphere base1 1.0 P3D_GRAPHIC
+		  	p3d_set_prim_pos base1  0 0 0 0 0 0
+		  	p3d_set_prim_color base1  Any  1.0 1.0 0.0 0.3
+		 p3d_end_desc
+	
+	p3d_end_desc
+	
+	#p3d_set_body_poly_color protection 		1 Any  1.0 1.0 0.0 0.3
+
+
+# ROBOTS ----------------------------------------------------------
+
+	p3d_beg_desc P3D_ROBOT 2-3dof
+	
+		p3d_beg_desc_jnt P3D_ROTATE   # J1
+		  p3d_set_name l_rob_J1
+		  p3d_set_pos_axe 0.0 0.0 0.0 0.0 0.0 0.0 
+		  p3d_set_prev_jnt 0
+		  p3d_set_dof_vmin -90.0
+		  p3d_set_dof_vmax  90.0
+		p3d_end_desc
+	
+	
+		p3d_beg_desc P3D_BODY l_rob_1
+		
+		  p3d_add_desc_poly l_rob_1.1
+		     p3d_add_desc_vert   5.0 -5.0 2.5
+		     p3d_add_desc_vert   5.0  5.0 2.5
+		     p3d_add_desc_vert   3.5 33.5 2.5
+		     p3d_add_desc_vert  -3.5 33.5 2.5
+		     p3d_add_desc_vert  -5.0  5.0 2.5
+		     p3d_add_desc_vert  -5.0 -5.0 2.5
+		     p3d_add_desc_vert   5.0 -5.0 0.0
+		     p3d_add_desc_vert   5.0  5.0 0.0
+		     p3d_add_desc_vert   3.5 33.5 0.0
+		     p3d_add_desc_vert  -3.5 33.5 0.0
+		     p3d_add_desc_vert  -5.0  5.0 0.0
+		     p3d_add_desc_vert  -5.0 -5.0 0.0
+		
+		     p3d_add_desc_face  1 2 3 4 5 6
+		     p3d_add_desc_face  7 12 11 10 9 8
+		     p3d_add_desc_face  1 7 8 2 
+		     p3d_add_desc_face  2 8 9 3
+		     p3d_add_desc_face  3 9 10 4
+		     p3d_add_desc_face  4 10 11 5
+		     p3d_add_desc_face  5 11 12 6
+		     p3d_add_desc_face  6 12 7 1
+		  p3d_end_desc_poly 
+		  
+		  p3d_set_prim_pos l_rob_1.1  0.0 0.0 0.0 0.0 0.0 0.0	
+		  p3d_add_desc_cylindre l_rob_1.2 1.0 2.6  P3D_GRAPHIC
+		  p3d_set_prim_pos l_rob_1.2 0.0 0.0 1.25 0.0 0.0 0.0 
+		  p3d_set_prim_color l_rob_1.2 Black
+		
+		p3d_end_desc
+	
+	
+		p3d_beg_desc_jnt P3D_ROTATE   # J2
+		  p3d_set_name l_rob_J2
+		  p3d_set_pos_axe 0.0 30.0 0.0 0.0 0.0 0.0 
+		  p3d_set_prev_jnt 1
+		  p3d_set_dof_vmin -120.0
+		  p3d_set_dof_vmax  120.0
+		p3d_end_desc
+	
+	
+		p3d_beg_desc P3D_BODY l_rob_2
+		
+		  p3d_add_desc_poly l_rob_2.1
+		     p3d_add_desc_vert   3.5 -3.5 5.0
+		     p3d_add_desc_vert   3.5  3.5 5.0
+		     p3d_add_desc_vert   2.5 22.5 5.0
+		     p3d_add_desc_vert  -2.5 22.5 5.0
+		     p3d_add_desc_vert  -3.5  3.5 5.0
+		     p3d_add_desc_vert  -3.5 -3.5 5.0
+		     p3d_add_desc_vert   3.5 -3.5 2.51
+		     p3d_add_desc_vert   3.5  3.5 2.51
+		     p3d_add_desc_vert   2.5 22.5 2.51
+		     p3d_add_desc_vert  -2.5 22.5 2.51
+		     p3d_add_desc_vert  -3.5  3.5 2.51
+		     p3d_add_desc_vert  -3.5 -3.5 2.51
+		
+		     p3d_add_desc_face  1 2 3 4 5 6
+		     p3d_add_desc_face  7 12 11 10 9 8
+		     p3d_add_desc_face  1 7 8 2 
+		     p3d_add_desc_face  2 8 9 3
+		     p3d_add_desc_face  3 9 10 4
+		     p3d_add_desc_face  4 10 11 5
+		     p3d_add_desc_face  5 11 12 6
+		     p3d_add_desc_face  6 12 7 1
+		  p3d_end_desc_poly 
+		  
+		  p3d_set_prim_pos l_rob_2.1  0.0 30.0 0.0 0.0 0.0 0.0
+		  
+		  p3d_add_desc_cylindre l_rob_2.2 1.0 5.1  P3D_GRAPHIC
+		  p3d_set_prim_pos l_rob_2.2 0.0 30.0 2.5 0.0 0.0 0.0 
+		  p3d_set_prim_color l_rob_2.2 Black 
+		
+		p3d_end_desc
+		
+		p3d_beg_desc_jnt P3D_ROTATE   # J3
+		  p3d_set_name l_rob_J3
+		  p3d_set_pos_axe 0.0 50.0 0.0 0.0 0.0 0.0 
+		  p3d_set_prev_jnt 2
+		  p3d_set_dof       1
+		  p3d_set_dof_vmin 	0.0
+		  p3d_set_dof_vmax  0.0
+		p3d_end_desc
+		
+		p3d_beg_desc P3D_BODY l_rob_3
+		 p3d_add_desc_cylindre l_rob_3.1 1.0 5.1  P3D_GRAPHIC
+		 p3d_set_prim_pos l_rob_3.1 0.0 30.0 2.5 0.0 0.0 0.0 
+		 p3d_set_prim_color l_rob_3.1 Black
+		p3d_end_desc
+
+	p3d_end_desc
+	
+p3d_end_desc
+	
+# special Env Hri --------------------------------------------------------
+p3d_CostEnvironment
+p3d_set_hri_zone_size 12
+
+	
+p3d_set_env_box 0 100 0 100 -10 10
+p3d_set_robot_pos 50 10 0 0 0 0
+
+p3d_sel_desc_name P3D_ROBOT barre
+
+p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 65.0 50.0 -3.0 0 0 0 
+p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 65.0 50.0 -3.0 0 0 0 
+
+p3d_sel_desc_name P3D_ROBOT 2-3dof
+
+p3d_set_robot_current 50.000000 10.000000 0.000000 0.000000 0.000000 0.000000 64.601768 -33.038349 0.000000
+p3d_set_robot_goto 50.000000 10.000000 0.000000 0.000000 0.000000 0.000000 -67.256638 50.737465 0.000000
+
+
+
+

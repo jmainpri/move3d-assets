@@ -1,0 +1,27 @@
+p3d_beg_desc P3D_ENV TableManipBiGraph
+
+  p3d_read_macro OB_shelf.macro shelf 15
+  p3d_set_obst_pos shelf 1700 1600 0 0 0 0
+  p3d_read_macro OB_shelf.macro shelf2 15
+  p3d_set_obst_pos shelf2 -1700 1600 0 0 0 0
+
+  p3d_read_macro tablechair.macro chair1 1100
+  p3d_set_obst_pos chair1 -600 400 0 0 0 0
+  p3d_read_macro tablechair.macro chair2 1100
+  p3d_set_obst_pos chair2 600 400 0 0 0 180
+  p3d_read_macro tablechair.macro chair3 1100
+  p3d_set_obst_pos chair3 0 -600 0 0 0 90
+  p3d_read_macro tablechair.macro chair4 1100
+  p3d_set_obst_pos chair4 0 1500 0 0 0 -90
+
+  p3d_read_macro wodentable.macro table 1100
+  p3d_set_obst_pos table  0 400 0 0 0 0
+
+  p3d_read_macro Achile.macro achile
+
+p3d_end_desc
+######################
+######## COLOR #######
+######################
+# p3d_set_obst_color BaseSupport1 Any 0.95 0.95 0.95
+p3d_set_env_box -2800 2800 -2800 2800 -50 3000

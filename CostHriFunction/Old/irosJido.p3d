@@ -1,0 +1,77 @@
+p3d_beg_desc P3D_ENV iros
+
+p3d_read_macro jido.macro jido
+
+p3d_read_macro Superman.macro human1
+
+p3d_read_macro bluecouch.macro bcouch
+p3d_set_obst_pos bcouch  0 2 0 0 0 -90
+
+p3d_read_macro table.macro table
+p3d_set_obst_pos table  1 -1.5 0 0 0 0
+
+#p3d_beg_desc P3D_OBSTACLE laptop1	
+#p3d_add_desc_box obs 0.3 0.4 0.02
+#p3d_end_desc
+#p3d_set_obst_pos laptop1  -3 4.4 0.75 0 0 90
+#p3d_set_obst_poly_color laptop1 1 Black
+
+#p3d_beg_desc P3D_OBSTACLE laptop2	
+#p3d_add_desc_box obs 0.4 0.4 0.02
+#p3d_end_desc
+#p3d_set_obst_pos laptop2  -3 4.25 0.9 0 80 90
+#p3d_set_obst_poly_color laptop2 1 Black
+
+
+p3d_read_macro greencouch.macro ccouch1
+p3d_set_obst_pos ccouch1  -3 -0.5 0 0 0 180
+
+# BEGIN ENVIRONMENT WALLS
+
+#  p3d_beg_desc P3D_OBSTACLE BaseSupport1
+#    p3d_add_desc_box base_foot_1 0.5 0.5 0.7
+#    p3d_set_prim_pos base_foot_1 0 0 0.35 0 0 0
+#  p3d_end_desc
+
+# p3d_beg_desc P3D_OBSTACLE barre
+#  	p3d_add_desc_cylindre base1 0.05 2
+#  	p3d_set_prim_pos base1 0.4 0.7 1.0 0 0 0
+# p3d_end_desc
+ 
+ ######################
+##### CONSTRAINTS ####
+######################
+
+#--------------------------------------------------------------------------------------------------
+p3d_sel_desc_name P3D_ROBOT human1
+
+p3d_set_robot_steering_method Linear
+
+p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.589970 0.589970 1.114651 10.619467 -1.769915 8.849552 -8.849557 0.000000 0.000000 0.000000 0.000000 2.654872 -0.884957 -34.513275 0.884957 4.424776 3.539819 -23.008846 -42.477875 -31.184860 16.814157 -0.884957 -44.754177 -64.601768 0.000000 0.000000 44.764011 0.000000 0.000000 44.026546 -0.639136 9.319078 11.504423 0.000000 0.000000 0.000000 0.000000 -0.884957 -0.884957 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.884957 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.400000 0.000000 1.300000 0.000000 0.000000 0.000000 0.000000 0.000000
+p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.297935 1.061947 1.035988 1.769915 5.309744 -130.973450 0.000000 0.000000 0.000000 0.000000 0.000000 2.654872 -0.884957 -34.513275 0.884957 4.424776 3.539819 -23.008846 -42.477875 -31.184860 16.814157 -0.884957 -44.754177 -64.601768 0.000000 0.000000 44.764011 0.000000 0.000000 44.026546 -0.639136 9.319078 11.504423 0.000000 0.000000 0.000000 0.000000 -0.884957 -0.884957 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.884957 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.400000 0.000000 1.300000 0.000000 0.000000 0.000000 0.000000 0.000000
+
+
+
+# BEGIN COLLISIONS 
+p3d_add_desc_rob_col_init human1
+  p3d_desactivate_col_check automatic
+  p3d_desactivate_col_check AUTH1.l_shoulder  AUTH3.waist
+  p3d_desactivate_col_check AUTH2.r_shoulder  AUTH3.waist
+  p3d_desactivate_col_check AUTH2.r_wrist AUTH5.r_hip
+  p3d_desactivate_col_check AUTH1.l_wrist AUTH4.l_hip
+  p3d_desactivate_col_check pelvis AUTH3.waist
+
+#--------------------------------------------------------------------------------------------------
+p3d_sel_desc_name P3D_ROBOT jido
+
+p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 2.064897 -0.983284 -176.991150 0.000000 0.000000 -19.144545 36.470009 99.762543 152.949844 32.448376 -135.398239
+p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 2.015733 0.934120 -173.451324 0.000000 0.000000 6.961643 -0.501473 76.311203 0.000000 16.224197 20.059002
+
+p3d_constraint_dof p3d_fixed_jnt 1 2 0 0 1 0.000000 0 1
+p3d_constraint_dof p3d_fixed_jnt 1 3 0 0 1 0.000000 0 1
+
+p3d_create_reeds_shepp_local_method 0.3 1
+
+p3d_set_env_box 5.000000 -5.000000 5.000000 -5.000000 2.000000 0.000000
+
+

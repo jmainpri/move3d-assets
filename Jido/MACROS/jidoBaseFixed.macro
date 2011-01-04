@@ -1,0 +1,159 @@
+p3d_beg_desc P3D_ROBOT
+#Platform
+#   p3d_beg_desc_jnt P3D_FREEFLYER # J1
+#   p3d_set_name platformJoint
+#   p3d_set_prev_jnt 0
+#   p3d_set_pos_axe 0 0 0 0 0 0
+#   p3d_set_dof_vmin -10 -10 0 -180 -180 -180
+#   p3d_set_dof_vmax  10  10 2  180  180  180
+#  p3d_end_desc
+  p3d_read_macro ./JidoParts/Platform/BaseV.macro base
+  p3d_read_macro ./JidoParts/Platform/MotorWheel.macro motorWheel
+  p3d_read_macro ./JidoParts/Platform/Wheels.macro wheels
+  p3d_read_macro ./JidoParts/Platform/Sicks.macro sicks
+  p3d_read_macro ./JidoParts/Platform/Computer.macro computer
+  p3d_read_macro ./JidoParts/Platform/RearScreen.macro rearScreen
+  p3d_read_macro ./JidoParts/Platform/FrontScreen.macro frontScreen
+  p3d_read_macro ./JidoParts/Platform/Router.macro router
+#Top Cameras
+  p3d_beg_desc_jnt P3D_ROTATE # J2
+    p3d_set_name Pan
+    p3d_set_prev_jnt 0
+    p3d_set_pos_axe -0.232 0 1.711 0 0 1
+    p3d_set_dof_vmin -170
+    p3d_set_dof_vmax 170
+  p3d_end_desc
+  p3d_read_macro ./JidoParts/Platform/Pan.macro pan
+  p3d_beg_desc_jnt P3D_ROTATE # J3
+    p3d_set_name Tilt
+    p3d_set_prev_jnt 1
+    p3d_set_pos_axe -0.232 0 1.711 0 1 0
+    p3d_set_dof_vmin -45
+    p3d_set_dof_vmax 30
+  p3d_end_desc
+  p3d_read_macro ./JidoParts/Platform/TopCam.macro topCameras
+#Arm
+  p3d_beg_desc_jnt P3D_FIXED # J4
+    p3d_set_name Socle
+    p3d_set_pos_relative
+    p3d_set_prev_jnt 0
+    p3d_set_pos_mat 1 0 0 0.180  0 1 0 0  0 0 1 0.92  0 0 0 1
+  p3d_end_desc
+  p3d_read_macro ./JidoParts/PA10/Socle.macro socle
+  p3d_beg_desc_jnt P3D_ROTATE # J5
+    p3d_set_name Arm1
+    p3d_set_prev_jnt 3
+    p3d_set_pos_relative
+    p3d_set_pos_axe 0 0 0 0 0 1
+    p3d_set_dof_vmin -177
+    p3d_set_dof_vmax 177
+  p3d_end_desc
+  p3d_read_macro ./JidoParts/PA10/PA10-1.macro pa10-1
+  p3d_beg_desc_jnt P3D_ROTATE # J6
+    p3d_set_name Arm2
+    p3d_set_prev_jnt 4
+    p3d_set_pos_relative
+    p3d_set_pos_axe 0 0 0 0 1 0
+    p3d_set_dof_vmin -64
+    p3d_set_dof_vmax 124
+  p3d_end_desc
+  p3d_read_macro ./JidoParts/PA10/PA10-2.macro pa10-2
+  p3d_beg_desc_jnt P3D_ROTATE # J7
+    p3d_set_name Arm3
+    p3d_set_prev_jnt 5
+    p3d_set_pos_relative
+    p3d_set_pos_axe 0 -0.45 0 0 0 1
+    p3d_set_dof_vmin -107
+    p3d_set_dof_vmax 158
+  p3d_end_desc
+  p3d_read_macro ./JidoParts/PA10/PA10-3.macro pa10-3
+  p3d_beg_desc_jnt P3D_ROTATE # J8
+    p3d_set_name Arm4
+    p3d_set_prev_jnt 6
+    p3d_set_pos_relative
+    p3d_set_pos_axe 0 -0.48 0 0 -1 0
+    p3d_set_dof_vmin -255
+    p3d_set_dof_vmax 255
+  p3d_end_desc
+  p3d_read_macro ./JidoParts/PA10/PA10-4.macro pa10-4
+  p3d_beg_desc_jnt P3D_ROTATE # J9
+    p3d_set_name Arm5
+    p3d_set_prev_jnt 7
+    p3d_set_pos_relative
+    p3d_set_pos_axe 0 0 0 0 1 0
+    p3d_set_dof_vmin -165
+    p3d_set_dof_vmax 165
+  p3d_end_desc
+  p3d_read_macro ./JidoParts/PA10/PA10-5.macro pa10-5
+  p3d_beg_desc_jnt P3D_ROTATE # J10
+    p3d_set_name Arm5
+    p3d_set_prev_jnt 8
+    p3d_set_pos_relative
+    p3d_set_pos_axe 0 0 0 0 -1 0
+    p3d_set_dof_vmin -255
+    p3d_set_dof_vmax 255
+  p3d_end_desc
+  p3d_read_macro ./JidoParts/PA10/PA10-6.macro pa10-6
+p3d_end_desc
+
+#########################
+###### POSITIONS ########
+#########################
+#Platform
+  #All at 0 0 0 0 0 0
+#Top Cameras
+p3d_set_body_abs_pos pan.pan -0.229 0 1.670 0 0 0
+p3d_set_body_abs_pos pan.Gpan -0.229 0 1.670 0 0 0
+p3d_set_body_abs_pos topCameras.topCameras -0.229 0 1.670 0 0 0
+p3d_set_body_abs_pos topCameras.GtopCameras -0.229 0 1.670 0 0 0
+#Arm
+p3d_set_body_abs_pos socle.socle 0.180 0 0.603 0 0 0
+p3d_set_body_abs_pos socle.Gsocle 0.180 0 0.603 0 0 0
+p3d_set_body_abs_pos pa10-1.pa10-1 0.180 0 0.603 0 0 0
+p3d_set_body_abs_pos pa10-1.Gpa10-1 0.180 0 0.603 0 0 0
+p3d_set_body_abs_pos pa10-2.pa10-2 0.180 0 0.603 0 0 0
+p3d_set_body_abs_pos pa10-2.Gpa10-2 0.180 0 0.603 0 0 0
+p3d_set_body_abs_pos pa10-3.pa10-3 0.180 0 0.603 0 0 0
+p3d_set_body_abs_pos pa10-3.Gpa10-3 0.180 0 0.603 0 0 0
+p3d_set_body_abs_pos pa10-4.pa10-4 0.180 0 0.603 0 0 0
+p3d_set_body_abs_pos pa10-4.Gpa10-4 0.180 0 0.603 0 0 0
+p3d_set_body_abs_pos pa10-5.pa10-5 0.180 0 0.603 0 0 0
+p3d_set_body_abs_pos pa10-5.Gpa10-5 0.180 0 0.603 0 0 0
+p3d_set_body_abs_pos pa10-6.pa10-6 0.180 0 0.603 0 0 0
+p3d_set_body_abs_pos pa10-6.Gpa10-6 0.180 0 0.603 0 0 0
+
+#########################
+######## COLORS #########
+#########################
+#Platform
+p3d_set_body_poly_color base.base 1 Any 0.7 0.7 0.7
+p3d_set_body_poly_color base.base 2 Any 0.0 0.0 0.0
+p3d_set_body_poly_color motorWheel.motorWheel 1 Any 0.2427251 0.2427251 0.2427251
+p3d_set_body_poly_color wheels.wheels 1 Any 0.893 0.126 0.126
+p3d_set_body_poly_color sicks.sicks 1 Any 0.0 0.0 0.0
+p3d_set_body_poly_color sicks.sicks 2 Any 0.244 0.244 1
+p3d_set_body_poly_color computer.computer 1 Any 0.0 0.0 0.0
+p3d_set_body_poly_color computer.computer 2 Any 0.3 0.3 0.3
+p3d_set_body_poly_color rearScreen.rearScreen 1 Any 0.0 0.0 0.0
+p3d_set_body_poly_color frontScreen.frontScreen 1 Any 0.0 0.0 0.0
+p3d_set_body_poly_color router.router 1 Any 1.0 1.0 1.0
+p3d_set_body_poly_color router.router 2 Any 0.7 0.7 0.7
+#Top Cameras
+p3d_set_body_poly_color pan.pan 1 Any 0.0 0.0 0.0
+p3d_set_body_poly_color topCameras.topCameras 1 Any 0.1921569 0.6509804 1.0
+p3d_set_body_poly_color topCameras.topCameras 2 Any 0.0 0.0 0.0
+p3d_set_body_poly_color topCameras.topCameras 3 Any 0.7000001 0.7 0.7
+#Arm
+p3d_set_body_poly_color socle.socle 1 Any 0.81 0.975 0.985
+p3d_set_body_poly_color pa10-1.pa10-1 1 Any 0.81 0.975 0.985
+p3d_set_body_poly_color pa10-1.pa10-1 2 Any 1.0 1.0 1.0
+p3d_set_body_poly_color pa10-2.pa10-2 1 Any 0.81 0.975 0.985
+p3d_set_body_poly_color pa10-2.pa10-2 2 Any 1.0 1.0 1.0
+p3d_set_body_poly_color pa10-3.pa10-3 1 Any 0.81 0.975 0.985
+p3d_set_body_poly_color pa10-4.pa10-4 1 Any 0.81 0.975 0.985
+p3d_set_body_poly_color pa10-4.pa10-4 2 Any 1.0 1.0 1.0
+p3d_set_body_poly_color pa10-5.pa10-5 1 Any 0.81 0.975 0.985
+p3d_set_body_poly_color pa10-6.pa10-6 1 Any 0.81 0.975 0.985
+p3d_set_body_poly_color pa10-6.pa10-6 2 Any 0.0 0.2418661 0.9924834
+p3d_set_body_poly_color pa10-6.pa10-6 3 Any 0.8 0.8 0.8
+p3d_set_body_poly_color pa10-6.pa10-6 4 Any 0.0 0.0 0.0

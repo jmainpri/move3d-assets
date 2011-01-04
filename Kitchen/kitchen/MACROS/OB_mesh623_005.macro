@@ -1,0 +1,229 @@
+  p3d_beg_desc P3D_OBSTACLE
+
+
+    p3d_add_desc_poly polyhedre353
+      p3d_add_desc_vert -36.885433197 28.776725769 -112.679969788
+      p3d_add_desc_vert -36.6309165955 29.8349990845 -112.826919556
+      p3d_add_desc_vert -37.0427360535 29.4307746887 -112.589149475
+      p3d_add_desc_vert -36.3763961792 28.776725769 -112.973861694
+      p3d_add_desc_vert -39.1052513123 29.8349990845 -117.112586975
+      p3d_add_desc_vert -39.3476600647 28.776725769 -116.944671631
+      p3d_add_desc_vert -36.2190971375 29.4307746887 -113.064682007
+      p3d_add_desc_vert -39.5571632385 29.4307746887 -116.944267273
+      p3d_add_desc_vert -40.8910369873 29.8349990845 -115.613456726
+      p3d_add_desc_vert -38.8386230469 28.776725769 -117.238563538
+      p3d_add_desc_vert -38.7335243225 29.4307746887 -117.419799805
+      p3d_add_desc_vert -39.1776046753 29.8349990845 -117.237915039
+      p3d_add_desc_vert -39.7834854126 29.8349990845 -116.721008301
+      p3d_add_desc_vert -41.6741943359 29.8349990845 -114.256988525
+      p3d_add_desc_vert -39.9629440308 29.0632896423 -117.647102356
+      p3d_add_desc_vert -39.5895614624 28.5576553345 -117.36365509
+      p3d_add_desc_vert -39.7834854126 31.0049991608 -116.721008301
+      p3d_add_desc_vert -39.1052513123 31.0049991608 -117.112586975
+      p3d_add_desc_vert -42.0795860291 29.8349990845 -112.744049072
+      p3d_add_desc_vert -40.8910369873 31.0049991608 -115.613456726
+      p3d_add_desc_vert -39.0805244446 28.5576553345 -117.657546997
+      p3d_add_desc_vert -39.1393051147 29.0632896423 -118.122627258
+      p3d_add_desc_vert -39.6846733093 29.3757896423 -118.11618042
+      p3d_add_desc_vert -42.0795860291 29.8349990845 -111.177734375
+      p3d_add_desc_vert -42.0795860291 31.0049991608 -112.744049072
+      p3d_add_desc_vert -41.6741943359 31.0049991608 -114.256988525
+      p3d_add_desc_vert -40.1199913025 28.1137619019 -117.919113159
+      p3d_add_desc_vert -39.1741447449 27.9916114807 -117.819702148
+      p3d_add_desc_vert -39.8809165955 28.1892547607 -118.456085205
+      p3d_add_desc_vert -41.6741943359 29.8349990845 -109.664787292
+      p3d_add_desc_vert -42.0795860291 31.0049991608 -111.177734375
+      p3d_add_desc_vert -36.1309165955 31.0049991608 -111.960891724
+      p3d_add_desc_vert -39.6831817627 27.9916114807 -117.525810242
+      p3d_add_desc_vert -39.2963485718 28.1137619019 -118.394638062
+      p3d_add_desc_vert -36.1309165955 29.8349990845 -111.960891724
+      p3d_add_desc_vert -41.6741943359 31.0049991608 -109.664787292
+      p3d_add_desc_vert -40.1199913025 0.0 -117.919113159
+      p3d_add_desc_vert -39.1741447449 0.0 -117.819702148
+      p3d_add_desc_vert -39.8809165955 0.0 -118.456085205
+      p3d_add_desc_vert -41.2826156616 29.8349990845 -108.986557007
+      p3d_add_desc_vert -41.2826156616 31.0049991608 -108.986557007
+      p3d_add_desc_vert -39.6831817627 0.0 -117.525810242
+      p3d_add_desc_vert -39.2963485718 0.0 -118.394638062
+
+      p3d_add_desc_face 2 5 3
+      p3d_add_desc_face 1 3 6
+      p3d_add_desc_face 1 6 4
+      p3d_add_desc_face 3 5 8
+      p3d_add_desc_face 2 7 5
+      p3d_add_desc_face 8 6 3
+      p3d_add_desc_face 10 4 6
+      p3d_add_desc_face 7 4 11
+      p3d_add_desc_face 12 8 5
+      p3d_add_desc_face 7 11 5
+      p3d_add_desc_face 8 15 6
+      p3d_add_desc_face 6 16 10
+      p3d_add_desc_face 10 11 4
+      p3d_add_desc_face 12 5 11
+      p3d_add_desc_face 8 12 15
+      p3d_add_desc_face 16 6 15
+      p3d_add_desc_face 21 10 16
+      p3d_add_desc_face 11 10 22
+      p3d_add_desc_face 11 22 12
+      p3d_add_desc_face 23 15 12
+      p3d_add_desc_face 15 27 16
+      p3d_add_desc_face 21 16 28
+      p3d_add_desc_face 21 22 10
+      p3d_add_desc_face 23 12 22
+      p3d_add_desc_face 23 29 15
+      p3d_add_desc_face 33 16 27
+      p3d_add_desc_face 27 15 29
+      p3d_add_desc_face 33 28 16
+      p3d_add_desc_face 28 34 21
+      p3d_add_desc_face 22 21 34
+      p3d_add_desc_face 22 34 23
+      p3d_add_desc_face 29 23 34
+      p3d_add_desc_face 27 37 33
+      p3d_add_desc_face 27 29 37
+      p3d_add_desc_face 28 33 38
+      p3d_add_desc_face 28 38 34
+      p3d_add_desc_face 29 34 39
+      p3d_add_desc_face 42 33 37
+      p3d_add_desc_face 39 37 29
+      p3d_add_desc_face 42 38 33
+      p3d_add_desc_face 43 34 38
+      p3d_add_desc_face 43 39 34
+      p3d_add_desc_face 42 37 38
+      p3d_add_desc_face 39 43 37
+      p3d_add_desc_face 38 37 43
+    p3d_end_desc_poly
+    p3d_set_prim_pos_by_mat polyhedre353 0 0 1 115.522617 1 0 0 38.169544 0 1 0 0 0 0 0 1
+
+    p3d_add_desc_poly polyhedre354
+      p3d_add_desc_vert -36.885433197 28.776725769 -112.679969788
+      p3d_add_desc_vert -36.6309165955 29.8349990845 -112.826919556
+      p3d_add_desc_vert -37.0427360535 29.4307746887 -112.589149475
+      p3d_add_desc_vert -36.3763961792 28.776725769 -112.973861694
+      p3d_add_desc_vert -39.1052513123 29.8349990845 -117.112586975
+      p3d_add_desc_vert -39.3476600647 28.776725769 -116.944671631
+      p3d_add_desc_vert -36.2190971375 29.4307746887 -113.064682007
+      p3d_add_desc_vert -39.5571632385 29.4307746887 -116.944267273
+      p3d_add_desc_vert -40.8910369873 29.8349990845 -115.613456726
+      p3d_add_desc_vert -38.8386230469 28.776725769 -117.238563538
+      p3d_add_desc_vert -38.7335243225 29.4307746887 -117.419799805
+      p3d_add_desc_vert -39.1776046753 29.8349990845 -117.237915039
+      p3d_add_desc_vert -39.7834854126 29.8349990845 -116.721008301
+      p3d_add_desc_vert -41.6741943359 29.8349990845 -114.256988525
+      p3d_add_desc_vert -39.9629440308 29.0632896423 -117.647102356
+      p3d_add_desc_vert -39.5895614624 28.5576553345 -117.36365509
+      p3d_add_desc_vert -39.7834854126 31.0049991608 -116.721008301
+      p3d_add_desc_vert -39.1052513123 31.0049991608 -117.112586975
+      p3d_add_desc_vert -42.0795860291 29.8349990845 -112.744049072
+      p3d_add_desc_vert -40.8910369873 31.0049991608 -115.613456726
+      p3d_add_desc_vert -39.0805244446 28.5576553345 -117.657546997
+      p3d_add_desc_vert -39.1393051147 29.0632896423 -118.122627258
+      p3d_add_desc_vert -39.6846733093 29.3757896423 -118.11618042
+      p3d_add_desc_vert -42.0795860291 29.8349990845 -111.177734375
+      p3d_add_desc_vert -42.0795860291 31.0049991608 -112.744049072
+      p3d_add_desc_vert -41.6741943359 31.0049991608 -114.256988525
+      p3d_add_desc_vert -40.1199913025 28.1137619019 -117.919113159
+      p3d_add_desc_vert -39.1741447449 27.9916114807 -117.819702148
+      p3d_add_desc_vert -39.8809165955 28.1892547607 -118.456085205
+      p3d_add_desc_vert -41.6741943359 29.8349990845 -109.664787292
+      p3d_add_desc_vert -42.0795860291 31.0049991608 -111.177734375
+      p3d_add_desc_vert -36.1309165955 31.0049991608 -111.960891724
+      p3d_add_desc_vert -39.6831817627 27.9916114807 -117.525810242
+      p3d_add_desc_vert -39.2963485718 28.1137619019 -118.394638062
+      p3d_add_desc_vert -36.1309165955 29.8349990845 -111.960891724
+      p3d_add_desc_vert -41.6741943359 31.0049991608 -109.664787292
+      p3d_add_desc_vert -40.1199913025 0.0 -117.919113159
+      p3d_add_desc_vert -39.1741447449 0.0 -117.819702148
+      p3d_add_desc_vert -39.8809165955 0.0 -118.456085205
+      p3d_add_desc_vert -41.2826156616 29.8349990845 -108.986557007
+      p3d_add_desc_vert -41.2826156616 31.0049991608 -108.986557007
+      p3d_add_desc_vert -39.6831817627 0.0 -117.525810242
+      p3d_add_desc_vert -39.2963485718 0.0 -118.394638062
+
+      p3d_add_desc_face 3 1 2
+      p3d_add_desc_face 2 1 4
+      p3d_add_desc_face 7 2 4
+      p3d_add_desc_face 2 9 5
+      p3d_add_desc_face 13 5 9
+      p3d_add_desc_face 14 9 2
+      p3d_add_desc_face 19 14 2
+      p3d_add_desc_face 24 19 2
+      p3d_add_desc_face 30 24 2
+      p3d_add_desc_face 35 30 2
+      p3d_add_desc_face 40 30 35
+    p3d_end_desc_poly
+    p3d_set_prim_pos_by_mat polyhedre354 0 0 1 115.522617 1 0 0 38.169544 0 1 0 0 0 0 0 1
+
+    p3d_add_desc_poly polyhedre355
+      p3d_add_desc_vert -36.885433197 28.776725769 -112.679969788
+      p3d_add_desc_vert -36.6309165955 29.8349990845 -112.826919556
+      p3d_add_desc_vert -37.0427360535 29.4307746887 -112.589149475
+      p3d_add_desc_vert -36.3763961792 28.776725769 -112.973861694
+      p3d_add_desc_vert -39.1052513123 29.8349990845 -117.112586975
+      p3d_add_desc_vert -39.3476600647 28.776725769 -116.944671631
+      p3d_add_desc_vert -36.2190971375 29.4307746887 -113.064682007
+      p3d_add_desc_vert -39.5571632385 29.4307746887 -116.944267273
+      p3d_add_desc_vert -40.8910369873 29.8349990845 -115.613456726
+      p3d_add_desc_vert -38.8386230469 28.776725769 -117.238563538
+      p3d_add_desc_vert -38.7335243225 29.4307746887 -117.419799805
+      p3d_add_desc_vert -39.1776046753 29.8349990845 -117.237915039
+      p3d_add_desc_vert -39.7834854126 29.8349990845 -116.721008301
+      p3d_add_desc_vert -41.6741943359 29.8349990845 -114.256988525
+      p3d_add_desc_vert -39.9629440308 29.0632896423 -117.647102356
+      p3d_add_desc_vert -39.5895614624 28.5576553345 -117.36365509
+      p3d_add_desc_vert -39.7834854126 31.0049991608 -116.721008301
+      p3d_add_desc_vert -39.1052513123 31.0049991608 -117.112586975
+      p3d_add_desc_vert -42.0795860291 29.8349990845 -112.744049072
+      p3d_add_desc_vert -40.8910369873 31.0049991608 -115.613456726
+      p3d_add_desc_vert -39.0805244446 28.5576553345 -117.657546997
+      p3d_add_desc_vert -39.1393051147 29.0632896423 -118.122627258
+      p3d_add_desc_vert -39.6846733093 29.3757896423 -118.11618042
+      p3d_add_desc_vert -42.0795860291 29.8349990845 -111.177734375
+      p3d_add_desc_vert -42.0795860291 31.0049991608 -112.744049072
+      p3d_add_desc_vert -41.6741943359 31.0049991608 -114.256988525
+      p3d_add_desc_vert -40.1199913025 28.1137619019 -117.919113159
+      p3d_add_desc_vert -39.1741447449 27.9916114807 -117.819702148
+      p3d_add_desc_vert -39.8809165955 28.1892547607 -118.456085205
+      p3d_add_desc_vert -41.6741943359 29.8349990845 -109.664787292
+      p3d_add_desc_vert -42.0795860291 31.0049991608 -111.177734375
+      p3d_add_desc_vert -36.1309165955 31.0049991608 -111.960891724
+      p3d_add_desc_vert -39.6831817627 27.9916114807 -117.525810242
+      p3d_add_desc_vert -39.2963485718 28.1137619019 -118.394638062
+      p3d_add_desc_vert -36.1309165955 29.8349990845 -111.960891724
+      p3d_add_desc_vert -41.6741943359 31.0049991608 -109.664787292
+      p3d_add_desc_vert -40.1199913025 0.0 -117.919113159
+      p3d_add_desc_vert -39.1741447449 0.0 -117.819702148
+      p3d_add_desc_vert -39.8809165955 0.0 -118.456085205
+      p3d_add_desc_vert -41.2826156616 29.8349990845 -108.986557007
+      p3d_add_desc_vert -41.2826156616 31.0049991608 -108.986557007
+      p3d_add_desc_vert -39.6831817627 0.0 -117.525810242
+      p3d_add_desc_vert -39.2963485718 0.0 -118.394638062
+
+      p3d_add_desc_face 13 9 17
+      p3d_add_desc_face 5 13 18
+      p3d_add_desc_face 9 14 20
+      p3d_add_desc_face 20 17 9
+      p3d_add_desc_face 17 18 13
+      p3d_add_desc_face 19 25 14
+      p3d_add_desc_face 26 20 14
+      p3d_add_desc_face 17 20 18
+      p3d_add_desc_face 24 31 19
+      p3d_add_desc_face 26 14 25
+      p3d_add_desc_face 25 19 31
+      p3d_add_desc_face 26 32 20
+      p3d_add_desc_face 32 18 20
+      p3d_add_desc_face 30 36 24
+      p3d_add_desc_face 31 24 36
+      p3d_add_desc_face 25 32 26
+      p3d_add_desc_face 31 32 25
+      p3d_add_desc_face 36 30 41
+      p3d_add_desc_face 36 32 31
+      p3d_add_desc_face 40 41 30
+      p3d_add_desc_face 41 32 36
+    p3d_end_desc_poly
+    p3d_set_prim_pos_by_mat polyhedre355 0 0 1 115.522617 1 0 0 38.169544 0 1 0 0 0 0 0 1
+
+  p3d_end_desc
+
+p3d_set_obst_poly_color 1 Any 0.8 0.8 0.8
+p3d_set_obst_poly_color 2 Any 0.8 0.8 0.8
+p3d_set_obst_poly_color 3 Any 0.8 0.8 0.8

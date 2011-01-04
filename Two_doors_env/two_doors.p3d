@@ -1,0 +1,66 @@
+p3d_beg_desc P3D_ENV two_doors
+
+#p3d_read_macro diligent_g.macro dili 0.05
+p3d_read_macro assembler_barre.macro assembler 0.06
+
+p3d_read_macro mobile_arm.macro mobile_arm 0.06
+
+p3d_read_macro porte.macro porte_1 2.3
+
+p3d_read_macro porte.macro porte_2 2.3
+
+#p3d_read_macro hilbarre_g.macro hil  0.07
+#p3d_create_reeds_shepp_local_method  100.0 1 
+
+p3d_read_macro MO_cube2.macro  MO_cube
+
+p3d_read_macro MO_cylinder.macro  MO_cylinder
+p3d_read_macro MO_pyramide.macro  MO_pyramide
+p3d_beg_desc P3D_OBSTACLE room
+
+p3d_add_desc_box sol 600.0 400.0 4.0 
+p3d_set_prim_pos sol -150 100 0 0 0 0
+
+p3d_add_desc_box mur_1 4.0 400.0 200.0 
+p3d_set_prim_pos mur_1 150.00 100.0 100.0 0.0 0.0 0.0
+
+p3d_add_desc_box mur_2 600.0 4.0 200.0 
+p3d_set_prim_pos mur_2 -150.0 -100.0 100.0 0.0 0.0 0.0
+
+p3d_add_desc_box mur_interieur_1  4.0 70.0 200.0 
+p3d_set_prim_pos mur_interieur_1  -50.0 -65.0 100.0 0.0 0.0 0.0
+
+p3d_add_desc_box mur_interieur_2  4.0 140.0 50.0 
+p3d_set_prim_pos mur_interieur_2 -50.0 117.0 25.0 0.0 0.0 0.0
+
+p3d_add_desc_box mur_interieur_3  4.0 40.0 200.0 
+p3d_set_prim_pos mur_interieur_3 -50.0 280.0 100.0 0.0 0.0 0.0
+
+p3d_add_desc_box mur_interieur_4  4.0 400.0 30.0 
+p3d_set_prim_pos mur_interieur_4 -50.0 100.0 185.0 0.0 0.0 0.0
+
+p3d_add_desc_box mur_interieur_5  4.0 10.0 124.0 
+p3d_set_prim_pos mur_interieur_5 -50.0 52.0 112.0 0.0 0.0 0.0
+
+p3d_add_desc_box mur_interieur_6  4.0 10.0 124.0 
+p3d_set_prim_pos mur_interieur_6 -50.0 182.0 112.0 0.0 0.0 0.0
+
+p3d_end_desc
+p3d_beg_desc P3D_OBSTACLE window
+
+p3d_add_desc_box window  4.0 120.0 124.0 
+p3d_set_prim_pos window -50.0 117.0 112.0 0.0 0.0 0.0
+p3d_end_desc
+
+p3d_read_macro SEJOUR_TABLE.macro table 2
+p3d_set_obst_pos table  -300. 100. -10.0 0.0 0.0 0.0
+#p3d_set_obst_pos table  -180. 180. -10.0 0.0 0.0 30.0
+
+
+p3d_sel_desc_name P3D_ROBOT porte_1
+p3d_set_robot_pos -5000 0.0 0.0 0.0 0.0 -180.0
+
+p3d_set_obst_color room Brown
+p3d_set_obst_color window tBlue
+
+p3d_set_env_box -450 150 -100 300 5 50

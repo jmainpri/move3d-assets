@@ -1,0 +1,46 @@
+p3d_beg_desc P3D_ENV TableManip
+  p3d_read_macro OB_table.macro OB_table
+  p3d_set_obst_pos OB_table 550 0 0 0.0 0.0 0.0
+  p3d_read_macro OB_glass.macro glass4
+  p3d_set_obst_pos glass4 500 546 492 0.0 0.0 0.0
+  p3d_read_macro OB_glass.macro OB_glass2
+  p3d_set_obst_pos OB_glass2 460 -528 492 0.0 0.0 0.0
+  p3d_read_macro OB_glass.macro OB_glass1
+  p3d_set_obst_pos OB_glass1 280 250 492 0.0 0.0 0.0
+  p3d_read_macro OB_vase.macro OB_vase
+  p3d_set_obst_pos OB_vase 550 -48 492 0.0 0.0 0.0
+  p3d_read_macro OB_bottle.macro OB_bottle
+  p3d_set_obst_pos OB_bottle 790 550 492 0.0 0.0 0
+  p3d_read_macro OB_IBook.macro OB_IBook
+  p3d_set_obst_pos OB_IBook 800 -528 492 0 0.0 -110
+  p3d_read_macro Justin.macro justin
+p3d_end_desc
+######################
+######## COLOR #######
+######################
+#Obstacles
+
+# p3d_set_obst_color BaseSupport1 Any 1 0.75 0
+p3d_set_env_box -600 1000 -600 600 300 1500
+
+
+######################
+##### CONSTRAINTS ####
+######################
+
+#Torso
+p3d_constraint p3d_fixed_jnt 1 1  0  1 0 0
+p3d_constraint p3d_fixed_jnt 1 2  0  1 0 0
+p3d_constraint p3d_fixed_jnt 1 3  0  1 0 0
+p3d_constraint p3d_fixed_jnt 1 4  0  1 0 0
+p3d_constraint p3d_fixed_jnt 1 6  0  1 0 0
+p3d_constraint p3d_fixed_jnt 1 7  0  1 0 0
+
+#Right Arm 9 10 11 12 13 14 15
+p3d_constraint p3d_fixed_jnt 1 9  0  1 0 0
+p3d_constraint p3d_fixed_jnt 1 10  0  1 0 0
+p3d_constraint p3d_fixed_jnt 1 11  0  1 0 0
+p3d_constraint p3d_fixed_jnt 1 12  0  1 0 0
+p3d_constraint p3d_fixed_jnt 1 13  0  1 0 0
+p3d_constraint p3d_fixed_jnt 1 14  0  1 0 0
+p3d_constraint p3d_fixed_jnt 1 15  0  1 0 0

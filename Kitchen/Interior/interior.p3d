@@ -1,0 +1,68 @@
+p3d_beg_desc P3D_ENV interior
+
+  p3d_beg_desc P3D_ROBOT pipo
+    p3d_beg_desc P3D_BODY pipo.body
+#      p3d_add_desc_box box 0 0 0
+#      p3d_set_prim_pos box 1e+32 1e+32 1e+32  0.0 0.0 0.0
+    p3d_end_desc
+  p3d_end_desc
+
+  p3d_read_macro OB_mesh1_002.macro OB_mesh1_002
+  p3d_set_obst_pos OB_mesh1_002 1.996824 -1.6642 0.876531 0.0 0.0 0.0
+  p3d_set_obst_poly_color OB_mesh1_002 1 Green
+	
+  p3d_read_macro OB_mesh2_002.macro OB_mesh2_002
+  p3d_set_obst_pos OB_mesh2_002 1.902219 -1.717676 0.819999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh3_002.macro OB_mesh3_002
+  p3d_set_obst_pos OB_mesh3_002 1.902352 -1.716095 0.883156 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh4_002.macro OB_mesh4_002
+  p3d_set_obst_pos OB_mesh4_002 1.904882 -1.656112 0.819999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh5_002.macro OB_mesh5_002
+  p3d_set_obst_pos OB_mesh5_002 1.9411 -1.590232 0.819999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh10_002.macro OB_mesh10_002
+  p3d_set_obst_pos OB_mesh10_002 -2.711778 -3.289131 1.044084 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh15_002.macro OB_mesh15_002
+  p3d_set_obst_pos OB_mesh15_002 -2.690642 -0.848403 0 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh21_002.macro OB_mesh21_002
+  p3d_set_obst_pos OB_mesh21_002 -2.859163 -0.705725 0.889999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh22_002.macro OB_mesh22_002
+  p3d_set_obst_pos OB_mesh22_002 -3.715526 0.680965 0 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh22_003.macro OB_mesh22_003
+  p3d_set_obst_pos OB_mesh22_003 -3.21634 -1.333292 0 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh22_004.macro OB_mesh22_004
+  p3d_set_obst_pos OB_mesh22_004 -2.237962 -0.83521 0 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh22_005.macro OB_mesh22_005
+  p3d_set_obst_pos OB_mesh22_005 -2.192827 -0.297702 0 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh22_006.macro OB_mesh22_006
+  p3d_set_obst_pos OB_mesh22_006 -3.142392 -0.798911 0 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh22_007.macro OB_mesh22_007
+  p3d_set_obst_pos OB_mesh22_007 -2.312993 -1.370208 0 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh23_002.macro OB_mesh23_002
+  p3d_set_obst_pos OB_mesh23_002 3.950607 -0.476701 0 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh24_002.macro OB_mesh24_002
+  p3d_set_obst_pos OB_mesh24_002 2.017219 -0.981204 0 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh25_002.macro OB_mesh25_002
+  p3d_set_obst_pos OB_mesh25_002 0.982079 -3.410901 0 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh26_002.macro OB_mesh26_002
+  p3d_set_obst_pos OB_mesh26_002 3.490184 -3.758555 0.025012 0.0 0.0 0.0
+
+
+p3d_end_desc
+
+p3d_set_env_box -5 5 -5 5 0 3

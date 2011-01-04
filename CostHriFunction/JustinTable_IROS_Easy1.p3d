@@ -1,0 +1,280 @@
+p3d_beg_desc P3D_ENV Ikea
+
+p3d_read_macro AchileSafetyZonesM.macro HUMAN
+p3d_read_macro JustinMobileVirtualBall.macro ROBOT
+
+p3d_read_macro Objects/Movable/Lampe.macro Lampe 0.001
+p3d_read_macro Objects/Movable/Assiette.macro Assiette 0.05
+p3d_read_macro Objects/Movable/Pommes.macro Pommes 0.5
+p3d_read_macro Objects/Movable/VerreJusOrange.macro Verre 0.05
+p3d_read_macro Objects/Movable/Tabouret.macro Tabouret 0.005
+
+# p3d_read_macro Objects/Movable/legLamp.macro legLamp 1.5
+
+p3d_read_macro Objects/Movable/sailLamp.macro sailLamp1 0.01
+p3d_read_macro Objects/Movable/sailLamp.macro sailLamp2 0.01
+p3d_read_macro Objects/Movable/sailLamp.macro sailLamp3 0.01
+
+#p3d_read_macro OB_mesh1_002.macro OB_mesh1_002 0.01
+#p3d_set_obst_pos OB_mesh1_002 -0.3124281 -0.68043237 0.00029881 0 0 0
+  
+#p3d_read_macro OB_mesh2_002.macro OB_mesh1_001 0.01
+#p3d_set_obst_pos OB_mesh1_001 -0.62937038 -0.76340834 0.00029881 0 0 0
+
+#p3d_read_macro OB_mesh3_002.macro OB_mesh1_002 0.01
+#p3d_set_obst_pos OB_mesh1_002 -0.83102961 -0.70549894 0.00029881 0 0 0
+
+#p3d_read_macro OB_mesh4_002.macro OB_mesh1_001 0.01
+#p3d_set_obst_pos OB_mesh1_001 -0.8242905 -0.71299084 0.00029881 0 0 0
+
+p3d_read_macro OB_mesh6_002.macro OB_mesh1_007 0.01
+p3d_set_obst_pos OB_mesh1_007 -0.8242905 -0.71299084 0.00029881 0 0 0
+  
+p3d_set_env_box -2.45 5 -5 2.45 0 3
+
+#--------------------------------------------------------------------------------------------------
+p3d_sel_desc_name P3D_ROBOT Lampe
+p3d_set_robot_steering_method Linear
+p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -1.966568 1.622419 0.983776 0.000000 0.000000 0.000000
+p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+
+
+p3d_sel_desc_name P3D_ROBOT Assiette
+p3d_set_robot_steering_method Linear
+p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.884956 -1.573254 0.787611 0.000000 0.000000 0.000000
+p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+
+
+p3d_sel_desc_name P3D_ROBOT Pommes
+p3d_set_robot_steering_method Linear
+p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.442478 -1.622419 0.762537 0.000000 0.000000 0.000000
+p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+
+
+p3d_sel_desc_name P3D_ROBOT Verre
+p3d_set_robot_steering_method Linear
+p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -2.261553 1.671584 0.964602 0.000000 0.000000 0.000000
+p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+
+p3d_sel_desc_name P3D_ROBOT sailLamp1
+p3d_set_robot_steering_method Linear
+p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 3.000000 0.000000 0.000000 0.000000
+p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+
+
+p3d_sel_desc_name P3D_ROBOT sailLamp2
+p3d_set_robot_steering_method Linear
+p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.6 3.000000 0.000000 0.000000 0.000000
+p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+
+
+p3d_sel_desc_name P3D_ROBOT sailLamp3
+p3d_set_robot_steering_method Linear
+p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.2 3.000000 0.000000 0.000000 0.000000
+p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+
+p3d_sel_desc_name P3D_ROBOT Tabouret
+p3d_set_robot_steering_method Linear
+p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.853659 -0.365854 0.000000 0.000000 0.000000 0.000000
+p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+
+#--------------------------------------------------------------------------------------------------
+p3d_sel_desc_name P3D_ROBOT HUMAN
+
+p3d_set_robot_steering_method Linear
+
+p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 2.097561 -1.609756 1.043902 0.000000 -2.634146 134.341463 3.707317 0.000000 -1.327433 -1.283183 0.000000 4.867254 -13.864306 -74.124878 -11.843661 85.142578 -90.000000 -30.973452 -9.832842 6.489676 72.256645 4.616516 -34.208450 -68.761055 38.053101 5.113077 0.884957 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+
+
+p3d_add_desc_rob_col_init HUMAN
+p3d_desactivate_col_check automatic
+#--------------------------------------------------------------------------------------------------
+p3d_sel_desc_name P3D_ROBOT ROBOT
+
+p3d_set_robot_steering_method Linear
+
+p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -0.560244 0.775122 -9.658537 163.512195 -12.731707 50.707317 -37.975610 -1.327433 3.871682 -66.863319 -95.575218 -15.044244 115.634224 1.671586 -16.914946 39.690266 25.707317 -55.097213 -30.759853 112.765616 26.377032 32.716208 -17.207686 -1.587985 1.049290 1.153092 -12.361165 10.220093 7.819540
+p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 2.528780 -0.566341 151.902439 97.170732 -23.097561 30.292683 -7.195122 -1.327433 3.871682 -66.863319 -95.575218 -15.044244 115.634224 1.671586 -16.914946 39.690266 22.567579 -69.626382 -26.745325 92.074609 32.383497 6.946341 7.763327 2.274390 -1.329512 1.111459 9.658537 6.146341 83.414634
+
+#p3d_constraint p3d_head_object_track 2 7 8  1 29  0 0
+
+#Left Arm
+p3d_constraint p3d_kuka_arm_ik 6 18 19 21 22 23 24  1 29  0  3 20 -1 1
+
+#p3d_set_cntrt_Tatt 0 	1   0   0   0
+# 						0   1   0   0
+# 						0   0   1   0
+#
+
+# p3d_set_cntrt_Tatt 0 0.999995  -0.000687   +0.000482   +0.025748
+# 					+0.000687   +0.999996   -0.000516   -0.307341
+# 					-0.000480   +0.000515   +0.999997   -0.050312
+
+p3d_set_cntrt_Tatt 0 -0.674591   -0.674281   -0.300441   +0.250283
+ 					 -0.505822   +0.718658   -0.477145   -0.366585
+ 					 +0.537644   -0.169908   -0.825871   +0.209297
+
+p3d_set_object_base_and_arm_constraints 29 1 0 1 0
+# 29 1 0  2  2 3
+ 
+# Torso J3 J4
+p3d_constraint p3d_min_max_dofs 0  2 4 3  2 0 135  0
+p3d_constraint p3d_lin_rel_dofs 1 5  2 3 4  3 -1 -1 0  0
+
+p3d_set_object_to_carry Verre
+
+#p3d_constraint p3d_fixed_jnt 1 1 0 3 -1.056367 0.903958 69.026543 0
+#p3d_constraint p3d_fixed_jnt 1 2 0 1 51.730579 0
+#p3d_constraint p3d_fixed_jnt 1 3 0 1 -33.380035 0
+#p3d_constraint p3d_fixed_jnt 1 4 0 1 36.969028 0
+#p3d_constraint p3d_fixed_jnt 1 5 0 1 -13.274338 0
+p3d_constraint p3d_fixed_jnt 1 7 0 1 -1.327433 0
+p3d_constraint p3d_fixed_jnt 1 8 0 1 3.871682 0
+p3d_constraint p3d_fixed_jnt 1 10 0 1 -66.863319 0
+p3d_constraint p3d_fixed_jnt 1 11 0 1 -95.575218 0
+p3d_constraint p3d_fixed_jnt 1 12 0 1 -15.044244 0
+p3d_constraint p3d_fixed_jnt 1 13 0 1 115.634224 0
+p3d_constraint p3d_fixed_jnt 1 14 0 1 1.671586 0
+p3d_constraint p3d_fixed_jnt 1 15 0 1 -16.914946 0
+p3d_constraint p3d_fixed_jnt 1 16 0 1 39.690266 0
+
+p3d_set_jnt_dofs_min_max 1 -2.45 5 -5 2.45 -180 180
+p3d_set_jnt_dofs_min_max 29 -2.45 5 -5 2.45 0 3 -180 180 -180 180 -180 180
+
+#p3d_create_reeds_shepp_local_method 0.3 1
+
+p3d_add_desc_rob_col_init ROBOT
+p3d_desactivate_col_check automatic2
+p3d_desactivate_col_check GPlatform-1 GTorso3-1
+p3d_desactivate_col_check GPlatform-1 GTorso4-1
+p3d_desactivate_col_check GPlatform-1 Ghead1-1
+p3d_desactivate_col_check GPlatform-1 Ghead2-1
+p3d_desactivate_col_check GPlatform-1 GrArm1-1
+p3d_desactivate_col_check GPlatform-1 GrArm2-1
+p3d_desactivate_col_check GPlatform-1 GlArm1-1
+p3d_desactivate_col_check GPlatform-1 GlArm2-1
+
+p3d_desactivate_col_check GPlatform-2 GTorso3-1
+p3d_desactivate_col_check GPlatform-2 GTorso4-1
+p3d_desactivate_col_check GPlatform-2 Ghead1-1
+p3d_desactivate_col_check GPlatform-2 Ghead2-1
+p3d_desactivate_col_check GPlatform-2 GrArm1-1
+p3d_desactivate_col_check GPlatform-2 GrArm2-1
+p3d_desactivate_col_check GPlatform-2 GlArm1-1
+p3d_desactivate_col_check GPlatform-2 GlArm2-1
+
+p3d_desactivate_col_check GPlatform-3 GTorso3-1
+p3d_desactivate_col_check GPlatform-3 GTorso4-1
+p3d_desactivate_col_check GPlatform-3 Ghead1-1
+p3d_desactivate_col_check GPlatform-3 Ghead2-1
+p3d_desactivate_col_check GPlatform-3 GrArm1-1
+p3d_desactivate_col_check GPlatform-3 GrArm2-1
+p3d_desactivate_col_check GPlatform-3 GlArm1-1
+p3d_desactivate_col_check GPlatform-3 GlArm2-1
+
+p3d_desactivate_col_check GPlatform-4 GTorso3-1
+p3d_desactivate_col_check GPlatform-4 GTorso4-1
+p3d_desactivate_col_check GPlatform-4 Ghead1-1
+p3d_desactivate_col_check GPlatform-4 Ghead2-1
+p3d_desactivate_col_check GPlatform-4 GrArm1-1
+p3d_desactivate_col_check GPlatform-4 GrArm2-1
+p3d_desactivate_col_check GPlatform-4 GlArm1-1
+p3d_desactivate_col_check GPlatform-4 GlArm2-1
+
+p3d_desactivate_col_check GPlatform-5 GTorso3-1
+p3d_desactivate_col_check GPlatform-5 GTorso4-1
+p3d_desactivate_col_check GPlatform-5 Ghead1-1
+p3d_desactivate_col_check GPlatform-5 Ghead2-1
+p3d_desactivate_col_check GPlatform-5 GrArm1-1
+p3d_desactivate_col_check GPlatform-5 GrArm2-1
+p3d_desactivate_col_check GPlatform-5 GlArm1-1
+p3d_desactivate_col_check GPlatform-5 GlArm2-1
+
+p3d_desactivate_col_check GTorso1-1 GTorso4-1
+p3d_desactivate_col_check GTorso1-1 Ghead1-1
+p3d_desactivate_col_check GTorso1-1 Ghead2-1
+p3d_desactivate_col_check GTorso1-1 GrArm1-1
+p3d_desactivate_col_check GTorso1-1 GrArm2-1
+p3d_desactivate_col_check GTorso1-1 GlArm1-1
+p3d_desactivate_col_check GTorso1-1 GlArm2-1
+
+p3d_desactivate_col_check GTorso2-1 Ghead1-1
+p3d_desactivate_col_check GTorso2-1 Ghead2-1
+p3d_desactivate_col_check GTorso2-1 GrArm1-1
+p3d_desactivate_col_check GTorso2-1 GrArm2-1
+p3d_desactivate_col_check GTorso2-1 GlArm1-1
+p3d_desactivate_col_check GTorso2-1 GlArm2-1
+
+p3d_desactivate_col_check GTorso3-1 Ghead2-1
+p3d_desactivate_col_check GTorso3-1 GrArm1-1
+p3d_desactivate_col_check GTorso3-1 GrArm2-1
+p3d_desactivate_col_check GTorso3-1 GlArm1-1
+p3d_desactivate_col_check GTorso3-1 GlArm2-1
+
+p3d_desactivate_col_check Ghead1-1 GrArm1-1
+p3d_desactivate_col_check Ghead1-1 GrArm2-1
+p3d_desactivate_col_check Ghead1-1 GlArm1-1
+p3d_desactivate_col_check Ghead1-1 GlArm2-1
+
+p3d_desactivate_col_check Ghead2-1 GrArm1-1
+p3d_desactivate_col_check Ghead2-1 GrArm2-1
+p3d_desactivate_col_check Ghead2-1 GlArm1-1
+p3d_desactivate_col_check Ghead2-1 GlArm2-1
+
+p3d_desactivate_col_check GrArm1-1 GrArm4-1
+p3d_desactivate_col_check GrArm1-1 GrArm5-1
+p3d_desactivate_col_check GrArm1-1 GrArm6-1
+p3d_desactivate_col_check GrArm1-1 GrArm7-1
+
+p3d_desactivate_col_check GrArm2-1 GrArm5-1
+p3d_desactivate_col_check GrArm2-1 GrArm6-1
+p3d_desactivate_col_check GrArm2-1 GrArm7-1
+
+p3d_desactivate_col_check GrArm3-1 GrArm6-1
+p3d_desactivate_col_check GrArm3-1 GrArm7-1
+
+p3d_desactivate_col_check GrArm4-1 GrArm7-1
+p3d_desactivate_col_check GrArm4-1 GrHandPalm-1
+
+p3d_desactivate_col_check GrArm5-1 GrHandPalm-1
+
+p3d_desactivate_col_check GlArm1-1 GlArm4-1
+p3d_desactivate_col_check GlArm1-1 GlArm5-1
+p3d_desactivate_col_check GlArm1-1 GlArm6-1
+p3d_desactivate_col_check GlArm1-1 GlArm7-1
+
+p3d_desactivate_col_check GlArm2-1 GlArm5-1
+p3d_desactivate_col_check GlArm2-1 GlArm6-1
+p3d_desactivate_col_check GlArm2-1 GlArm7-1
+
+p3d_desactivate_col_check GlArm3-1 GlArm6-1
+p3d_desactivate_col_check GlArm3-1 GlArm7-1
+
+p3d_desactivate_col_check GlArm4-1 GlArm7-1
+p3d_desactivate_col_check GlArm4-1 GlHandPalm-1
+
+p3d_desactivate_col_check GlArm5-1 GlHandPalm-1
+
+#p3d_desactivate_col_check GlHandPalm-1 	BO_glass.glass
+#p3d_desactivate_col_check GlHandPalm-2 	BO_glass.glass
+#p3d_desactivate_col_check GlHandPalm-3 	BO_glass.glass
+#p3d_desactivate_col_check GlFingers-1 	BO_glass.glass
+#p3d_desactivate_col_check GlFingers-2 	BO_glass.glass
+#p3d_desactivate_col_check GlHandThumb-1 BO_glass.glass
+
+
+#p3d_set_body_abs_pos GlHandPalm-1 0.088 1.05679 2.03712 -60 0 0
+#p3d_set_body_abs_pos GlHandPalm-2 0.07212 1.0913 2.09366 -48.79 -2.266 -0.66
+#p3d_set_body_abs_pos GlHandPalm-3 0.13224 1.0934 2.03739 -3.335 -15.251 0.144
+
+#p3d_set_body_abs_pos GlFingers-1 0.065101 1.150 2.150 -40.6 7.67 179.070
+#p3d_set_body_abs_pos GlFingers-2 0.065101 1.220 2.205 -40.6 7.67 179.070
+
+#p3d_set_body_abs_pos GlHandRing-1 0.016931 1.185502 2.16647 -41.23 12.63 174.762
+#p3d_set_body_abs_pos GlHandMiddle-1 0.065101 1.18437 2.17494 -40.6 7.67 179.070
+#p3d_set_body_abs_pos GlHandIndex-1 0.10479 1.18579 2.18311 -40.797 9.81 177.414
+#p3d_set_body_abs_pos GlHandThumb-1 0.13039 1.2185 2.0292 -179.87 -12.40 -0.222
+
+p3d_end_desc
+

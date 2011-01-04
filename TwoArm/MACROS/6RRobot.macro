@@ -1,0 +1,25 @@
+p3d_read_macro base.macro base
+
+p3d_add_desc_jnt P3D_ROTATE 0 0 1479 0 0 1 0.0 -180.0 180.0 7
+
+p3d_read_macro link1.macro link1
+
+p3d_add_desc_jnt P3D_ROTATE 0 0 1479 0 -1 0 -90.0 -180.0 180.0 8
+
+p3d_read_macro link2.macro link2
+
+p3d_add_desc_jnt P3D_ROTATE 0 0 1944 0 -1 0 -90.0 -180.0 180.0 9
+
+p3d_read_macro link3.macro link3
+
+p3d_add_desc_jnt P3D_ROTATE 0 0 2339 0 0 1 0.0 -180.0 180.0 10
+
+p3d_read_macro link4.macro link4
+
+p3d_add_desc_jnt P3D_ROTATE 0 0 2339 0 -1 0 0.0 -90.0 90.0 11
+
+p3d_read_macro link5.macro link5
+
+p3d_add_desc_jnt P3D_ROTATE 0 0 2339 0 0 1 0.0 -180.0 180.0 12
+
+p3d_read_macro link6.macro link6

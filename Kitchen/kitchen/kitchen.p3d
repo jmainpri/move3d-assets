@@ -1,0 +1,1443 @@
+p3d_beg_desc P3D_ENV kitchen
+
+p3d_read_macro jidoHriGripper.macro JIDO_ROBOT
+p3d_read_macro Superman.macro HUMAN
+
+#  p3d_read_macro OB_mesh1_001.macro OB_mesh1_001
+#  p3d_set_obst_pos OB_mesh1_001 -215.3125 18.125 85.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh3_001.macro OB_mesh3_001
+  p3d_set_obst_pos OB_mesh3_001 -214.6875 18.125 84.350135 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh6_001.macro OB_mesh6_001
+  p3d_set_obst_pos OB_mesh6_001 -224.3125 17.875 85.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh8_001.macro OB_mesh8_001
+  p3d_set_obst_pos OB_mesh8_001 -223.6875 18.125 84.350135 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh11_001.macro OB_mesh11_001
+  p3d_set_obst_pos OB_mesh11_001 -219.1875 12.375 84.350135 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh13_001.macro OB_mesh13_001
+  p3d_set_obst_pos OB_mesh13_001 -219.1875 23.875 84.350135 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh15_001.macro OB_mesh15_001
+  p3d_set_obst_pos OB_mesh15_001 -219.131698 12.391697 76.021026 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh25_001.macro OB_mesh25_001
+  p3d_set_obst_pos OB_mesh25_001 -219.131698 23.891696 76.021026 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh35_001.macro OB_mesh35_001
+  p3d_set_obst_pos OB_mesh35_001 -156.178104 -33.095971 0 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh37_001.macro OB_mesh37_001
+  p3d_set_obst_pos OB_mesh37_001 -204.929191 -22.991685 24.983926 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh40_001.macro OB_mesh40_001
+  p3d_set_obst_pos OB_mesh40_001 -204.929191 -22.991685 34.499999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh41_001.macro OB_mesh41_001
+  p3d_set_obst_pos OB_mesh41_001 -172.518333 22.625 34.499999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh43_001.macro OB_mesh43_001
+  p3d_set_obst_pos OB_mesh43_001 -149.139835 -40.183176 40.499999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh46_001.macro OB_mesh46_001
+  p3d_set_obst_pos OB_mesh46_001 -127.177898 -28.575364 93.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh48_001.macro OB_mesh48_001
+  p3d_set_obst_pos OB_mesh48_001 -141.74755 -43.145015 93.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh50_001.macro OB_mesh50_001
+  p3d_set_obst_pos OB_mesh50_001 -147.086467 -37.224767 93.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh53_001.macro OB_mesh53_001
+  p3d_set_obst_pos OB_mesh53_001 -166.131179 -51.097267 93.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh55_001.macro OB_mesh55_001
+  p3d_set_obst_pos OB_mesh55_001 -166.103469 -51.10464 71.162597 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh65_025.macro OB_mesh65_025
+  p3d_set_obst_pos OB_mesh65_025 -139.071044 -45.492797 70.26564 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh75_028.macro OB_mesh75_028
+  p3d_set_obst_pos OB_mesh75_028 -124.501396 -30.923145 70.26564 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh85_001.macro OB_mesh85_001
+  p3d_set_obst_pos OB_mesh85_001 -147.93436 22.628124 89.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh87_001.macro OB_mesh87_001
+  p3d_set_obst_pos OB_mesh87_001 -192.791787 -41.901248 56.1875 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh87_002.macro OB_mesh87_002
+  p3d_set_obst_pos OB_mesh87_002 -194.218135 -41.901249 56.187499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh87_003.macro OB_mesh87_003
+  p3d_set_obst_pos OB_mesh87_003 -194.218128 -40.47491 56.187499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh87_004.macro OB_mesh87_004
+  p3d_set_obst_pos OB_mesh87_004 -192.791783 -40.47491 56.1875 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh87_005.macro OB_mesh87_005
+  p3d_set_obst_pos OB_mesh87_005 -196.339593 -41.901248 56.1875 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh87_006.macro OB_mesh87_006
+  p3d_set_obst_pos OB_mesh87_006 -197.765941 -41.901249 56.187499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh87_007.macro OB_mesh87_007
+  p3d_set_obst_pos OB_mesh87_007 -197.765934 -40.47491 56.187499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh87_008.macro OB_mesh87_008
+  p3d_set_obst_pos OB_mesh87_008 -196.339589 -40.47491 56.1875 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh87_009.macro OB_mesh87_009
+  p3d_set_obst_pos OB_mesh87_009 -189.243997 -41.901248 56.1875 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh87_010.macro OB_mesh87_010
+  p3d_set_obst_pos OB_mesh87_010 -190.670344 -41.901249 56.187499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh87_011.macro OB_mesh87_011
+  p3d_set_obst_pos OB_mesh87_011 -190.670338 -40.47491 56.187499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh87_012.macro OB_mesh87_012
+  p3d_set_obst_pos OB_mesh87_012 -189.243993 -40.47491 56.1875 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh87_013.macro OB_mesh87_013
+  p3d_set_obst_pos OB_mesh87_013 -192.791787 -36.915145 56.1875 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh87_014.macro OB_mesh87_014
+  p3d_set_obst_pos OB_mesh87_014 -194.218135 -36.915146 56.187499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh87_015.macro OB_mesh87_015
+  p3d_set_obst_pos OB_mesh87_015 -194.218128 -35.488807 56.187499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh87_016.macro OB_mesh87_016
+  p3d_set_obst_pos OB_mesh87_016 -192.791783 -35.488807 56.1875 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh87_017.macro OB_mesh87_017
+  p3d_set_obst_pos OB_mesh87_017 -189.243997 -36.915145 56.1875 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh87_018.macro OB_mesh87_018
+  p3d_set_obst_pos OB_mesh87_018 -190.670344 -36.915146 56.187499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh87_019.macro OB_mesh87_019
+  p3d_set_obst_pos OB_mesh87_019 -190.670338 -35.488807 56.187499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh87_020.macro OB_mesh87_020
+  p3d_set_obst_pos OB_mesh87_020 -189.243993 -35.488807 56.1875 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh87_021.macro OB_mesh87_021
+  p3d_set_obst_pos OB_mesh87_021 -196.339593 -36.915145 56.1875 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh87_022.macro OB_mesh87_022
+  p3d_set_obst_pos OB_mesh87_022 -197.765941 -36.915146 56.187499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh87_023.macro OB_mesh87_023
+  p3d_set_obst_pos OB_mesh87_023 -197.765934 -35.488807 56.187499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh87_024.macro OB_mesh87_024
+  p3d_set_obst_pos OB_mesh87_024 -196.339589 -35.488807 56.1875 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh87_025.macro OB_mesh87_025
+  p3d_set_obst_pos OB_mesh87_025 -199.887399 -41.901248 56.1875 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh87_026.macro OB_mesh87_026
+  p3d_set_obst_pos OB_mesh87_026 -201.313747 -41.901249 56.187499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh87_027.macro OB_mesh87_027
+  p3d_set_obst_pos OB_mesh87_027 -201.31374 -40.47491 56.187499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh87_028.macro OB_mesh87_028
+  p3d_set_obst_pos OB_mesh87_028 -199.887395 -40.47491 56.1875 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh87_029.macro OB_mesh87_029
+  p3d_set_obst_pos OB_mesh87_029 -199.887399 -36.915145 56.1875 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh87_030.macro OB_mesh87_030
+  p3d_set_obst_pos OB_mesh87_030 -201.313747 -36.915146 56.187499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh87_031.macro OB_mesh87_031
+  p3d_set_obst_pos OB_mesh87_031 -201.31374 -35.488807 56.187499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh87_032.macro OB_mesh87_032
+  p3d_set_obst_pos OB_mesh87_032 -199.887395 -35.488807 56.1875 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh88_001.macro OB_mesh88_001
+  p3d_set_obst_pos OB_mesh88_001 -188.455566 -38.374999 63.937499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh90_001.macro OB_mesh90_001
+  p3d_set_obst_pos OB_mesh90_001 -193.649031 -40.882049 63.820413 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh91_001.macro OB_mesh91_001
+  p3d_set_obst_pos OB_mesh91_001 -193.649031 -42.382049 63.820413 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh90_002.macro OB_mesh90_002
+  p3d_set_obst_pos OB_mesh90_002 -193.649031 -34.422748 63.820413 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh91_002.macro OB_mesh91_002
+  p3d_set_obst_pos OB_mesh91_002 -193.649031 -35.922748 63.820413 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh90_003.macro OB_mesh90_003
+  p3d_set_obst_pos OB_mesh90_003 -193.649031 -37.640449 63.820413 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh91_003.macro OB_mesh91_003
+  p3d_set_obst_pos OB_mesh91_003 -193.649031 -39.140449 63.820413 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh92_001.macro OB_mesh92_001
+  p3d_set_obst_pos OB_mesh92_001 -188.471191 -38.395706 80.812499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh90_004.macro OB_mesh90_004
+  p3d_set_obst_pos OB_mesh90_004 -193.664656 -40.902755 80.695413 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh91_004.macro OB_mesh91_004
+  p3d_set_obst_pos OB_mesh91_004 -193.664656 -42.402755 80.695413 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh90_005.macro OB_mesh90_005
+  p3d_set_obst_pos OB_mesh90_005 -193.664656 -34.443458 80.695413 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh91_005.macro OB_mesh91_005
+  p3d_set_obst_pos OB_mesh91_005 -193.664656 -35.943458 80.695413 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh90_006.macro OB_mesh90_006
+  p3d_set_obst_pos OB_mesh90_006 -193.664656 -37.661155 80.695413 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh91_006.macro OB_mesh91_006
+  p3d_set_obst_pos OB_mesh91_006 -193.664656 -39.161155 80.695413 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh87_033.macro OB_mesh87_033
+  p3d_set_obst_pos OB_mesh87_033 -192.807412 -41.921954 73.0625 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh87_034.macro OB_mesh87_034
+  p3d_set_obst_pos OB_mesh87_034 -194.23376 -41.921955 73.062499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh87_035.macro OB_mesh87_035
+  p3d_set_obst_pos OB_mesh87_035 -194.233753 -40.495616 73.062499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh87_036.macro OB_mesh87_036
+  p3d_set_obst_pos OB_mesh87_036 -192.807408 -40.495616 73.0625 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh87_037.macro OB_mesh87_037
+  p3d_set_obst_pos OB_mesh87_037 -196.355218 -41.921954 73.0625 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh87_038.macro OB_mesh87_038
+  p3d_set_obst_pos OB_mesh87_038 -197.781566 -41.921955 73.062499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh87_039.macro OB_mesh87_039
+  p3d_set_obst_pos OB_mesh87_039 -197.781559 -40.495616 73.062499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh87_040.macro OB_mesh87_040
+  p3d_set_obst_pos OB_mesh87_040 -196.355214 -40.495616 73.0625 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh87_041.macro OB_mesh87_041
+  p3d_set_obst_pos OB_mesh87_041 -189.259622 -41.921954 73.0625 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh87_042.macro OB_mesh87_042
+  p3d_set_obst_pos OB_mesh87_042 -190.685969 -41.921955 73.062499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh87_043.macro OB_mesh87_043
+  p3d_set_obst_pos OB_mesh87_043 -190.685963 -40.495616 73.062499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh87_044.macro OB_mesh87_044
+  p3d_set_obst_pos OB_mesh87_044 -189.259618 -40.495616 73.0625 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh87_045.macro OB_mesh87_045
+  p3d_set_obst_pos OB_mesh87_045 -192.807412 -36.935855 73.0625 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh87_046.macro OB_mesh87_046
+  p3d_set_obst_pos OB_mesh87_046 -194.23376 -36.935856 73.062499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh87_047.macro OB_mesh87_047
+  p3d_set_obst_pos OB_mesh87_047 -194.233753 -35.509517 73.062499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh87_048.macro OB_mesh87_048
+  p3d_set_obst_pos OB_mesh87_048 -192.807408 -35.509517 73.0625 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh87_049.macro OB_mesh87_049
+  p3d_set_obst_pos OB_mesh87_049 -189.259622 -36.935855 73.0625 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh87_050.macro OB_mesh87_050
+  p3d_set_obst_pos OB_mesh87_050 -190.685969 -36.935856 73.062499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh87_051.macro OB_mesh87_051
+  p3d_set_obst_pos OB_mesh87_051 -190.685963 -35.509517 73.062499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh87_052.macro OB_mesh87_052
+  p3d_set_obst_pos OB_mesh87_052 -189.259618 -35.509517 73.0625 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh87_053.macro OB_mesh87_053
+  p3d_set_obst_pos OB_mesh87_053 -196.355218 -36.935855 73.0625 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh87_054.macro OB_mesh87_054
+  p3d_set_obst_pos OB_mesh87_054 -197.781566 -36.935856 73.062499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh87_055.macro OB_mesh87_055
+  p3d_set_obst_pos OB_mesh87_055 -197.781559 -35.509517 73.062499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh87_056.macro OB_mesh87_056
+  p3d_set_obst_pos OB_mesh87_056 -196.355214 -35.509517 73.0625 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh87_057.macro OB_mesh87_057
+  p3d_set_obst_pos OB_mesh87_057 -199.903024 -41.921954 73.0625 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh87_058.macro OB_mesh87_058
+  p3d_set_obst_pos OB_mesh87_058 -201.329372 -41.921955 73.062499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh87_059.macro OB_mesh87_059
+  p3d_set_obst_pos OB_mesh87_059 -201.329365 -40.495616 73.062499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh87_060.macro OB_mesh87_060
+  p3d_set_obst_pos OB_mesh87_060 -199.90302 -40.495616 73.0625 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh87_061.macro OB_mesh87_061
+  p3d_set_obst_pos OB_mesh87_061 -199.903024 -36.935855 73.0625 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh87_062.macro OB_mesh87_062
+  p3d_set_obst_pos OB_mesh87_062 -201.329372 -36.935856 73.062499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh87_063.macro OB_mesh87_063
+  p3d_set_obst_pos OB_mesh87_063 -201.329365 -35.509517 73.062499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh87_064.macro OB_mesh87_064
+  p3d_set_obst_pos OB_mesh87_064 -199.90302 -35.509517 73.0625 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh94_001.macro OB_mesh94_001
+  p3d_set_obst_pos OB_mesh94_001 -131.325851 77.125 34.499999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh96_001.macro OB_mesh96_001
+  p3d_set_obst_pos OB_mesh96_001 -157.219055 89.375 35.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh98_001.macro OB_mesh98_001
+  p3d_set_obst_pos OB_mesh98_001 -225.9375 17.625 41.201614 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh101_001.macro OB_mesh101_001
+  p3d_set_obst_pos OB_mesh101_001 -170.808547 -19.624999 9.312499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh103_001.macro OB_mesh103_001
+  p3d_set_obst_pos OB_mesh103_001 -167.808547 -19.625 9.312499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh105_001.macro OB_mesh105_001
+  p3d_set_obst_pos OB_mesh105_001 -169.3125 -20.187499 7.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh107_001.macro OB_mesh107_001
+  p3d_set_obst_pos OB_mesh107_001 -169.3125 -19.999998 11.124999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh111_001.macro OB_mesh111_001
+  p3d_set_obst_pos OB_mesh111_001 -182.3125 -19.999998 7.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh115_001.macro OB_mesh115_001
+  p3d_set_obst_pos OB_mesh115_001 -156.3125 -19.999999 7.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh119_001.macro OB_mesh119_001
+  p3d_set_obst_pos OB_mesh119_001 -182.3125 -19.999998 4.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh122_001.macro OB_mesh122_001
+  p3d_set_obst_pos OB_mesh122_001 -156.3125 -19.999999 4.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh125_001.macro OB_mesh125_001
+  p3d_set_obst_pos OB_mesh125_001 -156.3125 -19.999998 11.124999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh128_001.macro OB_mesh128_001
+  p3d_set_obst_pos OB_mesh128_001 -182.3125 -19.999998 11.124999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh131_001.macro OB_mesh131_001
+  p3d_set_obst_pos OB_mesh131_001 -169.3125 -19.999999 4.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh135_001.macro OB_mesh135_001
+  p3d_set_obst_pos OB_mesh135_001 -172.098129 20.203742 0 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh137_001.macro OB_mesh137_001
+  p3d_set_obst_pos OB_mesh137_001 -131.575851 68.75 0 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh139_001.macro OB_mesh139_001
+  p3d_set_obst_pos OB_mesh139_001 -206.8125 -21.999999 89.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh140_001.macro OB_mesh140_001
+  p3d_set_obst_pos OB_mesh140_001 -200.9375 62.75 89.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh143_001.macro OB_mesh143_001
+  p3d_set_obst_pos OB_mesh143_001 -110.8125 74.625 89.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh146_001.macro OB_mesh146_001
+  p3d_set_obst_pos OB_mesh146_001 -202.687499 27.843299 4.499999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh148_001.macro OB_mesh148_001
+  p3d_set_obst_pos OB_mesh148_001 -186.565948 -22.628449 4.499999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh149_001.macro OB_mesh149_001
+  p3d_set_obst_pos OB_mesh149_001 -204.565948 -4.628448 4.499999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh150_001.macro OB_mesh150_001
+  p3d_set_obst_pos OB_mesh150_001 -196.4375 -38.374999 63.187499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh151_001.macro OB_mesh151_001
+  p3d_set_obst_pos OB_mesh151_001 -196.4375 -38.374999 71.624999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh152_001.macro OB_mesh152_001
+  p3d_set_obst_pos OB_mesh152_001 -196.4375 -38.374999 80.062499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh153_001.macro OB_mesh153_001
+  p3d_set_obst_pos OB_mesh153_001 -196.3125 -38.374999 53.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh158_001.macro OB_mesh158_001
+  p3d_set_obst_pos OB_mesh158_001 -204.374999 52.625 0 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh160_001.macro OB_mesh160_001
+  p3d_set_obst_pos OB_mesh160_001 -83.062499 74.625 0 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh162_001.macro OB_mesh162_001
+  p3d_set_obst_pos OB_mesh162_001 -120.562499 74.625 0 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh164_001.macro OB_mesh164_001
+  p3d_set_obst_pos OB_mesh164_001 -169.3125 -32.373184 0 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh165_001.macro OB_mesh165_001
+  p3d_set_obst_pos OB_mesh165_001 -155.9375 -43.685684 6.187499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh166_001.macro OB_mesh166_001
+  p3d_set_obst_pos OB_mesh166_001 -182.6875 -32.435684 6.312499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh167_001.macro OB_mesh167_001
+  p3d_set_obst_pos OB_mesh167_001 -182.6875 -43.685684 6.187499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh168_001.macro OB_mesh168_001
+  p3d_set_obst_pos OB_mesh168_001 -182.59375 -41.373184 7.249999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh179_001.macro OB_mesh179_001
+  p3d_set_obst_pos OB_mesh179_001 -128.061157 -11.005834 0 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh181_001.macro OB_mesh181_001
+  p3d_set_obst_pos OB_mesh181_001 -145.385276 -28.108981 0 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh183_001.macro OB_mesh183_001
+  p3d_set_obst_pos OB_mesh183_001 -156.3125 22.625 0 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh186_001.macro OB_mesh186_001
+  p3d_set_obst_pos OB_mesh186_001 -102.418182 71.337482 1.378749 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh189_002.macro OB_mesh189_002
+  p3d_set_obst_pos OB_mesh189_002 -118.426692 60.699472 0 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh191_002.macro OB_mesh191_002
+  p3d_set_obst_pos OB_mesh191_002 -86.409671 60.699472 0 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh193_002.macro OB_mesh193_002
+  p3d_set_obst_pos OB_mesh193_002 -116.518302 81.396038 0 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh194_001.macro OB_mesh194_001
+  p3d_set_obst_pos OB_mesh194_001 -88.318054 81.396038 0 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh197_001.macro OB_mesh197_001
+  p3d_set_obst_pos OB_mesh197_001 -104.401699 57.036888 27.93161 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh206_001.macro OB_mesh206_001
+  p3d_set_obst_pos OB_mesh206_001 -111.237403 58.586874 27.172927 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh208_001.macro OB_mesh208_001
+  p3d_set_obst_pos OB_mesh208_001 -111.237403 59.671358 27.927024 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh211_001.macro OB_mesh211_001
+  p3d_set_obst_pos OB_mesh211_001 -100.007347 57.036888 27.93161 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh217_001.macro OB_mesh217_001
+  p3d_set_obst_pos OB_mesh217_001 -93.598957 58.586874 27.172927 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh219_001.macro OB_mesh219_001
+  p3d_set_obst_pos OB_mesh219_001 -93.598953 59.671358 27.927024 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh222_001.macro OB_mesh222_001
+  p3d_set_obst_pos OB_mesh222_001 -102.418182 58.58077 2.757498 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh224_001.macro OB_mesh224_001
+  p3d_set_obst_pos OB_mesh224_001 -102.418182 65.722908 3.008863 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh225_001.macro OB_mesh225_001
+  p3d_set_obst_pos OB_mesh225_001 -102.418178 56.746892 22.399019 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh236_001.macro OB_mesh236_001
+  p3d_set_obst_pos OB_mesh236_001 -103.360669 70.737823 1.378749 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh240_001.macro OB_mesh240_001
+  p3d_set_obst_pos OB_mesh240_001 -147.979522 84.289951 36.102638 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh241_001.macro OB_mesh241_001
+  p3d_set_obst_pos OB_mesh241_001 -153.761184 84.598655 36.102638 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh242_001.macro OB_mesh242_001
+  p3d_set_obst_pos OB_mesh242_001 -150.764404 76.09864 36.102638 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh243_001.macro OB_mesh243_001
+  p3d_set_obst_pos OB_mesh243_001 -150.514358 76.09864 35.87955 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh248_001.macro OB_mesh248_001
+  p3d_set_obst_pos OB_mesh248_001 -166.04927 84.289951 36.102638 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh249_001.macro OB_mesh249_001
+  p3d_set_obst_pos OB_mesh249_001 -160.267616 84.598655 36.102638 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh250_001.macro OB_mesh250_001
+  p3d_set_obst_pos OB_mesh250_001 -163.264404 76.09864 36.102638 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh251_001.macro OB_mesh251_001
+  p3d_set_obst_pos OB_mesh251_001 -163.514442 76.09864 35.87955 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh256_001.macro OB_mesh256_001
+  p3d_set_obst_pos OB_mesh256_001 -157.014404 63.000976 0 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh258_001.macro OB_mesh258_001
+  p3d_set_obst_pos OB_mesh258_001 -157.014404 63.544679 0 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh260_001.macro OB_mesh260_001
+  p3d_set_obst_pos OB_mesh260_001 -151.110717 81.21907 36.431812 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh263_001.macro OB_mesh263_001
+  p3d_set_obst_pos OB_mesh263_001 -163.264404 71.428062 36.431812 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh268_001.macro OB_mesh268_001
+  p3d_set_obst_pos OB_mesh268_001 -163.264404 71.428058 36.431812 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh271_001.macro OB_mesh271_001
+  p3d_set_obst_pos OB_mesh271_001 -150.821762 71.498035 36.431812 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh274_001.macro OB_mesh274_001
+  p3d_set_obst_pos OB_mesh274_001 -163.013931 81.21907 36.431812 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh277_001.macro OB_mesh277_001
+  p3d_set_obst_pos OB_mesh277_001 -157.014404 63.111528 31.94876 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh280_001.macro OB_mesh280_001
+  p3d_set_obst_pos OB_mesh280_001 -157.014404 61.808866 32.396331 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh282_001.macro OB_mesh282_001
+  p3d_set_obst_pos OB_mesh282_001 -157.014404 76.098575 36.048427 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh286_001.macro OB_mesh286_001
+  p3d_set_obst_pos OB_mesh286_001 -157.014404 77.453079 0 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh287_001.macro OB_mesh287_001
+  p3d_set_obst_pos OB_mesh287_001 -166.03598 61.724191 33.17361 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh315_001.macro OB_mesh315_001
+  p3d_set_obst_pos OB_mesh315_001 -144.756271 62.080575 33.17361 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh343_001.macro OB_mesh343_001
+  p3d_set_obst_pos OB_mesh343_001 -147.992813 61.724191 33.17361 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh371_004.macro OB_mesh371_004
+  p3d_set_obst_pos OB_mesh371_004 -169.272537 62.080575 33.17361 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh399_004.macro OB_mesh399_004
+  p3d_set_obst_pos OB_mesh399_004 -157.014404 63.000976 10.223604 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh420_006.macro OB_mesh420_006
+  p3d_set_obst_pos OB_mesh420_006 -157.014404 61.242881 27.507392 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh429_012.macro OB_mesh429_012
+  p3d_set_obst_pos OB_mesh429_012 -156.996337 62.524213 14.16355 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh431_012.macro OB_mesh431_012
+  p3d_set_obst_pos OB_mesh431_012 -157.014404 63.544679 10.223604 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh437_012.macro OB_mesh437_012
+  p3d_set_obst_pos OB_mesh437_012 -156.520022 82.183506 0 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh441_012.macro OB_mesh441_012
+  p3d_set_obst_pos OB_mesh441_012 -187.124999 -38.156247 57.499999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh442_012.macro OB_mesh442_012
+  p3d_set_obst_pos OB_mesh442_012 -186.9375 -38.156249 54.499999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh446_012.macro OB_mesh446_012
+  p3d_set_obst_pos OB_mesh446_012 -186.9375 -42.374999 57.499999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh450_012.macro OB_mesh450_012
+  p3d_set_obst_pos OB_mesh450_012 -186.9375 -33.937499 57.499999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh454_012.macro OB_mesh454_012
+  p3d_set_obst_pos OB_mesh454_012 -186.9375 -42.374999 86.499999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh457_001.macro OB_mesh457_001
+  p3d_set_obst_pos OB_mesh457_001 -186.9375 -33.937499 86.499999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh460_001.macro OB_mesh460_001
+  p3d_set_obst_pos OB_mesh460_001 -186.9375 -33.937499 54.499999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh463_001.macro OB_mesh463_001
+  p3d_set_obst_pos OB_mesh463_001 -186.9375 -42.374999 54.499999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh466_001.macro OB_mesh466_001
+  p3d_set_obst_pos OB_mesh466_001 -186.9375 -38.156249 86.499999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh101_002.macro OB_mesh101_002
+  p3d_set_obst_pos OB_mesh101_002 -186.1875 -33.937499 59.662715 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh103_002.macro OB_mesh103_002
+  p3d_set_obst_pos OB_mesh103_002 -186.1875 -33.9375 56.662715 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh470_001.macro OB_mesh470_001
+  p3d_set_obst_pos OB_mesh470_001 -157.391654 80.625 59.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh473_001.macro OB_mesh473_001
+  p3d_set_obst_pos OB_mesh473_001 -157.3125 78.625 85.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh475_001.macro OB_mesh475_001
+  p3d_set_obst_pos OB_mesh475_001 -169.116233 88.625 87.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh477_001.macro OB_mesh477_001
+  p3d_set_obst_pos OB_mesh477_001 -145.883766 88.625 87.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh479_001.macro OB_mesh479_001
+  p3d_set_obst_pos OB_mesh479_001 -118.691997 -20.816942 0 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh481_001.macro OB_mesh481_001
+  p3d_set_obst_pos OB_mesh481_001 -145.457168 -46.496318 0 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh483_001.macro OB_mesh483_001
+  p3d_set_obst_pos OB_mesh483_001 -190.75 -46.874999 0 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh485_001.macro OB_mesh485_001
+  p3d_set_obst_pos OB_mesh485_001 -157.3125 78.00341 83.734397 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh488_001.macro OB_mesh488_001
+  p3d_set_obst_pos OB_mesh488_001 -212.973548 -34.016002 35.635425 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh489_001.macro OB_mesh489_001
+  p3d_set_obst_pos OB_mesh489_001 -212.973548 -34.016 36.38042 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh490_001.macro OB_mesh490_001
+  p3d_set_obst_pos OB_mesh490_001 -212.973548 -34.016 43.128356 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh491_002.macro OB_mesh491_002
+  p3d_set_obst_pos OB_mesh491_002 -206.667503 -27.716786 47.098464 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh492_002.macro OB_mesh492_002
+  p3d_set_obst_pos OB_mesh492_002 -206.403488 -27.446142 47.062454 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh493_002.macro OB_mesh493_002
+  p3d_set_obst_pos OB_mesh493_002 -206.378021 -27.42235 46.543682 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh494_002.macro OB_mesh494_002
+  p3d_set_obst_pos OB_mesh494_002 -212.973548 -34.016 44.074882 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh495_003.macro OB_mesh495_003
+  p3d_set_obst_pos OB_mesh495_003 -205.155258 -27.6983 45.924095 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh496_003.macro OB_mesh496_003
+  p3d_set_obst_pos OB_mesh496_003 -205.106353 -27.74983 45.686164 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh497_001.macro OB_mesh497_001
+  p3d_set_obst_pos OB_mesh497_001 -212.969009 -34.020528 42.582401 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh498_001.macro OB_mesh498_001
+  p3d_set_obst_pos OB_mesh498_001 -209.109092 -30.886934 49.832176 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh499_001.macro OB_mesh499_001
+  p3d_set_obst_pos OB_mesh499_001 -211.804611 -34.333425 45.171298 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh500_001.macro OB_mesh500_001
+  p3d_set_obst_pos OB_mesh500_001 -209.157028 -31.685643 49.162708 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh501_001.macro OB_mesh501_001
+  p3d_set_obst_pos OB_mesh501_001 -210.488349 -33.003654 45.291465 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh502_001.macro OB_mesh502_001
+  p3d_set_obst_pos OB_mesh502_001 -208.813743 -31.324936 49.26419 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh503_001.macro OB_mesh503_001
+  p3d_set_obst_pos OB_mesh503_001 -212.158836 -34.679052 44.526897 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh504_001.macro OB_mesh504_001
+  p3d_set_obst_pos OB_mesh504_001 -212.303741 -34.695562 44.592269 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh505_001.macro OB_mesh505_001
+  p3d_set_obst_pos OB_mesh505_001 -208.802566 -31.191762 49.875648 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh506_001.macro OB_mesh506_001
+  p3d_set_obst_pos OB_mesh506_001 -209.354095 -30.395986 49.40113 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh507_001.macro OB_mesh507_001
+  p3d_set_obst_pos OB_mesh507_001 -207.923004 -28.96239 47.50653 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh508_001.macro OB_mesh508_001
+  p3d_set_obst_pos OB_mesh508_001 -206.941116 -27.966839 47.419605 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh509_001.macro OB_mesh509_001
+  p3d_set_obst_pos OB_mesh509_001 -208.909782 -29.951563 49.240425 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh510_001.macro OB_mesh510_001
+  p3d_set_obst_pos OB_mesh510_001 -205.20475 -27.641818 46.60744 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh511_001.macro OB_mesh511_001
+  p3d_set_obst_pos OB_mesh511_001 -205.110542 -27.748384 42.979915 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh512_001.macro OB_mesh512_001
+  p3d_set_obst_pos OB_mesh512_001 -205.111557 -27.751677 42.92786 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh513_001.macro OB_mesh513_001
+  p3d_set_obst_pos OB_mesh513_001 -205.109375 -27.748714 42.927639 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh514_001.macro OB_mesh514_001
+  p3d_set_obst_pos OB_mesh514_001 -205.107795 -27.746209 43.122024 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh515_001.macro OB_mesh515_001
+  p3d_set_obst_pos OB_mesh515_001 -205.106094 -27.747241 42.954113 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh516_001.macro OB_mesh516_001
+  p3d_set_obst_pos OB_mesh516_001 -205.480598 -28.122909 43.7872 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh517_001.macro OB_mesh517_001
+  p3d_set_obst_pos OB_mesh517_001 -215.802169 -31.188655 36.269527 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh518_001.macro OB_mesh518_001
+  p3d_set_obst_pos OB_mesh518_001 -215.810447 -31.187575 36.275157 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh519_001.macro OB_mesh519_001
+  p3d_set_obst_pos OB_mesh519_001 -215.801963 -31.19825 36.24179 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh520_001.macro OB_mesh520_001
+  p3d_set_obst_pos OB_mesh520_001 -215.800598 -31.188142 36.799358 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh521_001.macro OB_mesh521_001
+  p3d_set_obst_pos OB_mesh521_001 -196.200622 -32.187499 57.499999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh523_001.macro OB_mesh523_001
+  p3d_set_obst_pos OB_mesh523_001 -196.200622 -31.999999 54.499999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh527_001.macro OB_mesh527_001
+  p3d_set_obst_pos OB_mesh527_001 -189.3125 -31.999999 57.499999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh531_001.macro OB_mesh531_001
+  p3d_set_obst_pos OB_mesh531_001 -203.088745 -31.999999 57.499999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh535_001.macro OB_mesh535_001
+  p3d_set_obst_pos OB_mesh535_001 -189.3125 -31.999999 86.499999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh538_001.macro OB_mesh538_001
+  p3d_set_obst_pos OB_mesh538_001 -203.088745 -31.999999 86.499999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh541_001.macro OB_mesh541_001
+  p3d_set_obst_pos OB_mesh541_001 -203.088745 -31.999999 54.499999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh544_001.macro OB_mesh544_001
+  p3d_set_obst_pos OB_mesh544_001 -189.3125 -31.999999 54.499999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh547_001.macro OB_mesh547_001
+  p3d_set_obst_pos OB_mesh547_001 -196.200622 -31.999999 86.499999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh551_001.macro OB_mesh551_001
+  p3d_set_obst_pos OB_mesh551_001 -144.93383 -11.531753 17.374999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh553_001.macro OB_mesh553_001
+  p3d_set_obst_pos OB_mesh553_001 -136.448553 -20.017038 0 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh558_001.macro OB_mesh558_001
+  p3d_set_obst_pos OB_mesh558_001 -145.895873 -10.381126 29.874999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh558_002.macro OB_mesh558_002
+  p3d_set_obst_pos OB_mesh558_002 -145.895873 -10.381126 12.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh559_001.macro OB_mesh559_001
+  p3d_set_obst_pos OB_mesh559_001 -144.93383 -11.531753 3.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh561_001.macro OB_mesh561_001
+  p3d_set_obst_pos OB_mesh561_001 -145.617194 -10.848397 5.395674 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh571_001.macro OB_mesh571_001
+  p3d_set_obst_pos OB_mesh571_001 -173.859016 -69.747795 0 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh575_001.macro OB_mesh575_001
+  p3d_set_obst_pos OB_mesh575_001 -178.109024 -65.497798 0 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh579_001.macro OB_mesh579_001
+  p3d_set_obst_pos OB_mesh579_001 -173.859016 -61.247795 0 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh583_001.macro OB_mesh583_001
+  p3d_set_obst_pos OB_mesh583_001 -169.609024 -65.497798 0 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh587_001.macro OB_mesh587_001
+  p3d_set_obst_pos OB_mesh587_001 -150.914283 -69.541442 0 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh591_001.macro OB_mesh591_001
+  p3d_set_obst_pos OB_mesh591_001 -153.902664 -64.442525 0 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh595_001.macro OB_mesh595_001
+  p3d_set_obst_pos OB_mesh595_001 -148.803749 -61.454149 0 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh599_001.macro OB_mesh599_001
+  p3d_set_obst_pos OB_mesh599_001 -145.815376 -66.55307 0 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh603_001.macro OB_mesh603_001
+  p3d_set_obst_pos OB_mesh603_001 -129.14841 -55.769454 0 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh607_001.macro OB_mesh607_001
+  p3d_set_obst_pos OB_mesh607_001 -134.247322 -52.78108 0 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh611_001.macro OB_mesh611_001
+  p3d_set_obst_pos OB_mesh611_001 -131.258949 -47.682161 0 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh615_001.macro OB_mesh615_001
+  p3d_set_obst_pos OB_mesh615_001 -126.16003 -50.670537 0 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh619_005.macro OB_mesh619_005
+  p3d_set_obst_pos OB_mesh619_005 -109.922264 -39.692642 0 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh623_005.macro OB_mesh623_005
+  p3d_set_obst_pos OB_mesh623_005 -115.522617 -38.169544 0 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh627_005.macro OB_mesh627_005
+  p3d_set_obst_pos OB_mesh627_005 -113.999519 -32.56919 0 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh631_005.macro OB_mesh631_005
+  p3d_set_obst_pos OB_mesh631_005 -108.399162 -34.092288 0 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh635_005.macro OB_mesh635_005
+  p3d_set_obst_pos OB_mesh635_005 -169.450843 -21.772899 28.430572 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh637_005.macro OB_mesh637_005
+  p3d_set_obst_pos OB_mesh637_005 -169.450843 -29.491649 14.624999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh639_005.macro OB_mesh639_005
+  p3d_set_obst_pos OB_mesh639_005 -180.47422 -21.772899 14.624999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh641_005.macro OB_mesh641_005
+  p3d_set_obst_pos OB_mesh641_005 -167.052368 -21.772899 14.624999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh643_005.macro OB_mesh643_005
+  p3d_set_obst_pos OB_mesh643_005 -167.421623 -20.762899 16.372264 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh668_001.macro OB_mesh668_001
+  p3d_set_obst_pos OB_mesh668_001 -180.001914 -20.762899 16.372264 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh678_001.macro OB_mesh678_001
+  p3d_set_obst_pos OB_mesh678_001 -177.160873 -19.733837 16.451856 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh685_001.macro OB_mesh685_001
+  p3d_set_obst_pos OB_mesh685_001 -177.160873 -19.733837 25.266155 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh695_001.macro OB_mesh695_001
+  p3d_set_obst_pos OB_mesh695_001 -177.160865 -19.343022 18.059402 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh700_001.macro OB_mesh700_001
+  p3d_set_obst_pos OB_mesh700_001 -101.812506 65.750005 69.499999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh701_001.macro OB_mesh701_001
+  p3d_set_obst_pos OB_mesh701_001 -101.812506 65.750005 69.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh702_001.macro OB_mesh702_001
+  p3d_set_obst_pos OB_mesh702_001 -101.812504 71.375005 86.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh703_001.macro OB_mesh703_001
+  p3d_set_obst_pos OB_mesh703_001 -101.812503 60.25 69.000001 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh704_001.macro OB_mesh704_001
+  p3d_set_obst_pos OB_mesh704_001 -101.812504 70.750005 69.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh705_001.macro OB_mesh705_001
+  p3d_set_obst_pos OB_mesh705_001 -101.812504 71.125005 69.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh706_001.macro OB_mesh706_001
+  p3d_set_obst_pos OB_mesh706_001 -119.395835 66 68.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh707_001.macro OB_mesh707_001
+  p3d_set_obst_pos OB_mesh707_001 -84.229168 65.999999 68.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh708_001.macro OB_mesh708_001
+  p3d_set_obst_pos OB_mesh708_001 -84.5625 59.999999 68.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh709_001.macro OB_mesh709_001
+  p3d_set_obst_pos OB_mesh709_001 -119.0625 60 68.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh700_002.macro OB_mesh700_002
+  p3d_set_obst_pos OB_mesh700_002 -101.812506 65.750005 88.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh701_002.macro OB_mesh701_002
+  p3d_set_obst_pos OB_mesh701_002 -101.812506 65.750005 89.499999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh703_002.macro OB_mesh703_002
+  p3d_set_obst_pos OB_mesh703_002 -101.812503 60.25 88.500001 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh702_002.macro OB_mesh702_002
+  p3d_set_obst_pos OB_mesh702_002 -101.812504 71.375005 77.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh710_001.macro OB_mesh710_001
+  p3d_set_obst_pos OB_mesh710_001 -101.8125 60.25 70.499999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh711_001.macro OB_mesh711_001
+  p3d_set_obst_pos OB_mesh711_001 -103.5 59.25 69.187499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh712_001.macro OB_mesh712_001
+  p3d_set_obst_pos OB_mesh712_001 -110.8125 59.125001 72.187499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh713_001.macro OB_mesh713_001
+  p3d_set_obst_pos OB_mesh713_001 -110.8125 59.625001 72.187499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh711_002.macro OB_mesh711_002
+  p3d_set_obst_pos OB_mesh711_002 -118.125 59.25 69.187499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh714_001.macro OB_mesh714_001
+  p3d_set_obst_pos OB_mesh714_001 -110.8125 59.25 69.1875 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh714_002.macro OB_mesh714_002
+  p3d_set_obst_pos OB_mesh714_002 -110.8125 59.25 86.8125 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh101_003.macro OB_mesh101_003
+  p3d_set_obst_pos OB_mesh101_003 -103.499999 58.5 74.350211 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh103_003.macro OB_mesh103_003
+  p3d_set_obst_pos OB_mesh103_003 -103.5 58.499999 71.350211 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh715_001.macro OB_mesh715_001
+  p3d_set_obst_pos OB_mesh715_001 -85.5 59.25 69.187499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh716_001.macro OB_mesh716_001
+  p3d_set_obst_pos OB_mesh716_001 -92.812499 59.25 86.8125 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh715_002.macro OB_mesh715_002
+  p3d_set_obst_pos OB_mesh715_002 -100.125 59.25 69.187499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh716_002.macro OB_mesh716_002
+  p3d_set_obst_pos OB_mesh716_002 -92.812499 59.25 69.1875 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh717_001.macro OB_mesh717_001
+  p3d_set_obst_pos OB_mesh717_001 -92.8125 59.625001 72.187499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh718_001.macro OB_mesh718_001
+  p3d_set_obst_pos OB_mesh718_001 -92.8125 59.125001 72.187499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh101_004.macro OB_mesh101_004
+  p3d_set_obst_pos OB_mesh101_004 -100.124999 58.5 74.350211 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh103_004.macro OB_mesh103_004
+  p3d_set_obst_pos OB_mesh103_004 -100.125 58.499999 71.350211 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh702_003.macro OB_mesh702_003
+  p3d_set_obst_pos OB_mesh702_003 -101.812504 71.375005 68.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh719_001.macro OB_mesh719_001
+  p3d_set_obst_pos OB_mesh719_001 -119.3125 71.625 89.452743 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh720_001.macro OB_mesh720_001
+  p3d_set_obst_pos OB_mesh720_001 -130.312496 83.749997 54.499999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh721_001.macro OB_mesh721_001
+  p3d_set_obst_pos OB_mesh721_001 -130.312496 83.749997 54.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh722_001.macro OB_mesh722_001
+  p3d_set_obst_pos OB_mesh722_001 -130.312494 89.374997 86.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh723_001.macro OB_mesh723_001
+  p3d_set_obst_pos OB_mesh723_001 -130.312505 78.249999 53.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh724_001.macro OB_mesh724_001
+  p3d_set_obst_pos OB_mesh724_001 -130.312494 88.749997 54.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh725_001.macro OB_mesh725_001
+  p3d_set_obst_pos OB_mesh725_001 -130.312494 89.124997 54.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh726_001.macro OB_mesh726_001
+  p3d_set_obst_pos OB_mesh726_001 -121.729168 83.999999 53.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh727_001.macro OB_mesh727_001
+  p3d_set_obst_pos OB_mesh727_001 -138.895835 84 53.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh728_001.macro OB_mesh728_001
+  p3d_set_obst_pos OB_mesh728_001 -138.5625 78 53.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh729_001.macro OB_mesh729_001
+  p3d_set_obst_pos OB_mesh729_001 -122.0625 77.999999 53.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh720_002.macro OB_mesh720_002
+  p3d_set_obst_pos OB_mesh720_002 -130.312496 83.749997 88.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh721_002.macro OB_mesh721_002
+  p3d_set_obst_pos OB_mesh721_002 -130.312496 83.749997 89.499999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh723_002.macro OB_mesh723_002
+  p3d_set_obst_pos OB_mesh723_002 -130.312505 78.249999 88.499999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh722_002.macro OB_mesh722_002
+  p3d_set_obst_pos OB_mesh722_002 -130.312494 89.374997 70.499999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh730_001.macro OB_mesh730_001
+  p3d_set_obst_pos OB_mesh730_001 -130.312496 83.562497 80.312499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh731_001.macro OB_mesh731_001
+  p3d_set_obst_pos OB_mesh731_001 -137.625 77.249999 54.187499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh732_001.macro OB_mesh732_001
+  p3d_set_obst_pos OB_mesh732_001 -130.312499 77.124998 57.187499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh733_001.macro OB_mesh733_001
+  p3d_set_obst_pos OB_mesh733_001 -130.312499 77.624998 57.187499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh731_002.macro OB_mesh731_002
+  p3d_set_obst_pos OB_mesh731_002 -123 77.249999 54.187499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh734_001.macro OB_mesh734_001
+  p3d_set_obst_pos OB_mesh734_001 -130.312499 77.249999 54.187499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh734_002.macro OB_mesh734_002
+  p3d_set_obst_pos OB_mesh734_002 -130.312499 77.249999 86.812499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh101_005.macro OB_mesh101_005
+  p3d_set_obst_pos OB_mesh101_005 -137.624999 76.5 59.350215 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh103_005.macro OB_mesh103_005
+  p3d_set_obst_pos OB_mesh103_005 -137.625 76.499999 56.350215 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh722_003.macro OB_mesh722_003
+  p3d_set_obst_pos OB_mesh722_003 -130.312494 89.374997 53.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh730_002.macro OB_mesh730_002
+  p3d_set_obst_pos OB_mesh730_002 -130.312496 83.562497 71.624999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh730_003.macro OB_mesh730_003
+  p3d_set_obst_pos OB_mesh730_003 -130.312496 83.562497 62.937499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh735_001.macro OB_mesh735_001
+  p3d_set_obst_pos OB_mesh735_001 -121.8125 89.625 89.452743 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh736_001.macro OB_mesh736_001
+  p3d_set_obst_pos OB_mesh736_001 -188.812499 83.750004 54.499999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh737_001.macro OB_mesh737_001
+  p3d_set_obst_pos OB_mesh737_001 -188.812499 83.750004 54.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh738_001.macro OB_mesh738_001
+  p3d_set_obst_pos OB_mesh738_001 -188.812497 89.375004 86.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh739_001.macro OB_mesh739_001
+  p3d_set_obst_pos OB_mesh739_001 -188.812498 78.25 54.000001 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh740_001.macro OB_mesh740_001
+  p3d_set_obst_pos OB_mesh740_001 -188.812497 88.750004 54.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh741_001.macro OB_mesh741_001
+  p3d_set_obst_pos OB_mesh741_001 -188.812497 89.125004 54.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh742_001.macro OB_mesh742_001
+  p3d_set_obst_pos OB_mesh742_001 -201.895835 84 53.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh743_001.macro OB_mesh743_001
+  p3d_set_obst_pos OB_mesh743_001 -175.729168 83.999999 53.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh744_001.macro OB_mesh744_001
+  p3d_set_obst_pos OB_mesh744_001 -176.0625 77.999999 53.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh745_001.macro OB_mesh745_001
+  p3d_set_obst_pos OB_mesh745_001 -201.5625 78 53.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh736_002.macro OB_mesh736_002
+  p3d_set_obst_pos OB_mesh736_002 -188.812499 83.750004 88.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh737_002.macro OB_mesh737_002
+  p3d_set_obst_pos OB_mesh737_002 -188.812499 83.750004 89.499999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh739_002.macro OB_mesh739_002
+  p3d_set_obst_pos OB_mesh739_002 -188.812498 78.25 88.500001 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh738_002.macro OB_mesh738_002
+  p3d_set_obst_pos OB_mesh738_002 -188.812497 89.375004 70.499999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh746_001.macro OB_mesh746_001
+  p3d_set_obst_pos OB_mesh746_001 -188.812499 83.562504 80.312499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh711_003.macro OB_mesh711_003
+  p3d_set_obst_pos OB_mesh711_003 -190.3125 77.25 54.187499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh712_002.macro OB_mesh712_002
+  p3d_set_obst_pos OB_mesh712_002 -195.46875 77.125001 57.187499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh713_002.macro OB_mesh713_002
+  p3d_set_obst_pos OB_mesh713_002 -195.46875 77.625001 57.187499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh711_004.macro OB_mesh711_004
+  p3d_set_obst_pos OB_mesh711_004 -200.625 77.25 54.187499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh714_003.macro OB_mesh714_003
+  p3d_set_obst_pos OB_mesh714_003 -195.46875 77.25 54.1875 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh714_004.macro OB_mesh714_004
+  p3d_set_obst_pos OB_mesh714_004 -195.46875 77.25 86.8125 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh101_006.macro OB_mesh101_006
+  p3d_set_obst_pos OB_mesh101_006 -190.312499 76.5 59.350215 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh103_006.macro OB_mesh103_006
+  p3d_set_obst_pos OB_mesh103_006 -190.3125 76.499999 56.350215 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh715_003.macro OB_mesh715_003
+  p3d_set_obst_pos OB_mesh715_003 -177 77.25 54.187499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh716_003.macro OB_mesh716_003
+  p3d_set_obst_pos OB_mesh716_003 -182.15625 77.25 86.8125 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh715_004.macro OB_mesh715_004
+  p3d_set_obst_pos OB_mesh715_004 -187.3125 77.25 54.187499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh716_004.macro OB_mesh716_004
+  p3d_set_obst_pos OB_mesh716_004 -182.15625 77.25 54.1875 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh717_002.macro OB_mesh717_002
+  p3d_set_obst_pos OB_mesh717_002 -182.15625 77.625001 57.187499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh718_002.macro OB_mesh718_002
+  p3d_set_obst_pos OB_mesh718_002 -182.15625 77.125001 57.187499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh101_007.macro OB_mesh101_007
+  p3d_set_obst_pos OB_mesh101_007 -187.312499 76.5 59.350215 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh103_007.macro OB_mesh103_007
+  p3d_set_obst_pos OB_mesh103_007 -187.3125 76.499999 56.350215 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh738_003.macro OB_mesh738_003
+  p3d_set_obst_pos OB_mesh738_003 -188.812497 89.375004 53.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh746_002.macro OB_mesh746_002
+  p3d_set_obst_pos OB_mesh746_002 -188.812499 83.562504 71.624999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh746_003.macro OB_mesh746_003
+  p3d_set_obst_pos OB_mesh746_003 -188.812499 83.562504 62.937499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh747_001.macro OB_mesh747_001
+  p3d_set_obst_pos OB_mesh747_001 -201.8125 89.625 89.452743 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh736_003.macro OB_mesh736_003
+  p3d_set_obst_pos OB_mesh736_003 -220.028931 50.625923 54.499999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh737_003.macro OB_mesh737_003
+  p3d_set_obst_pos OB_mesh737_003 -220.028931 50.625923 54.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh738_004.macro OB_mesh738_004
+  p3d_set_obst_pos OB_mesh738_004 -225.653931 50.625923 86.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh739_003.macro OB_mesh739_003
+  p3d_set_obst_pos OB_mesh739_003 -214.52893 50.625922 54.000008 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh740_002.macro OB_mesh740_002
+  p3d_set_obst_pos OB_mesh740_002 -225.028931 50.625923 54.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh741_002.macro OB_mesh741_002
+  p3d_set_obst_pos OB_mesh741_002 -225.403931 50.625923 54.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh742_002.macro OB_mesh742_002
+  p3d_set_obst_pos OB_mesh742_002 -220.278931 36.042589 53.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh743_002.macro OB_mesh743_002
+  p3d_set_obst_pos OB_mesh743_002 -220.27893 65.209256 53.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh744_002.macro OB_mesh744_002
+  p3d_set_obst_pos OB_mesh744_002 -214.27893 64.875923 53.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh745_002.macro OB_mesh745_002
+  p3d_set_obst_pos OB_mesh745_002 -214.278931 36.375923 53.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh736_004.macro OB_mesh736_004
+  p3d_set_obst_pos OB_mesh736_004 -220.028931 50.625923 88.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh737_004.macro OB_mesh737_004
+  p3d_set_obst_pos OB_mesh737_004 -220.028931 50.625923 89.499999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh739_004.macro OB_mesh739_004
+  p3d_set_obst_pos OB_mesh739_004 -214.528931 50.625922 88.500008 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh738_005.macro OB_mesh738_005
+  p3d_set_obst_pos OB_mesh738_005 -225.653931 50.625923 70.499999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh748_001.macro OB_mesh748_001
+  p3d_set_obst_pos OB_mesh748_001 -214.528931 50.625923 55.499999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh746_004.macro OB_mesh746_004
+  p3d_set_obst_pos OB_mesh746_004 -219.841431 50.625923 80.312499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh711_005.macro OB_mesh711_005
+  p3d_set_obst_pos OB_mesh711_005 -213.528931 48.938423 54.187499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh712_003.macro OB_mesh712_003
+  p3d_set_obst_pos OB_mesh712_003 -213.403931 43.125923 57.187499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh713_003.macro OB_mesh713_003
+  p3d_set_obst_pos OB_mesh713_003 -213.903931 43.125923 57.187499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh711_006.macro OB_mesh711_006
+  p3d_set_obst_pos OB_mesh711_006 -213.528931 37.313423 54.187499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh714_005.macro OB_mesh714_005
+  p3d_set_obst_pos OB_mesh714_005 -213.528931 43.125922 54.187502 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh714_006.macro OB_mesh714_006
+  p3d_set_obst_pos OB_mesh714_006 -213.528931 43.125922 86.812502 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh101_008.macro OB_mesh101_008
+  p3d_set_obst_pos OB_mesh101_008 -212.778931 48.938423 59.350215 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh103_008.macro OB_mesh103_008
+  p3d_set_obst_pos OB_mesh103_008 -212.778931 48.938422 56.350215 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh715_005.macro OB_mesh715_005
+  p3d_set_obst_pos OB_mesh715_005 -213.528931 63.938423 54.187499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh716_005.macro OB_mesh716_005
+  p3d_set_obst_pos OB_mesh716_005 -213.528931 58.125921 86.812502 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh715_006.macro OB_mesh715_006
+  p3d_set_obst_pos OB_mesh715_006 -213.528931 52.313423 54.187499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh716_006.macro OB_mesh716_006
+  p3d_set_obst_pos OB_mesh716_006 -213.528931 58.125921 54.187502 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh717_003.macro OB_mesh717_003
+  p3d_set_obst_pos OB_mesh717_003 -213.903931 58.125923 57.187499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh718_003.macro OB_mesh718_003
+  p3d_set_obst_pos OB_mesh718_003 -213.403931 58.125923 57.187499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh101_009.macro OB_mesh101_009
+  p3d_set_obst_pos OB_mesh101_009 -212.778931 52.313423 59.350215 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh103_009.macro OB_mesh103_009
+  p3d_set_obst_pos OB_mesh103_009 -212.778931 52.313422 56.350215 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh738_006.macro OB_mesh738_006
+  p3d_set_obst_pos OB_mesh738_006 -225.653931 50.625923 53.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh746_005.macro OB_mesh746_005
+  p3d_set_obst_pos OB_mesh746_005 -219.841431 50.625923 71.624999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh746_006.macro OB_mesh746_006
+  p3d_set_obst_pos OB_mesh746_006 -219.841431 50.625923 62.937499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh749_001.macro OB_mesh749_001
+  p3d_set_obst_pos OB_mesh749_001 -225.90393 36.125923 89.452743 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh750_001.macro OB_mesh750_001
+  p3d_set_obst_pos OB_mesh750_001 -220.263549 66.125 53.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh752_001.macro OB_mesh752_001
+  p3d_set_obst_pos OB_mesh752_001 -202.8125 83.576049 53.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh754_001.macro OB_mesh754_001
+  p3d_set_obst_pos OB_mesh754_001 -208.373382 71.685886 53.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh756_001.macro OB_mesh756_001
+  p3d_set_obst_pos OB_mesh756_001 -208.373382 71.685886 88.499999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh758_001.macro OB_mesh758_001
+  p3d_set_obst_pos OB_mesh758_001 -225.625 77.5625 53.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh760_001.macro OB_mesh760_001
+  p3d_set_obst_pos OB_mesh760_001 -214.437499 88.9375 53.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh762_001.macro OB_mesh762_001
+  p3d_set_obst_pos OB_mesh762_001 -214.6875 89.375 86.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh764_001.macro OB_mesh764_001
+  p3d_set_obst_pos OB_mesh764_001 -226.0625 77.75 86.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh766_001.macro OB_mesh766_001
+  p3d_set_obst_pos OB_mesh766_001 -226.0625 77.75 70.499999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh768_001.macro OB_mesh768_001
+  p3d_set_obst_pos OB_mesh768_001 -213.797898 66.421423 53.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh769_001.macro OB_mesh769_001
+  p3d_set_obst_pos OB_mesh769_001 -203.108915 77.11039 53.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh770_001.macro OB_mesh770_001
+  p3d_set_obst_pos OB_mesh770_001 -214.687499 89.375 70.499999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh772_001.macro OB_mesh772_001
+  p3d_set_obst_pos OB_mesh772_001 -214.687499 89.375 53.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh774_001.macro OB_mesh774_001
+  p3d_set_obst_pos OB_mesh774_001 -226.062499 77.75 53.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh776_001.macro OB_mesh776_001
+  p3d_set_obst_pos OB_mesh776_001 -214.4375 77.75 89.499999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh777_001.macro OB_mesh777_001
+  p3d_set_obst_pos OB_mesh777_001 -214.437499 77.75 89.499249 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh778_001.macro OB_mesh778_001
+  p3d_set_obst_pos OB_mesh778_001 -214.249998 77.5625 54.499999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh711_007.macro OB_mesh711_007
+  p3d_set_obst_pos OB_mesh711_007 -203.2452 75.757527 54.187499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh712_004.macro OB_mesh712_004
+  p3d_set_obst_pos OB_mesh712_004 -207.757772 71.068171 57.187499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh713_004.macro OB_mesh713_004
+  p3d_set_obst_pos OB_mesh713_004 -208.111325 71.421725 57.187499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh711_008.macro OB_mesh711_008
+  p3d_set_obst_pos OB_mesh711_008 -212.447135 66.555592 54.187499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh714_007.macro OB_mesh714_007
+  p3d_set_obst_pos OB_mesh714_007 -207.84616 71.15656 54.187497 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh714_008.macro OB_mesh714_008
+  p3d_set_obst_pos OB_mesh714_008 -207.84616 71.15656 86.812497 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh101_010.macro OB_mesh101_010
+  p3d_set_obst_pos OB_mesh101_010 -202.714861 75.227197 59.350216 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh103_010.macro OB_mesh103_010
+  p3d_set_obst_pos OB_mesh103_010 -202.714861 75.227198 56.350216 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh778_002.macro OB_mesh778_002
+  p3d_set_obst_pos OB_mesh778_002 -214.249998 77.5625 62.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh778_003.macro OB_mesh778_003
+  p3d_set_obst_pos OB_mesh778_003 -214.249998 77.5625 71.499999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh778_004.macro OB_mesh778_004
+  p3d_set_obst_pos OB_mesh778_004 -214.249998 77.5625 79.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh736_005.macro OB_mesh736_005
+  p3d_set_obst_pos OB_mesh736_005 -220.028931 -11.374995 54.499999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh737_005.macro OB_mesh737_005
+  p3d_set_obst_pos OB_mesh737_005 -220.028931 -11.374995 54.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh738_007.macro OB_mesh738_007
+  p3d_set_obst_pos OB_mesh738_007 -225.653931 -11.374995 86.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh739_005.macro OB_mesh739_005
+  p3d_set_obst_pos OB_mesh739_005 -214.528931 -11.374997 54.000006 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh740_003.macro OB_mesh740_003
+  p3d_set_obst_pos OB_mesh740_003 -225.028931 -11.374995 54.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh741_003.macro OB_mesh741_003
+  p3d_set_obst_pos OB_mesh741_003 -225.403931 -11.374995 54.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh742_003.macro OB_mesh742_003
+  p3d_set_obst_pos OB_mesh742_003 -220.278931 -22.958333 53.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh743_003.macro OB_mesh743_003
+  p3d_set_obst_pos OB_mesh743_003 -220.278931 0.208333 53.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh744_003.macro OB_mesh744_003
+  p3d_set_obst_pos OB_mesh744_003 -214.278931 -0.124999 53.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh745_003.macro OB_mesh745_003
+  p3d_set_obst_pos OB_mesh745_003 -214.278931 -22.624999 53.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh736_006.macro OB_mesh736_006
+  p3d_set_obst_pos OB_mesh736_006 -220.028931 -11.374995 88.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh737_006.macro OB_mesh737_006
+  p3d_set_obst_pos OB_mesh737_006 -220.028931 -11.374995 89.499999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh739_006.macro OB_mesh739_006
+  p3d_set_obst_pos OB_mesh739_006 -214.528931 -11.374997 88.500006 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh738_008.macro OB_mesh738_008
+  p3d_set_obst_pos OB_mesh738_008 -225.653931 -11.374995 70.499999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh746_007.macro OB_mesh746_007
+  p3d_set_obst_pos OB_mesh746_007 -219.841431 -11.374995 80.312499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh711_009.macro OB_mesh711_009
+  p3d_set_obst_pos OB_mesh711_009 -213.528931 -12.874999 54.187499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh712_005.macro OB_mesh712_005
+  p3d_set_obst_pos OB_mesh712_005 -213.403931 -17.28125 57.187499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh713_005.macro OB_mesh713_005
+  p3d_set_obst_pos OB_mesh713_005 -213.903931 -17.28125 57.187499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh711_010.macro OB_mesh711_010
+  p3d_set_obst_pos OB_mesh711_010 -213.528931 -21.687499 54.187499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh714_009.macro OB_mesh714_009
+  p3d_set_obst_pos OB_mesh714_009 -213.528931 -17.28125 54.187501 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh714_010.macro OB_mesh714_010
+  p3d_set_obst_pos OB_mesh714_010 -213.528931 -17.28125 86.812501 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh101_011.macro OB_mesh101_011
+  p3d_set_obst_pos OB_mesh101_011 -212.778931 -12.874999 59.350215 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh103_011.macro OB_mesh103_011
+  p3d_set_obst_pos OB_mesh103_011 -212.778931 -12.875 56.350215 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh715_007.macro OB_mesh715_007
+  p3d_set_obst_pos OB_mesh715_007 -213.528931 -1.062499 54.187499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh716_007.macro OB_mesh716_007
+  p3d_set_obst_pos OB_mesh716_007 -213.528931 -5.468751 86.812501 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh715_008.macro OB_mesh715_008
+  p3d_set_obst_pos OB_mesh715_008 -213.528931 -9.874999 54.187499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh716_008.macro OB_mesh716_008
+  p3d_set_obst_pos OB_mesh716_008 -213.528931 -5.468751 54.187501 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh717_004.macro OB_mesh717_004
+  p3d_set_obst_pos OB_mesh717_004 -213.903931 -5.46875 57.187499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh718_004.macro OB_mesh718_004
+  p3d_set_obst_pos OB_mesh718_004 -213.403931 -5.46875 57.187499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh101_012.macro OB_mesh101_012
+  p3d_set_obst_pos OB_mesh101_012 -212.778931 -9.874999 59.350215 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh103_012.macro OB_mesh103_012
+  p3d_set_obst_pos OB_mesh103_012 -212.778931 -9.875 56.350215 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh738_009.macro OB_mesh738_009
+  p3d_set_obst_pos OB_mesh738_009 -225.653931 -11.374995 53.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh746_008.macro OB_mesh746_008
+  p3d_set_obst_pos OB_mesh746_008 -219.841431 -11.374995 71.624999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh746_009.macro OB_mesh746_009
+  p3d_set_obst_pos OB_mesh746_009 -219.841431 -11.374995 62.937499 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh779_001.macro OB_mesh779_001
+  p3d_set_obst_pos OB_mesh779_001 -225.90393 -22.874999 89.452743 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh780_001.macro OB_mesh780_001
+  p3d_set_obst_pos OB_mesh780_001 -215.8125 -33.874999 53.999999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh782.macro OB_mesh782
+  p3d_set_obst_pos OB_mesh782 -209.577232 -27.845096 57.499999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh784.macro OB_mesh784
+  p3d_set_obst_pos OB_mesh784 -209.444656 -27.712513 54.499999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh788.macro OB_mesh788
+  p3d_set_obst_pos OB_mesh788 -206.461547 -30.695621 57.499999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh792.macro OB_mesh792
+  p3d_set_obst_pos OB_mesh792 -212.427764 -24.729408 57.499999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh796.macro OB_mesh796
+  p3d_set_obst_pos OB_mesh796 -206.461547 -30.695621 86.499999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh799.macro OB_mesh799
+  p3d_set_obst_pos OB_mesh799 -212.427764 -24.729408 86.499999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh802.macro OB_mesh802
+  p3d_set_obst_pos OB_mesh802 -212.427764 -24.729407 54.499999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh805.macro OB_mesh805
+  p3d_set_obst_pos OB_mesh805 -206.461547 -30.695621 54.499999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh808.macro OB_mesh808
+  p3d_set_obst_pos OB_mesh808 -209.444656 -27.712513 86.499999 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh101_013.macro OB_mesh101_013
+  p3d_set_obst_pos OB_mesh101_013 -211.897433 -24.199078 59.662716 0.0 0.0 0.0
+
+  p3d_read_macro OB_mesh103_013.macro OB_mesh103_013
+  p3d_set_obst_pos OB_mesh103_013 -211.897433 -24.199077 56.662716 0.0 0.0 0.0
+
+#  p3d_read_macro OB_mesh812.macro OB_mesh812
+#  p3d_set_obst_pos OB_mesh812 350.474595 162.792645 -1493.591028 0.0 0.0 0.0
+
+
+p3d_end_desc
+
+p3d_set_env_box -300 300 -300 300 0 100

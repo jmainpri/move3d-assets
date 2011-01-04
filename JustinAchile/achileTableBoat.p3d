@@ -1,0 +1,45 @@
+p3d_beg_desc P3D_ENV TableManip
+
+  p3d_read_macro OB_table.macro OB_table
+  p3d_set_obst_pos OB_table 550 0 0 0.0 0.0 0.0
+
+  p3d_read_macro OB_glass.macro glass4
+  p3d_set_obst_pos glass4 500 546 492 0.0 0.0 0.0
+
+  p3d_read_macro OB_glass.macro OB_glass2
+  p3d_set_obst_pos OB_glass2 460 -528 492 0.0 0.0 0.0
+
+  p3d_read_macro OB_glass.macro OB_glass1
+  p3d_set_obst_pos OB_glass1 280 250 492 0.0 0.0 0.0
+
+  p3d_read_macro OB_vase.macro OB_vase
+  p3d_set_obst_pos OB_vase 550 -48 492 0.0 0.0 0.0
+
+  p3d_read_macro OB_bottle.macro OB_bottle
+  p3d_set_obst_pos OB_bottle 790 550 492 0.0 0.0 0
+
+  p3d_read_macro OB_boat.macro OB_boat
+  p3d_set_obst_pos OB_boat 780 080 492 0.0 0.0 -10
+
+  p3d_read_macro OB_IBook.macro OB_IBook 
+  p3d_set_obst_pos OB_IBook 800 -528 492 0.0 0.0 -110
+ 
+  
+
+#	p3d_set_obst_pos OB_table 	0 	-700 	-500 	0.0 0.0 90.0 
+#	p3d_set_obst_pos glass4 	500 	546 	492 	0.0 0.0 0.0
+#	p3d_set_obst_pos OB_glass2 	460 	-528 	492 	0.0 0.0 0.0
+#	p3d_set_obst_pos OB_glass1 	280 	250 	492 	0.0 0.0 0.0
+#	p3d_set_obst_pos OB_vase 	550 	-48 	492 	0.0 0.0 0.0 
+#	p3d_set_obst_pos OB_bottle 	790 	550 	492 	0.0 0.0 0 
+#	p3d_set_obst_pos OB_boat 	780 	80 	492 	0.0 0.0 -10
+#	p3d_set_obst_pos OB_IBook 	800 	-528 	492 	0 0.0 -110
+
+p3d_read_macro Achile.macro Achile
+
+p3d_end_desc
+
+p3d_set_env_box -600 1000 -600 600 300 1500
+
+p3d_constraint p3d_fixed_jnt 1 1  0  6 -200 0 500 0 0 90  0
+

@@ -1,0 +1,18 @@
+p3d_beg_desc P3D_ENV Figure
+
+  p3d_beg_desc P3D_OBSTACLE BaseSupport1
+    p3d_add_desc_box base_foot_1 5000 5000 5
+    p3d_set_prim_pos base_foot_1 0 0 -10 0 0 0
+  p3d_end_desc
+
+  p3d_read_macro JustinFigure.macro justin
+
+p3d_end_desc
+######################
+######## COLOR #######
+######################
+#Obstacles
+  p3d_set_obst_color BaseSupport1 Any 1 1 1 0.1
+p3d_set_env_box -5000.0 5000.0 -5000.0 5000.0 -50.0 5000.0
+
+

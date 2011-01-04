@@ -1,0 +1,77 @@
+p3d_beg_desc P3D_ENV etroit
+
+
+p3d_beg_desc P3D_OBSTACLE h1
+p3d_add_desc_box h1 1.0 5.0 1.0
+p3d_set_prim_pos h1 .0 2.50 .0 .0 .0 .0
+
+
+
+p3d_add_desc_box b1 1.0 2.0 1.0
+p3d_set_prim_pos b1 0.0 7. .0 .0 .0 .0
+
+
+p3d_beg_desc P3D_ROBOT rob200
+
+p3d_add_desc_jnt P3D_PLAN 0 0 0
+			  0 0 1
+                          2 -5 5
+			  2 0 8 
+			  0 -180 180 
+			  0 
+
+#p3d_add_desc_jnt P3D_FREEFLYER 0.0 0.0 0.0  0.0 0.0 1.0  
+#			       2 -5 5
+#			       2 0 8
+#			       0 -314 314
+#			       0   0   0
+#			       0   0   0
+#			       0   0   0
+#			       0
+
+
+
+
+p3d_beg_desc P3D_BODY body 
+p3d_add_desc_box body 0.8 0.8 1
+
+p3d_add_desc_box body2 0.4 0.8 0.4
+p3d_set_prim_pos body2 0.2 0.0 1  0.0 0.0 0.0
+
+p3d_add_desc_box body3 0.4 0.8 0.4
+p3d_set_prim_pos body3 0.0 0.2 1.5  0.0 0.0 90.0
+
+p3d_add_desc_box body4 0.4 0.8 0.4
+p3d_set_prim_pos body4 -0.2 0.0 2  0.0 0.0 0.0
+
+p3d_add_desc_box body5 0.4 0.8 0.4
+p3d_set_prim_pos body5 0.0 -0.2 2.5  0.0 0.0 90.0
+
+p3d_end_desc
+#p3d_set_body_poly_color body 2 Green
+p3d_beg_desc P3D_ROBOT OM1
+
+p3d_add_desc_jnt P3D_FREEFLYER 0.0 0.0 0.0  0.0 0.0 1.0
+			       0 0 0
+			       4.83 4.83 4.83
+			       2  0 2
+			       0   0  0
+			       0   0  0
+			       90   90   90
+			       0
+
+
+
+
+p3d_beg_desc P3D_BODY body2 
+p3d_add_desc_box body2 0.4 0.8 0.4
+p3d_set_prim_pos body2 0.2 0.0 1 0.0 0.0 0.0
+
+p3d_end_desc
+
+p3d_end_desc
+
+
+p3d_set_env_box -5.0 5.0 0.0 8.0 -1.0 1.
+p3d_set_robot_current  -2 2
+p3d_set_robot_goto      3 2

@@ -1,0 +1,316 @@
+p3d_beg_desc P3D_ENV sticksbox
+
+
+p3d_beg_desc P3D_OBSTACLE box
+#  p3d_add_desc_cylindre base 100.0 800.0 P3D_GRAPHIC
+#  p3d_set_prim_pos base 0.0 0.0 400.0 0.0 0.0 0.0
+#  p3d_set_prim_color base Grey
+
+  p3d_add_desc_box bot1 500.0 50.0 50.0
+  p3d_set_prim_pos bot1 450.0 250.0 0.0 0.0 0.0 0.0 
+  p3d_add_desc_box bot2 500.0 50.0 50.0
+  p3d_set_prim_pos bot2 450.0 -250.0 0.0 0.0 0.0 0.0 
+  p3d_add_desc_box bot3 50.0 500.0 50.0
+  p3d_set_prim_pos bot3 200.0 0.0 0.0 0.0 0.0 0.0 
+  p3d_add_desc_box bot4 50.0 500.0 50.0
+  p3d_set_prim_pos bot4 700.0 0.0 0.0 0.0 0.0 0.0 
+
+  p3d_add_desc_box mi11 500.0 50.0 50.0
+  p3d_set_prim_pos mi11 450.0 250.0 300.0 0.0 0.0 0.0 
+  p3d_add_desc_box mi12 500.0 50.0 50.0
+  p3d_set_prim_pos mi12 450.0 -250.0 300.0 0.0 0.0 0.0 
+  p3d_add_desc_box mi13 50.0 500.0 50.0
+  p3d_set_prim_pos mi13 200.0 0.0 300.0 0.0 0.0 0.0 
+  p3d_add_desc_box mi14 50.0 500.0 50.0
+  p3d_set_prim_pos mi14 700.0 0.0 300.0 0.0 0.0 0.0 
+
+  p3d_add_desc_box mi21 500.0 50.0 50.0
+  p3d_set_prim_pos mi21 450.0 250.0 600.0 0.0 0.0 0.0 
+  p3d_add_desc_box mi22 500.0 50.0 50.0
+  p3d_set_prim_pos mi22 450.0 -250.0 600.0 0.0 0.0 0.0 
+  p3d_add_desc_box mi23 50.0 500.0 50.0
+  p3d_set_prim_pos mi23 200.0 0.0 600.0 0.0 0.0 0.0 
+  p3d_add_desc_box mi24 50.0 500.0 50.0
+  p3d_set_prim_pos mi24 700.0 0.0 600.0 0.0 0.0 0.0 
+
+  p3d_add_desc_box mi31 500.0 50.0 50.0
+  p3d_set_prim_pos mi31 450.0 250.0 900.0 0.0 0.0 0.0 
+  p3d_add_desc_box mi32 500.0 50.0 50.0
+  p3d_set_prim_pos mi32 450.0 -250.0 900.0 0.0 0.0 0.0 
+  p3d_add_desc_box mi33 50.0 500.0 50.0
+  p3d_set_prim_pos mi33 200.0 0.0 900.0 0.0 0.0 0.0 
+  p3d_add_desc_box mi34 50.0 500.0 50.0
+  p3d_set_prim_pos mi34 700.0 0.0 900.0 0.0 0.0 0.0 
+
+  p3d_add_desc_box mi41 500.0 50.0 50.0
+  p3d_set_prim_pos mi41 450.0 250.0 1200.0 0.0 0.0 0.0 
+  p3d_add_desc_box mi42 500.0 50.0 50.0
+  p3d_set_prim_pos mi42 450.0 -250.0 1200.0 0.0 0.0 0.0 
+  p3d_add_desc_box mi43 50.0 500.0 50.0
+  p3d_set_prim_pos mi43 200.0 0.0 1200.0 0.0 0.0 0.0 
+  p3d_add_desc_box mi44 50.0 500.0 50.0
+  p3d_set_prim_pos mi44 700.0 0.0 1200.0 0.0 0.0 0.0 
+
+  p3d_add_desc_box mi51 500.0 50.0 50.0
+  p3d_set_prim_pos mi51 450.0 250.0 1500.0 0.0 0.0 0.0 
+  p3d_add_desc_box mi52 500.0 50.0 50.0
+  p3d_set_prim_pos mi52 450.0 -250.0 1500.0 0.0 0.0 0.0 
+  p3d_add_desc_box mi53 50.0 500.0 50.0
+  p3d_set_prim_pos mi53 200.0 0.0 1500.0 0.0 0.0 0.0 
+  p3d_add_desc_box mi54 50.0 500.0 50.0
+  p3d_set_prim_pos mi54 700.0 0.0 1500.0 0.0 0.0 0.0 
+
+  p3d_add_desc_box top1 500.0 50.0 50.0
+  p3d_set_prim_pos top1 450.0 250.0 1800.0 0.0 0.0 0.0 
+  p3d_add_desc_box top2 500.0 50.0 50.0
+  p3d_set_prim_pos top2 450.0 -250.0 1800.0 0.0 0.0 0.0 
+  p3d_add_desc_box top3 50.0 500.0 50.0
+  p3d_set_prim_pos top3 200.0 0.0 1800.0 0.0 0.0 0.0 
+  p3d_add_desc_box top4 50.0 500.0 50.0
+  p3d_set_prim_pos top4 700.0 0.0 1800.0 0.0 0.0 0.0 
+
+  p3d_add_desc_box ver1 50.0 50.0 1850.0
+  p3d_set_prim_pos ver1 200.0 250.0 900.0 0.0 0.0 0.0 
+  p3d_add_desc_box ver2 50.0 50.0 1850.0
+  p3d_set_prim_pos ver2 200.0 -250.0 900.0 0.0 0.0 0.0 
+  p3d_add_desc_box ver3 50.0 50.0 1850.0
+  p3d_set_prim_pos ver3 700.0 250.0 900.0 0.0 0.0 0.0 
+  p3d_add_desc_box ver4 50.0 50.0 1850.0
+  p3d_set_prim_pos ver4 700.0 -250.0 900.0 0.0 0.0 0.0 
+
+  p3d_add_desc_sphere s1 25.0 P3D_GRAPHIC
+  p3d_set_prim_pos s1 250.0 -100.0 300.0 0.0 0.0 0.0
+  p3d_set_prim_color s1 White
+  p3d_add_desc_cylindre c1 25.0 25.0 P3D_GRAPHIC
+  p3d_set_prim_pos c1 237.5 -100.0 300.0 0.0 90.0 0.0
+  p3d_set_prim_color c1 White
+  p3d_add_desc_sphere s2 25.0 P3D_GRAPHIC
+  p3d_set_prim_pos s2 650.0 100.0 600.0 0.0 0.0 0.0
+  p3d_set_prim_color s2 White
+  p3d_add_desc_cylindre c2 25.0 25.0 P3D_GRAPHIC
+  p3d_set_prim_pos c2 662.5 100.0 600.0 0.0 90.0 0.0
+  p3d_set_prim_color c2 White
+  p3d_add_desc_sphere s3 25.0 P3D_GRAPHIC
+  p3d_set_prim_pos s3 250.0 -100.0 900.0 0.0 0.0 0.0
+  p3d_set_prim_color s3 White
+  p3d_add_desc_cylindre c3 25.0 25.0 P3D_GRAPHIC
+  p3d_set_prim_pos c3 237.5 -100.0 900.0 0.0 90.0 0.0
+  p3d_set_prim_color c3 White
+  p3d_add_desc_sphere s4 25.0 P3D_GRAPHIC
+  p3d_set_prim_pos s4 650.0 100.0 1200.0 0.0 0.0 0.0
+  p3d_set_prim_color s4 White
+  p3d_add_desc_cylindre c4 25.0 25.0 P3D_GRAPHIC
+  p3d_set_prim_pos c4 662.5 100.0 1200.0 0.0 90.0 0.0
+  p3d_set_prim_color c4 White
+  p3d_add_desc_sphere s5 25.0 P3D_GRAPHIC
+  p3d_set_prim_pos s5 250.0 -100.0 1500.0 0.0 0.0 0.0
+  p3d_set_prim_color s5 White
+  p3d_add_desc_cylindre c5 25.0 25.0 P3D_GRAPHIC
+  p3d_set_prim_pos c5 237.5 -100.0 1500.0 0.0 90.0 0.0
+  p3d_set_prim_color c5 White
+  p3d_add_desc_sphere s6 25.0 P3D_GRAPHIC
+  p3d_set_prim_pos s6 650.0 100.0 1800.0 0.0 0.0 0.0
+  p3d_set_prim_color s6 White
+  p3d_add_desc_cylindre c6 25.0 25.0 P3D_GRAPHIC
+  p3d_set_prim_pos c6 662.5 100.0 1800.0 0.0 90.0 0.0
+  p3d_set_prim_color c6 White
+
+p3d_end_desc
+
+
+
+p3d_beg_desc P3D_ROBOT 8
+
+p3d_beg_desc_jnt P3D_ROTATE
+  p3d_set_name stick1
+#  p3d_set_pos_xyz 250.0 -100.0 300.0 0.0 0.0 0.0
+  p3d_set_pos_axe 250.0 -100.0 300.0 0.0 1.0 0.0
+  p3d_set_prev_jnt 0
+  p3d_set_is_active_for_planner 0
+  p3d_set_dof 0 
+#  p3d_set_dof_vmin -20
+  p3d_set_dof_vmin -90
+  p3d_set_dof_vmax  90
+p3d_end_desc
+
+p3d_beg_desc P3D_BODY stick1
+  p3d_add_desc_box s1  400.0 30.0 30.0
+  p3d_set_prim_pos s1  450.0 -100.0 300.0 0.0 0.0 0.0 
+  p3d_set_prim_color s1 Blue2
+p3d_end_desc
+
+
+p3d_beg_desc_jnt P3D_ROTATE
+  p3d_set_name stick2
+#  p3d_set_pos_xyz 650.0 100.0 600.0 0.0 0.0 0.0
+  p3d_set_pos_axe 650.0 100.0 600.0 0.0 1.0 0.0
+  p3d_set_prev_jnt 0
+  p3d_set_is_active_for_planner 0
+  p3d_set_dof 0 
+#  p3d_set_dof_vmin -20
+  p3d_set_dof_vmin -90
+  p3d_set_dof_vmax  90
+p3d_end_desc
+
+p3d_beg_desc P3D_BODY stick2
+  p3d_add_desc_box s2  400.0 30.0 30.0
+  p3d_set_prim_pos s2  450.0 100.0 600.0 0.0 0.0 0.0 
+  p3d_set_prim_color s2 Blue2
+p3d_end_desc
+
+p3d_beg_desc_jnt P3D_ROTATE
+  p3d_set_name stick3
+#  p3d_set_pos_xyz 250.0 -100.0 900.0 0.0 0.0 0.0
+  p3d_set_pos_axe 250.0 -100.0 900.0 0.0 1.0 0.0
+  p3d_set_prev_jnt 0
+  p3d_set_is_active_for_planner 0
+  p3d_set_dof 0 
+#  p3d_set_dof_vmin -20
+  p3d_set_dof_vmin -90
+  p3d_set_dof_vmax  90
+p3d_end_desc
+
+p3d_beg_desc P3D_BODY stick3
+  p3d_add_desc_box s3  400.0 30.0 30.0
+  p3d_set_prim_pos s3  450.0 -100.0 900.0 0.0 0.0 0.0 
+  p3d_set_prim_color s3 Blue2
+p3d_end_desc
+
+
+p3d_beg_desc_jnt P3D_ROTATE
+  p3d_set_name stick4
+#  p3d_set_pos_xyz 650.0 100.0 1200.0 0.0 0.0 0.0
+  p3d_set_pos_axe 650.0 100.0 1200.0 0.0 1.0 0.0
+  p3d_set_prev_jnt 0
+  p3d_set_is_active_for_planner 0
+  p3d_set_dof 0 
+#  p3d_set_dof_vmin -20
+  p3d_set_dof_vmin -90
+  p3d_set_dof_vmax  90
+p3d_end_desc
+
+p3d_beg_desc P3D_BODY stick4
+  p3d_add_desc_box s4  400.0 30.0 30.0
+  p3d_set_prim_pos s4  450.0 100.0 1200.0 0.0 0.0 0.0 
+  p3d_set_prim_color s4 Blue2
+p3d_end_desc
+
+
+p3d_beg_desc_jnt P3D_ROTATE
+  p3d_set_name stick5
+#  p3d_set_pos_xyz 250.0 -100.0 1500.0 0.0 0.0 0.0
+  p3d_set_pos_axe 250.0 -100.0 1500.0 0.0 1.0 0.0
+  p3d_set_prev_jnt 0
+  p3d_set_is_active_for_planner 0
+  p3d_set_dof 0 
+#  p3d_set_dof_vmin -20
+  p3d_set_dof_vmin -90
+  p3d_set_dof_vmax  90
+p3d_end_desc
+
+p3d_beg_desc P3D_BODY stick5
+  p3d_add_desc_box s5  400.0 30.0 30.0
+  p3d_set_prim_pos s5  450.0 -100.0 1500.0 0.0 0.0 0.0 
+  p3d_set_prim_color s5 Blue2
+p3d_end_desc
+
+
+p3d_beg_desc_jnt P3D_ROTATE
+  p3d_set_name stick6
+#  p3d_set_pos_xyz 650.0 100.0 1800.0 0.0 0.0 0.0
+  p3d_set_pos_axe 650.0 100.0 1800.0 0.0 1.0 0.0
+  p3d_set_prev_jnt 0
+  p3d_set_is_active_for_planner 0
+  p3d_set_dof 0 
+#  p3d_set_dof_vmin -20
+  p3d_set_dof_vmin -90
+  p3d_set_dof_vmax  90
+p3d_end_desc
+
+p3d_beg_desc P3D_BODY stick6
+  p3d_add_desc_box s6  400.0 30.0 30.0
+  p3d_set_prim_pos s6  450.0 100.0 1800.0 0.0 0.0 0.0 
+  p3d_set_prim_color s6 Blue2
+p3d_end_desc
+
+
+p3d_beg_desc_jnt P3D_FREEFLYER
+  p3d_set_name S-FF
+  p3d_set_pos_axe 450.0 0.0 1050.0 0.0 0.0 0.0
+  p3d_set_prev_jnt 0
+  p3d_set_dof 0.0 .0  0.0  0.0  0.0  0.0
+#  p3d_set_dof_pos0 0.0 0.0  0.0  0.0  0.0  0.0
+  p3d_set_dof_vmin -200.0 -200.0  -100.0  -30.0 -30.0 -180.0
+  p3d_set_dof_vmax  200.0  200.0  2300.0   30.0  30.0  180.0
+p3d_end_desc
+
+p3d_beg_desc P3D_BODY 8
+  p3d_add_desc_box s1  30.0 300.0 30.0
+  p3d_set_prim_pos s1  450.0 0.0 150.0 0.0 0.0 0.0 
+  p3d_set_prim_color s1 Red
+  p3d_add_desc_box s2  30.0 30.0 330.0
+  p3d_set_prim_pos s2  450.0 -150.0 300.0 0.0 0.0 0.0 
+  p3d_set_prim_color s2 Red
+  p3d_add_desc_box s3  30.0 300.0 30.0
+  p3d_set_prim_pos s3  450.0 0.0 450.0 0.0 0.0 0.0 
+  p3d_set_prim_color s3 Red
+  p3d_add_desc_box s4  30.0 30.0 330.0
+  p3d_set_prim_pos s4  450.0 150.0 600.0 0.0 0.0 0.0 
+  p3d_set_prim_color s4 Red
+  p3d_add_desc_box s5  30.0 300.0 30.0
+  p3d_set_prim_pos s5  450.0 0.0 750.0 0.0 0.0 0.0 
+  p3d_set_prim_color s5 Red
+  p3d_add_desc_box s6  30.0 30.0 330.0
+  p3d_set_prim_pos s6  450.0 150.0 300.0 0.0 0.0 0.0 
+  p3d_set_prim_color s6 Red
+  p3d_add_desc_box s7  30.0 30.0 330.0
+  p3d_set_prim_pos s7  450.0 -150.0 600.0 0.0 0.0 0.0 
+  p3d_set_prim_color s7 Red
+
+  p3d_add_desc_box s8  30.0 30.0 330.0
+  p3d_set_prim_pos s8  450.0 -150.0 900.0 0.0 0.0 0.0 
+  p3d_set_prim_color s8 Red
+  p3d_add_desc_box s9  30.0 300.0 30.0
+  p3d_set_prim_pos s9  450.0 0.0 1050.0 0.0 0.0 0.0 
+  p3d_set_prim_color s9 Red
+  p3d_add_desc_box s10  30.0 30.0 330.0
+  p3d_set_prim_pos s10  450.0 150.0 900.0 0.0 0.0 0.0 
+  p3d_set_prim_color s10 Red
+  p3d_add_desc_box s11  30.0 300.0 30.0
+  p3d_set_prim_pos s11  450.0 0.0 1350.0 0.0 0.0 0.0 
+  p3d_set_prim_color s11 Red
+  p3d_add_desc_box s12  30.0 30.0 330.0
+  p3d_set_prim_pos s12  450.0 150.0 1200.0 0.0 0.0 0.0 
+  p3d_set_prim_color s12 Red
+  p3d_add_desc_box s13  30.0 30.0 330.0
+  p3d_set_prim_pos s13  450.0 -150.0 1200.0 0.0 0.0 0.0 
+  p3d_set_prim_color s13 Red
+
+  p3d_add_desc_box s14  30.0 30.0 330.0
+  p3d_set_prim_pos s14  450.0 -150.0 1500.0 0.0 0.0 0.0 
+  p3d_set_prim_color s14 Red
+  p3d_add_desc_box s15  30.0 300.0 30.0
+  p3d_set_prim_pos s15  450.0 0.0 1650.0 0.0 0.0 0.0 
+  p3d_set_prim_color s15 Red
+  p3d_add_desc_box s16  30.0 30.0 330.0
+  p3d_set_prim_pos s16  450.0 150.0 1500.0 0.0 0.0 0.0 
+  p3d_set_prim_color s16 Red
+  p3d_add_desc_box s17  30.0 300.0 30.0
+  p3d_set_prim_pos s17  450.0 0.0 1950.0 0.0 0.0 0.0 
+  p3d_set_prim_color s17 Red
+  p3d_add_desc_box s18  30.0 30.0 330.0
+  p3d_set_prim_pos s18  450.0 150.0 1800.0 0.0 0.0 0.0 
+  p3d_set_prim_color s18 Red
+  p3d_add_desc_box s19  30.0 30.0 330.0
+  p3d_set_prim_pos s19  450.0 -150.0 1800.0 0.0 0.0 0.0 
+  p3d_set_prim_color s19 Red
+
+
+p3d_end_desc
+
+
+p3d_end_desc
+
+p3d_end_desc
+
+p3d_set_env_box -100.0 800.0 -400.0 400.0 0.0 2800.0

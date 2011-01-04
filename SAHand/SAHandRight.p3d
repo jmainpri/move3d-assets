@@ -1,0 +1,19 @@
+
+p3d_beg_desc P3D_ENV ps
+
+p3d_beg_desc P3D_OBSTACLE box1
+p3d_add_desc_box box1 0.5 0.5 0.74
+p3d_set_prim_pos box1 1 0 0.37 0 0 0
+p3d_end_desc
+p3d_set_obst_color box1 Blue
+
+
+p3d_read_macro SAHandRight_robot.macro SAHandRight
+
+
+p3d_end_desc
+
+p3d_set_env_box -5.0 5.0 -5.0 5.0 0 3.5
+
+
+

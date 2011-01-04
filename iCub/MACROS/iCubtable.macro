@@ -1,0 +1,38 @@
+p3d_beg_desc P3D_ROBOT
+
+p3d_beg_desc_jnt P3D_FREEFLYER  #1
+  p3d_set_prev_jnt   0
+  p3d_set_pos_xyz 0.0 0.0 0.0 0.0 0.0 0.0
+  p3d_set_dof       0  0  0   0   0   0
+  p3d_set_dof_vmin -1 -1 -1 -90 -90 -90
+  p3d_set_dof_vmax  1  1  2  90  90  90
+p3d_end_desc
+
+p3d_beg_desc P3D_BODY iCubtable
+
+p3d_add_desc_box leg1 0.03 0.03 0.73
+p3d_set_prim_pos leg1 -0.25 0.55 0.375 0 0 0
+
+p3d_add_desc_box leg2 0.03 0.03 0.73
+p3d_set_prim_pos leg2 0.25 0.55 0.375 0 0 0
+
+p3d_add_desc_box leg3 0.03 0.03 0.73
+p3d_set_prim_pos leg3 -0.25 -0.55 0.375 0 0 0
+
+p3d_add_desc_box leg4 0.03 0.03 0.73
+p3d_set_prim_pos leg4 0.25 -0.55 0.375 0 0 0
+
+p3d_add_desc_box top 0.6 1.2 0.03
+p3d_set_prim_pos top 0 0 0.73 0 0 0
+
+p3d_end_desc
+p3d_end_desc
+
+p3d_set_body_poly_color iCubtable 1 White
+p3d_set_body_poly_color iCubtable 2 White
+p3d_set_body_poly_color iCubtable 3 White
+p3d_set_body_poly_color iCubtable 4 White
+p3d_set_body_poly_color iCubtable 5 Any 0.78 0.81 0.50
+
+
+

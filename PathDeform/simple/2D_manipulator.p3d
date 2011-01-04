@@ -1,0 +1,177 @@
+p3d_beg_desc P3D_ENV 2D_almostClosedChain_exemple
+
+p3d_beg_desc P3D_OBSTACLE ooo
+  p3d_add_desc_box o 0.1 0.1 0.1
+  p3d_set_prim_pos o 20.0 20.0 50.0 0.0 0.0 0.0
+  p3d_add_desc_cylindre cyl_obst1 1 0.4
+  p3d_set_prim_pos cyl_obst1 6 6 0 0 0 0
+  p3d_add_desc_cylindre cyl_obst2 1 0.4
+  p3d_set_prim_pos cyl_obst2 -6 -6 0 0 0 0
+
+p3d_end_desc
+p3d_set_obst_color ooo   Black
+
+p3d_beg_desc P3D_ROBOT closed_chain
+
+p3d_beg_desc_jnt P3D_ROTATE    #J1
+  p3d_set_pos_axe 0 0 0 0 0 0 
+  p3d_set_prev_jnt 0
+  p3d_set_dof 0
+  p3d_set_dof_pos0 0
+  p3d_set_dof_vmin -180.0
+#  p3d_set_dof_vmax  180.0
+  p3d_set_dof_vmax  179.0
+
+p3d_end_desc
+
+p3d_beg_desc P3D_BODY articul1
+p3d_add_desc_cylindre cyl1 0.2 1 
+p3d_set_prim_pos cyl1 0 0 0.3 0 0 0
+
+p3d_add_desc_box box1 0.3 0.3 6 
+p3d_set_prim_pos box1  0 3 0 90 0 0
+p3d_end_desc
+
+p3d_beg_desc_jnt P3D_ROTATE    # J2
+  p3d_set_pos_axe 0 6 0 0 0 0 
+  p3d_set_prev_jnt 1
+  p3d_set_dof 0
+  p3d_set_dof_pos0 0
+  p3d_set_dof_vmin -180.0
+ # p3d_set_dof_vmax  180.0
+  p3d_set_dof_vmax  179.0
+p3d_end_desc
+
+p3d_beg_desc P3D_BODY articul2
+p3d_add_desc_cylindre cyl2 0.2 0.4 
+p3d_set_prim_pos cyl2 0 6 0 0 0 0
+
+p3d_add_desc_box box2 0.3 0.3 6 
+p3d_set_prim_pos box2  0 9 0 90 0 0
+p3d_end_desc
+
+p3d_beg_desc_jnt P3D_ROTATE    # J3
+  p3d_set_pos_axe 0 12 0 0 0 0 
+  p3d_set_prev_jnt 2
+  p3d_set_dof -90
+  p3d_set_dof_pos0 0
+  p3d_set_dof_vmin -180.0
+  p3d_set_dof_vmax  180.0
+p3d_end_desc
+
+p3d_beg_desc P3D_BODY articul3
+p3d_add_desc_cylindre cyl3 0.2 0.4 
+p3d_set_prim_pos cyl3 0 12 0 0 0 0
+
+#p3d_add_desc_box box3 0.3 0.3 6 
+#p3d_set_prim_pos box3  0 15 0 90 0 0
+p3d_end_desc
+
+#p3d_beg_desc_jnt P3D_ROTATE    # J4
+#  p3d_set_pos_axe 0 18 0 0 0 0 
+#  p3d_set_prev_jnt 3
+#  p3d_set_dof -90
+#  p3d_set_dof_pos0 0
+#  p3d_set_dof_vmin -180.0
+#  p3d_set_dof_vmax  180.0
+#p3d_end_desc
+
+#p3d_beg_desc P3D_BODY articul4
+#p3d_add_desc_cylindre cyl4 0.2 0.4 
+#p3d_set_prim_pos cyl4 0 18 0 0 0 0
+
+#p3d_add_desc_box box4 0.3 0.3 6 
+#p3d_set_prim_pos box4  0 21 0 90 0 0
+#p3d_end_desc
+
+#p3d_beg_desc_jnt P3D_ROTATE    # J5
+#  p3d_set_pos_axe 0 24 0 0 0 0 
+#  p3d_set_prev_jnt 4
+#  p3d_set_dof 0
+#  p3d_set_dof_pos0 0
+#  p3d_set_dof_vmin -180.0
+#  p3d_set_dof_vmax  180.0
+#p3d_end_desc
+
+#p3d_beg_desc P3D_BODY articul5
+#p3d_add_desc_cylindre cyl5 0.2 0.4 
+#p3d_set_prim_pos cyl5 0 24 0 0 0 0
+
+#p3d_add_desc_box box5 0.3 0.3 6 
+#p3d_set_prim_pos box5  0 27 0 90 0 0
+#p3d_end_desc
+
+#p3d_beg_desc_jnt P3D_ROTATE    # J6
+#  p3d_set_pos_axe 0 30 0 0 0 0 
+#  p3d_set_prev_jnt 5
+#  p3d_set_dof 0
+#  p3d_set_dof_pos0 0
+#  p3d_set_dof_vmin -180.0
+#  p3d_set_dof_vmax  180.0
+#p3d_end_desc
+
+#p3d_beg_desc P3D_BODY articul6
+#p3d_add_desc_cylindre cyl6 0.2 0.4 
+#p3d_set_prim_pos cyl6 0 30 0 0 0 0
+
+#p3d_add_desc_box box6 0.3 0.3 6 
+#p3d_set_prim_pos box6  0 33 0 90 0 0
+#p3d_end_desc
+
+#p3d_beg_desc_jnt P3D_ROTATE    # J7 
+#  p3d_set_pos_axe 0 36 0 0 0 0 
+#  p3d_set_prev_jnt 6
+#  p3d_set_dof 0
+#  p3d_set_dof_pos0 0
+#  p3d_set_dof_vmin -180.0
+#  p3d_set_dof_vmax 180.0
+#p3d_end_desc
+
+#p3d_beg_desc P3D_BODY articul7
+#p3d_add_desc_cylindre cyl7 0.2 0.4 
+#p3d_set_prim_pos cyl7 0 36 0 0 0 0
+
+#p3d_add_desc_box box7 0.3 0.3 6 
+#p3d_set_prim_pos box7  0 39 0 90 0 0
+#p3d_end_desc
+
+#p3d_beg_desc_jnt P3D_ROTATE   
+#  p3d_set_pos_axe 0 42 0 0 0 0 
+#  p3d_set_prev_jnt 7
+#  p3d_set_dof 0
+#  p3d_set_dof_pos0 0
+#  p3d_set_dof_vmin -180.0
+#  p3d_set_dof_vmax 180.0
+#p3d_end_desc
+
+
+#p3d_beg_desc P3D_BODY articul8
+#p3d_add_desc_cylindre cyl8 0.2 0.4 
+#p3d_set_prim_pos cyl8 0 42 0 0 0 0
+
+#p3d_add_desc_box box8 0.3 0.3 5.6 
+#p3d_set_prim_pos box8  0 44.8 0 90 0 0
+
+#p3d_add_desc_rtorusslice h1 1.5 0.8 0.4 6.3
+#p3d_set_prim_pos h1 0 48 0.6 0 0 0
+#p3d_end_desc
+
+p3d_end_desc
+
+
+p3d_set_body_poly_color articul1  2 Blue
+p3d_set_body_poly_color articul2  2 Blue
+#p3d_set_body_poly_color articul3  2 Blue
+#p3d_set_body_poly_color articul4  2 Blue
+#p3d_set_body_poly_color articul5  2 Blue
+#p3d_set_body_poly_color articul6  2 Blue
+#p3d_set_body_poly_color articul7  2 Blue
+#p3d_set_body_poly_color articul8  2 Blue
+
+p3d_end_desc
+
+
+p3d_set_env_box  -20 20 -20 20 0 5
+
+#p3d_set_robot_current -140. 0. -90. -90. 0. 0. -90. -90. 
+#p3d_set_robot_goto      50. 0. -90. -90. 0. 0. -90. -90.

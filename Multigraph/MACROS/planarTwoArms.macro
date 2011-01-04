@@ -1,0 +1,245 @@
+p3d_beg_desc P3D_ROBOT
+
+  p3d_beg_desc_jnt P3D_PLAN # J1
+    p3d_set_name Platform
+    p3d_set_prev_jnt 0
+    p3d_set_pos_axe 0 0 0  0 0 0
+    p3d_set_dof_vmin -150 -150 -180
+    p3d_set_dof_vmax 150 150 180
+  p3d_end_desc
+
+  p3d_beg_desc P3D_BODY platform
+    p3d_add_desc_cylindre_oval base1 10 5 2.2
+    p3d_set_prim_pos base1 0 0 1.1 0 0 0
+  p3d_end_desc
+
+  p3d_beg_desc_jnt P3D_ROTATE # J2
+    p3d_set_name Rob1J1
+    p3d_set_prev_jnt 1
+    p3d_set_pos_axe -7 0 0  0 0 0
+    p3d_set_dof_vmin -179
+    p3d_set_dof_vmax 180
+  p3d_end_desc
+  p3d_beg_desc P3D_BODY rob1Part1
+    p3d_add_desc_cylindre part1 2 10
+    p3d_set_prim_pos part1 -7 5 4  90 0 0
+    p3d_add_desc_cylindre axe 2 4
+    p3d_set_prim_pos axe -7 0 4  0 0 0
+  p3d_end_desc
+
+  p3d_beg_desc_jnt P3D_ROTATE # J3
+    p3d_set_name Rob1J2
+    p3d_set_prev_jnt 2
+    p3d_set_pos_axe -7 10 0  0 0 0
+    p3d_set_dof_vmin -179
+    p3d_set_dof_vmax 180
+  p3d_end_desc
+  p3d_beg_desc P3D_BODY rob1Part2
+    p3d_add_desc_cylindre part1 2 10
+    p3d_set_prim_pos part1 -7 15 4  90 0 0
+    p3d_add_desc_cylindre axe 2 4
+    p3d_set_prim_pos axe -7 10 4  0 0 0
+  p3d_end_desc
+
+  p3d_beg_desc_jnt P3D_ROTATE # J4
+    p3d_set_name Rob1J3
+    p3d_set_prev_jnt 3
+    p3d_set_pos_axe -7 20 0  0 0 0
+    p3d_set_dof_vmin -179
+    p3d_set_dof_vmax 180
+  p3d_end_desc
+  p3d_beg_desc P3D_BODY rob1Part3
+    p3d_add_desc_cylindre part1 2 10
+    p3d_set_prim_pos part1 -7 25 4  90 0 0
+    p3d_add_desc_cylindre axe 2 4
+    p3d_set_prim_pos axe -7 20 4  0 0 0
+  p3d_end_desc
+  
+  p3d_beg_desc_jnt P3D_ROTATE # J5
+    p3d_set_name Rob1J4
+    p3d_set_prev_jnt 4
+    p3d_set_pos_axe -7 30 0  0 0 0
+    p3d_set_dof_vmin -179
+    p3d_set_dof_vmax 180
+  p3d_end_desc
+  p3d_beg_desc P3D_BODY rob1Part4
+    p3d_add_desc_cylindre part1 2 10
+    p3d_set_prim_pos part1 -7 35 4  90 0 0
+    p3d_add_desc_cylindre axe 2 4
+    p3d_set_prim_pos axe -7 30 4  0 0 0
+  p3d_end_desc
+  
+  p3d_beg_desc_jnt P3D_ROTATE # J6
+    p3d_set_name Rob1J5
+    p3d_set_prev_jnt 5
+    p3d_set_pos_axe -7 40 0  0 0 0
+    p3d_set_dof_vmin -179
+    p3d_set_dof_vmax 180
+  p3d_end_desc
+  p3d_beg_desc P3D_BODY rob1Part5
+    p3d_add_desc_cylindre part1 2 10
+    p3d_set_prim_pos part1 -7 45 4  90 0 0
+    p3d_add_desc_cylindre axe 2 4
+    p3d_set_prim_pos axe -7 40 4  0 0 0
+  p3d_end_desc
+  
+  p3d_beg_desc_jnt P3D_ROTATE # J7
+    p3d_set_name Rob1J6
+    p3d_set_prev_jnt 6
+    p3d_set_pos_axe -7 50 0  0 0 0
+    p3d_set_dof_vmin -179
+    p3d_set_dof_vmax 180
+  p3d_end_desc
+  p3d_beg_desc P3D_BODY rob1Part6
+    p3d_add_desc_cylindre part1 2 10
+    p3d_set_prim_pos part1 -7 55 4  90 0 0
+    p3d_add_desc_cylindre axe 2 4
+    p3d_set_prim_pos axe -7 50 4  0 0 0
+  p3d_end_desc
+
+  p3d_beg_desc_jnt P3D_ROTATE # J8
+    p3d_set_name Rob1J7
+    p3d_set_prev_jnt 7
+    p3d_set_pos_axe -7 60 0  0 0 0
+    p3d_set_dof_vmin -179
+    p3d_set_dof_vmax 180
+  p3d_end_desc
+  p3d_beg_desc P3D_BODY rob1Part7
+    p3d_add_desc_cylindre part1 2 10
+    p3d_set_prim_pos part1 -7 65 4  90 0 0
+    p3d_add_desc_cylindre axe 2 4
+    p3d_set_prim_pos axe -7 60 4  0 0 0
+  p3d_end_desc
+  
+    p3d_beg_desc_jnt P3D_ROTATE # J9
+    p3d_set_name Rob2J1
+    p3d_set_prev_jnt 1
+    p3d_set_pos_axe 7 0 0  0 0 0
+    p3d_set_dof_vmin -179
+    p3d_set_dof_vmax 180
+  p3d_end_desc
+  p3d_beg_desc P3D_BODY rob2Part1
+    p3d_add_desc_cylindre part1 2 10
+    p3d_set_prim_pos part1 7 5 4  90 0 0
+    p3d_add_desc_cylindre axe 2 4
+    p3d_set_prim_pos axe 7 0 4  0 0 0
+  p3d_end_desc
+
+  p3d_beg_desc_jnt P3D_ROTATE # J10
+    p3d_set_name Rob2J2
+    p3d_set_prev_jnt 9
+    p3d_set_pos_axe 7 10 0  0 0 0
+    p3d_set_dof_vmin -179
+    p3d_set_dof_vmax 180
+  p3d_end_desc
+  p3d_beg_desc P3D_BODY rob2Part2
+    p3d_add_desc_cylindre part1 2 10
+    p3d_set_prim_pos part1 7 15 4  90 0 0
+    p3d_add_desc_cylindre axe 2 4
+    p3d_set_prim_pos axe 7 10 4  0 0 0
+  p3d_end_desc
+
+  p3d_beg_desc_jnt P3D_ROTATE # J11
+    p3d_set_name Rob2J3
+    p3d_set_prev_jnt 10
+    p3d_set_pos_axe 7 20 0  0 0 0
+    p3d_set_dof_vmin -179
+    p3d_set_dof_vmax 180
+  p3d_end_desc
+  p3d_beg_desc P3D_BODY rob2Part3
+    p3d_add_desc_cylindre part1 2 10
+    p3d_set_prim_pos part1 7 25 4  90 0 0
+    p3d_add_desc_cylindre axe 2 4
+    p3d_set_prim_pos axe 7 20 4  0 0 0
+  p3d_end_desc
+  
+  p3d_beg_desc_jnt P3D_ROTATE # J12
+    p3d_set_name Rob2J4
+    p3d_set_prev_jnt 11
+    p3d_set_pos_axe 7 30 0  0 0 0
+    p3d_set_dof_vmin -179
+    p3d_set_dof_vmax 180
+  p3d_end_desc
+  p3d_beg_desc P3D_BODY rob2Part4
+    p3d_add_desc_cylindre part1 2 10
+    p3d_set_prim_pos part1 7 35 4  90 0 0
+    p3d_add_desc_cylindre axe 2 4
+    p3d_set_prim_pos axe 7 30 4  0 0 0
+  p3d_end_desc
+  
+  p3d_beg_desc_jnt P3D_ROTATE # J13
+    p3d_set_name Rob1J5
+    p3d_set_prev_jnt 12
+    p3d_set_pos_axe 7 40 0  0 0 0
+    p3d_set_dof_vmin -179
+    p3d_set_dof_vmax 180
+  p3d_end_desc
+  p3d_beg_desc P3D_BODY rob2Part5
+    p3d_add_desc_cylindre part1 2 10
+    p3d_set_prim_pos part1 7 45 4  90 0 0
+    p3d_add_desc_cylindre axe 2 4
+    p3d_set_prim_pos axe 7 40 4  0 0 0
+  p3d_end_desc
+  
+  p3d_beg_desc_jnt P3D_ROTATE # J14
+    p3d_set_name Rob2J6
+    p3d_set_prev_jnt 13
+    p3d_set_pos_axe 7 50 0  0 0 0
+    p3d_set_dof_vmin -179
+    p3d_set_dof_vmax 180
+  p3d_end_desc
+  p3d_beg_desc P3D_BODY rob2Part6
+    p3d_add_desc_cylindre part1 2 10
+    p3d_set_prim_pos part1 7 55 4  90 0 0
+    p3d_add_desc_cylindre axe 2 4
+    p3d_set_prim_pos axe 7 50 4  0 0 0
+  p3d_end_desc
+
+  p3d_beg_desc_jnt P3D_ROTATE # J15
+    p3d_set_name Rob2J7
+    p3d_set_prev_jnt 14
+    p3d_set_pos_axe 7 60 0  0 0 0
+    p3d_set_dof_vmin -179
+    p3d_set_dof_vmax 180
+  p3d_end_desc
+  p3d_beg_desc P3D_BODY rob2Part7
+    p3d_add_desc_cylindre part1 2 10
+    p3d_set_prim_pos part1 7 65 4  90 0 0
+    p3d_add_desc_cylindre axe 2 4
+    p3d_set_prim_pos axe 7 60 4  0 0 0
+  p3d_end_desc
+p3d_end_desc
+
+
+###### COLORS #######
+p3d_set_body_poly_color platform 1 Any 0 1 0
+
+# p3d_set_body_poly_color rob1Part1 1 Any 0 0 1
+p3d_set_body_poly_color rob1Part1 2 Any 0.0 0.0 0.0
+# p3d_set_body_poly_color rob1Part2 1 Any 0 0 1
+p3d_set_body_poly_color rob1Part2 2 Any 0.0 0.0 0.0
+# p3d_set_body_poly_color rob1Part3 1 Any 0 0 1
+p3d_set_body_poly_color rob1Part3 2 Any 0.0 0.0 0.0
+# p3d_set_body_poly_color rob1Part4 1 Any 0 0 1
+p3d_set_body_poly_color rob1Part4 2 Any 0.0 0.0 0.0
+# p3d_set_body_poly_color rob1Part5 1 Any 0 0 1
+p3d_set_body_poly_color rob1Part5 2 Any 0.0 0.0 0.0
+# p3d_set_body_poly_color rob1Part6 1 Any 0 0 1
+p3d_set_body_poly_color rob1Part6 2 Any 0.0 0.0 0.0
+# p3d_set_body_poly_color rob1Part7 1 Any 0 0 1
+p3d_set_body_poly_color rob1Part7 2 Any 0.0 0.0 0.0
+
+# p3d_set_body_poly_color rob2Part1 1 Any 0 0 1
+p3d_set_body_poly_color rob2Part1 2 Any 0.0 0.0 0.0
+# p3d_set_body_poly_color rob2Part2 1 Any 0 0 1
+p3d_set_body_poly_color rob2Part2 2 Any 0.0 0.0 0.0
+# p3d_set_body_poly_color rob2Part3 1 Any 0 0 1
+p3d_set_body_poly_color rob2Part3 2 Any 0.0 0.0 0.0
+# p3d_set_body_poly_color rob2Part4 1 Any 0 0 1
+p3d_set_body_poly_color rob2Part4 2 Any 0.0 0.0 0.0
+# p3d_set_body_poly_color rob2Part5 1 Any 0 0 1
+p3d_set_body_poly_color rob2Part5 2 Any 0.0 0.0 0.0
+# p3d_set_body_poly_color rob2Part6 1 Any 0 0 1
+p3d_set_body_poly_color rob2Part6 2 Any 0.0 0.0 0.0
+# p3d_set_body_poly_color rob2Part7 1 Any 0 0 1
+p3d_set_body_poly_color rob2Part7 2 Any 0.0 0.0 0.0

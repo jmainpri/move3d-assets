@@ -1,0 +1,193 @@
+p3d_beg_desc P3D_ENV 4arms_disc.env
+
+
+############
+############
+# OBSTACLE #
+############
+############
+
+p3d_beg_desc P3D_OBSTACLE land
+  p3d_add_desc_box w1 10000.0 6600.0 20.0
+  p3d_set_prim_pos w1 0.0 1700.0 490.0 0.0 0.0 0.0  
+p3d_end_desc
+
+p3d_set_obst_color land Brown
+
+p3d_beg_desc P3D_OBSTACLE bases
+  p3d_add_desc_box ba1 500.0 500.0 600.0 P3D_GRAPHIC
+  p3d_set_prim_pos ba1 0.0 0.0 800.0 0.0 0.0 0.0  
+  p3d_add_desc_box ba2 500.0 500.0 600.0 P3D_GRAPHIC
+  p3d_set_prim_pos ba2 0.0 3500.0 800.0 0.0 0.0 0.0  
+p3d_end_desc
+p3d_set_obst_color bases Blue
+
+p3d_beg_desc P3D_OBSTACLE sup_bot
+  p3d_add_desc_box sb1 100.0 100.0 1000.0
+  p3d_set_prim_pos sb1 200.0 1750.0 1000.0 0.0 0.0 0.0  
+p3d_end_desc
+p3d_set_obst_color sup_bot Blue2
+
+p3d_beg_desc P3D_OBSTACLE sup_top
+  p3d_add_desc_box st1 100.0 100.0 1000.0
+  p3d_set_prim_pos st1 -200.0 1750.0 2000.0 0.0 0.0 0.0
+p3d_end_desc
+p3d_set_obst_color sup_top Blue2
+
+
+###########
+###########
+#  ROBOT  #
+###########
+###########
+
+
+p3d_beg_desc P3D_ROBOT 2arms_disc
+
+# DILI1
+
+p3d_read_macro base.macro baseArm1
+
+p3d_add_desc_jnt P3D_ROTATE 0 0 1479 0 0 1 0.0 -180.0 180.0 0
+
+p3d_read_macro link1.macro link1Arm1
+
+p3d_add_desc_jnt P3D_ROTATE 0 0 1479 0 -1 0 -90.0 -180.0 180.0 1
+
+p3d_read_macro link2.macro link2Arm1
+
+p3d_add_desc_jnt P3D_ROTATE 0 0 1944 0 -1 0 -90.0 -180.0 180.0 2
+
+p3d_read_macro link3.macro link3Arm1
+
+p3d_add_desc_jnt P3D_ROTATE 0 0 2339 0 0 1 0.0 -180.0 180.0 3
+
+p3d_read_macro link4.macro link4Arm1
+
+p3d_add_desc_jnt P3D_ROTATE 0 0 2339 0 -1 0 0.0 -90.0 90.0 4
+
+p3d_read_macro link5.macro link5Arm1
+
+p3d_add_desc_jnt P3D_ROTATE 0 0 2339 0 0 1 0.0 -180.0 180.0 5
+
+p3d_read_macro link6.macro link6Arm1
+
+# DILI2
+
+p3d_add_desc_jnt P3D_TRANSLATE 0 0 0 0 1 0 3500.0 3500.0 3500.0 0
+
+p3d_read_macro base.macro baseArm2
+
+p3d_add_desc_jnt P3D_ROTATE 0 0 1479 0 0 1 0.0 -180.0 180.0 7
+
+p3d_read_macro link1.macro link1Arm2
+
+p3d_add_desc_jnt P3D_ROTATE 0 0 1479 0 -1 0 -90.0 -180.0 180.0 8
+
+p3d_read_macro link2.macro link2Arm2
+
+p3d_add_desc_jnt P3D_ROTATE 0 0 1944 0 -1 0 -90.0 -180.0 180.0 9
+
+p3d_read_macro link3.macro link3Arm2
+
+p3d_add_desc_jnt P3D_ROTATE 0 0 2339 0 0 1 0.0 -180.0 180.0 10
+
+p3d_read_macro link4.macro link4Arm2
+
+p3d_add_desc_jnt P3D_ROTATE 0 0 2339 0 -1 0 0.0 -90.0 90.0 11
+
+p3d_read_macro link5.macro link5Arm2
+
+p3d_add_desc_jnt P3D_ROTATE 0 0 2339 0 0 1 0.0 -180.0 180.0 12
+
+p3d_read_macro link6.macro link6Arm2
+
+
+p3d_beg_desc_jnt P3D_FREEFLYER  #J30
+  p3d_set_prev_jnt   0
+  p3d_set_pos_xyz 0 0 0 0 0 0
+  p3d_set_dof 0 2000 1100 0 0 0
+  p3d_set_dof_vmin -2000 -3000 500 -90 -90 -90
+  p3d_set_dof_vmax 2000 3500 3000 90 90 90
+p3d_end_desc
+
+p3d_beg_desc P3D_BODY Object
+  p3d_add_desc_box planche 45.0 2200 45.0
+  p3d_set_prim_pos planche 0 0 0 0 0 0
+p3d_end_desc
+
+p3d_end_desc
+
+
+############################################
+
+p3d_set_body_poly_color baseArm1.armBase 2 Black
+
+p3d_set_body_poly_color link2Arm1.link12 1 Black
+p3d_set_body_poly_color link2Arm1.link12 2 Black
+p3d_set_body_poly_color link2Arm1.link12 4 Black
+p3d_set_body_poly_color link2Arm1.link12 6 Black
+
+p3d_set_body_poly_color link3Arm1.link23 1 Black
+p3d_set_body_poly_color link3Arm1.link23 3 Black
+
+p3d_set_body_poly_color link6Arm1.link56 1 Black
+p3d_set_body_poly_color link6Arm1.link56 2 Black
+p3d_set_body_poly_color link6Arm1.link56 3 Black
+# p3d_set_body_poly_color arm6 4 Grey
+
+p3d_set_body_poly_color baseArm2.armBase 2 Black
+
+p3d_set_body_poly_color link2Arm2.link12 1 Black
+p3d_set_body_poly_color link2Arm2.link12 2 Black
+p3d_set_body_poly_color link2Arm2.link12 4 Black
+p3d_set_body_poly_color link2Arm2.link12 6 Black
+
+p3d_set_body_poly_color link3Arm2.link23 1 Black
+p3d_set_body_poly_color link3Arm2.link23 3 Black
+
+p3d_set_body_poly_color link6Arm2.link56 1 Black
+p3d_set_body_poly_color link6Arm2.link56 2 Black
+p3d_set_body_poly_color link6Arm2.link56 3 Black
+
+p3d_set_body_poly_color Object 1 Grey
+
+############################################
+
+p3d_end_desc
+
+p3d_set_env_box -5000.0 5000.0 -1600.0 5000.0 0.0 4000.0
+
+p3d_set_robot_steering_method Linear
+
+p3d_constraint p3d_R6_arm_ik 1 8  1 14  3 465 395 0   1 1
+p3d_set_cntrt_Tatt 0  1 0 0 0  0 0 -1 1225  0 1 0 0
+p3d_set_singularity 0  1  9 0
+p3d_set_singularity 0  1  10 0
+p3d_set_singularity 0  1  12 0
+p3d_set_singular_rel 0 0 4  1 5  2 6  3 7  4 8
+p3d_set_singular_rel 0 1 4  1 3  2 4  5 7  6 8
+p3d_set_singular_rel 0 2 4  1 2  3 4  5 6  7 8
+
+p3d_constraint p3d_R6_arm_ik 1 1  1 14  3 465 395 0  1 3
+p3d_set_cntrt_Tatt 1  1 0 0 0  0 0 1 -1225  0 -1 0 0
+p3d_set_singularity 1  1  2 0
+p3d_set_singularity 1  1  3 0
+p3d_set_singularity 1  1  5 0
+p3d_set_singular_rel 1 0 4  1 5  2 6  3 7  4 8
+p3d_set_singular_rel 1 1 4  1 3  2 4  5 7  6 8
+p3d_set_singular_rel 1 2 4  1 2  3 4  5 6  7 8
+
+p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 136.398582 -125.725516 43.631677 -95.991925 -47.884365 105.255541 3500.000000 49.834954 48.661428 57.569275 -84.872886 -37.636606 58.832533 -513.246676 1736.763809 1468.774501 3.036672 -73.073166 -6.996229
+
+p3d_set_robot_ikSol_current 1 3
+
+p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 81.615540 -67.704099 -71.846091 8.064060 51.162657 -38.918978 3500.000000 -32.076667 -101.587097 15.350759 92.565186 72.717361 -60.660906 410.030827 1863.972680 1383.180470 21.901124 53.289153 -25.039282
+
+p3d_set_robot_ikSol_goto 2 4
+
+# p3d_set_random_loop_generator normal_chain 0 1 6 
+# PARA bioRLG_Move3D
+#p3d_set_random_loop_generator normal 0 1 6 
+
+

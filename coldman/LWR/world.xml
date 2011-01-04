@@ -1,0 +1,73 @@
+<!-- 
+   WARNING:
+
+   THIS FILE IS USED BY QARM: DO NOT MODIFY IT WITHOUT PERMISSION.
+
+
+ -->
+
+
+<world> 
+     <models_directory> ./objects </models_directory>
+     <robot_directory> ./ </robot_directory>
+
+     <robot_file> LWR.xml </robot_file>
+ 
+
+    <obstacle>
+      <name> kukaTable </name> 
+      <file> kukaTable.obj </file>  
+     <transformation>
+         <translation>
+             0.35   0  0
+         </translation>
+       </transformation>
+      <color>  0.6 0.6 0.7 1.0 </color> 
+      <display> yes </display>
+       <collision> no </collision>
+    </obstacle>   
+
+    <obstacle>
+      <name> GkukaTable </name> 
+     <box> 1.7 0.8 0.77 </box>  
+     <transformation>
+         <translation>
+             0.35   0  0.395
+         </translation>
+       </transformation>
+      <color>  1.0 1.0 0.0 1.0 </color> 
+      <display> no </display>
+       <collision> yes </collision>
+    </obstacle>   
+     
+     <obstacle>
+       <name> floor </name> 
+       <box> 4 4 1 </box>  
+       <transformation>
+         <translation>
+             0   0  -0.52
+         </translation>
+       </transformation>
+       <color>  0.4 0.4 0.4 1.0 </color> 
+       <material> metal </material>  
+       <display> yes </display>
+       <shadow> no </shadow>
+    </obstacle>
+
+
+    <obstacle>
+      <name> myBox </name> 
+      <box> 0.5 0.5 0.5 </box>  
+      <transformation>
+        <translation>
+          0.8   0  1.2
+        </translation>
+      </transformation>
+      <color>  0.4 0.4 0.4 1.0 </color> 
+      <material> metal </material>  
+      <display> yes </display>
+      <shadow> yes </shadow>
+    </obstacle>
+  
+    <bounding_box> -2 2 -2 2 0 3 </bounding_box>       
+</world>

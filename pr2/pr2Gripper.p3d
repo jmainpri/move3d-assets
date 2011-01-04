@@ -1,0 +1,9 @@
+p3d_beg_desc P3D_ENV pr2
+
+p3d_read_macro pr2_gripper_robot.macro GRIPPER_PR2
+
+p3d_end_desc
+
+p3d_set_env_box -1 1 -1 1 0 2
+
+

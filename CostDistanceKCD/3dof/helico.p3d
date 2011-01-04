@@ -1,0 +1,63 @@
+p3d_beg_desc P3D_ENV lydia
+
+p3d_beg_desc P3D_OBSTACLE obst1
+
+	p3d_add_desc_box obst1.o1 600 200 30
+	p3d_set_prim_pos obst1.o1 0 300 0 0 90 0
+	
+	p3d_add_desc_box obst1.o1 600 200 30
+	p3d_set_prim_pos obst1.o1 0 -300 0 0 90 0
+	
+p3d_end_desc
+
+p3d_beg_desc P3D_OBSTACLE obst2
+
+	p3d_add_desc_box obst2.o1 700 300 50
+	p3d_set_prim_pos obst2.o1 0 0 200 90 0 90
+
+	p3d_add_desc_box obst2.o2 700 300 50
+	p3d_set_prim_pos obst2.o2 0 0 -200 90 0 90
+	
+p3d_end_desc
+
+p3d_set_obst_color obst1 Any 0 0 0
+p3d_set_obst_color obst2 Any 1 1 1
+
+p3d_beg_desc P3D_ROBOT lydia2.robot
+
+p3d_add_desc_jnt P3D_FREEFLYER 
+						0.0 0.0 0.0  
+						0.0 0.0 1.0  100 	
+						-300 	300		0    	
+						-300 	300		0   
+			 			-300 	300		0   
+			 			-180 	-180    0 	
+			 			-180 	-180    0 	
+			 			-180 	-180    0
+
+p3d_beg_desc P3D_BODY body2
+p3d_add_desc_box r1 50 10 10 
+p3d_add_desc_box r2 50 10 10
+p3d_set_prim_pos r2 30 20 0 0 0 90
+p3d_add_desc_box r3 60 10 10
+p3d_set_prim_pos r3 5 50 0 0 0 0
+#p3d_add_desc_box r4 50 10 10 
+#p3d_set_prim_pos r4 -20 0 -30 0 90 0 
+#p3d_add_desc_box r5 50 10 10 
+#p3d_set_prim_pos r5 -20 -30 -50 0 0 90
+p3d_end_desc 
+
+p3d_end_desc 
+p3d_end_desc
+
+p3d_set_body_poly_color body2 1 Any 1 0 0
+p3d_set_body_poly_color body2 2 Any 1 0 0
+p3d_set_body_poly_color body2 3 Any 1 0 0
+
+p3d_CostEnvironment
+
+p3d_set_env_box -300 300 -300 300 -300 300
+
+p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 300.000000 -215.339233 203.539825 -180.000000 -180.000000 -180.000000
+p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -224.188782 259.587006 262.536865 -180.000000 -180.000000 -180.000000
+

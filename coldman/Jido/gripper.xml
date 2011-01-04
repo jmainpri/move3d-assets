@@ -1,0 +1,128 @@
+<!-- Jido's gripper model -->
+
+
+<robot name="gripper">
+<name> gripper </name>
+<models_directory> ./gripper </models_directory>
+<joint name="root">
+  <name> root </name>
+  <type> freeflyer </type>
+  <transformation>
+    <translation> 0 0 0 </translation>
+  </transformation>  
+  <qmin> -0.5 -0.5 -0.5 </qmin>
+  <qmax> 0.5 0.5 0.5 </qmax>
+  <q> 0 0 0 0 0 0 </q>       
+  
+  <body name="palm">
+    <name> palm  </name> 
+    <file>  palm.obj  </file>
+    <transformation>
+      <translation> 0 0 -0.05 </translation>
+      <YPR_angles> 0 -90 90 </YPR_angles>  
+    </transformation>    
+    <color>  0.4 0.4 0.4 1.0 </color> 
+  </body>
+  
+  <joint name="fingerJoint">
+  <name> fingerJoint </name>
+  <type> prismatic </type>
+  <transformation>
+    <translation> 0 0 0 </translation>
+    <YPR_angles> 0 90 0 </YPR_angles>  
+  </transformation>                   
+  <qmin> 0 </qmin>
+  <qmax>  0.0325 </qmax> 
+  
+  <body name="finger2">
+    <name> finger2  </name> 
+    <file>  finger2.obj  </file>
+    <transformation>
+      <translation> -0.16 0 0 </translation>
+      <YPR_angles> 0 -180 180 </YPR_angles>  
+    </transformation>    
+    <collision>  no  </collision>
+    <color>  0.4 0.4 0.4 1.0 </color> 
+  </body>
+  <body name="Gfinger2">
+    <name> Gfinger2  </name> 
+    <box>  0.065 0.06 0.015  </box>
+    <transformation>
+      <translation> -0.13 0 0.01 </translation>
+    </transformation> 
+    <display>  no  </display>
+    <color> 1.0 1.0 0.0 1.0 </color> 
+  </body>
+  <body name="fingertip1">
+    <name> fingertip1  </name> 
+    <file>  fingertip1.obj  </file>
+    <transformation>
+      <translation> -0.145 0 0 </translation>
+    </transformation>    
+    <color>  1 0 0 1.0 </color> 
+  </body>
+  
+  <body name="fingertip2">
+    <name> fingertip2  </name> 
+    <file>  fingertip2.obj  </file>
+    <transformation>
+      <translation> -0.145 0 0 </translation>
+      </transformation>    
+    <color>  0 1 0 1.0 </color> 
+  </body> 
+  </joint>
+  
+
+  <joint name="fingerJointB">
+    <name> fingerJointB </name>
+    <type> prismatic </type>
+    <transformation>
+      <translation> 0 0 0 </translation>
+      <YPR_angles> 0 90 0 </YPR_angles>   
+    </transformation>  
+    <qmin> -0.0325 </qmin>
+    <qmax>  0 </qmax> 
+    
+    <body name="finger1">
+      <name> finger1  </name> 
+      <file>  finger1.obj  </file>
+      <transformation>
+        <translation> -0.16 0 0 </translation>
+        <YPR_angles> 0 -180 0 </YPR_angles>  
+      </transformation> 
+      <collision>  no  </collision>
+      <color>  0.4 0.4 0.4 1.0 </color> 
+    </body>
+    <body name="Gfinger1">
+      <name> Gfinger1  </name> 
+      <box>  0.065 0.03 0.015  </box>
+      <transformation>
+        <translation> -0.13 0 -0.01 </translation>
+      </transformation>    
+      <display>  no  </display>
+      <color> 1.0 1.0 0.0 1.0 </color> 
+  </body>  
+  <body name="fingertip3">
+      <name> fingertip3  </name> 
+      <file>  fingertip3.obj  </file>
+      <transformation>
+        <translation> -0.157 0 0 </translation>
+        <YPR_angles> 0 -180 0 </YPR_angles>  
+      </transformation>    
+      <color>  0 0 1 1.0 </color> 
+     </body>
+    
+  </joint>               
+</joint>
+
+<constraint> 
+    <type> linear </type>  
+    <master> fingerJoint </master>
+    <slave> fingerJointB </slave>
+    <master_dof> 0 </master_dof>
+    <slave_dof> 0 </slave_dof>    
+    <parameters> -1 0 </parameters> 
+</constraint>
+
+
+</robot>

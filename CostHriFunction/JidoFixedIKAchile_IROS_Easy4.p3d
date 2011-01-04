@@ -1,0 +1,161 @@
+p3d_beg_desc P3D_ENV JidoRef
+
+p3d_read_macro AchileSafetyZonesM.macro HUMAN
+p3d_read_macro jidoHriGripperHorizontal.macro ROBOT
+p3d_read_macro Objects/Movable/legLamp.macro legLamp 1.5
+p3d_read_macro Objects/Movable/trash.macro trashbin
+p3d_read_macro Objects/Movable/Horse.macro horse
+	
+
+#-----------------------------------------------
+# p3d_beg_desc P3D_OBSTACLE box1
+# p3d_add_desc_box obs 0.1 0.2 0.40
+# p3d_end_desc
+# p3d_set_obst_pos box1 0.25 1.0 1.15 0 0 0
+# p3d_set_obst_poly_color box1 1 Red
+# 
+# p3d_beg_desc P3D_OBSTACLE box2
+# p3d_add_desc_box obs 0.10 0.2 0.50
+# p3d_end_desc
+# p3d_set_obst_pos box2 0.0 0.8 1.15 0 0 0
+# p3d_set_obst_poly_color box2 1 Blue
+
+# p3d_beg_desc P3D_OBSTACLE box3
+# p3d_add_desc_box obs 0.15 0.2 0.40
+# p3d_end_desc
+# p3d_set_obst_pos box3 0.53 0.8 1.25 0 0 30
+# p3d_set_obst_poly_color box3 1 Green
+
+# p3d_beg_desc P3D_OBSTACLE box4
+# p3d_add_desc_box obs 0.10 0.2 0.50
+# p3d_end_desc
+# p3d_set_obst_pos box4 0.50 0.90 1.45 0 90 0
+# p3d_set_obst_poly_color box4 1 Black
+
+	p3d_beg_desc P3D_OBSTACLE table	
+	p3d_add_desc_box obs 0.90 0.8 0.1
+	p3d_end_desc
+	
+	p3d_set_obst_pos table 0.5 0.9 1.0 0 0 90
+	p3d_set_obst_poly_color table 1 Any 0.18 0.28 0.64
+	
+# 	p3d_read_macro ./Objects/Static/dlrTable.macro table
+# 	p3d_set_obst_pos table 0.38 -1.0106 0.0 90 0 -90
+# 	p3d_read_macro ./Objects/Static/dlrTable.macro table2
+# 	p3d_set_obst_pos table2 -0.7 -2.0106 0.0 90 0 180
+	
+# 	p3d_read_macro ./Objects/Static/dlrShelf.macro shelf
+# 	p3d_set_obst_pos shelf -2 -1.0106 0.0 90 0 -90
+
+# 	p3d_read_macro ./Objects/Static/sailLamp.macro lamp
+# 	p3d_set_obst_pos lamp -0.2 -1.0106 1.7 0 -90 0
+# 	p3d_read_macro ./Objects/Static/sailLamp.macro lamp2
+# 	p3d_set_obst_pos lamp2 -0.8 -1.5106 1.8 0 -90 0
+# 	p3d_read_macro ./Objects/Static/sailLamp.macro lamp3
+# 	p3d_set_obst_pos lamp3 -0.6 -0.5106 1.7 0 -90 0
+	
+# 	p3d_read_macro ./Objects/Static/legLamp.macro legLamp 1.5
+# 	p3d_set_obst_pos legLamp 0.70 0 1 0 -90 0
+	
+	p3d_read_macro ./Objects/Static/deskLamp.macro deskLamp 1.5
+	p3d_set_obst_pos deskLamp 0.53 0.6 1.40 -100 -90 -110
+	
+# 	p3d_read_macro ./Objects/Static/openedBook.macro book 0.1
+# 	p3d_set_obst_pos book 0.25 1.0 1.15 0 0 0
+ 
+
+p3d_end_desc
+
+p3d_set_env_box -2.0 3.0 -3.0 2.0 0 3.0
+#p3d_set_env_box 0.0 3.0 -1.0 2.0 0 2.000
+
+#--------------------------------------------------------------------------------------------------
+p3d_sel_desc_name P3D_ROBOT trashbin
+
+p3d_set_robot_steering_method Linear
+
+p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.665192 0.218781 0.000000 0.000000 0.000000 0.000000
+p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+
+p3d_set_jnt_dofs_min_max 1 0.0 3.0 -1.0 2.0 0 2.000 -180 180 -180 180 -180 180
+
+
+p3d_sel_desc_name P3D_ROBOT horse
+
+p3d_set_robot_steering_method Linear
+
+p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.665192 0.287611 0.921337 -1.769915 0.000000 17.699125
+p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+
+p3d_set_jnt_dofs_min_max 1 0.0 3.0 -1.0 2.0 0 2.000 -180 180 -180 180 -180 180
+
+
+p3d_sel_desc_name P3D_ROBOT legLamp
+ 
+p3d_set_robot_steering_method Linear
+ 
+p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.965854 0.185366 0.000000 0.878049 0.000000 0.000000
+p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.426829 0.219512 0.000000 0.000000 0.000000 0.000000
+
+
+#-----------------------------------------------
+p3d_sel_desc_name P3D_ROBOT HUMAN
+
+p3d_set_robot_steering_method Linear
+
+p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.219512 0.829268 1.101278 0.000000 -1.769915 39.512195 3.215340 0.000000 0.000000 8.008853 -4.867257 -16.371681 20.943954 -83.466072 8.341463 34.146341 -85.575226 -2.654867 -0.786626 30.000000 73.190765 -26.356934 -45.909538 -90.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+
+p3d_set_jnt_dofs_min_max 1 0.0 3.0 -1.0 2.0 0 2.000 -180 180 -180 180 -180 180
+
+
+p3d_sel_desc_name P3D_ROBOT ROBOT
+
+#p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.368293 -0.509756 118.584068 2.087020 0.000000 -70.584242 62.409679 67.154738 123.603360 -52.513870 -166.048675 0.020000 0.020000 0.000000 0.000000 0.670732 0.273659 0.995122 -46.536585 43.024390 48.292683
+#p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.368293 -0.509756 118.584068 -15.000000 0.000000 -42.882079 22.397758 68.590214 68.614056 -66.314872 -147.607741 0.020000 0.020000 0.000000 0.000000 1.475610 0.617073 1.309268 55.317073 36.000000 -46.536585
+
+p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.368293 -0.509756 0.000000 0.000000 0.000000 118.584068 2.087020 0.000000 -70.584242 62.409679 67.154738 123.603360 -52.513870 -166.048675 0.020000 0.020000 0.000000 0.000000 0.670732 0.273659 0.995122 -46.536585 43.024390 48.292683
+p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.368293 -0.509756 0.000000 0.000000 0.000000 118.584068 -15.000000 0.000000 -42.882079 22.397758 68.590214 68.614056 -66.314872 -147.607741 0.020000 0.020000 0.000000 0.000000 1.475610 0.617073 1.309268 55.317073 36.000000 -46.536585
+
+
+# Inverse Kinematics
+p3d_constraint p3d_pa10_6_arm_ik 6 5 6 7 8 9 10  1 17  0  1 7
+#p3d_set_cntrt_Tatt 1  0 0 1 -0.275  0.36 0.92 0 0  -0.92 0.36 0 0
+p3d_set_cntrt_Tatt 1 
++0.649768   -0.756306   +0.076181   +0.009223
+ -0.669615   -0.522079   +0.528251   -0.175238
+ -0.359747   -0.394253   -0.845664   +0.303494
+#p3d_set_cntrt_Tatt 1  1 0 0 0 0 1 0 0 0 0 1 0
+
+# Foward Kinematcis
+p3d_set_object_base_and_arm_constraints 17 1 0  1  1
+
+p3d_set_object_to_carry horse
+
+p3d_constraint p3d_fixed_jnt 1 0 0 6 0 0 0 0 0 0 0
+
+# X,Y,THETA
+p3d_constraint p3d_fixed_jnt 1 1 0 6 1.368293 -0.509756 0.000000 0.000000 0.000000 118.584068 0
+p3d_constraint p3d_fixed_jnt 1 2 0 1 2.087020 0
+
+# Cameras
+p3d_constraint p3d_fixed_jnt 1 2 0 1 -15.0 0
+p3d_constraint p3d_fixed_jnt 1 3 0 1 0.000 0
+
+
+
+# Effector
+p3d_constraint p3d_fixed_jnt 1 12 0 1 0.02 0
+p3d_constraint p3d_fixed_jnt 1 13 0 1 0.02 0
+
+# Virtual Cameras
+p3d_constraint p3d_fixed_jnt 1 14 0 1 0.000 0
+p3d_constraint p3d_fixed_jnt 1 15 0 1 0.000 0
+
+p3d_create_reeds_shepp_local_method 0.3 1
+
+#p3d_set_jnt_dofs_min_max 1 0.0 3.0 -1.0 2.0 -180 180
+# p3d_set_jnt_dofs_min_max 17 0.0 3.0 -1.0 2.0 0 2.000 -180 180 -180 180 -180 180
+p3d_set_jnt_dofs_min_max 17 0.4 2.0 -0.30 1.10 0 2.000 -180 180 -180 180 -180 180
+
+p3d_set_fk_constraint

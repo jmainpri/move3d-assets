@@ -1,0 +1,159 @@
+  p3d_beg_desc P3D_ROBOT
+
+p3d_beg_desc_jnt P3D_FREEFLYER  #1
+  p3d_set_prev_jnt   0
+  p3d_set_pos_xyz 0.0 0.0 0.0 0.0 0.0 0.0
+  p3d_set_dof      0 0 0  0   0   0
+  p3d_set_dof_vmin -3 -6 0 -90 -90 -180
+  p3d_set_dof_vmax 12 1 2 90 90 180
+p3d_end_desc
+
+p3d_beg_desc P3D_BODY faut
+    p3d_add_desc_poly obstacle0_polyhedre48 
+      p3d_add_desc_vert -0.28 -2.3366e-06 0.315
+      p3d_add_desc_vert 0.35 -1.148e-06 0.315
+      p3d_add_desc_vert 0.35 -1.148e-06 0.20923
+      p3d_add_desc_vert 0.35 1.1746e-06 -0.21077
+      p3d_add_desc_vert -0.28 0 -0.315
+      p3d_add_desc_vert 0.35 1.1746e-06 -0.315
+      p3d_add_desc_vert -0.28 0.49 0.315
+      p3d_add_desc_vert 0.35 0.49 0.315
+      p3d_add_desc_vert -0.14 0.49 0.20923
+      p3d_add_desc_vert 0.35 0.49 0.20923
+      p3d_add_desc_vert -0.14 0.49 -0.21077
+      p3d_add_desc_vert 0.35 0.49 -0.21077
+      p3d_add_desc_vert -0.28 0.49 -0.315
+      p3d_add_desc_vert 0.35 0.49 -0.315
+      p3d_add_desc_vert -0.13965 -2.3303e-06 0.20923
+      p3d_add_desc_vert -0.13965 0 -0.21077
+      p3d_add_desc_vert 0.28035 0.112 0.20923
+      p3d_add_desc_vert 0.28035 0.21 0.20923
+      p3d_add_desc_vert 0.28035 0.112 -0.21077
+      p3d_add_desc_vert 0.28035 0.21 -0.21077
+      p3d_add_desc_vert -0.13965 0.28 0.20923
+      p3d_add_desc_vert -0.13965 0.28 -0.21077
+      p3d_add_desc_vert -0.13965 0.315 0.17423
+      p3d_add_desc_vert -0.13965 0.315 -0.17577
+      p3d_add_desc_vert 0.28035 0.28 0.20923
+      p3d_add_desc_vert 0.28035 0.28 -0.21077
+      p3d_add_desc_vert 0.24535 0.315 0.17423
+      p3d_add_desc_vert 0.24535 0.315 -0.17577
+      p3d_add_desc_vert -0.20965 0.28 -0.21273
+      p3d_add_desc_vert -0.069615 0.28 -0.21224
+      p3d_add_desc_vert -0.034615 0.28 -0.17563
+      p3d_add_desc_vert -0.21315 0.511 -0.21217
+      p3d_add_desc_vert -0.10815 0.511 -0.21266
+      p3d_add_desc_vert -0.07665 0.476 -0.19873
+      p3d_add_desc_vert -0.20965 0.28 0.21056
+      p3d_add_desc_vert -0.069615 0.28 0.21105
+      p3d_add_desc_vert -0.034615 0.28 0.17437
+      p3d_add_desc_vert -0.21315 0.511 0.21112
+      p3d_add_desc_vert -0.10815 0.511 0.21063
+      p3d_add_desc_vert -0.07665 0.476 0.19719
+
+      p3d_add_desc_face 11 14 12 
+      p3d_add_desc_face 2 10 3 
+      p3d_add_desc_face 10 2 8 
+      p3d_add_desc_face 4 14 6 
+      p3d_add_desc_face 14 4 12 
+      p3d_add_desc_face 7 8 1 
+      p3d_add_desc_face 1 8 2 
+      p3d_add_desc_face 13 7 5 
+      p3d_add_desc_face 5 7 1 
+      p3d_add_desc_face 10 9 3 
+      p3d_add_desc_face 4 11 12 
+      p3d_add_desc_face 3 9 15 
+      p3d_add_desc_face 11 4 16 
+      p3d_add_desc_face 18 19 17 
+      p3d_add_desc_face 19 18 20 
+      p3d_add_desc_face 11 13 14 
+      p3d_add_desc_face 14 13 6 
+      p3d_add_desc_face 13 5 6 
+      p3d_add_desc_face 11 9 13 
+      p3d_add_desc_face 13 9 7
+      p3d_add_desc_face 9 10 8 
+      p3d_add_desc_face 9 8 7 
+    p3d_end_desc_poly
+    p3d_set_prim_pos_by_mat obstacle0_polyhedre48 1 0 0 0 0 0 1 0 0 1 0 -0.00022 0 0 0 1
+
+    p3d_add_desc_poly obstacle0_polyhedre49 
+      p3d_add_desc_vert -0.28 -2.3366e-06 0.315
+      p3d_add_desc_vert 0.35 -1.148e-06 0.315
+      p3d_add_desc_vert 0.35 -1.148e-06 0.20923
+      p3d_add_desc_vert 0.35 1.1746e-06 -0.21077
+      p3d_add_desc_vert -0.28 0 -0.315
+      p3d_add_desc_vert 0.35 1.1746e-06 -0.315
+      p3d_add_desc_vert -0.28 0.49 0.315
+      p3d_add_desc_vert 0.35 0.49 0.315
+      p3d_add_desc_vert -0.14 0.49 0.20923
+      p3d_add_desc_vert 0.35 0.49 0.20923
+      p3d_add_desc_vert -0.14 0.49 -0.21077
+      p3d_add_desc_vert 0.35 0.49 -0.21077
+      p3d_add_desc_vert -0.28 0.49 -0.315
+      p3d_add_desc_vert 0.35 0.49 -0.315
+      p3d_add_desc_vert -0.13965 -2.3303e-06 0.20923
+      p3d_add_desc_vert -0.13965 0 -0.21077
+      p3d_add_desc_vert 0.28035 0.112 0.20923
+      p3d_add_desc_vert 0.28035 0.21 0.20923
+      p3d_add_desc_vert 0.28035 0.112 -0.21077
+      p3d_add_desc_vert 0.28035 0.21 -0.21077
+      p3d_add_desc_vert -0.13965 0.28 0.20923
+      p3d_add_desc_vert -0.13965 0.28 -0.21077
+      p3d_add_desc_vert -0.13965 0.315 0.17423
+      p3d_add_desc_vert -0.13965 0.315 -0.17577
+      p3d_add_desc_vert 0.28035 0.28 0.20923
+      p3d_add_desc_vert 0.28035 0.28 -0.21077
+      p3d_add_desc_vert 0.24535 0.315 0.17423
+      p3d_add_desc_vert 0.24535 0.315 -0.17577
+      p3d_add_desc_vert -0.20965 0.28 -0.21273
+      p3d_add_desc_vert -0.069615 0.28 -0.21224
+      p3d_add_desc_vert -0.034615 0.28 -0.17563
+      p3d_add_desc_vert -0.21315 0.511 -0.21217
+      p3d_add_desc_vert -0.10815 0.511 -0.21266
+      p3d_add_desc_vert -0.07665 0.476 -0.19873
+      p3d_add_desc_vert -0.20965 0.28 0.21056
+      p3d_add_desc_vert -0.069615 0.28 0.21105
+      p3d_add_desc_vert -0.034615 0.28 0.17437
+      p3d_add_desc_vert -0.21315 0.511 0.21112
+      p3d_add_desc_vert -0.10815 0.511 0.21063
+      p3d_add_desc_vert -0.07665 0.476 0.19719
+
+      p3d_add_desc_face 18 26 20 
+      p3d_add_desc_face 26 18 25 
+      p3d_add_desc_face 25 28 26 
+      p3d_add_desc_face 28 25 27 
+      p3d_add_desc_face 22 28 24 
+      p3d_add_desc_face 28 22 26 
+      p3d_add_desc_face 24 27 23 
+      p3d_add_desc_face 27 24 28 
+      p3d_add_desc_face 23 25 21 
+      p3d_add_desc_face 25 23 27 
+      p3d_add_desc_face 29 33 32 
+      p3d_add_desc_face 33 29 30 
+      p3d_add_desc_face 30 34 33 
+      p3d_add_desc_face 34 30 31 
+      p3d_add_desc_face 35 39 36 
+      p3d_add_desc_face 39 35 38 
+      p3d_add_desc_face 36 40 37 
+      p3d_add_desc_face 40 36 39 
+      p3d_add_desc_face 31 40 34 
+      p3d_add_desc_face 40 31 37 
+      p3d_add_desc_face 34 39 33 
+      p3d_add_desc_face 39 34 40 
+      p3d_add_desc_face 33 38 32 
+      p3d_add_desc_face 38 33 39 
+      p3d_add_desc_face 32 35 29 
+      p3d_add_desc_face 35 32 38
+    p3d_end_desc_poly
+    
+    p3d_set_prim_pos_by_mat obstacle0_polyhedre49 1 0 0 0 0 0 1 -2e-05 0 1 0 -0.00022 0 0 0 1
+
+  p3d_end_desc
+ p3d_end_desc
+
+
+p3d_set_body_poly_color faut 1 Any 0.31 0.37 0.64
+p3d_set_body_poly_color faut 2 Any 0.31 0.37 0.64
+
+
+  

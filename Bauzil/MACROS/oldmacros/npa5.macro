@@ -1,0 +1,4349 @@
+  p3d_beg_desc P3D_BODY PA5
+
+
+    p3d_add_desc_poly polyhedre1
+      p3d_add_desc_vert -0.0495 -0.0392314 1.1008
+      p3d_add_desc_vert -0.0495 -0.0369552 1.10831
+      p3d_add_desc_vert -0.0495 -0.0332588 1.11522
+      p3d_add_desc_vert -0.0495 -0.0282843 1.12128
+      p3d_add_desc_vert -0.0495 -0.0222228 1.12626
+      p3d_add_desc_vert -0.0495 -0.0153073 1.12996
+      p3d_add_desc_vert -0.0495 -0.00780361 1.13223
+      p3d_add_desc_vert -0.0495 -5.99081e-12 1.133
+      p3d_add_desc_vert -0.0495 0.00780361 1.13223
+      p3d_add_desc_vert -0.0495 0.0153073 1.12996
+      p3d_add_desc_vert -0.0495 0.0222228 1.12626
+      p3d_add_desc_vert -0.0495 0.0282843 1.12128
+      p3d_add_desc_vert -0.0495 0.0332588 1.11522
+      p3d_add_desc_vert -0.0495 0.0369552 1.10831
+      p3d_add_desc_vert -0.0495 0.0392314 1.1008
+      p3d_add_desc_vert -0.0495 0.04 1.093
+      p3d_add_desc_vert -0.0495 0.04 1.083
+      p3d_add_desc_vert -0.0495 0.0392314 1.0752
+      p3d_add_desc_vert -0.0495 0.0369552 1.06769
+      p3d_add_desc_vert -0.0495 0.0332588 1.06078
+      p3d_add_desc_vert -0.0495 0.0282843 1.05472
+      p3d_add_desc_vert -0.0495 0.0222228 1.04974
+      p3d_add_desc_vert -0.0495 0.0153073 1.04604
+      p3d_add_desc_vert -0.0495 0.00780361 1.04377
+      p3d_add_desc_vert -0.0495 -5.74937e-12 1.043
+      p3d_add_desc_vert -0.0495 -0.00780361 1.04377
+      p3d_add_desc_vert -0.0495 -0.0153073 1.04604
+      p3d_add_desc_vert -0.0495 -0.0222228 1.04974
+      p3d_add_desc_vert -0.0495 -0.0282843 1.05472
+      p3d_add_desc_vert -0.0495 -0.0332588 1.06078
+      p3d_add_desc_vert -0.0495 -0.0369552 1.06769
+      p3d_add_desc_vert -0.0495 -0.0392314 1.0752
+      p3d_add_desc_vert -0.0495 -0.04 1.083
+      p3d_add_desc_vert -0.0495 -0.04 1.093
+
+      p3d_add_desc_face 7 9 6
+      p3d_add_desc_face 9 10 6
+      p3d_add_desc_face 6 10 5
+      p3d_add_desc_face 10 11 5
+      p3d_add_desc_face 5 11 4
+      p3d_add_desc_face 11 12 4
+      p3d_add_desc_face 4 12 3
+      p3d_add_desc_face 12 13 3
+      p3d_add_desc_face 3 13 2
+      p3d_add_desc_face 13 14 2
+      p3d_add_desc_face 2 14 1
+      p3d_add_desc_face 14 15 1
+      p3d_add_desc_face 1 15 34
+      p3d_add_desc_face 15 16 34
+      p3d_add_desc_face 34 16 33
+      p3d_add_desc_face 16 17 33
+      p3d_add_desc_face 33 17 32
+      p3d_add_desc_face 17 18 32
+      p3d_add_desc_face 32 18 31
+      p3d_add_desc_face 18 19 31
+      p3d_add_desc_face 31 19 30
+      p3d_add_desc_face 19 20 30
+      p3d_add_desc_face 30 20 29
+      p3d_add_desc_face 20 21 29
+      p3d_add_desc_face 29 21 28
+      p3d_add_desc_face 21 22 28
+      p3d_add_desc_face 28 22 27
+      p3d_add_desc_face 22 23 27
+      p3d_add_desc_face 27 23 26
+      p3d_add_desc_face 23 24 26
+      p3d_add_desc_face 26 24 25
+      p3d_add_desc_face 8 9 7
+    p3d_end_desc_poly
+    #p3d_set_prim_pos_by_mat polyhedre1 0 0 0.001 -0.0011595 0.001 0 0 0 0 0.001 0 4.3999e-05 0 0 0 1
+
+    p3d_add_desc_poly polyhedre2
+      p3d_add_desc_vert 0.0495 0.04 1.093
+      p3d_add_desc_vert -0.0495 0.04 1.093
+      p3d_add_desc_vert -0.0495 0.04 1.083
+      p3d_add_desc_vert 0.0495 0.04 1.083
+
+      p3d_add_desc_face 3 2 4
+      p3d_add_desc_face 2 1 4
+    p3d_end_desc_poly
+    #p3d_set_prim_pos_by_mat polyhedre2 0 0 0.001 -0.0011595 0.001 0 0 0 0 0.001 0 4.3999e-05 0 0 0 1
+
+    p3d_add_desc_poly polyhedre3
+      p3d_add_desc_vert 0.0495 0.0392314 1.1008
+      p3d_add_desc_vert 0.0495 0.0369552 1.10831
+      p3d_add_desc_vert 0.0495 0.0332588 1.11522
+      p3d_add_desc_vert 0.0495 0.0282843 1.12128
+      p3d_add_desc_vert 0.0495 0.0222228 1.12626
+      p3d_add_desc_vert 0.0495 0.0153073 1.12996
+      p3d_add_desc_vert 0.0495 0.00780361 1.13223
+      p3d_add_desc_vert 0.0495 -5.99794e-12 1.133
+      p3d_add_desc_vert 0.0495 -0.00780361 1.13223
+      p3d_add_desc_vert 0.0495 -0.0153073 1.12996
+      p3d_add_desc_vert 0.0495 -0.0222228 1.12626
+      p3d_add_desc_vert 0.0495 -0.0282843 1.12128
+      p3d_add_desc_vert 0.0495 -0.0332588 1.11522
+      p3d_add_desc_vert 0.0495 -0.0369552 1.10831
+      p3d_add_desc_vert 0.0495 -0.0392314 1.1008
+      p3d_add_desc_vert 0.0495 -0.04 1.093
+      p3d_add_desc_vert -0.0495 -0.04 1.093
+      p3d_add_desc_vert -0.0495 -0.0392314 1.1008
+      p3d_add_desc_vert -0.0495 -0.0369552 1.10831
+      p3d_add_desc_vert -0.0495 -0.0332588 1.11522
+      p3d_add_desc_vert -0.0495 -0.0282843 1.12128
+      p3d_add_desc_vert -0.0495 -0.0222228 1.12626
+      p3d_add_desc_vert -0.0495 -0.0153073 1.12996
+      p3d_add_desc_vert -0.0495 -0.00780361 1.13223
+      p3d_add_desc_vert -0.0495 -5.99081e-12 1.133
+      p3d_add_desc_vert -0.0495 0.00780361 1.13223
+      p3d_add_desc_vert -0.0495 0.0153073 1.12996
+      p3d_add_desc_vert -0.0495 0.0222228 1.12626
+      p3d_add_desc_vert -0.0495 0.0282843 1.12128
+      p3d_add_desc_vert -0.0495 0.0332588 1.11522
+      p3d_add_desc_vert -0.0495 0.0369552 1.10831
+      p3d_add_desc_vert -0.0495 0.0392314 1.1008
+      p3d_add_desc_vert -0.0495 0.04 1.093
+      p3d_add_desc_vert 0.0495 0.04 1.093
+
+      p3d_add_desc_face 17 16 18
+      p3d_add_desc_face 16 15 18
+      p3d_add_desc_face 18 15 19
+      p3d_add_desc_face 15 14 19
+      p3d_add_desc_face 19 14 20
+      p3d_add_desc_face 14 13 20
+      p3d_add_desc_face 20 13 21
+      p3d_add_desc_face 13 12 21
+      p3d_add_desc_face 21 12 22
+      p3d_add_desc_face 12 11 22
+      p3d_add_desc_face 22 11 23
+      p3d_add_desc_face 11 10 23
+      p3d_add_desc_face 23 10 24
+      p3d_add_desc_face 10 9 24
+      p3d_add_desc_face 24 9 25
+      p3d_add_desc_face 9 8 25
+      p3d_add_desc_face 25 8 26
+      p3d_add_desc_face 8 7 26
+      p3d_add_desc_face 26 7 27
+      p3d_add_desc_face 7 6 27
+      p3d_add_desc_face 27 6 28
+      p3d_add_desc_face 6 5 28
+      p3d_add_desc_face 28 5 29
+      p3d_add_desc_face 5 4 29
+      p3d_add_desc_face 29 4 30
+      p3d_add_desc_face 4 3 30
+      p3d_add_desc_face 30 3 31
+      p3d_add_desc_face 3 2 31
+      p3d_add_desc_face 31 2 32
+      p3d_add_desc_face 2 1 32
+      p3d_add_desc_face 32 1 33
+      p3d_add_desc_face 1 34 33
+    p3d_end_desc_poly
+    #p3d_set_prim_pos_by_mat polyhedre3 0 0 0.001 -0.0011595 0.001 0 0 0 0 0.001 0 4.3999e-05 0 0 0 1
+
+    p3d_add_desc_poly polyhedre4
+      p3d_add_desc_vert 0.0495 -0.0392314 1.1008
+      p3d_add_desc_vert 0.0495 -0.0369552 1.10831
+      p3d_add_desc_vert 0.0495 -0.0332588 1.11522
+      p3d_add_desc_vert 0.0495 -0.0282843 1.12128
+      p3d_add_desc_vert 0.0495 -0.0222228 1.12626
+      p3d_add_desc_vert 0.0495 -0.0153073 1.12996
+      p3d_add_desc_vert 0.0495 -0.00780361 1.13223
+      p3d_add_desc_vert 0.0495 -5.99794e-12 1.133
+      p3d_add_desc_vert 0.0495 0.00780361 1.13223
+      p3d_add_desc_vert 0.0495 0.0153073 1.12996
+      p3d_add_desc_vert 0.0495 0.0222228 1.12626
+      p3d_add_desc_vert 0.0495 0.0282843 1.12128
+      p3d_add_desc_vert 0.0495 0.0332588 1.11522
+      p3d_add_desc_vert 0.0495 0.0369552 1.10831
+      p3d_add_desc_vert 0.0495 0.0392314 1.1008
+      p3d_add_desc_vert 0.0495 0.04 1.093
+      p3d_add_desc_vert 0.0495 0.04 1.083
+      p3d_add_desc_vert 0.0495 0.0392314 1.0752
+      p3d_add_desc_vert 0.0495 0.0369552 1.06769
+      p3d_add_desc_vert 0.0495 0.0332588 1.06078
+      p3d_add_desc_vert 0.0495 0.0282843 1.05472
+      p3d_add_desc_vert 0.0495 0.0222228 1.04974
+      p3d_add_desc_vert 0.0495 0.0153073 1.04604
+      p3d_add_desc_vert 0.0495 0.00780361 1.04377
+      p3d_add_desc_vert 0.0495 -5.7565e-12 1.043
+      p3d_add_desc_vert 0.0495 -0.00780361 1.04377
+      p3d_add_desc_vert 0.0495 -0.0153073 1.04604
+      p3d_add_desc_vert 0.0495 -0.0222228 1.04974
+      p3d_add_desc_vert 0.0495 -0.0282843 1.05472
+      p3d_add_desc_vert 0.0495 -0.0332588 1.06078
+      p3d_add_desc_vert 0.0495 -0.0369552 1.06769
+      p3d_add_desc_vert 0.0495 -0.0392314 1.0752
+      p3d_add_desc_vert 0.0495 -0.04 1.083
+      p3d_add_desc_vert 0.0495 -0.04 1.093
+
+      p3d_add_desc_face 9 7 10
+      p3d_add_desc_face 7 6 10
+      p3d_add_desc_face 10 6 11
+      p3d_add_desc_face 6 5 11
+      p3d_add_desc_face 11 5 12
+      p3d_add_desc_face 5 4 12
+      p3d_add_desc_face 12 4 13
+      p3d_add_desc_face 4 3 13
+      p3d_add_desc_face 13 3 14
+      p3d_add_desc_face 3 2 14
+      p3d_add_desc_face 14 2 15
+      p3d_add_desc_face 2 1 15
+      p3d_add_desc_face 15 1 16
+      p3d_add_desc_face 1 34 16
+      p3d_add_desc_face 16 34 17
+      p3d_add_desc_face 34 33 17
+      p3d_add_desc_face 17 33 18
+      p3d_add_desc_face 33 32 18
+      p3d_add_desc_face 18 32 19
+      p3d_add_desc_face 32 31 19
+      p3d_add_desc_face 19 31 20
+      p3d_add_desc_face 31 30 20
+      p3d_add_desc_face 20 30 21
+      p3d_add_desc_face 30 29 21
+      p3d_add_desc_face 21 29 22
+      p3d_add_desc_face 29 28 22
+      p3d_add_desc_face 22 28 23
+      p3d_add_desc_face 28 27 23
+      p3d_add_desc_face 23 27 24
+      p3d_add_desc_face 27 26 24
+      p3d_add_desc_face 24 26 25
+      p3d_add_desc_face 7 9 8
+    p3d_end_desc_poly
+    #p3d_set_prim_pos_by_mat polyhedre4 0 0 0.001 -0.0011595 0.001 0 0 0 0 0.001 0 4.3999e-05 0 0 0 1
+
+    p3d_add_desc_poly polyhedre5
+      p3d_add_desc_vert 0.0495 -0.04 1.083
+      p3d_add_desc_vert -0.0495 -0.04 1.083
+      p3d_add_desc_vert -0.0495 -0.04 1.093
+      p3d_add_desc_vert 0.0495 -0.04 1.093
+
+      p3d_add_desc_face 3 2 4
+      p3d_add_desc_face 2 1 4
+    p3d_end_desc_poly
+    #p3d_set_prim_pos_by_mat polyhedre5 0 0 0.001 -0.0011595 0.001 0 0 0 0 0.001 0 4.3999e-05 0 0 0 1
+
+    p3d_add_desc_poly polyhedre6
+      p3d_add_desc_vert 0.00282088 -0.0308714 1.05756
+      p3d_add_desc_vert 0.00558701 -0.0304924 1.05711
+      p3d_add_desc_vert 0.00864397 -0.0297705 1.05628
+      p3d_add_desc_vert 0.0115427 -0.0287709 1.05521
+      p3d_add_desc_vert 0.0149081 -0.0271799 1.05365
+      p3d_add_desc_vert 0.018011 -0.025231 1.05196
+      p3d_add_desc_vert 0.0209729 -0.0228284 1.05015
+      p3d_add_desc_vert 0.0236321 -0.020063 1.0484
+      p3d_add_desc_vert 0.025977 -0.0169173 1.04675
+      p3d_add_desc_vert 0.0279409 -0.0134279 1.04532
+      p3d_add_desc_vert 0.0296969 -0.00889363 1.044
+      p3d_add_desc_vert 0.0307369 -0.00403018 1.0432
+      p3d_add_desc_vert 0.031 -7.2193e-08 1.043
+      p3d_add_desc_vert 0.0302228 -0.00689821 1.043
+      p3d_add_desc_vert 0.02793 -0.0134504 1.043
+      p3d_add_desc_vert 0.0242367 -0.0193282 1.043
+      p3d_add_desc_vert 0.0193282 -0.0242368 1.043
+      p3d_add_desc_vert 0.0134504 -0.02793 1.043
+      p3d_add_desc_vert 0.00689814 -0.0302228 1.043
+      p3d_add_desc_vert 6.5777e-12 -0.031 1.043
+      p3d_add_desc_vert 6.55101e-12 -0.031 1.05772
+
+      p3d_add_desc_face 14 11 15
+      p3d_add_desc_face 11 10 15
+      p3d_add_desc_face 15 10 16
+      p3d_add_desc_face 10 9 16
+      p3d_add_desc_face 16 9 8
+      p3d_add_desc_face 16 8 17
+      p3d_add_desc_face 8 7 17
+      p3d_add_desc_face 17 7 6
+      p3d_add_desc_face 17 6 18
+      p3d_add_desc_face 6 5 18
+      p3d_add_desc_face 18 5 4
+      p3d_add_desc_face 18 4 19
+      p3d_add_desc_face 4 3 19
+      p3d_add_desc_face 19 3 2
+      p3d_add_desc_face 19 2 20
+      p3d_add_desc_face 2 1 20
+      p3d_add_desc_face 20 1 21
+      p3d_add_desc_face 13 12 14
+      p3d_add_desc_face 12 11 14
+    p3d_end_desc_poly
+    #p3d_set_prim_pos_by_mat polyhedre6 0 0 0.001 -0.0011595 0.001 0 0 0 0 0.001 0 4.3999e-05 0 0 0 1
+
+    p3d_add_desc_poly polyhedre7
+      p3d_add_desc_vert -0.0308305 -0.00323763 1.04313
+      p3d_add_desc_vert -0.0303278 -0.00642068 1.04352
+      p3d_add_desc_vert -0.0293331 -0.0100284 1.04428
+      p3d_add_desc_vert -0.0279409 -0.0134279 1.04532
+      p3d_add_desc_vert -0.025977 -0.0169173 1.04675
+      p3d_add_desc_vert -0.0236321 -0.020063 1.0484
+      p3d_add_desc_vert -0.0209729 -0.0228284 1.05015
+      p3d_add_desc_vert -0.018011 -0.025231 1.05196
+      p3d_add_desc_vert -0.0149081 -0.0271799 1.05365
+      p3d_add_desc_vert -0.0115427 -0.0287709 1.05521
+      p3d_add_desc_vert -0.00864397 -0.0297705 1.05628
+      p3d_add_desc_vert -0.00558701 -0.0304924 1.05711
+      p3d_add_desc_vert -0.00282088 -0.0308714 1.05756
+      p3d_add_desc_vert 6.55101e-12 -0.031 1.05772
+      p3d_add_desc_vert 6.5777e-12 -0.031 1.043
+      p3d_add_desc_vert -0.00689816 -0.0302228 1.043
+      p3d_add_desc_vert -0.0134504 -0.02793 1.043
+      p3d_add_desc_vert -0.0193282 -0.0242368 1.043
+      p3d_add_desc_vert -0.0242368 -0.0193282 1.043
+      p3d_add_desc_vert -0.0279301 -0.0134503 1.043
+      p3d_add_desc_vert -0.0302228 -0.00689809 1.043
+      p3d_add_desc_vert -0.031 7.21814e-08 1.043
+
+      p3d_add_desc_face 15 14 16
+      p3d_add_desc_face 14 13 16
+      p3d_add_desc_face 16 13 12
+      p3d_add_desc_face 10 17 11
+      p3d_add_desc_face 17 16 11
+      p3d_add_desc_face 11 16 12
+      p3d_add_desc_face 17 9 18
+      p3d_add_desc_face 9 8 18
+      p3d_add_desc_face 18 8 7
+      p3d_add_desc_face 18 7 19
+      p3d_add_desc_face 7 6 19
+      p3d_add_desc_face 19 6 5
+      p3d_add_desc_face 19 5 20
+      p3d_add_desc_face 5 4 20
+      p3d_add_desc_face 20 4 21
+      p3d_add_desc_face 4 3 21
+      p3d_add_desc_face 21 3 2
+      p3d_add_desc_face 10 9 17
+      p3d_add_desc_face 21 2 1
+      p3d_add_desc_face 22 21 1
+    p3d_end_desc_poly
+    #p3d_set_prim_pos_by_mat polyhedre7 0 0 0.001 -0.0011595 0.001 0 0 0 0 0.001 0 4.3999e-05 0 0 0 1
+
+    p3d_add_desc_poly polyhedre8
+      p3d_add_desc_vert 6.51563e-12 -0.0392314 1.0752
+      p3d_add_desc_vert 6.52945e-12 -0.0369552 1.06769
+      p3d_add_desc_vert 6.5423e-12 -0.0332588 1.06078
+      p3d_add_desc_vert 6.5471e-12 0.0332588 1.06078
+      p3d_add_desc_vert 6.53477e-12 0.0369552 1.06769
+      p3d_add_desc_vert 6.52128e-12 0.0392314 1.0752
+      p3d_add_desc_vert -0.0307369 0.00403018 1.0432
+      p3d_add_desc_vert -0.0296969 0.00889363 1.044
+      p3d_add_desc_vert -0.0279409 0.0134279 1.04532
+      p3d_add_desc_vert -0.025977 0.0169173 1.04675
+      p3d_add_desc_vert -0.0236321 0.020063 1.0484
+      p3d_add_desc_vert -0.0209729 0.0228284 1.05015
+      p3d_add_desc_vert -0.018011 0.025231 1.05196
+      p3d_add_desc_vert -0.0149081 0.0271799 1.05365
+      p3d_add_desc_vert -0.0115427 0.0287709 1.05521
+      p3d_add_desc_vert -0.00864397 0.0297705 1.05628
+      p3d_add_desc_vert -0.00558701 0.0304924 1.05711
+      p3d_add_desc_vert -0.00282088 0.0308714 1.05756
+      p3d_add_desc_vert 6.55548e-12 0.031 1.05772
+      p3d_add_desc_vert 0.00282088 0.0308714 1.05756
+      p3d_add_desc_vert 0.00558701 0.0304924 1.05711
+      p3d_add_desc_vert 0.00864397 0.0297705 1.05628
+      p3d_add_desc_vert 0.0115427 0.0287709 1.05521
+      p3d_add_desc_vert 0.0149081 0.0271799 1.05365
+      p3d_add_desc_vert 0.018011 0.025231 1.05196
+      p3d_add_desc_vert 0.0209729 0.0228284 1.05015
+      p3d_add_desc_vert 0.0236321 0.020063 1.0484
+      p3d_add_desc_vert 0.025977 0.0169173 1.04675
+      p3d_add_desc_vert 0.0279409 0.0134279 1.04532
+      p3d_add_desc_vert 0.0293331 0.0100284 1.04428
+      p3d_add_desc_vert 0.0303278 0.00642068 1.04352
+      p3d_add_desc_vert 0.0308305 0.00323763 1.04313
+      p3d_add_desc_vert 0.031 -7.2193e-08 1.043
+      p3d_add_desc_vert 0.0307369 -0.00403018 1.0432
+      p3d_add_desc_vert 0.0296969 -0.00889363 1.044
+      p3d_add_desc_vert 0.0279409 -0.0134279 1.04532
+      p3d_add_desc_vert 0.025977 -0.0169173 1.04675
+      p3d_add_desc_vert 0.0236321 -0.020063 1.0484
+      p3d_add_desc_vert 0.0209729 -0.0228284 1.05015
+      p3d_add_desc_vert 0.018011 -0.025231 1.05196
+      p3d_add_desc_vert 0.0149081 -0.0271799 1.05365
+      p3d_add_desc_vert 0.0115427 -0.0287709 1.05521
+      p3d_add_desc_vert 0.00864397 -0.0297705 1.05628
+      p3d_add_desc_vert 0.00558701 -0.0304924 1.05711
+      p3d_add_desc_vert 0.00282088 -0.0308714 1.05756
+      p3d_add_desc_vert 6.55101e-12 -0.031 1.05772
+      p3d_add_desc_vert -0.00282088 -0.0308714 1.05756
+      p3d_add_desc_vert -0.00558701 -0.0304924 1.05711
+      p3d_add_desc_vert -0.00864397 -0.0297705 1.05628
+      p3d_add_desc_vert -0.0115427 -0.0287709 1.05521
+      p3d_add_desc_vert -0.0149081 -0.0271799 1.05365
+      p3d_add_desc_vert -0.018011 -0.025231 1.05196
+      p3d_add_desc_vert -0.0209729 -0.0228284 1.05015
+      p3d_add_desc_vert -0.0236321 -0.020063 1.0484
+      p3d_add_desc_vert -0.025977 -0.0169173 1.04675
+      p3d_add_desc_vert -0.0279409 -0.0134279 1.04532
+      p3d_add_desc_vert -0.0293331 -0.0100284 1.04428
+      p3d_add_desc_vert -0.0303278 -0.00642068 1.04352
+      p3d_add_desc_vert -0.0308305 -0.00323763 1.04313
+      p3d_add_desc_vert -0.031 7.21814e-08 1.043
+      p3d_add_desc_vert 0.0495 -0.0392314 1.0752
+      p3d_add_desc_vert 0.0495 -0.0369552 1.06769
+      p3d_add_desc_vert 0.0495 -0.0332588 1.06078
+      p3d_add_desc_vert 0.0495 -0.0282843 1.05472
+      p3d_add_desc_vert 0.0495 -0.0222228 1.04974
+      p3d_add_desc_vert 0.0495 -0.0153073 1.04604
+      p3d_add_desc_vert 0.0495 -0.00780361 1.04377
+      p3d_add_desc_vert 0.0495 -5.7565e-12 1.043
+      p3d_add_desc_vert 0.0495 0.00780361 1.04377
+      p3d_add_desc_vert 0.0495 0.0153073 1.04604
+      p3d_add_desc_vert 0.0495 0.0222228 1.04974
+      p3d_add_desc_vert 0.0495 0.0282843 1.05472
+      p3d_add_desc_vert 0.0495 0.0332588 1.06078
+      p3d_add_desc_vert 0.0495 0.0369552 1.06769
+      p3d_add_desc_vert 0.0495 0.0392314 1.0752
+      p3d_add_desc_vert 0.0495 0.04 1.083
+      p3d_add_desc_vert -0.0495 0.04 1.083
+      p3d_add_desc_vert -0.0495 0.0392314 1.0752
+      p3d_add_desc_vert -0.0495 0.0369552 1.06769
+      p3d_add_desc_vert -0.0495 0.0332588 1.06078
+      p3d_add_desc_vert -0.0495 0.0282843 1.05472
+      p3d_add_desc_vert -0.0495 0.0222228 1.04974
+      p3d_add_desc_vert -0.0495 0.0153073 1.04604
+      p3d_add_desc_vert -0.0495 0.00780361 1.04377
+      p3d_add_desc_vert -0.0495 -5.74937e-12 1.043
+      p3d_add_desc_vert -0.0495 -0.00780361 1.04377
+      p3d_add_desc_vert -0.0495 -0.0153073 1.04604
+      p3d_add_desc_vert -0.0495 -0.0222228 1.04974
+      p3d_add_desc_vert -0.0495 -0.0282843 1.05472
+      p3d_add_desc_vert -0.0495 -0.0332588 1.06078
+      p3d_add_desc_vert -0.0495 -0.0369552 1.06769
+      p3d_add_desc_vert -0.0495 -0.0392314 1.0752
+      p3d_add_desc_vert -0.0495 -0.04 1.083
+      p3d_add_desc_vert 0.0495 -0.04 1.083
+
+      p3d_add_desc_face 73 4 74
+      p3d_add_desc_face 4 5 74
+      p3d_add_desc_face 74 5 75
+      p3d_add_desc_face 5 6 75
+      p3d_add_desc_face 75 6 76
+      p3d_add_desc_face 6 77 76
+      p3d_add_desc_face 94 93 1
+      p3d_add_desc_face 93 92 1
+      p3d_add_desc_face 1 92 2
+      p3d_add_desc_face 92 91 2
+      p3d_add_desc_face 2 91 3
+      p3d_add_desc_face 91 90 3
+      p3d_add_desc_face 19 18 4
+      p3d_add_desc_face 18 80 4
+      p3d_add_desc_face 4 80 5
+      p3d_add_desc_face 80 79 5
+      p3d_add_desc_face 5 79 6
+      p3d_add_desc_face 79 78 6
+      p3d_add_desc_face 6 78 77
+      p3d_add_desc_face 10 83 11
+      p3d_add_desc_face 83 82 11
+      p3d_add_desc_face 11 82 12
+      p3d_add_desc_face 8 84 9
+      p3d_add_desc_face 84 83 9
+      p3d_add_desc_face 9 83 10
+      p3d_add_desc_face 84 7 85
+      p3d_add_desc_face 7 60 85
+      p3d_add_desc_face 85 60 86
+      p3d_add_desc_face 60 59 86
+      p3d_add_desc_face 86 59 58
+      p3d_add_desc_face 56 87 57
+      p3d_add_desc_face 87 86 57
+      p3d_add_desc_face 57 86 58
+      p3d_add_desc_face 54 88 55
+      p3d_add_desc_face 88 87 55
+      p3d_add_desc_face 55 87 56
+      p3d_add_desc_face 88 53 89
+      p3d_add_desc_face 53 52 89
+      p3d_add_desc_face 89 52 51
+      p3d_add_desc_face 70 28 71
+      p3d_add_desc_face 28 27 71
+      p3d_add_desc_face 71 27 26
+      p3d_add_desc_face 69 30 70
+      p3d_add_desc_face 30 29 70
+      p3d_add_desc_face 70 29 28
+      p3d_add_desc_face 68 32 69
+      p3d_add_desc_face 32 31 69
+      p3d_add_desc_face 69 31 30
+      p3d_add_desc_face 67 34 68
+      p3d_add_desc_face 34 33 68
+      p3d_add_desc_face 68 33 32
+      p3d_add_desc_face 66 36 67
+      p3d_add_desc_face 36 35 67
+      p3d_add_desc_face 67 35 34
+      p3d_add_desc_face 65 38 66
+      p3d_add_desc_face 38 37 66
+      p3d_add_desc_face 66 37 36
+      p3d_add_desc_face 3 63 2
+      p3d_add_desc_face 63 62 2
+      p3d_add_desc_face 2 62 1
+      p3d_add_desc_face 62 61 1
+      p3d_add_desc_face 1 61 94
+      p3d_add_desc_face 81 80 18
+      p3d_add_desc_face 81 18 17
+      p3d_add_desc_face 81 17 16
+      p3d_add_desc_face 81 16 15
+      p3d_add_desc_face 81 15 14
+      p3d_add_desc_face 81 14 13
+      p3d_add_desc_face 81 13 82
+      p3d_add_desc_face 90 89 50
+      p3d_add_desc_face 90 50 49
+      p3d_add_desc_face 90 49 48
+      p3d_add_desc_face 90 48 47
+      p3d_add_desc_face 90 47 46
+      p3d_add_desc_face 90 46 3
+      p3d_add_desc_face 72 71 25
+      p3d_add_desc_face 72 25 24
+      p3d_add_desc_face 72 24 23
+      p3d_add_desc_face 72 23 22
+      p3d_add_desc_face 72 22 21
+      p3d_add_desc_face 72 21 20
+      p3d_add_desc_face 72 20 4
+      p3d_add_desc_face 72 4 73
+      p3d_add_desc_face 64 42 41
+      p3d_add_desc_face 64 41 40
+      p3d_add_desc_face 64 40 39
+      p3d_add_desc_face 64 39 65
+      p3d_add_desc_face 63 3 46
+      p3d_add_desc_face 63 46 45
+      p3d_add_desc_face 63 45 44
+      p3d_add_desc_face 63 44 43
+      p3d_add_desc_face 63 43 42
+      p3d_add_desc_face 63 42 64
+      p3d_add_desc_face 82 13 12
+      p3d_add_desc_face 84 8 7
+      p3d_add_desc_face 54 53 88
+      p3d_add_desc_face 51 50 89
+      p3d_add_desc_face 19 4 20
+      p3d_add_desc_face 71 26 25
+      p3d_add_desc_face 38 65 39
+    p3d_end_desc_poly
+    #p3d_set_prim_pos_by_mat polyhedre8 0 0 0.001 -0.0011595 0.001 0 0 0 0 0.001 0 4.3999e-05 0 0 0 1
+
+    p3d_add_desc_poly polyhedre9
+      p3d_add_desc_vert -0.00282088 0.0308714 1.05756
+      p3d_add_desc_vert -0.00558701 0.0304924 1.05711
+      p3d_add_desc_vert -0.00864397 0.0297705 1.05628
+      p3d_add_desc_vert -0.0115427 0.0287709 1.05521
+      p3d_add_desc_vert -0.0149081 0.0271799 1.05365
+      p3d_add_desc_vert -0.018011 0.025231 1.05196
+      p3d_add_desc_vert -0.0209729 0.0228284 1.05015
+      p3d_add_desc_vert -0.0236321 0.020063 1.0484
+      p3d_add_desc_vert -0.025977 0.0169173 1.04675
+      p3d_add_desc_vert -0.0279409 0.0134279 1.04532
+      p3d_add_desc_vert -0.0296969 0.00889363 1.044
+      p3d_add_desc_vert -0.0307369 0.00403018 1.0432
+      p3d_add_desc_vert -0.031 7.21814e-08 1.043
+      p3d_add_desc_vert -0.0302228 0.00689821 1.043
+      p3d_add_desc_vert -0.02793 0.0134504 1.043
+      p3d_add_desc_vert -0.0242367 0.0193282 1.043
+      p3d_add_desc_vert -0.0193282 0.0242368 1.043
+      p3d_add_desc_vert -0.0134504 0.02793 1.043
+      p3d_add_desc_vert -0.00689814 0.0302228 1.043
+      p3d_add_desc_vert 6.58217e-12 0.031 1.043
+      p3d_add_desc_vert 6.55548e-12 0.031 1.05772
+
+      p3d_add_desc_face 14 11 15
+      p3d_add_desc_face 11 10 15
+      p3d_add_desc_face 15 10 16
+      p3d_add_desc_face 10 9 16
+      p3d_add_desc_face 16 9 8
+      p3d_add_desc_face 16 8 17
+      p3d_add_desc_face 8 7 17
+      p3d_add_desc_face 17 7 6
+      p3d_add_desc_face 17 6 18
+      p3d_add_desc_face 6 5 18
+      p3d_add_desc_face 18 5 4
+      p3d_add_desc_face 18 4 19
+      p3d_add_desc_face 4 3 19
+      p3d_add_desc_face 19 3 2
+      p3d_add_desc_face 19 2 20
+      p3d_add_desc_face 2 1 20
+      p3d_add_desc_face 20 1 21
+      p3d_add_desc_face 13 12 14
+      p3d_add_desc_face 12 11 14
+    p3d_end_desc_poly
+    #p3d_set_prim_pos_by_mat polyhedre9 0 0 0.001 -0.0011595 0.001 0 0 0 0 0.001 0 4.3999e-05 0 0 0 1
+
+    p3d_add_desc_poly polyhedre10
+      p3d_add_desc_vert 0.0308305 0.00323763 1.04313
+      p3d_add_desc_vert 0.0303278 0.00642068 1.04352
+      p3d_add_desc_vert 0.0293331 0.0100284 1.04428
+      p3d_add_desc_vert 0.0279409 0.0134279 1.04532
+      p3d_add_desc_vert 0.025977 0.0169173 1.04675
+      p3d_add_desc_vert 0.0236321 0.020063 1.0484
+      p3d_add_desc_vert 0.0209729 0.0228284 1.05015
+      p3d_add_desc_vert 0.018011 0.025231 1.05196
+      p3d_add_desc_vert 0.0149081 0.0271799 1.05365
+      p3d_add_desc_vert 0.0115427 0.0287709 1.05521
+      p3d_add_desc_vert 0.00864397 0.0297705 1.05628
+      p3d_add_desc_vert 0.00558701 0.0304924 1.05711
+      p3d_add_desc_vert 0.00282088 0.0308714 1.05756
+      p3d_add_desc_vert 6.55548e-12 0.031 1.05772
+      p3d_add_desc_vert 6.58217e-12 0.031 1.043
+      p3d_add_desc_vert 0.00689816 0.0302228 1.043
+      p3d_add_desc_vert 0.0134504 0.02793 1.043
+      p3d_add_desc_vert 0.0193282 0.0242368 1.043
+      p3d_add_desc_vert 0.0242368 0.0193282 1.043
+      p3d_add_desc_vert 0.0279301 0.0134503 1.043
+      p3d_add_desc_vert 0.0302228 0.00689809 1.043
+      p3d_add_desc_vert 0.031 -7.2193e-08 1.043
+
+      p3d_add_desc_face 15 14 16
+      p3d_add_desc_face 14 13 16
+      p3d_add_desc_face 16 13 12
+      p3d_add_desc_face 10 17 11
+      p3d_add_desc_face 17 16 11
+      p3d_add_desc_face 11 16 12
+      p3d_add_desc_face 17 9 18
+      p3d_add_desc_face 9 8 18
+      p3d_add_desc_face 18 8 7
+      p3d_add_desc_face 18 7 19
+      p3d_add_desc_face 7 6 19
+      p3d_add_desc_face 19 6 5
+      p3d_add_desc_face 19 5 20
+      p3d_add_desc_face 5 4 20
+      p3d_add_desc_face 20 4 21
+      p3d_add_desc_face 4 3 21
+      p3d_add_desc_face 21 3 2
+      p3d_add_desc_face 10 9 17
+      p3d_add_desc_face 21 2 1
+      p3d_add_desc_face 22 21 1
+    p3d_end_desc_poly
+    #p3d_set_prim_pos_by_mat polyhedre10 0 0 0.001 -0.0011595 0.001 0 0 0 0 0.001 0 4.3999e-05 0 0 0 1
+
+    p3d_add_desc_poly polyhedre11
+      p3d_add_desc_vert 0.0302228 -0.00689821 1.043
+      p3d_add_desc_vert 0.02793 -0.0134504 1.043
+      p3d_add_desc_vert 0.0242367 -0.0193282 1.043
+      p3d_add_desc_vert 0.0193282 -0.0242368 1.043
+      p3d_add_desc_vert 0.0134504 -0.02793 1.043
+      p3d_add_desc_vert 0.00689814 -0.0302228 1.043
+      p3d_add_desc_vert 6.5777e-12 -0.031 1.043
+      p3d_add_desc_vert -0.00689816 -0.0302228 1.043
+      p3d_add_desc_vert -0.0134504 -0.02793 1.043
+      p3d_add_desc_vert -0.0193282 -0.0242368 1.043
+      p3d_add_desc_vert -0.0242368 -0.0193282 1.043
+      p3d_add_desc_vert -0.0279301 -0.0134503 1.043
+      p3d_add_desc_vert -0.0302228 -0.00689809 1.043
+      p3d_add_desc_vert -0.031 7.21814e-08 1.043
+      p3d_add_desc_vert -0.0302228 0.00689821 1.043
+      p3d_add_desc_vert -0.02793 0.0134504 1.043
+      p3d_add_desc_vert -0.0242367 0.0193282 1.043
+      p3d_add_desc_vert -0.0193282 0.0242368 1.043
+      p3d_add_desc_vert -0.0134504 0.02793 1.043
+      p3d_add_desc_vert -0.00689814 0.0302228 1.043
+      p3d_add_desc_vert 6.58217e-12 0.031 1.043
+      p3d_add_desc_vert 0.00689816 0.0302228 1.043
+      p3d_add_desc_vert 0.0134504 0.02793 1.043
+      p3d_add_desc_vert 0.0193282 0.0242368 1.043
+      p3d_add_desc_vert 0.0242368 0.0193282 1.043
+      p3d_add_desc_vert 0.0279301 0.0134503 1.043
+      p3d_add_desc_vert 0.0302228 0.00689809 1.043
+      p3d_add_desc_vert 0.031 -7.2193e-08 1.043
+
+      p3d_add_desc_face 27 1 26
+      p3d_add_desc_face 1 2 26
+      p3d_add_desc_face 26 2 25
+      p3d_add_desc_face 2 3 25
+      p3d_add_desc_face 25 3 24
+      p3d_add_desc_face 3 4 24
+      p3d_add_desc_face 24 4 23
+      p3d_add_desc_face 4 5 23
+      p3d_add_desc_face 23 5 22
+      p3d_add_desc_face 5 6 22
+      p3d_add_desc_face 22 6 21
+      p3d_add_desc_face 6 7 21
+      p3d_add_desc_face 21 7 20
+      p3d_add_desc_face 7 8 20
+      p3d_add_desc_face 20 8 19
+      p3d_add_desc_face 8 9 19
+      p3d_add_desc_face 19 9 18
+      p3d_add_desc_face 9 10 18
+      p3d_add_desc_face 18 10 17
+      p3d_add_desc_face 10 11 17
+      p3d_add_desc_face 17 11 16
+      p3d_add_desc_face 11 12 16
+      p3d_add_desc_face 16 12 15
+      p3d_add_desc_face 12 13 15
+      p3d_add_desc_face 15 13 14
+      p3d_add_desc_face 1 27 28
+    p3d_end_desc_poly
+    #p3d_set_prim_pos_by_mat polyhedre11 0 0 0.001 -0.0011595 0.001 0 0 0 0 0.001 0 4.3999e-05 0 0 0 1
+
+    p3d_add_desc_poly polyhedre12
+      p3d_add_desc_vert -0.0495 0.0432508 1.07492
+      p3d_add_desc_vert -0.0495 0.0410288 1.06711
+      p3d_add_desc_vert -0.0495 0.0374096 1.05984
+      p3d_add_desc_vert -0.0495 0.0325164 1.05336
+      p3d_add_desc_vert -0.0495 0.0265159 1.04789
+      p3d_add_desc_vert -0.0495 0.0196125 1.04361
+      p3d_add_desc_vert -0.0495 0.0120412 1.04068
+      p3d_add_desc_vert -0.0495 0.00405981 1.03919
+      p3d_add_desc_vert -0.0495 -0.00405981 1.03919
+      p3d_add_desc_vert -0.0495 -0.0120412 1.04068
+      p3d_add_desc_vert -0.0495 -0.0196125 1.04361
+      p3d_add_desc_vert -0.0495 -0.0265159 1.04789
+      p3d_add_desc_vert -0.0495 -0.0325164 1.05336
+      p3d_add_desc_vert -0.0495 -0.0374096 1.05984
+      p3d_add_desc_vert -0.0495 -0.0410288 1.06711
+      p3d_add_desc_vert -0.0495 -0.0432508 1.07492
+      p3d_add_desc_vert -0.0495 -0.044 1.083
+      p3d_add_desc_vert -0.0495 -0.044 1.236
+      p3d_add_desc_vert -0.0495 -0.0432508 1.24408
+      p3d_add_desc_vert -0.0495 -0.0410288 1.25189
+      p3d_add_desc_vert -0.0495 -0.0374096 1.25916
+      p3d_add_desc_vert -0.0495 -0.0325164 1.26564
+      p3d_add_desc_vert -0.0495 -0.0265159 1.27111
+      p3d_add_desc_vert -0.0495 -0.0196125 1.27539
+      p3d_add_desc_vert -0.0495 -0.0120412 1.27832
+      p3d_add_desc_vert -0.0495 -0.00405981 1.27981
+      p3d_add_desc_vert -0.0495 0.00405981 1.27981
+      p3d_add_desc_vert -0.0495 0.0120412 1.27832
+      p3d_add_desc_vert -0.0495 0.0196125 1.27539
+      p3d_add_desc_vert -0.0495 0.0265159 1.27111
+      p3d_add_desc_vert -0.0495 0.0325164 1.26564
+      p3d_add_desc_vert -0.0495 0.0374096 1.25916
+      p3d_add_desc_vert -0.0495 0.0410288 1.25189
+      p3d_add_desc_vert -0.0495 0.0432508 1.24408
+      p3d_add_desc_vert -0.0495 0.044 1.236
+      p3d_add_desc_vert -0.0495 0.044 1.083
+
+      p3d_add_desc_face 18 17 19
+      p3d_add_desc_face 17 16 19
+      p3d_add_desc_face 19 16 20
+      p3d_add_desc_face 16 15 20
+      p3d_add_desc_face 20 15 21
+      p3d_add_desc_face 15 14 21
+      p3d_add_desc_face 21 14 22
+      p3d_add_desc_face 14 13 22
+      p3d_add_desc_face 22 13 23
+      p3d_add_desc_face 13 12 23
+      p3d_add_desc_face 23 12 24
+      p3d_add_desc_face 12 11 24
+      p3d_add_desc_face 24 11 25
+      p3d_add_desc_face 11 10 25
+      p3d_add_desc_face 25 10 26
+      p3d_add_desc_face 10 9 26
+      p3d_add_desc_face 26 9 27
+      p3d_add_desc_face 9 8 27
+      p3d_add_desc_face 27 8 28
+      p3d_add_desc_face 8 7 28
+      p3d_add_desc_face 28 7 29
+      p3d_add_desc_face 7 6 29
+      p3d_add_desc_face 29 6 30
+      p3d_add_desc_face 6 5 30
+      p3d_add_desc_face 30 5 31
+      p3d_add_desc_face 5 4 31
+      p3d_add_desc_face 31 4 32
+      p3d_add_desc_face 4 3 32
+      p3d_add_desc_face 32 3 33
+      p3d_add_desc_face 3 2 33
+      p3d_add_desc_face 33 2 34
+      p3d_add_desc_face 2 1 34
+      p3d_add_desc_face 34 1 35
+      p3d_add_desc_face 1 36 35
+    p3d_end_desc_poly
+    #p3d_set_prim_pos_by_mat polyhedre12 0 0 0.001 -0.0011595 0.001 0 0 0 0 0.001 0 4.3999e-05 0 0 0 1
+
+    p3d_add_desc_poly polyhedre13
+      p3d_add_desc_vert -0.081 -0.0323241 1.236
+      p3d_add_desc_vert -0.081 -0.0317436 1.24209
+      p3d_add_desc_vert -0.081 -0.030023 1.24796
+      p3d_add_desc_vert -0.081 -0.0272252 1.2534
+      p3d_add_desc_vert -0.081 -0.0234495 1.25821
+      p3d_add_desc_vert -0.081 -0.0188344 1.26222
+      p3d_add_desc_vert -0.081 -0.0135475 1.26529
+      p3d_add_desc_vert -0.081 -0.00862132 1.26708
+      p3d_add_desc_vert -0.081 -0.00347363 1.26804
+      p3d_add_desc_vert -0.081 0.00175879 1.26816
+      p3d_add_desc_vert -0.081 0.00779264 1.26722
+      p3d_add_desc_vert -0.081 0.013533 1.26516
+      p3d_add_desc_vert -0.081 0.0187721 1.26205
+      p3d_add_desc_vert -0.081 0.0236233 1.25768
+      p3d_add_desc_vert -0.081 0.0274804 1.25243
+      p3d_add_desc_vert -0.081 0.0295876 1.24813
+      p3d_add_desc_vert -0.081 0.0310263 1.24358
+      p3d_add_desc_vert -0.081 0.0317706 1.2388
+      p3d_add_desc_vert -0.081 0.0323239 1.22385
+      p3d_add_desc_vert -0.081 0.0323241 1.2236
+      p3d_add_desc_vert -0.081 0.0323241 1.083
+      p3d_add_desc_vert -0.081 0.0317436 1.07691
+      p3d_add_desc_vert -0.081 0.030023 1.07104
+      p3d_add_desc_vert -0.081 0.0272253 1.0656
+      p3d_add_desc_vert -0.081 0.0234495 1.06079
+      p3d_add_desc_vert -0.081 0.0188344 1.05678
+      p3d_add_desc_vert -0.081 0.0135475 1.05371
+      p3d_add_desc_vert -0.081 0.00862132 1.05192
+      p3d_add_desc_vert -0.081 0.00347363 1.05096
+      p3d_add_desc_vert -0.081 -0.00175879 1.05084
+      p3d_add_desc_vert -0.081 -0.00779264 1.05178
+      p3d_add_desc_vert -0.081 -0.013533 1.05384
+      p3d_add_desc_vert -0.081 -0.0187721 1.05695
+      p3d_add_desc_vert -0.081 -0.0236233 1.06132
+      p3d_add_desc_vert -0.081 -0.0274804 1.06657
+      p3d_add_desc_vert -0.081 -0.0295876 1.07087
+      p3d_add_desc_vert -0.081 -0.0310263 1.07542
+      p3d_add_desc_vert -0.081 -0.0317706 1.0802
+      p3d_add_desc_vert -0.081 -0.0323239 1.09515
+      p3d_add_desc_vert -0.081 -0.0323241 1.0954
+
+      p3d_add_desc_face 3 38 2
+      p3d_add_desc_face 38 39 2
+      p3d_add_desc_face 2 39 40
+      p3d_add_desc_face 4 36 3
+      p3d_add_desc_face 36 37 3
+      p3d_add_desc_face 3 37 38
+      p3d_add_desc_face 35 4 34
+      p3d_add_desc_face 4 5 34
+      p3d_add_desc_face 34 5 33
+      p3d_add_desc_face 5 6 33
+      p3d_add_desc_face 33 6 32
+      p3d_add_desc_face 6 7 32
+      p3d_add_desc_face 32 7 31
+      p3d_add_desc_face 7 8 31
+      p3d_add_desc_face 31 8 30
+      p3d_add_desc_face 8 9 30
+      p3d_add_desc_face 30 9 29
+      p3d_add_desc_face 9 10 29
+      p3d_add_desc_face 29 10 28
+      p3d_add_desc_face 10 11 28
+      p3d_add_desc_face 28 11 27
+      p3d_add_desc_face 11 12 27
+      p3d_add_desc_face 27 12 26
+      p3d_add_desc_face 12 13 26
+      p3d_add_desc_face 26 13 25
+      p3d_add_desc_face 13 14 25
+      p3d_add_desc_face 25 14 24
+      p3d_add_desc_face 14 15 24
+      p3d_add_desc_face 24 15 23
+      p3d_add_desc_face 15 16 23
+      p3d_add_desc_face 23 16 17
+      p3d_add_desc_face 23 17 22
+      p3d_add_desc_face 17 18 22
+      p3d_add_desc_face 22 18 19
+      p3d_add_desc_face 22 19 20
+      p3d_add_desc_face 21 22 20
+      p3d_add_desc_face 1 2 40
+      p3d_add_desc_face 4 35 36
+    p3d_end_desc_poly
+    #p3d_set_prim_pos_by_mat polyhedre13 0 0 0.001 -0.0011595 0.001 0 0 0 0 0.001 0 4.3999e-05 0 0 0 1
+
+    p3d_add_desc_poly polyhedre14
+      p3d_add_desc_vert -0.081 -0.0323241 1.236
+      p3d_add_desc_vert -0.0804084 -0.0346834 1.236
+      p3d_add_desc_vert -0.0787735 -0.0364843 1.236
+      p3d_add_desc_vert -0.0787735 -0.0364843 1.0954
+      p3d_add_desc_vert -0.0804084 -0.0346834 1.0954
+      p3d_add_desc_vert -0.081 -0.0323241 1.0954
+
+      p3d_add_desc_face 1 6 2
+      p3d_add_desc_face 6 5 2
+      p3d_add_desc_face 2 5 3
+      p3d_add_desc_face 5 4 3
+    p3d_end_desc_poly
+    #p3d_set_prim_pos_by_mat polyhedre14 0 0 0.001 -0.0011595 0.001 0 0 0 0 0.001 0 4.3999e-05 0 0 0 1
+
+    p3d_add_desc_poly polyhedre15
+      p3d_add_desc_vert -0.0802994 0.0335111 1.24416
+      p3d_add_desc_vert -0.0803104 0.0319399 1.24907
+      p3d_add_desc_vert -0.0803208 0.02965 1.2537
+      p3d_add_desc_vert -0.080334 0.025472 1.25935
+      p3d_add_desc_vert -0.0803461 0.0202301 1.26405
+      p3d_add_desc_vert -0.0803565 0.0145788 1.26738
+      p3d_add_desc_vert -0.0803659 0.00839492 1.26958
+      p3d_add_desc_vert -0.0803743 0.00190198 1.27058
+      p3d_add_desc_vert -0.0803808 -0.0037237 1.27044
+      p3d_add_desc_vert -0.0803866 -0.00925453 1.26939
+      p3d_add_desc_vert -0.0803917 -0.0145443 1.26746
+      p3d_add_desc_vert -0.0803968 -0.0202183 1.26416
+      p3d_add_desc_vert -0.080401 -0.025169 1.25985
+      p3d_add_desc_vert -0.0804042 -0.0292178 1.25468
+      p3d_add_desc_vert -0.0804065 -0.0322171 1.24884
+      p3d_add_desc_vert -0.0804079 -0.0340612 1.24254
+      p3d_add_desc_vert -0.081 -0.0317436 1.24209
+      p3d_add_desc_vert -0.081 -0.030023 1.24796
+      p3d_add_desc_vert -0.081 -0.0272252 1.2534
+      p3d_add_desc_vert -0.081 -0.0234495 1.25821
+      p3d_add_desc_vert -0.081 -0.0188344 1.26222
+      p3d_add_desc_vert -0.081 -0.0135475 1.26529
+      p3d_add_desc_vert -0.081 -0.00862132 1.26708
+      p3d_add_desc_vert -0.081 -0.00347363 1.26804
+      p3d_add_desc_vert -0.081 0.00175879 1.26816
+      p3d_add_desc_vert -0.081 0.00779264 1.26722
+      p3d_add_desc_vert -0.081 0.013533 1.26516
+      p3d_add_desc_vert -0.081 0.0187721 1.26205
+      p3d_add_desc_vert -0.081 0.0236233 1.25768
+      p3d_add_desc_vert -0.081 0.0274804 1.25243
+      p3d_add_desc_vert -0.081 0.0295876 1.24813
+      p3d_add_desc_vert -0.081 0.0310263 1.24358
+      p3d_add_desc_vert -0.081 0.0317706 1.2388
+      p3d_add_desc_vert -0.0802878 0.0343346 1.23901
+      p3d_add_desc_vert -0.078354 0.0361682 1.23915
+      p3d_add_desc_vert -0.0783843 0.0355907 1.24325
+      p3d_add_desc_vert -0.0784131 0.0345688 1.2472
+      p3d_add_desc_vert -0.0784409 0.0331092 1.25101
+      p3d_add_desc_vert -0.0784676 0.0312301 1.25463
+      p3d_add_desc_vert -0.0784909 0.0291816 1.25772
+      p3d_add_desc_vert -0.0785133 0.0268282 1.26058
+      p3d_add_desc_vert -0.0785349 0.0241942 1.26319
+      p3d_add_desc_vert -0.0785555 0.0213067 1.26552
+      p3d_add_desc_vert -0.0785694 0.0191546 1.26697
+      p3d_add_desc_vert -0.0785828 0.0169044 1.26826
+      p3d_add_desc_vert -0.0785958 0.0145674 1.26938
+      p3d_add_desc_vert -0.0786084 0.0121555 1.27034
+      p3d_add_desc_vert -0.0786204 0.009681 1.27112
+      p3d_add_desc_vert -0.078632 0.00715655 1.27173
+      p3d_add_desc_vert -0.0786432 0.00459498 1.27215
+      p3d_add_desc_vert -0.0786539 0.00200934 1.27239
+      p3d_add_desc_vert -0.0786712 -0.00243488 1.27237
+      p3d_add_desc_vert -0.0786872 -0.00684441 1.27181
+      p3d_add_desc_vert -0.0787017 -0.0111537 1.27071
+      p3d_add_desc_vert -0.078715 -0.0152985 1.2691
+      p3d_add_desc_vert -0.0787221 -0.0176133 1.26793
+      p3d_add_desc_vert -0.0787287 -0.0198393 1.2666
+      p3d_add_desc_vert -0.0787349 -0.0219651 1.26512
+      p3d_add_desc_vert -0.0787406 -0.02398 1.26348
+      p3d_add_desc_vert -0.0787458 -0.0258738 1.26171
+      p3d_add_desc_vert -0.0787506 -0.0276368 1.25981
+      p3d_add_desc_vert -0.078755 -0.0292602 1.25778
+      p3d_add_desc_vert -0.0787589 -0.0307355 1.25565
+      p3d_add_desc_vert -0.0787623 -0.0320547 1.25342
+      p3d_add_desc_vert -0.0787653 -0.0332118 1.2511
+      p3d_add_desc_vert -0.0787678 -0.0342011 1.2487
+      p3d_add_desc_vert -0.0787699 -0.0350175 1.24624
+      p3d_add_desc_vert -0.0787714 -0.0356568 1.24372
+      p3d_add_desc_vert -0.0787726 -0.0361158 1.24117
+      p3d_add_desc_vert -0.0787733 -0.0363921 1.23859
+      p3d_add_desc_vert -0.0787735 -0.0364843 1.236
+      p3d_add_desc_vert -0.0804084 -0.0346834 1.236
+      p3d_add_desc_vert -0.081 -0.0323241 1.236
+
+      p3d_add_desc_face 53 9 54
+      p3d_add_desc_face 9 10 54
+      p3d_add_desc_face 54 10 55
+      p3d_add_desc_face 10 11 55
+      p3d_add_desc_face 55 11 56
+      p3d_add_desc_face 37 1 38
+      p3d_add_desc_face 1 2 38
+      p3d_add_desc_face 38 2 39
+      p3d_add_desc_face 2 3 39
+      p3d_add_desc_face 39 3 40
+      p3d_add_desc_face 73 72 17
+      p3d_add_desc_face 72 16 17
+      p3d_add_desc_face 17 16 18
+      p3d_add_desc_face 16 15 18
+      p3d_add_desc_face 18 15 19
+      p3d_add_desc_face 15 14 19
+      p3d_add_desc_face 19 14 20
+      p3d_add_desc_face 14 13 20
+      p3d_add_desc_face 20 13 21
+      p3d_add_desc_face 13 12 21
+      p3d_add_desc_face 21 12 22
+      p3d_add_desc_face 12 11 22
+      p3d_add_desc_face 22 11 23
+      p3d_add_desc_face 11 10 23
+      p3d_add_desc_face 23 10 24
+      p3d_add_desc_face 10 9 24
+      p3d_add_desc_face 24 9 25
+      p3d_add_desc_face 9 8 25
+      p3d_add_desc_face 25 8 26
+      p3d_add_desc_face 8 7 26
+      p3d_add_desc_face 26 7 27
+      p3d_add_desc_face 7 6 27
+      p3d_add_desc_face 27 6 28
+      p3d_add_desc_face 6 5 28
+      p3d_add_desc_face 28 5 29
+      p3d_add_desc_face 5 4 29
+      p3d_add_desc_face 29 4 30
+      p3d_add_desc_face 4 3 30
+      p3d_add_desc_face 30 3 31
+      p3d_add_desc_face 3 2 31
+      p3d_add_desc_face 31 2 32
+      p3d_add_desc_face 2 1 32
+      p3d_add_desc_face 32 1 33
+      p3d_add_desc_face 1 34 33
+      p3d_add_desc_face 72 71 16
+      p3d_add_desc_face 71 70 16
+      p3d_add_desc_face 16 70 69
+      p3d_add_desc_face 14 63 13
+      p3d_add_desc_face 63 62 13
+      p3d_add_desc_face 13 62 61
+      p3d_add_desc_face 9 52 8
+      p3d_add_desc_face 52 51 8
+      p3d_add_desc_face 8 51 7
+      p3d_add_desc_face 51 50 7
+      p3d_add_desc_face 7 50 49
+      p3d_add_desc_face 5 43 4
+      p3d_add_desc_face 43 42 4
+      p3d_add_desc_face 4 42 41
+      p3d_add_desc_face 41 40 4
+      p3d_add_desc_face 40 3 4
+      p3d_add_desc_face 68 15 16
+      p3d_add_desc_face 68 16 69
+      p3d_add_desc_face 65 14 15
+      p3d_add_desc_face 65 15 66
+      p3d_add_desc_face 60 12 13
+      p3d_add_desc_face 60 13 61
+      p3d_add_desc_face 57 11 12
+      p3d_add_desc_face 57 12 58
+      p3d_add_desc_face 52 9 53
+      p3d_add_desc_face 48 6 7
+      p3d_add_desc_face 48 7 49
+      p3d_add_desc_face 45 5 6
+      p3d_add_desc_face 45 6 46
+      p3d_add_desc_face 36 34 1
+      p3d_add_desc_face 36 1 37
+      p3d_add_desc_face 35 34 36
+      p3d_add_desc_face 15 68 67
+      p3d_add_desc_face 15 67 66
+      p3d_add_desc_face 14 65 64
+      p3d_add_desc_face 14 64 63
+      p3d_add_desc_face 12 60 59
+      p3d_add_desc_face 12 59 58
+      p3d_add_desc_face 11 57 56
+      p3d_add_desc_face 6 48 47
+      p3d_add_desc_face 6 47 46
+      p3d_add_desc_face 5 45 44
+      p3d_add_desc_face 5 44 43
+    p3d_end_desc_poly
+    #p3d_set_prim_pos_by_mat polyhedre15 0 0 0.001 -0.0011595 0.001 0 0 0 0 0.001 0 4.3999e-05 0 0 0 1
+
+    p3d_add_desc_poly polyhedre16
+      p3d_add_desc_vert -0.0804133 0.0346618 1.22594
+      p3d_add_desc_vert -0.081 0.0323239 1.22385
+      p3d_add_desc_vert -0.081 0.0323241 1.2236
+      p3d_add_desc_vert -0.0804084 0.0346834 1.2236
+      p3d_add_desc_vert -0.0787735 0.0364843 1.2236
+      p3d_add_desc_vert -0.0786843 0.0363658 1.23249
+      p3d_add_desc_vert -0.078354 0.0361682 1.23915
+      p3d_add_desc_vert -0.0802878 0.0343346 1.23901
+      p3d_add_desc_vert -0.081 0.0317706 1.2388
+
+      p3d_add_desc_face 5 4 6
+      p3d_add_desc_face 4 1 6
+      p3d_add_desc_face 6 1 7
+      p3d_add_desc_face 1 8 7
+      p3d_add_desc_face 4 3 1
+      p3d_add_desc_face 3 2 1
+      p3d_add_desc_face 1 2 8
+      p3d_add_desc_face 2 9 8
+    p3d_end_desc_poly
+    #p3d_set_prim_pos_by_mat polyhedre16 0 0 0.001 -0.0011595 0.001 0 0 0 0 0.001 0 4.3999e-05 0 0 0 1
+
+    p3d_add_desc_poly polyhedre17
+      p3d_add_desc_vert -0.081 0.0323241 1.083
+      p3d_add_desc_vert -0.0804084 0.0346834 1.083
+      p3d_add_desc_vert -0.0787735 0.0364843 1.083
+      p3d_add_desc_vert -0.0787735 0.0364843 1.2236
+      p3d_add_desc_vert -0.0804084 0.0346834 1.2236
+      p3d_add_desc_vert -0.081 0.0323241 1.2236
+
+      p3d_add_desc_face 4 3 5
+      p3d_add_desc_face 3 2 5
+      p3d_add_desc_face 5 2 6
+      p3d_add_desc_face 2 1 6
+    p3d_end_desc_poly
+    #p3d_set_prim_pos_by_mat polyhedre17 0 0 0.001 -0.0011595 0.001 0 0 0 0 0.001 0 4.3999e-05 0 0 0 1
+
+    p3d_add_desc_poly polyhedre18
+      p3d_add_desc_vert -0.0802994 -0.0335111 1.07484
+      p3d_add_desc_vert -0.0803104 -0.0319399 1.06993
+      p3d_add_desc_vert -0.0803208 -0.02965 1.0653
+      p3d_add_desc_vert -0.080334 -0.025472 1.05965
+      p3d_add_desc_vert -0.0803461 -0.0202301 1.05495
+      p3d_add_desc_vert -0.0803565 -0.0145788 1.05162
+      p3d_add_desc_vert -0.0803659 -0.00839492 1.04942
+      p3d_add_desc_vert -0.0803743 -0.00190198 1.04842
+      p3d_add_desc_vert -0.0803808 0.0037237 1.04856
+      p3d_add_desc_vert -0.0803866 0.00925453 1.04961
+      p3d_add_desc_vert -0.0803917 0.0145443 1.05154
+      p3d_add_desc_vert -0.0803968 0.0202183 1.05484
+      p3d_add_desc_vert -0.080401 0.025169 1.05915
+      p3d_add_desc_vert -0.0804042 0.0292178 1.06432
+      p3d_add_desc_vert -0.0804065 0.0322171 1.07016
+      p3d_add_desc_vert -0.0804079 0.0340612 1.07646
+      p3d_add_desc_vert -0.081 0.0317436 1.07691
+      p3d_add_desc_vert -0.081 0.030023 1.07104
+      p3d_add_desc_vert -0.081 0.0272253 1.0656
+      p3d_add_desc_vert -0.081 0.0234495 1.06079
+      p3d_add_desc_vert -0.081 0.0188344 1.05678
+      p3d_add_desc_vert -0.081 0.0135475 1.05371
+      p3d_add_desc_vert -0.081 0.00862132 1.05192
+      p3d_add_desc_vert -0.081 0.00347363 1.05096
+      p3d_add_desc_vert -0.081 -0.00175879 1.05084
+      p3d_add_desc_vert -0.081 -0.00779264 1.05178
+      p3d_add_desc_vert -0.081 -0.013533 1.05384
+      p3d_add_desc_vert -0.081 -0.0187721 1.05695
+      p3d_add_desc_vert -0.081 -0.0236233 1.06132
+      p3d_add_desc_vert -0.081 -0.0274804 1.06657
+      p3d_add_desc_vert -0.081 -0.0295876 1.07087
+      p3d_add_desc_vert -0.081 -0.0310263 1.07542
+      p3d_add_desc_vert -0.081 -0.0317706 1.0802
+      p3d_add_desc_vert -0.0802878 -0.0343346 1.07999
+      p3d_add_desc_vert -0.078354 -0.0361682 1.07985
+      p3d_add_desc_vert -0.0783843 -0.0355907 1.07575
+      p3d_add_desc_vert -0.0784131 -0.0345688 1.0718
+      p3d_add_desc_vert -0.0784409 -0.0331092 1.06799
+      p3d_add_desc_vert -0.0784676 -0.0312301 1.06437
+      p3d_add_desc_vert -0.0784909 -0.0291816 1.06128
+      p3d_add_desc_vert -0.0785133 -0.0268282 1.05842
+      p3d_add_desc_vert -0.0785349 -0.0241942 1.05581
+      p3d_add_desc_vert -0.0785555 -0.0213067 1.05348
+      p3d_add_desc_vert -0.0785694 -0.0191546 1.05203
+      p3d_add_desc_vert -0.0785828 -0.0169044 1.05074
+      p3d_add_desc_vert -0.0785958 -0.0145674 1.04962
+      p3d_add_desc_vert -0.0786083 -0.0121555 1.04866
+      p3d_add_desc_vert -0.0786204 -0.009681 1.04788
+      p3d_add_desc_vert -0.078632 -0.00715655 1.04727
+      p3d_add_desc_vert -0.0786432 -0.00459498 1.04685
+      p3d_add_desc_vert -0.0786539 -0.00200934 1.04661
+      p3d_add_desc_vert -0.0786712 0.00243488 1.04663
+      p3d_add_desc_vert -0.0786872 0.00684441 1.04719
+      p3d_add_desc_vert -0.0787017 0.0111537 1.04829
+      p3d_add_desc_vert -0.078715 0.0152985 1.0499
+      p3d_add_desc_vert -0.0787221 0.0176133 1.05107
+      p3d_add_desc_vert -0.0787287 0.0198393 1.0524
+      p3d_add_desc_vert -0.0787349 0.0219651 1.05388
+      p3d_add_desc_vert -0.0787406 0.02398 1.05552
+      p3d_add_desc_vert -0.0787458 0.0258738 1.05729
+      p3d_add_desc_vert -0.0787506 0.0276368 1.05919
+      p3d_add_desc_vert -0.078755 0.0292602 1.06122
+      p3d_add_desc_vert -0.0787589 0.0307355 1.06335
+      p3d_add_desc_vert -0.0787623 0.0320547 1.06558
+      p3d_add_desc_vert -0.0787653 0.0332118 1.0679
+      p3d_add_desc_vert -0.0787678 0.0342011 1.0703
+      p3d_add_desc_vert -0.0787699 0.0350175 1.07276
+      p3d_add_desc_vert -0.0787714 0.0356568 1.07528
+      p3d_add_desc_vert -0.0787726 0.0361158 1.07783
+      p3d_add_desc_vert -0.0787733 0.0363921 1.08041
+      p3d_add_desc_vert -0.0787735 0.0364843 1.083
+      p3d_add_desc_vert -0.0804084 0.0346834 1.083
+      p3d_add_desc_vert -0.081 0.0323241 1.083
+
+      p3d_add_desc_face 53 9 54
+      p3d_add_desc_face 9 10 54
+      p3d_add_desc_face 54 10 55
+      p3d_add_desc_face 10 11 55
+      p3d_add_desc_face 55 11 56
+      p3d_add_desc_face 37 1 38
+      p3d_add_desc_face 1 2 38
+      p3d_add_desc_face 38 2 39
+      p3d_add_desc_face 2 3 39
+      p3d_add_desc_face 39 3 40
+      p3d_add_desc_face 73 72 17
+      p3d_add_desc_face 72 16 17
+      p3d_add_desc_face 17 16 18
+      p3d_add_desc_face 16 15 18
+      p3d_add_desc_face 18 15 19
+      p3d_add_desc_face 15 14 19
+      p3d_add_desc_face 19 14 20
+      p3d_add_desc_face 14 13 20
+      p3d_add_desc_face 20 13 21
+      p3d_add_desc_face 13 12 21
+      p3d_add_desc_face 21 12 22
+      p3d_add_desc_face 12 11 22
+      p3d_add_desc_face 22 11 23
+      p3d_add_desc_face 11 10 23
+      p3d_add_desc_face 23 10 24
+      p3d_add_desc_face 10 9 24
+      p3d_add_desc_face 24 9 25
+      p3d_add_desc_face 9 8 25
+      p3d_add_desc_face 25 8 26
+      p3d_add_desc_face 8 7 26
+      p3d_add_desc_face 26 7 27
+      p3d_add_desc_face 7 6 27
+      p3d_add_desc_face 27 6 28
+      p3d_add_desc_face 6 5 28
+      p3d_add_desc_face 28 5 29
+      p3d_add_desc_face 5 4 29
+      p3d_add_desc_face 29 4 30
+      p3d_add_desc_face 4 3 30
+      p3d_add_desc_face 30 3 31
+      p3d_add_desc_face 3 2 31
+      p3d_add_desc_face 31 2 32
+      p3d_add_desc_face 2 1 32
+      p3d_add_desc_face 32 1 33
+      p3d_add_desc_face 1 34 33
+      p3d_add_desc_face 72 71 16
+      p3d_add_desc_face 71 70 16
+      p3d_add_desc_face 16 70 69
+      p3d_add_desc_face 14 63 13
+      p3d_add_desc_face 63 62 13
+      p3d_add_desc_face 13 62 61
+      p3d_add_desc_face 9 52 8
+      p3d_add_desc_face 52 51 8
+      p3d_add_desc_face 8 51 7
+      p3d_add_desc_face 51 50 7
+      p3d_add_desc_face 7 50 49
+      p3d_add_desc_face 5 43 4
+      p3d_add_desc_face 43 42 4
+      p3d_add_desc_face 4 42 41
+      p3d_add_desc_face 41 40 4
+      p3d_add_desc_face 40 3 4
+      p3d_add_desc_face 68 15 16
+      p3d_add_desc_face 68 16 69
+      p3d_add_desc_face 65 14 15
+      p3d_add_desc_face 65 15 66
+      p3d_add_desc_face 60 12 13
+      p3d_add_desc_face 60 13 61
+      p3d_add_desc_face 57 11 12
+      p3d_add_desc_face 57 12 58
+      p3d_add_desc_face 52 9 53
+      p3d_add_desc_face 48 6 7
+      p3d_add_desc_face 48 7 49
+      p3d_add_desc_face 45 5 6
+      p3d_add_desc_face 45 6 46
+      p3d_add_desc_face 36 34 1
+      p3d_add_desc_face 36 1 37
+      p3d_add_desc_face 35 34 36
+      p3d_add_desc_face 15 68 67
+      p3d_add_desc_face 15 67 66
+      p3d_add_desc_face 14 65 64
+      p3d_add_desc_face 14 64 63
+      p3d_add_desc_face 12 60 59
+      p3d_add_desc_face 12 59 58
+      p3d_add_desc_face 11 57 56
+      p3d_add_desc_face 6 48 47
+      p3d_add_desc_face 6 47 46
+      p3d_add_desc_face 5 45 44
+      p3d_add_desc_face 5 44 43
+    p3d_end_desc_poly
+    #p3d_set_prim_pos_by_mat polyhedre18 0 0 0.001 -0.0011595 0.001 0 0 0 0 0.001 0 4.3999e-05 0 0 0 1
+
+    p3d_add_desc_poly polyhedre19
+      p3d_add_desc_vert -0.0804133 -0.0346618 1.09306
+      p3d_add_desc_vert -0.081 -0.0323239 1.09515
+      p3d_add_desc_vert -0.081 -0.0323241 1.0954
+      p3d_add_desc_vert -0.0804084 -0.0346834 1.0954
+      p3d_add_desc_vert -0.0787735 -0.0364843 1.0954
+      p3d_add_desc_vert -0.0786843 -0.0363658 1.08651
+      p3d_add_desc_vert -0.078354 -0.0361682 1.07985
+      p3d_add_desc_vert -0.0802878 -0.0343346 1.07999
+      p3d_add_desc_vert -0.081 -0.0317706 1.0802
+
+      p3d_add_desc_face 5 4 6
+      p3d_add_desc_face 4 1 6
+      p3d_add_desc_face 6 1 7
+      p3d_add_desc_face 1 8 7
+      p3d_add_desc_face 4 3 1
+      p3d_add_desc_face 3 2 1
+      p3d_add_desc_face 1 2 8
+      p3d_add_desc_face 2 9 8
+    p3d_end_desc_poly
+    #p3d_set_prim_pos_by_mat polyhedre19 0 0 0.001 -0.0011595 0.001 0 0 0 0 0.001 0 4.3999e-05 0 0 0 1
+
+    p3d_add_desc_poly polyhedre20
+      p3d_add_desc_vert -0.0659851 0.0434572 1.07611
+      p3d_add_desc_vert -0.0659824 0.0420061 1.0699
+      p3d_add_desc_vert -0.065978 0.0396737 1.06397
+      p3d_add_desc_vert -0.0659714 0.036221 1.05802
+      p3d_add_desc_vert -0.0659629 0.0318823 1.05268
+      p3d_add_desc_vert -0.0659523 0.0267634 1.04808
+      p3d_add_desc_vert -0.06594 0.0209892 1.04433
+      p3d_add_desc_vert -0.0659258 0.0147006 1.04153
+      p3d_add_desc_vert -0.0659098 0.00805021 1.03974
+      p3d_add_desc_vert -0.065892 0.00120294 1.03902
+      p3d_add_desc_vert -0.0658725 -0.00567382 1.03937
+      p3d_add_desc_vert -0.0658513 -0.0124122 1.04079
+      p3d_add_desc_vert -0.0658286 -0.0188474 1.04324
+      p3d_add_desc_vert -0.0657999 -0.0257917 1.04735
+      p3d_add_desc_vert -0.0657693 -0.0318683 1.05266
+      p3d_add_desc_vert -0.0657368 -0.0368731 1.05899
+      p3d_add_desc_vert -0.0657024 -0.0406379 1.06613
+      p3d_add_desc_vert -0.065693 -0.0414152 1.06814
+      p3d_add_desc_vert -0.0657147 -0.0430605 1.07396
+      p3d_add_desc_vert -0.0657996 -0.0437655 1.07846
+      p3d_add_desc_vert -0.0659523 -0.044 1.083
+      p3d_add_desc_vert -0.0495 -0.044 1.083
+      p3d_add_desc_vert -0.0495 -0.0432508 1.07492
+      p3d_add_desc_vert -0.0495 -0.0410288 1.06711
+      p3d_add_desc_vert -0.0495 -0.0374096 1.05984
+      p3d_add_desc_vert -0.0495 -0.0325164 1.05336
+      p3d_add_desc_vert -0.0495 -0.0265159 1.04789
+      p3d_add_desc_vert -0.0495 -0.0196125 1.04361
+      p3d_add_desc_vert -0.0495 -0.0120412 1.04068
+      p3d_add_desc_vert -0.0495 -0.00405981 1.03919
+      p3d_add_desc_vert -0.0495 0.00405981 1.03919
+      p3d_add_desc_vert -0.0495 0.0120412 1.04068
+      p3d_add_desc_vert -0.0495 0.0196125 1.04361
+      p3d_add_desc_vert -0.0495 0.0265159 1.04789
+      p3d_add_desc_vert -0.0495 0.0325164 1.05336
+      p3d_add_desc_vert -0.0495 0.0374096 1.05984
+      p3d_add_desc_vert -0.0495 0.0410288 1.06711
+      p3d_add_desc_vert -0.0495 0.0432508 1.07492
+      p3d_add_desc_vert -0.0495 0.044 1.083
+      p3d_add_desc_vert -0.0659861 0.044 1.083
+
+      p3d_add_desc_face 22 21 23
+      p3d_add_desc_face 21 20 23
+      p3d_add_desc_face 23 20 19
+      p3d_add_desc_face 23 19 24
+      p3d_add_desc_face 19 18 24
+      p3d_add_desc_face 24 18 17
+      p3d_add_desc_face 28 13 29
+      p3d_add_desc_face 13 12 29
+      p3d_add_desc_face 29 12 11
+      p3d_add_desc_face 34 6 35
+      p3d_add_desc_face 6 5 35
+      p3d_add_desc_face 35 5 4
+      p3d_add_desc_face 40 39 1
+      p3d_add_desc_face 39 38 1
+      p3d_add_desc_face 1 38 2
+      p3d_add_desc_face 25 24 17
+      p3d_add_desc_face 17 16 25
+      p3d_add_desc_face 26 25 16
+      p3d_add_desc_face 16 15 26
+      p3d_add_desc_face 27 26 15
+      p3d_add_desc_face 15 14 27
+      p3d_add_desc_face 28 27 14
+      p3d_add_desc_face 14 13 28
+      p3d_add_desc_face 29 11 30
+      p3d_add_desc_face 30 11 10
+      p3d_add_desc_face 30 10 31
+      p3d_add_desc_face 31 10 9
+      p3d_add_desc_face 31 9 32
+      p3d_add_desc_face 9 8 32
+      p3d_add_desc_face 33 32 8
+      p3d_add_desc_face 8 7 33
+      p3d_add_desc_face 34 33 7
+      p3d_add_desc_face 7 6 34
+      p3d_add_desc_face 35 4 36
+      p3d_add_desc_face 36 4 3
+      p3d_add_desc_face 36 3 37
+      p3d_add_desc_face 3 2 37
+      p3d_add_desc_face 38 37 2
+    p3d_end_desc_poly
+    #p3d_set_prim_pos_by_mat polyhedre20 0 0 0.001 -0.0011595 0.001 0 0 0 0 0.001 0 4.3999e-05 0 0 0 1
+
+    p3d_add_desc_poly polyhedre21
+      p3d_add_desc_vert -0.0659861 0.044 1.23461
+      p3d_add_desc_vert -0.0659861 0.044 1.083
+      p3d_add_desc_vert -0.0495 0.044 1.083
+      p3d_add_desc_vert -0.0495 0.044 1.236
+      p3d_add_desc_vert -0.0659523 0.044 1.236
+
+      p3d_add_desc_face 3 2 4
+      p3d_add_desc_face 2 1 4
+      p3d_add_desc_face 4 1 5
+    p3d_end_desc_poly
+    #p3d_set_prim_pos_by_mat polyhedre21 0 0 0.001 -0.0011595 0.001 0 0 0 0 0.001 0 4.3999e-05 0 0 0 1
+
+    p3d_add_desc_poly polyhedre22
+      p3d_add_desc_vert -0.0659861 -0.044 1.08439
+      p3d_add_desc_vert -0.0659861 -0.044 1.236
+      p3d_add_desc_vert -0.0495 -0.044 1.236
+      p3d_add_desc_vert -0.0495 -0.044 1.083
+      p3d_add_desc_vert -0.0659523 -0.044 1.083
+
+      p3d_add_desc_face 3 2 4
+      p3d_add_desc_face 2 1 4
+      p3d_add_desc_face 4 1 5
+    p3d_end_desc_poly
+    #p3d_set_prim_pos_by_mat polyhedre22 0 0 0.001 -0.0011595 0.001 0 0 0 0 0.001 0 4.3999e-05 0 0 0 1
+
+    p3d_add_desc_poly polyhedre23
+      p3d_add_desc_vert -0.0659851 -0.0434572 1.24289
+      p3d_add_desc_vert -0.0659824 -0.0420061 1.2491
+      p3d_add_desc_vert -0.065978 -0.0396737 1.25503
+      p3d_add_desc_vert -0.0659714 -0.036221 1.26098
+      p3d_add_desc_vert -0.0659629 -0.0318823 1.26632
+      p3d_add_desc_vert -0.0659523 -0.0267634 1.27092
+      p3d_add_desc_vert -0.06594 -0.0209892 1.27467
+      p3d_add_desc_vert -0.0659258 -0.0147006 1.27747
+      p3d_add_desc_vert -0.0659098 -0.00805021 1.27926
+      p3d_add_desc_vert -0.065892 -0.00120294 1.27998
+      p3d_add_desc_vert -0.0658725 0.00567382 1.27963
+      p3d_add_desc_vert -0.0658513 0.0124122 1.27821
+      p3d_add_desc_vert -0.0658286 0.0188474 1.27576
+      p3d_add_desc_vert -0.0657999 0.0257917 1.27165
+      p3d_add_desc_vert -0.0657693 0.0318683 1.26634
+      p3d_add_desc_vert -0.0657368 0.0368731 1.26001
+      p3d_add_desc_vert -0.0657024 0.0406379 1.25287
+      p3d_add_desc_vert -0.065693 0.0414152 1.25086
+      p3d_add_desc_vert -0.0657147 0.0430605 1.24504
+      p3d_add_desc_vert -0.0657996 0.0437655 1.24054
+      p3d_add_desc_vert -0.0659523 0.044 1.236
+      p3d_add_desc_vert -0.0495 0.044 1.236
+      p3d_add_desc_vert -0.0495 0.0432508 1.24408
+      p3d_add_desc_vert -0.0495 0.0410288 1.25189
+      p3d_add_desc_vert -0.0495 0.0374096 1.25916
+      p3d_add_desc_vert -0.0495 0.0325164 1.26564
+      p3d_add_desc_vert -0.0495 0.0265159 1.27111
+      p3d_add_desc_vert -0.0495 0.0196125 1.27539
+      p3d_add_desc_vert -0.0495 0.0120412 1.27832
+      p3d_add_desc_vert -0.0495 0.00405981 1.27981
+      p3d_add_desc_vert -0.0495 -0.00405981 1.27981
+      p3d_add_desc_vert -0.0495 -0.0120412 1.27832
+      p3d_add_desc_vert -0.0495 -0.0196125 1.27539
+      p3d_add_desc_vert -0.0495 -0.0265159 1.27111
+      p3d_add_desc_vert -0.0495 -0.0325164 1.26564
+      p3d_add_desc_vert -0.0495 -0.0374096 1.25916
+      p3d_add_desc_vert -0.0495 -0.0410288 1.25189
+      p3d_add_desc_vert -0.0495 -0.0432508 1.24408
+      p3d_add_desc_vert -0.0495 -0.044 1.236
+      p3d_add_desc_vert -0.0659861 -0.044 1.236
+
+      p3d_add_desc_face 22 21 23
+      p3d_add_desc_face 21 20 23
+      p3d_add_desc_face 23 20 19
+      p3d_add_desc_face 23 19 24
+      p3d_add_desc_face 19 18 24
+      p3d_add_desc_face 24 18 17
+      p3d_add_desc_face 28 13 29
+      p3d_add_desc_face 13 12 29
+      p3d_add_desc_face 29 12 11
+      p3d_add_desc_face 34 6 35
+      p3d_add_desc_face 6 5 35
+      p3d_add_desc_face 35 5 4
+      p3d_add_desc_face 40 39 1
+      p3d_add_desc_face 39 38 1
+      p3d_add_desc_face 1 38 2
+      p3d_add_desc_face 25 24 17
+      p3d_add_desc_face 17 16 25
+      p3d_add_desc_face 26 25 16
+      p3d_add_desc_face 16 15 26
+      p3d_add_desc_face 27 26 15
+      p3d_add_desc_face 15 14 27
+      p3d_add_desc_face 28 27 14
+      p3d_add_desc_face 14 13 28
+      p3d_add_desc_face 29 11 30
+      p3d_add_desc_face 30 11 10
+      p3d_add_desc_face 30 10 31
+      p3d_add_desc_face 31 10 9
+      p3d_add_desc_face 31 9 32
+      p3d_add_desc_face 9 8 32
+      p3d_add_desc_face 33 32 8
+      p3d_add_desc_face 8 7 33
+      p3d_add_desc_face 34 33 7
+      p3d_add_desc_face 7 6 34
+      p3d_add_desc_face 35 4 36
+      p3d_add_desc_face 36 4 3
+      p3d_add_desc_face 36 3 37
+      p3d_add_desc_face 3 2 37
+      p3d_add_desc_face 38 37 2
+    p3d_end_desc_poly
+    #p3d_set_prim_pos_by_mat polyhedre23 0 0 0.001 -0.0011595 0.001 0 0 0 0 0.001 0 4.3999e-05 0 0 0 1
+
+    p3d_add_desc_poly polyhedre24
+      p3d_add_desc_vert -0.0737666 0.0395267 1.07817
+      p3d_add_desc_vert -0.0737666 0.0386444 1.07341
+      p3d_add_desc_vert -0.0737666 0.0371887 1.06879
+      p3d_add_desc_vert -0.0737666 0.0351816 1.06438
+      p3d_add_desc_vert -0.0737666 0.0326533 1.06026
+      p3d_add_desc_vert -0.0737666 0.0296418 1.05647
+      p3d_add_desc_vert -0.0737666 0.0261927 1.05308
+      p3d_add_desc_vert -0.0737666 0.0223577 1.05014
+      p3d_add_desc_vert -0.0737666 0.0181947 1.04768
+      p3d_add_desc_vert -0.0737666 0.0137662 1.04576
+      p3d_add_desc_vert -0.0737666 0.00913875 1.04439
+      p3d_add_desc_vert -0.0737666 0.00438177 1.04359
+      p3d_add_desc_vert -0.0737666 -0.000433415 1.04338
+      p3d_add_desc_vert -0.0737666 -0.00523473 1.04375
+      p3d_add_desc_vert -0.0737666 -0.00995042 1.04471
+      p3d_add_desc_vert -0.0737666 -0.0145102 1.04624
+      p3d_add_desc_vert -0.0737666 -0.018846 1.0483
+      p3d_add_desc_vert -0.0737666 -0.0228937 1.05088
+      p3d_add_desc_vert -0.0737666 -0.0265933 1.05393
+      p3d_add_desc_vert -0.0737666 -0.0298903 1.0574
+      p3d_add_desc_vert -0.0737666 -0.0327365 1.06124
+      p3d_add_desc_vert -0.0737666 -0.0350903 1.0654
+      p3d_add_desc_vert -0.0737666 -0.0369179 1.0698
+      p3d_add_desc_vert -0.0688463 -0.0396167 1.06657
+      p3d_add_desc_vert -0.068842 -0.0379582 1.063
+      p3d_add_desc_vert -0.0688376 -0.0359778 1.05959
+      p3d_add_desc_vert -0.0688333 -0.0336921 1.05638
+      p3d_add_desc_vert -0.0688289 -0.0311203 1.05339
+      p3d_add_desc_vert -0.0688246 -0.0282839 1.05065
+      p3d_add_desc_vert -0.0688203 -0.0252066 1.04818
+      p3d_add_desc_vert -0.0688161 -0.0219143 1.046
+      p3d_add_desc_vert -0.0688119 -0.0184348 1.04414
+      p3d_add_desc_vert -0.068809 -0.0158631 1.04301
+      p3d_add_desc_vert -0.0688062 -0.0132228 1.04205
+      p3d_add_desc_vert -0.0688034 -0.0105251 1.04127
+      p3d_add_desc_vert -0.0688006 -0.00778149 1.04066
+      p3d_add_desc_vert -0.0687979 -0.0050038 1.04024
+      p3d_add_desc_vert -0.0687952 -0.00220383 1.03999
+      p3d_add_desc_vert -0.0687926 0.000606489 1.03993
+      p3d_add_desc_vert -0.0687901 0.00341518 1.04006
+      p3d_add_desc_vert -0.0687877 0.00621026 1.04036
+      p3d_add_desc_vert -0.0687854 0.00897978 1.04085
+      p3d_add_desc_vert -0.0687831 0.0117119 1.04152
+      p3d_add_desc_vert -0.0687809 0.0143948 1.04237
+      p3d_add_desc_vert -0.0687788 0.0170163 1.04339
+      p3d_add_desc_vert -0.0687768 0.0195659 1.04458
+      p3d_add_desc_vert -0.0687749 0.0220324 1.04593
+      p3d_add_desc_vert -0.0687731 0.0244054 1.04744
+      p3d_add_desc_vert -0.0687714 0.0266748 1.04911
+      p3d_add_desc_vert -0.0687698 0.0288307 1.05092
+      p3d_add_desc_vert -0.0687683 0.0308641 1.05286
+      p3d_add_desc_vert -0.0687669 0.0327663 1.05494
+      p3d_add_desc_vert -0.0687657 0.0345291 1.05713
+      p3d_add_desc_vert -0.0687645 0.036145 1.05944
+      p3d_add_desc_vert -0.0687635 0.037607 1.06184
+      p3d_add_desc_vert -0.0687626 0.0389088 1.06434
+      p3d_add_desc_vert -0.0687613 0.0407073 1.06867
+      p3d_add_desc_vert -0.0687604 0.0420243 1.07317
+      p3d_add_desc_vert -0.0687599 0.0428441 1.07779
+      p3d_add_desc_vert -0.0687596 0.0431603 1.083
+      p3d_add_desc_vert -0.0787735 0.0364843 1.083
+      p3d_add_desc_vert -0.0787733 0.0363921 1.08041
+      p3d_add_desc_vert -0.0787726 0.0361158 1.07783
+      p3d_add_desc_vert -0.0787714 0.0356568 1.07528
+      p3d_add_desc_vert -0.0787699 0.0350175 1.07276
+      p3d_add_desc_vert -0.0787678 0.0342011 1.0703
+      p3d_add_desc_vert -0.0787653 0.0332118 1.0679
+      p3d_add_desc_vert -0.0787623 0.0320547 1.06558
+      p3d_add_desc_vert -0.0787589 0.0307355 1.06335
+      p3d_add_desc_vert -0.078755 0.0292602 1.06122
+      p3d_add_desc_vert -0.0787506 0.0276368 1.05919
+      p3d_add_desc_vert -0.0787458 0.0258738 1.05729
+      p3d_add_desc_vert -0.0787406 0.02398 1.05552
+      p3d_add_desc_vert -0.0787349 0.0219651 1.05388
+      p3d_add_desc_vert -0.0787287 0.0198393 1.0524
+      p3d_add_desc_vert -0.0787221 0.0176133 1.05107
+      p3d_add_desc_vert -0.078715 0.0152985 1.0499
+      p3d_add_desc_vert -0.0787017 0.0111537 1.04829
+      p3d_add_desc_vert -0.0786872 0.00684441 1.04719
+      p3d_add_desc_vert -0.0786712 0.00243488 1.04663
+      p3d_add_desc_vert -0.0786539 -0.00200934 1.04661
+      p3d_add_desc_vert -0.0786432 -0.00459498 1.04685
+      p3d_add_desc_vert -0.078632 -0.00715655 1.04727
+      p3d_add_desc_vert -0.0786204 -0.009681 1.04788
+      p3d_add_desc_vert -0.0786083 -0.0121555 1.04866
+      p3d_add_desc_vert -0.0785958 -0.0145674 1.04962
+      p3d_add_desc_vert -0.0785828 -0.0169044 1.05074
+      p3d_add_desc_vert -0.0785694 -0.0191546 1.05203
+      p3d_add_desc_vert -0.0785555 -0.0213067 1.05348
+      p3d_add_desc_vert -0.0785349 -0.0241942 1.05581
+      p3d_add_desc_vert -0.0785133 -0.0268282 1.05842
+      p3d_add_desc_vert -0.0784909 -0.0291816 1.06128
+      p3d_add_desc_vert -0.0784676 -0.0312301 1.06437
+      p3d_add_desc_vert -0.0784409 -0.0331092 1.06799
+      p3d_add_desc_vert -0.0784131 -0.0345688 1.0718
+      p3d_add_desc_vert -0.0783843 -0.0355907 1.07575
+      p3d_add_desc_vert -0.078354 -0.0361682 1.07985
+      p3d_add_desc_vert -0.0736013 -0.0382665 1.07419
+      p3d_add_desc_vert -0.0688486 -0.0403647 1.06853
+
+      p3d_add_desc_face 98 97 23
+      p3d_add_desc_face 97 96 23
+      p3d_add_desc_face 23 96 22
+      p3d_add_desc_face 96 95 22
+      p3d_add_desc_face 22 95 94
+      p3d_add_desc_face 61 60 1
+      p3d_add_desc_face 60 59 1
+      p3d_add_desc_face 1 59 2
+      p3d_add_desc_face 59 58 2
+      p3d_add_desc_face 2 58 3
+      p3d_add_desc_face 58 57 3
+      p3d_add_desc_face 3 57 56
+      p3d_add_desc_face 2 64 1
+      p3d_add_desc_face 64 63 1
+      p3d_add_desc_face 1 63 62
+      p3d_add_desc_face 3 66 2
+      p3d_add_desc_face 66 65 2
+      p3d_add_desc_face 2 65 64
+      p3d_add_desc_face 4 68 3
+      p3d_add_desc_face 68 67 3
+      p3d_add_desc_face 3 67 66
+      p3d_add_desc_face 55 54 4
+      p3d_add_desc_face 54 5 4
+      p3d_add_desc_face 4 5 69
+      p3d_add_desc_face 5 70 69
+      p3d_add_desc_face 54 53 5
+      p3d_add_desc_face 53 6 5
+      p3d_add_desc_face 5 6 70
+      p3d_add_desc_face 6 71 70
+      p3d_add_desc_face 52 51 6
+      p3d_add_desc_face 51 7 6
+      p3d_add_desc_face 6 7 72
+      p3d_add_desc_face 7 73 72
+      p3d_add_desc_face 50 49 7
+      p3d_add_desc_face 49 8 7
+      p3d_add_desc_face 7 8 74
+      p3d_add_desc_face 8 75 74
+      p3d_add_desc_face 48 47 8
+      p3d_add_desc_face 47 9 8
+      p3d_add_desc_face 8 9 76
+      p3d_add_desc_face 9 77 76
+      p3d_add_desc_face 39 38 13
+      p3d_add_desc_face 38 14 13
+      p3d_add_desc_face 13 14 82
+      p3d_add_desc_face 14 83 82
+      p3d_add_desc_face 38 37 14
+      p3d_add_desc_face 37 15 14
+      p3d_add_desc_face 14 15 84
+      p3d_add_desc_face 15 85 84
+      p3d_add_desc_face 86 85 16
+      p3d_add_desc_face 85 15 16
+      p3d_add_desc_face 16 15 35
+      p3d_add_desc_face 15 36 35
+      p3d_add_desc_face 34 33 16
+      p3d_add_desc_face 33 17 16
+      p3d_add_desc_face 16 17 87
+      p3d_add_desc_face 17 88 87
+      p3d_add_desc_face 89 17 90
+      p3d_add_desc_face 17 18 90
+      p3d_add_desc_face 90 18 91
+      p3d_add_desc_face 18 19 91
+      p3d_add_desc_face 91 19 92
+      p3d_add_desc_face 9 46 10
+      p3d_add_desc_face 46 45 10
+      p3d_add_desc_face 10 45 11
+      p3d_add_desc_face 45 44 11
+      p3d_add_desc_face 11 44 43
+      p3d_add_desc_face 43 42 11
+      p3d_add_desc_face 42 12 11
+      p3d_add_desc_face 11 12 80
+      p3d_add_desc_face 12 41 13
+      p3d_add_desc_face 41 40 13
+      p3d_add_desc_face 13 40 39
+      p3d_add_desc_face 17 32 18
+      p3d_add_desc_face 32 31 18
+      p3d_add_desc_face 18 31 19
+      p3d_add_desc_face 31 30 19
+      p3d_add_desc_face 19 30 29
+      p3d_add_desc_face 21 27 22
+      p3d_add_desc_face 27 26 22
+      p3d_add_desc_face 22 26 23
+      p3d_add_desc_face 26 25 23
+      p3d_add_desc_face 23 25 24
+      p3d_add_desc_face 23 24 98
+      p3d_add_desc_face 61 1 62
+      p3d_add_desc_face 69 68 4
+      p3d_add_desc_face 71 6 72
+      p3d_add_desc_face 73 7 74
+      p3d_add_desc_face 76 75 8
+      p3d_add_desc_face 78 77 9
+      p3d_add_desc_face 9 10 78
+      p3d_add_desc_face 79 78 10
+      p3d_add_desc_face 10 11 79
+      p3d_add_desc_face 80 79 11
+      p3d_add_desc_face 81 80 12
+      p3d_add_desc_face 12 13 81
+      p3d_add_desc_face 82 81 13
+      p3d_add_desc_face 84 83 14
+      p3d_add_desc_face 86 16 87
+      p3d_add_desc_face 88 17 89
+      p3d_add_desc_face 19 20 92
+      p3d_add_desc_face 93 92 20
+      p3d_add_desc_face 20 21 93
+      p3d_add_desc_face 93 21 94
+      p3d_add_desc_face 94 21 22
+      p3d_add_desc_face 3 56 4
+      p3d_add_desc_face 4 56 55
+      p3d_add_desc_face 53 52 6
+      p3d_add_desc_face 51 50 7
+      p3d_add_desc_face 8 49 48
+      p3d_add_desc_face 9 47 46
+      p3d_add_desc_face 42 41 12
+      p3d_add_desc_face 37 36 15
+      p3d_add_desc_face 35 34 16
+      p3d_add_desc_face 33 32 17
+      p3d_add_desc_face 19 29 20
+      p3d_add_desc_face 20 29 28
+      p3d_add_desc_face 20 28 21
+      p3d_add_desc_face 28 27 21
+      p3d_add_desc_face 99 98 24
+    p3d_end_desc_poly
+    #p3d_set_prim_pos_by_mat polyhedre24 0 0 0.001 -0.0011595 0.001 0 0 0 0 0.001 0 4.3999e-05 0 0 0 1
+
+    p3d_add_desc_poly polyhedre25
+      p3d_add_desc_vert -0.0737666 -0.0389014 1.0782
+      p3d_add_desc_vert -0.0688226 -0.0430918 1.08286
+      p3d_add_desc_vert -0.0688566 -0.0427849 1.07904
+      p3d_add_desc_vert -0.0688674 -0.0419563 1.07415
+      p3d_add_desc_vert -0.0688486 -0.0403647 1.06853
+      p3d_add_desc_vert -0.0736013 -0.0382665 1.07419
+      p3d_add_desc_vert -0.078354 -0.0361682 1.07985
+      p3d_add_desc_vert -0.0786843 -0.0363658 1.08651
+      p3d_add_desc_vert -0.0787735 -0.0364843 1.0954
+      p3d_add_desc_vert -0.0687596 -0.0431603 1.08439
+
+      p3d_add_desc_face 5 4 6
+      p3d_add_desc_face 4 1 6
+      p3d_add_desc_face 6 1 7
+      p3d_add_desc_face 1 8 7
+      p3d_add_desc_face 9 8 3
+      p3d_add_desc_face 9 3 2
+      p3d_add_desc_face 9 2 10
+      p3d_add_desc_face 8 1 4
+      p3d_add_desc_face 4 3 8
+    p3d_end_desc_poly
+    #p3d_set_prim_pos_by_mat polyhedre25 0 0 0.001 -0.0011595 0.001 0 0 0 0 0.001 0 4.3999e-05 0 0 0 1
+
+    p3d_add_desc_poly polyhedre26
+      p3d_add_desc_vert -0.0687596 0.0431603 1.23461
+      p3d_add_desc_vert -0.0787735 0.0364843 1.2236
+      p3d_add_desc_vert -0.0787735 0.0364843 1.083
+      p3d_add_desc_vert -0.0687596 0.0431603 1.083
+
+      p3d_add_desc_face 4 3 1
+      p3d_add_desc_face 3 2 1
+    p3d_end_desc_poly
+    #p3d_set_prim_pos_by_mat polyhedre26 0 0 0.001 -0.0011595 0.001 0 0 0 0 0.001 0 4.3999e-05 0 0 0 1
+
+    p3d_add_desc_poly polyhedre27
+      p3d_add_desc_vert -0.0687596 -0.0431603 1.08439
+      p3d_add_desc_vert -0.0787735 -0.0364843 1.0954
+      p3d_add_desc_vert -0.0787735 -0.0364843 1.236
+      p3d_add_desc_vert -0.0687596 -0.0431603 1.236
+
+      p3d_add_desc_face 4 3 1
+      p3d_add_desc_face 3 2 1
+    p3d_end_desc_poly
+    #p3d_set_prim_pos_by_mat polyhedre27 0 0 0.001 -0.0011595 0.001 0 0 0 0 0.001 0 4.3999e-05 0 0 0 1
+
+    p3d_add_desc_poly polyhedre28
+      p3d_add_desc_vert -0.0737666 -0.0395267 1.24083
+      p3d_add_desc_vert -0.0737666 -0.0386444 1.24559
+      p3d_add_desc_vert -0.0737666 -0.0371887 1.25021
+      p3d_add_desc_vert -0.0737666 -0.0351816 1.25462
+      p3d_add_desc_vert -0.0737666 -0.0326532 1.25874
+      p3d_add_desc_vert -0.0737666 -0.0296418 1.26253
+      p3d_add_desc_vert -0.0737666 -0.0261927 1.26592
+      p3d_add_desc_vert -0.0737666 -0.0223577 1.26886
+      p3d_add_desc_vert -0.0737666 -0.0181947 1.27132
+      p3d_add_desc_vert -0.0737666 -0.0137662 1.27324
+      p3d_add_desc_vert -0.0737666 -0.00913875 1.27461
+      p3d_add_desc_vert -0.0737666 -0.00438177 1.27541
+      p3d_add_desc_vert -0.0737666 0.000433421 1.27562
+      p3d_add_desc_vert -0.0737666 0.00523473 1.27525
+      p3d_add_desc_vert -0.0737666 0.00995043 1.27429
+      p3d_add_desc_vert -0.0737666 0.0145102 1.27276
+      p3d_add_desc_vert -0.0737666 0.0188461 1.2707
+      p3d_add_desc_vert -0.0737666 0.0228937 1.26812
+      p3d_add_desc_vert -0.0737666 0.0265933 1.26507
+      p3d_add_desc_vert -0.0737666 0.0298903 1.2616
+      p3d_add_desc_vert -0.0737666 0.0327365 1.25776
+      p3d_add_desc_vert -0.0737666 0.0350903 1.2536
+      p3d_add_desc_vert -0.0737666 0.0369179 1.2492
+      p3d_add_desc_vert -0.0688463 0.0396167 1.25243
+      p3d_add_desc_vert -0.068842 0.0379582 1.256
+      p3d_add_desc_vert -0.0688376 0.0359778 1.25941
+      p3d_add_desc_vert -0.0688333 0.0336921 1.26262
+      p3d_add_desc_vert -0.0688289 0.0311203 1.26561
+      p3d_add_desc_vert -0.0688246 0.0282839 1.26835
+      p3d_add_desc_vert -0.0688203 0.0252066 1.27082
+      p3d_add_desc_vert -0.0688161 0.0219143 1.273
+      p3d_add_desc_vert -0.0688119 0.0184348 1.27486
+      p3d_add_desc_vert -0.068809 0.0158631 1.27599
+      p3d_add_desc_vert -0.0688062 0.0132228 1.27695
+      p3d_add_desc_vert -0.0688034 0.0105251 1.27773
+      p3d_add_desc_vert -0.0688006 0.00778149 1.27834
+      p3d_add_desc_vert -0.0687979 0.0050038 1.27876
+      p3d_add_desc_vert -0.0687952 0.00220383 1.27901
+      p3d_add_desc_vert -0.0687926 -0.000606487 1.27907
+      p3d_add_desc_vert -0.0687901 -0.00341518 1.27894
+      p3d_add_desc_vert -0.0687877 -0.00621026 1.27864
+      p3d_add_desc_vert -0.0687854 -0.00897978 1.27815
+      p3d_add_desc_vert -0.0687831 -0.0117119 1.27748
+      p3d_add_desc_vert -0.0687809 -0.0143948 1.27663
+      p3d_add_desc_vert -0.0687788 -0.0170163 1.27561
+      p3d_add_desc_vert -0.0687768 -0.0195659 1.27442
+      p3d_add_desc_vert -0.0687749 -0.0220324 1.27307
+      p3d_add_desc_vert -0.0687731 -0.0244054 1.27156
+      p3d_add_desc_vert -0.0687714 -0.0266748 1.26989
+      p3d_add_desc_vert -0.0687698 -0.0288307 1.26808
+      p3d_add_desc_vert -0.0687683 -0.0308641 1.26614
+      p3d_add_desc_vert -0.0687669 -0.0327663 1.26406
+      p3d_add_desc_vert -0.0687657 -0.0345291 1.26187
+      p3d_add_desc_vert -0.0687645 -0.036145 1.25956
+      p3d_add_desc_vert -0.0687635 -0.037607 1.25716
+      p3d_add_desc_vert -0.0687626 -0.0389088 1.25466
+      p3d_add_desc_vert -0.0687613 -0.0407073 1.25033
+      p3d_add_desc_vert -0.0687604 -0.0420243 1.24583
+      p3d_add_desc_vert -0.0687599 -0.0428441 1.24121
+      p3d_add_desc_vert -0.0687596 -0.0431603 1.236
+      p3d_add_desc_vert -0.0787735 -0.0364843 1.236
+      p3d_add_desc_vert -0.0787733 -0.0363921 1.23859
+      p3d_add_desc_vert -0.0787726 -0.0361158 1.24117
+      p3d_add_desc_vert -0.0787714 -0.0356568 1.24372
+      p3d_add_desc_vert -0.0787699 -0.0350175 1.24624
+      p3d_add_desc_vert -0.0787678 -0.0342011 1.2487
+      p3d_add_desc_vert -0.0787653 -0.0332118 1.2511
+      p3d_add_desc_vert -0.0787623 -0.0320547 1.25342
+      p3d_add_desc_vert -0.0787589 -0.0307355 1.25565
+      p3d_add_desc_vert -0.078755 -0.0292602 1.25778
+      p3d_add_desc_vert -0.0787506 -0.0276368 1.25981
+      p3d_add_desc_vert -0.0787458 -0.0258738 1.26171
+      p3d_add_desc_vert -0.0787406 -0.02398 1.26348
+      p3d_add_desc_vert -0.0787349 -0.0219651 1.26512
+      p3d_add_desc_vert -0.0787287 -0.0198393 1.2666
+      p3d_add_desc_vert -0.0787221 -0.0176133 1.26793
+      p3d_add_desc_vert -0.078715 -0.0152985 1.2691
+      p3d_add_desc_vert -0.0787017 -0.0111537 1.27071
+      p3d_add_desc_vert -0.0786872 -0.00684441 1.27181
+      p3d_add_desc_vert -0.0786712 -0.00243488 1.27237
+      p3d_add_desc_vert -0.0786539 0.00200934 1.27239
+      p3d_add_desc_vert -0.0786432 0.00459498 1.27215
+      p3d_add_desc_vert -0.078632 0.00715655 1.27173
+      p3d_add_desc_vert -0.0786204 0.009681 1.27112
+      p3d_add_desc_vert -0.0786084 0.0121555 1.27034
+      p3d_add_desc_vert -0.0785958 0.0145674 1.26938
+      p3d_add_desc_vert -0.0785828 0.0169044 1.26826
+      p3d_add_desc_vert -0.0785694 0.0191546 1.26697
+      p3d_add_desc_vert -0.0785555 0.0213067 1.26552
+      p3d_add_desc_vert -0.0785349 0.0241942 1.26319
+      p3d_add_desc_vert -0.0785133 0.0268282 1.26058
+      p3d_add_desc_vert -0.0784909 0.0291816 1.25772
+      p3d_add_desc_vert -0.0784676 0.0312301 1.25463
+      p3d_add_desc_vert -0.0784409 0.0331092 1.25101
+      p3d_add_desc_vert -0.0784131 0.0345688 1.2472
+      p3d_add_desc_vert -0.0783843 0.0355907 1.24325
+      p3d_add_desc_vert -0.078354 0.0361682 1.23915
+      p3d_add_desc_vert -0.0736013 0.0382665 1.24481
+      p3d_add_desc_vert -0.0688486 0.0403647 1.25047
+
+      p3d_add_desc_face 98 97 23
+      p3d_add_desc_face 97 96 23
+      p3d_add_desc_face 23 96 22
+      p3d_add_desc_face 96 95 22
+      p3d_add_desc_face 22 95 94
+      p3d_add_desc_face 61 60 1
+      p3d_add_desc_face 60 59 1
+      p3d_add_desc_face 1 59 2
+      p3d_add_desc_face 59 58 2
+      p3d_add_desc_face 2 58 3
+      p3d_add_desc_face 58 57 3
+      p3d_add_desc_face 3 57 56
+      p3d_add_desc_face 2 64 1
+      p3d_add_desc_face 64 63 1
+      p3d_add_desc_face 1 63 62
+      p3d_add_desc_face 3 66 2
+      p3d_add_desc_face 66 65 2
+      p3d_add_desc_face 2 65 64
+      p3d_add_desc_face 4 68 3
+      p3d_add_desc_face 68 67 3
+      p3d_add_desc_face 3 67 66
+      p3d_add_desc_face 55 54 4
+      p3d_add_desc_face 54 5 4
+      p3d_add_desc_face 4 5 69
+      p3d_add_desc_face 5 70 69
+      p3d_add_desc_face 54 53 5
+      p3d_add_desc_face 53 6 5
+      p3d_add_desc_face 5 6 70
+      p3d_add_desc_face 6 71 70
+      p3d_add_desc_face 52 51 6
+      p3d_add_desc_face 51 7 6
+      p3d_add_desc_face 6 7 72
+      p3d_add_desc_face 7 73 72
+      p3d_add_desc_face 50 49 7
+      p3d_add_desc_face 49 8 7
+      p3d_add_desc_face 7 8 74
+      p3d_add_desc_face 8 75 74
+      p3d_add_desc_face 48 47 8
+      p3d_add_desc_face 47 9 8
+      p3d_add_desc_face 8 9 76
+      p3d_add_desc_face 9 77 76
+      p3d_add_desc_face 39 38 13
+      p3d_add_desc_face 38 14 13
+      p3d_add_desc_face 13 14 82
+      p3d_add_desc_face 14 83 82
+      p3d_add_desc_face 38 37 14
+      p3d_add_desc_face 37 15 14
+      p3d_add_desc_face 14 15 84
+      p3d_add_desc_face 15 85 84
+      p3d_add_desc_face 86 85 16
+      p3d_add_desc_face 85 15 16
+      p3d_add_desc_face 16 15 35
+      p3d_add_desc_face 15 36 35
+      p3d_add_desc_face 34 33 16
+      p3d_add_desc_face 33 17 16
+      p3d_add_desc_face 16 17 87
+      p3d_add_desc_face 17 88 87
+      p3d_add_desc_face 89 17 90
+      p3d_add_desc_face 17 18 90
+      p3d_add_desc_face 90 18 91
+      p3d_add_desc_face 18 19 91
+      p3d_add_desc_face 91 19 92
+      p3d_add_desc_face 9 46 10
+      p3d_add_desc_face 46 45 10
+      p3d_add_desc_face 10 45 11
+      p3d_add_desc_face 45 44 11
+      p3d_add_desc_face 11 44 43
+      p3d_add_desc_face 43 42 11
+      p3d_add_desc_face 42 12 11
+      p3d_add_desc_face 11 12 80
+      p3d_add_desc_face 12 41 13
+      p3d_add_desc_face 41 40 13
+      p3d_add_desc_face 13 40 39
+      p3d_add_desc_face 17 32 18
+      p3d_add_desc_face 32 31 18
+      p3d_add_desc_face 18 31 19
+      p3d_add_desc_face 31 30 19
+      p3d_add_desc_face 19 30 29
+      p3d_add_desc_face 21 27 22
+      p3d_add_desc_face 27 26 22
+      p3d_add_desc_face 22 26 23
+      p3d_add_desc_face 26 25 23
+      p3d_add_desc_face 23 25 24
+      p3d_add_desc_face 23 24 98
+      p3d_add_desc_face 61 1 62
+      p3d_add_desc_face 69 68 4
+      p3d_add_desc_face 71 6 72
+      p3d_add_desc_face 73 7 74
+      p3d_add_desc_face 76 75 8
+      p3d_add_desc_face 78 77 9
+      p3d_add_desc_face 9 10 78
+      p3d_add_desc_face 79 78 10
+      p3d_add_desc_face 10 11 79
+      p3d_add_desc_face 80 79 11
+      p3d_add_desc_face 81 80 12
+      p3d_add_desc_face 12 13 81
+      p3d_add_desc_face 82 81 13
+      p3d_add_desc_face 84 83 14
+      p3d_add_desc_face 86 16 87
+      p3d_add_desc_face 88 17 89
+      p3d_add_desc_face 19 20 92
+      p3d_add_desc_face 93 92 20
+      p3d_add_desc_face 20 21 93
+      p3d_add_desc_face 93 21 94
+      p3d_add_desc_face 94 21 22
+      p3d_add_desc_face 3 56 4
+      p3d_add_desc_face 4 56 55
+      p3d_add_desc_face 53 52 6
+      p3d_add_desc_face 51 50 7
+      p3d_add_desc_face 8 49 48
+      p3d_add_desc_face 9 47 46
+      p3d_add_desc_face 42 41 12
+      p3d_add_desc_face 37 36 15
+      p3d_add_desc_face 35 34 16
+      p3d_add_desc_face 33 32 17
+      p3d_add_desc_face 19 29 20
+      p3d_add_desc_face 20 29 28
+      p3d_add_desc_face 20 28 21
+      p3d_add_desc_face 28 27 21
+      p3d_add_desc_face 99 98 24
+    p3d_end_desc_poly
+    #p3d_set_prim_pos_by_mat polyhedre28 0 0 0.001 -0.0011595 0.001 0 0 0 0 0.001 0 4.3999e-05 0 0 0 1
+
+    p3d_add_desc_poly polyhedre29
+      p3d_add_desc_vert -0.0737666 0.0389014 1.2408
+      p3d_add_desc_vert -0.0688226 0.0430918 1.23614
+      p3d_add_desc_vert -0.0688566 0.0427849 1.23996
+      p3d_add_desc_vert -0.0688674 0.0419563 1.24485
+      p3d_add_desc_vert -0.0688486 0.0403647 1.25047
+      p3d_add_desc_vert -0.0736013 0.0382665 1.24481
+      p3d_add_desc_vert -0.078354 0.0361682 1.23915
+      p3d_add_desc_vert -0.0786843 0.0363658 1.23249
+      p3d_add_desc_vert -0.0787735 0.0364843 1.2236
+      p3d_add_desc_vert -0.0687596 0.0431603 1.23461
+
+      p3d_add_desc_face 5 4 6
+      p3d_add_desc_face 4 1 6
+      p3d_add_desc_face 6 1 7
+      p3d_add_desc_face 1 8 7
+      p3d_add_desc_face 9 8 3
+      p3d_add_desc_face 9 3 2
+      p3d_add_desc_face 9 2 10
+      p3d_add_desc_face 8 1 4
+      p3d_add_desc_face 4 3 8
+    p3d_end_desc_poly
+    #p3d_set_prim_pos_by_mat polyhedre29 0 0 0.001 -0.0011595 0.001 0 0 0 0 0.001 0 4.3999e-05 0 0 0 1
+
+    p3d_add_desc_poly polyhedre30
+      p3d_add_desc_vert -0.0659861 -0.044 1.08439
+      p3d_add_desc_vert -0.067435 -0.0437855 1.08439
+      p3d_add_desc_vert -0.0687596 -0.0431603 1.08439
+      p3d_add_desc_vert -0.0687596 -0.0431603 1.236
+      p3d_add_desc_vert -0.067435 -0.0437855 1.236
+      p3d_add_desc_vert -0.0659861 -0.044 1.236
+
+      p3d_add_desc_face 4 3 5
+      p3d_add_desc_face 3 2 5
+      p3d_add_desc_face 5 2 6
+      p3d_add_desc_face 2 1 6
+    p3d_end_desc_poly
+    #p3d_set_prim_pos_by_mat polyhedre30 0 0 0.001 -0.0011595 0.001 0 0 0 0 0.001 0 4.3999e-05 0 0 0 1
+
+    p3d_add_desc_poly polyhedre31
+      p3d_add_desc_vert -0.067435 -0.0437855 1.08439
+      p3d_add_desc_vert -0.0687596 -0.0431603 1.08439
+      p3d_add_desc_vert -0.0688226 -0.0430918 1.08286
+      p3d_add_desc_vert -0.0674575 -0.0437675 1.08293
+      p3d_add_desc_vert -0.0659523 -0.044 1.083
+      p3d_add_desc_vert -0.0659861 -0.044 1.08439
+
+      p3d_add_desc_face 5 6 4
+      p3d_add_desc_face 6 1 4
+      p3d_add_desc_face 4 1 3
+      p3d_add_desc_face 1 2 3
+    p3d_end_desc_poly
+    #p3d_set_prim_pos_by_mat polyhedre31 0 0 0.001 -0.0011595 0.001 0 0 0 0 0.001 0 4.3999e-05 0 0 0 1
+
+    p3d_add_desc_poly polyhedre32
+      p3d_add_desc_vert -0.0674164 -0.0434933 1.07844
+      p3d_add_desc_vert -0.0673875 -0.0427739 1.07399
+      p3d_add_desc_vert -0.0674575 -0.0437675 1.08293
+      p3d_add_desc_vert -0.0688226 -0.0430918 1.08286
+      p3d_add_desc_vert -0.0688566 -0.0427849 1.07904
+      p3d_add_desc_vert -0.0688674 -0.0419563 1.07415
+      p3d_add_desc_vert -0.0688486 -0.0403647 1.06853
+      p3d_add_desc_vert -0.0673675 -0.0411462 1.06825
+      p3d_add_desc_vert -0.065693 -0.0414152 1.06814
+      p3d_add_desc_vert -0.0657147 -0.0430605 1.07396
+      p3d_add_desc_vert -0.0657996 -0.0437655 1.07846
+      p3d_add_desc_vert -0.0659523 -0.044 1.083
+
+      p3d_add_desc_face 2 10 1
+      p3d_add_desc_face 10 11 1
+      p3d_add_desc_face 1 11 3
+      p3d_add_desc_face 11 12 3
+      p3d_add_desc_face 9 10 8
+      p3d_add_desc_face 10 2 8
+      p3d_add_desc_face 8 2 7
+      p3d_add_desc_face 2 6 7
+      p3d_add_desc_face 1 3 5
+      p3d_add_desc_face 6 1 5
+      p3d_add_desc_face 5 3 4
+      p3d_add_desc_face 2 1 6
+    p3d_end_desc_poly
+    #p3d_set_prim_pos_by_mat polyhedre32 0 0 0.001 -0.0011595 0.001 0 0 0 0 0.001 0 4.3999e-05 0 0 0 1
+
+    p3d_add_desc_poly polyhedre33
+      p3d_add_desc_vert -0.0673698 -0.0403767 1.06625
+      p3d_add_desc_vert -0.0673782 -0.036645 1.05915
+      p3d_add_desc_vert -0.0673859 -0.0316786 1.05285
+      p3d_add_desc_vert -0.0673931 -0.0256443 1.04757
+      p3d_add_desc_vert -0.0673998 -0.0187444 1.04347
+      p3d_add_desc_vert -0.0674051 -0.0123477 1.04103
+      p3d_add_desc_vert -0.0674099 -0.00564764 1.03961
+      p3d_add_desc_vert -0.0674143 0.00119181 1.03925
+      p3d_add_desc_vert -0.0674183 0.00800346 1.03997
+      p3d_add_desc_vert -0.0674219 0.0146205 1.04174
+      p3d_add_desc_vert -0.067425 0.0208788 1.04453
+      p3d_add_desc_vert -0.0674277 0.0266258 1.04825
+      p3d_add_desc_vert -0.06743 0.0317212 1.05283
+      p3d_add_desc_vert -0.0674319 0.0360405 1.05814
+      p3d_add_desc_vert -0.0674333 0.039478 1.06407
+      p3d_add_desc_vert -0.0674342 0.0418002 1.06997
+      p3d_add_desc_vert -0.0674348 0.043245 1.07614
+      p3d_add_desc_vert -0.0673675 -0.0411462 1.06825
+      p3d_add_desc_vert -0.0688486 -0.0403647 1.06853
+      p3d_add_desc_vert -0.0688463 -0.0396167 1.06657
+      p3d_add_desc_vert -0.068842 -0.0379582 1.063
+      p3d_add_desc_vert -0.0688376 -0.0359778 1.05959
+      p3d_add_desc_vert -0.0688333 -0.0336921 1.05638
+      p3d_add_desc_vert -0.0688289 -0.0311203 1.05339
+      p3d_add_desc_vert -0.0688246 -0.0282839 1.05065
+      p3d_add_desc_vert -0.0688203 -0.0252066 1.04818
+      p3d_add_desc_vert -0.0688161 -0.0219143 1.046
+      p3d_add_desc_vert -0.0688119 -0.0184348 1.04414
+      p3d_add_desc_vert -0.068809 -0.0158631 1.04301
+      p3d_add_desc_vert -0.0688062 -0.0132228 1.04205
+      p3d_add_desc_vert -0.0688034 -0.0105251 1.04127
+      p3d_add_desc_vert -0.0688006 -0.00778149 1.04066
+      p3d_add_desc_vert -0.0687979 -0.0050038 1.04024
+      p3d_add_desc_vert -0.0687952 -0.00220383 1.03999
+      p3d_add_desc_vert -0.0687926 0.000606489 1.03993
+      p3d_add_desc_vert -0.0687901 0.00341518 1.04006
+      p3d_add_desc_vert -0.0687877 0.00621026 1.04036
+      p3d_add_desc_vert -0.0687854 0.00897978 1.04085
+      p3d_add_desc_vert -0.0687831 0.0117119 1.04152
+      p3d_add_desc_vert -0.0687809 0.0143948 1.04237
+      p3d_add_desc_vert -0.0687788 0.0170163 1.04339
+      p3d_add_desc_vert -0.0687768 0.0195659 1.04458
+      p3d_add_desc_vert -0.0687749 0.0220324 1.04593
+      p3d_add_desc_vert -0.0687731 0.0244054 1.04744
+      p3d_add_desc_vert -0.0687714 0.0266748 1.04911
+      p3d_add_desc_vert -0.0687698 0.0288307 1.05092
+      p3d_add_desc_vert -0.0687683 0.0308641 1.05286
+      p3d_add_desc_vert -0.0687669 0.0327663 1.05494
+      p3d_add_desc_vert -0.0687657 0.0345291 1.05713
+      p3d_add_desc_vert -0.0687645 0.036145 1.05944
+      p3d_add_desc_vert -0.0687635 0.037607 1.06184
+      p3d_add_desc_vert -0.0687626 0.0389088 1.06434
+      p3d_add_desc_vert -0.0687613 0.0407073 1.06867
+      p3d_add_desc_vert -0.0687604 0.0420243 1.07317
+      p3d_add_desc_vert -0.0687599 0.0428441 1.07779
+      p3d_add_desc_vert -0.0687596 0.0431603 1.083
+      p3d_add_desc_vert -0.067435 0.0437855 1.083
+      p3d_add_desc_vert -0.0659861 0.044 1.083
+      p3d_add_desc_vert -0.0659851 0.0434572 1.07611
+      p3d_add_desc_vert -0.0659824 0.0420061 1.0699
+      p3d_add_desc_vert -0.065978 0.0396737 1.06397
+      p3d_add_desc_vert -0.0659714 0.036221 1.05802
+      p3d_add_desc_vert -0.0659629 0.0318823 1.05268
+      p3d_add_desc_vert -0.0659523 0.0267634 1.04808
+      p3d_add_desc_vert -0.06594 0.0209892 1.04433
+      p3d_add_desc_vert -0.0659258 0.0147006 1.04153
+      p3d_add_desc_vert -0.0659098 0.00805021 1.03974
+      p3d_add_desc_vert -0.065892 0.00120294 1.03902
+      p3d_add_desc_vert -0.0658725 -0.00567382 1.03937
+      p3d_add_desc_vert -0.0658513 -0.0124122 1.04079
+      p3d_add_desc_vert -0.0658286 -0.0188474 1.04324
+      p3d_add_desc_vert -0.0657999 -0.0257917 1.04735
+      p3d_add_desc_vert -0.0657693 -0.0318683 1.05266
+      p3d_add_desc_vert -0.0657368 -0.0368731 1.05899
+      p3d_add_desc_vert -0.0657024 -0.0406379 1.06613
+      p3d_add_desc_vert -0.065693 -0.0414152 1.06814
+
+      p3d_add_desc_face 56 57 55
+      p3d_add_desc_face 57 17 55
+      p3d_add_desc_face 55 17 54
+      p3d_add_desc_face 17 16 54
+      p3d_add_desc_face 54 16 53
+      p3d_add_desc_face 62 63 14
+      p3d_add_desc_face 63 13 14
+      p3d_add_desc_face 14 13 50
+      p3d_add_desc_face 13 49 50
+      p3d_add_desc_face 64 65 12
+      p3d_add_desc_face 65 11 12
+      p3d_add_desc_face 12 11 45
+      p3d_add_desc_face 11 44 45
+      p3d_add_desc_face 67 68 9
+      p3d_add_desc_face 68 8 9
+      p3d_add_desc_face 9 8 38
+      p3d_add_desc_face 8 37 38
+      p3d_add_desc_face 69 70 7
+      p3d_add_desc_face 70 6 7
+      p3d_add_desc_face 7 6 33
+      p3d_add_desc_face 6 32 33
+      p3d_add_desc_face 75 76 1
+      p3d_add_desc_face 76 18 1
+      p3d_add_desc_face 1 18 20
+      p3d_add_desc_face 18 19 20
+      p3d_add_desc_face 57 58 17
+      p3d_add_desc_face 58 59 17
+      p3d_add_desc_face 17 59 16
+      p3d_add_desc_face 59 60 16
+      p3d_add_desc_face 16 60 15
+      p3d_add_desc_face 60 61 15
+      p3d_add_desc_face 15 61 14
+      p3d_add_desc_face 61 62 14
+      p3d_add_desc_face 53 16 52
+      p3d_add_desc_face 16 15 52
+      p3d_add_desc_face 52 15 51
+      p3d_add_desc_face 15 14 51
+      p3d_add_desc_face 51 14 50
+      p3d_add_desc_face 63 64 13
+      p3d_add_desc_face 64 12 13
+      p3d_add_desc_face 13 12 47
+      p3d_add_desc_face 11 65 10
+      p3d_add_desc_face 65 66 10
+      p3d_add_desc_face 10 66 9
+      p3d_add_desc_face 66 67 9
+      p3d_add_desc_face 40 10 39
+      p3d_add_desc_face 10 9 39
+      p3d_add_desc_face 39 9 38
+      p3d_add_desc_face 68 69 8
+      p3d_add_desc_face 69 7 8
+      p3d_add_desc_face 8 7 35
+      p3d_add_desc_face 6 70 5
+      p3d_add_desc_face 70 71 5
+      p3d_add_desc_face 5 71 4
+      p3d_add_desc_face 71 72 4
+      p3d_add_desc_face 4 72 3
+      p3d_add_desc_face 72 73 3
+      p3d_add_desc_face 3 73 2
+      p3d_add_desc_face 73 74 2
+      p3d_add_desc_face 2 74 1
+      p3d_add_desc_face 74 75 1
+      p3d_add_desc_face 28 5 27
+      p3d_add_desc_face 5 4 27
+      p3d_add_desc_face 27 4 26
+      p3d_add_desc_face 26 4 25
+      p3d_add_desc_face 4 3 25
+      p3d_add_desc_face 25 3 24
+      p3d_add_desc_face 24 3 23
+      p3d_add_desc_face 3 2 23
+      p3d_add_desc_face 23 2 22
+      p3d_add_desc_face 22 2 21
+      p3d_add_desc_face 2 1 21
+      p3d_add_desc_face 21 1 20
+      p3d_add_desc_face 48 13 47
+      p3d_add_desc_face 11 10 42
+      p3d_add_desc_face 43 11 42
+      p3d_add_desc_face 36 8 35
+      p3d_add_desc_face 6 5 30
+      p3d_add_desc_face 31 6 30
+      p3d_add_desc_face 48 49 13
+      p3d_add_desc_face 46 47 12
+      p3d_add_desc_face 45 46 12
+      p3d_add_desc_face 43 44 11
+      p3d_add_desc_face 41 42 10
+      p3d_add_desc_face 40 41 10
+      p3d_add_desc_face 36 37 8
+      p3d_add_desc_face 34 35 7
+      p3d_add_desc_face 33 34 7
+      p3d_add_desc_face 31 32 6
+      p3d_add_desc_face 29 30 5
+      p3d_add_desc_face 28 29 5
+    p3d_end_desc_poly
+    #p3d_set_prim_pos_by_mat polyhedre33 0 0 0.001 -0.0011595 0.001 0 0 0 0 0.001 0 4.3999e-05 0 0 0 1
+
+    p3d_add_desc_poly polyhedre34
+      p3d_add_desc_vert -0.0659861 0.044 1.23461
+      p3d_add_desc_vert -0.067435 0.0437855 1.23461
+      p3d_add_desc_vert -0.0687596 0.0431603 1.23461
+      p3d_add_desc_vert -0.0687596 0.0431603 1.083
+      p3d_add_desc_vert -0.067435 0.0437855 1.083
+      p3d_add_desc_vert -0.0659861 0.044 1.083
+
+      p3d_add_desc_face 1 6 2
+      p3d_add_desc_face 6 5 2
+      p3d_add_desc_face 2 5 3
+      p3d_add_desc_face 5 4 3
+    p3d_end_desc_poly
+    #p3d_set_prim_pos_by_mat polyhedre34 0 0 0.001 -0.0011595 0.001 0 0 0 0 0.001 0 4.3999e-05 0 0 0 1
+
+    p3d_add_desc_poly polyhedre35
+      p3d_add_desc_vert -0.067435 0.0437855 1.23461
+      p3d_add_desc_vert -0.0687596 0.0431603 1.23461
+      p3d_add_desc_vert -0.0688226 0.0430918 1.23614
+      p3d_add_desc_vert -0.0674575 0.0437675 1.23607
+      p3d_add_desc_vert -0.0659523 0.044 1.236
+      p3d_add_desc_vert -0.0659861 0.044 1.23461
+
+      p3d_add_desc_face 5 6 4
+      p3d_add_desc_face 6 1 4
+      p3d_add_desc_face 4 1 3
+      p3d_add_desc_face 1 2 3
+    p3d_end_desc_poly
+    #p3d_set_prim_pos_by_mat polyhedre35 0 0 0.001 -0.0011595 0.001 0 0 0 0 0.001 0 4.3999e-05 0 0 0 1
+
+    p3d_add_desc_poly polyhedre36
+      p3d_add_desc_vert -0.0674164 0.0434933 1.24056
+      p3d_add_desc_vert -0.0673875 0.0427739 1.24501
+      p3d_add_desc_vert -0.0674575 0.0437675 1.23607
+      p3d_add_desc_vert -0.0688226 0.0430918 1.23614
+      p3d_add_desc_vert -0.0688566 0.0427849 1.23996
+      p3d_add_desc_vert -0.0688674 0.0419563 1.24485
+      p3d_add_desc_vert -0.0688486 0.0403647 1.25047
+      p3d_add_desc_vert -0.0673675 0.0411462 1.25075
+      p3d_add_desc_vert -0.065693 0.0414152 1.25086
+      p3d_add_desc_vert -0.0657147 0.0430605 1.24504
+      p3d_add_desc_vert -0.0657996 0.0437655 1.24054
+      p3d_add_desc_vert -0.0659523 0.044 1.236
+
+      p3d_add_desc_face 2 10 1
+      p3d_add_desc_face 10 11 1
+      p3d_add_desc_face 1 11 3
+      p3d_add_desc_face 11 12 3
+      p3d_add_desc_face 9 10 8
+      p3d_add_desc_face 10 2 8
+      p3d_add_desc_face 8 2 7
+      p3d_add_desc_face 2 6 7
+      p3d_add_desc_face 1 3 5
+      p3d_add_desc_face 6 1 5
+      p3d_add_desc_face 5 3 4
+      p3d_add_desc_face 2 1 6
+    p3d_end_desc_poly
+    #p3d_set_prim_pos_by_mat polyhedre36 0 0 0.001 -0.0011595 0.001 0 0 0 0 0.001 0 4.3999e-05 0 0 0 1
+
+    p3d_add_desc_poly polyhedre37
+      p3d_add_desc_vert -0.0673698 0.0403767 1.25275
+      p3d_add_desc_vert -0.0673782 0.036645 1.25985
+      p3d_add_desc_vert -0.0673859 0.0316786 1.26615
+      p3d_add_desc_vert -0.0673931 0.0256443 1.27143
+      p3d_add_desc_vert -0.0673998 0.0187444 1.27553
+      p3d_add_desc_vert -0.0674051 0.0123477 1.27797
+      p3d_add_desc_vert -0.0674099 0.00564764 1.27939
+      p3d_add_desc_vert -0.0674143 -0.0011918 1.27975
+      p3d_add_desc_vert -0.0674183 -0.00800346 1.27903
+      p3d_add_desc_vert -0.0674219 -0.0146205 1.27726
+      p3d_add_desc_vert -0.067425 -0.0208788 1.27447
+      p3d_add_desc_vert -0.0674277 -0.0266258 1.27075
+      p3d_add_desc_vert -0.06743 -0.0317212 1.26617
+      p3d_add_desc_vert -0.0674319 -0.0360405 1.26086
+      p3d_add_desc_vert -0.0674333 -0.039478 1.25493
+      p3d_add_desc_vert -0.0674342 -0.0418002 1.24903
+      p3d_add_desc_vert -0.0674348 -0.043245 1.24286
+      p3d_add_desc_vert -0.0673675 0.0411462 1.25075
+      p3d_add_desc_vert -0.0688486 0.0403647 1.25047
+      p3d_add_desc_vert -0.0688463 0.0396167 1.25243
+      p3d_add_desc_vert -0.068842 0.0379582 1.256
+      p3d_add_desc_vert -0.0688376 0.0359778 1.25941
+      p3d_add_desc_vert -0.0688333 0.0336921 1.26262
+      p3d_add_desc_vert -0.0688289 0.0311203 1.26561
+      p3d_add_desc_vert -0.0688246 0.0282839 1.26835
+      p3d_add_desc_vert -0.0688203 0.0252066 1.27082
+      p3d_add_desc_vert -0.0688161 0.0219143 1.273
+      p3d_add_desc_vert -0.0688119 0.0184348 1.27486
+      p3d_add_desc_vert -0.068809 0.0158631 1.27599
+      p3d_add_desc_vert -0.0688062 0.0132228 1.27695
+      p3d_add_desc_vert -0.0688034 0.0105251 1.27773
+      p3d_add_desc_vert -0.0688006 0.00778149 1.27834
+      p3d_add_desc_vert -0.0687979 0.0050038 1.27876
+      p3d_add_desc_vert -0.0687952 0.00220383 1.27901
+      p3d_add_desc_vert -0.0687926 -0.000606487 1.27907
+      p3d_add_desc_vert -0.0687901 -0.00341518 1.27894
+      p3d_add_desc_vert -0.0687877 -0.00621026 1.27864
+      p3d_add_desc_vert -0.0687854 -0.00897978 1.27815
+      p3d_add_desc_vert -0.0687831 -0.0117119 1.27748
+      p3d_add_desc_vert -0.0687809 -0.0143948 1.27663
+      p3d_add_desc_vert -0.0687788 -0.0170163 1.27561
+      p3d_add_desc_vert -0.0687768 -0.0195659 1.27442
+      p3d_add_desc_vert -0.0687749 -0.0220324 1.27307
+      p3d_add_desc_vert -0.0687731 -0.0244054 1.27156
+      p3d_add_desc_vert -0.0687714 -0.0266748 1.26989
+      p3d_add_desc_vert -0.0687698 -0.0288307 1.26808
+      p3d_add_desc_vert -0.0687683 -0.0308641 1.26614
+      p3d_add_desc_vert -0.0687669 -0.0327663 1.26406
+      p3d_add_desc_vert -0.0687657 -0.0345291 1.26187
+      p3d_add_desc_vert -0.0687645 -0.036145 1.25956
+      p3d_add_desc_vert -0.0687635 -0.037607 1.25716
+      p3d_add_desc_vert -0.0687626 -0.0389088 1.25466
+      p3d_add_desc_vert -0.0687613 -0.0407073 1.25033
+      p3d_add_desc_vert -0.0687604 -0.0420243 1.24583
+      p3d_add_desc_vert -0.0687599 -0.0428441 1.24121
+      p3d_add_desc_vert -0.0687596 -0.0431603 1.236
+      p3d_add_desc_vert -0.067435 -0.0437855 1.236
+      p3d_add_desc_vert -0.0659861 -0.044 1.236
+      p3d_add_desc_vert -0.0659851 -0.0434572 1.24289
+      p3d_add_desc_vert -0.0659824 -0.0420061 1.2491
+      p3d_add_desc_vert -0.065978 -0.0396737 1.25503
+      p3d_add_desc_vert -0.0659714 -0.036221 1.26098
+      p3d_add_desc_vert -0.0659629 -0.0318823 1.26632
+      p3d_add_desc_vert -0.0659523 -0.0267634 1.27092
+      p3d_add_desc_vert -0.06594 -0.0209892 1.27467
+      p3d_add_desc_vert -0.0659258 -0.0147006 1.27747
+      p3d_add_desc_vert -0.0659098 -0.00805021 1.27926
+      p3d_add_desc_vert -0.065892 -0.00120294 1.27998
+      p3d_add_desc_vert -0.0658725 0.00567382 1.27963
+      p3d_add_desc_vert -0.0658513 0.0124122 1.27821
+      p3d_add_desc_vert -0.0658286 0.0188474 1.27576
+      p3d_add_desc_vert -0.0657999 0.0257917 1.27165
+      p3d_add_desc_vert -0.0657693 0.0318683 1.26634
+      p3d_add_desc_vert -0.0657368 0.0368731 1.26001
+      p3d_add_desc_vert -0.0657024 0.0406379 1.25287
+      p3d_add_desc_vert -0.065693 0.0414152 1.25086
+
+      p3d_add_desc_face 56 57 55
+      p3d_add_desc_face 57 17 55
+      p3d_add_desc_face 55 17 54
+      p3d_add_desc_face 17 16 54
+      p3d_add_desc_face 54 16 53
+      p3d_add_desc_face 62 63 14
+      p3d_add_desc_face 63 13 14
+      p3d_add_desc_face 14 13 50
+      p3d_add_desc_face 13 49 50
+      p3d_add_desc_face 64 65 12
+      p3d_add_desc_face 65 11 12
+      p3d_add_desc_face 12 11 45
+      p3d_add_desc_face 11 44 45
+      p3d_add_desc_face 67 68 9
+      p3d_add_desc_face 68 8 9
+      p3d_add_desc_face 9 8 38
+      p3d_add_desc_face 8 37 38
+      p3d_add_desc_face 69 70 7
+      p3d_add_desc_face 70 6 7
+      p3d_add_desc_face 7 6 33
+      p3d_add_desc_face 6 32 33
+      p3d_add_desc_face 75 76 1
+      p3d_add_desc_face 76 18 1
+      p3d_add_desc_face 1 18 20
+      p3d_add_desc_face 18 19 20
+      p3d_add_desc_face 57 58 17
+      p3d_add_desc_face 58 59 17
+      p3d_add_desc_face 17 59 16
+      p3d_add_desc_face 59 60 16
+      p3d_add_desc_face 16 60 15
+      p3d_add_desc_face 60 61 15
+      p3d_add_desc_face 15 61 14
+      p3d_add_desc_face 61 62 14
+      p3d_add_desc_face 53 16 52
+      p3d_add_desc_face 16 15 52
+      p3d_add_desc_face 52 15 51
+      p3d_add_desc_face 15 14 51
+      p3d_add_desc_face 51 14 50
+      p3d_add_desc_face 63 64 13
+      p3d_add_desc_face 64 12 13
+      p3d_add_desc_face 13 12 47
+      p3d_add_desc_face 11 65 10
+      p3d_add_desc_face 65 66 10
+      p3d_add_desc_face 10 66 9
+      p3d_add_desc_face 66 67 9
+      p3d_add_desc_face 40 10 39
+      p3d_add_desc_face 10 9 39
+      p3d_add_desc_face 39 9 38
+      p3d_add_desc_face 68 69 8
+      p3d_add_desc_face 69 7 8
+      p3d_add_desc_face 8 7 35
+      p3d_add_desc_face 6 70 5
+      p3d_add_desc_face 70 71 5
+      p3d_add_desc_face 5 71 4
+      p3d_add_desc_face 71 72 4
+      p3d_add_desc_face 4 72 3
+      p3d_add_desc_face 72 73 3
+      p3d_add_desc_face 3 73 2
+      p3d_add_desc_face 73 74 2
+      p3d_add_desc_face 2 74 1
+      p3d_add_desc_face 74 75 1
+      p3d_add_desc_face 28 5 27
+      p3d_add_desc_face 5 4 27
+      p3d_add_desc_face 27 4 26
+      p3d_add_desc_face 26 4 25
+      p3d_add_desc_face 4 3 25
+      p3d_add_desc_face 25 3 24
+      p3d_add_desc_face 24 3 23
+      p3d_add_desc_face 3 2 23
+      p3d_add_desc_face 23 2 22
+      p3d_add_desc_face 22 2 21
+      p3d_add_desc_face 2 1 21
+      p3d_add_desc_face 21 1 20
+      p3d_add_desc_face 48 13 47
+      p3d_add_desc_face 11 10 42
+      p3d_add_desc_face 43 11 42
+      p3d_add_desc_face 36 8 35
+      p3d_add_desc_face 6 5 30
+      p3d_add_desc_face 31 6 30
+      p3d_add_desc_face 48 49 13
+      p3d_add_desc_face 46 47 12
+      p3d_add_desc_face 45 46 12
+      p3d_add_desc_face 43 44 11
+      p3d_add_desc_face 41 42 10
+      p3d_add_desc_face 40 41 10
+      p3d_add_desc_face 36 37 8
+      p3d_add_desc_face 34 35 7
+      p3d_add_desc_face 33 34 7
+      p3d_add_desc_face 31 32 6
+      p3d_add_desc_face 29 30 5
+      p3d_add_desc_face 28 29 5
+    p3d_end_desc_poly
+    #p3d_set_prim_pos_by_mat polyhedre37 0 0 0.001 -0.0011595 0.001 0 0 0 0 0.001 0 4.3999e-05 0 0 0 1
+
+    p3d_add_desc_poly polyhedre38
+      p3d_add_desc_vert 0.0495 -0.0432508 1.07492
+      p3d_add_desc_vert 0.0495 -0.0410288 1.06711
+      p3d_add_desc_vert 0.0495 -0.0374096 1.05984
+      p3d_add_desc_vert 0.0495 -0.0325164 1.05336
+      p3d_add_desc_vert 0.0495 -0.0265159 1.04789
+      p3d_add_desc_vert 0.0495 -0.0196125 1.04361
+      p3d_add_desc_vert 0.0495 -0.0120412 1.04068
+      p3d_add_desc_vert 0.0495 -0.00405981 1.03919
+      p3d_add_desc_vert 0.0495 0.00405981 1.03919
+      p3d_add_desc_vert 0.0495 0.0120412 1.04068
+      p3d_add_desc_vert 0.0495 0.0196125 1.04361
+      p3d_add_desc_vert 0.0495 0.0265159 1.04789
+      p3d_add_desc_vert 0.0495 0.0325164 1.05336
+      p3d_add_desc_vert 0.0495 0.0374096 1.05984
+      p3d_add_desc_vert 0.0495 0.0410288 1.06711
+      p3d_add_desc_vert 0.0495 0.0432508 1.07492
+      p3d_add_desc_vert 0.0495 0.044 1.083
+      p3d_add_desc_vert 0.0495 0.044 1.236
+      p3d_add_desc_vert 0.0495 0.0432508 1.24408
+      p3d_add_desc_vert 0.0495 0.0410288 1.25189
+      p3d_add_desc_vert 0.0495 0.0374096 1.25916
+      p3d_add_desc_vert 0.0495 0.0325164 1.26564
+      p3d_add_desc_vert 0.0495 0.0265159 1.27111
+      p3d_add_desc_vert 0.0495 0.0196125 1.27539
+      p3d_add_desc_vert 0.0495 0.0120412 1.27832
+      p3d_add_desc_vert 0.0495 0.00405981 1.27981
+      p3d_add_desc_vert 0.0495 -0.00405981 1.27981
+      p3d_add_desc_vert 0.0495 -0.0120412 1.27832
+      p3d_add_desc_vert 0.0495 -0.0196125 1.27539
+      p3d_add_desc_vert 0.0495 -0.0265159 1.27111
+      p3d_add_desc_vert 0.0495 -0.0325164 1.26564
+      p3d_add_desc_vert 0.0495 -0.0374096 1.25916
+      p3d_add_desc_vert 0.0495 -0.0410288 1.25189
+      p3d_add_desc_vert 0.0495 -0.0432508 1.24408
+      p3d_add_desc_vert 0.0495 -0.044 1.236
+      p3d_add_desc_vert 0.0495 -0.044 1.083
+
+      p3d_add_desc_face 18 17 19
+      p3d_add_desc_face 17 16 19
+      p3d_add_desc_face 19 16 20
+      p3d_add_desc_face 16 15 20
+      p3d_add_desc_face 20 15 21
+      p3d_add_desc_face 15 14 21
+      p3d_add_desc_face 21 14 22
+      p3d_add_desc_face 14 13 22
+      p3d_add_desc_face 22 13 23
+      p3d_add_desc_face 13 12 23
+      p3d_add_desc_face 23 12 24
+      p3d_add_desc_face 12 11 24
+      p3d_add_desc_face 24 11 25
+      p3d_add_desc_face 11 10 25
+      p3d_add_desc_face 25 10 26
+      p3d_add_desc_face 10 9 26
+      p3d_add_desc_face 26 9 27
+      p3d_add_desc_face 9 8 27
+      p3d_add_desc_face 27 8 28
+      p3d_add_desc_face 8 7 28
+      p3d_add_desc_face 28 7 29
+      p3d_add_desc_face 7 6 29
+      p3d_add_desc_face 29 6 30
+      p3d_add_desc_face 6 5 30
+      p3d_add_desc_face 30 5 31
+      p3d_add_desc_face 5 4 31
+      p3d_add_desc_face 31 4 32
+      p3d_add_desc_face 4 3 32
+      p3d_add_desc_face 32 3 33
+      p3d_add_desc_face 3 2 33
+      p3d_add_desc_face 33 2 34
+      p3d_add_desc_face 2 1 34
+      p3d_add_desc_face 34 1 35
+      p3d_add_desc_face 1 36 35
+    p3d_end_desc_poly
+    #p3d_set_prim_pos_by_mat polyhedre38 0 0 0.001 -0.0011595 0.001 0 0 0 0 0.001 0 4.3999e-05 0 0 0 1
+
+    p3d_add_desc_poly polyhedre39
+      p3d_add_desc_vert 0.081 0.0323241 1.236
+      p3d_add_desc_vert 0.081 0.0317436 1.24209
+      p3d_add_desc_vert 0.081 0.030023 1.24796
+      p3d_add_desc_vert 0.081 0.0272252 1.2534
+      p3d_add_desc_vert 0.081 0.0234495 1.25821
+      p3d_add_desc_vert 0.081 0.0188344 1.26222
+      p3d_add_desc_vert 0.081 0.0135475 1.26529
+      p3d_add_desc_vert 0.081 0.00862132 1.26708
+      p3d_add_desc_vert 0.081 0.00347363 1.26804
+      p3d_add_desc_vert 0.081 -0.00175879 1.26816
+      p3d_add_desc_vert 0.081 -0.00779264 1.26722
+      p3d_add_desc_vert 0.081 -0.013533 1.26516
+      p3d_add_desc_vert 0.081 -0.0187721 1.26205
+      p3d_add_desc_vert 0.081 -0.0236233 1.25768
+      p3d_add_desc_vert 0.081 -0.0274804 1.25243
+      p3d_add_desc_vert 0.081 -0.0295876 1.24813
+      p3d_add_desc_vert 0.081 -0.0310263 1.24358
+      p3d_add_desc_vert 0.081 -0.0317706 1.2388
+      p3d_add_desc_vert 0.081 -0.0323239 1.22385
+      p3d_add_desc_vert 0.081 -0.0323241 1.2236
+      p3d_add_desc_vert 0.081 -0.0323241 1.083
+      p3d_add_desc_vert 0.081 -0.0317436 1.07691
+      p3d_add_desc_vert 0.081 -0.030023 1.07104
+      p3d_add_desc_vert 0.081 -0.0272253 1.0656
+      p3d_add_desc_vert 0.081 -0.0234495 1.06079
+      p3d_add_desc_vert 0.081 -0.0188344 1.05678
+      p3d_add_desc_vert 0.081 -0.0135475 1.05371
+      p3d_add_desc_vert 0.081 -0.00862132 1.05192
+      p3d_add_desc_vert 0.081 -0.00347363 1.05096
+      p3d_add_desc_vert 0.081 0.00175879 1.05084
+      p3d_add_desc_vert 0.081 0.00779264 1.05178
+      p3d_add_desc_vert 0.081 0.013533 1.05384
+      p3d_add_desc_vert 0.081 0.0187721 1.05695
+      p3d_add_desc_vert 0.081 0.0236233 1.06132
+      p3d_add_desc_vert 0.081 0.0274804 1.06657
+      p3d_add_desc_vert 0.081 0.0295876 1.07087
+      p3d_add_desc_vert 0.081 0.0310263 1.07542
+      p3d_add_desc_vert 0.081 0.0317706 1.0802
+      p3d_add_desc_vert 0.081 0.0323239 1.09515
+      p3d_add_desc_vert 0.081 0.0323241 1.0954
+
+      p3d_add_desc_face 3 38 2
+      p3d_add_desc_face 38 39 2
+      p3d_add_desc_face 2 39 40
+      p3d_add_desc_face 4 36 3
+      p3d_add_desc_face 36 37 3
+      p3d_add_desc_face 3 37 38
+      p3d_add_desc_face 35 4 34
+      p3d_add_desc_face 4 5 34
+      p3d_add_desc_face 34 5 33
+      p3d_add_desc_face 5 6 33
+      p3d_add_desc_face 33 6 32
+      p3d_add_desc_face 6 7 32
+      p3d_add_desc_face 32 7 31
+      p3d_add_desc_face 7 8 31
+      p3d_add_desc_face 31 8 30
+      p3d_add_desc_face 8 9 30
+      p3d_add_desc_face 30 9 29
+      p3d_add_desc_face 9 10 29
+      p3d_add_desc_face 29 10 28
+      p3d_add_desc_face 10 11 28
+      p3d_add_desc_face 28 11 27
+      p3d_add_desc_face 11 12 27
+      p3d_add_desc_face 27 12 26
+      p3d_add_desc_face 12 13 26
+      p3d_add_desc_face 26 13 25
+      p3d_add_desc_face 13 14 25
+      p3d_add_desc_face 25 14 24
+      p3d_add_desc_face 14 15 24
+      p3d_add_desc_face 24 15 23
+      p3d_add_desc_face 15 16 23
+      p3d_add_desc_face 23 16 17
+      p3d_add_desc_face 23 17 22
+      p3d_add_desc_face 17 18 22
+      p3d_add_desc_face 22 18 19
+      p3d_add_desc_face 22 19 20
+      p3d_add_desc_face 21 22 20
+      p3d_add_desc_face 1 2 40
+      p3d_add_desc_face 4 35 36
+    p3d_end_desc_poly
+    #p3d_set_prim_pos_by_mat polyhedre39 0 0 0.001 -0.0011595 0.001 0 0 0 0 0.001 0 4.3999e-05 0 0 0 1
+
+    p3d_add_desc_poly polyhedre40
+      p3d_add_desc_vert 0.081 0.0323241 1.236
+      p3d_add_desc_vert 0.0804084 0.0346834 1.236
+      p3d_add_desc_vert 0.0787735 0.0364843 1.236
+      p3d_add_desc_vert 0.0787735 0.0364843 1.0954
+      p3d_add_desc_vert 0.0804084 0.0346834 1.0954
+      p3d_add_desc_vert 0.081 0.0323241 1.0954
+
+      p3d_add_desc_face 1 6 2
+      p3d_add_desc_face 6 5 2
+      p3d_add_desc_face 2 5 3
+      p3d_add_desc_face 5 4 3
+    p3d_end_desc_poly
+    #p3d_set_prim_pos_by_mat polyhedre40 0 0 0.001 -0.0011595 0.001 0 0 0 0 0.001 0 4.3999e-05 0 0 0 1
+
+    p3d_add_desc_poly polyhedre41
+      p3d_add_desc_vert 0.0802994 -0.0335111 1.24416
+      p3d_add_desc_vert 0.0803104 -0.0319399 1.24907
+      p3d_add_desc_vert 0.0803208 -0.02965 1.2537
+      p3d_add_desc_vert 0.080334 -0.025472 1.25935
+      p3d_add_desc_vert 0.0803461 -0.0202301 1.26405
+      p3d_add_desc_vert 0.0803565 -0.0145788 1.26738
+      p3d_add_desc_vert 0.0803659 -0.00839492 1.26958
+      p3d_add_desc_vert 0.0803743 -0.00190198 1.27058
+      p3d_add_desc_vert 0.0803808 0.0037237 1.27044
+      p3d_add_desc_vert 0.0803866 0.00925453 1.26939
+      p3d_add_desc_vert 0.0803917 0.0145443 1.26746
+      p3d_add_desc_vert 0.0803968 0.0202183 1.26416
+      p3d_add_desc_vert 0.080401 0.025169 1.25985
+      p3d_add_desc_vert 0.0804042 0.0292178 1.25468
+      p3d_add_desc_vert 0.0804065 0.0322171 1.24884
+      p3d_add_desc_vert 0.0804079 0.0340612 1.24254
+      p3d_add_desc_vert 0.081 0.0317436 1.24209
+      p3d_add_desc_vert 0.081 0.030023 1.24796
+      p3d_add_desc_vert 0.081 0.0272252 1.2534
+      p3d_add_desc_vert 0.081 0.0234495 1.25821
+      p3d_add_desc_vert 0.081 0.0188344 1.26222
+      p3d_add_desc_vert 0.081 0.0135475 1.26529
+      p3d_add_desc_vert 0.081 0.00862132 1.26708
+      p3d_add_desc_vert 0.081 0.00347363 1.26804
+      p3d_add_desc_vert 0.081 -0.00175879 1.26816
+      p3d_add_desc_vert 0.081 -0.00779264 1.26722
+      p3d_add_desc_vert 0.081 -0.013533 1.26516
+      p3d_add_desc_vert 0.081 -0.0187721 1.26205
+      p3d_add_desc_vert 0.081 -0.0236233 1.25768
+      p3d_add_desc_vert 0.081 -0.0274804 1.25243
+      p3d_add_desc_vert 0.081 -0.0295876 1.24813
+      p3d_add_desc_vert 0.081 -0.0310263 1.24358
+      p3d_add_desc_vert 0.081 -0.0317706 1.2388
+      p3d_add_desc_vert 0.0802878 -0.0343346 1.23901
+      p3d_add_desc_vert 0.078354 -0.0361682 1.23915
+      p3d_add_desc_vert 0.0783843 -0.0355907 1.24325
+      p3d_add_desc_vert 0.0784131 -0.0345688 1.2472
+      p3d_add_desc_vert 0.0784409 -0.0331092 1.25101
+      p3d_add_desc_vert 0.0784676 -0.0312301 1.25463
+      p3d_add_desc_vert 0.0784909 -0.0291816 1.25772
+      p3d_add_desc_vert 0.0785133 -0.0268282 1.26058
+      p3d_add_desc_vert 0.0785349 -0.0241942 1.26319
+      p3d_add_desc_vert 0.0785555 -0.0213067 1.26552
+      p3d_add_desc_vert 0.0785694 -0.0191546 1.26697
+      p3d_add_desc_vert 0.0785828 -0.0169044 1.26826
+      p3d_add_desc_vert 0.0785958 -0.0145674 1.26938
+      p3d_add_desc_vert 0.0786084 -0.0121555 1.27034
+      p3d_add_desc_vert 0.0786204 -0.009681 1.27112
+      p3d_add_desc_vert 0.078632 -0.00715655 1.27173
+      p3d_add_desc_vert 0.0786432 -0.00459498 1.27215
+      p3d_add_desc_vert 0.0786539 -0.00200934 1.27239
+      p3d_add_desc_vert 0.0786712 0.00243488 1.27237
+      p3d_add_desc_vert 0.0786872 0.00684441 1.27181
+      p3d_add_desc_vert 0.0787017 0.0111537 1.27071
+      p3d_add_desc_vert 0.078715 0.0152985 1.2691
+      p3d_add_desc_vert 0.0787221 0.0176133 1.26793
+      p3d_add_desc_vert 0.0787287 0.0198393 1.2666
+      p3d_add_desc_vert 0.0787349 0.0219651 1.26512
+      p3d_add_desc_vert 0.0787406 0.02398 1.26348
+      p3d_add_desc_vert 0.0787458 0.0258738 1.26171
+      p3d_add_desc_vert 0.0787506 0.0276368 1.25981
+      p3d_add_desc_vert 0.078755 0.0292602 1.25778
+      p3d_add_desc_vert 0.0787589 0.0307355 1.25565
+      p3d_add_desc_vert 0.0787623 0.0320547 1.25342
+      p3d_add_desc_vert 0.0787653 0.0332118 1.2511
+      p3d_add_desc_vert 0.0787678 0.0342011 1.2487
+      p3d_add_desc_vert 0.0787699 0.0350175 1.24624
+      p3d_add_desc_vert 0.0787714 0.0356568 1.24372
+      p3d_add_desc_vert 0.0787726 0.0361158 1.24117
+      p3d_add_desc_vert 0.0787733 0.0363921 1.23859
+      p3d_add_desc_vert 0.0787735 0.0364843 1.236
+      p3d_add_desc_vert 0.0804084 0.0346834 1.236
+      p3d_add_desc_vert 0.081 0.0323241 1.236
+
+      p3d_add_desc_face 53 9 54
+      p3d_add_desc_face 9 10 54
+      p3d_add_desc_face 54 10 55
+      p3d_add_desc_face 10 11 55
+      p3d_add_desc_face 55 11 56
+      p3d_add_desc_face 37 1 38
+      p3d_add_desc_face 1 2 38
+      p3d_add_desc_face 38 2 39
+      p3d_add_desc_face 2 3 39
+      p3d_add_desc_face 39 3 40
+      p3d_add_desc_face 73 72 17
+      p3d_add_desc_face 72 16 17
+      p3d_add_desc_face 17 16 18
+      p3d_add_desc_face 16 15 18
+      p3d_add_desc_face 18 15 19
+      p3d_add_desc_face 15 14 19
+      p3d_add_desc_face 19 14 20
+      p3d_add_desc_face 14 13 20
+      p3d_add_desc_face 20 13 21
+      p3d_add_desc_face 13 12 21
+      p3d_add_desc_face 21 12 22
+      p3d_add_desc_face 12 11 22
+      p3d_add_desc_face 22 11 23
+      p3d_add_desc_face 11 10 23
+      p3d_add_desc_face 23 10 24
+      p3d_add_desc_face 10 9 24
+      p3d_add_desc_face 24 9 25
+      p3d_add_desc_face 9 8 25
+      p3d_add_desc_face 25 8 26
+      p3d_add_desc_face 8 7 26
+      p3d_add_desc_face 26 7 27
+      p3d_add_desc_face 7 6 27
+      p3d_add_desc_face 27 6 28
+      p3d_add_desc_face 6 5 28
+      p3d_add_desc_face 28 5 29
+      p3d_add_desc_face 5 4 29
+      p3d_add_desc_face 29 4 30
+      p3d_add_desc_face 4 3 30
+      p3d_add_desc_face 30 3 31
+      p3d_add_desc_face 3 2 31
+      p3d_add_desc_face 31 2 32
+      p3d_add_desc_face 2 1 32
+      p3d_add_desc_face 32 1 33
+      p3d_add_desc_face 1 34 33
+      p3d_add_desc_face 72 71 16
+      p3d_add_desc_face 71 70 16
+      p3d_add_desc_face 16 70 69
+      p3d_add_desc_face 14 63 13
+      p3d_add_desc_face 63 62 13
+      p3d_add_desc_face 13 62 61
+      p3d_add_desc_face 9 52 8
+      p3d_add_desc_face 52 51 8
+      p3d_add_desc_face 8 51 7
+      p3d_add_desc_face 51 50 7
+      p3d_add_desc_face 7 50 49
+      p3d_add_desc_face 5 43 4
+      p3d_add_desc_face 43 42 4
+      p3d_add_desc_face 4 42 41
+      p3d_add_desc_face 41 40 4
+      p3d_add_desc_face 40 3 4
+      p3d_add_desc_face 68 15 16
+      p3d_add_desc_face 68 16 69
+      p3d_add_desc_face 65 14 15
+      p3d_add_desc_face 65 15 66
+      p3d_add_desc_face 60 12 13
+      p3d_add_desc_face 60 13 61
+      p3d_add_desc_face 57 11 12
+      p3d_add_desc_face 57 12 58
+      p3d_add_desc_face 52 9 53
+      p3d_add_desc_face 48 6 7
+      p3d_add_desc_face 48 7 49
+      p3d_add_desc_face 45 5 6
+      p3d_add_desc_face 45 6 46
+      p3d_add_desc_face 36 34 1
+      p3d_add_desc_face 36 1 37
+      p3d_add_desc_face 35 34 36
+      p3d_add_desc_face 15 68 67
+      p3d_add_desc_face 15 67 66
+      p3d_add_desc_face 14 65 64
+      p3d_add_desc_face 14 64 63
+      p3d_add_desc_face 12 60 59
+      p3d_add_desc_face 12 59 58
+      p3d_add_desc_face 11 57 56
+      p3d_add_desc_face 6 48 47
+      p3d_add_desc_face 6 47 46
+      p3d_add_desc_face 5 45 44
+      p3d_add_desc_face 5 44 43
+    p3d_end_desc_poly
+    #p3d_set_prim_pos_by_mat polyhedre41 0 0 0.001 -0.0011595 0.001 0 0 0 0 0.001 0 4.3999e-05 0 0 0 1
+
+    p3d_add_desc_poly polyhedre42
+      p3d_add_desc_vert 0.0804133 -0.0346618 1.22594
+      p3d_add_desc_vert 0.081 -0.0323239 1.22385
+      p3d_add_desc_vert 0.081 -0.0323241 1.2236
+      p3d_add_desc_vert 0.0804084 -0.0346834 1.2236
+      p3d_add_desc_vert 0.0787735 -0.0364843 1.2236
+      p3d_add_desc_vert 0.0786843 -0.0363658 1.23249
+      p3d_add_desc_vert 0.078354 -0.0361682 1.23915
+      p3d_add_desc_vert 0.0802878 -0.0343346 1.23901
+      p3d_add_desc_vert 0.081 -0.0317706 1.2388
+
+      p3d_add_desc_face 5 4 6
+      p3d_add_desc_face 4 1 6
+      p3d_add_desc_face 6 1 7
+      p3d_add_desc_face 1 8 7
+      p3d_add_desc_face 4 3 1
+      p3d_add_desc_face 3 2 1
+      p3d_add_desc_face 1 2 8
+      p3d_add_desc_face 2 9 8
+    p3d_end_desc_poly
+    #p3d_set_prim_pos_by_mat polyhedre42 0 0 0.001 -0.0011595 0.001 0 0 0 0 0.001 0 4.3999e-05 0 0 0 1
+
+    p3d_add_desc_poly polyhedre43
+      p3d_add_desc_vert 0.081 -0.0323241 1.083
+      p3d_add_desc_vert 0.0804084 -0.0346834 1.083
+      p3d_add_desc_vert 0.0787735 -0.0364843 1.083
+      p3d_add_desc_vert 0.0787735 -0.0364843 1.2236
+      p3d_add_desc_vert 0.0804084 -0.0346834 1.2236
+      p3d_add_desc_vert 0.081 -0.0323241 1.2236
+
+      p3d_add_desc_face 4 3 5
+      p3d_add_desc_face 3 2 5
+      p3d_add_desc_face 5 2 6
+      p3d_add_desc_face 2 1 6
+    p3d_end_desc_poly
+    #p3d_set_prim_pos_by_mat polyhedre43 0 0 0.001 -0.0011595 0.001 0 0 0 0 0.001 0 4.3999e-05 0 0 0 1
+
+    p3d_add_desc_poly polyhedre44
+      p3d_add_desc_vert 0.0802994 0.0335111 1.07484
+      p3d_add_desc_vert 0.0803104 0.0319399 1.06993
+      p3d_add_desc_vert 0.0803208 0.02965 1.0653
+      p3d_add_desc_vert 0.080334 0.025472 1.05965
+      p3d_add_desc_vert 0.0803461 0.0202301 1.05495
+      p3d_add_desc_vert 0.0803565 0.0145788 1.05162
+      p3d_add_desc_vert 0.0803659 0.00839492 1.04942
+      p3d_add_desc_vert 0.0803743 0.00190198 1.04842
+      p3d_add_desc_vert 0.0803808 -0.0037237 1.04856
+      p3d_add_desc_vert 0.0803866 -0.00925453 1.04961
+      p3d_add_desc_vert 0.0803917 -0.0145443 1.05154
+      p3d_add_desc_vert 0.0803968 -0.0202183 1.05484
+      p3d_add_desc_vert 0.080401 -0.025169 1.05915
+      p3d_add_desc_vert 0.0804042 -0.0292178 1.06432
+      p3d_add_desc_vert 0.0804065 -0.0322171 1.07016
+      p3d_add_desc_vert 0.0804079 -0.0340612 1.07646
+      p3d_add_desc_vert 0.081 -0.0317436 1.07691
+      p3d_add_desc_vert 0.081 -0.030023 1.07104
+      p3d_add_desc_vert 0.081 -0.0272253 1.0656
+      p3d_add_desc_vert 0.081 -0.0234495 1.06079
+      p3d_add_desc_vert 0.081 -0.0188344 1.05678
+      p3d_add_desc_vert 0.081 -0.0135475 1.05371
+      p3d_add_desc_vert 0.081 -0.00862132 1.05192
+      p3d_add_desc_vert 0.081 -0.00347363 1.05096
+      p3d_add_desc_vert 0.081 0.00175879 1.05084
+      p3d_add_desc_vert 0.081 0.00779264 1.05178
+      p3d_add_desc_vert 0.081 0.013533 1.05384
+      p3d_add_desc_vert 0.081 0.0187721 1.05695
+      p3d_add_desc_vert 0.081 0.0236233 1.06132
+      p3d_add_desc_vert 0.081 0.0274804 1.06657
+      p3d_add_desc_vert 0.081 0.0295876 1.07087
+      p3d_add_desc_vert 0.081 0.0310263 1.07542
+      p3d_add_desc_vert 0.081 0.0317706 1.0802
+      p3d_add_desc_vert 0.0802878 0.0343346 1.07999
+      p3d_add_desc_vert 0.078354 0.0361682 1.07985
+      p3d_add_desc_vert 0.0783843 0.0355907 1.07575
+      p3d_add_desc_vert 0.0784131 0.0345688 1.0718
+      p3d_add_desc_vert 0.0784409 0.0331092 1.06799
+      p3d_add_desc_vert 0.0784676 0.0312301 1.06437
+      p3d_add_desc_vert 0.0784909 0.0291816 1.06128
+      p3d_add_desc_vert 0.0785133 0.0268282 1.05842
+      p3d_add_desc_vert 0.0785349 0.0241942 1.05581
+      p3d_add_desc_vert 0.0785555 0.0213067 1.05348
+      p3d_add_desc_vert 0.0785694 0.0191546 1.05203
+      p3d_add_desc_vert 0.0785828 0.0169044 1.05074
+      p3d_add_desc_vert 0.0785958 0.0145674 1.04962
+      p3d_add_desc_vert 0.0786083 0.0121555 1.04866
+      p3d_add_desc_vert 0.0786204 0.009681 1.04788
+      p3d_add_desc_vert 0.078632 0.00715655 1.04727
+      p3d_add_desc_vert 0.0786432 0.00459498 1.04685
+      p3d_add_desc_vert 0.0786539 0.00200934 1.04661
+      p3d_add_desc_vert 0.0786712 -0.00243488 1.04663
+      p3d_add_desc_vert 0.0786872 -0.00684441 1.04719
+      p3d_add_desc_vert 0.0787017 -0.0111537 1.04829
+      p3d_add_desc_vert 0.078715 -0.0152985 1.0499
+      p3d_add_desc_vert 0.0787221 -0.0176133 1.05107
+      p3d_add_desc_vert 0.0787287 -0.0198393 1.0524
+      p3d_add_desc_vert 0.0787349 -0.0219651 1.05388
+      p3d_add_desc_vert 0.0787406 -0.02398 1.05552
+      p3d_add_desc_vert 0.0787458 -0.0258738 1.05729
+      p3d_add_desc_vert 0.0787506 -0.0276368 1.05919
+      p3d_add_desc_vert 0.078755 -0.0292602 1.06122
+      p3d_add_desc_vert 0.0787589 -0.0307355 1.06335
+      p3d_add_desc_vert 0.0787623 -0.0320547 1.06558
+      p3d_add_desc_vert 0.0787653 -0.0332118 1.0679
+      p3d_add_desc_vert 0.0787678 -0.0342011 1.0703
+      p3d_add_desc_vert 0.0787699 -0.0350175 1.07276
+      p3d_add_desc_vert 0.0787714 -0.0356568 1.07528
+      p3d_add_desc_vert 0.0787726 -0.0361158 1.07783
+      p3d_add_desc_vert 0.0787733 -0.0363921 1.08041
+      p3d_add_desc_vert 0.0787735 -0.0364843 1.083
+      p3d_add_desc_vert 0.0804084 -0.0346834 1.083
+      p3d_add_desc_vert 0.081 -0.0323241 1.083
+
+      p3d_add_desc_face 53 9 54
+      p3d_add_desc_face 9 10 54
+      p3d_add_desc_face 54 10 55
+      p3d_add_desc_face 10 11 55
+      p3d_add_desc_face 55 11 56
+      p3d_add_desc_face 37 1 38
+      p3d_add_desc_face 1 2 38
+      p3d_add_desc_face 38 2 39
+      p3d_add_desc_face 2 3 39
+      p3d_add_desc_face 39 3 40
+      p3d_add_desc_face 73 72 17
+      p3d_add_desc_face 72 16 17
+      p3d_add_desc_face 17 16 18
+      p3d_add_desc_face 16 15 18
+      p3d_add_desc_face 18 15 19
+      p3d_add_desc_face 15 14 19
+      p3d_add_desc_face 19 14 20
+      p3d_add_desc_face 14 13 20
+      p3d_add_desc_face 20 13 21
+      p3d_add_desc_face 13 12 21
+      p3d_add_desc_face 21 12 22
+      p3d_add_desc_face 12 11 22
+      p3d_add_desc_face 22 11 23
+      p3d_add_desc_face 11 10 23
+      p3d_add_desc_face 23 10 24
+      p3d_add_desc_face 10 9 24
+      p3d_add_desc_face 24 9 25
+      p3d_add_desc_face 9 8 25
+      p3d_add_desc_face 25 8 26
+      p3d_add_desc_face 8 7 26
+      p3d_add_desc_face 26 7 27
+      p3d_add_desc_face 7 6 27
+      p3d_add_desc_face 27 6 28
+      p3d_add_desc_face 6 5 28
+      p3d_add_desc_face 28 5 29
+      p3d_add_desc_face 5 4 29
+      p3d_add_desc_face 29 4 30
+      p3d_add_desc_face 4 3 30
+      p3d_add_desc_face 30 3 31
+      p3d_add_desc_face 3 2 31
+      p3d_add_desc_face 31 2 32
+      p3d_add_desc_face 2 1 32
+      p3d_add_desc_face 32 1 33
+      p3d_add_desc_face 1 34 33
+      p3d_add_desc_face 72 71 16
+      p3d_add_desc_face 71 70 16
+      p3d_add_desc_face 16 70 69
+      p3d_add_desc_face 14 63 13
+      p3d_add_desc_face 63 62 13
+      p3d_add_desc_face 13 62 61
+      p3d_add_desc_face 9 52 8
+      p3d_add_desc_face 52 51 8
+      p3d_add_desc_face 8 51 7
+      p3d_add_desc_face 51 50 7
+      p3d_add_desc_face 7 50 49
+      p3d_add_desc_face 5 43 4
+      p3d_add_desc_face 43 42 4
+      p3d_add_desc_face 4 42 41
+      p3d_add_desc_face 41 40 4
+      p3d_add_desc_face 40 3 4
+      p3d_add_desc_face 68 15 16
+      p3d_add_desc_face 68 16 69
+      p3d_add_desc_face 65 14 15
+      p3d_add_desc_face 65 15 66
+      p3d_add_desc_face 60 12 13
+      p3d_add_desc_face 60 13 61
+      p3d_add_desc_face 57 11 12
+      p3d_add_desc_face 57 12 58
+      p3d_add_desc_face 52 9 53
+      p3d_add_desc_face 48 6 7
+      p3d_add_desc_face 48 7 49
+      p3d_add_desc_face 45 5 6
+      p3d_add_desc_face 45 6 46
+      p3d_add_desc_face 36 34 1
+      p3d_add_desc_face 36 1 37
+      p3d_add_desc_face 35 34 36
+      p3d_add_desc_face 15 68 67
+      p3d_add_desc_face 15 67 66
+      p3d_add_desc_face 14 65 64
+      p3d_add_desc_face 14 64 63
+      p3d_add_desc_face 12 60 59
+      p3d_add_desc_face 12 59 58
+      p3d_add_desc_face 11 57 56
+      p3d_add_desc_face 6 48 47
+      p3d_add_desc_face 6 47 46
+      p3d_add_desc_face 5 45 44
+      p3d_add_desc_face 5 44 43
+    p3d_end_desc_poly
+    #p3d_set_prim_pos_by_mat polyhedre44 0 0 0.001 -0.0011595 0.001 0 0 0 0 0.001 0 4.3999e-05 0 0 0 1
+
+    p3d_add_desc_poly polyhedre45
+      p3d_add_desc_vert 0.0804133 0.0346618 1.09306
+      p3d_add_desc_vert 0.081 0.0323239 1.09515
+      p3d_add_desc_vert 0.081 0.0323241 1.0954
+      p3d_add_desc_vert 0.0804084 0.0346834 1.0954
+      p3d_add_desc_vert 0.0787735 0.0364843 1.0954
+      p3d_add_desc_vert 0.0786843 0.0363658 1.08651
+      p3d_add_desc_vert 0.078354 0.0361682 1.07985
+      p3d_add_desc_vert 0.0802878 0.0343346 1.07999
+      p3d_add_desc_vert 0.081 0.0317706 1.0802
+
+      p3d_add_desc_face 5 4 6
+      p3d_add_desc_face 4 1 6
+      p3d_add_desc_face 6 1 7
+      p3d_add_desc_face 1 8 7
+      p3d_add_desc_face 4 3 1
+      p3d_add_desc_face 3 2 1
+      p3d_add_desc_face 1 2 8
+      p3d_add_desc_face 2 9 8
+    p3d_end_desc_poly
+    #p3d_set_prim_pos_by_mat polyhedre45 0 0 0.001 -0.0011595 0.001 0 0 0 0 0.001 0 4.3999e-05 0 0 0 1
+
+    p3d_add_desc_poly polyhedre46
+      p3d_add_desc_vert 0.0659851 -0.0434572 1.07611
+      p3d_add_desc_vert 0.0659824 -0.0420061 1.0699
+      p3d_add_desc_vert 0.065978 -0.0396737 1.06397
+      p3d_add_desc_vert 0.0659714 -0.036221 1.05802
+      p3d_add_desc_vert 0.0659629 -0.0318823 1.05268
+      p3d_add_desc_vert 0.0659523 -0.0267634 1.04808
+      p3d_add_desc_vert 0.06594 -0.0209892 1.04433
+      p3d_add_desc_vert 0.0659258 -0.0147006 1.04153
+      p3d_add_desc_vert 0.0659098 -0.00805021 1.03974
+      p3d_add_desc_vert 0.065892 -0.00120294 1.03902
+      p3d_add_desc_vert 0.0658725 0.00567382 1.03937
+      p3d_add_desc_vert 0.0658513 0.0124122 1.04079
+      p3d_add_desc_vert 0.0658286 0.0188474 1.04324
+      p3d_add_desc_vert 0.0657999 0.0257917 1.04735
+      p3d_add_desc_vert 0.0657693 0.0318683 1.05266
+      p3d_add_desc_vert 0.0657368 0.0368731 1.05899
+      p3d_add_desc_vert 0.0657024 0.0406379 1.06613
+      p3d_add_desc_vert 0.065693 0.0414152 1.06814
+      p3d_add_desc_vert 0.0657147 0.0430605 1.07396
+      p3d_add_desc_vert 0.0657996 0.0437655 1.07846
+      p3d_add_desc_vert 0.0659523 0.044 1.083
+      p3d_add_desc_vert 0.0495 0.044 1.083
+      p3d_add_desc_vert 0.0495 0.0432508 1.07492
+      p3d_add_desc_vert 0.0495 0.0410288 1.06711
+      p3d_add_desc_vert 0.0495 0.0374096 1.05984
+      p3d_add_desc_vert 0.0495 0.0325164 1.05336
+      p3d_add_desc_vert 0.0495 0.0265159 1.04789
+      p3d_add_desc_vert 0.0495 0.0196125 1.04361
+      p3d_add_desc_vert 0.0495 0.0120412 1.04068
+      p3d_add_desc_vert 0.0495 0.00405981 1.03919
+      p3d_add_desc_vert 0.0495 -0.00405981 1.03919
+      p3d_add_desc_vert 0.0495 -0.0120412 1.04068
+      p3d_add_desc_vert 0.0495 -0.0196125 1.04361
+      p3d_add_desc_vert 0.0495 -0.0265159 1.04789
+      p3d_add_desc_vert 0.0495 -0.0325164 1.05336
+      p3d_add_desc_vert 0.0495 -0.0374096 1.05984
+      p3d_add_desc_vert 0.0495 -0.0410288 1.06711
+      p3d_add_desc_vert 0.0495 -0.0432508 1.07492
+      p3d_add_desc_vert 0.0495 -0.044 1.083
+      p3d_add_desc_vert 0.0659861 -0.044 1.083
+
+      p3d_add_desc_face 22 21 23
+      p3d_add_desc_face 21 20 23
+      p3d_add_desc_face 23 20 19
+      p3d_add_desc_face 23 19 24
+      p3d_add_desc_face 19 18 24
+      p3d_add_desc_face 24 18 17
+      p3d_add_desc_face 28 13 29
+      p3d_add_desc_face 13 12 29
+      p3d_add_desc_face 29 12 11
+      p3d_add_desc_face 34 6 35
+      p3d_add_desc_face 6 5 35
+      p3d_add_desc_face 35 5 4
+      p3d_add_desc_face 40 39 1
+      p3d_add_desc_face 39 38 1
+      p3d_add_desc_face 1 38 2
+      p3d_add_desc_face 25 24 17
+      p3d_add_desc_face 17 16 25
+      p3d_add_desc_face 26 25 16
+      p3d_add_desc_face 16 15 26
+      p3d_add_desc_face 27 26 15
+      p3d_add_desc_face 15 14 27
+      p3d_add_desc_face 28 27 14
+      p3d_add_desc_face 14 13 28
+      p3d_add_desc_face 29 11 30
+      p3d_add_desc_face 30 11 10
+      p3d_add_desc_face 30 10 31
+      p3d_add_desc_face 31 10 9
+      p3d_add_desc_face 31 9 32
+      p3d_add_desc_face 9 8 32
+      p3d_add_desc_face 33 32 8
+      p3d_add_desc_face 8 7 33
+      p3d_add_desc_face 34 33 7
+      p3d_add_desc_face 7 6 34
+      p3d_add_desc_face 35 4 36
+      p3d_add_desc_face 36 4 3
+      p3d_add_desc_face 36 3 37
+      p3d_add_desc_face 3 2 37
+      p3d_add_desc_face 38 37 2
+    p3d_end_desc_poly
+    #p3d_set_prim_pos_by_mat polyhedre46 0 0 0.001 -0.0011595 0.001 0 0 0 0 0.001 0 4.3999e-05 0 0 0 1
+
+    p3d_add_desc_poly polyhedre47
+      p3d_add_desc_vert 0.0659861 -0.044 1.23461
+      p3d_add_desc_vert 0.0659861 -0.044 1.083
+      p3d_add_desc_vert 0.0495 -0.044 1.083
+      p3d_add_desc_vert 0.0495 -0.044 1.236
+      p3d_add_desc_vert 0.0659523 -0.044 1.236
+
+      p3d_add_desc_face 3 2 4
+      p3d_add_desc_face 2 1 4
+      p3d_add_desc_face 4 1 5
+    p3d_end_desc_poly
+    #p3d_set_prim_pos_by_mat polyhedre47 0 0 0.001 -0.0011595 0.001 0 0 0 0 0.001 0 4.3999e-05 0 0 0 1
+
+    p3d_add_desc_poly polyhedre48
+      p3d_add_desc_vert 0.0659861 0.044 1.08439
+      p3d_add_desc_vert 0.0659861 0.044 1.236
+      p3d_add_desc_vert 0.0495 0.044 1.236
+      p3d_add_desc_vert 0.0495 0.044 1.083
+      p3d_add_desc_vert 0.0659523 0.044 1.083
+
+      p3d_add_desc_face 3 2 4
+      p3d_add_desc_face 2 1 4
+      p3d_add_desc_face 4 1 5
+    p3d_end_desc_poly
+    #p3d_set_prim_pos_by_mat polyhedre48 0 0 0.001 -0.0011595 0.001 0 0 0 0 0.001 0 4.3999e-05 0 0 0 1
+
+    p3d_add_desc_poly polyhedre49
+      p3d_add_desc_vert 0.0659851 0.0434572 1.24289
+      p3d_add_desc_vert 0.0659824 0.0420061 1.2491
+      p3d_add_desc_vert 0.065978 0.0396737 1.25503
+      p3d_add_desc_vert 0.0659714 0.036221 1.26098
+      p3d_add_desc_vert 0.0659629 0.0318823 1.26632
+      p3d_add_desc_vert 0.0659523 0.0267634 1.27092
+      p3d_add_desc_vert 0.06594 0.0209892 1.27467
+      p3d_add_desc_vert 0.0659258 0.0147006 1.27747
+      p3d_add_desc_vert 0.0659098 0.00805021 1.27926
+      p3d_add_desc_vert 0.065892 0.00120294 1.27998
+      p3d_add_desc_vert 0.0658725 -0.00567382 1.27963
+      p3d_add_desc_vert 0.0658513 -0.0124122 1.27821
+      p3d_add_desc_vert 0.0658286 -0.0188474 1.27576
+      p3d_add_desc_vert 0.0657999 -0.0257917 1.27165
+      p3d_add_desc_vert 0.0657693 -0.0318683 1.26634
+      p3d_add_desc_vert 0.0657368 -0.0368731 1.26001
+      p3d_add_desc_vert 0.0657024 -0.0406379 1.25287
+      p3d_add_desc_vert 0.065693 -0.0414152 1.25086
+      p3d_add_desc_vert 0.0657147 -0.0430605 1.24504
+      p3d_add_desc_vert 0.0657996 -0.0437655 1.24054
+      p3d_add_desc_vert 0.0659523 -0.044 1.236
+      p3d_add_desc_vert 0.0495 -0.044 1.236
+      p3d_add_desc_vert 0.0495 -0.0432508 1.24408
+      p3d_add_desc_vert 0.0495 -0.0410288 1.25189
+      p3d_add_desc_vert 0.0495 -0.0374096 1.25916
+      p3d_add_desc_vert 0.0495 -0.0325164 1.26564
+      p3d_add_desc_vert 0.0495 -0.0265159 1.27111
+      p3d_add_desc_vert 0.0495 -0.0196125 1.27539
+      p3d_add_desc_vert 0.0495 -0.0120412 1.27832
+      p3d_add_desc_vert 0.0495 -0.00405981 1.27981
+      p3d_add_desc_vert 0.0495 0.00405981 1.27981
+      p3d_add_desc_vert 0.0495 0.0120412 1.27832
+      p3d_add_desc_vert 0.0495 0.0196125 1.27539
+      p3d_add_desc_vert 0.0495 0.0265159 1.27111
+      p3d_add_desc_vert 0.0495 0.0325164 1.26564
+      p3d_add_desc_vert 0.0495 0.0374096 1.25916
+      p3d_add_desc_vert 0.0495 0.0410288 1.25189
+      p3d_add_desc_vert 0.0495 0.0432508 1.24408
+      p3d_add_desc_vert 0.0495 0.044 1.236
+      p3d_add_desc_vert 0.0659861 0.044 1.236
+
+      p3d_add_desc_face 22 21 23
+      p3d_add_desc_face 21 20 23
+      p3d_add_desc_face 23 20 19
+      p3d_add_desc_face 23 19 24
+      p3d_add_desc_face 19 18 24
+      p3d_add_desc_face 24 18 17
+      p3d_add_desc_face 28 13 29
+      p3d_add_desc_face 13 12 29
+      p3d_add_desc_face 29 12 11
+      p3d_add_desc_face 34 6 35
+      p3d_add_desc_face 6 5 35
+      p3d_add_desc_face 35 5 4
+      p3d_add_desc_face 40 39 1
+      p3d_add_desc_face 39 38 1
+      p3d_add_desc_face 1 38 2
+      p3d_add_desc_face 25 24 17
+      p3d_add_desc_face 17 16 25
+      p3d_add_desc_face 26 25 16
+      p3d_add_desc_face 16 15 26
+      p3d_add_desc_face 27 26 15
+      p3d_add_desc_face 15 14 27
+      p3d_add_desc_face 28 27 14
+      p3d_add_desc_face 14 13 28
+      p3d_add_desc_face 29 11 30
+      p3d_add_desc_face 30 11 10
+      p3d_add_desc_face 30 10 31
+      p3d_add_desc_face 31 10 9
+      p3d_add_desc_face 31 9 32
+      p3d_add_desc_face 9 8 32
+      p3d_add_desc_face 33 32 8
+      p3d_add_desc_face 8 7 33
+      p3d_add_desc_face 34 33 7
+      p3d_add_desc_face 7 6 34
+      p3d_add_desc_face 35 4 36
+      p3d_add_desc_face 36 4 3
+      p3d_add_desc_face 36 3 37
+      p3d_add_desc_face 3 2 37
+      p3d_add_desc_face 38 37 2
+    p3d_end_desc_poly
+    #p3d_set_prim_pos_by_mat polyhedre49 0 0 0.001 -0.0011595 0.001 0 0 0 0 0.001 0 4.3999e-05 0 0 0 1
+
+    p3d_add_desc_poly polyhedre50
+      p3d_add_desc_vert 0.0737666 -0.0395267 1.07817
+      p3d_add_desc_vert 0.0737666 -0.0386444 1.07341
+      p3d_add_desc_vert 0.0737666 -0.0371887 1.06879
+      p3d_add_desc_vert 0.0737666 -0.0351816 1.06438
+      p3d_add_desc_vert 0.0737666 -0.0326533 1.06026
+      p3d_add_desc_vert 0.0737666 -0.0296418 1.05647
+      p3d_add_desc_vert 0.0737666 -0.0261927 1.05308
+      p3d_add_desc_vert 0.0737666 -0.0223577 1.05014
+      p3d_add_desc_vert 0.0737666 -0.0181947 1.04768
+      p3d_add_desc_vert 0.0737666 -0.0137662 1.04576
+      p3d_add_desc_vert 0.0737666 -0.00913875 1.04439
+      p3d_add_desc_vert 0.0737666 -0.00438177 1.04359
+      p3d_add_desc_vert 0.0737666 0.000433415 1.04338
+      p3d_add_desc_vert 0.0737666 0.00523473 1.04375
+      p3d_add_desc_vert 0.0737666 0.00995042 1.04471
+      p3d_add_desc_vert 0.0737666 0.0145102 1.04624
+      p3d_add_desc_vert 0.0737666 0.018846 1.0483
+      p3d_add_desc_vert 0.0737666 0.0228937 1.05088
+      p3d_add_desc_vert 0.0737666 0.0265933 1.05393
+      p3d_add_desc_vert 0.0737666 0.0298903 1.0574
+      p3d_add_desc_vert 0.0737666 0.0327365 1.06124
+      p3d_add_desc_vert 0.0737666 0.0350903 1.0654
+      p3d_add_desc_vert 0.0737666 0.0369179 1.0698
+      p3d_add_desc_vert 0.0688463 0.0396167 1.06657
+      p3d_add_desc_vert 0.068842 0.0379582 1.063
+      p3d_add_desc_vert 0.0688376 0.0359778 1.05959
+      p3d_add_desc_vert 0.0688333 0.0336921 1.05638
+      p3d_add_desc_vert 0.0688289 0.0311203 1.05339
+      p3d_add_desc_vert 0.0688246 0.0282839 1.05065
+      p3d_add_desc_vert 0.0688203 0.0252066 1.04818
+      p3d_add_desc_vert 0.0688161 0.0219143 1.046
+      p3d_add_desc_vert 0.0688119 0.0184348 1.04414
+      p3d_add_desc_vert 0.068809 0.0158631 1.04301
+      p3d_add_desc_vert 0.0688062 0.0132228 1.04205
+      p3d_add_desc_vert 0.0688034 0.0105251 1.04127
+      p3d_add_desc_vert 0.0688006 0.00778149 1.04066
+      p3d_add_desc_vert 0.0687979 0.0050038 1.04024
+      p3d_add_desc_vert 0.0687952 0.00220383 1.03999
+      p3d_add_desc_vert 0.0687926 -0.000606489 1.03993
+      p3d_add_desc_vert 0.0687901 -0.00341518 1.04006
+      p3d_add_desc_vert 0.0687877 -0.00621026 1.04036
+      p3d_add_desc_vert 0.0687854 -0.00897978 1.04085
+      p3d_add_desc_vert 0.0687831 -0.0117119 1.04152
+      p3d_add_desc_vert 0.0687809 -0.0143948 1.04237
+      p3d_add_desc_vert 0.0687788 -0.0170163 1.04339
+      p3d_add_desc_vert 0.0687768 -0.0195659 1.04458
+      p3d_add_desc_vert 0.0687749 -0.0220324 1.04593
+      p3d_add_desc_vert 0.0687731 -0.0244054 1.04744
+      p3d_add_desc_vert 0.0687714 -0.0266748 1.04911
+      p3d_add_desc_vert 0.0687698 -0.0288307 1.05092
+      p3d_add_desc_vert 0.0687683 -0.0308641 1.05286
+      p3d_add_desc_vert 0.0687669 -0.0327663 1.05494
+      p3d_add_desc_vert 0.0687657 -0.0345291 1.05713
+      p3d_add_desc_vert 0.0687645 -0.036145 1.05944
+      p3d_add_desc_vert 0.0687635 -0.037607 1.06184
+      p3d_add_desc_vert 0.0687626 -0.0389088 1.06434
+      p3d_add_desc_vert 0.0687613 -0.0407073 1.06867
+      p3d_add_desc_vert 0.0687604 -0.0420243 1.07317
+      p3d_add_desc_vert 0.0687599 -0.0428441 1.07779
+      p3d_add_desc_vert 0.0687596 -0.0431603 1.083
+      p3d_add_desc_vert 0.0787735 -0.0364843 1.083
+      p3d_add_desc_vert 0.0787733 -0.0363921 1.08041
+      p3d_add_desc_vert 0.0787726 -0.0361158 1.07783
+      p3d_add_desc_vert 0.0787714 -0.0356568 1.07528
+      p3d_add_desc_vert 0.0787699 -0.0350175 1.07276
+      p3d_add_desc_vert 0.0787678 -0.0342011 1.0703
+      p3d_add_desc_vert 0.0787653 -0.0332118 1.0679
+      p3d_add_desc_vert 0.0787623 -0.0320547 1.06558
+      p3d_add_desc_vert 0.0787589 -0.0307355 1.06335
+      p3d_add_desc_vert 0.078755 -0.0292602 1.06122
+      p3d_add_desc_vert 0.0787506 -0.0276368 1.05919
+      p3d_add_desc_vert 0.0787458 -0.0258738 1.05729
+      p3d_add_desc_vert 0.0787406 -0.02398 1.05552
+      p3d_add_desc_vert 0.0787349 -0.0219651 1.05388
+      p3d_add_desc_vert 0.0787287 -0.0198393 1.0524
+      p3d_add_desc_vert 0.0787221 -0.0176133 1.05107
+      p3d_add_desc_vert 0.078715 -0.0152985 1.0499
+      p3d_add_desc_vert 0.0787017 -0.0111537 1.04829
+      p3d_add_desc_vert 0.0786872 -0.00684441 1.04719
+      p3d_add_desc_vert 0.0786712 -0.00243488 1.04663
+      p3d_add_desc_vert 0.0786539 0.00200934 1.04661
+      p3d_add_desc_vert 0.0786432 0.00459498 1.04685
+      p3d_add_desc_vert 0.078632 0.00715655 1.04727
+      p3d_add_desc_vert 0.0786204 0.009681 1.04788
+      p3d_add_desc_vert 0.0786083 0.0121555 1.04866
+      p3d_add_desc_vert 0.0785958 0.0145674 1.04962
+      p3d_add_desc_vert 0.0785828 0.0169044 1.05074
+      p3d_add_desc_vert 0.0785694 0.0191546 1.05203
+      p3d_add_desc_vert 0.0785555 0.0213067 1.05348
+      p3d_add_desc_vert 0.0785349 0.0241942 1.05581
+      p3d_add_desc_vert 0.0785133 0.0268282 1.05842
+      p3d_add_desc_vert 0.0784909 0.0291816 1.06128
+      p3d_add_desc_vert 0.0784676 0.0312301 1.06437
+      p3d_add_desc_vert 0.0784409 0.0331092 1.06799
+      p3d_add_desc_vert 0.0784131 0.0345688 1.0718
+      p3d_add_desc_vert 0.0783843 0.0355907 1.07575
+      p3d_add_desc_vert 0.078354 0.0361682 1.07985
+      p3d_add_desc_vert 0.0736013 0.0382665 1.07419
+      p3d_add_desc_vert 0.0688486 0.0403647 1.06853
+
+      p3d_add_desc_face 98 97 23
+      p3d_add_desc_face 97 96 23
+      p3d_add_desc_face 23 96 22
+      p3d_add_desc_face 96 95 22
+      p3d_add_desc_face 22 95 94
+      p3d_add_desc_face 61 60 1
+      p3d_add_desc_face 60 59 1
+      p3d_add_desc_face 1 59 2
+      p3d_add_desc_face 59 58 2
+      p3d_add_desc_face 2 58 3
+      p3d_add_desc_face 58 57 3
+      p3d_add_desc_face 3 57 56
+      p3d_add_desc_face 2 64 1
+      p3d_add_desc_face 64 63 1
+      p3d_add_desc_face 1 63 62
+      p3d_add_desc_face 3 66 2
+      p3d_add_desc_face 66 65 2
+      p3d_add_desc_face 2 65 64
+      p3d_add_desc_face 4 68 3
+      p3d_add_desc_face 68 67 3
+      p3d_add_desc_face 3 67 66
+      p3d_add_desc_face 55 54 4
+      p3d_add_desc_face 54 5 4
+      p3d_add_desc_face 4 5 69
+      p3d_add_desc_face 5 70 69
+      p3d_add_desc_face 54 53 5
+      p3d_add_desc_face 53 6 5
+      p3d_add_desc_face 5 6 70
+      p3d_add_desc_face 6 71 70
+      p3d_add_desc_face 52 51 6
+      p3d_add_desc_face 51 7 6
+      p3d_add_desc_face 6 7 72
+      p3d_add_desc_face 7 73 72
+      p3d_add_desc_face 50 49 7
+      p3d_add_desc_face 49 8 7
+      p3d_add_desc_face 7 8 74
+      p3d_add_desc_face 8 75 74
+      p3d_add_desc_face 48 47 8
+      p3d_add_desc_face 47 9 8
+      p3d_add_desc_face 8 9 76
+      p3d_add_desc_face 9 77 76
+      p3d_add_desc_face 39 38 13
+      p3d_add_desc_face 38 14 13
+      p3d_add_desc_face 13 14 82
+      p3d_add_desc_face 14 83 82
+      p3d_add_desc_face 38 37 14
+      p3d_add_desc_face 37 15 14
+      p3d_add_desc_face 14 15 84
+      p3d_add_desc_face 15 85 84
+      p3d_add_desc_face 86 85 16
+      p3d_add_desc_face 85 15 16
+      p3d_add_desc_face 16 15 35
+      p3d_add_desc_face 15 36 35
+      p3d_add_desc_face 34 33 16
+      p3d_add_desc_face 33 17 16
+      p3d_add_desc_face 16 17 87
+      p3d_add_desc_face 17 88 87
+      p3d_add_desc_face 89 17 90
+      p3d_add_desc_face 17 18 90
+      p3d_add_desc_face 90 18 91
+      p3d_add_desc_face 18 19 91
+      p3d_add_desc_face 91 19 92
+      p3d_add_desc_face 9 46 10
+      p3d_add_desc_face 46 45 10
+      p3d_add_desc_face 10 45 11
+      p3d_add_desc_face 45 44 11
+      p3d_add_desc_face 11 44 43
+      p3d_add_desc_face 43 42 11
+      p3d_add_desc_face 42 12 11
+      p3d_add_desc_face 11 12 80
+      p3d_add_desc_face 12 41 13
+      p3d_add_desc_face 41 40 13
+      p3d_add_desc_face 13 40 39
+      p3d_add_desc_face 17 32 18
+      p3d_add_desc_face 32 31 18
+      p3d_add_desc_face 18 31 19
+      p3d_add_desc_face 31 30 19
+      p3d_add_desc_face 19 30 29
+      p3d_add_desc_face 21 27 22
+      p3d_add_desc_face 27 26 22
+      p3d_add_desc_face 22 26 23
+      p3d_add_desc_face 26 25 23
+      p3d_add_desc_face 23 25 24
+      p3d_add_desc_face 23 24 98
+      p3d_add_desc_face 61 1 62
+      p3d_add_desc_face 69 68 4
+      p3d_add_desc_face 71 6 72
+      p3d_add_desc_face 73 7 74
+      p3d_add_desc_face 76 75 8
+      p3d_add_desc_face 78 77 9
+      p3d_add_desc_face 9 10 78
+      p3d_add_desc_face 79 78 10
+      p3d_add_desc_face 10 11 79
+      p3d_add_desc_face 80 79 11
+      p3d_add_desc_face 81 80 12
+      p3d_add_desc_face 12 13 81
+      p3d_add_desc_face 82 81 13
+      p3d_add_desc_face 84 83 14
+      p3d_add_desc_face 86 16 87
+      p3d_add_desc_face 88 17 89
+      p3d_add_desc_face 19 20 92
+      p3d_add_desc_face 93 92 20
+      p3d_add_desc_face 20 21 93
+      p3d_add_desc_face 93 21 94
+      p3d_add_desc_face 94 21 22
+      p3d_add_desc_face 3 56 4
+      p3d_add_desc_face 4 56 55
+      p3d_add_desc_face 53 52 6
+      p3d_add_desc_face 51 50 7
+      p3d_add_desc_face 8 49 48
+      p3d_add_desc_face 9 47 46
+      p3d_add_desc_face 42 41 12
+      p3d_add_desc_face 37 36 15
+      p3d_add_desc_face 35 34 16
+      p3d_add_desc_face 33 32 17
+      p3d_add_desc_face 19 29 20
+      p3d_add_desc_face 20 29 28
+      p3d_add_desc_face 20 28 21
+      p3d_add_desc_face 28 27 21
+      p3d_add_desc_face 99 98 24
+    p3d_end_desc_poly
+    #p3d_set_prim_pos_by_mat polyhedre50 0 0 0.001 -0.0011595 0.001 0 0 0 0 0.001 0 4.3999e-05 0 0 0 1
+
+    p3d_add_desc_poly polyhedre51
+      p3d_add_desc_vert 0.0737666 0.0389014 1.0782
+      p3d_add_desc_vert 0.0688226 0.0430918 1.08286
+      p3d_add_desc_vert 0.0688566 0.0427849 1.07904
+      p3d_add_desc_vert 0.0688674 0.0419563 1.07415
+      p3d_add_desc_vert 0.0688486 0.0403647 1.06853
+      p3d_add_desc_vert 0.0736013 0.0382665 1.07419
+      p3d_add_desc_vert 0.078354 0.0361682 1.07985
+      p3d_add_desc_vert 0.0786843 0.0363658 1.08651
+      p3d_add_desc_vert 0.0787735 0.0364843 1.0954
+      p3d_add_desc_vert 0.0687596 0.0431603 1.08439
+
+      p3d_add_desc_face 5 4 6
+      p3d_add_desc_face 4 1 6
+      p3d_add_desc_face 6 1 7
+      p3d_add_desc_face 1 8 7
+      p3d_add_desc_face 9 8 3
+      p3d_add_desc_face 9 3 2
+      p3d_add_desc_face 9 2 10
+      p3d_add_desc_face 8 1 4
+      p3d_add_desc_face 4 3 8
+    p3d_end_desc_poly
+    #p3d_set_prim_pos_by_mat polyhedre51 0 0 0.001 -0.0011595 0.001 0 0 0 0 0.001 0 4.3999e-05 0 0 0 1
+
+    p3d_add_desc_poly polyhedre52
+      p3d_add_desc_vert 0.0687596 -0.0431603 1.23461
+      p3d_add_desc_vert 0.0787735 -0.0364843 1.2236
+      p3d_add_desc_vert 0.0787735 -0.0364843 1.083
+      p3d_add_desc_vert 0.0687596 -0.0431603 1.083
+
+      p3d_add_desc_face 4 3 1
+      p3d_add_desc_face 3 2 1
+    p3d_end_desc_poly
+    #p3d_set_prim_pos_by_mat polyhedre52 0 0 0.001 -0.0011595 0.001 0 0 0 0 0.001 0 4.3999e-05 0 0 0 1
+
+    p3d_add_desc_poly polyhedre53
+      p3d_add_desc_vert 0.0687596 0.0431603 1.08439
+      p3d_add_desc_vert 0.0787735 0.0364843 1.0954
+      p3d_add_desc_vert 0.0787735 0.0364843 1.236
+      p3d_add_desc_vert 0.0687596 0.0431603 1.236
+
+      p3d_add_desc_face 4 3 1
+      p3d_add_desc_face 3 2 1
+    p3d_end_desc_poly
+    #p3d_set_prim_pos_by_mat polyhedre53 0 0 0.001 -0.0011595 0.001 0 0 0 0 0.001 0 4.3999e-05 0 0 0 1
+
+    p3d_add_desc_poly polyhedre54
+      p3d_add_desc_vert 0.0737666 0.0395267 1.24083
+      p3d_add_desc_vert 0.0737666 0.0386444 1.24559
+      p3d_add_desc_vert 0.0737666 0.0371887 1.25021
+      p3d_add_desc_vert 0.0737666 0.0351816 1.25462
+      p3d_add_desc_vert 0.0737666 0.0326532 1.25874
+      p3d_add_desc_vert 0.0737666 0.0296418 1.26253
+      p3d_add_desc_vert 0.0737666 0.0261927 1.26592
+      p3d_add_desc_vert 0.0737666 0.0223577 1.26886
+      p3d_add_desc_vert 0.0737666 0.0181947 1.27132
+      p3d_add_desc_vert 0.0737666 0.0137662 1.27324
+      p3d_add_desc_vert 0.0737666 0.00913875 1.27461
+      p3d_add_desc_vert 0.0737666 0.00438177 1.27541
+      p3d_add_desc_vert 0.0737666 -0.000433421 1.27562
+      p3d_add_desc_vert 0.0737666 -0.00523473 1.27525
+      p3d_add_desc_vert 0.0737666 -0.00995043 1.27429
+      p3d_add_desc_vert 0.0737666 -0.0145102 1.27276
+      p3d_add_desc_vert 0.0737666 -0.0188461 1.2707
+      p3d_add_desc_vert 0.0737666 -0.0228937 1.26812
+      p3d_add_desc_vert 0.0737666 -0.0265933 1.26507
+      p3d_add_desc_vert 0.0737666 -0.0298903 1.2616
+      p3d_add_desc_vert 0.0737666 -0.0327365 1.25776
+      p3d_add_desc_vert 0.0737666 -0.0350903 1.2536
+      p3d_add_desc_vert 0.0737666 -0.0369179 1.2492
+      p3d_add_desc_vert 0.0688463 -0.0396167 1.25243
+      p3d_add_desc_vert 0.068842 -0.0379582 1.256
+      p3d_add_desc_vert 0.0688376 -0.0359778 1.25941
+      p3d_add_desc_vert 0.0688333 -0.0336921 1.26262
+      p3d_add_desc_vert 0.0688289 -0.0311203 1.26561
+      p3d_add_desc_vert 0.0688246 -0.0282839 1.26835
+      p3d_add_desc_vert 0.0688203 -0.0252066 1.27082
+      p3d_add_desc_vert 0.0688161 -0.0219143 1.273
+      p3d_add_desc_vert 0.0688119 -0.0184348 1.27486
+      p3d_add_desc_vert 0.068809 -0.0158631 1.27599
+      p3d_add_desc_vert 0.0688062 -0.0132228 1.27695
+      p3d_add_desc_vert 0.0688034 -0.0105251 1.27773
+      p3d_add_desc_vert 0.0688006 -0.00778149 1.27834
+      p3d_add_desc_vert 0.0687979 -0.0050038 1.27876
+      p3d_add_desc_vert 0.0687952 -0.00220383 1.27901
+      p3d_add_desc_vert 0.0687926 0.000606487 1.27907
+      p3d_add_desc_vert 0.0687901 0.00341518 1.27894
+      p3d_add_desc_vert 0.0687877 0.00621026 1.27864
+      p3d_add_desc_vert 0.0687854 0.00897978 1.27815
+      p3d_add_desc_vert 0.0687831 0.0117119 1.27748
+      p3d_add_desc_vert 0.0687809 0.0143948 1.27663
+      p3d_add_desc_vert 0.0687788 0.0170163 1.27561
+      p3d_add_desc_vert 0.0687768 0.0195659 1.27442
+      p3d_add_desc_vert 0.0687749 0.0220324 1.27307
+      p3d_add_desc_vert 0.0687731 0.0244054 1.27156
+      p3d_add_desc_vert 0.0687714 0.0266748 1.26989
+      p3d_add_desc_vert 0.0687698 0.0288307 1.26808
+      p3d_add_desc_vert 0.0687683 0.0308641 1.26614
+      p3d_add_desc_vert 0.0687669 0.0327663 1.26406
+      p3d_add_desc_vert 0.0687657 0.0345291 1.26187
+      p3d_add_desc_vert 0.0687645 0.036145 1.25956
+      p3d_add_desc_vert 0.0687635 0.037607 1.25716
+      p3d_add_desc_vert 0.0687626 0.0389088 1.25466
+      p3d_add_desc_vert 0.0687613 0.0407073 1.25033
+      p3d_add_desc_vert 0.0687604 0.0420243 1.24583
+      p3d_add_desc_vert 0.0687599 0.0428441 1.24121
+      p3d_add_desc_vert 0.0687596 0.0431603 1.236
+      p3d_add_desc_vert 0.0787735 0.0364843 1.236
+      p3d_add_desc_vert 0.0787733 0.0363921 1.23859
+      p3d_add_desc_vert 0.0787726 0.0361158 1.24117
+      p3d_add_desc_vert 0.0787714 0.0356568 1.24372
+      p3d_add_desc_vert 0.0787699 0.0350175 1.24624
+      p3d_add_desc_vert 0.0787678 0.0342011 1.2487
+      p3d_add_desc_vert 0.0787653 0.0332118 1.2511
+      p3d_add_desc_vert 0.0787623 0.0320547 1.25342
+      p3d_add_desc_vert 0.0787589 0.0307355 1.25565
+      p3d_add_desc_vert 0.078755 0.0292602 1.25778
+      p3d_add_desc_vert 0.0787506 0.0276368 1.25981
+      p3d_add_desc_vert 0.0787458 0.0258738 1.26171
+      p3d_add_desc_vert 0.0787406 0.02398 1.26348
+      p3d_add_desc_vert 0.0787349 0.0219651 1.26512
+      p3d_add_desc_vert 0.0787287 0.0198393 1.2666
+      p3d_add_desc_vert 0.0787221 0.0176133 1.26793
+      p3d_add_desc_vert 0.078715 0.0152985 1.2691
+      p3d_add_desc_vert 0.0787017 0.0111537 1.27071
+      p3d_add_desc_vert 0.0786872 0.00684441 1.27181
+      p3d_add_desc_vert 0.0786712 0.00243488 1.27237
+      p3d_add_desc_vert 0.0786539 -0.00200934 1.27239
+      p3d_add_desc_vert 0.0786432 -0.00459498 1.27215
+      p3d_add_desc_vert 0.078632 -0.00715655 1.27173
+      p3d_add_desc_vert 0.0786204 -0.009681 1.27112
+      p3d_add_desc_vert 0.0786084 -0.0121555 1.27034
+      p3d_add_desc_vert 0.0785958 -0.0145674 1.26938
+      p3d_add_desc_vert 0.0785828 -0.0169044 1.26826
+      p3d_add_desc_vert 0.0785694 -0.0191546 1.26697
+      p3d_add_desc_vert 0.0785555 -0.0213067 1.26552
+      p3d_add_desc_vert 0.0785349 -0.0241942 1.26319
+      p3d_add_desc_vert 0.0785133 -0.0268282 1.26058
+      p3d_add_desc_vert 0.0784909 -0.0291816 1.25772
+      p3d_add_desc_vert 0.0784676 -0.0312301 1.25463
+      p3d_add_desc_vert 0.0784409 -0.0331092 1.25101
+      p3d_add_desc_vert 0.0784131 -0.0345688 1.2472
+      p3d_add_desc_vert 0.0783843 -0.0355907 1.24325
+      p3d_add_desc_vert 0.078354 -0.0361682 1.23915
+      p3d_add_desc_vert 0.0736013 -0.0382665 1.24481
+      p3d_add_desc_vert 0.0688486 -0.0403647 1.25047
+
+      p3d_add_desc_face 98 97 23
+      p3d_add_desc_face 97 96 23
+      p3d_add_desc_face 23 96 22
+      p3d_add_desc_face 96 95 22
+      p3d_add_desc_face 22 95 94
+      p3d_add_desc_face 61 60 1
+      p3d_add_desc_face 60 59 1
+      p3d_add_desc_face 1 59 2
+      p3d_add_desc_face 59 58 2
+      p3d_add_desc_face 2 58 3
+      p3d_add_desc_face 58 57 3
+      p3d_add_desc_face 3 57 56
+      p3d_add_desc_face 2 64 1
+      p3d_add_desc_face 64 63 1
+      p3d_add_desc_face 1 63 62
+      p3d_add_desc_face 3 66 2
+      p3d_add_desc_face 66 65 2
+      p3d_add_desc_face 2 65 64
+      p3d_add_desc_face 4 68 3
+      p3d_add_desc_face 68 67 3
+      p3d_add_desc_face 3 67 66
+      p3d_add_desc_face 55 54 4
+      p3d_add_desc_face 54 5 4
+      p3d_add_desc_face 4 5 69
+      p3d_add_desc_face 5 70 69
+      p3d_add_desc_face 54 53 5
+      p3d_add_desc_face 53 6 5
+      p3d_add_desc_face 5 6 70
+      p3d_add_desc_face 6 71 70
+      p3d_add_desc_face 52 51 6
+      p3d_add_desc_face 51 7 6
+      p3d_add_desc_face 6 7 72
+      p3d_add_desc_face 7 73 72
+      p3d_add_desc_face 50 49 7
+      p3d_add_desc_face 49 8 7
+      p3d_add_desc_face 7 8 74
+      p3d_add_desc_face 8 75 74
+      p3d_add_desc_face 48 47 8
+      p3d_add_desc_face 47 9 8
+      p3d_add_desc_face 8 9 76
+      p3d_add_desc_face 9 77 76
+      p3d_add_desc_face 39 38 13
+      p3d_add_desc_face 38 14 13
+      p3d_add_desc_face 13 14 82
+      p3d_add_desc_face 14 83 82
+      p3d_add_desc_face 38 37 14
+      p3d_add_desc_face 37 15 14
+      p3d_add_desc_face 14 15 84
+      p3d_add_desc_face 15 85 84
+      p3d_add_desc_face 86 85 16
+      p3d_add_desc_face 85 15 16
+      p3d_add_desc_face 16 15 35
+      p3d_add_desc_face 15 36 35
+      p3d_add_desc_face 34 33 16
+      p3d_add_desc_face 33 17 16
+      p3d_add_desc_face 16 17 87
+      p3d_add_desc_face 17 88 87
+      p3d_add_desc_face 89 17 90
+      p3d_add_desc_face 17 18 90
+      p3d_add_desc_face 90 18 91
+      p3d_add_desc_face 18 19 91
+      p3d_add_desc_face 91 19 92
+      p3d_add_desc_face 9 46 10
+      p3d_add_desc_face 46 45 10
+      p3d_add_desc_face 10 45 11
+      p3d_add_desc_face 45 44 11
+      p3d_add_desc_face 11 44 43
+      p3d_add_desc_face 43 42 11
+      p3d_add_desc_face 42 12 11
+      p3d_add_desc_face 11 12 80
+      p3d_add_desc_face 12 41 13
+      p3d_add_desc_face 41 40 13
+      p3d_add_desc_face 13 40 39
+      p3d_add_desc_face 17 32 18
+      p3d_add_desc_face 32 31 18
+      p3d_add_desc_face 18 31 19
+      p3d_add_desc_face 31 30 19
+      p3d_add_desc_face 19 30 29
+      p3d_add_desc_face 21 27 22
+      p3d_add_desc_face 27 26 22
+      p3d_add_desc_face 22 26 23
+      p3d_add_desc_face 26 25 23
+      p3d_add_desc_face 23 25 24
+      p3d_add_desc_face 23 24 98
+      p3d_add_desc_face 61 1 62
+      p3d_add_desc_face 69 68 4
+      p3d_add_desc_face 71 6 72
+      p3d_add_desc_face 73 7 74
+      p3d_add_desc_face 76 75 8
+      p3d_add_desc_face 78 77 9
+      p3d_add_desc_face 9 10 78
+      p3d_add_desc_face 79 78 10
+      p3d_add_desc_face 10 11 79
+      p3d_add_desc_face 80 79 11
+      p3d_add_desc_face 81 80 12
+      p3d_add_desc_face 12 13 81
+      p3d_add_desc_face 82 81 13
+      p3d_add_desc_face 84 83 14
+      p3d_add_desc_face 86 16 87
+      p3d_add_desc_face 88 17 89
+      p3d_add_desc_face 19 20 92
+      p3d_add_desc_face 93 92 20
+      p3d_add_desc_face 20 21 93
+      p3d_add_desc_face 93 21 94
+      p3d_add_desc_face 94 21 22
+      p3d_add_desc_face 3 56 4
+      p3d_add_desc_face 4 56 55
+      p3d_add_desc_face 53 52 6
+      p3d_add_desc_face 51 50 7
+      p3d_add_desc_face 8 49 48
+      p3d_add_desc_face 9 47 46
+      p3d_add_desc_face 42 41 12
+      p3d_add_desc_face 37 36 15
+      p3d_add_desc_face 35 34 16
+      p3d_add_desc_face 33 32 17
+      p3d_add_desc_face 19 29 20
+      p3d_add_desc_face 20 29 28
+      p3d_add_desc_face 20 28 21
+      p3d_add_desc_face 28 27 21
+      p3d_add_desc_face 99 98 24
+    p3d_end_desc_poly
+    #p3d_set_prim_pos_by_mat polyhedre54 0 0 0.001 -0.0011595 0.001 0 0 0 0 0.001 0 4.3999e-05 0 0 0 1
+
+    p3d_add_desc_poly polyhedre55
+      p3d_add_desc_vert 0.0737666 -0.0389014 1.2408
+      p3d_add_desc_vert 0.0688226 -0.0430918 1.23614
+      p3d_add_desc_vert 0.0688566 -0.0427849 1.23996
+      p3d_add_desc_vert 0.0688674 -0.0419563 1.24485
+      p3d_add_desc_vert 0.0688486 -0.0403647 1.25047
+      p3d_add_desc_vert 0.0736013 -0.0382665 1.24481
+      p3d_add_desc_vert 0.078354 -0.0361682 1.23915
+      p3d_add_desc_vert 0.0786843 -0.0363658 1.23249
+      p3d_add_desc_vert 0.0787735 -0.0364843 1.2236
+      p3d_add_desc_vert 0.0687596 -0.0431603 1.23461
+
+      p3d_add_desc_face 5 4 6
+      p3d_add_desc_face 4 1 6
+      p3d_add_desc_face 6 1 7
+      p3d_add_desc_face 1 8 7
+      p3d_add_desc_face 9 8 3
+      p3d_add_desc_face 9 3 2
+      p3d_add_desc_face 9 2 10
+      p3d_add_desc_face 8 1 4
+      p3d_add_desc_face 4 3 8
+    p3d_end_desc_poly
+    #p3d_set_prim_pos_by_mat polyhedre55 0 0 0.001 -0.0011595 0.001 0 0 0 0 0.001 0 4.3999e-05 0 0 0 1
+
+    p3d_add_desc_poly polyhedre56
+      p3d_add_desc_vert 0.0659861 0.044 1.08439
+      p3d_add_desc_vert 0.067435 0.0437855 1.08439
+      p3d_add_desc_vert 0.0687596 0.0431603 1.08439
+      p3d_add_desc_vert 0.0687596 0.0431603 1.236
+      p3d_add_desc_vert 0.067435 0.0437855 1.236
+      p3d_add_desc_vert 0.0659861 0.044 1.236
+
+      p3d_add_desc_face 4 3 5
+      p3d_add_desc_face 3 2 5
+      p3d_add_desc_face 5 2 6
+      p3d_add_desc_face 2 1 6
+    p3d_end_desc_poly
+    #p3d_set_prim_pos_by_mat polyhedre56 0 0 0.001 -0.0011595 0.001 0 0 0 0 0.001 0 4.3999e-05 0 0 0 1
+
+    p3d_add_desc_poly polyhedre57
+      p3d_add_desc_vert 0.067435 0.0437855 1.08439
+      p3d_add_desc_vert 0.0687596 0.0431603 1.08439
+      p3d_add_desc_vert 0.0688226 0.0430918 1.08286
+      p3d_add_desc_vert 0.0674575 0.0437675 1.08293
+      p3d_add_desc_vert 0.0659523 0.044 1.083
+      p3d_add_desc_vert 0.0659861 0.044 1.08439
+
+      p3d_add_desc_face 5 6 4
+      p3d_add_desc_face 6 1 4
+      p3d_add_desc_face 4 1 3
+      p3d_add_desc_face 1 2 3
+    p3d_end_desc_poly
+    #p3d_set_prim_pos_by_mat polyhedre57 0 0 0.001 -0.0011595 0.001 0 0 0 0 0.001 0 4.3999e-05 0 0 0 1
+
+    p3d_add_desc_poly polyhedre58
+      p3d_add_desc_vert 0.0674164 0.0434933 1.07844
+      p3d_add_desc_vert 0.0673875 0.0427739 1.07399
+      p3d_add_desc_vert 0.0674575 0.0437675 1.08293
+      p3d_add_desc_vert 0.0688226 0.0430918 1.08286
+      p3d_add_desc_vert 0.0688566 0.0427849 1.07904
+      p3d_add_desc_vert 0.0688674 0.0419563 1.07415
+      p3d_add_desc_vert 0.0688486 0.0403647 1.06853
+      p3d_add_desc_vert 0.0673675 0.0411462 1.06825
+      p3d_add_desc_vert 0.065693 0.0414152 1.06814
+      p3d_add_desc_vert 0.0657147 0.0430605 1.07396
+      p3d_add_desc_vert 0.0657996 0.0437655 1.07846
+      p3d_add_desc_vert 0.0659523 0.044 1.083
+
+      p3d_add_desc_face 2 10 1
+      p3d_add_desc_face 10 11 1
+      p3d_add_desc_face 1 11 3
+      p3d_add_desc_face 11 12 3
+      p3d_add_desc_face 9 10 8
+      p3d_add_desc_face 10 2 8
+      p3d_add_desc_face 8 2 7
+      p3d_add_desc_face 2 6 7
+      p3d_add_desc_face 1 3 5
+      p3d_add_desc_face 6 1 5
+      p3d_add_desc_face 5 3 4
+      p3d_add_desc_face 2 1 6
+    p3d_end_desc_poly
+    #p3d_set_prim_pos_by_mat polyhedre58 0 0 0.001 -0.0011595 0.001 0 0 0 0 0.001 0 4.3999e-05 0 0 0 1
+
+    p3d_add_desc_poly polyhedre59
+      p3d_add_desc_vert 0.0673698 0.0403767 1.06625
+      p3d_add_desc_vert 0.0673782 0.036645 1.05915
+      p3d_add_desc_vert 0.0673859 0.0316786 1.05285
+      p3d_add_desc_vert 0.0673931 0.0256443 1.04757
+      p3d_add_desc_vert 0.0673998 0.0187444 1.04347
+      p3d_add_desc_vert 0.0674051 0.0123477 1.04103
+      p3d_add_desc_vert 0.0674099 0.00564764 1.03961
+      p3d_add_desc_vert 0.0674143 -0.00119181 1.03925
+      p3d_add_desc_vert 0.0674183 -0.00800346 1.03997
+      p3d_add_desc_vert 0.0674219 -0.0146205 1.04174
+      p3d_add_desc_vert 0.067425 -0.0208788 1.04453
+      p3d_add_desc_vert 0.0674277 -0.0266258 1.04825
+      p3d_add_desc_vert 0.06743 -0.0317212 1.05283
+      p3d_add_desc_vert 0.0674319 -0.0360405 1.05814
+      p3d_add_desc_vert 0.0674333 -0.039478 1.06407
+      p3d_add_desc_vert 0.0674342 -0.0418002 1.06997
+      p3d_add_desc_vert 0.0674348 -0.043245 1.07614
+      p3d_add_desc_vert 0.0673675 0.0411462 1.06825
+      p3d_add_desc_vert 0.0688486 0.0403647 1.06853
+      p3d_add_desc_vert 0.0688463 0.0396167 1.06657
+      p3d_add_desc_vert 0.068842 0.0379582 1.063
+      p3d_add_desc_vert 0.0688376 0.0359778 1.05959
+      p3d_add_desc_vert 0.0688333 0.0336921 1.05638
+      p3d_add_desc_vert 0.0688289 0.0311203 1.05339
+      p3d_add_desc_vert 0.0688246 0.0282839 1.05065
+      p3d_add_desc_vert 0.0688203 0.0252066 1.04818
+      p3d_add_desc_vert 0.0688161 0.0219143 1.046
+      p3d_add_desc_vert 0.0688119 0.0184348 1.04414
+      p3d_add_desc_vert 0.068809 0.0158631 1.04301
+      p3d_add_desc_vert 0.0688062 0.0132228 1.04205
+      p3d_add_desc_vert 0.0688034 0.0105251 1.04127
+      p3d_add_desc_vert 0.0688006 0.00778149 1.04066
+      p3d_add_desc_vert 0.0687979 0.0050038 1.04024
+      p3d_add_desc_vert 0.0687952 0.00220383 1.03999
+      p3d_add_desc_vert 0.0687926 -0.000606489 1.03993
+      p3d_add_desc_vert 0.0687901 -0.00341518 1.04006
+      p3d_add_desc_vert 0.0687877 -0.00621026 1.04036
+      p3d_add_desc_vert 0.0687854 -0.00897978 1.04085
+      p3d_add_desc_vert 0.0687831 -0.0117119 1.04152
+      p3d_add_desc_vert 0.0687809 -0.0143948 1.04237
+      p3d_add_desc_vert 0.0687788 -0.0170163 1.04339
+      p3d_add_desc_vert 0.0687768 -0.0195659 1.04458
+      p3d_add_desc_vert 0.0687749 -0.0220324 1.04593
+      p3d_add_desc_vert 0.0687731 -0.0244054 1.04744
+      p3d_add_desc_vert 0.0687714 -0.0266748 1.04911
+      p3d_add_desc_vert 0.0687698 -0.0288307 1.05092
+      p3d_add_desc_vert 0.0687683 -0.0308641 1.05286
+      p3d_add_desc_vert 0.0687669 -0.0327663 1.05494
+      p3d_add_desc_vert 0.0687657 -0.0345291 1.05713
+      p3d_add_desc_vert 0.0687645 -0.036145 1.05944
+      p3d_add_desc_vert 0.0687635 -0.037607 1.06184
+      p3d_add_desc_vert 0.0687626 -0.0389088 1.06434
+      p3d_add_desc_vert 0.0687613 -0.0407073 1.06867
+      p3d_add_desc_vert 0.0687604 -0.0420243 1.07317
+      p3d_add_desc_vert 0.0687599 -0.0428441 1.07779
+      p3d_add_desc_vert 0.0687596 -0.0431603 1.083
+      p3d_add_desc_vert 0.067435 -0.0437855 1.083
+      p3d_add_desc_vert 0.0659861 -0.044 1.083
+      p3d_add_desc_vert 0.0659851 -0.0434572 1.07611
+      p3d_add_desc_vert 0.0659824 -0.0420061 1.0699
+      p3d_add_desc_vert 0.065978 -0.0396737 1.06397
+      p3d_add_desc_vert 0.0659714 -0.036221 1.05802
+      p3d_add_desc_vert 0.0659629 -0.0318823 1.05268
+      p3d_add_desc_vert 0.0659523 -0.0267634 1.04808
+      p3d_add_desc_vert 0.06594 -0.0209892 1.04433
+      p3d_add_desc_vert 0.0659258 -0.0147006 1.04153
+      p3d_add_desc_vert 0.0659098 -0.00805021 1.03974
+      p3d_add_desc_vert 0.065892 -0.00120294 1.03902
+      p3d_add_desc_vert 0.0658725 0.00567382 1.03937
+      p3d_add_desc_vert 0.0658513 0.0124122 1.04079
+      p3d_add_desc_vert 0.0658286 0.0188474 1.04324
+      p3d_add_desc_vert 0.0657999 0.0257917 1.04735
+      p3d_add_desc_vert 0.0657693 0.0318683 1.05266
+      p3d_add_desc_vert 0.0657368 0.0368731 1.05899
+      p3d_add_desc_vert 0.0657024 0.0406379 1.06613
+      p3d_add_desc_vert 0.065693 0.0414152 1.06814
+
+      p3d_add_desc_face 56 57 55
+      p3d_add_desc_face 57 17 55
+      p3d_add_desc_face 55 17 54
+      p3d_add_desc_face 17 16 54
+      p3d_add_desc_face 54 16 53
+      p3d_add_desc_face 62 63 14
+      p3d_add_desc_face 63 13 14
+      p3d_add_desc_face 14 13 50
+      p3d_add_desc_face 13 49 50
+      p3d_add_desc_face 64 65 12
+      p3d_add_desc_face 65 11 12
+      p3d_add_desc_face 12 11 45
+      p3d_add_desc_face 11 44 45
+      p3d_add_desc_face 67 68 9
+      p3d_add_desc_face 68 8 9
+      p3d_add_desc_face 9 8 38
+      p3d_add_desc_face 8 37 38
+      p3d_add_desc_face 69 70 7
+      p3d_add_desc_face 70 6 7
+      p3d_add_desc_face 7 6 33
+      p3d_add_desc_face 6 32 33
+      p3d_add_desc_face 75 76 1
+      p3d_add_desc_face 76 18 1
+      p3d_add_desc_face 1 18 20
+      p3d_add_desc_face 18 19 20
+      p3d_add_desc_face 57 58 17
+      p3d_add_desc_face 58 59 17
+      p3d_add_desc_face 17 59 16
+      p3d_add_desc_face 59 60 16
+      p3d_add_desc_face 16 60 15
+      p3d_add_desc_face 60 61 15
+      p3d_add_desc_face 15 61 14
+      p3d_add_desc_face 61 62 14
+      p3d_add_desc_face 53 16 52
+      p3d_add_desc_face 16 15 52
+      p3d_add_desc_face 52 15 51
+      p3d_add_desc_face 15 14 51
+      p3d_add_desc_face 51 14 50
+      p3d_add_desc_face 63 64 13
+      p3d_add_desc_face 64 12 13
+      p3d_add_desc_face 13 12 47
+      p3d_add_desc_face 11 65 10
+      p3d_add_desc_face 65 66 10
+      p3d_add_desc_face 10 66 9
+      p3d_add_desc_face 66 67 9
+      p3d_add_desc_face 40 10 39
+      p3d_add_desc_face 10 9 39
+      p3d_add_desc_face 39 9 38
+      p3d_add_desc_face 68 69 8
+      p3d_add_desc_face 69 7 8
+      p3d_add_desc_face 8 7 35
+      p3d_add_desc_face 6 70 5
+      p3d_add_desc_face 70 71 5
+      p3d_add_desc_face 5 71 4
+      p3d_add_desc_face 71 72 4
+      p3d_add_desc_face 4 72 3
+      p3d_add_desc_face 72 73 3
+      p3d_add_desc_face 3 73 2
+      p3d_add_desc_face 73 74 2
+      p3d_add_desc_face 2 74 1
+      p3d_add_desc_face 74 75 1
+      p3d_add_desc_face 28 5 27
+      p3d_add_desc_face 5 4 27
+      p3d_add_desc_face 27 4 26
+      p3d_add_desc_face 26 4 25
+      p3d_add_desc_face 4 3 25
+      p3d_add_desc_face 25 3 24
+      p3d_add_desc_face 24 3 23
+      p3d_add_desc_face 3 2 23
+      p3d_add_desc_face 23 2 22
+      p3d_add_desc_face 22 2 21
+      p3d_add_desc_face 2 1 21
+      p3d_add_desc_face 21 1 20
+      p3d_add_desc_face 48 13 47
+      p3d_add_desc_face 11 10 42
+      p3d_add_desc_face 43 11 42
+      p3d_add_desc_face 36 8 35
+      p3d_add_desc_face 6 5 30
+      p3d_add_desc_face 31 6 30
+      p3d_add_desc_face 48 49 13
+      p3d_add_desc_face 46 47 12
+      p3d_add_desc_face 45 46 12
+      p3d_add_desc_face 43 44 11
+      p3d_add_desc_face 41 42 10
+      p3d_add_desc_face 40 41 10
+      p3d_add_desc_face 36 37 8
+      p3d_add_desc_face 34 35 7
+      p3d_add_desc_face 33 34 7
+      p3d_add_desc_face 31 32 6
+      p3d_add_desc_face 29 30 5
+      p3d_add_desc_face 28 29 5
+    p3d_end_desc_poly
+    #p3d_set_prim_pos_by_mat polyhedre59 0 0 0.001 -0.0011595 0.001 0 0 0 0 0.001 0 4.3999e-05 0 0 0 1
+
+    p3d_add_desc_poly polyhedre60
+      p3d_add_desc_vert 0.0659861 -0.044 1.23461
+      p3d_add_desc_vert 0.067435 -0.0437855 1.23461
+      p3d_add_desc_vert 0.0687596 -0.0431603 1.23461
+      p3d_add_desc_vert 0.0687596 -0.0431603 1.083
+      p3d_add_desc_vert 0.067435 -0.0437855 1.083
+      p3d_add_desc_vert 0.0659861 -0.044 1.083
+
+      p3d_add_desc_face 1 6 2
+      p3d_add_desc_face 6 5 2
+      p3d_add_desc_face 2 5 3
+      p3d_add_desc_face 5 4 3
+    p3d_end_desc_poly
+    #p3d_set_prim_pos_by_mat polyhedre60 0 0 0.001 -0.0011595 0.001 0 0 0 0 0.001 0 4.3999e-05 0 0 0 1
+
+    p3d_add_desc_poly polyhedre61
+      p3d_add_desc_vert 0.067435 -0.0437855 1.23461
+      p3d_add_desc_vert 0.0687596 -0.0431603 1.23461
+      p3d_add_desc_vert 0.0688226 -0.0430918 1.23614
+      p3d_add_desc_vert 0.0674575 -0.0437675 1.23607
+      p3d_add_desc_vert 0.0659523 -0.044 1.236
+      p3d_add_desc_vert 0.0659861 -0.044 1.23461
+
+      p3d_add_desc_face 5 6 4
+      p3d_add_desc_face 6 1 4
+      p3d_add_desc_face 4 1 3
+      p3d_add_desc_face 1 2 3
+    p3d_end_desc_poly
+    #p3d_set_prim_pos_by_mat polyhedre61 0 0 0.001 -0.0011595 0.001 0 0 0 0 0.001 0 4.3999e-05 0 0 0 1
+
+    p3d_add_desc_poly polyhedre62
+      p3d_add_desc_vert 0.0674164 -0.0434933 1.24056
+      p3d_add_desc_vert 0.0673875 -0.0427739 1.24501
+      p3d_add_desc_vert 0.0674575 -0.0437675 1.23607
+      p3d_add_desc_vert 0.0688226 -0.0430918 1.23614
+      p3d_add_desc_vert 0.0688566 -0.0427849 1.23996
+      p3d_add_desc_vert 0.0688674 -0.0419563 1.24485
+      p3d_add_desc_vert 0.0688486 -0.0403647 1.25047
+      p3d_add_desc_vert 0.0673675 -0.0411462 1.25075
+      p3d_add_desc_vert 0.065693 -0.0414152 1.25086
+      p3d_add_desc_vert 0.0657147 -0.0430605 1.24504
+      p3d_add_desc_vert 0.0657996 -0.0437655 1.24054
+      p3d_add_desc_vert 0.0659523 -0.044 1.236
+
+      p3d_add_desc_face 2 10 1
+      p3d_add_desc_face 10 11 1
+      p3d_add_desc_face 1 11 3
+      p3d_add_desc_face 11 12 3
+      p3d_add_desc_face 9 10 8
+      p3d_add_desc_face 10 2 8
+      p3d_add_desc_face 8 2 7
+      p3d_add_desc_face 2 6 7
+      p3d_add_desc_face 1 3 5
+      p3d_add_desc_face 6 1 5
+      p3d_add_desc_face 5 3 4
+      p3d_add_desc_face 2 1 6
+    p3d_end_desc_poly
+    #p3d_set_prim_pos_by_mat polyhedre62 0 0 0.001 -0.0011595 0.001 0 0 0 0 0.001 0 4.3999e-05 0 0 0 1
+
+    p3d_add_desc_poly polyhedre63
+      p3d_add_desc_vert 0.0673698 -0.0403767 1.25275
+      p3d_add_desc_vert 0.0673782 -0.036645 1.25985
+      p3d_add_desc_vert 0.0673859 -0.0316786 1.26615
+      p3d_add_desc_vert 0.0673931 -0.0256443 1.27143
+      p3d_add_desc_vert 0.0673998 -0.0187444 1.27553
+      p3d_add_desc_vert 0.0674051 -0.0123477 1.27797
+      p3d_add_desc_vert 0.0674099 -0.00564764 1.27939
+      p3d_add_desc_vert 0.0674143 0.0011918 1.27975
+      p3d_add_desc_vert 0.0674183 0.00800346 1.27903
+      p3d_add_desc_vert 0.0674219 0.0146205 1.27726
+      p3d_add_desc_vert 0.067425 0.0208788 1.27447
+      p3d_add_desc_vert 0.0674277 0.0266258 1.27075
+      p3d_add_desc_vert 0.06743 0.0317212 1.26617
+      p3d_add_desc_vert 0.0674319 0.0360405 1.26086
+      p3d_add_desc_vert 0.0674333 0.039478 1.25493
+      p3d_add_desc_vert 0.0674342 0.0418002 1.24903
+      p3d_add_desc_vert 0.0674348 0.043245 1.24286
+      p3d_add_desc_vert 0.0673675 -0.0411462 1.25075
+      p3d_add_desc_vert 0.0688486 -0.0403647 1.25047
+      p3d_add_desc_vert 0.0688463 -0.0396167 1.25243
+      p3d_add_desc_vert 0.068842 -0.0379582 1.256
+      p3d_add_desc_vert 0.0688376 -0.0359778 1.25941
+      p3d_add_desc_vert 0.0688333 -0.0336921 1.26262
+      p3d_add_desc_vert 0.0688289 -0.0311203 1.26561
+      p3d_add_desc_vert 0.0688246 -0.0282839 1.26835
+      p3d_add_desc_vert 0.0688203 -0.0252066 1.27082
+      p3d_add_desc_vert 0.0688161 -0.0219143 1.273
+      p3d_add_desc_vert 0.0688119 -0.0184348 1.27486
+      p3d_add_desc_vert 0.068809 -0.0158631 1.27599
+      p3d_add_desc_vert 0.0688062 -0.0132228 1.27695
+      p3d_add_desc_vert 0.0688034 -0.0105251 1.27773
+      p3d_add_desc_vert 0.0688006 -0.00778149 1.27834
+      p3d_add_desc_vert 0.0687979 -0.0050038 1.27876
+      p3d_add_desc_vert 0.0687952 -0.00220383 1.27901
+      p3d_add_desc_vert 0.0687926 0.000606487 1.27907
+      p3d_add_desc_vert 0.0687901 0.00341518 1.27894
+      p3d_add_desc_vert 0.0687877 0.00621026 1.27864
+      p3d_add_desc_vert 0.0687854 0.00897978 1.27815
+      p3d_add_desc_vert 0.0687831 0.0117119 1.27748
+      p3d_add_desc_vert 0.0687809 0.0143948 1.27663
+      p3d_add_desc_vert 0.0687788 0.0170163 1.27561
+      p3d_add_desc_vert 0.0687768 0.0195659 1.27442
+      p3d_add_desc_vert 0.0687749 0.0220324 1.27307
+      p3d_add_desc_vert 0.0687731 0.0244054 1.27156
+      p3d_add_desc_vert 0.0687714 0.0266748 1.26989
+      p3d_add_desc_vert 0.0687698 0.0288307 1.26808
+      p3d_add_desc_vert 0.0687683 0.0308641 1.26614
+      p3d_add_desc_vert 0.0687669 0.0327663 1.26406
+      p3d_add_desc_vert 0.0687657 0.0345291 1.26187
+      p3d_add_desc_vert 0.0687645 0.036145 1.25956
+      p3d_add_desc_vert 0.0687635 0.037607 1.25716
+      p3d_add_desc_vert 0.0687626 0.0389088 1.25466
+      p3d_add_desc_vert 0.0687613 0.0407073 1.25033
+      p3d_add_desc_vert 0.0687604 0.0420243 1.24583
+      p3d_add_desc_vert 0.0687599 0.0428441 1.24121
+      p3d_add_desc_vert 0.0687596 0.0431603 1.236
+      p3d_add_desc_vert 0.067435 0.0437855 1.236
+      p3d_add_desc_vert 0.0659861 0.044 1.236
+      p3d_add_desc_vert 0.0659851 0.0434572 1.24289
+      p3d_add_desc_vert 0.0659824 0.0420061 1.2491
+      p3d_add_desc_vert 0.065978 0.0396737 1.25503
+      p3d_add_desc_vert 0.0659714 0.036221 1.26098
+      p3d_add_desc_vert 0.0659629 0.0318823 1.26632
+      p3d_add_desc_vert 0.0659523 0.0267634 1.27092
+      p3d_add_desc_vert 0.06594 0.0209892 1.27467
+      p3d_add_desc_vert 0.0659258 0.0147006 1.27747
+      p3d_add_desc_vert 0.0659098 0.00805021 1.27926
+      p3d_add_desc_vert 0.065892 0.00120294 1.27998
+      p3d_add_desc_vert 0.0658725 -0.00567382 1.27963
+      p3d_add_desc_vert 0.0658513 -0.0124122 1.27821
+      p3d_add_desc_vert 0.0658286 -0.0188474 1.27576
+      p3d_add_desc_vert 0.0657999 -0.0257917 1.27165
+      p3d_add_desc_vert 0.0657693 -0.0318683 1.26634
+      p3d_add_desc_vert 0.0657368 -0.0368731 1.26001
+      p3d_add_desc_vert 0.0657024 -0.0406379 1.25287
+      p3d_add_desc_vert 0.065693 -0.0414152 1.25086
+
+      p3d_add_desc_face 56 57 55
+      p3d_add_desc_face 57 17 55
+      p3d_add_desc_face 55 17 54
+      p3d_add_desc_face 17 16 54
+      p3d_add_desc_face 54 16 53
+      p3d_add_desc_face 62 63 14
+      p3d_add_desc_face 63 13 14
+      p3d_add_desc_face 14 13 50
+      p3d_add_desc_face 13 49 50
+      p3d_add_desc_face 64 65 12
+      p3d_add_desc_face 65 11 12
+      p3d_add_desc_face 12 11 45
+      p3d_add_desc_face 11 44 45
+      p3d_add_desc_face 67 68 9
+      p3d_add_desc_face 68 8 9
+      p3d_add_desc_face 9 8 38
+      p3d_add_desc_face 8 37 38
+      p3d_add_desc_face 69 70 7
+      p3d_add_desc_face 70 6 7
+      p3d_add_desc_face 7 6 33
+      p3d_add_desc_face 6 32 33
+      p3d_add_desc_face 75 76 1
+      p3d_add_desc_face 76 18 1
+      p3d_add_desc_face 1 18 20
+      p3d_add_desc_face 18 19 20
+      p3d_add_desc_face 57 58 17
+      p3d_add_desc_face 58 59 17
+      p3d_add_desc_face 17 59 16
+      p3d_add_desc_face 59 60 16
+      p3d_add_desc_face 16 60 15
+      p3d_add_desc_face 60 61 15
+      p3d_add_desc_face 15 61 14
+      p3d_add_desc_face 61 62 14
+      p3d_add_desc_face 53 16 52
+      p3d_add_desc_face 16 15 52
+      p3d_add_desc_face 52 15 51
+      p3d_add_desc_face 15 14 51
+      p3d_add_desc_face 51 14 50
+      p3d_add_desc_face 63 64 13
+      p3d_add_desc_face 64 12 13
+      p3d_add_desc_face 13 12 47
+      p3d_add_desc_face 11 65 10
+      p3d_add_desc_face 65 66 10
+      p3d_add_desc_face 10 66 9
+      p3d_add_desc_face 66 67 9
+      p3d_add_desc_face 40 10 39
+      p3d_add_desc_face 10 9 39
+      p3d_add_desc_face 39 9 38
+      p3d_add_desc_face 68 69 8
+      p3d_add_desc_face 69 7 8
+      p3d_add_desc_face 8 7 35
+      p3d_add_desc_face 6 70 5
+      p3d_add_desc_face 70 71 5
+      p3d_add_desc_face 5 71 4
+      p3d_add_desc_face 71 72 4
+      p3d_add_desc_face 4 72 3
+      p3d_add_desc_face 72 73 3
+      p3d_add_desc_face 3 73 2
+      p3d_add_desc_face 73 74 2
+      p3d_add_desc_face 2 74 1
+      p3d_add_desc_face 74 75 1
+      p3d_add_desc_face 28 5 27
+      p3d_add_desc_face 5 4 27
+      p3d_add_desc_face 27 4 26
+      p3d_add_desc_face 26 4 25
+      p3d_add_desc_face 4 3 25
+      p3d_add_desc_face 25 3 24
+      p3d_add_desc_face 24 3 23
+      p3d_add_desc_face 3 2 23
+      p3d_add_desc_face 23 2 22
+      p3d_add_desc_face 22 2 21
+      p3d_add_desc_face 2 1 21
+      p3d_add_desc_face 21 1 20
+      p3d_add_desc_face 48 13 47
+      p3d_add_desc_face 11 10 42
+      p3d_add_desc_face 43 11 42
+      p3d_add_desc_face 36 8 35
+      p3d_add_desc_face 6 5 30
+      p3d_add_desc_face 31 6 30
+      p3d_add_desc_face 48 49 13
+      p3d_add_desc_face 46 47 12
+      p3d_add_desc_face 45 46 12
+      p3d_add_desc_face 43 44 11
+      p3d_add_desc_face 41 42 10
+      p3d_add_desc_face 40 41 10
+      p3d_add_desc_face 36 37 8
+      p3d_add_desc_face 34 35 7
+      p3d_add_desc_face 33 34 7
+      p3d_add_desc_face 31 32 6
+      p3d_add_desc_face 29 30 5
+      p3d_add_desc_face 28 29 5
+    p3d_end_desc_poly
+    #p3d_set_prim_pos_by_mat polyhedre63 0 0 0.001 -0.0011595 0.001 0 0 0 0 0.001 0 4.3999e-05 0 0 0 1
+  p3d_end_desc
+
+#p3d_set_obst_poly_color 1 Any 0.788235 0.94902 0.988235
+#p3d_set_obst_poly_color 2 Any 0.788235 0.94902 0.988235
+#p3d_set_obst_poly_color 3 Any 0.788235 0.94902 0.988235
+#p3d_set_obst_poly_color 4 Any 0.788235 0.94902 0.988235
+#p3d_set_obst_poly_color 5 Any 0.788235 0.94902 0.988235
+#p3d_set_obst_poly_color 6 Any 0.788235 0.94902 0.988235
+#p3d_set_obst_poly_color 7 Any 0.788235 0.94902 0.988235
+#p3d_set_obst_poly_color 8 Any 0.788235 0.94902 0.988235
+#p3d_set_obst_poly_color 9 Any 0.788235 0.94902 0.988235
+#p3d_set_obst_poly_color 10 Any 0.788235 0.94902 0.988235
+#p3d_set_obst_poly_color 11 Any 0.788235 0.94902 0.988235
+#p3d_set_obst_poly_color 12 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 13 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 14 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 15 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 16 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 17 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 18 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 19 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 20 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 21 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 22 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 23 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 24 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 25 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 26 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 27 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 28 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 29 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 30 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 31 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 32 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 33 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 34 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 35 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 36 Any 0.690196 0.54902 0.72549
+#p3d_set_obst_poly_color 37 Any 0.690196 0.54902 0.72549
+#p3d_set_obst_poly_color 38 Any 0.690196 0.54902 0.72549
+#p3d_set_obst_poly_color 39 Any 0.690196 0.54902 0.72549
+#p3d_set_obst_poly_color 40 Any 0.690196 0.54902 0.72549
+#p3d_set_obst_poly_color 41 Any 0.690196 0.54902 0.72549
+#p3d_set_obst_poly_color 42 Any 0.690196 0.54902 0.72549
+#p3d_set_obst_poly_color 43 Any 0.690196 0.54902 0.72549
+#p3d_set_obst_poly_color 44 Any 0.690196 0.54902 0.72549
+#p3d_set_obst_poly_color 45 Any 0.690196 0.54902 0.72549
+#p3d_set_obst_poly_color 46 Any 0.690196 0.54902 0.72549
+#p3d_set_obst_poly_color 47 Any 0.690196 0.54902 0.72549
+#p3d_set_obst_poly_color 48 Any 0.690196 0.54902 0.72549
+#p3d_set_obst_poly_color 49 Any 0.690196 0.54902 0.72549
+#p3d_set_obst_poly_color 50 Any 0.690196 0.54902 0.72549
+#p3d_set_obst_poly_color 51 Any 0.690196 0.54902 0.72549
+#p3d_set_obst_poly_color 52 Any 0.690196 0.54902 0.72549
+#p3d_set_obst_poly_color 53 Any 0.690196 0.54902 0.72549
+#p3d_set_obst_poly_color 54 Any 0.690196 0.54902 0.72549
+#p3d_set_obst_poly_color 55 Any 0.690196 0.54902 0.72549
+#p3d_set_obst_poly_color 56 Any 0.690196 0.54902 0.72549
+#p3d_set_obst_poly_color 57 Any 0.690196 0.54902 0.72549
+#p3d_set_obst_poly_color 58 Any 0.690196 0.54902 0.72549
+#p3d_set_obst_poly_color 59 Any 0.690196 0.54902 0.72549
+#p3d_set_obst_poly_color 60 Any 0.690196 0.54902 0.72549
+#p3d_set_obst_poly_color 61 Any 0.690196 0.54902 0.72549
+#p3d_set_obst_poly_color 62 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 63 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 64 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 65 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 66 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 67 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 68 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 69 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 70 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 71 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 72 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 73 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 74 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 75 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 76 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 77 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 78 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 79 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 80 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 81 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 82 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 83 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 84 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 85 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 86 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 87 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 88 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 89 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 90 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 91 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 92 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 93 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 94 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 95 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 96 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 97 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 98 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 99 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 100 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 101 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 102 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 103 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 104 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 105 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 106 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 107 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 108 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 109 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 110 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 111 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 112 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 113 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 114 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 115 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 116 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 117 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 118 Any 0.690196 0.54902 0.72549
+#p3d_set_obst_poly_color 119 Any 0.690196 0.54902 0.72549
+#p3d_set_obst_poly_color 120 Any 0.690196 0.54902 0.72549
+#p3d_set_obst_poly_color 121 Any 0.690196 0.54902 0.72549
+#p3d_set_obst_poly_color 122 Any 0.690196 0.54902 0.72549
+#p3d_set_obst_poly_color 123 Any 0.690196 0.54902 0.72549
+#p3d_set_obst_poly_color 124 Any 0.690196 0.54902 0.72549
+#p3d_set_obst_poly_color 125 Any 0.690196 0.54902 0.72549
+#p3d_set_obst_poly_color 126 Any 0.690196 0.54902 0.72549
+#p3d_set_obst_poly_color 127 Any 0.690196 0.54902 0.72549
+#p3d_set_obst_poly_color 128 Any 0.690196 0.54902 0.72549
+#p3d_set_obst_poly_color 129 Any 0.690196 0.54902 0.72549
+#p3d_set_obst_poly_color 130 Any 0.690196 0.54902 0.72549
+#p3d_set_obst_poly_color 131 Any 0.690196 0.54902 0.72549
+#p3d_set_obst_poly_color 132 Any 0.690196 0.54902 0.72549
+#p3d_set_obst_poly_color 133 Any 0.690196 0.54902 0.72549
+#p3d_set_obst_poly_color 134 Any 0.690196 0.54902 0.72549
+#p3d_set_obst_poly_color 135 Any 0.690196 0.54902 0.72549
+#p3d_set_obst_poly_color 136 Any 0.690196 0.54902 0.72549
+#p3d_set_obst_poly_color 137 Any 0.690196 0.54902 0.72549
+#p3d_set_obst_poly_color 138 Any 0.690196 0.54902 0.72549
+#p3d_set_obst_poly_color 139 Any 0.690196 0.54902 0.72549
+#p3d_set_obst_poly_color 140 Any 0.690196 0.54902 0.72549
+#p3d_set_obst_poly_color 141 Any 0.690196 0.54902 0.72549
+#p3d_set_obst_poly_color 142 Any 0.690196 0.54902 0.72549
+#p3d_set_obst_poly_color 143 Any 0.690196 0.54902 0.72549
+#p3d_set_obst_poly_color 144 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 145 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 146 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 147 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 148 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 149 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 150 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 151 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 152 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 153 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 154 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 155 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 156 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 157 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 158 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 159 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 160 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 161 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 162 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 163 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 164 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 165 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 166 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 167 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 168 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 169 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 170 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 171 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 172 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 173 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 174 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 175 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 176 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 177 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 178 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 179 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 180 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 181 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 182 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 183 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 184 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 185 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 186 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 187 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 188 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 189 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 190 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 191 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 192 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 193 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 194 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 195 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 196 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 197 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 198 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 199 Any 0.8 0.8 0.8
+#p3d_set_obst_poly_color 200 Any 0.8 0.8 0.8

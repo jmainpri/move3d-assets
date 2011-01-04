@@ -1,0 +1,29 @@
+Read this file before using the Jido Model.
+
+Using any move3d robot model in many scenarios, causes a duplication of datas. The Idea here is to have a directory where the robot model is stocked, and to create symbolic links to this directory in each custom scenario folder.
+
+For example : In the Move3DDemos folder, my custom scenario is in the directory "custom"
+I will need in this directory a MACROS folder, and at least one p3d file 'custom.p3d'
+
+To use the new model of jido, first step is to put symbolic links to the folders inside Jido/MACROS.
+
+The command to do that is :
+
+cd ~/Move3DDemos/custom/MACROS;
+ln -s  ../../Jido/MACROS/JidoParts .;
+
+Then, create a symbolic link to the macro of jido that you want to use in you scenario
+
+ln -s  ../../Jido/MACROS/jidoHriGripper.macro .;
+
+Then write your p3d file as usual.
+
+
+
+If no one of the present jido macros correspond to what you want to do, create a new one in the Jido/MACROS Folder. DO NOT CREATE IT IN YOU CUSTOM SCENARIO FOLDER !!!!
+
+If you have to add some parts in jido, add the bodies into the correct folders.
+
+Thanks to respect this.
+
+Mokhtar by 29/09/2009

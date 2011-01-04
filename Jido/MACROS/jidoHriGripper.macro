@@ -1,0 +1,254 @@
+## Jido with vertically-mounted PA10 arm plus three-fingered gripper
+# NB: some body names seem identical (e.g platform, arm, finger)
+# but their real names are the names in the present file plus the names in the macro file of each body
+# e.g. platform.base, platform.wheels, hand.finger1.fingertip, etc.
+
+p3d_beg_desc P3D_ROBOT
+#Platform
+  p3d_beg_desc_jnt P3D_FREEFLYER # J1
+    p3d_set_name platformJoint
+    p3d_set_prev_jnt 0
+    p3d_set_pos_axe 0 0 0 0 0 0
+    p3d_set_dof_vmin -10 -10 0 -180 -180 -180
+    p3d_set_dof_vmax  10  10 2  180  180  180
+  p3d_end_desc
+  p3d_read_macro ./JidoParts/Platform/BaseV.macro platform
+  p3d_read_macro ./JidoParts/Platform/MotorWheel.macro platform
+  p3d_read_macro ./JidoParts/Platform/Wheels.macro platform
+  p3d_read_macro ./JidoParts/Platform/Sicks.macro platform
+  p3d_read_macro ./JidoParts/Platform/Computer.macro platform
+  p3d_read_macro ./JidoParts/Platform/RearScreen.macro platform
+  p3d_read_macro ./JidoParts/Platform/FrontScreen.macro platform
+  p3d_read_macro ./JidoParts/Platform/Router.macro platform
+#Top Cameras
+  p3d_beg_desc_jnt P3D_ROTATE # J2
+    p3d_set_name Pan
+    p3d_set_prev_jnt 1
+    p3d_set_pos_axe -0.232 0 1.711 0 0 1
+    p3d_set_dof_vmin -170
+    p3d_set_dof_vmax 170
+  p3d_end_desc
+  p3d_read_macro ./JidoParts/Platform/Pan.macro pan
+  p3d_beg_desc_jnt P3D_ROTATE # J3
+    p3d_set_name Tilt
+    p3d_set_prev_jnt 2
+    p3d_set_pos_axe -0.232 0 1.711 0 1 0
+    p3d_set_dof_vmin -45
+    p3d_set_dof_vmax 30
+  p3d_end_desc
+  p3d_read_macro ./JidoParts/Platform/TopCam.macro topCameras
+#Arm
+ p3d_beg_desc_jnt P3D_FIXED # J4
+    p3d_set_name armBaseJoint
+    p3d_set_pos_relative
+    p3d_set_prev_jnt 1
+    p3d_set_pos_mat 1 0 0 0.180  0 1 0 0  0 0 1 0.92  0 0 0 1
+  p3d_end_desc
+  p3d_read_macro ./JidoParts/PA10/Socle.macro arm
+  p3d_beg_desc_jnt P3D_ROTATE # J5
+    p3d_set_name armJoint1
+    p3d_set_prev_jnt 4
+    p3d_set_pos_relative
+    p3d_set_pos_axe 0 0 0 0 0 1
+    p3d_set_dof_vmin -177
+    p3d_set_dof_vmax 177
+  p3d_end_desc
+  p3d_read_macro ./JidoParts/PA10/PA10-1.macro arm
+  p3d_beg_desc_jnt P3D_ROTATE # J6
+    p3d_set_name armJoint2
+    p3d_set_prev_jnt 5
+    p3d_set_pos_relative
+    p3d_set_pos_axe 0 0 0 0 1 0
+    p3d_set_dof_vmin -64
+    p3d_set_dof_vmax 124
+  p3d_end_desc
+  p3d_read_macro ./JidoParts/PA10/PA10-2.macro arm
+  p3d_beg_desc_jnt P3D_ROTATE # J7
+    p3d_set_name armJoint3
+    p3d_set_prev_jnt 6
+    p3d_set_pos_relative
+    p3d_set_pos_axe 0 -0.45 0 0 0 1
+    p3d_set_dof_vmin -107
+    p3d_set_dof_vmax 158
+  p3d_end_desc
+  p3d_read_macro ./JidoParts/PA10/PA10-3.macro arm
+  p3d_beg_desc_jnt P3D_ROTATE # J8
+    p3d_set_name armJoint4
+    p3d_set_prev_jnt 7
+    p3d_set_pos_relative
+    p3d_set_pos_axe 0 -0.48 0 0 -1 0
+    p3d_set_dof_vmin -255
+    p3d_set_dof_vmax 255
+  p3d_end_desc
+  p3d_read_macro ./JidoParts/PA10/PA10-4.macro arm
+  p3d_beg_desc_jnt P3D_ROTATE # J9
+    p3d_set_name armJoint5
+    p3d_set_prev_jnt 8
+    p3d_set_pos_relative
+    p3d_set_pos_axe 0 0 0 0 1 0
+    p3d_set_dof_vmin -165
+    p3d_set_dof_vmax 165
+  p3d_end_desc
+  p3d_read_macro ./JidoParts/PA10/PA10-5.macro arm
+  p3d_beg_desc_jnt P3D_ROTATE # J10
+    p3d_set_name wristJoint
+    p3d_set_prev_jnt 9
+    p3d_set_pos_relative
+    p3d_set_pos_axe 0 0 0 0 -1 0
+    p3d_set_dof_vmin -255
+    p3d_set_dof_vmax 255
+  p3d_end_desc
+  p3d_read_macro ./JidoParts/PA10/PA10-6.macro arm
+#End effector
+  p3d_beg_desc_jnt P3D_FIXED # J11
+    p3d_set_name EndEffector
+    p3d_set_pos_relative
+    p3d_set_prev_jnt 10
+    p3d_set_pos_mat 0 0.3826834 -0.9238795 0  0 0.9238795 0.3826834 0  1 0 0 0.07  0 0 0 1
+  p3d_end_desc
+  p3d_read_macro ./JidoParts/EndEffectors/Gripper/Gripper.macro hand
+  p3d_beg_desc_jnt P3D_TRANSLATE #J12
+    p3d_set_name fingerJointGripper
+    p3d_set_prev_jnt 11
+    p3d_set_pos_relative
+    p3d_set_pos_axe 0.205 0 0 0 1 0
+    p3d_set_dof_vmin 0
+    p3d_set_dof_vmax 0.0325
+  p3d_end_desc
+  p3d_read_macro ./JidoParts/EndEffectors/Gripper/Gripper1.macro hand.finger1
+  p3d_read_macro ./JidoParts/EndEffectors/Gripper/Gripper1s.macro hand.finger3
+  p3d_beg_desc_jnt P3D_TRANSLATE #J13
+    p3d_set_name fingerJointGripperB
+    p3d_set_prev_jnt 11
+    p3d_set_pos_relative
+    p3d_set_pos_axe 0.205 0 0 0 -1 0
+    p3d_set_dof_vmin 0
+    p3d_set_dof_vmax 0.0325
+  p3d_end_desc
+  p3d_read_macro ./JidoParts/EndEffectors/Gripper/Gripper2.macro hand.finger2
+  p3d_read_macro ./JidoParts/EndEffectors/Gripper/Gripper2sLeft.macro hand.finger1
+  p3d_read_macro ./JidoParts/EndEffectors/Gripper/Gripper2sRight.macro hand.finger2
+#Virtual HRI Joints
+  p3d_beg_desc_jnt P3D_TRANSLATE #J14
+    p3d_set_name HriTopCamera
+    p3d_set_prev_jnt 3
+    p3d_set_pos_relative
+    p3d_set_pos_axe 0.4 0 0 1 0 0
+    p3d_set_dof_vmin 0
+    p3d_set_dof_vmax 10
+  p3d_end_desc
+  p3d_beg_desc_jnt P3D_TRANSLATE #J15
+    p3d_set_name HriArmCamera
+    p3d_set_prev_jnt 11
+    p3d_set_pos_relative
+    p3d_set_pos_axe 0.4 0 0 1 0 0
+    p3d_set_dof_vmin 0
+    p3d_set_dof_vmax 10
+  p3d_end_desc
+#A joint presenting the grasp position of the arm
+  p3d_beg_desc_jnt P3D_FIXED # J16
+    p3d_set_name ObjectGrasp
+    p3d_set_pos_relative
+    p3d_set_prev_jnt 10
+    p3d_set_pos_mat 0 0.3826834 -0.9238795 0  0 0.9238795 0.3826834 0  1 0 0 0.27  0 0 0 1
+  p3d_end_desc
+#Object
+  p3d_beg_desc_jnt P3D_FREEFLYER # J17
+    p3d_set_name virtual_object
+    p3d_set_prev_jnt 0
+    p3d_set_pos_axe 0 0 0 0 0 1
+    p3d_set_dof_vmin -10 -10 0 -180 -180 -180
+    p3d_set_dof_vmax  10  10 2 180 180 180
+  p3d_end_desc
+  p3d_beg_desc P3D_BODY fictiveObject
+    p3d_add_desc_sphere sphere 0.05 P3D_GRAPHIC
+    p3d_set_prim_pos sphere 0 0 0 0 0 0
+  p3d_end_desc
+
+p3d_end_desc
+
+#########################
+###### POSITIONS ########
+#########################
+#Platform
+  #All at 0 0 0 0 0 0
+#Top Cameras
+p3d_set_body_abs_pos pan.pan -0.229 0 1.670 0 0 0
+p3d_set_body_abs_pos pan.Gpan -0.229 0 1.670 0 0 0
+p3d_set_body_abs_pos topCameras.topCameras -0.229 0 1.670 0 0 0
+p3d_set_body_abs_pos topCameras.GtopCameras -0.229 0 1.670 0 0 0
+#Arm
+p3d_set_body_abs_pos arm.socle 0.180 0 0.603 0 0 0
+p3d_set_body_abs_pos arm.Gsocle 0.180 0 0.603 0 0 0
+p3d_set_body_abs_pos arm.pa10-1 0.180 0 0.603 0 0 0
+p3d_set_body_abs_pos arm.Gpa10-1 0.180 0 0.603 0 0 0
+p3d_set_body_abs_pos arm.pa10-2 0.180 0 0.603 0 0 0
+p3d_set_body_abs_pos arm.Gpa10-2 0.180 0 0.603 0 0 0
+p3d_set_body_abs_pos arm.pa10-3 0.180 0 0.603 0 0 0
+p3d_set_body_abs_pos arm.Gpa10-3 0.180 0 0.603 0 0 0
+p3d_set_body_abs_pos arm.pa10-4 0.180 0 0.603 0 0 0
+p3d_set_body_abs_pos arm.Gpa10-4 0.180 0 0.603 0 0 0
+p3d_set_body_abs_pos arm.pa10-5 0.180 0 0.603 0 0 0
+p3d_set_body_abs_pos arm.Gpa10-5 0.180 0 0.603 0 0 0
+p3d_set_body_abs_pos arm.pa10-6 0.180 0 0.603 0 0 0
+p3d_set_body_abs_pos arm.Gpa10-6 0.180 0 0.603 0 0 0
+#End effector
+p3d_set_body_abs_pos hand.palm 0.180 0 0.603 0 0 0
+p3d_set_body_abs_pos hand.finger1.finger1 0.180 0 0.603 0 0 0
+p3d_set_body_abs_pos hand.finger2.finger2 0.180 0 0.603 0 0 0
+p3d_set_body_abs_pos hand.finger1.fingertip 0.180 0 0.603 0 0 0
+p3d_set_body_abs_pos hand.finger2.fingertip 0.180 0 0.603 0 0 0
+p3d_set_body_abs_pos hand.finger3.fingertip 0.180 0 0.603 0 0 0
+#Object
+
+
+##############################
+######## CONSTRAINTS #########
+##############################
+p3d_constraint p3d_lin_rel_dofs 1 13 1 12 2 1 0.0 0 
+
+
+#########################
+######## COLORS #########
+#########################
+#Platform
+p3d_set_body_poly_color platform.base 1 Any 0.7 0.7 0.7
+p3d_set_body_poly_color platform.base 2 Any 0.0 0.0 0.0
+p3d_set_body_poly_color platform.motorWheel 1 Any 0.2427251 0.2427251 0.2427251
+p3d_set_body_poly_color platform.wheels 1 Any 0.893 0.126 0.126
+p3d_set_body_poly_color platform.sicks 1 Any 0.0 0.0 0.0
+p3d_set_body_poly_color platform.sicks 2 Any 0.244 0.244 1
+p3d_set_body_poly_color platform.computer 1 Any 0.0 0.0 0.0
+p3d_set_body_poly_color platform.computer 2 Any 0.3 0.3 0.3
+p3d_set_body_poly_color platform.rearScreen 1 Any 0.0 0.0 0.0
+p3d_set_body_poly_color platform.frontScreen 1 Any 0.0 0.0 0.0
+p3d_set_body_poly_color platform.router 1 Any 1.0 1.0 1.0
+p3d_set_body_poly_color platform.router 2 Any 0.7 0.7 0.7
+#Top Cameras
+p3d_set_body_poly_color pan.pan 1 Any 0.0 0.0 0.0
+p3d_set_body_poly_color topCameras.topCameras 1 Any 0.1921569 0.6509804 1.0
+p3d_set_body_poly_color topCameras.topCameras 2 Any 0.0 0.0 0.0
+p3d_set_body_poly_color topCameras.topCameras 3 Any 0.7000001 0.7 0.7
+#Arm
+p3d_set_body_poly_color arm.socle 1 Any 0.81 0.975 0.985
+p3d_set_body_poly_color arm.pa10-1 1 Any 0.81 0.975 0.985
+p3d_set_body_poly_color arm.pa10-1 2 Any 1.0 1.0 1.0
+p3d_set_body_poly_color arm.pa10-2 1 Any 0.81 0.975 0.985
+p3d_set_body_poly_color arm.pa10-2 2 Any 1.0 1.0 1.0
+p3d_set_body_poly_color arm.pa10-3 1 Any 0.81 0.975 0.985
+p3d_set_body_poly_color arm.pa10-4 1 Any 0.81 0.975 0.985
+p3d_set_body_poly_color arm.pa10-4 2 Any 1.0 1.0 1.0
+p3d_set_body_poly_color arm.pa10-5 1 Any 0.81 0.975 0.985
+p3d_set_body_poly_color arm.pa10-6 1 Any 0.81 0.975 0.985
+p3d_set_body_poly_color arm.pa10-6 2 Any 0.0 0.2418661 0.9924834
+p3d_set_body_poly_color arm.pa10-6 3 Any 0.8 0.8 0.8
+p3d_set_body_poly_color arm.pa10-6 4 Any 0.0 0.0 0.0
+#End effector
+p3d_set_body_poly_color hand.palm 1 Any 0.7 0.7 0.7
+p3d_set_body_poly_color hand.finger1.finger1 1 Any 0.5 0.9 0.9
+p3d_set_body_poly_color hand.finger2.finger2 1 Any 0.5 0.9 0.9
+p3d_set_body_poly_color hand.finger1.fingertip 1 Any 1.0 0.0 0.0
+p3d_set_body_poly_color hand.finger2.fingertip 1 Any 0.0 1.0 0.0
+p3d_set_body_poly_color hand.finger3.fingertip 1 Any 0.0 0.0 1.0
+#Object
+p3d_set_body_poly_color fictiveObject 1 Any 0.0 1.0 0.0

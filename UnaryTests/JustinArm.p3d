@@ -1,0 +1,64 @@
+p3d_beg_desc P3D_ENV JustinArm
+
+p3d_beg_desc P3D_OBSTACLE bm.barre1
+p3d_add_desc_cylindre bm.barre1 0.100 2.500 
+p3d_set_prim_pos bm.barre1 0.400 0.3000 1.225 0 0 0.0
+p3d_end_desc
+
+p3d_beg_desc P3D_OBSTACLE bm.barre2
+p3d_add_desc_cylindre bm.barre2 0.100 2.500 
+p3d_set_prim_pos bm.barre2 0.4000 -0.300 1.225 0 0 0.0
+p3d_end_desc
+
+p3d_beg_desc P3D_OBSTACLE bm.mur
+p3d_add_desc_box bm.mur1 0.0900 1.2000 0.9000 
+p3d_set_prim_pos bm.mur1 -0.800 0 0.450 0 0 0.0
+p3d_add_desc_box bm.mur2 0.090 0.400 0.400 
+p3d_set_prim_pos bm.mur2 -0.800 0.400 1.100 0 0 0.0
+p3d_add_desc_box bm.mur3 0.090 0.400 0.400 
+p3d_set_prim_pos bm.mur3 -0.800 -0.400 1.100 0 0 0.0
+p3d_add_desc_box bm.mur4 0.090 1.200 0.900 
+p3d_set_prim_pos bm.mur4 -0.800 0 1.750 0 0 0.0
+p3d_end_desc
+
+p3d_beg_desc P3D_OBSTACLE bm.caisse
+p3d_add_desc_box bm.caisse 0.400 0.400 0.7300
+p3d_set_prim_pos bm.caisse 0 0 0.365 0 0 0.0
+p3d_end_desc
+
+p3d_set_obst_color bm.caisse Brown
+
+p3d_read_macro JustinArmRod.macro JustinArm
+
+
+p3d_end_desc
+
+##################################################################
+p3d_set_env_box -1.600000000 1.600000000 -1.600000000 1.600 0.000000 2.500
+
+p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -1.671586 -84.955750 170.000000 0.000000 0.000000 0.000000 0.000000
+p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.671586 79.056046 -85.250732 -12.979352 75.221230 0.000000 0.000000
+
+p3d_add_desc_rob_col_init JustinArm
+p3d_desactivate_col_check automatic
+p3d_desactivate_col_check GrArm1-1 GrArm3-1
+p3d_desactivate_col_check GrArm1-1 GrArm4-1
+p3d_desactivate_col_check GrArm1-1 GrArm5-1
+p3d_desactivate_col_check GrArm1-1 GrArm6-1
+p3d_desactivate_col_check GrArm1-1 GrArm7-1
+
+p3d_desactivate_col_check GrArm2-1 GrArm4-1
+p3d_desactivate_col_check GrArm2-1 GrArm5-1
+p3d_desactivate_col_check GrArm2-1 GrArm6-1
+p3d_desactivate_col_check GrArm2-1 GrArm7-1
+
+p3d_desactivate_col_check GrArm3-1 GrArm5-1
+p3d_desactivate_col_check GrArm3-1 GrArm6-1
+p3d_desactivate_col_check GrArm3-1 GrArm7-1
+
+p3d_desactivate_col_check GrArm4-1 GrArm6-1
+p3d_desactivate_col_check GrArm4-1 GrArm7-1
+
+p3d_desactivate_col_check GrArm5-1 GrArm7-1
+
+p3d_desactivate_col_check GrArm6-1 nipper

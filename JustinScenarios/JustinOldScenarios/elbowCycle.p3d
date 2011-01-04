@@ -1,0 +1,73 @@
+p3d_beg_desc P3D_ENV Test
+
+  p3d_beg_desc P3D_OBSTACLE BaseSupport1
+    p3d_add_desc_box base_foot_1 2000 2000 5
+    p3d_set_prim_pos base_foot_1 0 0 -2.6 0 0 0
+  p3d_end_desc
+#   p3d_beg_desc P3D_OBSTACLE gridTop
+#     p3d_add_desc_cylindre c1 5 600
+#     p3d_set_prim_pos c1 0 0 0 0 90 0
+#     p3d_add_desc_cylindre c2 5 600
+#     p3d_set_prim_pos c2 0 200 0 0 90 0
+#     p3d_add_desc_cylindre c3 5 600
+#     p3d_set_prim_pos c3 0 400 0 0 90 0
+#     p3d_add_desc_cylindre c4 10 600
+#     p3d_set_prim_pos c4 0 600 0 0 90 0
+#     p3d_add_desc_cylindre c5 5 600
+#     p3d_set_prim_pos c5 0 -200 0 0 90 0
+#     p3d_add_desc_cylindre c11 5 600
+#     p3d_set_prim_pos c11 0 -400 0 0 90 0
+#     p3d_add_desc_cylindre c12 10 600
+#     p3d_set_prim_pos c12 0 -600 0 0 90 0
+# 
+#     p3d_add_desc_cylindre c6 5 1200
+#     p3d_set_prim_pos c6 0 0 0 0 90 90
+#     p3d_add_desc_cylindre c7 5 1200
+#     p3d_set_prim_pos c7 150 0 0 0 90 90
+#     p3d_add_desc_cylindre c8 10 1200
+#     p3d_set_prim_pos c8 300 0 0 0 90 90
+#     p3d_add_desc_cylindre c9 5 1200
+#     p3d_set_prim_pos c9 -150 0 0 0 90 90
+#     p3d_add_desc_cylindre c10 10 1200
+#     p3d_set_prim_pos c10 -300 0 0 0 90 90
+#   p3d_end_desc
+  
+#   p3d_beg_desc P3D_OBSTACLE gridBottom
+#     p3d_add_desc_cylindre c1 5 600
+#     p3d_set_prim_pos c1 0 0 0 0 90 0
+#     p3d_add_desc_cylindre c2 5 600
+#     p3d_set_prim_pos c2 0 200 0 0 90 0
+#     p3d_add_desc_cylindre c3 5 600
+#     p3d_set_prim_pos c3 0 400 0 0 90 0
+#     p3d_add_desc_cylindre c4 10 600
+#     p3d_set_prim_pos c4 0 600 0 0 90 0
+#     p3d_add_desc_cylindre c5 5 600
+#     p3d_set_prim_pos c5 0 -200 0 0 90 0
+#     p3d_add_desc_cylindre c11 5 600
+#     p3d_set_prim_pos c11 0 -400 0 0 90 0
+#     p3d_add_desc_cylindre c12 10 600
+#     p3d_set_prim_pos c12 0 -600 0 0 90 0
+# 
+#     p3d_add_desc_cylindre c6 5 1200
+#     p3d_set_prim_pos c6 0 0 0 0 90 90
+#     p3d_add_desc_cylindre c7 5 1200
+#     p3d_set_prim_pos c7 150 0 0 0 90 90
+#     p3d_add_desc_cylindre c8 10 1200
+#     p3d_set_prim_pos c8 300 0 0 0 90 90
+#     p3d_add_desc_cylindre c9 5 1200
+#     p3d_set_prim_pos c9 -150 0 0 0 90 90
+#     p3d_add_desc_cylindre c10 10 1200
+#     p3d_set_prim_pos c10 -300 0 0 0 90 90
+#   p3d_end_desc
+#   p3d_set_obst_pos gridTop 600 0 1050 0 0 0
+#   p3d_set_obst_pos gridBottom 600 0 750 0 0 0
+#   p3d_set_obst_color laby Brown
+#   p3d_read_macro Justin.macro justin
+    p3d_read_macro kukaArm.macro arm
+p3d_end_desc
+######################
+######## COLOR #######
+######################
+#Obstacles
+  p3d_set_obst_color BaseSupport1 Any 1 0.75 0
+p3d_set_env_box 200.0 2000.0 2000.0 0.0 0.0 0.0

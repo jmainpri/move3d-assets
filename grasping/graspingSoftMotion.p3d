@@ -1,0 +1,133 @@
+
+p3d_beg_desc P3D_ENV ps
+
+p3d_beg_desc P3D_OBSTACLE box1
+p3d_add_desc_box box1 0.5 3 0.8
+p3d_set_prim_pos box1 1.5 0 0.4 0 0 0
+p3d_add_desc_box box1_2 0.5 1 0.8
+p3d_set_prim_pos box1_2 1.5 0 0.4 0 0 90
+p3d_end_desc
+p3d_set_obst_color box1 Blue
+# p3d_set_obst_pos box1 1.5 0.0 0.0 0 0 30
+
+
+p3d_beg_desc P3D_OBSTACLE box2
+p3d_add_desc_box box2 1.75 0.5 0.8
+p3d_set_prim_pos box2 0.875 1.75 0.4 0 0 0
+p3d_end_desc
+p3d_set_obst_color box2 Blue
+
+p3d_beg_desc P3D_OBSTACLE box3
+p3d_add_desc_box box3 0.5 0.2 4
+p3d_set_prim_pos box3 -1.5 0 2 0 0 0
+p3d_end_desc
+p3d_set_obst_color box3 Blue
+
+p3d_beg_desc P3D_OBSTACLE box4
+p3d_add_desc_box box4 0.5 9.7 0.4
+p3d_set_prim_pos box4 -1.5 -0.3 2.1 0 0 0
+p3d_end_desc
+p3d_set_obst_color box4 Blue
+
+p3d_beg_desc P3D_OBSTACLE box5
+p3d_add_desc_box box5 0.15 0.15 0.5
+p3d_set_prim_pos box5 1.4 -0.2 1.05 0 0 0
+p3d_end_desc
+p3d_set_obst_color box5 Yellow
+
+p3d_beg_desc P3D_OBSTACLE box6
+p3d_add_desc_box box6 0.15 0.15 0.5
+p3d_set_prim_pos box6 1.6 0.2 1.05 0 0 0
+p3d_end_desc
+p3d_set_obst_color box6 Red
+
+p3d_beg_desc P3D_OBSTACLE box7
+p3d_add_desc_box box7 0.15 0.5 0.16
+p3d_set_prim_pos box7 1.65 -0.2 0.88 0 0 0
+p3d_end_desc
+p3d_set_obst_color box7 Violet
+
+p3d_beg_desc P3D_OBSTACLE box8
+p3d_add_desc_box box8 0.15 0.5 0.24
+p3d_set_prim_pos box8 1.3 0.2 0.92 0 0 0
+p3d_end_desc
+p3d_set_obst_color box8 Brown
+
+p3d_beg_desc P3D_OBSTACLE floor
+p3d_add_desc_box floor 11 11 1  P3D_GHOST
+p3d_set_prim_pos floor 0 0 -0.53 0 0 0
+p3d_end_desc
+p3d_set_obst_color floor DGrey
+
+
+p3d_read_macro ./JidoParts/Objects/banana.macro object
+#p3d_set_obst_pos object 1.5 0.0 0.8527 0 0 90
+# p3d_set_obst_pos object 0.7 0.0 0.8527 0 0 90
+# p3d_set_obst_color object Yellow
+# p3d_read_macro ./JidoParts/Objects/horse.macro object
+p3d_set_obst_pos object 1.5 -0.8 0.92 0 0 90
+# p3d_read_macro ./JidoParts/Objects/Cup_with_handle.macro object
+# p3d_set_obst_pos object 1.5 0.0 0.8 0 0 90
+p3d_set_obst_color object Green
+
+
+p3d_read_macro ./JidoParts/EndEffectors/Gripper_robot.macro gripper_robot
+p3d_set_robot_current 0 0 0 0 0 0 -1.55 0 2.9 0 0 0 0 0
+
+p3d_read_macro jidoHriGripper.macro ROBOT
+
+
+p3d_end_desc
+
+p3d_set_env_box -5.5 5.5 -5.5 5.5 0 5.0
+
+##############################
+## MULTILOCALPATHGROUP #######
+##############################
+p3d_set_robot_steering_method Multi-Localpath
+
+# DO NOT DESACTIVATE ANY MULTILOCALPATH_GROUP
+p3d_multi_localpath_group 1 16 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16
+p3d_multi_localpath_data jido base R&S+linear 1 1
+
+p3d_multi_localpath_group 1 1 1
+p3d_multi_localpath_data jido-base base R&S+linear 1 1
+
+p3d_multi_localpath_group 1 2 2 3
+p3d_multi_localpath_data jido-cam joint Linear
+
+p3d_multi_localpath_group 1 7 4 5 6 7 8 9 10
+p3d_multi_localpath_data jido-arm_lin joint Linear
+
+p3d_multi_localpath_group 1 6 5 6 7 8 9 10
+p3d_multi_localpath_data jido-arm joint Soft-Motion 3.0 1.0 0.5 3.0 1.0 0.5 3.0 1.0 0.5 3.0 1.0 0.5 3.0 1.0 0.5 3.0 1.0 0.5
+
+p3d_multi_localpath_group 1 3 11 12 13
+p3d_multi_localpath_data jido-hand joint Linear
+
+p3d_multi_localpath_group 1 2 14 15
+p3d_multi_localpath_data jido-vcam joint Linear
+
+p3d_multi_localpath_group 1 1 16
+p3d_multi_localpath_data jido-ob freeflyer Soft-Motion 0.9 0.3 0.15 0.9 0.3 0.15 0.9 0.3 0.15 1.8 0.6 0.3 1.8 0.6 0.3 1.8 0.6 0.3
+
+p3d_multi_localpath_group 1 1 16
+p3d_multi_localpath_data jido-ob_lin freeflyer Linear
+
+# DO NOT REMOVE THE FOLLOWING LINE TO USE MULTILOCALPATH
+p3d_set_robot_steering_method Multi-Localpath
+p3d_constraint p3d_pa10_6_arm_ik 6 5 6 7 8 9 10  1 16  0  1 7
+p3d_set_cntrt_Tatt 1  0 0 1 -0.275  0.36 0.92 0 0  -0.92 0.36 0 0
+
+p3d_set_object_base_and_arm_constraints 16 1 0  1  1
+
+##############################
+######## DEFAULT POS #########
+##############################
+
+p3d_set_robot_current 0 0 0 0 0 0 0 0 0 0 0 9.445205 23.790255 127.318468 10.758434 -61.536485 16.196154 0.0325 0.0325 0 0 0.862832 0.067847 0.911504 0 0 0
+
+p3d_set_open_chain_config  0 0 0 0 0 0 0 0 0 0 0 95.900034 -20.089247 149.276317 93.735892 -94.569806 -22.213555 0.0325 0.0325 0 0 0.432645 0.216322 1.039331 7.079637 0 0
+
+
+

@@ -1,0 +1,25 @@
+p3d_beg_desc P3D_BODY link01
+
+  p3d_add_desc_poly arm213
+
+    p3d_add_desc_vert -75.000000 -45.000000 0.000000
+    p3d_add_desc_vert 75.000000 -45.000000 0.000000
+    p3d_add_desc_vert 75.000000 45.000000 0.000000
+    p3d_add_desc_vert -75.000000 45.000000 0.000000
+    p3d_add_desc_vert -75.000000 -45.000000 179.500000
+    p3d_add_desc_vert 75.000000 -45.000000 179.500000
+    p3d_add_desc_vert 75.000000 45.000000 179.500000
+    p3d_add_desc_vert -75.000000 45.000000 179.50000
+
+    p3d_add_desc_face  1  4  3  2
+    p3d_add_desc_face  2  6  5  1
+    p3d_add_desc_face  5  8  4  1
+    p3d_add_desc_face  8  7  3  4
+    p3d_add_desc_face  7  6  2  3
+    p3d_add_desc_face  7  8  5  6
+
+  p3d_end_desc_poly
+
+  p3d_polyhedre_set_pos arm213 1 0 0 0 0 1 0 6e-05 0 0 1 1369 0 0 0 1
+
+p3d_end_desc

@@ -1,0 +1,426 @@
+p3d_beg_desc P3D_ENV stewart_monorob_env
+
+
+p3d_beg_desc P3D_OBSTACLE laber
+  p3d_add_desc_cylindre l0 1000.0 200.0
+  p3d_set_prim_pos l0 0.0 -3000.0 -100.0 0.0 0.0 0.0 
+  p3d_add_desc_cylindre l1 100.0 6600.0
+  p3d_set_prim_pos l1 0.0 -3000.0 3200.0 0.0 0.0 0.0 
+  p3d_add_desc_ctorusslice l2 1400.0 100.0 3.1415
+  p3d_set_prim_pos l2 0.0 -1600.0 6400.0 0.0 0.0 90.0 
+  p3d_add_desc_ctorusslice l3 1400.0 100.0 3.1415
+  p3d_set_prim_pos l3 0.0 1200.0 6400.0 0.0 0.0 -90.0 
+p3d_end_desc
+
+
+p3d_beg_desc P3D_ROBOT stewart_monorob
+
+# BASE & PLATFORM
+
+p3d_beg_desc P3D_BODY base
+  p3d_add_desc_poly b P3D_GRAPHIC
+     p3d_add_desc_vert 2000.0 -800.0 100.0
+     p3d_add_desc_vert 2000.0 800.0 100.0
+     p3d_add_desc_vert -307.18 2132.1 100.0
+     p3d_add_desc_vert -1692.9 1332.1 100.0
+     p3d_add_desc_vert -1692.9 -1332.1 100.0
+     p3d_add_desc_vert -307.18 -2132.1 100.0
+     p3d_add_desc_vert 2000.0 -800.0 -100.0
+     p3d_add_desc_vert 2000.0 800.0 -100.0
+     p3d_add_desc_vert -307.18 2132.1 -100.0
+     p3d_add_desc_vert -1692.9 1332.1 -100.0
+     p3d_add_desc_vert -1692.9 -1332.1 -100.0
+     p3d_add_desc_vert -307.18 -2132.1 -100.0
+
+     p3d_add_desc_face  1 2 3 4 5 6
+     p3d_add_desc_face  12 11 10 9 8 7 
+     p3d_add_desc_face 	7 8 2 1
+     p3d_add_desc_face 	8 9 3 2
+     p3d_add_desc_face 	9 10 4 3 
+     p3d_add_desc_face 	10 11 5 4 
+     p3d_add_desc_face 	11 12 6 5 
+     p3d_add_desc_face 	12 7 1 6
+  p3d_end_desc_poly 
+  p3d_set_prim_pos b 0.0 0.0 -100.0 0.0 0.0 0.0		
+p3d_end_desc
+
+p3d_beg_desc_jnt P3D_FREEFLYER    
+  p3d_set_pos_xyz 0 0 0 0 0 0
+  p3d_set_dof 0 0 4000 0 0 0
+  p3d_set_dof_vmin -4000 -4000     0  -180 -180 -180
+  p3d_set_dof_vmax  4000  4000  5000   180  180  180
+p3d_end_desc
+
+p3d_beg_desc P3D_BODY plate
+  p3d_add_desc_poly p 
+     p3d_add_desc_vert 866.03 -500.0 100.0
+     p3d_add_desc_vert 866.03 500.0 100.0
+     p3d_add_desc_vert 0.0 1000.0 100.0
+     p3d_add_desc_vert -866.03 500.0 100.0
+     p3d_add_desc_vert -866.03 -500.0 100.0
+     p3d_add_desc_vert 0.0 -1000.0 100.0
+     p3d_add_desc_vert 866.03 -500.0 -100.0
+     p3d_add_desc_vert 866.03 500.0 -100.0
+     p3d_add_desc_vert 0.0 1000.0 -100.0
+     p3d_add_desc_vert -866.03 500.0 -100.0
+     p3d_add_desc_vert -866.03 -500.0 -100.0
+     p3d_add_desc_vert 0.0 -1000.0 -100.0
+
+     p3d_add_desc_face  1 2 3 4 5 6
+     p3d_add_desc_face  12 11 10 9 8 7 
+     p3d_add_desc_face 	7 8 2 1
+     p3d_add_desc_face 	8 9 3 2
+     p3d_add_desc_face 	9 10 4 3 
+     p3d_add_desc_face 	10 11 5 4 
+     p3d_add_desc_face 	11 12 6 5 
+     p3d_add_desc_face 	12 7 1 6
+  p3d_end_desc_poly 
+  p3d_set_prim_pos p 0.0 0.0 100.0 0.0 0.0 0.0	
+  p3d_add_desc_cylindre bb 150.0 600.0
+  p3d_set_prim_pos bb 0.0 0.0 500.0 0.0 0.0 0.0
+  p3d_add_desc_cylindre b 40.0 2000.0
+  p3d_set_prim_pos b 0.0 0.0 1500.0 0.0 0.0 0.0
+  p3d_add_desc_ctorusslice a 500.0 40.0 6.29
+  p3d_set_prim_pos a 0.0 0.0 3000.0 90.0 0.0 0.0
+p3d_end_desc
+
+
+# ACTUATOR 1
+
+p3d_beg_desc_jnt P3D_KNEE
+  p3d_set_pos_xyz 1500.0 -300.0 0 0 0 0 
+  p3d_set_dof 0 0 0
+  p3d_set_dof_vmin -90 -90 0
+  p3d_set_dof_vmax  90  90 0	
+p3d_end_desc
+
+p3d_beg_desc P3D_BODY embolo1
+  p3d_add_desc_sphere e 150.0  P3D_GRAPHIC  
+  p3d_set_prim_pos e 1500.0 -300.0 0.0 0.0 0.0 0.0 
+  p3d_add_desc_cylindre c 100.0 200.0  P3D_GRAPHIC
+  p3d_set_prim_pos c 1500.0 -300.0 100.0 0.0 0.0 0.0 
+  p3d_add_desc_box b 400.0 400.0 400.0 
+  p3d_set_prim_pos b 1500.0 -300.0 400.0 0.0 0.0 0.0 
+  p3d_add_desc_cylindre c2 130.0 1800.0   
+  p3d_set_prim_pos c2 1500.0 -300.0 1300.0 0.0 0.0 0.0 
+p3d_end_desc
+
+p3d_beg_desc_jnt P3D_TRANSLATE
+  p3d_set_pos_axe 1500.0 -300.0 1200.0 0 0 1
+  p3d_set_prev_jnt    2
+  p3d_set_dof       800
+  p3d_set_dof_vmin    0
+  p3d_set_dof_vmax 1600
+p3d_end_desc
+
+p3d_beg_desc P3D_BODY piston1
+  p3d_add_desc_cylindre c 100.0 1800.0  
+  p3d_set_prim_pos c 1500.0 -300.0 1400.0 0.0 0.0 0.0 
+  p3d_add_desc_cylindre c2 200.0 400.0  
+  p3d_set_prim_pos c2 1500.0 -300.0 2500.0 0.0 0.0 0.0 
+  p3d_add_desc_cylindre c3 100.0 400.0  P3D_GRAPHIC
+  p3d_set_prim_pos c3 1500.0 -300.0 2700.0 0.0 0.0 0.0 
+  p3d_add_desc_sphere e 150.0  P3D_GRAPHIC 
+  p3d_set_prim_pos e 1500.0 -300.0 2900.0 0.0 0.0 0.0 
+p3d_end_desc
+
+
+# ACTUATOR 2
+
+p3d_beg_desc_jnt P3D_KNEE
+  p3d_set_pos_xyz 1500.0 300.0 0 0 0 0 
+  p3d_set_dof 0 0 0
+  p3d_set_dof_vmin -90 -90 0
+  p3d_set_dof_vmax  90  90 0	
+p3d_end_desc
+
+p3d_beg_desc P3D_BODY embolo2
+  p3d_add_desc_sphere e 150.0  P3D_GRAPHIC  
+  p3d_set_prim_pos e 1500.0 300.0 0.0 0.0 0.0 0.0 
+  p3d_add_desc_cylindre c 100.0 200.0  P3D_GRAPHIC
+  p3d_set_prim_pos c 1500.0 300.0 100.0 0.0 0.0 0.0 
+  p3d_add_desc_box b 400.0 400.0 400.0 
+  p3d_set_prim_pos b 1500.0 300.0 400.0 0.0 0.0 0.0 
+  p3d_add_desc_cylindre c2 130.0 1800.0   
+  p3d_set_prim_pos c2 1500.0 300.0 1300.0 0.0 0.0 0.0 
+p3d_end_desc
+
+p3d_beg_desc_jnt P3D_TRANSLATE
+  p3d_set_pos_axe 1500.0 300.0 1200.0 0 0 1
+  p3d_set_prev_jnt    4
+  p3d_set_dof       800
+  p3d_set_dof_vmin    0
+  p3d_set_dof_vmax 1600
+p3d_end_desc
+
+p3d_beg_desc P3D_BODY piston2
+  p3d_add_desc_cylindre c 100.0 1800.0  
+  p3d_set_prim_pos c 1500.0 300.0 1400.0 0.0 0.0 0.0 
+  p3d_add_desc_cylindre c2 200.0 400.0  
+  p3d_set_prim_pos c2 1500.0 300.0 2500.0 0.0 0.0 0.0 
+  p3d_add_desc_cylindre c3 100.0 400.0  P3D_GRAPHIC
+  p3d_set_prim_pos c3 1500.0 300.0 2700.0 0.0 0.0 0.0 
+  p3d_add_desc_sphere e 150.0  P3D_GRAPHIC 
+  p3d_set_prim_pos e 1500.0 300.0 2900.0 0.0 0.0 0.0 
+p3d_end_desc
+
+
+# ACTUATOR 3
+
+p3d_beg_desc_jnt P3D_KNEE
+  p3d_set_pos_xyz -490.19 1449.0 0 0 0 0 
+  p3d_set_dof 0 0 30
+  p3d_set_dof_vmin -90 -90 30
+  p3d_set_dof_vmax  90  90 30	
+p3d_end_desc
+
+p3d_beg_desc P3D_BODY embolo3
+  p3d_add_desc_sphere e 150.0  P3D_GRAPHIC  
+  p3d_set_prim_pos e -490.19 1449.0 0.0 0.0 0.0 0.0 
+  p3d_add_desc_cylindre c 100.0 200.0  P3D_GRAPHIC
+  p3d_set_prim_pos c -490.19 1449.0 100.0 0.0 0.0 0.0 
+  p3d_add_desc_box b 400.0 400.0 400.0 
+  p3d_set_prim_pos b -490.19 1449.0 400.0 0.0 0.0 0.0 
+  p3d_add_desc_cylindre c2 130.0 1800.0   
+  p3d_set_prim_pos c2 -490.19 1449.0 1300.0 0.0 0.0 0.0 
+p3d_end_desc
+
+p3d_beg_desc_jnt P3D_TRANSLATE
+  p3d_set_pos_axe -490.19 1449.0 1200.0 0 0 1
+  p3d_set_prev_jnt    6
+  p3d_set_dof       800
+  p3d_set_dof_vmin    0
+  p3d_set_dof_vmax 1600
+p3d_end_desc
+
+p3d_beg_desc P3D_BODY piston3
+  p3d_add_desc_cylindre c 100.0 1800.0  
+  p3d_set_prim_pos c -490.19 1449.0 1400.0 0.0 0.0 0.0 
+  p3d_add_desc_cylindre c2 200.0 400.0  
+  p3d_set_prim_pos c2 -490.19 1449.0 2500.0 0.0 0.0 0.0 
+  p3d_add_desc_cylindre c3 100.0 400.0  P3D_GRAPHIC
+  p3d_set_prim_pos c3 -490.19 1449.0 2700.0 0.0 0.0 0.0 
+  p3d_add_desc_sphere e 150.0  P3D_GRAPHIC 
+  p3d_set_prim_pos e -490.19 1449.0 2900.0 0.0 0.0 0.0 
+p3d_end_desc
+
+
+# ACTUATOR 4
+
+p3d_beg_desc_jnt P3D_KNEE
+  p3d_set_pos_xyz -1009.8 1149.0 0 0 0 0 
+  p3d_set_dof 0 0 30
+  p3d_set_dof_vmin -90 -90 30
+  p3d_set_dof_vmax  90  90 30	
+p3d_end_desc
+
+p3d_beg_desc P3D_BODY embolo4
+  p3d_add_desc_sphere e 150.0  P3D_GRAPHIC  
+  p3d_set_prim_pos e -1009.8 1149.0 0.0 0.0 0.0 0.0 
+  p3d_add_desc_cylindre c 100.0 200.0  P3D_GRAPHIC
+  p3d_set_prim_pos c -1009.8 1149.0 100.0 0.0 0.0 0.0 
+  p3d_add_desc_box b 400.0 400.0 400.0 
+  p3d_set_prim_pos b -1009.8 1149.0 400.0 0.0 0.0 0.0 
+  p3d_add_desc_cylindre c2 130.0 1800.0   
+  p3d_set_prim_pos c2 -1009.8 1149.0 1300.0 0.0 0.0 0.0 
+p3d_end_desc
+
+p3d_beg_desc_jnt P3D_TRANSLATE
+  p3d_set_pos_axe -1009.8 1149.0 1200.0 0 0 1
+  p3d_set_prev_jnt    8
+  p3d_set_dof       800
+  p3d_set_dof_vmin    0
+  p3d_set_dof_vmax 1600
+p3d_end_desc
+
+p3d_beg_desc P3D_BODY piston4
+  p3d_add_desc_cylindre c 100.0 1800.0  
+  p3d_set_prim_pos c -1009.8 1149.0 1400.0 0.0 0.0 0.0 
+  p3d_add_desc_cylindre c2 200.0 400.0  
+  p3d_set_prim_pos c2 -1009.8 1149.0 2500.0 0.0 0.0 0.0 
+  p3d_add_desc_cylindre c3 100.0 400.0  P3D_GRAPHIC
+  p3d_set_prim_pos c3 -1009.8 1149.0 2700.0 0.0 0.0 0.0 
+  p3d_add_desc_sphere e 150.0  P3D_GRAPHIC 
+  p3d_set_prim_pos e -1009.8 1149.0 2900.0 0.0 0.0 0.0 
+p3d_end_desc
+
+
+# ACTUATOR 5
+
+p3d_beg_desc_jnt P3D_KNEE
+  p3d_set_pos_xyz -1009.8 -1149.0 0 0 0 0 
+  p3d_set_dof 0 0 -30
+  p3d_set_dof_vmin -90 -90 -30
+  p3d_set_dof_vmax  90  90 -30	
+p3d_end_desc
+
+p3d_beg_desc P3D_BODY embolo5
+  p3d_add_desc_sphere e 150.0  P3D_GRAPHIC  
+  p3d_set_prim_pos e -1009.8 -1149.0 0.0 0.0 0.0 0.0 
+  p3d_add_desc_cylindre c 100.0 200.0  P3D_GRAPHIC
+  p3d_set_prim_pos c -1009.8 -1149.0 100.0 0.0 0.0 0.0 
+  p3d_add_desc_box b 400.0 400.0 400.0 
+  p3d_set_prim_pos b -1009.8 -1149.0 400.0 0.0 0.0 0.0 
+  p3d_add_desc_cylindre c2 130.0 1800.0   
+  p3d_set_prim_pos c2 -1009.8 -1149.0 1300.0 0.0 0.0 0.0 
+p3d_end_desc
+
+p3d_beg_desc_jnt P3D_TRANSLATE
+  p3d_set_pos_axe -1009.8 -1149.0 1200.0 0 0 1
+  p3d_set_prev_jnt   10
+  p3d_set_dof       800
+  p3d_set_dof_vmin    0
+  p3d_set_dof_vmax 1600
+p3d_end_desc
+
+p3d_beg_desc P3D_BODY piston5
+  p3d_add_desc_cylindre c 100.0 1800.0  
+  p3d_set_prim_pos c -1009.8 -1149.0 1400.0 0.0 0.0 0.0 
+  p3d_add_desc_cylindre c2 200.0 400.0  
+  p3d_set_prim_pos c2 -1009.8 -1149.0 2500.0 0.0 0.0 0.0 
+  p3d_add_desc_cylindre c3 100.0 400.0  P3D_GRAPHIC
+  p3d_set_prim_pos c3 -1009.8 -1149.0 2700.0 0.0 0.0 0.0 
+  p3d_add_desc_sphere e 150.0  P3D_GRAPHIC 
+  p3d_set_prim_pos e -1009.8 -1149.0 2900.0 0.0 0.0 0.0 
+p3d_end_desc
+
+
+# ACTUATOR 6
+
+p3d_beg_desc_jnt P3D_KNEE
+  p3d_set_pos_xyz -490.19 -1449.0 0 0 0 0 
+  p3d_set_dof 0 0 -30
+  p3d_set_dof_vmin -90 -90 -30
+  p3d_set_dof_vmax  90  90 -30	
+p3d_end_desc
+
+p3d_beg_desc P3D_BODY embolo6
+  p3d_add_desc_sphere e 150.0  P3D_GRAPHIC  
+  p3d_set_prim_pos e -490.19 -1449.0 0.0 0.0 0.0 0.0 
+  p3d_add_desc_cylindre c 100.0 200.0  P3D_GRAPHIC
+  p3d_set_prim_pos c -490.19 -1449.0 100.0 0.0 0.0 0.0 
+  p3d_add_desc_box b 400.0 400.0 400.0 
+  p3d_set_prim_pos b -490.19 -1449.0 400.0 0.0 0.0 0.0 
+  p3d_add_desc_cylindre c2 130.0 1800.0   
+  p3d_set_prim_pos c2 -490.19 -1449.0 1300.0 0.0 0.0 0.0 
+p3d_end_desc
+
+p3d_beg_desc_jnt P3D_TRANSLATE
+  p3d_set_pos_axe -490.19 -1449.0 1200.0 0 0 1
+  p3d_set_prev_jnt   12
+  p3d_set_dof       800
+  p3d_set_dof_vmin    0
+  p3d_set_dof_vmax 1600
+p3d_end_desc
+
+p3d_beg_desc P3D_BODY piston6
+  p3d_add_desc_cylindre c 100.0 1800.0  
+  p3d_set_prim_pos c -490.19 -1449.0 1400.0 0.0 0.0 0.0 
+  p3d_add_desc_cylindre c2 200.0 400.0  
+  p3d_set_prim_pos c2 -490.19 -1449.0 2500.0 0.0 0.0 0.0 
+  p3d_add_desc_cylindre c3 100.0 400.0  P3D_GRAPHIC
+  p3d_set_prim_pos c3 -490.19 -1449.0 2700.0 0.0 0.0 0.0 
+  p3d_add_desc_sphere e 150.0  P3D_GRAPHIC 
+  p3d_set_prim_pos e -490.19 -1449.0 2900.0 0.0 0.0 0.0 
+p3d_end_desc
+
+
+# ATTACHMENT POINTS
+
+p3d_beg_desc_jnt P3D_KNEE
+  p3d_set_pos_xyz 516.51 -394.62 0 0 0 0 
+  p3d_set_prev_jnt   1
+  p3d_set_dof 0 0 0
+  p3d_set_dof_vmin 0 0 0
+  p3d_set_dof_vmax 0 0 0	
+p3d_end_desc
+
+p3d_beg_desc_jnt P3D_KNEE
+  p3d_set_pos_xyz 516.51 394.62 0 0 0 0 
+  p3d_set_prev_jnt   1
+  p3d_set_dof 0 0 0
+  p3d_set_dof_vmin 0 0 0
+  p3d_set_dof_vmax 0 0 0	
+p3d_end_desc
+
+p3d_beg_desc_jnt P3D_KNEE
+  p3d_set_pos_xyz 83.495 644.62 0 0 0 0 
+  p3d_set_prev_jnt   1
+  p3d_set_dof 0 0 0
+  p3d_set_dof_vmin 0 0 0
+  p3d_set_dof_vmax 0 0 0	
+p3d_end_desc
+
+p3d_beg_desc_jnt P3D_KNEE
+  p3d_set_pos_xyz -600 250 0 0 0 0 
+  p3d_set_prev_jnt   1
+  p3d_set_dof 0 0 0
+  p3d_set_dof_vmin 0 0 0
+  p3d_set_dof_vmax 0 0 0	
+p3d_end_desc
+
+p3d_beg_desc_jnt P3D_KNEE
+  p3d_set_pos_xyz -600 -250 0 0 0 0 
+  p3d_set_prev_jnt   1
+  p3d_set_dof 0 0 0
+  p3d_set_dof_vmin 0 0 0
+  p3d_set_dof_vmax 0 0 0	
+p3d_end_desc
+
+p3d_beg_desc_jnt P3D_KNEE
+  p3d_set_pos_xyz 83.495 -644.62 0 0 0 0 
+  p3d_set_prev_jnt   1
+  p3d_set_dof 0 0 0
+  p3d_set_dof_vmin 0 0 0
+  p3d_set_dof_vmax 0 0 0	
+p3d_end_desc
+
+
+p3d_end_desc
+
+#p3d_set_body_poly_color base 1 Grey
+p3d_set_body_poly_color plate 3 Green
+p3d_set_body_poly_color plate 4 Green
+
+p3d_set_body_poly_color embolo1 1 Grey
+p3d_set_body_poly_color piston1 1 Grey
+p3d_set_body_poly_color piston1 4 Grey
+p3d_set_body_poly_color embolo2 1 Grey
+p3d_set_body_poly_color piston2 1 Grey
+p3d_set_body_poly_color piston2 4 Grey
+p3d_set_body_poly_color embolo3 1 Grey
+p3d_set_body_poly_color piston3 1 Grey
+p3d_set_body_poly_color piston3 4 Grey
+p3d_set_body_poly_color embolo4 1 Grey
+p3d_set_body_poly_color piston4 1 Grey
+p3d_set_body_poly_color piston4 4 Grey
+p3d_set_body_poly_color embolo5 1 Grey
+p3d_set_body_poly_color piston5 1 Grey
+p3d_set_body_poly_color piston5 4 Grey
+p3d_set_body_poly_color embolo6 1 Grey
+p3d_set_body_poly_color piston6 1 Grey
+p3d_set_body_poly_color piston6 4 Grey
+
+
+
+p3d_set_env_box -5000.0 5000.0 -5000.0 5000.0 -500.0 10000.0
+
+
+p3d_set_robot_current  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  -1376.597900  -1848.574219  3286.627197  7.079636  0.000000  8.849548  29.751023  -31.641311  0.000000  1494.831515  26.709205  -32.952482  0.000000  1561.761078  38.235666  -11.897760  30.000000  1480.333017  40.706842  -12.892134  30.000000  1573.521205  17.712271  -15.133103  -30.000000  628.641695  17.611971  -11.819884  -30.000000  540.504405  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+
+p3d_set_robot_goto  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  1337.266602  3311.209473  -23.008850  -7.079651  63.716812  -30.601207  -13.661776  0.000000  1003.230766  -27.968594  -25.204974  0.000000  913.840974  -3.567759  -0.858715  30.000000  215.388956  3.821259  8.680251  30.000000  570.019690  -27.928298  13.516546  -30.000000  1244.105680  -37.129509  14.215776  -30.000000  1581.130913  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+
+
+
+p3d_sel_desc_name P3D_ROBOT stewart_monorob
+p3d_set_robot_steering_method Linear
+
+
+p3d_constraint_dof p3d_prismatic_actuator_II_ik 3 2 2 3 0 1 0 1 14 0 1 2900.0 0   
+p3d_constraint_dof p3d_prismatic_actuator_II_ik 3 4 4 5 0 1 0 1 15 0 1 2900.0 0   
+p3d_constraint_dof p3d_prismatic_actuator_II_ik 3 6 6 7 0 1 0 1 16 0 1 2900.0 0   
+p3d_constraint_dof p3d_prismatic_actuator_II_ik 3 8 8 9 0 1 0 1 17 0 1 2900.0 0   
+p3d_constraint_dof p3d_prismatic_actuator_II_ik 3 10 10 11 0 1 0 1 18 0 1 2900.0 0   
+p3d_constraint_dof p3d_prismatic_actuator_II_ik 3 12 12 13 0 1 0 1 19 0 1 2900.0 0   
+
+p3d_set_parallel_sys fixmanip 0 1 6 0 1 2 3 4 5

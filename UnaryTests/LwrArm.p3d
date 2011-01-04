@@ -1,0 +1,64 @@
+p3d_beg_desc P3D_ENV KukaArm
+
+p3d_beg_desc P3D_OBSTACLE bm.barre1
+p3d_add_desc_cylindre bm.barre1 0.100 2.500 
+p3d_set_prim_pos bm.barre1 0.400 0.3000 1.225 0 0 0.0
+p3d_end_desc
+
+p3d_beg_desc P3D_OBSTACLE bm.barre2
+p3d_add_desc_cylindre bm.barre2 0.100 2.500 
+p3d_set_prim_pos bm.barre2 0.4000 -0.300 1.225 0 0 0.0
+p3d_end_desc
+
+p3d_beg_desc P3D_OBSTACLE bm.mur
+p3d_add_desc_box bm.mur1 0.0900 1.2000 0.9000 
+p3d_set_prim_pos bm.mur1 -0.800 0 0.450 0 0 0.0
+p3d_add_desc_box bm.mur2 0.090 0.400 0.400 
+p3d_set_prim_pos bm.mur2 -0.800 0.400 1.100 0 0 0.0
+p3d_add_desc_box bm.mur3 0.090 0.400 0.400 
+p3d_set_prim_pos bm.mur3 -0.800 -0.400 1.100 0 0 0.0
+p3d_add_desc_box bm.mur4 0.090 1.200 0.900 
+p3d_set_prim_pos bm.mur4 -0.800 0 1.750 0 0 0.0
+p3d_end_desc
+
+p3d_beg_desc P3D_OBSTACLE bm.caisse
+p3d_add_desc_box bm.caisse 0.400 0.400 0.7300
+p3d_set_prim_pos bm.caisse 0 0 0.365 0 0 0.0
+p3d_end_desc
+
+p3d_set_obst_color bm.caisse Brown
+
+p3d_read_macro kukaArmRod.macro kukaArm
+
+
+p3d_end_desc
+
+##################################################################
+p3d_set_env_box -1.600000000 1.600000000 -1.600000000 1.600 0.000000 2.500
+p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -1.671586 -84.955750 170.000000 0.000000 0.000000 0.000000 0.000000
+p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.671586 77.876099 8.357910 -15.339231 6.686324 -1.179943 0.000000
+
+
+p3d_add_desc_rob_col_init kukaArm
+p3d_desactivate_col_check automatic
+
+p3d_desactivate_col_check kuka1.Gkuka1 kuka3.Gkuka3
+p3d_desactivate_col_check kuka1.Gkuka1 kuka4.Gkuka4
+p3d_desactivate_col_check kuka1.Gkuka1 kuka5.Gkuka5
+p3d_desactivate_col_check kuka1.Gkuka1 kuka6.Gkuka6
+p3d_desactivate_col_check kuka1.Gkuka1 kuka7.kuka7
+
+p3d_desactivate_col_check kuka2.Gkuka2 kuka4.Gkuka4
+p3d_desactivate_col_check kuka2.Gkuka2 kuka5.Gkuka5
+p3d_desactivate_col_check kuka2.Gkuka2 kuka6.Gkuka6
+p3d_desactivate_col_check kuka2.Gkuka2 kuka7.kuka7
+
+p3d_desactivate_col_check kuka3.Gkuka3 kuka5.Gkuka5
+p3d_desactivate_col_check kuka3.Gkuka3 kuka6.Gkuka6
+p3d_desactivate_col_check kuka3.Gkuka3 kuka7.kuka7
+
+p3d_desactivate_col_check kuka4.Gkuka4 kuka6.Gkuka6
+p3d_desactivate_col_check kuka4.Gkuka4 kuka7.kuka7
+
+p3d_desactivate_col_check kuka5.Gkuka5 kuka7.kuka7
+

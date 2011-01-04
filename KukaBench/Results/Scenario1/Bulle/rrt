@@ -1,0 +1,24 @@
+Number of loops                                                 90
+Pre-planning time                                               0.000000        Average         0.000000
+planning time                                                   11937.160000    Average         132.635111
+Number of conf Total                                            1835828         Average         20398.088889
+Number of conf in collision                                     1480558         Average         16450.644444
+Number of conf free                                             355270          Average         3947.444444
+Number of conf added                                            338044          Average         3756.044444
+Number of guardian                                              0               Average         0.000000
+Number of connectors                                            0               Average         0.000000
+Number of call to neigh function                                1255963         Average         13955.144444
+Number of computed localpaths                                   702024          Average         7800.266667
+Localpath lenght                                                507901931.296540        Average         723.482290
+Number of localpath collision test                              700773          Average         0.998218
+Localpath step size                                             236696.331263   Average         2629.959236
+Post planning time                                              43.490000       Average         0.483222
+Number of collisions                                            9671369         Average         107459.655556
+Number of configs in paths before postProcessing                5110            Average         56.777778
+Path lenght before postProcessing                               1124734.160036  Average         12497.046223
+lenght between config before postProcessing                     228.140803
+Number of configs in paths after postProcessing                 783             Average         8.700000
+Path lenght after postProcessing                                591787.375886   Average         6575.415288
+lenght between config after postProcessing                      981.405267
+Memory usage                                                    4440464440      Average         49338493.777778
+

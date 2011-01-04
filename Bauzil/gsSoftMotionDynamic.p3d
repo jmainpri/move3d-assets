@@ -1,0 +1,230 @@
+p3d_beg_desc P3D_ENV grandesalle
+
+#bibliotheque
+  #p3d_read_macro ./oldmacros/cup.macro cup
+  p3d_read_macro ./StaticObjects/bookcase2.macro library1
+  p3d_set_obst_pos library1 0.3 -1.64 0.0 0 0 -90
+
+  p3d_read_macro ./StaticObjects/bookcase2.macro library2
+  p3d_set_obst_pos library2 0.3 -2.67 0.0 0 0 -90
+
+  p3d_read_macro ./StaticObjects/bookcase2.macro library3
+  p3d_set_obst_pos library3 0.3 -3.67 0.0 0 0 -90
+
+  p3d_read_macro ./StaticObjects/bookcase2.macro library4
+  p3d_set_obst_pos library4 -0.48 -3.91 0.0 0 0 -180
+
+#petit salon
+  p3d_read_macro ./MovableObjects/tablebot.macro COFFEETABLE
+  p3d_read_macro ./MovableObjects/fautbot.macro sofa1
+  p3d_read_macro ./MovableObjects/fautbot.macro sofa2
+
+#Objets for GraspPlanning
+
+  p3d_read_macro ./MovableObjects/shelf.macro CUPBOARDTABLE
+
+#different Tables
+
+  p3d_read_macro ./StaticObjects/desk.macro BARTABLE1
+  p3d_set_obst_pos BARTABLE1 2.11 -5.67 0 0 0 0
+  p3d_read_macro ./StaticObjects/desk.macro BARTABLE2
+  p3d_set_obst_pos BARTABLE2 3.21 -5.94 0 0 0 90
+  p3d_read_macro ./StaticObjects/desk.macro BARTABLE3
+  p3d_set_obst_pos BARTABLE3 4.94 -5.94 0 0 0 90
+  p3d_read_macro ./MovableObjects/hrp2table.macro HRP2_TABLE
+
+
+  p3d_read_macro ./StaticObjects/tablereunion.macro TABLEREUNION
+  p3d_set_obst_pos TABLEREUNION -1 -2 .0 .0 .0 0
+
+  p3d_read_macro ./MovableObjects/trash.macro TRASHBIN
+  p3d_set_obst_pos TABLEREUNION -1 -2 .0 .0 .0 0
+
+
+#  p3d_set_obst_pos object 4 -1.7 0.79
+#p3d_set_obst_pos object 4 -3 0.79
+  #p3d_set_obst_color object Any 0.3 1 0
+#########
+  p3d_read_macro ./StaticObjects/GsWalls.macro walls
+
+  p3d_read_macro ./JidoParts/EndEffectors/Gripper_robot.macro gripper_robot
+
+  p3d_read_macro ./MovableObjects/bottle_robot.macro BOTTLE
+  p3d_read_macro ./MovableObjects/hrp2Box.macro HRP2_BOX
+  p3d_read_macro ./JidoParts/Objects/DuploObject.macro DuploObject
+  p3d_read_macro ./JidoParts/Objects/DuploBox.macro DuploBox
+ # p3d_read_macro ./JidoParts/Objects/Horse.macro Horse
+  p3d_read_macro ./Objects/Movable/WoodenObject.macro WoodenObject
+  p3d_read_macro ./Objects/Movable/OrangeBottle.macro OrangeBottle
+
+  p3d_read_macro ./batmansmall.macro human
+  p3d_read_macro ./batmansmallCyl.macro humanStand
+
+
+  #p3d_read_macro jidoHriGripperHorizontalCup.macro ROBOT
+ p3d_read_macro jidoHriGripperHorizontal.macro ROBOT
+p3d_end_desc
+
+p3d_set_env_box -2 8 -7 1 0 3
+
+##############################
+## MULTILOCALPATHGROUP #######
+##############################
+p3d_set_robot_steering_method Multi-Localpath
+
+#DO NOT DESACTIVATE ANY MULTILOCALPATH_GROUP
+p3d_multi_localpath_group 1 17 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17
+p3d_multi_localpath_data jido base R&S+linear 1 1
+
+p3d_multi_localpath_group 1 1 1
+p3d_multi_localpath_data jido-base base R&S+linear 1 1
+
+p3d_multi_localpath_group 1 2 2 3
+p3d_multi_localpath_data jido-cam joint Linear
+
+p3d_multi_localpath_group 1 7 4 5 6 7 8 9 10
+p3d_multi_localpath_data jido-arm_lin joint Linear
+
+p3d_multi_localpath_group 1 6 5 6 7 8 9 10
+p3d_multi_localpath_data jido-arm joint Soft-Motion 3.0 1.0 0.5 3.0 1.0 0.5 3.0 1.0 0.5 3.0 1.0 0.5 3.0 1.0 0.5 3.0 1.0 0.5
+
+p3d_multi_localpath_group 1 3 11 12 13
+p3d_multi_localpath_data jido-hand joint Linear
+
+p3d_multi_localpath_group 1 2 14 15
+p3d_multi_localpath_data jido-vcam joint Linear
+
+p3d_multi_localpath_group 1 1 17
+p3d_multi_localpath_data jido-ob freeflyer Soft-Motion 0.9 0.3 0.15 0.9 0.3 0.15 0.9 0.3 0.15 1.8 0.6 0.3 1.8 0.6 0.3 1.8 0.6 0.3
+
+p3d_multi_localpath_group 1 1 17
+p3d_multi_localpath_data jido-ob_lin freeflyer Linear
+
+
+#DO NOT REMOVE THE FOLLOWING LINE TO USE MULTILOCALPATH
+p3d_set_robot_steering_method Multi-Localpath
+p3d_constraint p3d_pa10_6_arm_ik 6 5 6 7 8 9 10  1 17  0  1 7
+p3d_set_cntrt_Tatt 1 0 0 1 -0.280  0.382683 0.923879 0 0.0  -0.923879 0.382683 0 0
+p3d_set_object_base_and_arm_constraints 17 1 0  1  1
+
+p3d_set_open_chain_config 0 0 0 0 0 0 0 0 0 0 0 4.133601 82.073823 114.332120 93.965849 -88.833434 -52.263824 0.0325 0.0325 0 0 0.432645 0.270403 1.216323 0 0 0
+
+
+##############################
+######## DEFAULT POS #########
+##############################
+
+p3d_sel_desc_name P3D_ROBOT DuploObject
+p3d_set_robot_current 0 0 0 0 0 0 4.79 -2.95 0.79 0 0 0
+p3d_set_robot_goto 0 0 0 0 0 0 4 -1.7 0.79 0 0 0
+
+p3d_sel_desc_name P3D_ROBOT Horse
+p3d_set_robot_current 0 0 0 0 0 0 4.39 -2.95 0.79 0 0 0
+p3d_set_robot_goto 0 0 0 0 0 0 4 -1.7 0.79 0 0 0
+
+p3d_sel_desc_name P3D_ROBOT COFFEETABLE
+
+
+p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 7.758203 -0.291413 0.036382 0.000000 0.000000 90.000000
+p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+
+
+
+
+p3d_sel_desc_name P3D_ROBOT sofa1
+
+
+
+p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 4.205015 -0.022124 0.000000 0.000000 0.000000 -44.247791
+p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+
+
+
+
+p3d_sel_desc_name P3D_ROBOT sofa2
+
+
+
+p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 5.753688 -0.056539 0.006883 0.000000 0.000000 -136.283188
+p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+
+
+
+
+p3d_sel_desc_name P3D_ROBOT CUPBOARDTABLE
+
+
+p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 4.79 -2.75 0.0000 0.000000 0.000000 28.318592
+p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+
+
+
+
+p3d_sel_desc_name P3D_ROBOT HRP2_TABLE
+
+
+
+p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 4.868731 -4.633727 0.000000 0.000000 0.000000 0.000000
+p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+
+
+
+
+p3d_sel_desc_name P3D_ROBOT TRASHBIN
+
+
+
+p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.812685 -3.291544 0.000000 0.000000 0.000000 0.000000
+p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+
+
+
+
+p3d_sel_desc_name P3D_ROBOT gripper_robot
+
+
+
+p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -1.550000 0.000000 2.900000 0.000000 0.000000 0.000000 0.000000 0.000000
+p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+
+
+
+
+
+p3d_sel_desc_name P3D_ROBOT BOTTLE
+
+
+
+p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -0.572763 0.000000 0.000000 0.000000 0.000000
+p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+
+
+
+
+p3d_sel_desc_name P3D_ROBOT human
+
+
+
+p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 4.205015 0.012291 0.485251 0.000000 0.000000 -42.477875 0.000000 0.000000 1.760082 0.000000 0.000000 -3.520153 24.641102 -31.681419 -33.441490 -24.641102 17.600796 -33.441490 -70.403145 -49.282204 5.280245 66.882980 24.641102 0.000000 -3.520153 0.000000 36.960000 0.000000 0.000000 36.960000 0.000000 -38.720000 0.000000 0.000000 -35.201572 -1.760082 0.000000 1.760082 80.963615 0.000000 0.000000 80.963615 0.000000 0.000000 -75.683380 0.000000 0.000000 -79.203545 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.400000 0.000000 1.000000 0.000000 0.000000 0.000000 0.400000 0.000000 1.000000 0.000000 0.000000 0.000000
+p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.840000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -65.120000 -42.240000 0.000000 65.120000 42.240000 1.760000 -1.760000 0.000000 36.960000 0.000000 0.000000 36.960000 0.000000 -38.720000 0.000000 0.000000 -38.720000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.400000 0.000000 1.000000 0.000000 0.000000 0.000000 0.400000 0.000000 1.000000 0.000000 0.000000 0.000000
+
+
+
+
+p3d_sel_desc_name P3D_ROBOT humanStand
+
+
+
+p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 2.435103 -0.779253 0.840000 0.000000 0.000000 67.256630 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -65.120000 -42.240000 0.000000 65.120000 42.240000 1.760000 -1.760000 0.000000 36.960000 0.000000 0.000000 36.960000 0.000000 -38.720000 0.000000 0.000000 -38.720000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.400000 0.000000 1.000000 0.000000 0.000000 0.000000 0.400000 0.000000 1.000000 0.000000 0.000000 0.000000
+p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 3.910029 -0.848083 0.840000 0.000000 0.000000 67.256630 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -65.120000 -42.240000 0.000000 65.120000 42.240000 1.760000 -1.760000 0.000000 36.960000 0.000000 0.000000 36.960000 0.000000 -38.720000 0.000000 0.000000 -38.720000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.400000 0.000000 1.000000 0.000000 0.000000 0.000000 0.400000 0.000000 1.000000 0.000000 0.000000 0.000000
+
+
+
+
+p3d_sel_desc_name P3D_ROBOT ROBOT
+
+
+p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 3.834827 -2.931486 0.0  2.587016 0.775150 -89.489290 87.245924 89.771462 0.511672 -86.439039 -68.754331 0.031105 0.031105 0.044177 0.110834 4.6928 -2.8857 0.9013 0.0 0.000000 0.000000
+p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 4.940729 -1.126227 179.421533 2.587016 0.775150 -94.762756 2.933228 106.416891 -2.726724 -76.758066 -64.045862 0.031105 0.031105 0.044177 0.110834 4.110128 -0.432645 0.807965 0.098329 0.000000 122.123894
+
+

@@ -1,0 +1,1352 @@
+p3d_beg_desc P3D_ROBOT
+p3d_beg_desc_jnt P3D_FREEFLYER  #1
+  p3d_set_prev_jnt   0
+  p3d_set_pos_xyz 0.0 0.0 0.0 0.0 0.0 0.0
+  p3d_set_dof      0 0 0  0   0   0
+  p3d_set_dof_vmin -3 -6 0 -180 -180 -180
+  p3d_set_dof_vmax 12 1 2 180 180 180
+p3d_end_desc
+
+p3d_beg_desc P3D_BODY DuploBox
+ p3d_add_desc_poly model
+	p3d_add_desc_vert 0.023625 -0.004125 0.083
+	p3d_add_desc_vert 0.0275625 -0.0103125 0.083
+	p3d_add_desc_vert 0.023625 -0.012375 0.083
+	p3d_add_desc_vert -0.0315 -0.00825 0.06225
+	p3d_add_desc_vert -0.0315 -0.0020625 0.0570625
+	p3d_add_desc_vert -0.0315 0 0.06225
+	p3d_add_desc_vert -0.0315 -0.0165 0.0415
+	p3d_add_desc_vert -0.0315 -0.0165 0.051875
+	p3d_add_desc_vert -0.0315 -0.012375 0.051875
+	p3d_add_desc_vert 0.0315 -0.0165 0.0415
+	p3d_add_desc_vert 0.023625 -0.0165 0.0415
+	p3d_add_desc_vert 0.023625 -0.0165 0.051875
+	p3d_add_desc_vert 0.0315 0.0165 0.083
+	p3d_add_desc_vert 0.023625 0.0165 0.083
+	p3d_add_desc_vert 0.023625 0.0165 0.072625
+	p3d_add_desc_vert 0 0.0165 0
+	p3d_add_desc_vert 0 0.00825 0
+	p3d_add_desc_vert 0.007875 0.012375 0
+	p3d_add_desc_vert 0.0315 0.012375 0.072625
+	p3d_add_desc_vert 0.0315 0.0061875 0.0778125
+	p3d_add_desc_vert 0.0315 0.00825 0.083
+	p3d_add_desc_vert -0.007875 0.0165 0
+	p3d_add_desc_vert -0.007875 0.012375 0
+	p3d_add_desc_vert 0.0315 -0.00825 0.02075
+	p3d_add_desc_vert 0.0315 -0.004125 0.010375
+	p3d_add_desc_vert 0.0315 -0.012375 0.010375
+	p3d_add_desc_vert -0.01575 0.00825 0
+	p3d_add_desc_vert -0.0118125 0.0020625 0
+	p3d_add_desc_vert -0.01575 0 0
+	p3d_add_desc_vert -0.0315 0.0165 0.06225
+	p3d_add_desc_vert -0.0315 0.0165 0.051875
+	p3d_add_desc_vert -0.023625 0.0165 0.051875
+	p3d_add_desc_vert 0.0315 0.0165 0
+	p3d_add_desc_vert 0.0315 0.0103125 0.0051875
+	p3d_add_desc_vert 0.0315 0.012375 0.010375
+	p3d_add_desc_vert -0.0315 -0.0165 0.06225
+	p3d_add_desc_vert 0.0315 -0.0061875 0.0051875
+	p3d_add_desc_vert 0 -0.0165 0.083
+	p3d_add_desc_vert 0 -0.00825 0.083
+	p3d_add_desc_vert -0.007875 -0.012375 0.083
+	p3d_add_desc_vert 0.01575 0.0165 0.083
+	p3d_add_desc_vert 0.023625 0.012375 0.083
+	p3d_add_desc_vert 0.01575 -0.0165 0.0415
+	p3d_add_desc_vert 0.007875 -0.0165 0.0415
+	p3d_add_desc_vert 0.007875 -0.0165 0.031125
+	p3d_add_desc_vert 0.0315 0 0
+	p3d_add_desc_vert 0.0315 -0.00825 0
+	p3d_add_desc_vert 0.023625 -0.004125 0
+	p3d_add_desc_vert -0.01575 -0.00825 0
+	p3d_add_desc_vert -0.023625 -0.004125 0
+	p3d_add_desc_vert 0.0315 0 0.083
+	p3d_add_desc_vert 0.023625 0.004125 0.083
+	p3d_add_desc_vert 0.0275625 -0.0103125 0
+	p3d_add_desc_vert 0.023625 -0.012375 0
+	p3d_add_desc_vert -0.0315 0.0165 0
+	p3d_add_desc_vert -0.023625 0.0165 0
+	p3d_add_desc_vert -0.023625 0.0165 0.010375
+	p3d_add_desc_vert -0.01575 0.0165 0.02075
+	p3d_add_desc_vert -0.01575 0.0165 0.031125
+	p3d_add_desc_vert -0.023625 0.0165 0.031125
+	p3d_add_desc_vert -0.01575 -0.0165 0.0415
+	p3d_add_desc_vert -0.01575 -0.0165 0.051875
+	p3d_add_desc_vert -0.007875 -0.0165 0.051875
+	p3d_add_desc_vert 0 0.0165 0.06225
+	p3d_add_desc_vert 0 0.0165 0.072625
+	p3d_add_desc_vert 0.007875 0.0165 0.072625
+	p3d_add_desc_vert -0.0315 -0.00825 0.02075
+	p3d_add_desc_vert -0.0315 -0.012375 0.010375
+	p3d_add_desc_vert -0.0315 -0.0165 0.02075
+	p3d_add_desc_vert -0.007875 0.004125 0.083
+	p3d_add_desc_vert -0.0118125 -0.0020625 0.083
+	p3d_add_desc_vert -0.007875 -0.004125 0.083
+	p3d_add_desc_vert 0 0.0165 0.02075
+	p3d_add_desc_vert 0 0.0165 0.031125
+	p3d_add_desc_vert 0.007875 0.0165 0.031125
+	p3d_add_desc_vert 0.01575 -0.0165 0.06225
+	p3d_add_desc_vert 0.023625 -0.0165 0.06225
+	p3d_add_desc_vert 0.0315 0.00825 0.06225
+	p3d_add_desc_vert 0.0315 0.0165 0.06225
+	p3d_add_desc_vert -0.007875 -0.0165 0.072625
+	p3d_add_desc_vert -0.0118125 -0.0165 0.0778125
+	p3d_add_desc_vert -0.007875 -0.0165 0.083
+	p3d_add_desc_vert 0.0315 -0.0165 0.02075
+	p3d_add_desc_vert 0.0315 -0.0165 0.010375
+	p3d_add_desc_vert 0.0315 -0.0165 0.083
+	p3d_add_desc_vert 0.0275625 -0.0165 0.0778125
+	p3d_add_desc_vert 0.023625 -0.0165 0.083
+	p3d_add_desc_vert 0 0.0165 0.083
+	p3d_add_desc_vert 0 0.00825 0.083
+	p3d_add_desc_vert 0.007875 0.012375 0.083
+	p3d_add_desc_vert -0.0315 0.0165 0.02075
+	p3d_add_desc_vert -0.0315 0.0165 0.010375
+	p3d_add_desc_vert -0.01575 0.00825 0.083
+	p3d_add_desc_vert -0.007875 0.012375 0.083
+	p3d_add_desc_vert -0.01575 0.0165 0.083
+	p3d_add_desc_vert 0.0315 -0.004125 0.051875
+	p3d_add_desc_vert 0.0315 0.0020625 0.0570625
+	p3d_add_desc_vert 0.0315 0.004125 0.051875
+	p3d_add_desc_vert -0.007875 -0.0165 0.0415
+	p3d_add_desc_vert -0.01575 -0.0165 0.02075
+	p3d_add_desc_vert -0.01575 -0.0165 0.010375
+	p3d_add_desc_vert -0.023625 -0.0165 0.010375
+	p3d_add_desc_vert -0.0275625 0.0103125 0
+	p3d_add_desc_vert -0.0315 0.00825 0
+	p3d_add_desc_vert 0.0315 -0.00825 0.06225
+	p3d_add_desc_vert 0.0315 -0.012375 0.072625
+	p3d_add_desc_vert 0.0315 -0.004125 0.072625
+	p3d_add_desc_vert -0.023625 -0.0165 0.051875
+	p3d_add_desc_vert -0.0039375 -0.0165 0.0778125
+	p3d_add_desc_vert -0.01575 0.0165 0.0415
+	p3d_add_desc_vert -0.007875 0.0165 0.031125
+	p3d_add_desc_vert -0.0315 0 0.0415
+	p3d_add_desc_vert -0.0315 0.0061875 0.0363125
+	p3d_add_desc_vert -0.0315 0.004125 0.031125
+	p3d_add_desc_vert -0.01575 -0.00825 0.083
+	p3d_add_desc_vert -0.0196875 -0.0020625 0.083
+	p3d_add_desc_vert -0.01575 0 0.083
+	p3d_add_desc_vert -0.0315 0.0165 0.083
+	p3d_add_desc_vert -0.0275625 0.0165 0.0778125
+	p3d_add_desc_vert -0.0315 0.0165 0.072625
+	p3d_add_desc_vert -0.007875 0.0165 0.072625
+	p3d_add_desc_vert -0.0039375 0.0165 0.0778125
+	p3d_add_desc_vert -0.01575 -0.0165 0.083
+	p3d_add_desc_vert -0.01575 -0.0165 0.072625
+	p3d_add_desc_vert 0.01575 0.0165 0.06225
+	p3d_add_desc_vert 0.01575 0.0165 0.072625
+	p3d_add_desc_vert -0.01575 -0.0165 0
+	p3d_add_desc_vert -0.007875 -0.0165 0
+	p3d_add_desc_vert -0.007875 -0.012375 0
+	p3d_add_desc_vert -0.0315 0.00825 0.02075
+	p3d_add_desc_vert -0.0315 0.012375 0.031125
+	p3d_add_desc_vert -0.0315 -0.004125 0.072625
+	p3d_add_desc_vert -0.0315 -0.012375 0.072625
+	p3d_add_desc_vert 0.01575 0.0165 0.02075
+	p3d_add_desc_vert 0.01575 0.0165 0.031125
+	p3d_add_desc_vert -0.007875 0.0165 0.083
+	p3d_add_desc_vert -0.023625 -0.0165 0.072625
+	p3d_add_desc_vert -0.0196875 -0.0165 0.0778125
+	p3d_add_desc_vert -0.0315 -0.0165 0
+	p3d_add_desc_vert -0.0315 -0.0103125 0.0051875
+	p3d_add_desc_vert 0.01575 0.00825 0
+	p3d_add_desc_vert 0.023625 0.012375 0
+	p3d_add_desc_vert 0.023625 0.004125 0
+	p3d_add_desc_vert 0.0315 0.0165 0.02075
+	p3d_add_desc_vert 0.023625 0.0165 0.02075
+	p3d_add_desc_vert 0.023625 0.0165 0.031125
+	p3d_add_desc_vert 0 0 0.083
+	p3d_add_desc_vert -0.0039375 -0.0061875 0.083
+	p3d_add_desc_vert -0.0315 -0.00825 0.0415
+	p3d_add_desc_vert -0.0315 -0.012375 0.031125
+	p3d_add_desc_vert 0.0315 0.012375 0.051875
+	p3d_add_desc_vert 0.0315 -0.00825 0.083
+	p3d_add_desc_vert -0.0315 0.0165 0.0415
+	p3d_add_desc_vert -0.0315 0.00825 0.0415
+	p3d_add_desc_vert 0.01575 -0.00825 0
+	p3d_add_desc_vert 0.007875 -0.004125 0
+	p3d_add_desc_vert 0.007875 -0.012375 0
+	p3d_add_desc_vert -0.0039375 -0.0061875 0
+	p3d_add_desc_vert -0.007875 -0.004125 0
+	p3d_add_desc_vert -0.0315 0.012375 0.051875
+	p3d_add_desc_vert 0.0315 0.012375 0.031125
+	p3d_add_desc_vert 0.0315 0.0061875 0.0363125
+	p3d_add_desc_vert 0.0315 0.00825 0.0415
+	p3d_add_desc_vert 0.007875 0.004125 0
+	p3d_add_desc_vert 0.0118125 -0.0020625 0
+	p3d_add_desc_vert 0.01575 0 0
+	p3d_add_desc_vert -0.01575 -0.0165 0.06225
+	p3d_add_desc_vert -0.023625 -0.012375 0
+	p3d_add_desc_vert 0.01575 -0.00825 0.083
+	p3d_add_desc_vert -0.0275625 -0.0165 0.0778125
+	p3d_add_desc_vert -0.0315 -0.0165 0.072625
+	p3d_add_desc_vert -0.0315 0.0020625 0.0155625
+	p3d_add_desc_vert -0.0315 0.004125 0.010375
+	p3d_add_desc_vert -0.0315 -0.004125 0.010375
+	p3d_add_desc_vert -0.0315 -0.00825 0
+	p3d_add_desc_vert 0.0315 0 0.06225
+	p3d_add_desc_vert 0.01575 0 0.083
+	p3d_add_desc_vert 0.007875 -0.004125 0.083
+	p3d_add_desc_vert 0.01575 0.0165 0.0415
+	p3d_add_desc_vert 0.0315 0 0.0415
+	p3d_add_desc_vert 0.0315 0.004125 0.072625
+	p3d_add_desc_vert 0.0315 -0.0165 0.06225
+	p3d_add_desc_vert 0.0315 -0.0165 0.072625
+	p3d_add_desc_vert 0.0275625 0.0103125 0
+	p3d_add_desc_vert 0.0315 0.00825 0.02075
+	p3d_add_desc_vert 0.0315 0 0.02075
+	p3d_add_desc_vert 0.0315 0.004125 0.010375
+	p3d_add_desc_vert -0.007875 0.0165 0.02075
+	p3d_add_desc_vert -0.01575 0.0165 0.06225
+	p3d_add_desc_vert -0.01575 0.0165 0.072625
+	p3d_add_desc_vert -0.023625 0.0165 0.072625
+	p3d_add_desc_vert 0.0315 0.0165 0.0415
+	p3d_add_desc_vert 0.007875 0.0165 0.06225
+	p3d_add_desc_vert 0.007875 0.0165 0.051875
+	p3d_add_desc_vert -0.023625 -0.0165 0.06225
+	p3d_add_desc_vert -0.0039375 0.0061875 0.083
+	p3d_add_desc_vert -0.007875 -0.0165 0.010375
+	p3d_add_desc_vert 0.01575 0.0165 0.051875
+	p3d_add_desc_vert 0.023625 -0.0165 0.072625
+	p3d_add_desc_vert 0 -0.0165 0.072625
+	p3d_add_desc_vert 0.007875 -0.012375 0.083
+	p3d_add_desc_vert 0.0039375 -0.0061875 0.083
+	p3d_add_desc_vert -0.0315 -0.0061875 0.0466875
+	p3d_add_desc_vert -0.0315 -0.004125 0.051875
+	p3d_add_desc_vert -0.023625 -0.0165 0.083
+	p3d_add_desc_vert -0.023625 -0.012375 0.083
+	p3d_add_desc_vert -0.007875 0.0165 0.0415
+	p3d_add_desc_vert -0.007875 0.0165 0.051875
+	p3d_add_desc_vert -0.0315 0.004125 0.072625
+	p3d_add_desc_vert -0.0315 0.0103125 0.0778125
+	p3d_add_desc_vert -0.0315 0.012375 0.072625
+	p3d_add_desc_vert -0.0039375 0.0061875 0
+	p3d_add_desc_vert -0.007875 0.004125 0
+	p3d_add_desc_vert 0.0315 0.00825 0
+	p3d_add_desc_vert 0 0 0
+	p3d_add_desc_vert 0.0039375 0.0061875 0
+	p3d_add_desc_vert 0.0315 -0.0165 0.051875
+	p3d_add_desc_vert 0 -0.0165 0.02075
+	p3d_add_desc_vert 0 -0.0165 0.031125
+	p3d_add_desc_vert 0.0315 -0.0165 0
+	p3d_add_desc_vert 0.01575 0.0165 0
+	p3d_add_desc_vert 0.007875 0.0165 0
+	p3d_add_desc_vert 0.007875 0.0165 0.010375
+	p3d_add_desc_vert -0.0315 0.00825 0.06225
+	p3d_add_desc_vert -0.0315 0.004125 0.051875
+	p3d_add_desc_vert -0.0118125 0.0165 0.0778125
+	p3d_add_desc_vert 0.007875 0.004125 0.083
+	p3d_add_desc_vert 0 0.0165 0.0415
+	p3d_add_desc_vert 0.01575 -0.0165 0.031125
+	p3d_add_desc_vert 0.023625 -0.0165 0.031125
+	p3d_add_desc_vert -0.0315 0 0
+	p3d_add_desc_vert -0.023625 0.004125 0
+	p3d_add_desc_vert -0.007875 -0.0165 0.06225
+	p3d_add_desc_vert -0.023625 -0.0165 0.02075
+	p3d_add_desc_vert -0.023625 -0.0165 0.031125
+	p3d_add_desc_vert 0.0315 -0.0061875 0.0363125
+	p3d_add_desc_vert 0.0315 -0.00825 0.0415
+	p3d_add_desc_vert -0.01575 0.0165 0
+	p3d_add_desc_vert 0.0315 -0.0020625 0.0259375
+	p3d_add_desc_vert -0.0275625 -0.0103125 0
+	p3d_add_desc_vert 0.0315 0.0165 0.010375
+	p3d_add_desc_vert 0.023625 0.0165 0.010375
+	p3d_add_desc_vert 0.0039375 -0.0061875 0
+	p3d_add_desc_vert 0.0315 0.0020625 0.0674375
+	p3d_add_desc_vert 0.0315 -0.0020625 0.0155625
+	p3d_add_desc_vert -0.0315 -0.0061875 0.0778125
+	p3d_add_desc_vert -0.0315 -0.00825 0.083
+	p3d_add_desc_vert 0.0196875 -0.0020625 0
+	p3d_add_desc_vert 0.01575 0.0165 0.010375
+	p3d_add_desc_vert 0.01575 -0.0165 0.02075
+	p3d_add_desc_vert 0.023625 -0.0165 0.02075
+	p3d_add_desc_vert -0.0315 -0.0165 0.031125
+	p3d_add_desc_vert -0.0315 -0.0165 0.010375
+	p3d_add_desc_vert 0.01575 -0.0165 0.051875
+	p3d_add_desc_vert 0.007875 -0.0165 0.051875
+	p3d_add_desc_vert -0.0315 -0.004125 0.031125
+	p3d_add_desc_vert -0.023625 0.0165 0.0415
+	p3d_add_desc_vert -0.023625 -0.004125 0.083
+	p3d_add_desc_vert 0.0118125 0.0165 0.0778125
+	p3d_add_desc_vert 0.007875 0.0165 0.083
+	p3d_add_desc_vert -0.023625 0.0165 0.02075
+	p3d_add_desc_vert -0.007875 0.0165 0.010375
+	p3d_add_desc_vert 0 -0.0165 0.06225
+	p3d_add_desc_vert 0.007875 -0.0165 0.072625
+	p3d_add_desc_vert -0.01575 -0.0165 0.031125
+	p3d_add_desc_vert 0 -0.0165 0.0415
+	p3d_add_desc_vert -0.007875 -0.0165 0.031125
+	p3d_add_desc_vert 0.0315 0.0165 0.031125
+	p3d_add_desc_vert 0.01575 -0.0165 0.010375
+	p3d_add_desc_vert 0.007875 -0.0165 0.010375
+	p3d_add_desc_vert 0.0315 0.004125 0.031125
+	p3d_add_desc_vert -0.01575 0.0165 0.010375
+	p3d_add_desc_vert -0.007875 -0.0165 0.02075
+	p3d_add_desc_vert 0.0196875 -0.0165 0.0778125
+	p3d_add_desc_vert 0.01575 -0.0165 0.072625
+	p3d_add_desc_vert -0.0315 0 0.083
+	p3d_add_desc_vert -0.0315 -0.0165 0.083
+	p3d_add_desc_vert 0.0315 -0.0061875 0.0466875
+	p3d_add_desc_vert 0.023625 -0.0165 0.010375
+	p3d_add_desc_vert 0.0118125 0.0020625 0.083
+	p3d_add_desc_vert 0.0039375 -0.0165 0.0778125
+	p3d_add_desc_vert -0.023625 0.012375 0.083
+	p3d_add_desc_vert -0.023625 0.004125 0.083
+	p3d_add_desc_vert 0.0315 -0.012375 0.031125
+	p3d_add_desc_vert 0 -0.00825 0
+	p3d_add_desc_vert 0.007875 -0.0165 0.06225
+	p3d_add_desc_vert 0.01575 -0.0165 0
+	p3d_add_desc_vert -0.0315 0.0165 0.031125
+	p3d_add_desc_vert 0.0315 0.0165 0.072625
+	p3d_add_desc_vert 0.023625 0.0165 0.06225
+	p3d_add_desc_vert 0.023625 0.0165 0.051875
+	p3d_add_desc_vert -0.0275625 0.0103125 0.083
+	p3d_add_desc_vert -0.0315 0.00825 0.083
+	p3d_add_desc_vert -0.0315 0 0.02075
+	p3d_add_desc_vert 0.007875 0.0165 0.0415
+	p3d_add_desc_vert 0.007875 0.0165 0.02075
+	p3d_add_desc_vert 0.0315 0.0165 0.051875
+	p3d_add_desc_vert -0.007875 0.0165 0.06225
+	p3d_add_desc_vert 0 -0.0165 0
+	p3d_add_desc_vert -0.023625 -0.0165 0
+	p3d_add_desc_vert 0.023625 0.0165 0
+	p3d_add_desc_vert -0.0196875 0.0020625 0
+	p3d_add_desc_vert 0.007875 -0.0165 0.02075
+	p3d_add_desc_vert 0.007875 -0.0165 0
+	p3d_add_desc_vert -0.023625 0.012375 0
+	p3d_add_desc_vert 0.0315 -0.0165 0.031125
+	p3d_add_desc_vert -0.023625 0.0165 0.083
+	p3d_add_desc_vert -0.0315 -0.0061875 0.0363125
+	p3d_add_desc_vert 0 -0.0165 0.010375
+	p3d_add_desc_vert -0.01575 0.0165 0.051875
+	p3d_add_desc_vert 0.023625 0.0165 0.0415
+	p3d_add_desc_vert -0.0315 0.0061875 0.0466875
+	p3d_add_desc_vert -0.0275625 -0.0103125 0.083
+	p3d_add_desc_vert -0.0196875 0.0165 0.0778125
+	p3d_add_desc_vert -0.0315 0.0103125 0.0051875
+	p3d_add_desc_vert -0.023625 0.0165 0.06225
+	p3d_add_desc_vert 0.0315 -0.012375 0.051875
+	p3d_add_desc_vert 0.0118125 -0.0165 0.0778125
+	p3d_add_desc_vert -0.0315 0.012375 0.010375
+	p3d_add_desc_vert 0.01575 0.00825 0.083
+	p3d_add_desc_vert -0.023625 -0.0165 0.0415
+	p3d_add_desc_vert 0.023625 -0.0165 0
+	p3d_add_desc_vert 0.0315 -0.004125 0.031125
+	p3d_add_desc_vert 0.007875 -0.0165 0.083
+	p3d_add_desc_vert 0.0315 0.0061875 0.0466875
+	p3d_add_desc_vert 0 0.0165 0.010375
+	p3d_add_desc_vert 0.0039375 0.0061875 0.083
+	p3d_add_desc_vert -0.0315 0.0020625 0.0259375
+	p3d_add_desc_vert 0.0315 -0.0103125 0.0778125
+	p3d_add_desc_vert 0.0196875 0.0020625 0.083
+	p3d_add_desc_vert 0.0275625 0.0103125 0.083
+	p3d_add_desc_vert -0.0315 -0.0020625 0.0674375
+	p3d_add_desc_vert 0 -0.0165 0.051875
+	p3d_add_desc_vert 0.01575 -0.0165 0.083
+	p3d_add_desc_vert 0 0.0165 0.051875
+	p3d_add_desc_face 2 1 3
+	p3d_add_desc_face 5 4 6
+	p3d_add_desc_face 7 8 9
+	p3d_add_desc_face 11 10 12
+	p3d_add_desc_face 14 13 15
+	p3d_add_desc_face 17 16 18
+	p3d_add_desc_face 20 19 21
+	p3d_add_desc_face 22 16 23
+	p3d_add_desc_face 25 24 26
+	p3d_add_desc_face 27 28 29
+	p3d_add_desc_face 31 30 32
+	p3d_add_desc_face 34 33 35
+	p3d_add_desc_face 4 9 36
+	p3d_add_desc_face 26 37 25
+	p3d_add_desc_face 38 39 40
+	p3d_add_desc_face 14 41 42
+	p3d_add_desc_face 43 44 45
+	p3d_add_desc_face 46 47 48
+	p3d_add_desc_face 29 49 50
+	p3d_add_desc_face 51 21 52
+	p3d_add_desc_face 48 53 54
+	p3d_add_desc_face 56 55 57
+	p3d_add_desc_face 59 58 60
+	p3d_add_desc_face 62 61 63
+	p3d_add_desc_face 64 65 66
+	p3d_add_desc_face 67 68 69
+	p3d_add_desc_face 70 71 72
+	p3d_add_desc_face 73 74 75
+	p3d_add_desc_face 77 76 12
+	p3d_add_desc_face 19 78 79
+	p3d_add_desc_face 81 80 82
+	p3d_add_desc_face 83 84 26
+	p3d_add_desc_face 86 85 87
+	p3d_add_desc_face 88 89 90
+	p3d_add_desc_face 92 91 57
+	p3d_add_desc_face 93 94 95
+	p3d_add_desc_face 97 96 98
+	p3d_add_desc_face 61 99 63
+	p3d_add_desc_face 101 100 102
+	p3d_add_desc_face 55 103 104
+	p3d_add_desc_face 106 105 107
+	p3d_add_desc_face 8 7 108
+	p3d_add_desc_face 109 38 82
+	p3d_add_desc_face 59 110 111
+	p3d_add_desc_face 112 113 114
+	p3d_add_desc_face 116 115 117
+	p3d_add_desc_face 71 70 117
+	p3d_add_desc_face 118 119 120
+	p3d_add_desc_face 85 2 3
+	p3d_add_desc_face 121 122 65
+	p3d_add_desc_face 81 123 124
+	p3d_add_desc_face 125 126 15
+	p3d_add_desc_face 128 127 129
+	p3d_add_desc_face 26 24 83
+	p3d_add_desc_face 126 125 66
+	p3d_add_desc_face 130 114 131
+	p3d_add_desc_face 132 4 133
+	p3d_add_desc_face 135 134 75
+	p3d_add_desc_face 88 136 94
+	p3d_add_desc_face 138 137 124
+	p3d_add_desc_face 140 139 68
+	p3d_add_desc_face 141 142 143
+	p3d_add_desc_face 144 145 146
+	p3d_add_desc_face 147 148 39
+	p3d_add_desc_face 7 149 150
+	p3d_add_desc_face 78 151 79
+	p3d_add_desc_face 16 17 23
+	p3d_add_desc_face 51 152 107
+	p3d_add_desc_face 154 153 131
+	p3d_add_desc_face 156 155 157
+	p3d_add_desc_face 158 129 159
+	p3d_add_desc_face 31 153 160
+	p3d_add_desc_face 162 161 163
+	p3d_add_desc_face 165 164 166
+	p3d_add_desc_face 136 95 94
+	p3d_add_desc_face 167 62 63
+	p3d_add_desc_face 168 49 127
+	p3d_add_desc_face 169 3 1
+	p3d_add_desc_face 137 170 171
+	p3d_add_desc_face 172 130 173
+	p3d_add_desc_face 140 174 175
+	p3d_add_desc_face 105 176 107
+	p3d_add_desc_face 169 177 178
+	p3d_add_desc_face 135 179 146
+	p3d_add_desc_face 180 162 163
+	p3d_add_desc_face 181 78 19
+	p3d_add_desc_face 183 182 106
+	p3d_add_desc_face 36 171 133
+	p3d_add_desc_face 184 143 142
+	p3d_add_desc_face 185 186 187
+	p3d_add_desc_face 73 188 111
+	p3d_add_desc_face 190 189 191
+	p3d_add_desc_face 192 163 161
+	p3d_add_desc_face 193 125 194
+	p3d_add_desc_face 167 195 108
+	p3d_add_desc_face 196 147 89
+	p3d_add_desc_face 101 127 197
+	p3d_add_desc_face 177 169 1
+	p3d_add_desc_face 198 179 194
+	p3d_add_desc_face 86 199 183
+	p3d_add_desc_face 38 109 200
+	p3d_add_desc_face 149 7 9
+	p3d_add_desc_face 202 201 178
+	p3d_add_desc_face 203 9 204
+	p3d_add_desc_face 166 141 143
+	p3d_add_desc_face 205 123 206
+	p3d_add_desc_face 207 110 208
+	p3d_add_desc_face 209 210 211
+	p3d_add_desc_face 19 20 181
+	p3d_add_desc_face 23 212 213
+	p3d_add_desc_face 180 98 96
+	p3d_add_desc_face 171 36 137
+	p3d_add_desc_face 65 88 66
+	p3d_add_desc_face 76 77 199
+	p3d_add_desc_face 143 184 214
+	p3d_add_desc_face 164 165 156
+	p3d_add_desc_face 215 216 164
+	p3d_add_desc_face 217 182 12
+	p3d_add_desc_face 28 27 213
+	p3d_add_desc_face 219 218 45
+	p3d_add_desc_face 28 159 29
+	p3d_add_desc_face 220 47 26
+	p3d_add_desc_face 64 193 194
+	p3d_add_desc_face 221 222 223
+	p3d_add_desc_face 225 224 160
+	p3d_add_desc_face 226 95 136
+	p3d_add_desc_face 227 147 178
+	p3d_add_desc_face 74 228 75
+	p3d_add_desc_face 43 229 230
+	p3d_add_desc_face 125 193 66
+	p3d_add_desc_face 78 98 151
+	p3d_add_desc_face 231 104 232
+	p3d_add_desc_face 167 233 80
+	p3d_add_desc_face 137 138 205
+	p3d_add_desc_face 69 234 235
+	p3d_add_desc_face 236 180 237
+	p3d_add_desc_face 238 56 57
+	p3d_add_desc_face 239 24 186
+	p3d_add_desc_face 165 155 156
+	p3d_add_desc_face 240 50 168
+	p3d_add_desc_face 46 214 187
+	p3d_add_desc_face 241 33 242
+	p3d_add_desc_face 157 243 156
+	p3d_add_desc_face 244 107 176
+	p3d_add_desc_face 245 24 25
+	p3d_add_desc_face 246 133 247
+	p3d_add_desc_face 248 155 166
+	p3d_add_desc_face 221 249 242
+	p3d_add_desc_face 250 251 230
+	p3d_add_desc_face 252 69 235
+	p3d_add_desc_face 61 62 108
+	p3d_add_desc_face 244 78 181
+	p3d_add_desc_face 97 78 176
+	p3d_add_desc_face 195 36 108
+	p3d_add_desc_face 253 139 102
+	p3d_add_desc_face 43 254 255
+	p3d_add_desc_face 123 138 124
+	p3d_add_desc_face 112 114 256
+	p3d_add_desc_face 153 257 60
+	p3d_add_desc_face 206 115 258
+	p3d_add_desc_face 259 66 260
+	p3d_add_desc_face 91 261 57
+	p3d_add_desc_face 188 73 262
+	p3d_add_desc_face 200 263 264
+	p3d_add_desc_face 265 61 235
+	p3d_add_desc_face 219 266 267
+	p3d_add_desc_face 263 200 80
+	p3d_add_desc_face 41 259 260
+	p3d_add_desc_face 144 268 161
+	p3d_add_desc_face 199 86 87
+	p3d_add_desc_face 269 250 270
+	p3d_add_desc_face 163 192 151
+	p3d_add_desc_face 61 265 267
+	p3d_add_desc_face 161 162 271
+	p3d_add_desc_face 272 58 262
+	p3d_add_desc_face 100 273 267
+	p3d_add_desc_face 76 254 12
+	p3d_add_desc_face 199 274 275
+	p3d_add_desc_face 276 246 247
+	p3d_add_desc_face 261 91 60
+	p3d_add_desc_face 210 118 211
+	p3d_add_desc_face 260 88 90
+	p3d_add_desc_face 50 240 175
+	p3d_add_desc_face 170 277 171
+	p3d_add_desc_face 278 180 96
+	p3d_add_desc_face 180 278 237
+	p3d_add_desc_face 100 101 197
+	p3d_add_desc_face 132 276 209
+	p3d_add_desc_face 250 269 279
+	p3d_add_desc_face 178 280 227
+	p3d_add_desc_face 233 167 63
+	p3d_add_desc_face 113 131 114
+	p3d_add_desc_face 16 22 262
+	p3d_add_desc_face 41 14 15
+	p3d_add_desc_face 41 260 90
+	p3d_add_desc_face 99 61 267
+	p3d_add_desc_face 148 40 39
+	p3d_add_desc_face 169 178 201
+	p3d_add_desc_face 175 231 50
+	p3d_add_desc_face 281 38 200
+	p3d_add_desc_face 222 16 223
+	p3d_add_desc_face 11 43 230
+	p3d_add_desc_face 131 113 154
+	p3d_add_desc_face 257 110 60
+	p3d_add_desc_face 93 282 283
+	p3d_add_desc_face 250 229 45
+	p3d_add_desc_face 83 251 279
+	p3d_add_desc_face 122 88 65
+	p3d_add_desc_face 53 220 54
+	p3d_add_desc_face 237 10 284
+	p3d_add_desc_face 215 243 285
+	p3d_add_desc_face 286 263 255
+	p3d_add_desc_face 243 215 156
+	p3d_add_desc_face 155 54 287
+	p3d_add_desc_face 288 91 131
+	p3d_add_desc_face 263 233 63
+	p3d_add_desc_face 46 48 143
+	p3d_add_desc_face 207 228 111
+	p3d_add_desc_face 39 38 201
+	p3d_add_desc_face 289 79 15
+	p3d_add_desc_face 268 144 146
+	p3d_add_desc_face 290 79 291
+	p3d_add_desc_face 196 94 70
+	p3d_add_desc_face 283 292 293
+	p3d_add_desc_face 155 248 48
+	p3d_add_desc_face 130 172 294
+	p3d_add_desc_face 127 128 197
+	p3d_add_desc_face 179 295 194
+	p3d_add_desc_face 110 257 32
+	p3d_add_desc_face 157 155 287
+	p3d_add_desc_face 234 69 102
+	p3d_add_desc_face 73 296 223
+	p3d_add_desc_face 100 265 235
+	p3d_add_desc_face 55 92 57
+	p3d_add_desc_face 297 79 151
+	p3d_add_desc_face 182 77 12
+	p3d_add_desc_face 269 287 279
+	p3d_add_desc_face 109 80 200
+	p3d_add_desc_face 254 76 255
+	p3d_add_desc_face 189 298 208
+	p3d_add_desc_face 248 143 48
+	p3d_add_desc_face 299 128 129
+	p3d_add_desc_face 139 300 102
+	p3d_add_desc_face 124 167 80
+	p3d_add_desc_face 301 221 242
+	p3d_add_desc_face 65 64 121
+	p3d_add_desc_face 50 302 29
+	p3d_add_desc_face 85 183 106
+	p3d_add_desc_face 250 303 270
+	p3d_add_desc_face 133 246 132
+	p3d_add_desc_face 304 287 270
+	p3d_add_desc_face 305 27 232
+	p3d_add_desc_face 284 236 237
+	p3d_add_desc_face 115 116 258
+	p3d_add_desc_face 83 306 230
+	p3d_add_desc_face 119 118 307
+	p3d_add_desc_face 133 4 36
+	p3d_add_desc_face 215 212 17
+	p3d_add_desc_face 238 22 23
+	p3d_add_desc_face 308 112 256
+	p3d_add_desc_face 218 309 270
+	p3d_add_desc_face 310 189 208
+	p3d_add_desc_face 192 311 291
+	p3d_add_desc_face 160 312 225
+	p3d_add_desc_face 188 58 111
+	p3d_add_desc_face 303 218 270
+	p3d_add_desc_face 126 41 15
+	p3d_add_desc_face 229 43 45
+	p3d_add_desc_face 313 277 206
+	p3d_add_desc_face 277 247 133
+	p3d_add_desc_face 71 115 72
+	p3d_add_desc_face 141 18 221
+	p3d_add_desc_face 216 215 17
+	p3d_add_desc_face 134 145 242
+	p3d_add_desc_face 40 148 72
+	p3d_add_desc_face 79 289 19
+	p3d_add_desc_face 213 27 23
+	p3d_add_desc_face 231 232 50
+	p3d_add_desc_face 264 281 200
+	p3d_add_desc_face 276 247 258
+	p3d_add_desc_face 110 59 60
+	p3d_add_desc_face 30 120 191
+	p3d_add_desc_face 107 244 181
+	p3d_add_desc_face 271 185 161
+	p3d_add_desc_face 314 191 307
+	p3d_add_desc_face 58 261 60
+	p3d_add_desc_face 287 269 270
+	p3d_add_desc_face 315 55 104
+	p3d_add_desc_face 103 232 104
+	p3d_add_desc_face 153 154 160
+	p3d_add_desc_face 134 249 223
+	p3d_add_desc_face 30 316 32
+	p3d_add_desc_face 173 315 104
+	p3d_add_desc_face 232 103 305
+	p3d_add_desc_face 217 10 317
+	p3d_add_desc_face 10 217 12
+	p3d_add_desc_face 298 189 121
+	p3d_add_desc_face 293 276 283
+	p3d_add_desc_face 7 252 235
+	p3d_add_desc_face 112 203 204
+	p3d_add_desc_face 318 264 275
+	p3d_add_desc_face 226 121 190
+	p3d_add_desc_face 148 147 72
+	p3d_add_desc_face 112 308 149
+	p3d_add_desc_face 301 33 142
+	p3d_add_desc_face 173 231 174
+	p3d_add_desc_face 23 27 238
+	p3d_add_desc_face 315 173 319
+	p3d_add_desc_face 221 301 142
+	p3d_add_desc_face 280 178 177
+	p3d_add_desc_face 42 320 52
+	p3d_add_desc_face 321 7 235
+	p3d_add_desc_face 322 220 279
+	p3d_add_desc_face 280 320 227
+	p3d_add_desc_face 56 238 305
+	p3d_add_desc_face 120 30 211
+	p3d_add_desc_face 24 284 83
+	p3d_add_desc_face 145 134 146
+	p3d_add_desc_face 214 46 143
+	p3d_add_desc_face 4 204 9
+	p3d_add_desc_face 78 97 98
+	p3d_add_desc_face 49 159 129
+	p3d_add_desc_face 309 299 270
+	p3d_add_desc_face 10 11 230
+	p3d_add_desc_face 138 123 205
+	p3d_add_desc_face 99 266 63
+	p3d_add_desc_face 180 236 323
+	p3d_add_desc_face 58 188 262
+	p3d_add_desc_face 228 207 208
+	p3d_add_desc_face 192 297 151
+	p3d_add_desc_face 159 28 213
+	p3d_add_desc_face 94 196 89
+	p3d_add_desc_face 224 211 30
+	p3d_add_desc_face 264 318 324
+	p3d_add_desc_face 113 112 154
+	p3d_add_desc_face 74 73 111
+	p3d_add_desc_face 16 222 18
+	p3d_add_desc_face 189 316 191
+	p3d_add_desc_face 180 325 98
+	p3d_add_desc_face 118 120 211
+	p3d_add_desc_face 251 83 230
+	p3d_add_desc_face 321 61 108
+	p3d_add_desc_face 73 326 262
+	p3d_add_desc_face 95 307 282
+	p3d_add_desc_face 72 115 40
+	p3d_add_desc_face 292 283 282
+	p3d_add_desc_face 91 288 60
+	p3d_add_desc_face 51 52 1
+	p3d_add_desc_face 292 118 293
+	p3d_add_desc_face 37 26 47
+	p3d_add_desc_face 93 70 94
+	p3d_add_desc_face 38 324 201
+	p3d_add_desc_face 118 210 293
+	p3d_add_desc_face 158 215 285
+	p3d_add_desc_face 309 218 197
+	p3d_add_desc_face 312 160 154
+	p3d_add_desc_face 78 244 176
+	p3d_add_desc_face 273 218 267
+	p3d_add_desc_face 72 147 70
+	p3d_add_desc_face 238 272 262
+	p3d_add_desc_face 155 165 166
+	p3d_add_desc_face 268 192 161
+	p3d_add_desc_face 172 174 294
+	p3d_add_desc_face 95 226 190
+	p3d_add_desc_face 327 90 89
+	p3d_add_desc_face 9 203 149
+	p3d_add_desc_face 211 224 209
+	p3d_add_desc_face 312 112 225
+	p3d_add_desc_face 112 312 154
+	p3d_add_desc_face 328 130 294
+	p3d_add_desc_face 213 215 159
+	p3d_add_desc_face 187 245 25
+	p3d_add_desc_face 162 180 271
+	p3d_add_desc_face 329 107 152
+	p3d_add_desc_face 218 273 197
+	p3d_add_desc_face 40 115 123
+	p3d_add_desc_face 307 118 282
+	p3d_add_desc_face 325 151 98
+	p3d_add_desc_face 180 323 271
+	p3d_add_desc_face 258 313 206
+	p3d_add_desc_face 314 95 190
+	p3d_add_desc_face 88 122 136
+	p3d_add_desc_face 311 192 146
+	p3d_add_desc_face 130 131 91
+	p3d_add_desc_face 233 263 80
+	p3d_add_desc_face 91 92 319
+	p3d_add_desc_face 10 237 317
+	p3d_add_desc_face 153 31 32
+	p3d_add_desc_face 271 239 186
+	p3d_add_desc_face 22 238 262
+	p3d_add_desc_face 64 298 121
+	p3d_add_desc_face 25 46 187
+	p3d_add_desc_face 182 217 317
+	p3d_add_desc_face 184 33 214
+	p3d_add_desc_face 320 330 52
+	p3d_add_desc_face 302 50 232
+	p3d_add_desc_face 85 86 183
+	p3d_add_desc_face 331 52 21
+	p3d_add_desc_face 332 4 132
+	p3d_add_desc_face 115 206 123
+	p3d_add_desc_face 245 187 186
+	p3d_add_desc_face 51 20 21
+	p3d_add_desc_face 263 333 255
+	p3d_add_desc_face 181 51 107
+	p3d_add_desc_face 198 125 291
+	p3d_add_desc_face 169 201 334
+	p3d_add_desc_face 13 331 21
+	p3d_add_desc_face 276 293 209
+	p3d_add_desc_face 33 34 214
+	p3d_add_desc_face 266 219 45
+	p3d_add_desc_face 274 199 87
+	p3d_add_desc_face 231 175 174
+	p3d_add_desc_face 77 182 199
+	p3d_add_desc_face 121 226 136
+	p3d_add_desc_face 68 67 174
+	p3d_add_desc_face 141 166 164
+	p3d_add_desc_face 79 290 15
+	p3d_add_desc_face 202 147 39
+	p3d_add_desc_face 134 296 75
+	p3d_add_desc_face 186 185 271
+	p3d_add_desc_face 38 281 324
+	p3d_add_desc_face 33 241 35
+	p3d_add_desc_face 308 150 149
+	p3d_add_desc_face 294 67 256
+	p3d_add_desc_face 185 35 144
+	p3d_add_desc_face 330 320 177
+	p3d_add_desc_face 85 329 152
+	p3d_add_desc_face 128 299 197
+	p3d_add_desc_face 297 192 291
+	p3d_add_desc_face 333 263 63
+	p3d_add_desc_face 189 310 32
+	p3d_add_desc_face 55 315 319
+	p3d_add_desc_face 281 264 324
+	p3d_add_desc_face 8 36 9
+	p3d_add_desc_face 27 302 232
+	p3d_add_desc_face 127 300 168
+	p3d_add_desc_face 277 170 205
+	p3d_add_desc_face 275 76 199
+	p3d_add_desc_face 24 239 323
+	p3d_add_desc_face 257 153 32
+	p3d_add_desc_face 300 139 168
+	p3d_add_desc_face 170 137 205
+	p3d_add_desc_face 240 139 175
+	p3d_add_desc_face 116 283 258
+	p3d_add_desc_face 298 64 208
+	p3d_add_desc_face 229 250 230
+	p3d_add_desc_face 222 221 18
+	p3d_add_desc_face 115 71 117
+	p3d_add_desc_face 92 55 319
+	p3d_add_desc_face 191 314 190
+	p3d_add_desc_face 273 100 197
+	p3d_add_desc_face 96 105 317
+	p3d_add_desc_face 110 207 111
+	p3d_add_desc_face 241 144 35
+	p3d_add_desc_face 266 44 255
+	p3d_add_desc_face 215 158 159
+	p3d_add_desc_face 7 321 108
+	p3d_add_desc_face 334 87 3
+	p3d_add_desc_face 210 209 293
+	p3d_add_desc_face 90 327 227
+	p3d_add_desc_face 46 37 47
+	p3d_add_desc_face 58 272 57
+	p3d_add_desc_face 139 240 168
+	p3d_add_desc_face 123 81 82
+	p3d_add_desc_face 330 1 52
+	p3d_add_desc_face 10 306 284
+	p3d_add_desc_face 286 76 264
+	p3d_add_desc_face 167 124 137
+	p3d_add_desc_face 64 335 208
+	p3d_add_desc_face 150 308 256
+	p3d_add_desc_face 203 112 149
+	p3d_add_desc_face 13 289 15
+	p3d_add_desc_face 13 14 42
+	p3d_add_desc_face 313 258 247
+	p3d_add_desc_face 195 167 137
+	p3d_add_desc_face 119 191 120
+	p3d_add_desc_face 288 153 60
+	p3d_add_desc_face 274 334 275
+	p3d_add_desc_face 96 97 176
+	p3d_add_desc_face 130 328 114
+	p3d_add_desc_face 225 5 6
+	p3d_add_desc_face 251 250 279
+	p3d_add_desc_face 302 27 29
+	p3d_add_desc_face 3 169 334
+	p3d_add_desc_face 27 305 238
+	p3d_add_desc_face 228 74 111
+	p3d_add_desc_face 118 292 282
+	p3d_add_desc_face 303 250 45
+	p3d_add_desc_face 4 332 6
+	p3d_add_desc_face 112 204 225
+	p3d_add_desc_face 310 110 32
+	p3d_add_desc_face 311 179 291
+	p3d_add_desc_face 147 196 70
+	p3d_add_desc_face 246 276 132
+	p3d_add_desc_face 287 322 279
+	p3d_add_desc_face 263 286 264
+	p3d_add_desc_face 234 100 235
+	p3d_add_desc_face 13 21 19
+	p3d_add_desc_face 139 140 175
+	p3d_add_desc_face 325 180 163
+	p3d_add_desc_face 216 18 164
+	p3d_add_desc_face 283 116 117
+	p3d_add_desc_face 182 183 199
+	p3d_add_desc_face 220 53 47
+	p3d_add_desc_face 322 287 54
+	p3d_add_desc_face 66 259 126
+	p3d_add_desc_face 320 42 41
+	p3d_add_desc_face 179 135 75
+	p3d_add_desc_face 224 6 209
+	p3d_add_desc_face 191 119 307
+	p3d_add_desc_face 174 172 173
+	p3d_add_desc_face 282 93 95
+	p3d_add_desc_face 69 253 102
+	p3d_add_desc_face 266 333 63
+	p3d_add_desc_face 179 311 146
+	p3d_add_desc_face 54 155 48
+	p3d_add_desc_face 150 67 69
+	p3d_add_desc_face 79 297 291
+	p3d_add_desc_face 209 332 132
+	p3d_add_desc_face 319 130 91
+	p3d_add_desc_face 24 245 186
+	p3d_add_desc_face 333 266 255
+	p3d_add_desc_face 331 13 42
+	p3d_add_desc_face 61 321 235
+	p3d_add_desc_face 69 252 150
+	p3d_add_desc_face 295 228 194
+	p3d_add_desc_face 80 81 124
+	p3d_add_desc_face 144 241 242
+	p3d_add_desc_face 192 268 146
+	p3d_add_desc_face 174 140 68
+	p3d_add_desc_face 152 51 1
+	p3d_add_desc_face 212 215 213
+	p3d_add_desc_face 318 334 324
+	p3d_add_desc_face 296 73 75
+	p3d_add_desc_face 88 260 66
+	p3d_add_desc_face 289 13 19
+	p3d_add_desc_face 2 85 152
+	p3d_add_desc_face 334 318 275
+	p3d_add_desc_face 328 256 114
+	p3d_add_desc_face 52 331 42
+	p3d_add_desc_face 161 185 144
+	p3d_add_desc_face 276 258 283
+	p3d_add_desc_face 6 224 225
+	p3d_add_desc_face 130 319 173
+	p3d_add_desc_face 266 99 267
+	p3d_add_desc_face 82 38 40
+	p3d_add_desc_face 33 301 242
+	p3d_add_desc_face 147 202 178
+	p3d_add_desc_face 299 304 270
+	p3d_add_desc_face 35 185 187
+	p3d_add_desc_face 320 280 177
+	p3d_add_desc_face 107 329 106
+	p3d_add_desc_face 295 179 75
+	p3d_add_desc_face 249 221 223
+	p3d_add_desc_face 252 7 150
+	p3d_add_desc_face 218 219 267
+	p3d_add_desc_face 335 228 208
+	p3d_add_desc_face 43 11 12
+	p3d_add_desc_face 304 299 157
+	p3d_add_desc_face 67 294 174
+	p3d_add_desc_face 110 310 208
+	p3d_add_desc_face 306 10 230
+	p3d_add_desc_face 4 5 204
+	p3d_add_desc_face 76 286 255
+	p3d_add_desc_face 80 109 82
+	p3d_add_desc_face 84 220 26
+	p3d_add_desc_face 239 271 323
+	p3d_add_desc_face 89 88 94
+	p3d_add_desc_face 220 84 279
+	p3d_add_desc_face 143 248 166
+	p3d_add_desc_face 93 117 70
+	p3d_add_desc_face 62 167 108
+	p3d_add_desc_face 277 313 247
+	p3d_add_desc_face 334 274 87
+	p3d_add_desc_face 49 129 127
+	p3d_add_desc_face 254 43 12
+	p3d_add_desc_face 104 231 173
+	p3d_add_desc_face 122 121 136
+	p3d_add_desc_face 125 290 291
+	p3d_add_desc_face 123 82 40
+	p3d_add_desc_face 24 323 284
+	p3d_add_desc_face 201 202 39
+	p3d_add_desc_face 256 328 294
+	p3d_add_desc_face 151 325 163
+	p3d_add_desc_face 317 105 182
+	p3d_add_desc_face 329 85 106
+	p3d_add_desc_face 277 205 206
+	p3d_add_desc_face 220 322 54
+	p3d_add_desc_face 253 69 68
+	p3d_add_desc_face 227 320 90
+	p3d_add_desc_face 332 209 6
+	p3d_add_desc_face 326 16 262
+	p3d_add_desc_face 299 309 197
+	p3d_add_desc_face 179 198 291
+	p3d_add_desc_face 228 295 75
+	p3d_add_desc_face 129 158 285
+	p3d_add_desc_face 16 326 223
+	p3d_add_desc_face 193 64 66
+	p3d_add_desc_face 189 190 121
+	p3d_add_desc_face 316 30 191
+	p3d_add_desc_face 147 327 89
+	p3d_add_desc_face 100 234 102
+	p3d_add_desc_face 95 314 307
+	p3d_add_desc_face 261 58 57
+	p3d_add_desc_face 127 101 102
+	p3d_add_desc_face 256 67 150
+	p3d_add_desc_face 265 100 267
+	p3d_add_desc_face 156 215 164
+	p3d_add_desc_face 296 134 223
+	p3d_add_desc_face 18 216 17
+	p3d_add_desc_face 160 224 30
+	p3d_add_desc_face 249 134 242
+	p3d_add_desc_face 212 23 17
+	p3d_add_desc_face 76 275 264
+	p3d_add_desc_face 125 198 194
+	p3d_add_desc_face 55 56 305
+	p3d_add_desc_face 317 278 96
+	p3d_add_desc_face 335 64 194
+	p3d_add_desc_face 58 59 111
+	p3d_add_desc_face 306 83 284
+	p3d_add_desc_face 134 135 146
+	p3d_add_desc_face 228 335 194
+	p3d_add_desc_face 278 317 237
+	p3d_add_desc_face 285 299 129
+	p3d_add_desc_face 90 320 41
+	p3d_add_desc_face 5 225 204
+	p3d_add_desc_face 33 184 142
+	p3d_add_desc_face 287 304 157
+	p3d_add_desc_face 36 8 108
+	p3d_add_desc_face 236 284 323
+	p3d_add_desc_face 20 51 181
+	p3d_add_desc_face 44 43 255
+	p3d_add_desc_face 290 125 15
+	p3d_add_desc_face 327 147 227
+	p3d_add_desc_face 37 46 25
+	p3d_add_desc_face 272 238 57
+	p3d_add_desc_face 259 41 126
+	p3d_add_desc_face 300 127 102
+	p3d_add_desc_face 1 330 177
+	p3d_add_desc_face 176 105 96
+	p3d_add_desc_face 243 157 285
+	p3d_add_desc_face 36 195 137
+	p3d_add_desc_face 49 29 159
+	p3d_add_desc_face 326 73 223
+	p3d_add_desc_face 324 334 201
+	p3d_add_desc_face 316 189 32
+	p3d_add_desc_face 171 277 133
+	p3d_add_desc_face 87 85 3
+	p3d_add_desc_face 141 164 18
+	p3d_add_desc_face 142 141 221
+	p3d_add_desc_face 44 266 45
+	p3d_add_desc_face 218 303 45
+	p3d_add_desc_face 145 144 242
+	p3d_add_desc_face 30 31 160
+	p3d_add_desc_face 153 288 131
+	p3d_add_desc_face 105 106 182
+	p3d_add_desc_face 53 48 47
+	p3d_add_desc_face 187 34 35
+	p3d_add_desc_face 84 83 279
+	p3d_add_desc_face 34 187 214
+	p3d_add_desc_face 49 168 50
+	p3d_add_desc_face 103 55 305
+	p3d_add_desc_face 1 2 152
+	p3d_add_desc_face 299 285 157
+	p3d_add_desc_face 139 253 68
+	p3d_add_desc_face 117 93 283
+	p3d_add_vert_curv 1 7.0083e-18
+	p3d_add_vert_curv 2 8.15321e-18
+	p3d_add_vert_curv 3 4.4059e-18
+	p3d_add_vert_curv 4 3.22067e-19
+	p3d_add_vert_curv 5 1.47922e-18
+	p3d_add_vert_curv 6 4.2436e-17
+	p3d_add_vert_curv 7 0.471911
+	p3d_add_vert_curv 8 0.621309
+	p3d_add_vert_curv 9 4.0458e-19
+	p3d_add_vert_curv 10 0.471911
+	p3d_add_vert_curv 11 1.36639e-20
+	p3d_add_vert_curv 12 1.36639e-20
+	p3d_add_vert_curv 13 0.757564
+	p3d_add_vert_curv 14 0.514187
+	p3d_add_vert_curv 15 1.36639e-20
+	p3d_add_vert_curv 16 0.41285
+	p3d_add_vert_curv 17 8.45446e-19
+	p3d_add_vert_curv 18 8.64404e-18
+	p3d_add_vert_curv 19 1.79813e-20
+	p3d_add_vert_curv 20 2.51824e-17
+	p3d_add_vert_curv 21 0.644226
+	p3d_add_vert_curv 22 0.514187
+	p3d_add_vert_curv 23 8.3692e-18
+	p3d_add_vert_curv 24 3.16305e-17
+	p3d_add_vert_curv 25 4.29825e-17
+	p3d_add_vert_curv 26 3.59626e-20
+	p3d_add_vert_curv 27 4.24972e-18
+	p3d_add_vert_curv 28 1.34159e-17
+	p3d_add_vert_curv 29 8.45446e-19
+	p3d_add_vert_curv 30 0.471911
+	p3d_add_vert_curv 31 0.621309
+	p3d_add_vert_curv 32 1.36639e-20
+	p3d_add_vert_curv 33 0.815687
+	p3d_add_vert_curv 34 1.52314e-17
+	p3d_add_vert_curv 35 4.51725e-17
+	p3d_add_vert_curv 36 0.471911
+	p3d_add_vert_curv 37 1.28993e-17
+	p3d_add_vert_curv 38 0.555513
+	p3d_add_vert_curv 39 8.45446e-19
+	p3d_add_vert_curv 40 4.74698e-17
+	p3d_add_vert_curv 41 0.473673
+	p3d_add_vert_curv 42 4.4059e-18
+	p3d_add_vert_curv 43 1.36639e-20
+	p3d_add_vert_curv 44 1.36639e-20
+	p3d_add_vert_curv 45 1.36639e-20
+	p3d_add_vert_curv 46 0.430254
+	p3d_add_vert_curv 47 0.644226
+	p3d_add_vert_curv 48 3.39805e-18
+	p3d_add_vert_curv 49 2.5904e-18
+	p3d_add_vert_curv 50 2.83158e-18
+	p3d_add_vert_curv 51 0.430254
+	p3d_add_vert_curv 52 8.15646e-18
+	p3d_add_vert_curv 53 1.02567e-17
+	p3d_add_vert_curv 54 1.61503e-18
+	p3d_add_vert_curv 55 0.815687
+	p3d_add_vert_curv 56 0.514187
+	p3d_add_vert_curv 57 2.73278e-20
+	p3d_add_vert_curv 58 2.79564e-17
+	p3d_add_vert_curv 59 1.36639e-20
+	p3d_add_vert_curv 60 1.36639e-20
+	p3d_add_vert_curv 61 1.36639e-20
+	p3d_add_vert_curv 62 1.36639e-20
+	p3d_add_vert_curv 63 1.36639e-20
+	p3d_add_vert_curv 64 1.36639e-20
+	p3d_add_vert_curv 65 1.5383e-20
+	p3d_add_vert_curv 66 4.07723e-19
+	p3d_add_vert_curv 67 2.29945e-17
+	p3d_add_vert_curv 68 6.60853e-19
+	p3d_add_vert_curv 69 0.471911
+	p3d_add_vert_curv 70 1.29225e-18
+	p3d_add_vert_curv 71 1.34159e-17
+	p3d_add_vert_curv 72 4.26555e-18
+	p3d_add_vert_curv 73 2.797e-17
+	p3d_add_vert_curv 74 1.36639e-20
+	p3d_add_vert_curv 75 1.36639e-20
+	p3d_add_vert_curv 76 1.36639e-20
+	p3d_add_vert_curv 77 1.36639e-20
+	p3d_add_vert_curv 78 3.22067e-19
+	p3d_add_vert_curv 79 0.471911
+	p3d_add_vert_curv 80 1.7597e-20
+	p3d_add_vert_curv 81 8.10023e-19
+	p3d_add_vert_curv 82 0.755988
+	p3d_add_vert_curv 83 0.471911
+	p3d_add_vert_curv 84 0.621309
+	p3d_add_vert_curv 85 1
+	p3d_add_vert_curv 86 8.10023e-19
+	p3d_add_vert_curv 87 0.755988
+	p3d_add_vert_curv 88 0.473673
+	p3d_add_vert_curv 89 4.25847e-18
+	p3d_add_vert_curv 90 3.12996e-17
+	p3d_add_vert_curv 91 0.471911
+	p3d_add_vert_curv 92 0.621309
+	p3d_add_vert_curv 93 2.5904e-18
+	p3d_add_vert_curv 94 3.49247e-18
+	p3d_add_vert_curv 95 0.555513
+	p3d_add_vert_curv 96 7.90748e-18
+	p3d_add_vert_curv 97 2.02349e-17
+	p3d_add_vert_curv 98 4.24958e-18
+	p3d_add_vert_curv 99 1.36639e-20
+	p3d_add_vert_curv 100 2.79564e-17
+	p3d_add_vert_curv 101 2.73278e-20
+	p3d_add_vert_curv 102 2.73278e-20
+	p3d_add_vert_curv 103 8.13522e-18
+	p3d_add_vert_curv 104 0.644226
+	p3d_add_vert_curv 105 4.82585e-19
+	p3d_add_vert_curv 106 1.72805e-17
+	p3d_add_vert_curv 107 2.98273e-17
+	p3d_add_vert_curv 108 1.36639e-20
+	p3d_add_vert_curv 109 8.10023e-19
+	p3d_add_vert_curv 110 1.36639e-20
+	p3d_add_vert_curv 111 1.36639e-20
+	p3d_add_vert_curv 112 4.53861e-17
+	p3d_add_vert_curv 113 1.38979e-17
+	p3d_add_vert_curv 114 7.44772e-19
+	p3d_add_vert_curv 115 4.24972e-18
+	p3d_add_vert_curv 116 8.15321e-18
+	p3d_add_vert_curv 117 4.25847e-18
+	p3d_add_vert_curv 118 1
+	p3d_add_vert_curv 119 8.10023e-19
+	p3d_add_vert_curv 120 0.728105
+	p3d_add_vert_curv 121 1.7597e-20
+	p3d_add_vert_curv 122 2.84276e-18
+	p3d_add_vert_curv 123 0.555513
+	p3d_add_vert_curv 124 4.66404e-19
+	p3d_add_vert_curv 125 1.36639e-20
+	p3d_add_vert_curv 126 1.5383e-20
+	p3d_add_vert_curv 127 0.41285
+	p3d_add_vert_curv 128 0.514187
+	p3d_add_vert_curv 129 8.64404e-18
+	p3d_add_vert_curv 130 6.26897e-18
+	p3d_add_vert_curv 131 0
+	p3d_add_vert_curv 132 1.65782e-18
+	p3d_add_vert_curv 133 0
+	p3d_add_vert_curv 134 2.797e-17
+	p3d_add_vert_curv 135 1.36639e-20
+	p3d_add_vert_curv 136 0.755988
+	p3d_add_vert_curv 137 1.81023e-17
+	p3d_add_vert_curv 138 8.10023e-19
+	p3d_add_vert_curv 139 0.815687
+	p3d_add_vert_curv 140 1.52314e-17
+	p3d_add_vert_curv 141 2.5904e-18
+	p3d_add_vert_curv 142 2.92265e-20
+	p3d_add_vert_curv 143 7.0083e-18
+	p3d_add_vert_curv 144 0.471911
+	p3d_add_vert_curv 145 2.797e-17
+	p3d_add_vert_curv 146 1.36639e-20
+	p3d_add_vert_curv 147 1.9633e-17
+	p3d_add_vert_curv 148 1.71954e-17
+	p3d_add_vert_curv 149 1.57623e-17
+	p3d_add_vert_curv 150 6.72052e-19
+	p3d_add_vert_curv 151 0
+	p3d_add_vert_curv 152 0.644226
+	p3d_add_vert_curv 153 0.471911
+	p3d_add_vert_curv 154 1.94337e-18
+	p3d_add_vert_curv 155 2.83158e-18
+	p3d_add_vert_curv 156 1.61945e-18
+	p3d_add_vert_curv 157 3.12996e-17
+	p3d_add_vert_curv 158 1.71954e-17
+	p3d_add_vert_curv 159 8.42431e-18
+	p3d_add_vert_curv 160 0
+	p3d_add_vert_curv 161 6.72052e-19
+	p3d_add_vert_curv 162 2.02424e-17
+	p3d_add_vert_curv 163 4.08324e-17
+	p3d_add_vert_curv 164 3.0504e-17
+	p3d_add_vert_curv 165 1.71954e-17
+	p3d_add_vert_curv 166 8.45446e-19
+	p3d_add_vert_curv 167 1.36639e-20
+	p3d_add_vert_curv 168 1.67274e-18
+	p3d_add_vert_curv 169 2.5904e-18
+	p3d_add_vert_curv 170 8.10023e-19
+	p3d_add_vert_curv 171 0.728105
+	p3d_add_vert_curv 172 1.21034e-17
+	p3d_add_vert_curv 173 1.8439e-17
+	p3d_add_vert_curv 174 7.4239e-18
+	p3d_add_vert_curv 175 0.644226
+	p3d_add_vert_curv 176 4.2436e-17
+	p3d_add_vert_curv 177 4.25847e-18
+	p3d_add_vert_curv 178 3.0504e-17
+	p3d_add_vert_curv 179 1.36639e-20
+	p3d_add_vert_curv 180 4.53861e-17
+	p3d_add_vert_curv 181 1.71821e-17
+	p3d_add_vert_curv 182 0.471911
+	p3d_add_vert_curv 183 0.728105
+	p3d_add_vert_curv 184 8.15321e-18
+	p3d_add_vert_curv 185 2.29945e-17
+	p3d_add_vert_curv 186 4.08259e-17
+	p3d_add_vert_curv 187 4.33001e-19
+	p3d_add_vert_curv 188 2.79564e-17
+	p3d_add_vert_curv 189 1.36639e-20
+	p3d_add_vert_curv 190 1.7597e-20
+	p3d_add_vert_curv 191 1.7597e-20
+	p3d_add_vert_curv 192 0.471911
+	p3d_add_vert_curv 193 1.36639e-20
+	p3d_add_vert_curv 194 1.36639e-20
+	p3d_add_vert_curv 195 1.36639e-20
+	p3d_add_vert_curv 196 1.71954e-17
+	p3d_add_vert_curv 197 2.73278e-20
+	p3d_add_vert_curv 198 1.36639e-20
+	p3d_add_vert_curv 199 1.7597e-20
+	p3d_add_vert_curv 200 4.66404e-19
+	p3d_add_vert_curv 201 3.49247e-18
+	p3d_add_vert_curv 202 1.71954e-17
+	p3d_add_vert_curv 203 4.85788e-18
+	p3d_add_vert_curv 204 4.15553e-17
+	p3d_add_vert_curv 205 0.755988
+	p3d_add_vert_curv 206 8.73264e-19
+	p3d_add_vert_curv 207 1.36639e-20
+	p3d_add_vert_curv 208 1.36639e-20
+	p3d_add_vert_curv 209 2.3153e-18
+	p3d_add_vert_curv 210 2.51824e-17
+	p3d_add_vert_curv 211 6.60853e-19
+	p3d_add_vert_curv 212 1.71954e-17
+	p3d_add_vert_curv 213 1.61945e-18
+	p3d_add_vert_curv 214 0.644226
+	p3d_add_vert_curv 215 7.7278e-18
+	p3d_add_vert_curv 216 1.71954e-17
+	p3d_add_vert_curv 217 0.621309
+	p3d_add_vert_curv 218 1.36639e-20
+	p3d_add_vert_curv 219 1.36639e-20
+	p3d_add_vert_curv 220 0.757564
+	p3d_add_vert_curv 221 0.41285
+	p3d_add_vert_curv 222 0.514187
+	p3d_add_vert_curv 223 2.73278e-20
+	p3d_add_vert_curv 224 4.82585e-19
+	p3d_add_vert_curv 225 3.74861e-19
+	p3d_add_vert_curv 226 3.98901e-18
+	p3d_add_vert_curv 227 1.61945e-18
+	p3d_add_vert_curv 228 1.36639e-20
+	p3d_add_vert_curv 229 1.36639e-20
+	p3d_add_vert_curv 230 1.36639e-20
+	p3d_add_vert_curv 231 0.408532
+	p3d_add_vert_curv 232 3.4037e-18
+	p3d_add_vert_curv 233 1.36639e-20
+	p3d_add_vert_curv 234 1.36639e-20
+	p3d_add_vert_curv 235 1.36639e-20
+	p3d_add_vert_curv 236 4.86542e-18
+	p3d_add_vert_curv 237 9.86437e-19
+	p3d_add_vert_curv 238 0.41285
+	p3d_add_vert_curv 239 1.05192e-17
+	p3d_add_vert_curv 240 1.71954e-17
+	p3d_add_vert_curv 241 0.621309
+	p3d_add_vert_curv 242 2.73278e-20
+	p3d_add_vert_curv 243 1.02567e-17
+	p3d_add_vert_curv 244 4.85788e-18
+	p3d_add_vert_curv 245 1.21034e-17
+	p3d_add_vert_curv 246 2.51824e-17
+	p3d_add_vert_curv 247 0.644226
+	p3d_add_vert_curv 248 1.34159e-17
+	p3d_add_vert_curv 249 2.73278e-20
+	p3d_add_vert_curv 250 2.73278e-20
+	p3d_add_vert_curv 251 2.797e-17
+	p3d_add_vert_curv 252 0.621309
+	p3d_add_vert_curv 253 0.621309
+	p3d_add_vert_curv 254 1.36639e-20
+	p3d_add_vert_curv 255 1.36639e-20
+	p3d_add_vert_curv 256 5.34252e-18
+	p3d_add_vert_curv 257 1.36639e-20
+	p3d_add_vert_curv 258 3.39805e-18
+	p3d_add_vert_curv 259 8.10023e-19
+	p3d_add_vert_curv 260 0.612072
+	p3d_add_vert_curv 261 2.797e-17
+	p3d_add_vert_curv 262 2.73278e-20
+	p3d_add_vert_curv 263 1.93237e-20
+	p3d_add_vert_curv 264 1.63654e-18
+	p3d_add_vert_curv 265 1.36639e-20
+	p3d_add_vert_curv 266 1.93237e-20
+	p3d_add_vert_curv 267 1.36639e-20
+	p3d_add_vert_curv 268 0.621309
+	p3d_add_vert_curv 269 2.73278e-20
+	p3d_add_vert_curv 270 2.73278e-20
+	p3d_add_vert_curv 271 9.37152e-19
+	p3d_add_vert_curv 272 2.73278e-20
+	p3d_add_vert_curv 273 2.79564e-17
+	p3d_add_vert_curv 274 8.10023e-19
+	p3d_add_vert_curv 275 4.66404e-19
+	p3d_add_vert_curv 276 0.430254
+	p3d_add_vert_curv 277 0.914027
+	p3d_add_vert_curv 278 2.91347e-18
+	p3d_add_vert_curv 279 2.73278e-20
+	p3d_add_vert_curv 280 8.13522e-18
+	p3d_add_vert_curv 281 8.10023e-19
+	p3d_add_vert_curv 282 2.92265e-20
+	p3d_add_vert_curv 283 7.0083e-18
+	p3d_add_vert_curv 284 1.76217e-18
+	p3d_add_vert_curv 285 8.45446e-19
+	p3d_add_vert_curv 286 1.36639e-20
+	p3d_add_vert_curv 287 0.41285
+	p3d_add_vert_curv 288 0.621309
+	p3d_add_vert_curv 289 0.621309
+	p3d_add_vert_curv 290 1.36639e-20
+	p3d_add_vert_curv 291 1.36639e-20
+	p3d_add_vert_curv 292 1.34159e-17
+	p3d_add_vert_curv 293 0.644226
+	p3d_add_vert_curv 294 6.02792e-19
+	p3d_add_vert_curv 295 1.36639e-20
+	p3d_add_vert_curv 296 2.797e-17
+	p3d_add_vert_curv 297 0.621309
+	p3d_add_vert_curv 298 1.36639e-20
+	p3d_add_vert_curv 299 0.41285
+	p3d_add_vert_curv 300 0.514187
+	p3d_add_vert_curv 301 0.514187
+	p3d_add_vert_curv 302 8.15321e-18
+	p3d_add_vert_curv 303 2.797e-17
+	p3d_add_vert_curv 304 0.514187
+	p3d_add_vert_curv 305 8.73264e-19
+	p3d_add_vert_curv 306 0.621309
+	p3d_add_vert_curv 307 0.755988
+	p3d_add_vert_curv 308 2.02424e-17
+	p3d_add_vert_curv 309 2.73278e-20
+	p3d_add_vert_curv 310 1.36639e-20
+	p3d_add_vert_curv 311 1.36639e-20
+	p3d_add_vert_curv 312 4.86542e-18
+	p3d_add_vert_curv 313 1.02567e-17
+	p3d_add_vert_curv 314 8.10023e-19
+	p3d_add_vert_curv 315 2.47775e-18
+	p3d_add_vert_curv 316 1.36639e-20
+	p3d_add_vert_curv 317 3.61537e-17
+	p3d_add_vert_curv 318 3.98901e-18
+	p3d_add_vert_curv 319 4.36927e-20
+	p3d_add_vert_curv 320 2.83158e-18
+	p3d_add_vert_curv 321 1.36639e-20
+	p3d_add_vert_curv 322 0.514187
+	p3d_add_vert_curv 323 7.44772e-19
+	p3d_add_vert_curv 324 0.755988
+	p3d_add_vert_curv 325 4.86542e-18
+	p3d_add_vert_curv 326 2.73278e-20
+	p3d_add_vert_curv 327 1.02567e-17
+	p3d_add_vert_curv 328 1.68937e-18
+	p3d_add_vert_curv 329 1.64436e-17
+	p3d_add_vert_curv 330 8.15321e-18
+	p3d_add_vert_curv 331 1.02567e-17
+	p3d_add_vert_curv 332 4.86542e-18
+	p3d_add_vert_curv 333 1.36639e-20
+	p3d_add_vert_curv 334 0.555513
+	p3d_add_vert_curv 335 1.36639e-20
+  p3d_end_desc_poly
+p3d_end_desc
+p3d_end_desc
+
+p3d_set_body_poly_color DuploBox 1 Any 0.8 0.8 0

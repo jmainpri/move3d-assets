@@ -1,0 +1,30 @@
+p3d_beg_desc P3D_ENV test
+
+ p3d_beg_desc P3D_ROBOT CylinderRob  
+ p3d_beg_desc_jnt P3D_PLAN  
+ p3d_set_pos_xyz 0.0 .0 0.0 0.0 0.0 0.0  
+ p3d_set_prev_jnt 0  
+ p3d_set_dof 0.0 0.0 0.0  
+ p3d_set_dof_vmin -1.570796 -2.094395 0.0
+ p3d_set_dof_vmax 1.570796 2.094395 0.0  
+ p3d_end_desc  
+
+
+ p3d_CostEnvironment
+
+ p3d_beg_desc P3D_BODY body  
+  
+ p3d_add_desc_cylindre englobant 0.1 0.1 P3D_REAL  
+ p3d_set_prim_pos englobant 0.0 0.0 0.1 0.0 0.0 0.0  
+  
+ p3d_end_desc #BODY  
+  
+ p3d_end_desc #ROBOT  
+
+ p3d_read_macro test.macro OB_Plane
+
+p3d_end_desc
+
+p3d_set_env_box -1.570796 1.570796 -2.094395 2.094395 0 3
+p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -1.570796 -2.094395 0.000000 
+p3d_set_robot_goto    0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.570796 2.094395 0.0 

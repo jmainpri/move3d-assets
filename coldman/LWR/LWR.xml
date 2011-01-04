@@ -1,0 +1,242 @@
+<!-- Kuka LWR arm model -->
+
+<robot name="LWR">
+<name> LWR </name>
+<models_directory> ./bodies </models_directory>
+<joint name="root">
+  <name> root </name>
+  <type> revolute </type>
+  <transformation>
+    <translation> 0 0 0.78 </translation>
+  </transformation>  
+  <qmin> 0  </qmin>
+  <qmax> 0  </qmax>
+  <q> 0 </q>       
+  
+  <body name="base">
+    <name> base  </name> 
+      <file> base.obj  </file>
+      <transformation>
+        <translation> 0 0 0.317 </translation>
+      </transformation>    
+      <color> 0.7 0.87 0.88 1.0 </color> 
+  </body>  
+  <body name="GBase">
+    <name> GBase  </name> 
+    <box> 0.16 0.16 0.12  </box>
+    <transformation>
+      <translation> 0 0 0.07 </translation>  
+    </transformation>    
+    <collision>  yes  </collision>
+    <display>  no  </display>
+    <color>  1.0 1.0 0.0 1.0 </color> 
+  </body>   
+
+
+ 
+  <joint name="Joint1">
+    <name> Joint1 </name>
+      <type> revolute </type>
+      <transformation>
+         <translation> 0 0 0.317 </translation>
+      </transformation>         
+      <qmin> -170 </qmin>
+      <qmax> 170 </qmax>  
+
+      <body name="kuka1">
+        <name> kuka1  </name> 
+        <file> kuka1.obj  </file>
+        <color> 1.0 0.3922 0.0 1.0 </color>
+      </body>  
+
+  <body name="GKuka1">
+    <name> GKuka1  </name> 
+    <box> 0.16 0.23 0.26  </box>
+    <transformation>
+      <translation> 0 0 -0.06 </translation>  
+    </transformation>    
+    <collision>  yes  </collision>
+    <display>  no  </display>
+    <color>  1.0 1.0 0.0 1.0 </color> 
+  </body>   
+
+
+      <joint name="Joint2">
+         <name> Joint2 </name>
+         <type> revolute </type>
+         <transformation>
+            <YPR_angles> 0 0 90 </YPR_angles>     
+         </transformation>   
+         <qmin> -120 </qmin>
+         <qmax>  120 </qmax> 
+
+         <body name="kuka2">
+           <name> kuka2  </name> 
+           <transformation>
+            <YPR_angles> 0 0 90 </YPR_angles>     
+           </transformation>   
+           <file> kuka1.obj  </file>  
+           <color> 1.0 0.3922 0.0 1.0 </color>
+         </body>  
+  <body name="GKuka2">
+    <name> GKuka2  </name> 
+    <box> 0.16 0.27 0.23  </box>
+    <transformation>
+      <translation> 0. 0.06 0 </translation>  
+    </transformation>    
+    <collision>  yes  </collision>
+    <display>  no  </display>
+    <color>  1.0 1.0 0.0 1.0 </color> 
+  </body>   
+
+
+         <joint name="Joint3">
+         <name> Joint3 </name>
+         <type> revolute </type>
+         <transformation>
+            <translation> 0 0.4 0 </translation>
+            <YPR_angles> 0 0 -90 </YPR_angles>     
+         </transformation>   
+         <qmin> -170 </qmin>
+         <qmax>  170 </qmax> 
+
+         <body name="kuka3">
+           <name> kuka3  </name> 
+          <transformation>
+            <YPR_angles> 180 0 0 </YPR_angles>     
+           </transformation>   
+           <file> kuka1.obj  </file>  
+           <color> 1.0 0.3922 0.0 1.0 </color>
+         </body> 
+
+   <body name="GKuka3">
+    <name> GKuka3  </name> 
+    <box> 0.16 0.23 0.26  </box>
+    <transformation>
+      <translation> 0. 0.0 -0.06 </translation>  
+    </transformation>    
+    <collision>  yes  </collision>
+    <display>  no  </display>
+    <color>  1.0 1.0 0.0 1.0 </color> 
+  </body>  
+
+         <joint name="Joint4">
+           <name> Joint4 </name>
+           <type> revolute </type>
+           <transformation>
+              <YPR_angles> 0 0 -90 </YPR_angles>     
+           </transformation>   
+           <qmin> -120 </qmin>
+           <qmax>  120 </qmax> 
+
+           <body name="kuka4">
+             <name> kuka4  </name> 
+             <transformation>
+              <YPR_angles> 180 0 90 </YPR_angles>     
+             </transformation>   
+             <file> kuka1.obj  </file>  
+             <color> 1.0 0.3922 0.0 1.0 </color>
+           </body> 
+
+  <body name="GKuka4">
+    <name> GKuka4  </name> 
+    <box> 0.16 0.27 0.23  </box>
+    <transformation>
+      <translation> 0.0 -0.06 0.0 </translation>  
+    </transformation>    
+    <collision>  yes  </collision>
+    <display>  no  </display>
+    <color>  1.0 1.0 0.0 1.0 </color> 
+  </body>  
+
+           <joint name="Joint5">
+             <name> Joint5 </name>
+             <type> revolute </type>
+             <transformation>
+                <translation> 0 -0.4 0 </translation>
+                <YPR_angles> 0 0 90 </YPR_angles>     
+             </transformation>   
+             <qmin> -170 </qmin>
+             <qmax>  170 </qmax> 
+
+             <body name="kuka5">
+               <name> kuka5  </name> 
+               <file> kuka5.obj  </file>  
+               <color> 1.0 0.3922 0.0 1.0 </color>
+             </body> 
+
+   <body name="GKuka5">
+    <name> GKuka5  </name> 
+    <box> 0.15 0.22 0.15  </box>
+    <transformation>
+      <translation> 0. 0.0 -0.16 </translation>  
+    </transformation>    
+    <collision>  yes  </collision>
+    <display>  no  </display>
+    <color>  1.0 1.0 0.0 1.0 </color> 
+  </body>  
+
+             <joint name="Joint6">
+               <name> Joint6 </name>
+               <type> revolute </type>
+               <transformation>
+                  <YPR_angles> 0 0 90 </YPR_angles>     
+               </transformation>   
+               <qmin> -120 </qmin>
+               <qmax>  120 </qmax> 
+
+               <body name="kuka6">
+                 <name> kuka6  </name> 
+                 <file> kuka6.obj  </file>  
+                 <color> 1.0 0.3922 0.0 1.0 </color>
+               </body> 
+
+
+   <body name="GKuka6">
+    <name> GKuka6  </name> 
+    <box> 0.15 0.15 0.2  </box>
+    <transformation>
+      <translation> 0. 0.0 0.0 </translation>  
+    </transformation>    
+    <collision>  yes  </collision>
+    <display>  no  </display>
+    <color>  1.0 1.0 0.0 1.0 </color> 
+  </body>  
+
+               <joint name="Joint7">
+                 <name> Joint7 </name>
+                 <type> revolute </type>
+                 <transformation>
+                    <YPR_angles> 0 0 -90 </YPR_angles>     
+                 </transformation>   
+                 <qmin> -170 </qmin>
+                 <qmax>  170 </qmax> 
+
+                 <body name="kuka7">
+                   <name> kuka7  </name> 
+                   <file> kuka7.obj  </file>  
+                   <color> 1.0 0.3922 0.0 1.0 </color>
+                 </body> 
+               </joint>
+             </joint>
+           </joint>
+         </joint>  
+       </joint>  
+    </joint>  
+  </joint>  
+</joint>
+<!-- <subrobot>
+  <connection> Joint7 </connection>
+  <name> SAHandRight </name>
+  <transformation>
+    <translation> 0 0 0.07 </translation>
+    <YPR_angles> 0 0 0 </YPR_angles>
+  </transformation>  
+
+  <robot_file> SAHand2.xml </robot_file> 
+</subrobot> -->
+
+
+
+
+</robot>

@@ -1,0 +1,53 @@
+p3d_beg_desc P3D_ENV MobileDynami
+
+#   p3d_beg_desc P3D_OBSTACLE BaseSupport1
+#     p3d_add_desc_box base_foot_1 4.700 4.700 0.1
+#     p3d_set_prim_pos base_foot_1 0 0 -13 0 0 0
+#   p3d_end_desc
+#   p3d_read_macro OB_dalles.macro dalle 0.001
+#   p3d_set_obst_pos dalle -2350 850 -10.5 0.0 90.0 0.0
+
+  p3d_read_macro ./Objects/Static/laasShelf.macro shelf
+  p3d_set_obst_pos shelf 1.500 1.600 0 0 0 0
+  p3d_read_macro ./Objects/Static/laasShelf.macro shelf2
+  p3d_set_obst_pos shelf2 -1.500 1.600 0 0 0 0
+
+  p3d_read_macro ./Objects/Static/wodenChair.macro chair1
+  p3d_set_obst_pos chair1 -0.600 0.400 0 0 0 0
+  p3d_read_macro ./Objects/Static/wodenChair.macro chair2
+  p3d_set_obst_pos chair2 0.600 0.400 0 0 0 180
+  p3d_read_macro ./Objects/Static/wodenChair.macro chair3
+  p3d_set_obst_pos chair3 0 -0.600 0 0 0 90
+  
+  p3d_read_macro ./Objects/Static/wodenTable.macro table
+  p3d_set_obst_pos table  0 0.400 0 0 0 0
+
+  p3d_read_macro JustinMobile.macro justin
+p3d_end_desc
+######################
+######## COLOR #######
+######################
+p3d_set_env_box -3 3 -2 2 0.01 2.500
+
+######################
+##### CONSTRAINTS ####
+######################
+#Head
+p3d_constraint p3d_fixed_jnt 1 7  0  1 0 0
+p3d_constraint p3d_fixed_jnt 1 8  0  1 0 0
+#Fingers
+#right
+# p3d_constraint p3d_fixed_jnt 1 26  0  1 -2.65 0
+# p3d_constraint p3d_fixed_jnt 1 27  0  1 4.41 0
+# p3d_constraint p3d_fixed_jnt 1 28  0  1 0 0
+# p3d_constraint p3d_fixed_jnt 1 29  0  1 0 0
+# #left
+# p3d_constraint p3d_fixed_jnt 1 31  0  1 0 0
+# p3d_constraint p3d_fixed_jnt 1 32  0  1 0 0
+# p3d_constraint p3d_fixed_jnt 1 33  0  1 0 0
+# p3d_constraint p3d_fixed_jnt 1 34  0  1 0 0
+
+# Torso J3
+p3d_constraint p3d_min_max_dofs 0  2 3 4  2 0 135  0
+# Torso J4
+p3d_constraint p3d_lin_rel_dofs 1 5  2 3 4  3 -1 -1 0  0

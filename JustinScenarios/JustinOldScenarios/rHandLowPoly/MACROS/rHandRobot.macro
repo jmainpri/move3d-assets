@@ -1,0 +1,61 @@
+p3d_beg_desc P3D_ROBOT
+   p3d_beg_desc_jnt P3D_FIXED # J1
+    p3d_set_name Wrist
+    p3d_set_prev_jnt 0
+    p3d_set_pos_axe 0 0 0 0 0 1
+    p3d_set_dof_vmin -180
+    p3d_set_dof_vmax 180
+  p3d_end_desc
+  p3d_read_macro rHand.macro rHand
+
+p3d_end_desc
+
+######   POSITIONS   ######
+
+p3d_set_body_abs_pos rHand.rPalm.rPalm 0 0 0 90 0 0
+p3d_set_body_abs_pos rHand.rThumbMetacarpal.rThumbMetacarpal 0 0 0 90 0 0
+p3d_set_body_abs_pos rHand.rThumbProximal.rThumbProximal 0 0 0 90 0 0
+p3d_set_body_abs_pos rHand.rThumbIntermediate.rThumbIntermediate 0 0 0 90 0 0
+p3d_set_body_abs_pos rHand.rThumbDistal.rThumbDistal 0 0 0 90 0 0
+
+p3d_set_body_abs_pos rHand.rRingMetacarpal.rRingMetacarpal 0 0 0 90 0 0
+p3d_set_body_abs_pos rHand.rRingProximal.rRingProximal 0 0 0 90 0 0
+p3d_set_body_abs_pos rHand.rRingIntermediate.rRingIntermediate 0 0 0 90 0 0
+p3d_set_body_abs_pos rHand.rRingDistal.rRingDistal 0 0 0 90 0 0
+
+p3d_set_body_abs_pos rHand.rMiddleMetacarpal.rMiddleMetacarpal 0 0 0 90 0 0
+p3d_set_body_abs_pos rHand.rMiddleProximal.rMiddleProximal 0 0 0 90 0 0
+p3d_set_body_abs_pos rHand.rMiddleIntermediate.rMiddleIntermediate 0 0 0 90 0 0
+p3d_set_body_abs_pos rHand.rMiddleDistal.rMiddleDistal 0 0 0 90 0 0
+
+p3d_set_body_abs_pos rHand.rIndexMetacarpal.rIndexMetacarpal 0 0 0 90 0 0
+p3d_set_body_abs_pos rHand.rIndexProximal.rIndexProximal 0 0 0 90 0 0
+p3d_set_body_abs_pos rHand.rIndexIntermediate.rIndexIntermediate 0 0 0 90 0 0
+p3d_set_body_abs_pos rHand.rIndexDistal.rIndexDistal 0 0 0 90 0 0
+
+######   COLORS   ######
+
+
+p3d_set_body_poly_color rHand.rPalm.rPalm 1 Any 0.18 0.28 0.64
+p3d_set_body_poly_color rHand.rPalm.rPalm 2 Any 0.296 0.524 0.281
+p3d_set_body_poly_color rHand.rPalm.rPalm 3 Any 0.18 0.28 0.64
+
+p3d_set_body_poly_color rHand.rThumbMetacarpal.rThumbMetacarpal 1 Any 0.75 0.75 0.75
+p3d_set_body_poly_color rHand.rThumbProximal.rThumbProximal 1 Any 0.18 0.28 0.64
+p3d_set_body_poly_color rHand.rThumbIntermediate.rThumbIntermediate 1 Any 0.18 0.28 0.64
+p3d_set_body_poly_color rHand.rThumbDistal.rThumbDistal 1 Any 0.18 0.28 0.64
+
+p3d_set_body_poly_color rHand.rRingMetacarpal.rRingMetacarpal 1 Any 0.75 0.75 0.75
+p3d_set_body_poly_color rHand.rRingProximal.rRingProximal 1 Any 0.18 0.28 0.64
+p3d_set_body_poly_color rHand.rRingIntermediate.rRingIntermediate 1 Any 0.18 0.28 0.64
+p3d_set_body_poly_color rHand.rRingDistal.rRingDistal 1 Any 0.18 0.28 0.64
+
+p3d_set_body_poly_color rHand.rMiddleMetacarpal.rMiddleMetacarpal 1 Any 0.75 0.75 0.75
+p3d_set_body_poly_color rHand.rMiddleProximal.rMiddleProximal 1 Any 0.18 0.28 0.64
+p3d_set_body_poly_color rHand.rMiddleIntermediate.rMiddleIntermediate 1 Any 0.18 0.28 0.64
+p3d_set_body_poly_color rHand.rMiddleDistal.rMiddleDistal 1 Any 0.18 0.28 0.64
+
+p3d_set_body_poly_color rHand.rIndexMetacarpal.rIndexMetacarpal 1 Any 0.75 0.75 0.75
+p3d_set_body_poly_color rHand.rIndexProximal.rIndexProximal 1 Any 0.18 0.28 0.64
+p3d_set_body_poly_color rHand.rIndexIntermediate.rIndexIntermediate 1 Any 0.18 0.28 0.64
+p3d_set_body_poly_color rHand.rIndexDistal.rIndexDistal 1 Any 0.18 0.28 0.64

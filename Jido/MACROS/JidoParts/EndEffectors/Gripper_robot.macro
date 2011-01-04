@@ -1,0 +1,71 @@
+
+p3d_beg_desc P3D_ROBOT
+  p3d_beg_desc_jnt P3D_FREEFLYER    
+    p3d_set_name wristJoint #J1
+    p3d_set_pos_axe 0 0 0 0 0 1
+    p3d_set_prev_jnt 0
+    p3d_set_dof 0 0 0 0 0 0
+    p3d_set_dof_vmin -10.5 -10.5 -0.5 -180 -180 -180
+    p3d_set_dof_vmax 10.5 10.5 3 180 180 180
+  p3d_end_desc
+
+  p3d_read_macro ./JidoParts/EndEffectors/Gripper/Gripper.macro hand
+
+  p3d_beg_desc_jnt P3D_TRANSLATE #J2
+    p3d_set_name fingerJointGripper_0
+    p3d_set_prev_jnt 1
+    p3d_set_pos_relative
+    p3d_set_pos_axe 0 0 0 -1 0 0
+    p3d_set_dof_vmin 0
+    p3d_set_dof_vmax 0.0325
+  p3d_end_desc
+  p3d_read_macro ./JidoParts/EndEffectors/Gripper/Gripper1.macro hand.finger1
+  p3d_read_macro ./JidoParts/EndEffectors/Gripper/Gripper1s.macro hand.finger1
+  p3d_beg_desc_jnt P3D_TRANSLATE #J3
+    p3d_set_name fingerJoint2_0
+    p3d_set_prev_jnt 1
+    p3d_set_pos_relative
+    p3d_set_pos_axe 0 0 0 1 0 0
+    p3d_set_dof_vmin 0
+    p3d_set_dof_vmax 0.0325
+  p3d_end_desc
+  p3d_read_macro ./JidoParts/EndEffectors/Gripper/Gripper2.macro hand.finger2
+  p3d_read_macro ./JidoParts/EndEffectors/Gripper/Gripper2sLeft.macro hand.finger2
+  p3d_read_macro ./JidoParts/EndEffectors/Gripper/Gripper2sRight.macro hand.finger3
+
+
+p3d_end_desc
+
+### POSITIONS
+#p3d_set_body_abs_pos hand.palm 0 0 -1.523 0 0 22.5
+#p3d_set_body_abs_pos hand.finger1.finger1 0 0 -1.523 0 0 22.5
+#p3d_set_body_abs_pos hand.finger2.finger2 0 0 -1.523 0 0 22.5
+
+#p3d_set_body_abs_pos hand.finger1.fingertip 0 0 -1.523 0 0 22.5
+#p3d_set_body_abs_pos hand.finger2.fingertip 0 0 -1.523 0 0 22.5
+#p3d_set_body_abs_pos hand.finger3.fingertip 0 0 -1.523 0 0 22.5
+
+p3d_set_body_abs_pos hand.palm 0 0 -1.523 0 0 112.5
+p3d_set_body_abs_pos hand.finger1.finger1 0 0 -1.523 0 0 112.5
+p3d_set_body_abs_pos hand.finger2.finger2 0 0 -1.523 0 0 112.5
+
+p3d_set_body_abs_pos hand.finger1.fingertip 0 0 -1.523 0 0 112.5
+p3d_set_body_abs_pos hand.finger2.fingertip 0 0 -1.523 0 0 112.5
+p3d_set_body_abs_pos hand.finger3.fingertip 0 0 -1.523 0 0 112.5
+
+### CONSTRAINTS
+#contrainte sur la fermeture de la pince:
+p3d_constraint p3d_lin_rel_dofs 1 3 1 2 2 1 0.0 0 
+
+### COLORS
+p3d_set_body_color hand.palm Any 0.5 0.5 0.9
+
+p3d_set_body_color hand.finger2.finger2 Any 0.5 0.9 0.9
+
+p3d_set_body_color hand.finger1.finger1 Any 0.5 0.9 0.9
+
+p3d_set_body_color hand.finger1.fingertip Any 1.0 0.0 0.0
+
+p3d_set_body_color hand.finger2.fingertip Any 0.0 1.0 0.0
+
+p3d_set_body_color hand.finger3.fingertip Any 0.0 0.0 1.0

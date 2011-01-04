@@ -1,0 +1,97 @@
+p3d_beg_desc P3D_ENV narrowsquare
+
+  p3d_beg_desc P3D_ROBOT scissors
+    p3d_add_desc_jnt P3D_PLAN 0 0 0  0 0 1
+                              10 -24.7 24.7
+                              10 -24.7 24.7
+                              0 -180 180
+                              0
+#     p3d_add_desc_jnt P3D_ROTATE 0 0 0.05 1 0 0 0 -180 180 1
+    p3d_beg_desc P3D_BODY body_base
+      p3d_add_desc_box base 5 1 1
+      p3d_set_prim_pos base 0 0 0.5 0 0 0
+    p3d_end_desc
+# 
+#     p3d_add_desc_jnt P3D_ROTATE 0.221 0 0.05 0 1 0 0 -100 100 2
+# 
+#     p3d_beg_desc P3D_BODY body_arm
+#       p3d_add_desc_box base 1 0.1 0.06
+#       p3d_set_prim_pos base 0.671 0 0.05 0.0 0.0 0.0
+#     p3d_end_desc
+  p3d_end_desc
+
+  p3d_beg_desc P3D_OBSTACLE wall
+    p3d_add_desc_box wall1 50.39 0.4 2.0
+    p3d_set_prim_pos wall1 0.0 -25.0 1.0 0.0 0.0 0.0
+    p3d_add_desc_box wall2 50.39 0.4 2.0
+    p3d_set_prim_pos wall2 0.0 25.0 1.0 0.0 0.0 0
+    p3d_add_desc_box wall3 0.4 50.39 1.99
+    p3d_set_prim_pos wall3 -25.0 0.0 0.99 0.0 0.0 0
+    p3d_add_desc_box wall4 0.4 50.39 1.99
+    p3d_set_prim_pos wall4 25.0 0.0 0.99 0.0 0.0 0
+  p3d_end_desc
+  
+#   p3d_beg_desc P3D_OBSTACLE h.ground
+#     p3d_add_desc_box ground 9 100.4 0.1
+#     p3d_set_prim_pos ground 0.0 0.0 -0.06 0 0 0
+#   p3d_end_desc
+#   
+
+
+
+#   p3d_beg_desc P3D_OBSTACLE polyhedre
+#     p3d_add_desc_box obsboxbas 9 47.5 1.99
+#     p3d_set_prim_pos obsboxbas 0 -26.24 0.99 0.0 0.0 0
+#     p3d_add_desc_box obsboxhaut 9 47.5 1.99
+#     p3d_set_prim_pos obsboxhaut 0 26.24 0.99 0.0 0.0 0
+#   p3d_end_desc
+#    p3d_set_obst_color polyhedre Grey
+
+  p3d_beg_desc P3D_OBSTACLE polyhedre
+    p3d_add_desc_box obsboxbas 9 23.8 1.99
+    p3d_set_prim_pos obsboxbas 0 -12.59 0.99 0.0 0.0 0
+    p3d_add_desc_box obsboxhaut 9 23.8 1.99
+    p3d_set_prim_pos obsboxhaut 0 12.59 0.99 0.0 0.0 0
+  p3d_end_desc
+   p3d_set_obst_color polyhedre Grey
+
+
+#    p3d_read_macro lefttriangle.macro g1
+#    p3d_set_obst_pos g1 -3 -2.5 0.02 0 0 90
+#    p3d_read_macro lefttriangle.macro g2
+#    p3d_set_obst_pos g2 -3 -2.5 2.02 180 0 90
+#    p3d_read_macro lefttriangle.macro g3
+#    p3d_set_obst_pos g3 0 -2.5 0.02 0 0 90
+#    p3d_read_macro lefttriangle.macro g4
+#    p3d_set_obst_pos g4 0 -2.5 2.02 180 0 90
+#    p3d_read_macro lefttriangle.macro g5
+#    p3d_set_obst_pos g5 3 -2.5 0.02 0 0 90
+#    p3d_read_macro lefttriangle.macro g6
+#    p3d_set_obst_pos g6 3 -2.5 2.02 180 0 90
+#    
+#    
+#    p3d_read_macro lefttriangle.macro g7
+#    p3d_set_obst_pos g7 -4.5 2.5 0.02 0 0 -90
+#    p3d_read_macro lefttriangle.macro g8
+#    p3d_set_obst_pos g8 -1.5 2.5 2.02 180 0 -90
+#    p3d_read_macro lefttriangle.macro g9
+#    p3d_set_obst_pos g9 -1.5 2.5 0.02 0 0 -90
+#    p3d_read_macro lefttriangle.macro g10
+#    p3d_set_obst_pos g10 1.5 2.5 2.02 180 0 -90
+#    p3d_read_macro lefttriangle.macro g11
+#    p3d_set_obst_pos g11 1.5 2.5 0.02 0 0 -90
+#    p3d_read_macro lefttriangle.macro g12
+#    p3d_set_obst_pos g12 4.5 2.5 2.02 180 0 -90
+
+  p3d_set_obst_color polyhedre Grey
+p3d_end_desc
+
+
+
+
+#################################################################################
+
+p3d_set_env_box 20.0 20.0 20.0 20.0 20.0 20.0
+#p3d_create_reeds_shepp_local_method 1000.0 1
+# p3d_set_robot_current -5 -5 0 
+# p3d_set_robot_goto    4 5 0

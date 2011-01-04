@@ -1,0 +1,71 @@
+p3d_beg_desc P3D_ENV human_arms.env
+
+############
+############
+# OBSTACLE #
+############
+############
+
+p3d_beg_desc P3D_OBSTACLE land
+  p3d_add_desc_box w1 10000.0 10000.0 1.0 P3D_GRAPHIC
+  p3d_set_prim_pos w1 0.0 0.0 4.0 0.0 0.0 0.0  
+p3d_end_desc
+
+p3d_beg_desc P3D_OBSTACLE bar
+  p3d_add_desc_box r4 50.0 500.0 40.0
+  p3d_set_prim_pos r4 550.0 0.0 1200.0 0.0 0.0 0.0
+p3d_end_desc
+
+
+p3d_set_obst_color land Brown
+
+###########
+###########
+#  ROBOT  #
+###########
+###########
+
+p3d_read_macro SupermanTabla.macro Human
+
+###############################################
+
+p3d_add_desc_rob_col_init Human
+  p3d_desactivate_col_check automatic
+  p3d_desactivate_col_check AUTH1.l_shoulder AUTH3.waist
+  p3d_desactivate_col_check AUTH2.r_shoulder AUTH3.waist
+  p3d_desactivate_col_check AUTH2.r_wrist AUTH5.r_hip
+  p3d_desactivate_col_check AUTH1.l_wrist AUTH4.l_hip
+  p3d_desactivate_col_check AUTH2.r_wrist AUTH6.table
+  p3d_desactivate_col_check AUTH1.l_wrist AUTH6.table
+  p3d_desactivate_col_check AUTH2.r_elbow AUTH6.table
+  p3d_desactivate_col_check AUTH1.l_elbow AUTH6.table
+
+p3d_set_env_box -5000.0 5000.0 -5000.0 5000.0 0.0 4000.0
+
+p3d_set_robot_steering_method Linear
+
+# left arm
+p3d_constraint p3d_R7_human_arm_ik 7 14 15 16 22 26 27 28 1 58 2 0 0 1 1
+
+#RotnegXY
+p3d_set_cntrt_Tatt 0  0  0  1  0 
+		      1  0  0  0 
+	 	      0  1  0  0
+#RotXX
+p3d_set_cntrt_Tatt2 0  1  0  0 0
+ 	               0 -1  0 0
+		       0  0 -1 0
+ 
+# right arm
+# p3d_constraint p3d_R7_human_arm_ik 7 17 18 19 25 29 30 31 1 57 2 0 1 1 1
+
+#RotXY
+# p3d_set_cntrt_Tatt 1  0  0  1  0 
+# 		      1  0  0  0 
+# 	 	      0  1  0  0
+#RotXX
+# p3d_set_cntrt_Tatt2 1  1  0  0 0
+# 	               0 -1  0 0
+# 		       0  0 -1 0
+
+#p3d_set_parallel_sys fixmanip 0 56 2 0 0

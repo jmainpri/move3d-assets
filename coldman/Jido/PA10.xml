@@ -1,0 +1,207 @@
+<!-- Mitsubishi PA10 arm model -->
+<!--
+#define PA10_ARM_A2  0.450
+#define PA10_ARM_R4  0.480
+#define PA10_ARM_OF1 M_PI
+#define PA10_ARM_OF2 (-(M_PI)/2)
+#define PA10_ARM_OF3 (-(M_PI)/2)
+#define PA10_ARM_OF4 0.0
+#define PA10_ARM_OF5 0.0
+#define PA10_ARM_OF6 0.0
+#define PA10_ARM_EPSILON 0.01
+#define PA10_ARM_NB_JNT 6
+#define XARM_BASE_HEIGHT         0.317
+// #define XARM_BASE_HEIGHT         0.000
+#define PA10_6ARM_LENGTH         0.070
+ #define PA10_TOOL_LENGTH         0.199
+-->
+
+<robot name="PA10">
+<name> PA10 </name>
+<models_directory> ./PA10 </models_directory>
+<joint name="root">
+  <name> root </name>
+  <type> base </type>
+  <transformation>
+    <translation> 0 0 0.01 </translation>
+  </transformation>  
+  <qmin> 0 0  </qmin>
+  <qmax> 0 0  </qmax>
+  <q> 0 0 0 </q>       
+  
+  <body name="armBase">
+    <name> armBase  </name> 
+      <file> socle.obj  </file>
+      <transformation>
+        <translation> 0 0 0.317 </translation>
+<!--        <YPR_angles> 90 0 0 </YPR_angles> -->     
+      </transformation>    
+      <collision>  yes  </collision>
+      <color> 0.7 0.87 0.88 1.0 </color> 
+  </body>         
+  <body name="GarmBase">
+    <name> GarmBase  </name> 
+    <box> 0.27 0.27 0.27  </box>
+    <transformation>
+      <translation> 0 0 0.1 </translation>  
+    </transformation>    
+    <collision>  yes  </collision>
+    <display>  no  </display>
+    <color>  1.0 1.0 0.0 1.0 </color> 
+  </body>     
+      
+  <joint name="basePA1Joint">
+    <name> basePA1Joint </name>
+      <type> revolute </type>
+      <transformation>
+         <translation> 0 0 0.317 </translation>
+      </transformation>         
+      <qmin> -177 </qmin>
+      <qmax> 177 </qmax>     
+     
+      <body name="PA1">
+        <name> PA1  </name> 
+        <file>  pa1.obj  </file>
+      <collision>  no  </collision>
+        <color> 0.7 0.87 0.88 1.0 </color> 
+      </body>
+      <body name="GPA1">
+      <name> GPA1  </name> 
+      <file> Gpa1.obj  </file>
+      <collision>  yes  </collision>
+      <display>  no  </display>
+      <color>  1.0 1.0 0.0 1.0 </color> 
+      </body>    
+      
+      <joint name="PA1PA2Joint">
+        <name> PA1PA2Joint </name>
+        <type> revolute </type>
+        <transformation>
+          <translation> 0 0 0 </translation>     
+          <rotation_angle_and_axis> -90 1 0 0 </rotation_angle_and_axis>
+       </transformation>    
+        <qmin> -64 </qmin>
+        <qmax> 124 </qmax>      
+        
+        <body name="PA2">
+          <name> PA2  </name> 
+          <file>  pa2.obj  </file> 
+     <collision>  no  </collision>
+          <color>  0.7 0.87 0.88 1.0 </color> 
+        </body>   
+        <body name="GPA2">
+        <name> GPA2  </name> 
+        <file> Gpa2.obj  </file>
+        <collision>  yes  </collision>
+        <display>  no  </display>
+        <color> 1.0 1.0 0.0 1.0 </color> 
+        </body>  
+
+        <joint name="PA2PA3Joint">
+          <name> PA2PA3Joint </name>
+          <type> revolute </type>
+          <transformation>
+            <translation> 0 -0.45  0 </translation>  
+          </transformation>              
+          <qmin> -107 </qmin>
+          <qmax>  158 </qmax>  
+
+          <body name="PA3">
+            <name> PA3  </name> 
+            <file>  pa3.obj  </file> 
+     <collision>  no  </collision>
+            <color> 0.7 0.87 0.88 1.0 </color> 
+          </body>
+          <body name="GPA3">
+            <name> GPA3  </name> 
+            <file>  Gpa3.obj  </file>
+            <collision>  yes  </collision>
+            <display>  no  </display>
+            <color> 1.0 1.0 0.0 1.0 </color> 
+          </body>
+
+
+          <joint name="PA3PA4Joint">
+            <name> PA3PA4Joint </name>
+            <type> revolute </type>
+            <transformation>
+              <translation> 0 -0.48  0 </translation>   
+              <YPR_angles> 0 0 90 </YPR_angles>     
+            </transformation>   
+            <qmin> -255 </qmin>
+            <qmax>  255 </qmax> 
+            
+            
+          <body name="PA4">
+            <name> PA4  </name> 
+            <file>  pa4.obj  </file> 
+     <collision>  no  </collision>
+            <color> 0.7 0.87 0.88 1.0 </color> 
+          </body>
+          <body name="GPA4">
+            <name> GPA4  </name> 
+            <file>  Gpa4.obj  </file>
+            <collision>  yes  </collision>
+            <display>  no  </display>
+            <color> 1.0 1.0 0.0 1.0 </color> 
+          </body>
+          
+          
+          <joint name="PA4PA5Joint">
+            <name> PA4PA5Joint </name>
+            <type> revolute </type>
+            <transformation>
+              <translation> 0 0 0  </translation>  
+              <YPR_angles> 0 0 -90 </YPR_angles>
+            </transformation>
+            <qmin> -165 </qmin>
+            <qmax>  165 </qmax>  
+
+            <body name="PA5">
+              <name> PA5  </name> 
+              <file>  pa5.obj  </file>
+  <collision>  no  </collision>
+              <color> 0.7 0.87 0.88 1.0 </color> 
+            </body>
+            <body name="GPA5">
+              <name> GPA5  </name> 
+              <file>  Gpa5.obj  </file>
+              <collision>  yes  </collision>
+              <display>  no  </display>
+              <color> 1.0 1.0 0.0 1.0 </color> 
+            </body>
+
+
+            <joint name="PA5PA6Joint">
+              <name> PA5PA6Joint </name>
+              <type> revolute </type>
+              <transformation> 
+               <YPR_angles> 0 0 90  </YPR_angles>
+              </transformation>
+              <qmin> -255 </qmin>
+              <qmax>  255 </qmax> 
+
+              <body name="PA6">
+                <name> PA6  </name> 
+                <file>  pa6.obj  </file> 
+ <collision>  no  </collision>
+                <color> 0.7 0.87 0.88 1.0 </color> 
+              </body>      
+              <body name="GPA6">
+                <name> GPA6  </name> 
+                <file>  Gpa6.obj  </file>
+                <collision>  yes  </collision>
+                <display>  no  </display>
+                <color> 1.0 1.0 0.0 1.0 </color> 
+              </body>    
+    
+         </joint>     
+     </joint>     
+     </joint>
+     </joint>
+     </joint>  
+    </joint>
+</joint>
+
+
+</robot>

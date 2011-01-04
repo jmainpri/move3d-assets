@@ -1,0 +1,404 @@
+p3d_beg_desc P3D_ROBOT
+
+########################
+####### Pelvis #########
+########################
+ p3d_beg_desc_jnt P3D_FREEFLYER # J1
+   p3d_set_name Pelvis
+   p3d_set_prev_jnt 0
+   p3d_set_pos_xyz 0 0 0 0 0 0
+   p3d_set_dof 0 0 0 0 0 0
+   p3d_set_dof_vmin -10 -10 -2.500 -180 -180 -180
+   p3d_set_dof_vmax 10 10 2.500 180 180 180
+ p3d_end_desc
+
+ p3d_read_macro ./iCubParts/hip_small.macro Hip
+########################
+####### Right Leg #########
+########################
+ p3d_beg_desc_jnt P3D_ROTATE # J2
+   p3d_set_name RightHipPitch
+   p3d_set_prev_jnt 1
+   p3d_set_pos_relative
+   p3d_set_pos_axe 0 -0.0681 -0.120 0 1 0
+   p3d_set_dof_vmin -45
+   p3d_set_dof_vmax 45
+ p3d_end_desc
+
+ p3d_beg_desc_jnt P3D_ROTATE # J3
+   p3d_set_name RightHipRoll
+   p3d_set_prev_jnt 2
+   p3d_set_pos_relative
+   p3d_set_pos_axe 0 0 0 0 1 0
+   p3d_set_dof_vmin -45
+   p3d_set_dof_vmax 45
+ p3d_end_desc
+
+
+ p3d_beg_desc_jnt P3D_ROTATE # J4
+   p3d_set_name RightHipYaw
+   p3d_set_prev_jnt 3
+   p3d_set_pos_relative
+   p3d_set_pos_axe 0 0 0 1 0 0
+   p3d_set_dof_vmin -45
+   p3d_set_dof_vmax 45
+ p3d_end_desc
+ p3d_read_macro ./iCubParts/upperleg_right_small.macro Upperleg_right
+
+ p3d_beg_desc_jnt P3D_ROTATE # J5
+   p3d_set_name RightKnee
+   p3d_set_prev_jnt 4
+   p3d_set_pos_relative
+   p3d_set_pos_axe -0.24 0 0 0 1 0
+   p3d_set_dof_vmin -45
+   p3d_set_dof_vmax 45
+ p3d_end_desc
+ p3d_read_macro ./iCubParts/lowerleg_right_small.macro Lowerleg_right
+
+
+
+ p3d_beg_desc_jnt P3D_ROTATE # J6
+   p3d_set_name RightAnklePitch
+   p3d_set_prev_jnt 5
+   p3d_set_pos_relative
+   p3d_set_pos_axe -0.22 0 0 0 0 1
+   p3d_set_dof_vmin -45
+   p3d_set_dof_vmax 45
+ p3d_end_desc
+
+ p3d_beg_desc_jnt P3D_ROTATE # J7
+   p3d_set_name RightAnkleRoll
+   p3d_set_prev_jnt 6
+   p3d_set_pos_relative
+   p3d_set_pos_axe 0 0 0 1 0 0
+   p3d_set_dof_vmin -45
+   p3d_set_dof_vmax 45
+ p3d_end_desc
+ p3d_read_macro ./iCubParts/foot_right_small.macro Foot_right
+
+
+########################
+####### Left Leg #########
+########################
+ p3d_beg_desc_jnt P3D_ROTATE # J8
+   p3d_set_name LeftHipPitch
+   p3d_set_prev_jnt 1
+   p3d_set_pos_relative
+   p3d_set_pos_axe 0 0.0681 -0.120 0 1 0
+   p3d_set_dof_vmin -45
+   p3d_set_dof_vmax 45
+ p3d_end_desc
+
+
+ p3d_beg_desc_jnt P3D_ROTATE # J9
+   p3d_set_name LeftHipRoll
+   p3d_set_prev_jnt 8
+   p3d_set_pos_relative
+   p3d_set_pos_axe 0 0 0 0 1 0
+   p3d_set_dof_vmin -45
+   p3d_set_dof_vmax 45
+ p3d_end_desc
+
+ p3d_beg_desc_jnt P3D_ROTATE # J10
+   p3d_set_name LeftHipYaw
+   p3d_set_prev_jnt 9
+   p3d_set_pos_relative
+   p3d_set_pos_axe 0 0 0 1 0 0
+   p3d_set_dof_vmin -45
+   p3d_set_dof_vmax 45
+ p3d_end_desc
+p3d_read_macro ./iCubParts/upperleg_left_small.macro Upperleg_left
+
+ p3d_beg_desc_jnt P3D_ROTATE # J11
+   p3d_set_name LeftKnee
+   p3d_set_prev_jnt 10
+   p3d_set_pos_relative
+   p3d_set_pos_axe -0.24 0 0 0 1 0
+   p3d_set_dof_vmin -45
+   p3d_set_dof_vmax 45
+ p3d_end_desc
+p3d_read_macro ./iCubParts/lowerleg_left_small.macro Lowerleg_left
+
+ p3d_beg_desc_jnt P3D_ROTATE # J12
+   p3d_set_name LeftAnklePitch
+   p3d_set_prev_jnt 11
+   p3d_set_pos_relative
+   p3d_set_pos_axe -0.22 0 0 0 0 1
+   p3d_set_dof_vmin -45
+   p3d_set_dof_vmax 45
+ p3d_end_desc
+
+
+ p3d_beg_desc_jnt P3D_ROTATE # J13
+   p3d_set_name LeftAnkleRoll
+   p3d_set_prev_jnt 12
+   p3d_set_pos_relative
+   p3d_set_pos_axe 0 0 0 1 0 0
+   p3d_set_dof_vmin -45
+   p3d_set_dof_vmax 45
+ p3d_end_desc
+p3d_read_macro ./iCubParts/foot_left_small.macro Foot_left
+
+
+
+########################
+####### Torso #########
+########################
+p3d_beg_desc_jnt P3D_ROTATE # J14
+   p3d_set_name TorsoYaw
+   p3d_set_prev_jnt 1
+   p3d_set_pos_axe 0 0 0 0 0 1
+   p3d_set_dof_vmin -45
+   p3d_set_dof_vmax 45
+ p3d_end_desc
+
+ p3d_beg_desc_jnt P3D_ROTATE # J15
+   p3d_set_name TorsoRoll
+   p3d_set_prev_jnt 14
+   p3d_set_pos_axe 0 0 0 1 0 0
+   p3d_set_dof_vmin -45
+   p3d_set_dof_vmax 45
+ p3d_end_desc
+
+ p3d_beg_desc_jnt P3D_ROTATE # J16
+   p3d_set_name TorsoPitch
+   p3d_set_prev_jnt 15
+   p3d_set_pos_axe 0 0 0 0 1 0
+   p3d_set_dof_vmin -45
+   p3d_set_dof_vmax 45
+ p3d_end_desc
+ p3d_read_macro ./iCubParts/torso_small.macro Torso
+
+
+########################
+####### Right Arm #########
+########################
+ p3d_beg_desc_jnt P3D_ROTATE # J17
+   p3d_set_name RightShoulderPitch
+   p3d_set_prev_jnt 16
+   p3d_set_pos_axe -0.00605 -0.126 0.175 0 1 0
+   p3d_set_dof_vmin -45
+   p3d_set_dof_vmax 45
+ p3d_end_desc
+
+ p3d_beg_desc_jnt P3D_ROTATE # J18
+   p3d_set_name RightShoulderRoll
+   p3d_set_prev_jnt 17
+   p3d_set_pos_axe -0.00605 -0.126 0.175 1 0 0
+   p3d_set_dof_vmin -45
+   p3d_set_dof_vmax 45
+ p3d_end_desc
+
+ p3d_beg_desc_jnt P3D_ROTATE # J19
+   p3d_set_name RightShoulderYaw
+   p3d_set_prev_jnt 18
+   p3d_set_pos_axe -0.00605 -0.126 0.175 0 0 1
+   p3d_set_dof_vmin -45
+   p3d_set_dof_vmax 45
+ p3d_end_desc
+
+ p3d_read_macro ./iCubParts/upperarm_right_small.macro Upperarm_right
+
+ p3d_beg_desc_jnt P3D_ROTATE # J20
+   p3d_set_name RightElbow
+   p3d_set_prev_jnt 19
+   p3d_set_pos_axe -0.00605 -0.278 0.175 0 0 1
+   p3d_set_dof_vmin 0
+   p3d_set_dof_vmax 90
+ p3d_end_desc
+ 
+ p3d_beg_desc_jnt P3D_ROTATE # J21
+   p3d_set_name RightForearm
+   p3d_set_prev_jnt 20
+   p3d_set_pos_axe -0.00605 -0.278 0.175 0 1 0
+   p3d_set_dof_vmin -45
+   p3d_set_dof_vmax 45
+ p3d_end_desc
+
+p3d_read_macro ./iCubParts/forearm_right_small.macro Forearm_right
+
+ p3d_beg_desc_jnt P3D_ROTATE # J22
+   p3d_set_name RightWristRoll
+   p3d_set_prev_jnt 21
+   p3d_set_pos_axe -0.00605 -0.378 0.175 1 0 0 
+   p3d_set_dof_vmin -45
+   p3d_set_dof_vmax 45
+ p3d_end_desc
+
+  p3d_beg_desc_jnt P3D_ROTATE # J23
+   p3d_set_name RightWristYaw
+   p3d_set_prev_jnt 22
+   p3d_set_pos_axe -0.00605 -0.378 0.175 0 0 1
+   p3d_set_dof_vmin -45
+   p3d_set_dof_vmax 45
+ p3d_end_desc
+
+
+########################
+####### Left Arm #########
+########################
+ p3d_beg_desc_jnt P3D_ROTATE # J24
+   p3d_set_name LeftShoulderPitch
+   p3d_set_prev_jnt 16
+   p3d_set_pos_axe -0.00605 0.126 0.175 0 1 0
+   p3d_set_dof_vmin -45
+   p3d_set_dof_vmax 45
+ p3d_end_desc
+
+ p3d_beg_desc_jnt P3D_ROTATE # J25
+   p3d_set_name LeftShoulderRoll
+   p3d_set_prev_jnt 24
+   p3d_set_pos_axe -0.00605 0.126 0.175 -1 0 0
+   p3d_set_dof_vmin -45
+   p3d_set_dof_vmax 45
+ p3d_end_desc
+
+ p3d_beg_desc_jnt P3D_ROTATE # J26
+   p3d_set_name LeftShoulderYaw
+   p3d_set_prev_jnt 25
+   p3d_set_pos_axe -0.00605 0.126 0.175 0 0 -1
+   p3d_set_dof_vmin -45
+   p3d_set_dof_vmax 45
+ p3d_end_desc
+ p3d_read_macro ./iCubParts/upperarm_left_small.macro Upperarm_left
+
+ p3d_beg_desc_jnt P3D_ROTATE # J27
+   p3d_set_name LeftElbow
+   p3d_set_prev_jnt 26
+   p3d_set_pos_axe -0.00605 0.278 0.175 0 0 -1
+   p3d_set_dof_vmin 0
+   p3d_set_dof_vmax 90
+ p3d_end_desc
+
+ p3d_beg_desc_jnt P3D_ROTATE # J28
+   p3d_set_name LeftForearm
+   p3d_set_prev_jnt 27
+   p3d_set_pos_axe -0.00605 0.278 0.175 0 1 0
+   p3d_set_dof_vmin -45
+   p3d_set_dof_vmax 45
+ p3d_end_desc
+
+p3d_read_macro ./iCubParts/forearm_left_small.macro Forearm_left
+
+ p3d_beg_desc_jnt P3D_ROTATE # J29
+   p3d_set_name LeftWristRoll
+   p3d_set_prev_jnt 28
+   p3d_set_pos_axe -0.00605 0.378 0.175 -1 0 0
+   p3d_set_dof_vmin -45
+   p3d_set_dof_vmax 45
+ p3d_end_desc
+
+  p3d_beg_desc_jnt P3D_ROTATE # J30
+   p3d_set_name LeftWristYaw
+   p3d_set_prev_jnt 29
+   p3d_set_pos_axe -0.00605 0.378 0.175 0 0 -1
+   p3d_set_dof_vmin -45
+   p3d_set_dof_vmax 45
+ p3d_end_desc
+ 
+
+ 
+########################
+######## Head ##########
+########################
+ p3d_beg_desc_jnt P3D_ROTATE # J31
+   p3d_set_name HeadPitch
+   p3d_set_prev_jnt 16
+   p3d_set_pos_axe 0 0 0.225 0 1 0 
+   p3d_set_dof_vmin -45
+   p3d_set_dof_vmax 45
+ p3d_end_desc
+
+ p3d_beg_desc_jnt P3D_ROTATE # J32
+   p3d_set_name HeadRoll
+   p3d_set_prev_jnt 31
+   p3d_set_pos_axe 0 0 0.225 1 0 0
+   p3d_set_dof_vmin -45
+   p3d_set_dof_vmax 45
+ p3d_end_desc
+
+ p3d_beg_desc_jnt P3D_ROTATE # J33
+   p3d_set_name HeadYaw
+   p3d_set_prev_jnt 32
+   p3d_set_pos_axe 0 0 0.225 0 1 0
+   p3d_set_dof_vmin -45
+   p3d_set_dof_vmax 45
+ p3d_end_desc
+ p3d_read_macro ./iCubParts/head.macro Head
+
+#Virtual Camera Joints
+p3d_beg_desc_jnt P3D_FIXED #J34
+   p3d_set_name Cameras
+   p3d_set_prev_jnt 33
+   p3d_set_pos_axe 0.1 0 0.31 0 1 0	
+p3d_end_desc
+
+#Reach joints denoting each palm
+
+p3d_beg_desc_jnt P3D_FIXED #J35
+   p3d_set_name LeftPalm
+   p3d_set_prev_jnt 30
+#  p3d_set_pos_axe -0.00605 0.428 0.175 0 0 1	
+   p3d_set_pos_mat 0 -1 0 -0.00605 1 0 0 0.428 0 0 1 0.175 0 0 0 1
+p3d_end_desc
+
+p3d_beg_desc P3D_BODY leftreach
+   p3d_add_desc_sphere reachs 0.005 P3D_GRAPHIC
+p3d_end_desc
+p3d_set_prim_pos reachs 0.0 0.0 0.0 0 180 0
+
+p3d_beg_desc_jnt P3D_FIXED #J36
+   p3d_set_name RightPalm
+   p3d_set_prev_jnt 23
+#  p3d_set_pos_axe -0.00605 -0.428 0.175 0 0 1
+   p3d_set_pos_mat 0 1 0 -0.00605 -1 0 0 -0.428 0 0 1 0.175 0 0 0 1
+p3d_end_desc
+
+p3d_beg_desc P3D_BODY rightreach
+   p3d_add_desc_sphere reachr 0.005 P3D_GRAPHIC
+p3d_end_desc
+p3d_set_prim_pos reachr 0.0 0.0 0 0 180 0
+
+
+
+
+p3d_end_desc
+
+p3d_set_body_poly_color Forearm_right.Forearm_right 1 Any 0.7 0.7 0.7
+p3d_set_body_abs_pos Forearm_right.Forearm_right 0 -0.32 0.18 0 90 0
+
+p3d_set_body_poly_color Upperarm_right.Upperarm_right 1 Any 0.7 0.7 0.7
+p3d_set_body_abs_pos Upperarm_right.Upperarm_right 0 -0.18 0.18 0 90 0
+
+p3d_set_body_poly_color Forearm_left.Forearm_left 1 Any 0.7 0.7 0.7
+p3d_set_body_abs_pos Forearm_left.Forearm_left 0 0.32 0.18 0 -90 180
+
+p3d_set_body_poly_color Upperarm_left.Upperarm_left 1 Any 0.7 0.7 0.7
+p3d_set_body_abs_pos Upperarm_left.Upperarm_left 0 0.18 0.18 0 -90 0
+
+p3d_set_body_poly_color Torso.Torso 1 Any 0.7 0.7 0.7
+p3d_set_body_abs_pos Torso.Torso 0 0 0.12 90 0 270
+
+p3d_set_body_poly_color Head.Head 1 Any 0.7 0.7 0.7
+p3d_set_body_abs_pos Head.Head 0 0 0.32 90 0 90
+
+p3d_set_body_poly_color Hip.Hip 1 Any 0.7 0.7 0.7
+p3d_set_body_abs_pos Hip.Hip 0 0 -0.04 90 0 270
+
+p3d_set_body_poly_color Upperleg_right.Upperleg_right 1 Any 0.7 0.7 0.7
+p3d_set_body_abs_pos Upperleg_right.Upperleg_right 0 -0.0681 -0.24 90 0 90
+
+p3d_set_body_poly_color Lowerleg_right.Lowerleg_right 1 Any 0.7 0.7 0.7
+p3d_set_body_abs_pos Lowerleg_right.Lowerleg_right 0 -0.0681 -0.46 90 0 90
+
+p3d_set_body_poly_color Foot_right.Foot_right 1 Any 0.7 0.7 0.7
+p3d_set_body_abs_pos Foot_right.Foot_right 0.05 -0.0681 -0.58 0 0 90
+
+p3d_set_body_poly_color Upperleg_left.Upperleg_left 1 Any 0.7 0.7 0.7
+p3d_set_body_abs_pos Upperleg_left.Upperleg_left 0 0.0681 -0.24 90 0 90
+
+p3d_set_body_poly_color Lowerleg_left.Lowerleg_left 1 Any 0.7 0.7 0.7
+p3d_set_body_abs_pos Lowerleg_left.Lowerleg_left 0 0.0681 -0.46 90 0 90
+
+p3d_set_body_poly_color Foot_left.Foot_left 1 Any 0.7 0.7 0.7
+p3d_set_body_abs_pos Foot_left.Foot_left 0.05 0.0681 -0.58 0 0 90

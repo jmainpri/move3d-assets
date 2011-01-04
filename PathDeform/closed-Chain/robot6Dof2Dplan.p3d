@@ -1,0 +1,124 @@
+p3d_beg_desc P3D_ENV 6Dof2Drob
+
+  p3d_beg_desc P3D_OBSTACLE BaseSupport1
+    p3d_add_desc_box base_foot_1 5 30 30
+    p3d_set_prim_pos base_foot_1 2.5 0 0 0 0 0
+    p3d_add_desc_rtorusslice supportSol1 5.2 10 2.5 6.2831
+    p3d_set_prim_pos supportSol1 17 0 11.45 0 0 0
+    p3d_add_desc_rtorusslice supportSol2 5.2 10 2.5 6.2831
+    p3d_set_prim_pos supportSol2 17 0 -11.45 0 0 0
+    p3d_add_desc_box base_support1_1 10 2.48 17
+    p3d_set_prim_pos base_support1_1 6.8 0 11.45 90 0 0
+    p3d_add_desc_box base_support1_2 10 2.48 17
+    p3d_set_prim_pos base_support1_2 6.8 0 -11.45 90 0 0
+  p3d_end_desc
+
+  p3d_beg_desc P3D_OBSTACLE BaseSupport2
+    p3d_add_desc_box base_foot_2 5 30 30
+    p3d_set_prim_pos base_foot_2 2.5 200 0 0 0 0
+    p3d_add_desc_rtorusslice supportSol3 5.2 10 2.5 6.2831
+    p3d_set_prim_pos supportSol3 17 200 11.45 0 0 0
+    p3d_add_desc_rtorusslice supportSol4 5.2 10 2.5 6.2831
+    p3d_set_prim_pos supportSol4 17 200 -11.45 0 0 0
+    p3d_add_desc_box base_support6_1 10 2.48 17
+    p3d_set_prim_pos base_support6_1 6.8 200 11.45 90 0 0
+    p3d_add_desc_box base_support6_2 10 2.48 17
+    p3d_set_prim_pos base_support6_2 6.8 200 -11.45 90 0 0
+  p3d_end_desc
+
+  p3d_beg_desc P3D_ROBOT r6Dof
+    p3d_add_desc_jnt P3D_ROTATE 17 0 0  0 0 1  0 -110 110 0 #1
+
+    p3d_beg_desc P3D_BODY segment1
+      p3d_add_desc_cylindre cylj1_1 10 20
+      p3d_set_prim_pos cylj1_1 17 0 0 0 0 0
+      p3d_add_desc_cylindre cylj1_2 5 25
+      p3d_set_prim_pos cylj1_2 17 0 0 0 0 0
+      p3d_add_desc_box segj1_1 60 14 14
+      p3d_set_prim_pos segj1_1 47 0 0 0 0 0
+      p3d_add_desc_rtorusslice supportJnt2_1 5.2 10 6.8 6.2831
+      p3d_set_prim_pos supportJnt2_1 88 0 3.6 0 0 0
+      p3d_add_desc_box jnt_support2_1 5 14 6.78
+      p3d_set_prim_pos jnt_support2_1 79.5 0 3.6 0 0 0
+    p3d_end_desc
+
+    p3d_add_desc_jnt P3D_ROTATE 88 0 0 0 0 1 0 -113 113 1 #2
+
+    p3d_beg_desc P3D_BODY segment2
+      p3d_add_desc_cylindre cylj2_1 10 6.8
+      p3d_set_prim_pos cylj2_1 88 0 -3.6 0 0 0
+      p3d_add_desc_cylindre cylj2_2 5 13.7
+      p3d_set_prim_pos cylj2_2 88 0 0 0 0 0
+      p3d_add_desc_box jnt_support2_1 5 14 6.78
+      p3d_set_prim_pos jnt_support2_1 96.5 0 -3.6 0 0 0 #+8.5
+      p3d_add_desc_box segj2_1 50 14 14
+      p3d_set_prim_pos segj2_1 124 0 0 0 0 0 #+27.5
+      p3d_add_desc_rtorusslice supportJnt3_1 5.2 10 6.8 6.2831
+      p3d_set_prim_pos supportJnt3_1 160 0 3.6 0 0 0 #+36
+      p3d_add_desc_box base_support3_1 5 14 6.78
+      p3d_set_prim_pos base_support3_1 151.5 0 3.6 0 0 0 #-8.5
+    p3d_end_desc
+
+    p3d_add_desc_jnt P3D_ROTATE 160 0 0 0 0 1 0 -113 113 2 #3
+
+    p3d_beg_desc P3D_BODY segment3
+      p3d_add_desc_cylindre cylj3_1 10 6.8
+      p3d_set_prim_pos cylj3_1 160 0 -3.6 0 0 0
+      p3d_add_desc_cylindre cylj3_2 5 13.7
+      p3d_set_prim_pos cylj3_2 160 0 0 0 0 0
+      p3d_add_desc_box jnt_support3_1 5 14 6.78
+      p3d_set_prim_pos jnt_support3_1 168.5 0 -3.6 0 0 0 #+8.5
+      p3d_add_desc_box segj3_1 50 14 14
+      p3d_set_prim_pos segj3_1 196 0 0 0 0 0 #+27.5
+      p3d_add_desc_rtorusslice supportJnt4_1 5.2 10 6.8 6.2831
+      p3d_set_prim_pos supportJnt4_1 232 0 3.6 0 0 0 #+36
+      p3d_add_desc_box base_support4_1 5 14 6.78
+      p3d_set_prim_pos base_support4_1 223.5 0 3.6 0 0 0 #-8.5
+    p3d_end_desc
+
+    p3d_add_desc_jnt P3D_ROTATE 232 0 0 0 0 1 0 -113 113 3 #4
+
+    p3d_beg_desc P3D_BODY segment4
+      p3d_add_desc_cylindre cylj4_1 10 6.8
+      p3d_set_prim_pos cylj4_1 232 0 -3.6 0 0 0
+      p3d_add_desc_cylindre cylj4_2 5 13.7
+      p3d_set_prim_pos cylj4_2 232 0 0 0 0 0
+      p3d_add_desc_box jnt_support4_1 5 14 6.78
+      p3d_set_prim_pos jnt_support4_1 240.5 0 -3.6 0 0 0 #+8.5
+      p3d_add_desc_box segj4_1 50 14 14
+      p3d_set_prim_pos segj4_1 268 0 0 0 0 0 #+27.5
+      p3d_add_desc_rtorusslice supportJnt5_1 5.2 10 6.8 6.2831
+      p3d_set_prim_pos supportJnt5_1 304 0 3.6 0 0 0 #+36
+      p3d_add_desc_box base_support5_1 5 14 6.78
+      p3d_set_prim_pos base_support5_1 295.5 0 3.6 0 0 0 #-8.5
+    p3d_end_desc
+
+    p3d_add_desc_jnt P3D_ROTATE 304 0 0 0 0 1 0 -113 113 4 #5
+
+    p3d_beg_desc P3D_BODY segment5
+      p3d_add_desc_cylindre cylj5_1 10 6.8
+      p3d_set_prim_pos cylj5_1 304 0 -3.6 0 0 0
+      p3d_add_desc_cylindre cylj5_2 5 13.7
+      p3d_set_prim_pos cylj5_2 304 0 0 0 0 0
+      p3d_add_desc_box jnt_support5_1 14 6.78 5
+      p3d_set_prim_pos jnt_support5_1 312.5 0 -3.6 0 0 0 #+8.5
+      p3d_add_desc_box segj5_1 60 14 14
+      p3d_set_prim_pos segj5_1 345 0 0 0 0 0 #+27.5
+      p3d_add_desc_cylindre cylj6_1 10 20
+      p3d_set_prim_pos cylj6_1 375 0 0 0 0 0
+      p3d_add_desc_cylindre cylj6_2 5 25
+      p3d_set_prim_pos cylj6_2 375 0 0 0 0 0
+    p3d_end_desc
+
+# p3d_add_desc_jnt P3D_ROTATE 376 0 0 0 0 0 1 -113 113 5 #6
+
+    p3d_add_desc_jnt P3D_ROTATE 17 200 0 0 0 1 0 -110 110 0 #7
+
+  p3d_end_desc
+p3d_end_desc
+ 
+#Constraints
+  p3d_constraint p3d_planar_closed_chain 2 3 3 1 6 0 0
+#   p3d_set_cntrt_Tatt 0  1 0 0 17  1 0 0 200  0 0 1 0
+
+p3d_set_env_box 500 500 500 0 0 0

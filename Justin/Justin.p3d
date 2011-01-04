@@ -1,0 +1,93 @@
+p3d_beg_desc P3D_ENV JustinRefWithoutBase
+
+p3d_beg_desc P3D_OBSTACLE box1
+p3d_add_desc_box obs 0.05 0.05 0.05
+p3d_end_desc
+p3d_set_obst_pos box1 -1.0 -1.0 0.0 0 0 0
+p3d_set_obst_poly_color box1 1 Red
+
+p3d_read_macro Justin.macro justin
+
+p3d_end_desc
+
+p3d_set_env_box -2.0 2.0 -2.0 2.0 -0.050 3.000
+
+######################
+##### CONSTRAINTS ####
+######################
+
+# Torso J3
+p3d_constraint p3d_min_max_dofs 0  2 3 2  2 0 135  0
+# Torso J4
+p3d_constraint p3d_lin_rel_dofs 1 4  2 2 3  3 -1 -1 0  0
+
+p3d_set_min_bounds -140 -70 0 -90 -105 -90  -170 -120 -170 -120 -170 -45 -45  -170 -120 -170 -120 -170 -45 -45
+p3d_set_max_bounds 200 90 135 90 105 10  170 120 170 120 170 80 135  170 120 170 120 170 80 135
+
+
+p3d_add_desc_rob_col_init justin
+p3d_desactivate_col_check automatic2
+p3d_desactivate_col_check GTorso1-1 GTorso4-1
+p3d_desactivate_col_check GTorso1-1 Ghead1-1
+p3d_desactivate_col_check GTorso1-1 Ghead2-1
+p3d_desactivate_col_check GTorso1-1 GrArm1-1
+p3d_desactivate_col_check GTorso1-1 GrArm2-1
+p3d_desactivate_col_check GTorso1-1 GlArm1-1
+p3d_desactivate_col_check GTorso1-1 GlArm2-1
+
+p3d_desactivate_col_check GTorso2-1 Ghead1-1
+p3d_desactivate_col_check GTorso2-1 Ghead2-1
+p3d_desactivate_col_check GTorso2-1 GrArm1-1
+p3d_desactivate_col_check GTorso2-1 GrArm2-1
+p3d_desactivate_col_check GTorso2-1 GlArm1-1
+p3d_desactivate_col_check GTorso2-1 GlArm2-1
+
+p3d_desactivate_col_check GTorso3-1 Ghead2-1
+p3d_desactivate_col_check GTorso3-1 GrArm1-1
+p3d_desactivate_col_check GTorso3-1 GrArm2-1
+p3d_desactivate_col_check GTorso3-1 GlArm1-1
+p3d_desactivate_col_check GTorso3-1 GlArm2-1
+
+p3d_desactivate_col_check Ghead1-1 GrArm1-1
+p3d_desactivate_col_check Ghead1-1 GrArm2-1
+p3d_desactivate_col_check Ghead1-1 GlArm1-1
+p3d_desactivate_col_check Ghead1-1 GlArm2-1
+
+p3d_desactivate_col_check Ghead2-1 GrArm1-1
+p3d_desactivate_col_check Ghead2-1 GrArm2-1
+p3d_desactivate_col_check Ghead2-1 GlArm1-1
+p3d_desactivate_col_check Ghead2-1 GlArm2-1
+
+p3d_desactivate_col_check GrArm1-1 GrArm4-1
+p3d_desactivate_col_check GrArm1-1 GrArm5-1
+p3d_desactivate_col_check GrArm1-1 GrArm6-1
+p3d_desactivate_col_check GrArm1-1 GrArm7-1
+
+p3d_desactivate_col_check GrArm2-1 GrArm5-1
+p3d_desactivate_col_check GrArm2-1 GrArm6-1
+p3d_desactivate_col_check GrArm2-1 GrArm7-1
+
+p3d_desactivate_col_check GrArm3-1 GrArm6-1
+p3d_desactivate_col_check GrArm3-1 GrArm7-1
+
+p3d_desactivate_col_check GrArm4-1 GrArm7-1
+p3d_desactivate_col_check GrArm4-1 GrHandPalm-1
+
+p3d_desactivate_col_check GrArm5-1 GrHandPalm-1
+
+p3d_desactivate_col_check GlArm1-1 GlArm4-1
+p3d_desactivate_col_check GlArm1-1 GlArm5-1
+p3d_desactivate_col_check GlArm1-1 GlArm6-1
+p3d_desactivate_col_check GlArm1-1 GlArm7-1
+
+p3d_desactivate_col_check GlArm2-1 GlArm5-1
+p3d_desactivate_col_check GlArm2-1 GlArm6-1
+p3d_desactivate_col_check GlArm2-1 GlArm7-1
+
+p3d_desactivate_col_check GlArm3-1 GlArm6-1
+p3d_desactivate_col_check GlArm3-1 GlArm7-1
+
+p3d_desactivate_col_check GlArm4-1 GlArm7-1
+p3d_desactivate_col_check GlArm4-1 GlHandPalm-1
+
+p3d_desactivate_col_check GlArm5-1 GlHandPalm-1

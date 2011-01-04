@@ -1,0 +1,456 @@
+p3d_beg_desc P3D_ENV grandesalle
+
+p3d_read_macro diligent_g.macro diligent
+
+p3d_read_macro chaise.macro chaise1
+p3d_set_obst_pos chaise1 1000 -1000 0 0 0 0
+
+p3d_beg_desc P3D_OBSTACLE h.plaque
+p3d_add_desc_box h.plaque 10.0 2600.0 900.0
+p3d_set_prim_pos h.plaque 395.0 -2300.0 450.0 0.0 0.0 0.0
+p3d_end_desc
+p3d_set_obst_color h.plaque Brown
+
+p3d_beg_desc P3D_OBSTACLE h.table1
+p3d_add_desc_box h.table1 600.0 650.0 850.0
+p3d_set_prim_pos h.table1 -100.0 -1725.0 425.0 0.0 0.0 0.0
+p3d_end_desc
+p3d_set_obst_color h.table1 Brown
+
+p3d_beg_desc P3D_OBSTACLE h.table2
+p3d_add_desc_box h.table2 800.0 1200.0 850.0
+p3d_set_prim_pos h.table2 -200.0 -2750.0 425.0 0.0 0.0 0.0
+p3d_end_desc
+p3d_set_obst_color h.table2 Brown
+
+p3d_beg_desc P3D_OBSTACLE h.table3
+p3d_add_desc_box h.table3 650.0 1100.0 850.0
+p3d_set_prim_pos h.table3 -2275.0 -2950.0 425.0 0.0 0.0 0.0
+p3d_end_desc
+p3d_set_obst_color h.table3 Brown
+
+p3d_beg_desc P3D_OBSTACLE h.table4
+p3d_add_desc_box h.table4 750.0 4150.0 850.0
+p3d_set_prim_pos h.table4 -2225.0 -8925.0 425.0 0.0 0.0 0.0
+p3d_end_desc
+p3d_set_obst_color h.table4 Brown
+
+p3d_beg_desc P3D_OBSTACLE h.table5
+p3d_add_desc_box h.table5 750.0 1700.0 850.0
+p3d_set_prim_pos h.table5 175.0 -11050.0 425.0 0.0 0.0 0.0
+p3d_end_desc
+p3d_set_obst_color h.table5 Brown
+
+p3d_beg_desc P3D_OBSTACLE h.table6
+p3d_add_desc_box h.table6 750.0 4100.0 850.0
+p3d_set_prim_pos h.table6 2875.0 -9550.0 425.0 0.0 0.0 0.0
+p3d_end_desc
+p3d_set_obst_color h.table6 Brown
+
+p3d_beg_desc P3D_OBSTACLE h.table7
+p3d_add_desc_box h.table7 750.0 2300.0 850.0
+p3d_set_prim_pos h.table7 3675.0 -10450.0 425.0 0.0 0.0 0.0
+p3d_end_desc
+p3d_set_obst_color h.table7 Brown
+
+p3d_beg_desc P3D_OBSTACLE h.table8
+p3d_add_desc_box h.table8 1100.0 800.0 850.0
+p3d_set_prim_pos h.table8 3850.0 -8900.0 425.0 0.0 0.0 0.0
+p3d_end_desc
+p3d_set_obst_color h.table8 Brown
+
+p3d_beg_desc P3D_OBSTACLE h.table9
+p3d_add_desc_box h.table9 4500.0 800.0 850.0
+p3d_set_prim_pos h.table9 -350.0 -6400.0 425.0 0.0 0.0 0.0
+p3d_end_desc
+p3d_set_obst_color h.table9 Brown
+
+p3d_beg_desc P3D_OBSTACLE h.table10
+p3d_add_desc_box h.table10 1500.0 800.0 850.0
+p3d_set_prim_pos h.table10 4900.0 -400.0 425.0 0.0 0.0 0.0
+p3d_end_desc
+p3d_set_obst_color h.table10 Brown
+
+p3d_beg_desc P3D_OBSTACLE h.table11
+p3d_add_desc_box h.table11 800.0 1500.0 850.0
+p3d_set_prim_pos h.table11 5200.0 -6500.0 425.0 0.0 0.0 0.0
+p3d_end_desc
+p3d_set_obst_color h.table11 Brown
+
+p3d_beg_desc P3D_OBSTACLE h.table12
+p3d_add_desc_box h.table12 800.0 1500.0 850.0
+p3d_set_prim_pos h.table12 6500.0 -11150.0 425.0 0.0 0.0 0.0
+p3d_end_desc
+p3d_set_obst_color h.table12 Brown
+
+p3d_beg_desc P3D_OBSTACLE h.armoire1
+p3d_add_desc_box h.armoire1 1200.0 400.0 2000.0
+p3d_set_prim_pos h.armoire1 -2000.0 -4650.0 1000.0 0.0 0.0 0.0
+p3d_end_desc
+p3d_set_obst_color h.armoire1 Grey
+
+p3d_beg_desc P3D_OBSTACLE h.armoire2
+p3d_add_desc_box h.armoire2 1200.0 400.0 2000.0
+p3d_set_prim_pos h.armoire2 -800.0 -4650.0 1000.0 0.0 0.0 0.0
+p3d_end_desc
+p3d_set_obst_color h.armoire2 Grey
+
+p3d_beg_desc P3D_OBSTACLE h.armoire3
+p3d_add_desc_box h.armoire3 1200.0 400.0 2000.0
+p3d_set_prim_pos h.armoire3 400.0 -4650.0 1000.0 0.0 0.0 0.0
+p3d_end_desc
+p3d_set_obst_color h.armoire3 Grey
+
+p3d_beg_desc P3D_OBSTACLE h.armoire4
+p3d_add_desc_box h.armoire4 1200.0 400.0 2000.0
+p3d_set_prim_pos h.armoire4 -2600.0 -900.0 1000.0 0.0 0.0 0.0
+p3d_end_desc
+p3d_set_obst_color h.armoire4 Grey
+
+p3d_beg_desc P3D_OBSTACLE h.armoire5
+p3d_add_desc_box h.armoire5 1200.0 400.0 2000.0
+p3d_set_prim_pos h.armoire5 -2700.0 400.0 1000.0 0.0 0.0 0.0
+p3d_end_desc
+p3d_set_obst_color h.armoire5 Grey
+
+p3d_beg_desc P3D_OBSTACLE h.armoire6
+p3d_add_desc_box h.armoire6 1200.0 400.0 2000.0
+p3d_set_prim_pos h.armoire6 -1100.0  400.0 1000.0 0.0 0.0 0.0
+p3d_end_desc
+p3d_set_obst_color h.armoire6 Grey
+
+p3d_beg_desc P3D_OBSTACLE h.armoire7
+p3d_add_desc_box h.armoire7 1200.0 400.0 2000.0
+p3d_set_prim_pos h.armoire7 -1500.0 -11700.0 1000.0 0.0 0.0 0.0
+p3d_end_desc
+p3d_set_obst_color h.armoire7 Grey
+
+p3d_beg_desc P3D_OBSTACLE h.armoire8
+p3d_add_desc_box h.armoire8 1200.0 400.0 2000.0
+p3d_set_prim_pos h.armoire8 6200.0 -6550.0 1000.0 0.0 0.0 0.0
+p3d_end_desc
+p3d_set_obst_color h.armoire8 Grey
+
+p3d_beg_desc P3D_OBSTACLE h.armoire9
+p3d_add_desc_box h.armoire9 1200.0 400.0 2000.0
+p3d_set_prim_pos h.armoire9 7400.0  -6550.0 1000.0 0.0 0.0 0.0
+p3d_end_desc
+p3d_set_obst_color h.armoire9 Grey
+
+p3d_beg_desc P3D_OBSTACLE h.armoire10
+p3d_add_desc_box h.armoire10 1200.0 400.0 2000.0
+p3d_set_prim_pos h.armoire10 10400.0 400.0 1000.0 0.0 0.0 0.0
+p3d_end_desc
+p3d_set_obst_color h.armoire10 Grey
+
+p3d_beg_desc P3D_OBSTACLE h.armoire11
+p3d_add_desc_box h.armoire11 400.0 1200.0 2000.0
+p3d_set_prim_pos h.armoire11 -4400.0 0.0 1000.0 0.0 0.0 0.0
+p3d_end_desc
+p3d_set_obst_color h.armoire11 Grey
+
+p3d_beg_desc P3D_OBSTACLE h.armoire12
+p3d_add_desc_box h.armoire12 400.0 1200.0 2000.0
+p3d_set_prim_pos h.armoire12 1400.0 400.0 1000.0 0.0 0.0 0.0
+p3d_end_desc
+p3d_set_obst_color h.armoire12 Grey
+
+p3d_beg_desc P3D_OBSTACLE h.armoire13
+p3d_add_desc_box h.armoire13 400.0 1200.0 2000.0
+p3d_set_prim_pos h.armoire13 6650.0 -50.0 1000.0 0.0 0.0 0.0
+p3d_end_desc
+p3d_set_obst_color h.armoire13 Grey
+
+p3d_beg_desc P3D_OBSTACLE h.armoire14
+p3d_add_desc_box h.armoire14 400.0 1200.0 2000.0
+p3d_set_prim_pos h.armoire14 7050.0 -50.0 1000.0 0.0 0.0 0.0
+p3d_end_desc
+p3d_set_obst_color h.armoire14 Grey
+
+p3d_beg_desc P3D_OBSTACLE h.armoire15
+p3d_add_desc_box h.armoire15 400.0 1200.0 2000.0
+p3d_set_prim_pos h.armoire15 11680.0 -2000.0 1000.0 0.0 0.0 0.0
+p3d_end_desc
+p3d_set_obst_color h.armoire15 Grey
+
+p3d_beg_desc P3D_OBSTACLE h.armoire16
+p3d_add_desc_box h.armoire16 400.0 1200.0 2000.0
+p3d_set_prim_pos h.armoire16 11680.0 -3200.0 1000.0 0.0 0.0 0.0
+p3d_end_desc
+p3d_set_obst_color h.armoire16 Grey
+
+p3d_beg_desc P3D_OBSTACLE h.armoire17
+p3d_add_desc_box h.armoire17 400.0 1200.0 2000.0
+p3d_set_prim_pos h.armoire17 8250.0 -7300.0 1000.0 0.0 0.0 0.0
+p3d_end_desc
+p3d_set_obst_color h.armoire17 Grey
+
+p3d_beg_desc P3D_OBSTACLE h.armoire18
+p3d_add_desc_box h.armoire18 400.0 1200.0 2000.0
+p3d_set_prim_pos h.armoire18 8250.0 -8500.0 1000.0 0.0 0.0 0.0
+p3d_end_desc
+p3d_set_obst_color h.armoire18 Grey
+
+p3d_beg_desc P3D_OBSTACLE h.lavabo1
+p3d_add_desc_box h.lavabo1 400.0 300.0 200.0
+p3d_set_prim_pos h.lavabo1 2500.0 -11750.0 500.0 0.0 0.0 0.0
+p3d_end_desc
+p3d_set_obst_color h.lavabo1 Grey
+
+p3d_beg_desc P3D_OBSTACLE h.lavabo2
+p3d_add_desc_box h.lavabo2 300.0 400.0 200.0
+p3d_set_prim_pos h.lavabo2 11750.0 -4550.0 500.0 0.0 0.0 0.0
+p3d_end_desc
+p3d_set_obst_color h.lavabo2 Grey
+
+p3d_beg_desc P3D_OBSTACLE h.tableau
+p3d_add_desc_box h.tableau 2000.0 10.0 1300.0
+p3d_set_prim_pos h.tableau 4900.0 595.0 1350.0 0.0 0.0 0.0
+p3d_end_desc
+p3d_set_obst_color h.tableau White
+
+p3d_beg_desc P3D_OBSTACLE h.mur_entree
+
+p3d_add_desc_box h.mur_entree1 1900.0 10.0 4000.0
+p3d_set_prim_pos h.mur_entree1 -1650.0 -11900.0 2000.0 0.0 0.0 0.0
+
+p3d_add_desc_box h.mur_entree2 500.0 310.0 4000.0
+p3d_set_prim_pos h.mur_entree2 -450.0 -11850.0 2000.0 0.0 0.0 0.0
+
+p3d_add_desc_box h.mur_entree3 3200.0 10.0 4000.0
+p3d_set_prim_pos h.mur_entree3 1400.0 -11900.0 2000.0 0.0 0.0 0.0
+
+p3d_add_desc_box h.mur_entree4 300.0 310.0 4000.0
+p3d_set_prim_pos h.mur_entree4 3150.0 -11850.0 2000.0 0.0 0.0 0.0
+
+p3d_add_desc_box h.mur_entree5 5400.0 10.0 4000.0
+p3d_set_prim_pos h.mur_entree5 6000.0 -11900.0 2000.0 0.0 0.0 0.0
+
+p3d_add_desc_box h.mur_entree6 1850.0 10.0 4000.0
+p3d_set_prim_pos h.mur_entree6 10925.0 -11900.0 2000.0 0.0 0.0 0.0
+
+p3d_add_desc_box h.mur_entree7 1350.0 10.0 1000.0
+p3d_set_prim_pos h.mur_entree7 9325.0 -11900.0 3500.0 0.0 0.0 0.0
+
+p3d_add_desc_box h.mur_entree8 300.0 310.0 4000.0
+p3d_set_prim_pos h.mur_entree8 8550.0 -11850.0 2000.0 0.0 0.0 0.0
+
+p3d_end_desc
+
+p3d_beg_desc P3D_OBSTACLE h.entree
+p3d_add_desc_box h.entree1 10.0 2000.0 4000.0
+p3d_set_prim_pos h.entree1 8700.0 -10900.0 2000.0 0.0 0.0 0.0
+
+p3d_add_desc_box h.entree2 1350.0 10.0 1800.0
+p3d_set_prim_pos h.entree2 9325.0 -9900.0 3100.0 0.0 0.0 0.0
+
+p3d_add_desc_box h.entree3 10.0 2000.0 3000.0
+p3d_set_prim_pos h.entree3 9990.0 -10900.0 1500.0 0.0 0.0 0.0
+
+p3d_add_desc_box h.entree4 1500.0 2000.0 10.0
+p3d_set_prim_pos h.entree4 9450.0 -10900.0 3000.0 0.0 0.0 0.0
+
+p3d_add_desc_box h.entree5 1700.0 400.0 10.0
+p3d_set_prim_pos h.entree5 11050.0 -11700.0 3000.0 0.0 0.0 0.0
+
+p3d_add_desc_box h.entree6 300.0 1000.0 10.0
+p3d_set_prim_pos h.entree6 11750.0 -11400.0 3000.0 0.0 0.0 0.0
+
+p3d_add_desc_cylindre h.escalier1 700.0 4000.0
+p3d_set_prim_pos h.escalier1 10900.0 -11000.0 2000.0 0.0 0.0 0.0
+
+p3d_end_desc
+
+p3d_set_obst_poly_color h.entree 7 Grey
+
+
+p3d_beg_desc P3D_OBSTACLE h.mur_portail
+p3d_add_desc_box h.mur_portail1 10.0 2010.0 4000.0
+p3d_set_prim_pos h.mur_portail1 11900.0 -10995.0 2000.0 0.0 0.0 0.0
+
+p3d_add_desc_box h.mur_portail2 300.0 10.0 4000.0
+p3d_set_prim_pos h.mur_portail2 12050.0 -10010.0 2000.0 0.0 0.0 0.0
+
+p3d_add_desc_box h.mur_portail3 300.0 10.0 4000.0
+p3d_set_prim_pos h.mur_portail3 12050.0 -6900.0 2000.0 0.0 0.0 0.0
+
+p3d_add_desc_box h.mur_portail4 10.0 7550.0 4000.0
+p3d_set_prim_pos h.mur_portail4 11900.0 -3175.0 2000.0 0.0 0.0 0.0
+p3d_end_desc
+
+p3d_beg_desc P3D_OBSTACLE h.mur_bureaux
+p3d_add_desc_box h.mur15 2150.0 10.0 2000.0
+p3d_set_prim_pos h.mur15 10825.0 600.0 1000.0 0.0 0.0 0.0
+
+p3d_add_desc_box h.mur16 10.0 400.0 2000.0
+p3d_set_prim_pos h.mur16 9700.0 800.0 1000.0 0.0 0.0 0.0
+
+p3d_add_desc_box h.mur17 3200.0 400.0 400.0
+p3d_set_prim_pos h.mur17 10300.0 800.0 2200.0 0.0 0.0 0.0
+
+p3d_add_desc_box h.mur18 300.0 600.0 4000.0
+p3d_set_prim_pos h.mur18 8525.0 700.0 2000.0 0.0 0.0 0.0
+
+p3d_add_desc_box h.mur19 5100.0 400.0 400.0
+p3d_set_prim_pos h.mur19 5850.0 800.0 2200.0 0.0 0.0 0.0
+
+p3d_add_desc_box h.mur20 10.0 400.0 2000.0
+p3d_set_prim_pos h.mur20 7290.0 800.0 1000.0 0.0 0.0 0.0
+
+p3d_add_desc_box h.mur21 3950.0 10.0 2000.0
+p3d_set_prim_pos h.mur21 5250.0 600.0 1000.0 0.0 0.0 0.0
+
+p3d_add_desc_box h.mur22 300.0 600.0 4000.0
+p3d_set_prim_pos h.mur22 3150.0 700.0 2000.0 0.0 0.0 0.0
+
+p3d_add_desc_box h.mur23 300.0 10.0 2000.0
+p3d_set_prim_pos h.mur23 2850.0 1000.0 1000.0 0.0 0.0 0.0
+
+p3d_add_desc_box h.mur24 3200.0 400.0 400.0
+p3d_set_prim_pos h.mur24 1400.0 800.0  2200.0 0.0 0.0 0.0
+
+p3d_add_desc_box h.mur25 500.0 10.0 2000.0
+p3d_set_prim_pos h.mur25 1400.0 1000.0 1000.0 0.0 0.0 0.0
+
+p3d_add_desc_box h.mur26 300.0 10.0 2000.0
+p3d_set_prim_pos h.mur26 -50.0 1000.0 1000.0 0.0 0.0 0.0
+
+p3d_add_desc_box h.mur27 300.0 600.0 4000.0
+p3d_set_prim_pos h.mur27 -350.0 700.0 2000.0 0.0 0.0 0.0
+
+p3d_add_desc_box h.mur28 2900.0 10.0 2000.0
+p3d_set_prim_pos h.mur28 -1950.0 600.0 1000.0 0.0 0.0 0.0
+
+p3d_add_desc_box h.mur29 10.0 400.0 2000.0
+p3d_set_prim_pos h.mur29 -3400.0 800.0 1000.0 0.0 0.0 0.0
+
+p3d_add_desc_box h.mur30 4100.0 400.0 400.0
+p3d_set_prim_pos h.mur30 -2550.0 800.0 2200.0 0.0 0.0 0.0
+p3d_end_desc
+
+p3d_beg_desc P3D_OBSTACLE h.mur_stations
+
+p3d_add_desc_box h.mur31 10.0 2200.0 4000.0
+p3d_set_prim_pos h.mur31 -4600.0 -100.0 2000.0 0.0 0.0 0.0
+
+p3d_add_desc_box h.mur32 2000.0 10.0 4000.0
+p3d_set_prim_pos h.mur32 -3600.0 -1100.0 2000.0 0.0 0.0 0.0
+
+p3d_add_desc_box h.mur33 10.0 3800.0 4000.0
+p3d_set_prim_pos h.mur33 -2600.0 -3000.0 2000.0 0.0 0.0 0.0
+
+p3d_add_desc_box h.mur34 10.0 1050.0 2000.0
+p3d_set_prim_pos h.mur34 -2600.0 -5425.0 3000.0 0.0 0.0 0.0
+
+p3d_add_desc_box h.mur35 10.0 6050.0 4000.0
+p3d_set_prim_pos h.mur35 -2600.0 -8975.0 2000.0 0.0 0.0 0.0
+
+p3d_end_desc
+
+p3d_beg_desc P3D_OBSTACLE h.porte1
+
+p3d_add_desc_box h.porte11 650.0 10.0 2200.0
+p3d_set_prim_pos h.porte11 9000.0 -9900.0 1100.0 0.0 0.0 0.0
+
+p3d_add_desc_box h.porte12 650.0 10.0 2200.0
+p3d_set_prim_pos h.porte12 9650.0 -9900.0 1100.0 0.0 0.0 0.0
+
+p3d_add_desc_box h.vitre12 600.0 15.0 1000.0
+p3d_set_prim_pos h.vitre12 9650.0 -9900.0 1600.0 0.0 0.0 0.0
+
+p3d_end_desc
+p3d_set_obst_poly_color h.porte1 1 Brown
+p3d_set_obst_poly_color h.porte1 2 Brown
+p3d_set_obst_poly_color h.porte1 3 White
+
+
+p3d_beg_desc P3D_OBSTACLE h.porte2
+
+p3d_add_desc_box h.porte21 10.0 1550.0 4000.0
+p3d_set_prim_pos h.porte21 12200.0 -7675.0 2000.0 0.0 0.0 0.0
+p3d_add_desc_box h.porte22 10.0 1550.0 4000.0
+p3d_set_prim_pos h.porte22 12200.0 -9225.0 2000.0 0.0 0.0 0.0
+
+p3d_end_desc 
+
+p3d_beg_desc P3D_OBSTACLE h.porte3
+
+p3d_add_desc_box h.porte31 1050.0 10.0 2000.0
+p3d_set_prim_pos h.porte31 9225.0 1000.0 1000.0 0.0 0.0 0.0
+p3d_add_desc_box h.vitre31 500.0 15.0 1600.0
+p3d_set_prim_pos h.vitre31 9225.0 1000.0 1000.0 0.0 0.0 0.0
+
+p3d_end_desc
+p3d_set_obst_poly_color h.porte3 1 Brown
+p3d_set_obst_poly_color h.porte3 2 White
+
+p3d_beg_desc P3D_OBSTACLE h.porte4
+
+p3d_add_desc_box h.porte41 1050.0 10.0 2000.0
+p3d_set_prim_pos h.porte41 7825.0 1000.0 1000.0 0.0 0.0 0.0
+p3d_add_desc_box h.vitre41 500.0 15.0 1600.0
+p3d_set_prim_pos h.vitre41 7825.0 1000.0 1000.0 0.0 0.0 0.0
+
+p3d_end_desc
+p3d_set_obst_poly_color h.porte4 1 Brown
+p3d_set_obst_poly_color h.porte4 2 White
+
+p3d_beg_desc P3D_OBSTACLE h.porte5
+
+p3d_add_desc_box h.porte51 1050.0 10.0 2000.0
+p3d_set_prim_pos h.porte51 2175.0 1000.0 1000.0 0.0 0.0 0.0
+p3d_add_desc_box h.vitre51 500.0 15.0 1600.0
+p3d_set_prim_pos h.vitre51 2175.0 1000.0 1000.0 0.0 0.0 0.0
+
+p3d_end_desc
+p3d_set_obst_poly_color h.porte5 1 Brown
+p3d_set_obst_poly_color h.porte5 2 White
+
+p3d_beg_desc P3D_OBSTACLE h.porte6
+
+p3d_add_desc_box h.porte61 1050.0 10.0 2000.0
+p3d_set_prim_pos h.porte61 625.0 1000.0 1000.0 0.0 0.0 0.0
+p3d_add_desc_box h.vitre61 500.0 15.0 1600.0
+p3d_set_prim_pos h.vitre61 625.0 1000.0 1000.0 0.0 0.0 0.0
+
+p3d_end_desc
+p3d_set_obst_poly_color h.porte6 1 Brown
+p3d_set_obst_poly_color h.porte6 2 White
+
+
+p3d_beg_desc P3D_OBSTACLE h.porte7
+
+p3d_add_desc_box h.porte71 1200.0 10.0 2000.0
+p3d_set_prim_pos h.porte71 -4000.0 1000.0 1000.0 0.0 0.0 0.0
+p3d_add_desc_box h.vitre71 600.0 15.0 1600.0
+p3d_set_prim_pos h.vitre71 -4000.0 1000.0 1000.0 0.0 0.0 0.0
+
+p3d_end_desc
+p3d_set_obst_poly_color h.porte7 1 Brown
+p3d_set_obst_poly_color h.porte7 2 White
+
+p3d_beg_desc P3D_OBSTACLE h.porte8
+
+p3d_add_desc_box h.porte81 10.0 1050.0 2000.0
+p3d_set_prim_pos h.porte81 -2600.0 -5425.0 1000.0 0.0 0.0 0.0
+p3d_add_desc_box h.vitre81 15.0 500.0 1600.0
+p3d_set_prim_pos h.vitre81 -2600.0 -5425.0 1000.0 0.0 0.0 0.0
+
+p3d_end_desc
+p3d_set_obst_poly_color h.porte8 1 Brown
+p3d_set_obst_poly_color h.porte8 2 White
+
+p3d_end_desc
+
+    
+p3d_beg_desc P3D_OBSTACLE bloqueZone
+  p3d_add_desc_box bloqueZone1 1921 10763 4
+  p3d_set_prim_pos bloqueZone1 -3639.0 -6518.5 500.0 0.0 0.0 0.0
+  p3d_add_desc_box bloqueZone2 1296 1947 4
+  p3d_set_prim_pos bloqueZone2 9392 -10920.5 500.0 0.0 0.0 0.0
+p3d_end_desc
+#################################################################################
+p3d_set_env_box -4600.000000 11880.000000 -11900.000000 1000.000000 -10.000000 8000.000000
+p3d_create_reeds_shepp_local_method 1375.0 1
+p3d_set_robot_current 2000 -3000 0 
+p3d_set_robot_goto    7000 -8000 0

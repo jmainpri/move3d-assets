@@ -1,0 +1,36 @@
+p3d_beg_desc P3D_ENV singleArm
+
+  p3d_beg_desc P3D_OBSTACLE BaseSupport1
+    p3d_add_desc_box base_foot_1 2000 2000 5
+    p3d_set_prim_pos base_foot_1 0 0 -2.6 0 0 0
+  p3d_end_desc
+
+  p3d_beg_desc P3D_OBSTACLE rod
+    p3d_add_desc_cylindre cyl1 40 700
+    p3d_set_prim_pos cyl1 400 400 350 0 0 0
+    p3d_add_desc_cylindre cyl2 40 700
+    p3d_set_prim_pos cyl2 400 -400 350 0 0 0
+    p3d_add_desc_cylindre cyl3 40 700
+    p3d_set_prim_pos cyl3 -400 400 350 0 0 0
+    p3d_add_desc_cylindre cyl4 40 700
+    p3d_set_prim_pos cyl4 -400 -400 350 0 0 0
+
+    p3d_add_desc_cylindre cyl5 40 800
+    p3d_set_prim_pos cyl5 0 400 650 0 90 0
+    p3d_add_desc_cylindre cyl6 40 800
+    p3d_set_prim_pos cyl6 0 -400 650 0 90 0
+    p3d_add_desc_cylindre cyl7 40 800
+    p3d_set_prim_pos cyl7 400 0 650 90 0 0
+    p3d_add_desc_cylindre cyl8 40 800
+    p3d_set_prim_pos cyl8 -400 0 650 90 0 0
+  p3d_end_desc
+
+  p3d_read_macro kukaArm.macro arm
+
+p3d_end_desc
+######################
+######## COLOR #######
+######################
+#Obstacles
+p3d_set_obst_color rod Any 1 0.75 0
+p3d_set_env_box 200.0 2000.0 2000.0 0.0 0.0 0.0

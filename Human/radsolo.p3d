@@ -1,0 +1,11 @@
+p3d_beg_desc P3D_ENV radiateur
+
+p3d_read_macro obstacle.macro obstacle 1000
+p3d_set_obst_pos obstacle 700 0 -500 0 0 -90  
+
+p3d_read_macro Radchido.macro radiateur 1
+
+p3d_set_env_box -1000 1000 -1000 1000 -1000 1000
+
+p3d_sel_desc_name P3D_ROBOT radiateur
+

@@ -1,0 +1,300 @@
+solution found 
+DD_RRT-Move3D
+Motion Planner : 2 
+Lambda value : 5.000000
+Number of nodes : 170
+Number of boundary nodes : 0
+Number of call to the nearest neighbour: 0
+Number of collision tests : 1733195
+Number of call to the local method : 351977
+Number of nodes built by standart-RRT : 0
+Number of nodes built by DD-RRT : 0
+Number of generated configurations  : 404168
+Time to build the graph : 5940.590000
+
+
+solution found 
+DD_RRT-Move3D
+Motion Planner : 2 
+Lambda value : 5.000000
+Number of nodes : 25
+Number of boundary nodes : 0
+Number of call to the nearest neighbour: 0
+Number of collision tests : 472
+Number of call to the local method : 54
+Number of nodes built by standart-RRT : 0
+Number of nodes built by DD-RRT : 0
+Number of generated configurations  : 0
+Time to build the graph : 0.010000
+
+
+solution found 
+DD_RRT-Move3D
+Motion Planner : 2 
+Lambda value : 5.000000
+Number of nodes : 25
+Number of boundary nodes : 0
+Number of call to the nearest neighbour: 0
+Number of collision tests : 472
+Number of call to the local method : 54
+Number of nodes built by standart-RRT : 0
+Number of nodes built by DD-RRT : 0
+Number of generated configurations  : 0
+Time to build the graph : 0.010000
+
+
+solution found 
+DD_RRT-Move3D
+Motion Planner : 2 
+Lambda value : 5.000000
+Number of nodes : 15
+Number of boundary nodes : 0
+Number of call to the nearest neighbour: 0
+Number of collision tests : 203
+Number of call to the local method : 20
+Number of nodes built by standart-RRT : 0
+Number of nodes built by DD-RRT : 0
+Number of generated configurations  : 0
+Time to build the graph : 0.000000
+
+
+solution found 
+DD_RRT-Move3D
+Motion Planner : 2 
+Lambda value : 5.000000
+Number of nodes : 15
+Number of boundary nodes : 0
+Number of call to the nearest neighbour: 0
+Number of collision tests : 203
+Number of call to the local method : 20
+Number of nodes built by standart-RRT : 0
+Number of nodes built by DD-RRT : 0
+Number of generated configurations  : 0
+Time to build the graph : 0.000000
+
+
+solution found 
+DD_RRT-Move3D
+Motion Planner : 2 
+Lambda value : 5.000000
+Number of nodes : 16
+Number of boundary nodes : 0
+Number of call to the nearest neighbour: 0
+Number of collision tests : 203
+Number of call to the local method : 21
+Number of nodes built by standart-RRT : 0
+Number of nodes built by DD-RRT : 0
+Number of generated configurations  : 0
+Time to build the graph : 0.000000
+
+
+solution found 
+DD_RRT-Move3D
+Motion Planner : 2 
+Lambda value : 5.000000
+Number of nodes : 16
+Number of boundary nodes : 0
+Number of call to the nearest neighbour: 0
+Number of collision tests : 203
+Number of call to the local method : 21
+Number of nodes built by standart-RRT : 0
+Number of nodes built by DD-RRT : 0
+Number of generated configurations  : 0
+Time to build the graph : 0.000000
+
+
+solution found 
+DD_RRT-Move3D
+Motion Planner : 2 
+Lambda value : 5.000000
+Number of nodes : 10
+Number of boundary nodes : 0
+Number of call to the nearest neighbour: 0
+Number of collision tests : 248
+Number of call to the local method : 30
+Number of nodes built by standart-RRT : 0
+Number of nodes built by DD-RRT : 0
+Number of generated configurations  : 0
+Time to build the graph : 0.000000
+
+
+solution found 
+DD_RRT-Move3D
+Motion Planner : 2 
+Lambda value : 5.000000
+Number of nodes : 11
+Number of boundary nodes : 0
+Number of call to the nearest neighbour: 0
+Number of collision tests : 275
+Number of call to the local method : 36
+Number of nodes built by standart-RRT : 0
+Number of nodes built by DD-RRT : 0
+Number of generated configurations  : 0
+Time to build the graph : 0.050000
+
+
+solution found 
+DD_RRT-Move3D
+Motion Planner : 2 
+Lambda value : 5.000000
+Number of nodes : 11
+Number of boundary nodes : 0
+Number of call to the nearest neighbour: 0
+Number of collision tests : 275
+Number of call to the local method : 36
+Number of nodes built by standart-RRT : 0
+Number of nodes built by DD-RRT : 0
+Number of generated configurations  : 0
+Time to build the graph : 0.050000
+
+
+solution found 
+DD_RRT-Move3D
+Motion Planner : 2 
+Lambda value : 5.000000
+Number of nodes : 7
+Number of boundary nodes : 0
+Number of call to the nearest neighbour: 0
+Number of collision tests : 308
+Number of call to the local method : 43
+Number of nodes built by standart-RRT : 0
+Number of nodes built by DD-RRT : 0
+Number of generated configurations  : 0
+Time to build the graph : 0.050000
+
+
+solution found 
+DD_RRT-Move3D
+Motion Planner : 2 
+Lambda value : 5.000000
+Number of nodes : 8
+Number of boundary nodes : 0
+Number of call to the nearest neighbour: 0
+Number of collision tests : 310
+Number of call to the local method : 46
+Number of nodes built by standart-RRT : 0
+Number of nodes built by DD-RRT : 0
+Number of generated configurations  : 0
+Time to build the graph : 0.050000
+
+
+solution found 
+DD_RRT-Move3D
+Motion Planner : 2 
+Lambda value : 5.000000
+Number of nodes : 8
+Number of boundary nodes : 0
+Number of call to the nearest neighbour: 0
+Number of collision tests : 310
+Number of call to the local method : 46
+Number of nodes built by standart-RRT : 0
+Number of nodes built by DD-RRT : 0
+Number of generated configurations  : 0
+Time to build the graph : 0.050000
+
+
+solution found 
+DD_RRT-Move3D
+Motion Planner : 2 
+Lambda value : 5.000000
+Number of nodes : 10
+Number of boundary nodes : 0
+Number of call to the nearest neighbour: 0
+Number of collision tests : 62
+Number of call to the local method : 13
+Number of nodes built by standart-RRT : 0
+Number of nodes built by DD-RRT : 0
+Number of generated configurations  : 0
+Time to build the graph : 0.000000
+
+
+solution found 
+DD_RRT-Move3D
+Motion Planner : 2 
+Lambda value : 5.000000
+Number of nodes : 7
+Number of boundary nodes : 0
+Number of call to the nearest neighbour: 0
+Number of collision tests : 18
+Number of call to the local method : 6
+Number of nodes built by standart-RRT : 0
+Number of nodes built by DD-RRT : 0
+Number of generated configurations  : 0
+Time to build the graph : 0.000000
+
+
+solution found 
+DD_RRT-Move3D
+Motion Planner : 2 
+Lambda value : 5.000000
+Number of nodes : 9
+Number of boundary nodes : 0
+Number of call to the nearest neighbour: 0
+Number of collision tests : 20
+Number of call to the local method : 8
+Number of nodes built by standart-RRT : 0
+Number of nodes built by DD-RRT : 0
+Number of generated configurations  : 4
+Time to build the graph : 0.150000
+
+
+solution found 
+DD_RRT-Move3D
+Motion Planner : 2 
+Lambda value : 5.000000
+Number of nodes : 9
+Number of boundary nodes : 0
+Number of call to the nearest neighbour: 0
+Number of collision tests : 20
+Number of call to the local method : 8
+Number of nodes built by standart-RRT : 0
+Number of nodes built by DD-RRT : 0
+Number of generated configurations  : 4
+Time to build the graph : 0.150000
+
+
+solution found 
+DD_RRT-Move3D
+Motion Planner : 2 
+Lambda value : 5.000000
+Number of nodes : 9
+Number of boundary nodes : 0
+Number of call to the nearest neighbour: 0
+Number of collision tests : 20
+Number of call to the local method : 8
+Number of nodes built by standart-RRT : 0
+Number of nodes built by DD-RRT : 0
+Number of generated configurations  : 4
+Time to build the graph : 0.150000
+
+
+solution found 
+DD_RRT-Move3D
+Motion Planner : 2 
+Lambda value : 5.000000
+Number of nodes : 9
+Number of boundary nodes : 0
+Number of call to the nearest neighbour: 0
+Number of collision tests : 20
+Number of call to the local method : 8
+Number of nodes built by standart-RRT : 0
+Number of nodes built by DD-RRT : 0
+Number of generated configurations  : 4
+Time to build the graph : 0.150000
+
+
+solution found 
+DD_RRT-Move3D
+Motion Planner : 2 
+Lambda value : 5.000000
+Number of nodes : 7
+Number of boundary nodes : 0
+Number of call to the nearest neighbour: 0
+Number of collision tests : 48
+Number of call to the local method : 11
+Number of nodes built by standart-RRT : 0
+Number of nodes built by DD-RRT : 0
+Number of generated configurations  : 0
+Time to build the graph : 0.000000
+
+

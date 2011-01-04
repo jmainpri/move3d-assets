@@ -1,0 +1,1135 @@
+#------------------------------------------------
+# Mobile arm robot
+
+p3d_beg_desc P3D_ROBOT 
+
+  p3d_beg_desc_jnt P3D_PLAN
+    p3d_set_name        "base"
+    p3d_set_pos_axe 0 0 0 0 0 1
+    p3d_set_dof        2000  -3000    0
+    p3d_set_dof_vmin  -4600 -11900 -180
+    p3d_set_dof_vmax  11880   1000  180
+  p3d_end_desc
+
+  p3d_beg_desc P3D_BODY body
+    
+    p3d_add_desc_cylindre roue1 45 15 P3D_GRAPHIC
+    p3d_set_prim_pos roue1 0 195 45 90.0 0.0 0.0
+    p3d_add_desc_cylindre roue2 45 15 P3D_GRAPHIC
+    p3d_set_prim_pos roue2 0 -195 45 90.0 0.0 0.0
+    p3d_add_desc_cylindre roue3 45 15 P3D_GRAPHIC
+    p3d_set_prim_pos roue3 195 0 45 90.0 0.0 0.0
+    p3d_add_desc_cylindre roue4 45 15 P3D_GRAPHIC
+    p3d_set_prim_pos roue4 -195 0 45 90.0 0.0 0.0
+    
+    p3d_add_desc_cylindre fond 270 15 P3D_GRAPHIC
+    p3d_set_prim_pos fond 0 0 97.35 0.0 0.0 0.0
+    
+    p3d_add_desc_cylindre anbas 285 105 P3D_GRAPHIC
+    p3d_set_prim_pos anbas 0 0 142.5 0.0 0.0 0.0
+    
+    p3d_add_desc_cylindre corps 270 325 P3D_GRAPHIC
+    p3d_set_prim_pos corps 0 0 357.5 0.0 0.0 0.0
+    
+    p3d_add_desc_cylindre anhaut 285 105 P3D_GRAPHIC
+    p3d_set_prim_pos anhaut 0 0 572.5 0.0 0.0 0.0
+    
+    p3d_add_desc_cylindre couv 270 15 P3D_GRAPHIC
+    p3d_set_prim_pos couv 0 0 617.875 0.0 0.0 0.0
+    
+    p3d_add_desc_cylindre but1 22.5 30 P3D_GRAPHIC
+    p3d_set_prim_pos but1 195 0 633.1 0.0 0.0 0.0
+    p3d_add_desc_cylindre but2 22.5 30 P3D_GRAPHIC
+    p3d_set_prim_pos but2 -195 0 633.1 0.0 0.0 0.0
+    
+    p3d_add_desc_box ant11 120 75 30 P3D_GRAPHIC
+    p3d_set_prim_pos ant11 0 -157.5 640.3 0.0 0.0 0.0
+    p3d_add_desc_cylindre ant22 3 75
+    p3d_set_prim_pos ant22 15 -196.5 662.5 0.0 0.0 0.0
+    p3d_add_desc_cylindre ant23 3 75
+    p3d_set_prim_pos ant23 15 -118.5 662.5 0.0 0.0 0.0
+    
+    p3d_add_desc_cylindre caph1 30 15 P3D_GRAPHIC
+    p3d_set_prim_pos caph1 279 0 557.5 0.0 90.0 0.0
+    p3d_add_desc_cylindre caph2 30 15 P3D_GRAPHIC
+    p3d_set_prim_pos caph2 265.35 86.22 557.5 0.0 90.0 18.0
+    p3d_add_desc_cylindre caph3 30 15 P3D_GRAPHIC
+    p3d_set_prim_pos caph3 225.72 163.995 557.5 0.0 90.0 36.0
+    p3d_add_desc_cylindre caph4 30 15 P3D_GRAPHIC
+    p3d_set_prim_pos caph4 163.995 225.72 557.5 0.0 90.0 54.0
+    p3d_add_desc_cylindre caph5 30 15 P3D_GRAPHIC
+    p3d_set_prim_pos caph5 86.22 265.35 557.5 0.0 90.0 72.0
+    
+    p3d_add_desc_cylindre caph6 30 15 P3D_GRAPHIC
+    p3d_set_prim_pos caph6 0 279 557.5 0.0 90.0 90.0
+    p3d_add_desc_cylindre caph7 30 15 P3D_GRAPHIC
+    p3d_set_prim_pos caph7 -265.35 86.22 557.5 0.0 90.0 162.0
+    p3d_add_desc_cylindre caph8 30 15 P3D_GRAPHIC
+    p3d_set_prim_pos caph8 -225.72 163.995 557.5 0.0 90.0 144.0
+    p3d_add_desc_cylindre caph9 30 15 P3D_GRAPHIC
+    p3d_set_prim_pos caph9 -163.995 225.72 557.5 0.0 90.0 126.0
+    p3d_add_desc_cylindre caph10 30 15 P3D_GRAPHIC
+    p3d_set_prim_pos caph10 -86.22 265.35 557.5 0.0 90.0 108.0
+    
+    p3d_add_desc_cylindre caph11 30 15 P3D_GRAPHIC
+    p3d_set_prim_pos caph11 -279 0 557.5 0.0 90.0 0.0
+    p3d_add_desc_cylindre caph12 30 15 P3D_GRAPHIC
+    p3d_set_prim_pos caph12 265.35 -86.22 557.5 0.0 90.0 -18.0
+    p3d_add_desc_cylindre caph13 30 15 P3D_GRAPHIC
+    p3d_set_prim_pos caph13 225.72 -163.995 557.5 0.0 90.0 -36.0
+    p3d_add_desc_cylindre caph14 30 15 P3D_GRAPHIC
+    p3d_set_prim_pos caph14 163.995 -225.72 557.5 0.0 90.0 -54.0
+    p3d_add_desc_cylindre caph15 30 15 P3D_GRAPHIC
+    p3d_set_prim_pos caph15 86.22 -265.35 557.5 0.0 90.0 -72.0
+    
+    p3d_add_desc_cylindre caph16 30 15 P3D_GRAPHIC
+    p3d_set_prim_pos caph16 0 -279 557.5 0.0 90.0 -90.0
+    p3d_add_desc_cylindre caph17 30 15 P3D_GRAPHIC
+    p3d_set_prim_pos caph17 -265.35 -86.22 557.5 0.0 90.0 -162.0
+    p3d_add_desc_cylindre caph18 30 15 P3D_GRAPHIC
+    p3d_set_prim_pos caph18 -225.72 -163.995 557.5 0.0 90.0 -144.0
+    p3d_add_desc_cylindre caph19 30 15 P3D_GRAPHIC
+    p3d_set_prim_pos caph19 -163.995 -225.72 557.5 0.0 90.0 -126.0
+    p3d_add_desc_cylindre caph20 30 15 P3D_GRAPHIC
+    p3d_set_prim_pos caph20 -86.22 -265.35 557.5 0.0 90.0 -108.0
+    
+    p3d_add_desc_cylindre capb1 30 15 P3D_GRAPHIC
+    p3d_set_prim_pos capb1 279 0 127.5 0.0 90.0 0.0
+    p3d_add_desc_cylindre capb2 30 15 P3D_GRAPHIC
+    p3d_set_prim_pos capb2 265.35 86.22 127.5 0.0 90.0 18.0
+    p3d_add_desc_cylindre capb3 30 15 P3D_GRAPHIC
+    p3d_set_prim_pos capb3 225.72 163.995 127.5 0.0 90.0 36.0
+    p3d_add_desc_cylindre capb4 30 15 P3D_GRAPHIC
+    p3d_set_prim_pos capb4 163.995 225.72 127.5 0.0 90.0 54.0
+    p3d_add_desc_cylindre capb5 30 15 P3D_GRAPHIC
+    p3d_set_prim_pos capb5 86.22 265.35 127.5 0.0 90.0 72.0
+    
+    
+    p3d_add_desc_cylindre capb6 30 15 P3D_GRAPHIC
+    p3d_set_prim_pos capb6 0 279 127.5 0.0 90.0 90.0
+    p3d_add_desc_cylindre capb7 30 15 P3D_GRAPHIC
+    p3d_set_prim_pos capb7 -265.35 86.22 127.5 0.0 90.0 162.0
+    p3d_add_desc_cylindre capb8 30 15 P3D_GRAPHIC
+    p3d_set_prim_pos capb8 -225.72 163.995 127.5 0.0 90.0 144.0
+    p3d_add_desc_cylindre capb9 30 15 P3D_GRAPHIC
+    p3d_set_prim_pos capb9 -163.995 225.72 127.5 0.0 90.0 126.0
+    p3d_add_desc_cylindre capb10 30 15 P3D_GRAPHIC
+    p3d_set_prim_pos capb10 -86.22 265.35 127.5 0.0 90.0 108.0
+    
+    p3d_add_desc_cylindre capb11 30 15 P3D_GRAPHIC
+    p3d_set_prim_pos capb11 -279 0 127.5 0.0 90.0 0.0
+    p3d_add_desc_cylindre capb12 30 15 P3D_GRAPHIC
+    p3d_set_prim_pos capb12 265.35 -86.22 127.5 0.0 90.0 -18.0
+    p3d_add_desc_cylindre capb13 30 15 P3D_GRAPHIC
+    p3d_set_prim_pos capb13 225.72 -163.995 127.5 0.0 90.0 -36.0
+    p3d_add_desc_cylindre capb14 30 15 P3D_GRAPHIC
+    p3d_set_prim_pos capb14 163.995 -225.72 127.5 0.0 90.0 -54.0
+    p3d_add_desc_cylindre capb15 30 15 P3D_GRAPHIC
+    p3d_set_prim_pos capb15 86.22 -265.35 127.5 0.0 90.0 -72.0
+    
+    p3d_add_desc_cylindre capb16 30 15 P3D_GRAPHIC
+    p3d_set_prim_pos capb16 0 -279 127.5 0.0 90.0 -90.0
+    p3d_add_desc_cylindre capb17 30 15 P3D_GRAPHIC
+    p3d_set_prim_pos capb17 -265.35 -86.22 127.5 0.0 90.0 -162.0
+    p3d_add_desc_cylindre capb18 30 15 P3D_GRAPHIC
+    p3d_set_prim_pos capb18 -225.72 -163.995 127.5 0.0 90.0 -144.0
+    p3d_add_desc_cylindre capb19 30 15 P3D_GRAPHIC
+    p3d_set_prim_pos capb19 -163.995 -225.72 127.5 0.0 90.0 -126.0
+    p3d_add_desc_cylindre capb20 30 15 P3D_GRAPHIC
+    p3d_set_prim_pos capb20 -86.22 -265.35 127.5 0.0 90.0 -108.0
+    
+    p3d_add_desc_cylindre englobant 285 625  P3D_GHOST
+    p3d_set_prim_pos englobant 0 0 312.5  0.0 0.0 0.0
+    
+  p3d_end_desc 
+    
+
+#---------------------------------
+# Arm
+
+  p3d_beg_desc_jnt P3D_ROTATE
+    p3d_set_name        "arm 1"
+    p3d_set_prev_jnt    1
+    p3d_set_pos_axe  0 0 780 0 0 1
+    p3d_set_dof         0
+    p3d_set_dof_vmin -180
+    p3d_set_dof_vmax  180
+  p3d_end_desc
+
+  p3d_beg_desc P3D_BODY arm1
+
+    p3d_add_desc_poly base
+
+	p3d_add_desc_vert  108.666655   29.117142  0.0
+	p3d_add_desc_vert   79.549513   79.549513  0.0
+	p3d_add_desc_vert   29.117142  108.666655  0.0
+	p3d_add_desc_vert  -29.117142  108.666655  0.0
+	p3d_add_desc_vert  -79.549513   79.549513  0.0
+	p3d_add_desc_vert -108.666655   29.117142  0.0
+	p3d_add_desc_vert -108.666655  -29.117142  0.0
+	p3d_add_desc_vert  -79.549513  -79.549513  0.0
+	p3d_add_desc_vert  -29.117142 -108.666655  0.0
+	p3d_add_desc_vert   29.117142 -108.666655  0.0
+	p3d_add_desc_vert   79.549513  -79.549513  0.0
+	p3d_add_desc_vert  108.666655  -29.117142  0.0
+
+	p3d_add_desc_vert  108.666655   29.117142 60.0
+	p3d_add_desc_vert   79.549513   79.549513 60.0
+	p3d_add_desc_vert   29.117142  108.666655 60.0
+	p3d_add_desc_vert  -29.117142  108.666655 60.0
+	p3d_add_desc_vert  -79.549513   79.549513 60.0
+	p3d_add_desc_vert -108.666655   29.117142 60.0
+	p3d_add_desc_vert -108.666655  -29.117142 60.0
+	p3d_add_desc_vert  -79.549513  -79.549513 60.0
+	p3d_add_desc_vert  -29.117142 -108.666655 60.0
+	p3d_add_desc_vert   29.117142 -108.666655 60.0
+	p3d_add_desc_vert   79.549513  -79.549513 60.0
+	p3d_add_desc_vert  108.666655  -29.117142 60.0
+
+	p3d_add_desc_face   1   2   3   4   5   6   7   8   9  10  11  12  
+	p3d_add_desc_face   2   1  13  14  
+	p3d_add_desc_face   3   2  14  15  
+	p3d_add_desc_face   4   3  15  16  
+	p3d_add_desc_face   5   4  16  17  
+	p3d_add_desc_face   6   5  17  18  
+	p3d_add_desc_face   7   6  18  19  
+	p3d_add_desc_face   8   7  19  20  
+	p3d_add_desc_face   9   8  20  21  
+	p3d_add_desc_face  10   9  21  22  
+	p3d_add_desc_face  11  10  22  23  
+	p3d_add_desc_face  12  11  23  24  
+	p3d_add_desc_face   1  12  24  13  
+	p3d_add_desc_face  24  23  22  21  20  19  18  17  16  15  14  13 
+  
+    p3d_end_desc_poly 
+
+    p3d_polyhedre_set_pos base	1  0  0    0
+				0  1  0    0
+				0  0  1  625
+				0  0  0    1
+
+    p3d_add_desc_poly att_d
+
+	p3d_add_desc_vert   79.549513   37.510000 60.0
+	p3d_add_desc_vert   79.549513   79.549513 60.0
+	p3d_add_desc_vert   29.117142  108.666655 60.0
+	p3d_add_desc_vert  -29.117142  108.666655 60.0
+	p3d_add_desc_vert  -79.549513   79.549513 60.0
+	p3d_add_desc_vert  -79.549513   37.510000 60.0
+
+	p3d_add_desc_vert   79.549513   37.510000 165.0
+	p3d_add_desc_vert   79.549513   79.549513 165.0
+	p3d_add_desc_vert   29.117142  108.666655 165.0
+	p3d_add_desc_vert  -29.117142  108.666655 165.0
+	p3d_add_desc_vert  -79.549513   79.549513 165.0
+	p3d_add_desc_vert  -79.549513   37.510000 165.0
+
+	p3d_add_desc_vert  70.099929  37.510000 208.5
+	p3d_add_desc_vert  56.214988  37.476659 208.5
+	p3d_add_desc_vert  20.576113  76.791103 208.5
+	p3d_add_desc_vert -20.576113  76.791103 208.5
+	p3d_add_desc_vert -56.214988  37.476659 208.5
+	p3d_add_desc_vert -70.099929  37.510000 208.5
+
+	p3d_add_desc_vert   9.705714  37.510000 243.0
+	p3d_add_desc_vert  -9.705714  37.510000 243.0
+
+	p3d_add_desc_face   1   2   3   4   5   6
+
+	p3d_add_desc_face   2   1   7   8  
+	p3d_add_desc_face   3   2   8   9  
+	p3d_add_desc_face   4   3   9  10  
+	p3d_add_desc_face   5   4  10  11  
+	p3d_add_desc_face   6   5  11  12
+
+	p3d_add_desc_face   8   7  13  14  
+	p3d_add_desc_face   9   8  14  15  
+	p3d_add_desc_face  10   9  15  16  
+	p3d_add_desc_face  11  10  16  17  
+	p3d_add_desc_face  12  11  17  18
+
+	p3d_add_desc_face  14  13  19  
+	p3d_add_desc_face  15  14  19  
+	p3d_add_desc_face  16  15  19  20  
+	p3d_add_desc_face  17  16  20  
+	p3d_add_desc_face  18  17  20
+
+	p3d_add_desc_face   1   6  12  18  20  19  13  7
+  
+    p3d_end_desc_poly 
+
+    p3d_polyhedre_set_pos att_d	1  0  0    0
+				0  1  0    0
+				0  0  1  625
+				0  0  0    1
+
+    p3d_add_desc_poly att_g
+
+	p3d_add_desc_vert  -79.549513  -37.510000 60.0
+	p3d_add_desc_vert  -79.549513  -79.549513 60.0
+	p3d_add_desc_vert  -29.117142 -108.666655 60.0
+	p3d_add_desc_vert   29.117142 -108.666655 60.0
+	p3d_add_desc_vert   79.549513  -79.549513 60.0
+	p3d_add_desc_vert   79.549513  -37.510000 60.0
+
+	p3d_add_desc_vert  -79.549513  -37.510000 165.0
+	p3d_add_desc_vert  -79.549513  -79.549513 165.0
+	p3d_add_desc_vert  -29.117142 -108.666655 165.0
+	p3d_add_desc_vert   29.117142 -108.666655 165.0
+	p3d_add_desc_vert   79.549513  -79.549513 165.0
+	p3d_add_desc_vert   79.549513  -37.510000 165.0
+
+	p3d_add_desc_vert  -70.099929  -37.510000 208.5
+	p3d_add_desc_vert  -56.214988  -37.476659 208.5
+	p3d_add_desc_vert  -20.576113  -76.791103 208.5
+	p3d_add_desc_vert   20.576113  -76.791103 208.5
+	p3d_add_desc_vert   56.214988  -37.476659 208.5
+	p3d_add_desc_vert   70.099929  -37.510000 208.5
+
+	p3d_add_desc_vert   -9.705714  -37.510000 243.0
+	p3d_add_desc_vert    9.705714  -37.510000 243.0
+
+	p3d_add_desc_face   1   2   3   4   5   6
+
+	p3d_add_desc_face   2   1   7   8  
+	p3d_add_desc_face   3   2   8   9  
+	p3d_add_desc_face   4   3   9  10  
+	p3d_add_desc_face   5   4  10  11  
+	p3d_add_desc_face   6   5  11  12
+
+	p3d_add_desc_face   8   7  13  14  
+	p3d_add_desc_face   9   8  14  15  
+	p3d_add_desc_face  10   9  15  16  
+	p3d_add_desc_face  11  10  16  17  
+	p3d_add_desc_face  12  11  17  18
+
+	p3d_add_desc_face  14  13  19  
+	p3d_add_desc_face  15  14  19  
+	p3d_add_desc_face  16  15  19  20  
+	p3d_add_desc_face  17  16  20  
+	p3d_add_desc_face  18  17  20
+
+	p3d_add_desc_face   1   6  12  18  20  19  13  7
+  
+    p3d_end_desc_poly 
+
+    p3d_polyhedre_set_pos att_g	1  0  0    0
+				0  1  0    0
+				0  0  1  625
+				0  0  0    1
+
+  p3d_end_desc 
+
+
+  p3d_beg_desc_jnt P3D_ROTATE
+    p3d_set_name       "arm 2"
+    p3d_set_prev_jnt   2
+    p3d_set_pos_relative
+    p3d_set_pos_axe     0 0 0 0 -1 0
+    p3d_set_dof      -115
+    p3d_set_dof_vmin -130
+    p3d_set_dof_vmax  130
+  p3d_end_desc
+
+  p3d_beg_desc P3D_BODY arm2
+
+    p3d_add_desc_poly arm21
+
+	p3d_add_desc_vert -37.500000  37.5    0.000000
+	p3d_add_desc_vert -32.475979  37.5  -18.750000
+	p3d_add_desc_vert -18.750000  37.5  -32.475979
+	p3d_add_desc_vert   0.000000  37.5  -37.500000
+	p3d_add_desc_vert  18.750000  37.5  -32.475979
+	p3d_add_desc_vert  32.475979  37.5  -18.750000
+	p3d_add_desc_vert  37.500000  37.5    0.000000
+
+	p3d_add_desc_vert -37.500000 -37.5    0.000000
+	p3d_add_desc_vert -32.475979 -37.5  -18.750000
+	p3d_add_desc_vert -18.750000 -37.5  -32.475979
+	p3d_add_desc_vert   0.000000 -37.5  -37.500000
+	p3d_add_desc_vert  18.750000 -37.5  -32.475979
+	p3d_add_desc_vert  32.475979 -37.5  -18.750000
+	p3d_add_desc_vert  37.500000 -37.5    0.000000
+
+	p3d_add_desc_vert -37.500000  37.5  292.500000
+	p3d_add_desc_vert -32.475979  37.5  311.250000
+	p3d_add_desc_vert -18.750000  37.5  324.975953
+	p3d_add_desc_vert   0.000000  37.5  330.000000
+	p3d_add_desc_vert  18.750000  37.5  324.975953
+	p3d_add_desc_vert  32.475979  37.5  311.250000
+	p3d_add_desc_vert  37.500000  37.5  292.500000
+
+	p3d_add_desc_vert -37.500000 -37.5  292.500000
+	p3d_add_desc_vert -32.475979 -37.5  311.250000
+	p3d_add_desc_vert -18.750000 -37.5  324.975953
+	p3d_add_desc_vert   0.000000 -37.5  330.000000
+	p3d_add_desc_vert  18.750000 -37.5  324.975953
+	p3d_add_desc_vert  32.475979 -37.5  311.250000
+	p3d_add_desc_vert  37.500000 -37.5  292.500000
+
+  
+	p3d_add_desc_face   1   2   3   4   5   6   7  21  20  19  18  17  16  15
+	p3d_add_desc_face  14  13  12  11  10   9   8  22  23  24  25  26  27  28
+
+	p3d_add_desc_face   2   1   8   9   
+	p3d_add_desc_face   3   2   9  10   
+	p3d_add_desc_face   4   3  10  11   
+	p3d_add_desc_face   5   4  11  12  
+	p3d_add_desc_face   6   5  12  13   
+	p3d_add_desc_face   7   6  13  14   
+
+	p3d_add_desc_face   1  15  22   8   
+	p3d_add_desc_face   7  14  28  21   
+
+	p3d_add_desc_face  15  16  23  22   
+	p3d_add_desc_face  16  17  24  23   
+	p3d_add_desc_face  17  18  25  24   
+	p3d_add_desc_face  18  19  26  25   
+	p3d_add_desc_face  19  20  27  26   
+	p3d_add_desc_face  20  21  28  27   
+
+    p3d_end_desc_poly 
+
+    p3d_polyhedre_set_pos arm21	1  0  0    0
+				0  1  0    0
+				0  0  1  780
+				0  0  0    1
+
+
+    p3d_add_desc_poly arm22
+
+	p3d_add_desc_vert -37.500000  37.5  150.000000
+	p3d_add_desc_vert  37.500000  37.5  150.000000
+	p3d_add_desc_vert  37.500000  75.0  187.500000
+	p3d_add_desc_vert -37.500000  75.0  187.500000
+
+	p3d_add_desc_vert -37.500000  37.5  450.000000
+	p3d_add_desc_vert -32.475979  37.5  468.750000
+	p3d_add_desc_vert -18.750000  37.5  482.475953
+	p3d_add_desc_vert   0.000000  37.5  487.500000
+	p3d_add_desc_vert  18.750000  37.5  482.475953
+	p3d_add_desc_vert  32.475979  37.5  468.750000
+	p3d_add_desc_vert  37.500000  37.5  450.000000
+
+	p3d_add_desc_vert -37.500000  75.0  450.000000
+	p3d_add_desc_vert -32.475979  75.0  468.750000
+	p3d_add_desc_vert -18.750000  75.0  482.475953
+	p3d_add_desc_vert   0.000000  75.0  487.500000
+	p3d_add_desc_vert  18.750000  75.0  482.475953
+	p3d_add_desc_vert  32.475979  75.0  468.750000
+	p3d_add_desc_vert  37.500000  75.0  450.000000
+  
+	p3d_add_desc_face   4   3  18  17  16  15  14  13  12
+	p3d_add_desc_face   2   1   5   6   7   8   9  10  11
+
+	p3d_add_desc_face   1   2   3   4
+	p3d_add_desc_face   1   4  12   5
+	p3d_add_desc_face   3   2  11  18
+
+	p3d_add_desc_face   6   5  12  13   
+	p3d_add_desc_face   7   6  13  14   
+	p3d_add_desc_face   8   7  14  15   
+	p3d_add_desc_face   9   8  15  16  
+	p3d_add_desc_face  10   9  16  17   
+	p3d_add_desc_face  11  10  17  18   
+
+    p3d_end_desc_poly 
+
+    p3d_polyhedre_set_pos arm22	1  0  0    0
+				0  1  0    0
+				0  0  1  780
+				0  0  0    1
+
+
+    p3d_add_desc_poly arm23
+
+	p3d_add_desc_vert -37.500000 -37.5  150.000000
+	p3d_add_desc_vert  37.500000 -37.5  150.000000
+	p3d_add_desc_vert  37.500000 -75.0  187.500000
+	p3d_add_desc_vert -37.500000 -75.0  187.500000
+
+	p3d_add_desc_vert -37.500000 -37.5  450.000000
+	p3d_add_desc_vert -32.475979 -37.5  468.750000
+	p3d_add_desc_vert -18.750000 -37.5  482.475953
+	p3d_add_desc_vert   0.000000 -37.5  487.500000
+	p3d_add_desc_vert  18.750000 -37.5  482.475953
+	p3d_add_desc_vert  32.475979 -37.5  468.750000
+	p3d_add_desc_vert  37.500000 -37.5  450.000000
+
+	p3d_add_desc_vert -37.500000 -75.0  450.000000
+	p3d_add_desc_vert -32.475979 -75.0  468.750000
+	p3d_add_desc_vert -18.750000 -75.0  482.475953
+	p3d_add_desc_vert   0.000000 -75.0  487.500000
+	p3d_add_desc_vert  18.750000 -75.0  482.475953
+	p3d_add_desc_vert  32.475979 -75.0  468.750000
+	p3d_add_desc_vert  37.500000 -75.0  450.000000
+  
+	p3d_add_desc_face  12  13  14  15  16  17  18   3   4
+	p3d_add_desc_face  11  10   9   8   7   6   5   1   2
+
+	p3d_add_desc_face   4   3   2   1
+	p3d_add_desc_face   5  12   4   1
+	p3d_add_desc_face  18  11   2   3
+
+	p3d_add_desc_face  13  12   5   6   
+	p3d_add_desc_face  14  13   6   7   
+	p3d_add_desc_face  15  14   7   8   
+	p3d_add_desc_face  16  15   8   9   
+	p3d_add_desc_face  17  16   9  10   
+	p3d_add_desc_face  18  17  10  11   
+
+    p3d_end_desc_poly 
+
+    p3d_polyhedre_set_pos arm23	1  0  0    0
+				0  1  0    0
+				0  0  1  780
+				0  0  0    1
+
+
+  p3d_end_desc 
+
+
+  p3d_beg_desc_jnt P3D_ROTATE
+    p3d_set_name       "arm 3"
+    p3d_set_prev_jnt   3
+    p3d_set_pos_relative
+    p3d_set_pos_axe     0 450 0 0 0 1
+    p3d_set_dof       150
+    p3d_set_dof_vmin -150
+    p3d_set_dof_vmax  150
+  p3d_end_desc
+
+  p3d_beg_desc P3D_BODY arm3
+
+    p3d_add_desc_poly arm31
+
+	p3d_add_desc_vert -37.500000  37.49    0.000000
+	p3d_add_desc_vert -32.475979  37.49  -18.750000
+	p3d_add_desc_vert -18.750000  37.49  -32.475979
+	p3d_add_desc_vert   0.000000  37.49  -37.500000
+	p3d_add_desc_vert  18.750000  37.49  -32.475979
+	p3d_add_desc_vert  32.475979  37.49  -18.750000
+	p3d_add_desc_vert  37.500000  37.49    0.000000
+
+	p3d_add_desc_vert -37.500000 -37.49    0.000000
+	p3d_add_desc_vert -32.475979 -37.49  -18.750000
+	p3d_add_desc_vert -18.750000 -37.49  -32.475979
+	p3d_add_desc_vert   0.000000 -37.49  -37.500000
+	p3d_add_desc_vert  18.750000 -37.49  -32.475979
+	p3d_add_desc_vert  32.475979 -37.49  -18.750000
+	p3d_add_desc_vert  37.500000 -37.49    0.000000
+
+	p3d_add_desc_vert -37.500000  37.490000  150.000000
+	p3d_add_desc_vert  37.500000  37.490000  150.000000
+	p3d_add_desc_vert -37.500000 -37.490000  150.000000
+	p3d_add_desc_vert  37.500000 -37.490000  150.000000
+
+	p3d_add_desc_vert -37.400000   0.000000  150.000000
+	p3d_add_desc_vert   0.000000  37.490000  150.000000
+	p3d_add_desc_vert   0.000000 -37.490000  150.000000
+	p3d_add_desc_vert  37.400000   0.000000  150.000000
+
+	p3d_add_desc_vert -37.500000  18.750000  150.000000
+	p3d_add_desc_vert -37.500000 -18.750000  150.000000
+	p3d_add_desc_vert  18.750000  37.490000  150.000000
+	p3d_add_desc_vert -18.750000  37.490000  150.000000
+	p3d_add_desc_vert  18.750000 -37.490000  150.000000
+	p3d_add_desc_vert -18.750000 -37.490000  150.000000
+	p3d_add_desc_vert  37.500000  18.750000  150.000000
+	p3d_add_desc_vert  37.500000 -18.750000  150.000000
+
+	p3d_add_desc_vert -37.500000   0.000000  187.500000
+	p3d_add_desc_vert -32.475979 -18.750000  187.500000
+	p3d_add_desc_vert -18.750000 -32.475979  187.500000
+	p3d_add_desc_vert   0.000000 -37.500000  187.500000
+	p3d_add_desc_vert  18.750000 -32.475979  187.500000
+	p3d_add_desc_vert  32.475979 -18.750000  187.500000
+	p3d_add_desc_vert  37.500000   0.000000  187.500000
+	p3d_add_desc_vert  32.475979  18.750000  187.500000
+	p3d_add_desc_vert  18.750000  32.475979  187.500000
+	p3d_add_desc_vert   0.000000  37.500000  187.500000
+	p3d_add_desc_vert -18.750000  32.475979  187.500000
+	p3d_add_desc_vert -32.475979  18.750000  187.500000
+
+	p3d_add_desc_vert -37.500000   0.000000  375.000000
+	p3d_add_desc_vert -32.475979 -18.750000  375.000000
+	p3d_add_desc_vert -18.750000 -32.475979  375.000000
+	p3d_add_desc_vert   0.000000 -37.500000  375.000000
+	p3d_add_desc_vert  18.750000 -32.475979  375.000000
+	p3d_add_desc_vert  32.475979 -18.750000  375.000000
+	p3d_add_desc_vert  37.500000   0.000000  375.000000
+	p3d_add_desc_vert  32.475979  18.750000  375.000000
+	p3d_add_desc_vert  18.750000  32.475979  375.000000
+	p3d_add_desc_vert   0.000000  37.500000  375.000000
+	p3d_add_desc_vert -18.750000  32.475979  375.000000
+	p3d_add_desc_vert -32.475979  18.750000  375.000000
+
+	p3d_add_desc_face   1   2   3   4   5   6   7  16  15 
+	p3d_add_desc_face  14  13  12  11  10   9   8  17  18
+
+	p3d_add_desc_face   2   1   8   9   
+	p3d_add_desc_face   3   2   9  10   
+	p3d_add_desc_face   4   3  10  11   
+	p3d_add_desc_face   5   4  11  12  
+	p3d_add_desc_face   6   5  12  13   
+	p3d_add_desc_face   7   6  13  14   
+
+	p3d_add_desc_face   1  15  17   8   
+	p3d_add_desc_face  16   7  14  18  
+
+	p3d_add_desc_face  19  23  31
+	p3d_add_desc_face  23  42  31
+	p3d_add_desc_face  23  15  42
+	p3d_add_desc_face  15  41  42
+	p3d_add_desc_face  15  26  41
+	p3d_add_desc_face  26  40  41
+	p3d_add_desc_face  26  20  40
+
+	p3d_add_desc_face  20  25  40
+	p3d_add_desc_face  25  39  40
+	p3d_add_desc_face  25  16  39
+	p3d_add_desc_face  16  38  39
+	p3d_add_desc_face  16  29  38
+	p3d_add_desc_face  29  37  38
+	p3d_add_desc_face  29  22  37
+
+	p3d_add_desc_face  22  30  37
+	p3d_add_desc_face  30  36  37
+	p3d_add_desc_face  30  18  36
+	p3d_add_desc_face  18  35  36
+	p3d_add_desc_face  18  27  35
+	p3d_add_desc_face  27  34  35
+	p3d_add_desc_face  27  21  34
+
+	p3d_add_desc_face  21  28  34
+	p3d_add_desc_face  28  33  34
+	p3d_add_desc_face  28  17  33
+	p3d_add_desc_face  17  32  33
+	p3d_add_desc_face  17  24  32
+	p3d_add_desc_face  24  31  32
+	p3d_add_desc_face  24  19  31
+   
+	p3d_add_desc_face  32  31  43  44
+	p3d_add_desc_face  33  32  44  45
+	p3d_add_desc_face  34  33  45  46
+	p3d_add_desc_face  35  34  46  47
+	p3d_add_desc_face  36  35  47  48
+	p3d_add_desc_face  37  36  48  49
+	p3d_add_desc_face  38  37  49  50
+	p3d_add_desc_face  39  38  50  51
+	p3d_add_desc_face  40  39  51  52
+	p3d_add_desc_face  41  40  52  53
+	p3d_add_desc_face  42  41  53  54
+	p3d_add_desc_face  31  42  54  43
+   
+	p3d_add_desc_face  54  53  52  51  50  49  48  47  46  45  44  43   
+
+    p3d_end_desc_poly 
+
+    p3d_polyhedre_set_pos arm31	1  0  0    0
+				0  1  0    0
+				0  0  1 1230
+				0  0  0    1
+
+
+  p3d_end_desc 
+
+
+  p3d_beg_desc_jnt P3D_ROTATE
+    p3d_set_name       "arm 4"
+    p3d_set_prev_jnt  4
+    p3d_set_pos_relative
+    p3d_set_pos_axe     0 487.5 0 0 1 0
+    p3d_set_dof         0
+    p3d_set_dof_vmin -180
+    p3d_set_dof_vmax  180
+  p3d_end_desc
+
+  p3d_beg_desc P3D_BODY arm4
+
+    p3d_add_desc_poly arm41
+
+	p3d_add_desc_vert -37.500000   0.000000    0.01
+	p3d_add_desc_vert -32.475979 -18.750000    0.01
+	p3d_add_desc_vert -18.750000 -32.475979    0.01
+	p3d_add_desc_vert   0.000000 -37.500000    0.01
+	p3d_add_desc_vert  18.750000 -32.475979    0.01
+	p3d_add_desc_vert  32.475979 -18.750000    0.01
+	p3d_add_desc_vert  37.500000   0.000000    0.01
+	p3d_add_desc_vert  32.475979  18.750000    0.01
+	p3d_add_desc_vert  18.750000  32.475979    0.01
+	p3d_add_desc_vert   0.000000  37.500000    0.01
+	p3d_add_desc_vert -18.750000  32.475979    0.01
+	p3d_add_desc_vert -32.475979  18.750000    0.01
+
+	p3d_add_desc_vert -37.500000 -30.000000  37.50
+	p3d_add_desc_vert -37.500000 -75.000000  37.50
+	p3d_add_desc_vert -15.000000 -75.000000  37.50
+	p3d_add_desc_vert  15.000000 -75.000000  37.50
+	p3d_add_desc_vert  37.500000 -75.000000  37.50
+	p3d_add_desc_vert  37.500000 -30.000000  37.50
+	p3d_add_desc_vert  37.500000  30.000000  37.50
+	p3d_add_desc_vert  37.500000  75.000000  37.50
+	p3d_add_desc_vert  15.000000  75.000000  37.50
+	p3d_add_desc_vert -15.000000  75.000000  37.50
+	p3d_add_desc_vert -37.500000  75.000000  37.50
+	p3d_add_desc_vert -37.500000  30.000000  37.50
+
+	p3d_add_desc_vert -37.500000 -75.000000  60.00
+	p3d_add_desc_vert  37.500000 -75.000000  60.00
+	p3d_add_desc_vert  37.500000  75.000000  60.00
+	p3d_add_desc_vert -37.500000  75.000000  60.00
+
+  
+	p3d_add_desc_face   1   2   3   4   5   6   7   8   9  10  11  12   
+
+	p3d_add_desc_face   1  24  13  
+	p3d_add_desc_face   1  13   2  
+	p3d_add_desc_face   2  13  14  
+	p3d_add_desc_face   2  14   3  
+	p3d_add_desc_face   3  14  15  
+	p3d_add_desc_face   3  15   4  
+
+	p3d_add_desc_face   4  15  16  
+	p3d_add_desc_face   4  16   5  
+	p3d_add_desc_face   5  16  17  
+	p3d_add_desc_face   5  17   6  
+	p3d_add_desc_face   6  17  18  
+	p3d_add_desc_face   6  18   7  
+
+	p3d_add_desc_face   7  18  19  
+	p3d_add_desc_face   7  19   8  
+	p3d_add_desc_face   8  19  20  
+	p3d_add_desc_face   8  20   9  
+	p3d_add_desc_face   9  20  21  
+	p3d_add_desc_face   9  21  10  
+
+	p3d_add_desc_face  10  21  22  
+	p3d_add_desc_face  10  22  11  
+	p3d_add_desc_face  11  22  23  
+	p3d_add_desc_face  11  23  12  
+	p3d_add_desc_face  12  23  24  
+	p3d_add_desc_face  12  24   1  
+
+	p3d_add_desc_face  17  14  25  26
+	p3d_add_desc_face  20  17  26  27
+	p3d_add_desc_face  23  20  27  28
+	p3d_add_desc_face  14  23  28  25
+  
+	p3d_add_desc_face  28  27  26  25   
+
+    p3d_end_desc_poly 
+
+    p3d_polyhedre_set_pos arm41	1  0  0    0
+				0  1  0    0
+				0  0  1 1605
+				0  0  0    1
+
+    p3d_add_desc_poly arm42
+
+	p3d_add_desc_vert -37.500000  52.51  -52.500000
+	p3d_add_desc_vert  37.500000  52.51  -52.500000
+	p3d_add_desc_vert  37.500000  75.00  -52.500000
+	p3d_add_desc_vert -37.500000  75.00  -52.500000
+
+	p3d_add_desc_vert -37.500000  52.51    0.000000
+	p3d_add_desc_vert -32.475979  52.51   18.750000
+	p3d_add_desc_vert -18.750000  52.51   32.475979
+	p3d_add_desc_vert   0.000000  52.51   37.500000
+	p3d_add_desc_vert  18.750000  52.51   32.475979
+	p3d_add_desc_vert  32.475979  52.51   18.750000
+	p3d_add_desc_vert  37.500000  52.51    0.000000
+
+	p3d_add_desc_vert -37.500000  75.00    0.000000
+	p3d_add_desc_vert -32.475979  75.00   18.750000
+	p3d_add_desc_vert -18.750000  75.00   32.475979
+	p3d_add_desc_vert   0.000000  75.00   37.500000
+	p3d_add_desc_vert  18.750000  75.00   32.475979
+	p3d_add_desc_vert  32.475979  75.00   18.750000
+	p3d_add_desc_vert  37.500000  75.00    0.000000
+
+  
+	p3d_add_desc_face   4   3  18  17  16  15  14  13  12
+	p3d_add_desc_face   2   1   5   6   7   8   9  10  11
+
+	p3d_add_desc_face   1   2   3   4
+	p3d_add_desc_face   1   4  12   5
+	p3d_add_desc_face   3   2  11  18
+
+	p3d_add_desc_face   6   5  12  13   
+	p3d_add_desc_face   7   6  13  14   
+	p3d_add_desc_face   8   7  14  15   
+	p3d_add_desc_face   9   8  15  16  
+	p3d_add_desc_face  10   9  16  17   
+	p3d_add_desc_face  11  10  17  18   
+
+    p3d_end_desc_poly 
+
+    p3d_polyhedre_set_pos arm42	1  0  0    0
+				0  1  0    0
+				0  0  1 1717.5
+				0  0  0    1
+
+
+    p3d_add_desc_poly arm43
+
+
+	p3d_add_desc_vert -37.500000 -52.51  -52.500000
+	p3d_add_desc_vert  37.500000 -52.51  -52.500000
+	p3d_add_desc_vert  37.500000 -75.00  -52.500000
+	p3d_add_desc_vert -37.500000 -75.00  -52.500000
+
+	p3d_add_desc_vert -37.500000 -52.51    0.000000
+	p3d_add_desc_vert -32.475979 -52.51   18.750000
+	p3d_add_desc_vert -18.750000 -52.51   32.475979
+	p3d_add_desc_vert   0.000000 -52.51   37.500000
+	p3d_add_desc_vert  18.750000 -52.51   32.475979
+	p3d_add_desc_vert  32.475979 -52.51   18.750000
+	p3d_add_desc_vert  37.500000 -52.51    0.000000
+
+	p3d_add_desc_vert -37.500000 -75.00    0.000000
+	p3d_add_desc_vert -32.475979 -75.00   18.750000
+	p3d_add_desc_vert -18.750000 -75.00   32.475979
+	p3d_add_desc_vert   0.000000 -75.00   37.500000
+	p3d_add_desc_vert  18.750000 -75.00   32.475979
+	p3d_add_desc_vert  32.475979 -75.00   18.750000
+	p3d_add_desc_vert  37.500000 -75.00    0.000000
+
+  
+	p3d_add_desc_face  12  13  14  15  16  17  18   3   4
+	p3d_add_desc_face  11  10   9   8   7   6   5   1   2
+
+	p3d_add_desc_face   4   3   2   1
+	p3d_add_desc_face   5  12   4   1
+	p3d_add_desc_face  18  11   2   3
+
+	p3d_add_desc_face  13  12   5   6   
+	p3d_add_desc_face  14  13   6   7   
+	p3d_add_desc_face  15  14   7   8   
+	p3d_add_desc_face  16  15   8   9   
+	p3d_add_desc_face  17  16   9  10   
+	p3d_add_desc_face  18  17  10  11   
+
+    p3d_end_desc_poly 
+
+    p3d_polyhedre_set_pos arm43	1  0  0    0
+				0  1  0    0
+				0  0  1 1717.5
+				0  0  0    1
+
+  p3d_end_desc 
+
+  p3d_beg_desc_jnt P3D_ROTATE
+    p3d_set_name       "arm 5"
+    p3d_set_prev_jnt   5
+    p3d_set_pos_relative
+    p3d_set_pos_axe     0 0 0 0 -1 0
+    p3d_set_dof        55
+    p3d_set_dof_vmin  -95
+    p3d_set_dof_vmax   95
+  p3d_end_desc
+
+  p3d_beg_desc P3D_BODY arm5
+
+    p3d_add_desc_poly arm51
+
+	p3d_add_desc_vert -37.500000  52.50   0.000000
+	p3d_add_desc_vert -32.475979  52.50 -18.750000
+	p3d_add_desc_vert -18.750000  52.50 -32.475979
+	p3d_add_desc_vert   0.000000  52.50 -37.500000
+	p3d_add_desc_vert  18.750000  52.50 -32.475979
+	p3d_add_desc_vert  32.475979  52.50 -18.750000
+	p3d_add_desc_vert  37.500000  52.50   0.000000
+	p3d_add_desc_vert  32.475979  52.50  18.750000
+	p3d_add_desc_vert  18.750000  52.50  32.475979
+	p3d_add_desc_vert   0.000000  52.50  37.500000
+	p3d_add_desc_vert -18.750000  52.50  32.475979
+	p3d_add_desc_vert -32.475979  52.50  18.750000
+
+	p3d_add_desc_vert -37.500000 -52.50   0.000000
+	p3d_add_desc_vert -32.475979 -52.50 -18.750000
+	p3d_add_desc_vert -18.750000 -52.50 -32.475979
+	p3d_add_desc_vert   0.000000 -52.50 -37.500000
+	p3d_add_desc_vert  18.750000 -52.50 -32.475979
+	p3d_add_desc_vert  32.475979 -52.50 -18.750000
+	p3d_add_desc_vert  37.500000 -52.50   0.000000
+	p3d_add_desc_vert  32.475979 -52.50  18.750000
+	p3d_add_desc_vert  18.750000 -52.50  32.475979
+	p3d_add_desc_vert   0.000000 -52.50  37.500000
+	p3d_add_desc_vert -18.750000 -52.50  32.475979
+	p3d_add_desc_vert -32.475979 -52.50  18.750000
+
+	p3d_add_desc_vert -37.500000   0.000000   0.000000
+	p3d_add_desc_vert -32.475979 -18.750000  18.750000
+	p3d_add_desc_vert -18.750000 -32.475979  32.475979
+	p3d_add_desc_vert   0.000000 -37.500000  37.500000
+	p3d_add_desc_vert  18.750000 -32.475979  32.475979
+	p3d_add_desc_vert  32.475979 -18.750000  18.750000
+	p3d_add_desc_vert  37.500000   0.000000   0.000000
+	p3d_add_desc_vert  32.475979  18.750000  18.750000
+	p3d_add_desc_vert  18.750000  32.475979  32.475979
+	p3d_add_desc_vert   0.000000  37.500000  37.500000
+	p3d_add_desc_vert -18.750000  32.475979  32.475979
+	p3d_add_desc_vert -32.475979  18.750000  18.750000
+
+	p3d_add_desc_vert -37.500000   0.000000  37.500000
+	p3d_add_desc_vert -32.475979 -18.750000  37.500000
+	p3d_add_desc_vert -18.750000 -32.475979  37.500000
+	p3d_add_desc_vert   0.000000 -37.500000  37.500000
+	p3d_add_desc_vert  18.750000 -32.475979  37.500000
+	p3d_add_desc_vert  32.475979 -18.750000  37.500000
+	p3d_add_desc_vert  37.500000   0.000000  37.500000
+	p3d_add_desc_vert  32.475979  18.750000  37.500000
+	p3d_add_desc_vert  18.750000  32.475979  37.500000
+	p3d_add_desc_vert   0.000000  37.500000  37.500000
+	p3d_add_desc_vert -18.750000  32.475979  37.500000
+	p3d_add_desc_vert -32.475979  18.750000  37.500000
+
+  
+	p3d_add_desc_face   1   2   3   4   5   6   7   8   9  10  11  12   
+	p3d_add_desc_face  24  23  22  21  20  19  18  17  16  15  14  13
+
+	p3d_add_desc_face   2   1  13  14  
+	p3d_add_desc_face   3   2  14  15  
+	p3d_add_desc_face   4   3  15  16  
+	p3d_add_desc_face   5   4  16  17  
+	p3d_add_desc_face   6   5  17  18  
+	p3d_add_desc_face   7   6  18  19  
+
+ 	p3d_add_desc_face   8   7  31  32  
+	p3d_add_desc_face   9   8  32  33  
+	p3d_add_desc_face  10   9  33  34  
+	p3d_add_desc_face  11  10  34  35  
+	p3d_add_desc_face  12  11  35  36  
+	p3d_add_desc_face   1  12  36  25  
+
+ 	p3d_add_desc_face  19  20  30  31  
+	p3d_add_desc_face  20  21  29  30  
+	p3d_add_desc_face  21  22  28  29  
+	p3d_add_desc_face  22  23  27  28  
+	p3d_add_desc_face  23  24  26  27  
+	p3d_add_desc_face  24  13  25  26  
+
+ 	p3d_add_desc_face  26  25  37  38  
+ 	p3d_add_desc_face  27  26  38  39  
+ 	p3d_add_desc_face      27  39  40  
+ 	p3d_add_desc_face  29      40  41  
+ 	p3d_add_desc_face  30  29  41  42  
+ 	p3d_add_desc_face  31  30  42  43  
+ 	p3d_add_desc_face  32  31  43  44  
+ 	p3d_add_desc_face  33  32  44  45  
+ 	p3d_add_desc_face      33  45  46  
+ 	p3d_add_desc_face  35      46  47  
+ 	p3d_add_desc_face  36  35  47  48  
+ 	p3d_add_desc_face  25  36  48  37  
+ 
+	p3d_add_desc_face  48  47  46  45  44  43  42  41  40  39  38  37
+
+    p3d_end_desc_poly 
+
+    p3d_polyhedre_set_pos arm51	1  0  0    0
+				0  1  0    0
+				0  0  1 1717.5
+				0  0  0    1
+
+  p3d_end_desc 
+
+
+  p3d_beg_desc_jnt P3D_ROTATE
+    p3d_set_name       "arm 6"
+    p3d_set_prev_jnt   6
+    p3d_set_pos_relative
+    p3d_set_pos_axe     0 0 0 0 1 0
+    p3d_set_dof         0
+    p3d_set_dof_vmin -180
+    p3d_set_dof_vmax  180
+  p3d_end_desc
+
+  p3d_beg_desc P3D_BODY arm6
+
+    p3d_add_desc_poly arm61
+
+	p3d_add_desc_vert -37.500000   0.000000   0.01
+	p3d_add_desc_vert -32.475979 -18.750000   0.01
+	p3d_add_desc_vert -18.750000 -32.475979   0.01
+	p3d_add_desc_vert   0.000000 -37.500000   0.01
+	p3d_add_desc_vert  18.750000 -32.475979   0.01
+	p3d_add_desc_vert  32.475979 -18.750000   0.01
+	p3d_add_desc_vert  37.500000   0.000000   0.01
+	p3d_add_desc_vert  32.475979  18.750000   0.01
+	p3d_add_desc_vert  18.750000  32.475979   0.01
+	p3d_add_desc_vert   0.000000  37.500000   0.01
+	p3d_add_desc_vert -18.750000  32.475979   0.01
+	p3d_add_desc_vert -32.475979  18.750000   0.01
+
+	p3d_add_desc_vert -37.500000 -30.000000  37.50
+	p3d_add_desc_vert -37.500000 -75.000000  37.50
+	p3d_add_desc_vert -15.000000 -75.000000  37.50
+	p3d_add_desc_vert  15.000000 -75.000000  37.50
+	p3d_add_desc_vert  37.500000 -75.000000  37.50
+	p3d_add_desc_vert  37.500000 -30.000000  37.50
+	p3d_add_desc_vert  37.500000  30.000000  37.50
+	p3d_add_desc_vert  37.500000  75.000000  37.50
+	p3d_add_desc_vert  15.000000  75.000000  37.50
+	p3d_add_desc_vert -15.000000  75.000000  37.50
+	p3d_add_desc_vert -37.500000  75.000000  37.50
+	p3d_add_desc_vert -37.500000  30.000000  37.50
+
+	p3d_add_desc_vert -15.000000 -75.000000  59.99
+	p3d_add_desc_vert  15.000000 -75.000000  59.99
+	p3d_add_desc_vert  15.000000  75.000000  59.99
+	p3d_add_desc_vert -15.000000  75.000000  59.99
+
+  
+	p3d_add_desc_face   1   2   3   4   5   6   7   8   9  10  11  12   
+
+	p3d_add_desc_face   1  24  13  
+	p3d_add_desc_face   1  13   2  
+	p3d_add_desc_face   2  13  14  
+	p3d_add_desc_face   2  14   3  
+	p3d_add_desc_face   3  14  15  
+	p3d_add_desc_face   3  15   4  
+
+	p3d_add_desc_face   4  15  16  
+	p3d_add_desc_face   4  16   5  
+	p3d_add_desc_face   5  16  17  
+	p3d_add_desc_face   5  17   6  
+	p3d_add_desc_face   6  17  18  
+	p3d_add_desc_face   6  18   7  
+
+	p3d_add_desc_face   7  18  19  
+	p3d_add_desc_face   7  19   8  
+	p3d_add_desc_face   8  19  20  
+	p3d_add_desc_face   8  20   9  
+	p3d_add_desc_face   9  20  21  
+	p3d_add_desc_face   9  21  10  
+
+	p3d_add_desc_face  10  21  22  
+	p3d_add_desc_face  10  22  11  
+	p3d_add_desc_face  11  22  23  
+	p3d_add_desc_face  11  23  12  
+	p3d_add_desc_face  12  23  24  
+	p3d_add_desc_face  12  24   1  
+
+	p3d_add_desc_face  17  14  25  26
+	p3d_add_desc_face  20  17  26  27
+	p3d_add_desc_face  23  20  27  28
+	p3d_add_desc_face  14  23  28  25
+  
+	p3d_add_desc_face  28  27  26  25   
+
+    p3d_end_desc_poly 
+
+    p3d_polyhedre_set_pos arm61	1  0  0    0
+				0  1  0    0
+				0  0  1 1755
+				0  0  0    1
+
+  p3d_end_desc
+
+  p3d_beg_desc_jnt P3D_TRANSLATE
+    p3d_set_name       "grip right"
+    p3d_set_prev_jnt   7
+    p3d_set_pos_relative
+    p3d_set_pos_axe     0 0 0 0 1 0
+    p3d_set_is_user    F
+    p3d_set_dof        15
+    p3d_set_dof_vmin    0
+    p3d_set_dof_vmax   60
+  p3d_end_desc
+
+  p3d_beg_desc P3D_BODY grip_r
+    p3d_add_desc_box box    30 14.98    90
+    p3d_set_prim_pos box     0  7.50  1860  0 0 0
+  p3d_end_desc 
+
+
+  p3d_beg_desc_jnt P3D_TRANSLATE
+    p3d_set_name       "grip left"
+    p3d_set_prev_jnt   7
+    p3d_set_pos_relative
+    p3d_set_pos_axe     0 0 0 0 -1 0
+    p3d_set_is_user    F
+    p3d_set_dof        15
+    p3d_set_dof_vmin    0
+    p3d_set_dof_vmax   60
+  p3d_end_desc
+
+  p3d_beg_desc P3D_BODY grip_l
+    p3d_add_desc_box box    30 14.98    90
+    p3d_set_prim_pos box     0 -7.50  1860  0 0 0
+
+  p3d_add_desc_box bm.rob.barre 300 30 2000
+  p3d_set_prim_pos bm.rob.barre 600.0 15.0  1987.0 0.0 90.0 0.0
+
+  p3d_end_desc 
+
+
+p3d_end_desc 
+
+p3d_set_body_poly_color body 5 Grey
+p3d_set_body_poly_color body 6 Black
+p3d_set_body_poly_color body 7 Black
+p3d_set_body_poly_color body 8 Black
+p3d_set_body_poly_color body 9 Grey
+p3d_set_body_poly_color body 10 Red
+p3d_set_body_poly_color body 11 Red
+p3d_set_body_poly_color body 12 Black
+p3d_set_body_poly_color body 13 Grey
+p3d_set_body_poly_color body 14 Black
+p3d_set_body_poly_color body 15 Grey
+p3d_set_body_poly_color body 16 Grey
+p3d_set_body_poly_color body 17 Grey
+p3d_set_body_poly_color body 18 Grey
+p3d_set_body_poly_color body 19 Grey
+p3d_set_body_poly_color body 20 Grey
+p3d_set_body_poly_color body 21 Grey
+p3d_set_body_poly_color body 22 Grey
+p3d_set_body_poly_color body 23 Grey
+p3d_set_body_poly_color body 24 Grey
+p3d_set_body_poly_color body 25 Grey
+p3d_set_body_poly_color body 26 Grey
+p3d_set_body_poly_color body 27 Grey
+p3d_set_body_poly_color body 28 Grey
+p3d_set_body_poly_color body 29 Grey
+p3d_set_body_poly_color body 30 Grey
+p3d_set_body_poly_color body 31 Grey
+p3d_set_body_poly_color body 32 Grey
+p3d_set_body_poly_color body 33 Grey
+p3d_set_body_poly_color body 34 Grey
+p3d_set_body_poly_color body 35 Grey
+p3d_set_body_poly_color body 36 Grey
+p3d_set_body_poly_color body 37 Grey
+p3d_set_body_poly_color body 38 Grey
+p3d_set_body_poly_color body 39 Grey
+p3d_set_body_poly_color body 40 Grey
+p3d_set_body_poly_color body 41 Grey
+p3d_set_body_poly_color body 42 Grey
+p3d_set_body_poly_color body 43 Grey
+p3d_set_body_poly_color body 44 Grey
+p3d_set_body_poly_color body 45 Grey
+p3d_set_body_poly_color body 46 Grey
+p3d_set_body_poly_color body 47 Grey
+p3d_set_body_poly_color body 48 Grey
+p3d_set_body_poly_color body 49 Grey
+p3d_set_body_poly_color body 50 Grey
+p3d_set_body_poly_color body 51 Grey
+p3d_set_body_poly_color body 52 Grey
+p3d_set_body_poly_color body 53 Grey
+p3d_set_body_poly_color body 54 Grey
+
+p3d_set_body_poly_color arm1 1 Grey
+p3d_set_body_poly_color arm1 2 Blue
+p3d_set_body_poly_color arm1 3 Blue
+p3d_set_body_poly_color arm2 1 Grey
+p3d_set_body_poly_color arm2 2 Blue
+p3d_set_body_poly_color arm2 3 Blue
+p3d_set_body_poly_color arm3 1 Grey
+p3d_set_body_poly_color arm4 1 Blue
+p3d_set_body_poly_color arm4 2 Blue
+p3d_set_body_poly_color arm4 3 Blue
+p3d_set_body_poly_color arm5 1 Grey
+p3d_set_body_poly_color arm6 1 Blue
+p3d_set_body_poly_color grip_r 1 Blue
+p3d_set_body_poly_color grip_l 1 Blue
+p3d_set_body_poly_color grip_l 2 Red

@@ -1,0 +1,419 @@
+p3d_beg_desc P3D_ROBOT
+########################
+####### ARM ##########
+########################
+  p3d_beg_desc_jnt P3D_FIXED # J1
+    p3d_set_name dockArm
+    p3d_set_prev_jnt 0
+    p3d_set_pos_mat 1 0 0 0.0  0 1 0 0.0  0 0 1 0.0  0 0 0 1
+  p3d_end_desc
+
+  p3d_beg_desc_jnt P3D_FIXED # J2
+    p3d_set_name Arm0
+    p3d_set_prev_jnt 1
+    p3d_set_pos_mat 1 0 0 0.0  0 1 0 0.0  0 0 1 0.310  0 0 0 1
+  p3d_end_desc
+
+  p3d_read_macro ./kukaArmBody/kukaBase.macro base
+
+  p3d_beg_desc_jnt P3D_ROTATE # J3
+    p3d_set_name Arm1
+    p3d_set_prev_jnt 2
+
+    p3d_set_pos_axe_dh 0 0 0 0
+   
+    p3d_set_dof_vmin -170
+    p3d_set_dof_vmax 170
+  p3d_end_desc
+  p3d_read_macro ./kukaArmBody/kuka1.macro kuka1
+
+  p3d_beg_desc_jnt P3D_ROTATE # J4
+    p3d_set_name Arm2
+    p3d_set_prev_jnt 3
+
+   p3d_set_pos_axe_dh 0 1.57 0 0
+ 
+
+    p3d_set_dof_vmin -120
+    p3d_set_dof_vmax 120
+  p3d_end_desc
+  p3d_read_macro ./kukaArmBody/kuka2.macro kuka2
+
+  p3d_beg_desc_jnt P3D_ROTATE # J5
+    p3d_set_name Arm3
+    p3d_set_prev_jnt 4
+
+    p3d_set_pos_axe_dh 0 -1.57 0.400 0
+   
+
+    p3d_set_dof_vmin -170
+    p3d_set_dof_vmax 170
+  p3d_end_desc
+  p3d_read_macro ./kukaArmBody/kuka3.macro kuka3
+
+  p3d_beg_desc_jnt P3D_ROTATE # J6
+    p3d_set_name Arm4
+    p3d_set_prev_jnt 5
+
+    p3d_set_pos_axe_dh 0 -1.57 0.0 0
+
+
+    p3d_set_dof_vmin -120
+    p3d_set_dof_vmax 120
+  p3d_end_desc
+  p3d_read_macro ./kukaArmBody/kuka4.macro kuka4
+
+  p3d_beg_desc_jnt P3D_ROTATE # J7
+    p3d_set_name Arm5
+    p3d_set_prev_jnt 6
+
+    p3d_set_pos_axe_dh 0 1.57 0.390 0
+  
+
+    p3d_set_dof_vmin -170
+    p3d_set_dof_vmax 170
+  p3d_end_desc
+  p3d_read_macro ./kukaArmBody/kuka5.macro kuka5
+
+  p3d_beg_desc_jnt P3D_ROTATE # J8
+    p3d_set_name Arm6
+    p3d_set_prev_jnt 7
+
+   p3d_set_pos_axe_dh 0 1.57 0 0
+ 
+
+    p3d_set_dof_vmin -120
+    p3d_set_dof_vmax 120
+  p3d_end_desc
+  p3d_read_macro ./kukaArmBody/kuka6.macro kuka6
+
+  p3d_beg_desc_jnt P3D_ROTATE # J9
+    p3d_set_name RightArm7
+    p3d_set_prev_jnt 8
+    p3d_set_pos_axe_dh 0 -1.57 0 0 
+    p3d_set_dof_vmin -170
+    p3d_set_dof_vmax 170
+  p3d_end_desc
+  p3d_read_macro ./kukaArmBody/kuka7.macro kuka7
+
+########################
+####### SAHand ########
+########################
+  p3d_beg_desc_jnt P3D_FIXED #J10
+    p3d_set_name Wrist
+    p3d_set_prev_jnt 9
+    p3d_set_pos_xyz 0 0 1.18 0 0 -90
+  p3d_end_desc
+
+  p3d_read_macro ./SAHandRightGhost/GSAHandRight_palm.macro hand
+
+
+  ########################### THUMB ####################################
+  p3d_beg_desc_jnt P3D_ROTATE #J11
+    p3d_set_name fingerJointThumbRotation_1
+    p3d_set_prev_jnt 10
+    p3d_set_pos_relative
+    p3d_set_pos_axe -0.003 0.0271 0  0 0 -1
+    p3d_set_dof_vmin 0
+    p3d_set_dof_vmax 90
+  p3d_end_desc
+  p3d_read_macro ./SAHandRightGhost/GSAHandRight_thumbBase.macro hand
+
+  p3d_beg_desc_jnt P3D_ROTATE #J12
+    p3d_set_name fingerJointThumbBase_1
+    p3d_set_prev_jnt 11
+    p3d_set_pos_relative
+    # R= rotationY(pi/2)*rotationX(-pi/2)*rotationY(-35°)*rotationZ(0.7°);
+    # t= [ 0 ; 0.0855 ; -0.10282 ]
+    p3d_set_pos_mat -0.0122170 -0.9999254 0 0    0.5735336 -0.0070074 0.8191520 0.0855   -0.8190909 0.0100076    0.5735764 -0.10282   0 0 0 1
+    p3d_set_dof_vmin -20
+    p3d_set_dof_vmax 20
+  p3d_end_desc
+  p3d_read_macro ./SAHandRightGhost/GSAHandRight_thumbFingerBase.macro hand.finger1
+  
+  p3d_beg_desc_jnt P3D_ROTATE #J13
+    p3d_set_name fingerJointThumbProx_1
+    p3d_set_prev_jnt 12
+    p3d_set_pos_relative
+    p3d_set_pos_axe  0 0 0 0 1 0
+    p3d_set_dof_vmin -19
+    p3d_set_dof_vmax 90
+  p3d_end_desc
+  p3d_read_macro ./SAHandRightGhost/GSAHandRight_thumbFingerPhaProx.macro hand.finger1
+
+  p3d_beg_desc_jnt P3D_ROTATE #J14
+    p3d_set_name fingerJointThumbMid_1
+    p3d_set_prev_jnt 13
+    p3d_set_pos_relative
+    p3d_set_pos_axe 0.0678 0 0 0 0 1
+    p3d_set_dof_vmin 0
+    p3d_set_dof_vmax 70
+  p3d_end_desc
+  p3d_read_macro ./SAHandRightGhost/GSAHandRight_thumbFingerPhaMid.macro hand.finger1
+
+  p3d_beg_desc_jnt P3D_ROTATE #J15
+    p3d_set_name fingerJointThumbDist_1
+    p3d_set_prev_jnt 14
+    p3d_set_pos_relative
+    p3d_set_pos_axe 0.03 0 0  0 0 1
+    p3d_set_dof_vmin 0
+    p3d_set_dof_vmax 70
+  p3d_end_desc
+  p3d_read_macro ./SAHandRightGhost/GSAHandRight_thumbFingerPhaDist.macro hand.finger1
+
+  #########################################################################
+
+
+  ########################### FOREFINGER ##################################
+  p3d_beg_desc_jnt P3D_ROTATE #J16
+    p3d_set_name fingerJointForeBase_1
+    p3d_set_prev_jnt 10
+    p3d_set_pos_relative
+    # R= rotationY(-pi/2)*rotationZ(2.033°);
+    # t= [ -0.003 ; 0.04025 ; 0.15584 ]
+    p3d_set_pos_mat  0 0 -1 -0.003  0.0354751 0.9993706 0 0.04025   0.9993706 -0.0354751 0 0.15584  0 0 0 1
+    p3d_set_dof_vmin -20
+    p3d_set_dof_vmax 20
+  p3d_end_desc
+  p3d_read_macro ./SAHandRightGhost/GSAHandRight_foreFingerBase.macro hand.finger2
+
+
+  p3d_beg_desc_jnt P3D_ROTATE #J17
+    p3d_set_name fingerJointForeProx_1
+    p3d_set_prev_jnt 16
+    p3d_set_pos_relative
+    p3d_set_pos_axe  0 0 0 0 1 0
+    p3d_set_dof_vmin -19
+    p3d_set_dof_vmax 90
+  p3d_end_desc
+  p3d_read_macro ./SAHandRightGhost/GSAHandRight_foreFingerPhaProx.macro hand.finger2
+
+  p3d_beg_desc_jnt P3D_ROTATE #J18
+    p3d_set_name fingerJointForeMid_1
+    p3d_set_prev_jnt 17
+    p3d_set_pos_relative
+    p3d_set_pos_axe  0.0678 0 0 0 0 1
+    p3d_set_dof_vmin 0
+    p3d_set_dof_vmax 70
+  p3d_end_desc
+  p3d_read_macro ./SAHandRightGhost/GSAHandRight_foreFingerPhaMid.macro hand.finger2
+  
+  p3d_beg_desc_jnt P3D_ROTATE #J19
+      p3d_set_name fingerJointForeDist_1
+      p3d_set_prev_jnt 18
+      p3d_set_pos_relative
+      p3d_set_pos_axe 0.03 0 0  0 0 1
+      p3d_set_dof_vmin 0
+      p3d_set_dof_vmax 70
+    p3d_end_desc
+  p3d_read_macro ./SAHandRightGhost/GSAHandRight_foreFingerPhaDist.macro hand.finger2
+
+  #########################################################################
+
+  ########################### MIDDLEFINGER #################################
+  p3d_beg_desc_jnt P3D_ROTATE #J20
+      p3d_set_name fingerJointMiddleBase_1
+      p3d_set_prev_jnt 10
+      p3d_set_pos_relative
+      p3d_set_pos_axe -0.003 0 0.16056  -1 0 0
+      p3d_set_dof_vmin -20
+      p3d_set_dof_vmax 20
+    p3d_end_desc
+  p3d_read_macro ./SAHandRightGhost/GSAHandRight_middleFingerBase.macro hand.finger3
+  
+  p3d_beg_desc_jnt P3D_ROTATE #J21
+      p3d_set_name fingerJointMiddleProx_1
+      p3d_set_prev_jnt 20
+      p3d_set_pos_relative
+      p3d_set_pos_axe   0 0 0 0 1 0
+      p3d_set_dof_vmin -19
+      p3d_set_dof_vmax 90
+    p3d_end_desc
+  p3d_read_macro ./SAHandRightGhost/GSAHandRight_middleFingerPhaProx.macro hand.finger3
+  
+  p3d_beg_desc_jnt P3D_ROTATE #J22
+      p3d_set_name fingerJointMiddleMid_1
+      p3d_set_prev_jnt 21
+      p3d_set_pos_relative
+      p3d_set_pos_axe   0.0678 0 0 0 0 1
+      p3d_set_dof_vmin 0
+      p3d_set_dof_vmax 70
+    p3d_end_desc
+  p3d_read_macro ./SAHandRightGhost/GSAHandRight_middleFingerPhaMid.macro hand.finger3
+  
+  p3d_beg_desc_jnt P3D_ROTATE #J23
+      p3d_set_name fingerJointMiddleDist_1
+      p3d_set_prev_jnt 22
+      p3d_set_pos_relative
+      p3d_set_pos_axe 0.03 0 0  0 0 1
+      p3d_set_dof_vmin 0
+      p3d_set_dof_vmax 70
+    p3d_end_desc
+  p3d_read_macro ./SAHandRightGhost/GSAHandRight_middleFingerPhaDist.macro hand.finger3
+  #########################################################################
+  
+  
+  
+  
+  ####################### RINGFINGER #################################
+  p3d_beg_desc_jnt P3D_ROTATE #J24
+    p3d_set_name fingerJointRingBase_1
+    p3d_set_prev_jnt 10
+    p3d_set_pos_relative
+    # R= rotationY(-pi/2)*rotationZ(-1.967°);
+    # t= [ -0.003 ; -0.04025 ; 0.15584 ]
+    p3d_set_pos_mat 0 0 -1 -0.003  -0.0343239 0.9994108 0 -0.04025   0.9994108 0.0343239 0 0.15584   0 0 0 1
+    p3d_set_dof_vmin -20
+    p3d_set_dof_vmax 20
+  p3d_end_desc
+  p3d_read_macro ./SAHandRightGhost/GSAHandRight_ringFingerBase.macro hand.finger4
+  
+  p3d_beg_desc_jnt P3D_ROTATE #J25
+    p3d_set_name fingerJointRingProx_1
+    p3d_set_prev_jnt 24
+    p3d_set_pos_relative
+    p3d_set_pos_axe   0 0 0 0 1 0
+    p3d_set_dof_vmin -19
+    p3d_set_dof_vmax 90
+  p3d_end_desc
+  p3d_read_macro ./SAHandRightGhost/GSAHandRight_ringFingerPhaProx.macro hand.finger4
+  
+  p3d_beg_desc_jnt P3D_ROTATE #J26
+    p3d_set_name fingerJointRingMid_1
+    p3d_set_prev_jnt 25
+    p3d_set_pos_relative
+    p3d_set_pos_axe  0.0678 0 0 0 0 1
+    p3d_set_dof_vmin 0
+    p3d_set_dof_vmax 70
+  p3d_end_desc
+  p3d_read_macro ./SAHandRightGhost/GSAHandRight_ringFingerPhaMid.macro hand.finger4
+  
+  p3d_beg_desc_jnt P3D_ROTATE #J27
+      p3d_set_name fingerJointRingDist_1
+      p3d_set_prev_jnt 26
+      p3d_set_pos_relative
+      p3d_set_pos_axe 0.03 0 0  0 0 1
+      p3d_set_dof_vmin 0
+      p3d_set_dof_vmax 70
+    p3d_end_desc
+  p3d_read_macro ./SAHandRightGhost/GSAHandRight_ringFingerPhaDist.macro hand.finger4
+
+
+
+
+#########################
+####### OBJECT #######
+#########################
+
+  p3d_beg_desc_jnt P3D_FREEFLYER  #J10
+    p3d_set_name object
+    p3d_set_prev_jnt   0
+    p3d_set_pos_xyz 0 0 0 0 0 0
+    p3d_set_dof 0 0 0 0 0 0
+    p3d_set_dof_vmin -2 -2 0 -180 -180 -180
+    p3d_set_dof_vmax 2   2 2 180 180 180
+  p3d_end_desc
+  p3d_beg_desc P3D_BODY fictiveObject
+    p3d_add_desc_sphere sphere 0.03 P3D_GRAPHIC
+    p3d_set_prim_pos sphere 0 0 0 0 0 0
+  p3d_end_desc
+
+
+p3d_end_desc
+###############################
+######### POSITIONS ###########
+###############################
+p3d_set_body_abs_pos base.GkukaBase 0.0 0.0 0.0 0 0 0
+p3d_set_body_abs_pos kuka1.Gkuka1 0.0 0.0 0.0 0 0 0
+p3d_set_body_abs_pos kuka2.Gkuka2 0.0 0.0 0.0 0 0 0
+p3d_set_body_abs_pos kuka3.Gkuka3 0.0 0.0 0.0 0 0 0
+p3d_set_body_abs_pos kuka4.Gkuka4 0.0 0.0 0.0 0 0 0
+p3d_set_body_abs_pos kuka5.Gkuka5 0.0 0.0 0.0 0 0 0
+p3d_set_body_abs_pos kuka6.Gkuka6 0.0 0.0 0.0 0 0 0
+
+
+#arm
+p3d_set_body_abs_pos base.base   0.0 0.0 0.0 0 0 0
+p3d_set_body_abs_pos kuka1.kuka1 0.0 0.0 0.0 0 0 0
+p3d_set_body_abs_pos kuka2.kuka2 0.0 0.0 0.0 0 0 0
+p3d_set_body_abs_pos kuka3.kuka3 0.0 0.0 0.0 0 0 0
+p3d_set_body_abs_pos kuka4.kuka4 0.0 0.0 0.0 0 0 0
+p3d_set_body_abs_pos kuka5.kuka5 0.0 0.0 0.0 0 0 0
+p3d_set_body_abs_pos kuka6.kuka6 0.0 0.0 0.0 0 0 0
+p3d_set_body_abs_pos kuka7.kuka7 0.0 0.0 0.0 0 0 0
+
+#hand
+p3d_set_body_abs_pos hand.palm 0 0 1.18 90 0 180
+p3d_set_body_abs_pos hand.thumbBase 0 0 1.18 90 0 180
+p3d_set_body_abs_pos hand.finger1.base 0 0 1.18 90 0 180
+p3d_set_body_abs_pos hand.finger1.proximalPhalanx 0 0 1.18 90 0 180
+p3d_set_body_abs_pos hand.finger1.middlePhalanx 0 0 1.18 90 0 180
+p3d_set_body_abs_pos hand.finger1.fingertip 0 0 1.18 90 0 180
+p3d_set_body_abs_pos hand.finger2.base 0 0 1.18 90 0 180
+p3d_set_body_abs_pos hand.finger2.proximalPhalanx 0 0 1.18 90 0 180
+p3d_set_body_abs_pos hand.finger2.middlePhalanx 0 0 1.18 90 0 180
+p3d_set_body_abs_pos hand.finger2.fingertip 0 0 1.18 90 0 180
+p3d_set_body_abs_pos hand.finger3.base 0 0 1.18 90 0 180
+p3d_set_body_abs_pos hand.finger3.proximalPhalanx 0 0 1.18 90 0 180
+p3d_set_body_abs_pos hand.finger3.middlePhalanx 0 0 1.18 90 0 180
+p3d_set_body_abs_pos hand.finger3.fingertip 0 0 1.18 90 0 180
+p3d_set_body_abs_pos hand.finger4.base 0 0 1.18 90 0 180
+p3d_set_body_abs_pos hand.finger4.proximalPhalanx 0 0 1.18 90 0 180
+p3d_set_body_abs_pos hand.finger4.middlePhalanx 0 0 1.18 90 0 180
+p3d_set_body_abs_pos hand.finger4.fingertip 0 0 1.18 90 0 180
+
+
+
+
+#########################
+######## COLORS #########
+#########################
+p3d_set_body_poly_color base.base 1 Any 0.6157 0.5961 0.5961
+p3d_set_body_poly_color base.base 2 Any 0.1765 0.1765 0.1765
+p3d_set_body_poly_color kuka1.kuka1 1 Any 1.0 0.3922 0.0
+p3d_set_body_poly_color kuka1.kuka1 2 Any 0.1765 0.1765 0.1765
+p3d_set_body_poly_color kuka2.kuka2 1 Any 1.0 0.3922 0.0
+p3d_set_body_poly_color kuka2.kuka2 2 Any 0.1765 0.1765 0.1765
+p3d_set_body_poly_color kuka3.kuka3 1 Any 1.0 0.3922 0.0
+p3d_set_body_poly_color kuka3.kuka3 2 Any 0.1765 0.1765 0.1765
+p3d_set_body_poly_color kuka4.kuka4 1 Any 1.0 0.3922 0.0
+p3d_set_body_poly_color kuka4.kuka4 2 Any 0.1765 0.1765 0.1765
+p3d_set_body_poly_color kuka5.kuka5 1 Any 1.0 0.3922 0.0
+p3d_set_body_poly_color kuka6.kuka6 1 Any 1.0 0.3922 0.0
+p3d_set_body_poly_color kuka7.kuka7 1 Any 0.1765 0.1765 0.1765
+
+p3d_set_body_color hand.palm Any 0.86 0.87 0.858
+p3d_set_body_color hand.thumbBase Any 0.86 0.87 0.858
+p3d_set_body_color hand.finger1.base Any 0.86 0.87 0.858
+p3d_set_body_color hand.finger1.proximalPhalanx Any 0.86 0.87 0.858
+p3d_set_body_color hand.finger1.middlePhalanx Any 0.86 0.87 0.858
+p3d_set_body_color hand.finger1.fingertip Any 0.86 0.87 0.858
+p3d_set_body_color hand.finger2.base Any 0.86 0.87 0.858
+p3d_set_body_color hand.finger2.proximalPhalanx Any 0.86 0.87 0.858
+p3d_set_body_color hand.finger2.middlePhalanx Any 0.86 0.87 0.858
+p3d_set_body_color hand.finger2.fingertip Any 0.86 0.87 0.858
+p3d_set_body_color hand.finger3.base Any 0.86 0.87 0.858
+p3d_set_body_color hand.finger3.proximalPhalanx Any 0.86 0.87 0.858
+p3d_set_body_color hand.finger3.middlePhalanx Any 0.86 0.87 0.858
+p3d_set_body_color hand.finger3.fingertip Any 0.86 0.87 0.858
+p3d_set_body_color hand.finger4.base Any 0.86 0.87 0.858
+p3d_set_body_color hand.finger4.proximalPhalanx Any 0.86 0.87 0.858
+p3d_set_body_color hand.finger4.middlePhalanx Any 0.86 0.87 0.858
+p3d_set_body_color hand.finger4.fingertip Any 0.86 0.87 0.858
+
+p3d_set_body_poly_color hand.palm 1 Any 1.0 1.0 0.0
+p3d_set_body_poly_color hand.thumbBase 1 Any 1.0 1.0 0.0
+p3d_set_body_poly_color hand.finger1.proximalPhalanx 1 Any 1.0 1.0 0.0
+p3d_set_body_poly_color hand.finger1.middlePhalanx 1 Any 1.0 1.0 0.0
+p3d_set_body_poly_color hand.finger1.fingertip 1 Any 1.0 1.0 0.0
+p3d_set_body_poly_color hand.finger2.proximalPhalanx 1 Any 1.0 1.0 0.0
+p3d_set_body_poly_color hand.finger2.middlePhalanx 1 Any 1.0 1.0 0.0
+p3d_set_body_poly_color hand.finger2.fingertip 1 Any 1.0 1.0 0.0
+p3d_set_body_poly_color hand.finger3.proximalPhalanx 1 Any 1.0 1.0 0.0
+p3d_set_body_poly_color hand.finger3.middlePhalanx 1 Any 1.0 1.0 0.0
+p3d_set_body_poly_color hand.finger3.fingertip 1 Any 1.0 1.0 0.0
+p3d_set_body_poly_color hand.finger4.proximalPhalanx 1 Any 1.0 1.0 0.0
+p3d_set_body_poly_color hand.finger4.middlePhalanx 1 Any 1.0 1.0 0.0
+p3d_set_body_poly_color hand.finger4.fingertip 1 Any 1.0 1.0 0.0
+
+

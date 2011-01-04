@@ -1,0 +1,225 @@
+p3d_beg_desc P3D_ENV iros
+
+#p3d_read_macro HRP2WithBottle.macro robot
+#p3d_read_macro justinBaseNew.macro justin
+p3d_read_macro JidoWithBottle.macro robot
+ 
+#p3d_read_macro Visball.macro visball
+
+#p3d_read_macro Batman.macro human1
+p3d_read_macro Superman.macro human1
+
+#p3d_read_macro Bottle.macro bottle
+
+p3d_read_macro bluecouch.macro bcouch
+p3d_set_obst_pos bcouch  -3 5 0 0 0 -90
+
+p3d_read_macro table.macro table
+p3d_set_obst_pos table  -3 4.3 0 0 0 0
+
+p3d_beg_desc P3D_OBSTACLE laptop1	
+p3d_add_desc_box obs 0.3 0.4 0.02
+p3d_end_desc
+p3d_set_obst_pos laptop1  -3 4.4 0.75 0 0 90
+p3d_set_obst_poly_color laptop1 1 Black
+
+p3d_beg_desc P3D_OBSTACLE laptop2	
+p3d_add_desc_box obs 0.4 0.4 0.02
+p3d_end_desc
+p3d_set_obst_pos laptop2  -3 4.25 0.9 0 80 90
+p3d_set_obst_poly_color laptop2 1 Black
+
+
+p3d_read_macro greencouch.macro ccouch1
+p3d_set_obst_pos ccouch1  -3 -0.5 0 0 0 180
+
+#p3d_read_macro greencouch.macro ccouch2
+#p3d_set_obst_pos ccouch2  -3 -2.5 0 0 0 -90
+
+# BEGIN ENVIRONMENT WALLS
+
+  p3d_beg_desc P3D_OBSTACLE BaseSupport1
+    p3d_add_desc_box base_foot_1 0.5 0.5 0.7
+    p3d_set_prim_pos base_foot_1 0 0 0.35 0 0 0
+  p3d_end_desc
+
+ p3d_beg_desc P3D_OBSTACLE barre
+  	p3d_add_desc_cylindre base1 0.05 2
+  	p3d_set_prim_pos base1 0.4 0.7 1.0 0 0 0
+ p3d_end_desc
+
+#p3d_CostEnvironment
+
+# END ENVIRONMENT WALLS
+
+p3d_sel_desc_name P3D_ROBOT human1
+
+p3d_set_robot_steering_method Linear
+
+p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.297935 1.061947 1.035988 1.769915 5.309744 -153.982300 0.000000 0.000000 0.000000 0.000000 0.000000 2.654872 -0.884957 -34.513275 0.884957 4.424776 3.539819 -23.008846 -42.477875 -31.184860 16.814157 -0.884957 -44.754177 -64.601768 0.000000 0.000000 44.764011 0.000000 0.000000 44.026546 -0.639136 9.319078 11.504423 0.000000 0.000000 0.000000 0.000000 -0.884957 -0.884957 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.884957 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.400000 0.000000 1.300000 0.000000 0.000000 0.000000 0.000000 0.000000
+p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.297935 1.061947 1.035988 1.769915 5.309744 -130.973450 0.000000 0.000000 0.000000 0.000000 0.000000 2.654872 -0.884957 -34.513275 0.884957 4.424776 3.539819 -23.008846 -42.477875 -31.184860 16.814157 -0.884957 -44.754177 -64.601768 0.000000 0.000000 44.764011 0.000000 0.000000 44.026546 -0.639136 9.319078 11.504423 0.000000 0.000000 0.000000 0.000000 -0.884957 -0.884957 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.884957 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.400000 0.000000 1.300000 0.000000 0.000000 0.000000 0.000000 0.000000
+
+# BEGIN COLLISIONS 
+p3d_add_desc_rob_col_init human1
+  p3d_desactivate_col_check automatic
+  p3d_desactivate_col_check AUTH1.l_shoulder  AUTH3.waist
+  p3d_desactivate_col_check AUTH2.r_shoulder  AUTH3.waist
+  p3d_desactivate_col_check AUTH2.r_wrist AUTH5.r_hip
+  p3d_desactivate_col_check AUTH1.l_wrist AUTH4.l_hip
+  p3d_desactivate_col_check pelvis AUTH3.waist
+
+# END COLLISIONS
+
+# BEGIN CONSTRAINTS
+
+# left arm
+#p3d_constraint p3d_R7_human_arm_ik 7 14 15 16 22 26 27 28 1 57 2 0 0 1 1
+#RotnegXY
+#p3d_set_cntrt_Tatt 0  0  0  1  0 
+#                     -1  0  0  0 
+#                      0  1  0  0
+#RotXX
+#p3d_set_cntrt_Tatt2 0  1  0  0 0
+#                       0 -1  0 0
+#                       0  0 -1 0
+
+# right arm
+#p3d_constraint p3d_R7_human_arm_ik 7 17 18 19 25 29 30 31 1 58 2 0 1 1 1
+
+#RotXY
+#p3d_set_cntrt_Tatt 1  0  0  1  0 
+#		      1  0  0  0 
+#	 	      0  1  0  0
+#RotXX
+#p3d_set_cntrt_Tatt2 1  1  0  0 0
+#	               0 -1  0 0
+#		       0  0 -1 0
+
+# END CONSTRAINTS
+
+
+p3d_sel_desc_name P3D_ROBOT justin
+
+p3d_set_robot_steering_method Linear
+
+p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 66.774834 -11.553589 40.951328 -28.694693 -14.454278 7.197640 6.686324 -70.796463 16.715839 89.675514 41.789570 2.750737 16.681414 -43.461155 -74.336281 -30.088497 120.000000 0.000000 0.000000 0.000000
+
+p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 143.667648 11.553589 63.517700 -42.632740 -25.811211 5.722711 31.760075 -67.256638 3.343172 24.778761 35.103245 15.656343 29.955753 -6.686334 -50.737461 -28.416912 112.094391 -5.014748 13.198132 0.000000
+
+p3d_add_desc_rob_col_init justin
+
+p3d_desactivate_col_check automatic2
+
+p3d_desactivate_col_check GTorso1-1 GTorso4-1
+p3d_desactivate_col_check GTorso1-1 Ghead1-1
+p3d_desactivate_col_check GTorso1-1 Ghead2-1
+p3d_desactivate_col_check GTorso1-1 GrArm1-1
+p3d_desactivate_col_check GTorso1-1 GrArm2-1
+p3d_desactivate_col_check GTorso1-1 GlArm1-1
+p3d_desactivate_col_check GTorso1-1 GlArm2-1
+
+p3d_desactivate_col_check GTorso2-1 Ghead1-1
+p3d_desactivate_col_check GTorso2-1 Ghead2-1
+p3d_desactivate_col_check GTorso2-1 GrArm1-1
+p3d_desactivate_col_check GTorso2-1 GrArm2-1
+p3d_desactivate_col_check GTorso2-1 GlArm1-1
+p3d_desactivate_col_check GTorso2-1 GlArm2-1
+
+p3d_desactivate_col_check GTorso3-1 Ghead2-1
+p3d_desactivate_col_check GTorso3-1 GrArm1-1
+p3d_desactivate_col_check GTorso3-1 GrArm2-1
+p3d_desactivate_col_check GTorso3-1 GlArm1-1
+p3d_desactivate_col_check GTorso3-1 GlArm2-1
+
+p3d_desactivate_col_check Ghead1-1 GrArm1-1
+p3d_desactivate_col_check Ghead1-1 GrArm2-1
+p3d_desactivate_col_check Ghead1-1 GlArm1-1
+p3d_desactivate_col_check Ghead1-1 GlArm2-1
+
+p3d_desactivate_col_check Ghead2-1 GrArm1-1
+p3d_desactivate_col_check Ghead2-1 GrArm2-1
+p3d_desactivate_col_check Ghead2-1 GlArm1-1
+p3d_desactivate_col_check Ghead2-1 GlArm2-1
+
+p3d_desactivate_col_check GrArm1-1 GrArm4-1
+p3d_desactivate_col_check GrArm1-1 GrArm5-1
+p3d_desactivate_col_check GrArm1-1 GrArm6-1
+p3d_desactivate_col_check GrArm1-1 GrArm7-1
+
+p3d_desactivate_col_check GrArm2-1 GrArm5-1
+p3d_desactivate_col_check GrArm2-1 GrArm6-1
+p3d_desactivate_col_check GrArm2-1 GrArm7-1
+
+p3d_desactivate_col_check GrArm3-1 GrArm6-1
+p3d_desactivate_col_check GrArm3-1 GrArm7-1
+
+p3d_desactivate_col_check GrArm4-1 GrArm7-1
+p3d_desactivate_col_check GrArm4-1 GrHandPalm-1
+p3d_desactivate_col_check GrArm4-1 GrHandRing-1
+p3d_desactivate_col_check GrArm4-1 GrHandMiddle-1
+p3d_desactivate_col_check GrArm4-1 GrHandIndex-1
+p3d_desactivate_col_check GrArm4-1 GrHandThumb-1
+
+p3d_desactivate_col_check GrArm5-1 GrHandPalm-1
+p3d_desactivate_col_check GrArm5-1 GrHandRing-1
+p3d_desactivate_col_check GrArm5-1 GrHandMiddle-1
+p3d_desactivate_col_check GrArm5-1 GrHandIndex-1
+p3d_desactivate_col_check GrArm5-1 GrHandThumb-1
+
+p3d_desactivate_col_check GrArm6-1 GrHandRing-1
+p3d_desactivate_col_check GrArm6-1 GrHandMiddle-1
+p3d_desactivate_col_check GrArm6-1 GrHandIndex-1
+p3d_desactivate_col_check GrArm6-1 GrHandThumb-1
+
+p3d_desactivate_col_check GlArm1-1 GlArm4-1
+p3d_desactivate_col_check GlArm1-1 GlArm5-1
+p3d_desactivate_col_check GlArm1-1 GlArm6-1
+p3d_desactivate_col_check GlArm1-1 GlArm7-1
+
+p3d_desactivate_col_check GlArm2-1 GlArm5-1
+p3d_desactivate_col_check GlArm2-1 GlArm6-1
+p3d_desactivate_col_check GlArm2-1 GlArm7-1
+
+p3d_desactivate_col_check GlArm3-1 GlArm6-1
+p3d_desactivate_col_check GlArm3-1 GlArm7-1
+
+p3d_desactivate_col_check GlArm4-1 GlArm7-1
+p3d_desactivate_col_check GlArm4-1 GlHandPalm-1
+p3d_desactivate_col_check GlArm4-1 GlHandRing-1
+p3d_desactivate_col_check GlArm4-1 GlHandMiddle-1
+p3d_desactivate_col_check GlArm4-1 GlHandIndex-1
+p3d_desactivate_col_check GlArm4-1 GlHandThumb-1
+
+p3d_desactivate_col_check GlArm5-1 GlHandPalm-1
+p3d_desactivate_col_check GlArm5-1 GlHandRing-1
+p3d_desactivate_col_check GlArm5-1 GlHandMiddle-1
+p3d_desactivate_col_check GlArm5-1 GlHandIndex-1
+p3d_desactivate_col_check GlArm5-1 GlHandThumb-1
+
+p3d_desactivate_col_check GlArm6-1 GlHandRing-1
+p3d_desactivate_col_check GlArm6-1 GlHandMiddle-1
+p3d_desactivate_col_check GlArm6-1 GlHandIndex-1
+p3d_desactivate_col_check GlArm6-1 GlHandThumb-1
+
+#Torso J3
+p3d_constraint p3d_min_max_dofs 0  2 3 2  2 0 135  0
+#Torso J4
+p3d_constraint p3d_lin_rel_dofs 1 4  2 2 3  3 -1 -1 0  0
+p3d_constraint p3d_fixed_jnt 1 6 0   1 0 			0
+p3d_constraint p3d_fixed_jnt 1 7 0   1 10			0
+
+p3d_constraint p3d_fixed_jnt 1 13 0   1 93.608658 	0
+p3d_constraint p3d_fixed_jnt 1 14 0   1 -9.540314	0
+p3d_constraint p3d_fixed_jnt 1 15 0   1 -3.672564	0
+	
+p3d_constraint p3d_fixed_jnt 1 17 0   1 	-15.00000	0
+p3d_constraint p3d_fixed_jnt 1 18 0   1 	-46.00000 	0
+p3d_constraint p3d_fixed_jnt 1 19 0   1 	-8.000000 	0
+p3d_constraint p3d_fixed_jnt 1 20 0   1 	119.00000	0
+p3d_constraint p3d_fixed_jnt 1 21 0   1 	138.00000	0
+p3d_constraint p3d_fixed_jnt 1 22 0   1 	62.000000 	0
+p3d_constraint p3d_fixed_jnt 1 23 0   1 	29.000000 	0
+
+p3d_set_env_box 4.000000 -4.000000 6.000000 -6.000000 2.000000 0.000000
+
+

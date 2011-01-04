@@ -1,0 +1,70 @@
+p3d_beg_desc P3D_ENV new
+
+  p3d_beg_desc P3D_ROBOT gundamm
+    p3d_beg_desc_jnt P3D_PLAN
+      p3d_set_name Base
+      p3d_set_prev_jnt 0
+      p3d_set_pos_xyz 0 0 0 0 0 0
+      p3d_set_dof -5 3 0
+      p3d_set_dof_vmin -5.7 -5.7 -180
+      p3d_set_dof_vmax 5.7 5.7 179
+    p3d_end_desc
+
+  p3d_beg_desc P3D_BODY corp2
+      p3d_add_desc_cylindre base3 0.1 0.5
+      p3d_set_prim_pos base3 2.05 1.05 0.24 0.0 0.0 0.0
+  p3d_end_desc
+
+p3d_end_desc
+
+p3d_beg_desc P3D_ROBOT balle
+
+  p3d_beg_desc_jnt P3D_PLAN
+    p3d_set_name balle
+    p3d_set_prev_jnt 0
+    p3d_set_pos_axe 0 0 0 0 0 0
+    p3d_set_dof_vmin -5 -5 -90
+    p3d_set_dof_vmax 5 5 90
+  p3d_end_desc
+
+  p3d_beg_desc P3D_BODY corpballe
+    p3d_add_desc_sphere sphere 0.5
+    p3d_set_prim_pos sphere 0 0 0.25 0 0 0
+  p3d_end_desc
+p3d_end_desc
+
+  p3d_beg_desc P3D_OBSTACLE mur
+    p3d_add_desc_box mur1 12.4 0.4 2.0
+    p3d_set_prim_pos mur1 0.0 6.0 1.0 0.0 0.0 0.0
+    p3d_add_desc_box mur2 12.4 0.4 2.0
+    p3d_set_prim_pos mur2 0.0 -6.0 1.0 0.0 0.0 0.0
+    p3d_add_desc_box mur3 12.4 0.4 2.0
+    p3d_set_prim_pos mur3 6.0 0.0 1.0 0.0 0.0 90.0
+    p3d_add_desc_box mur4 12.4 0.4 2.0
+    p3d_set_prim_pos mur4 -6.0 0.0 1.0 0.0 0.0 90.0
+  p3d_end_desc
+
+  p3d_beg_desc P3D_OBSTACLE inter
+    p3d_add_desc_box bloc1 8.0 5.75 2.0
+    p3d_set_prim_pos bloc1 -2.0 -3.45 1.0 0.0 0.0 0.0
+    p3d_add_desc_box bloc2 8.0 5.75 2.0
+    p3d_set_prim_pos bloc2 2.0 3.45 1.0 0.0 0.0 0.0
+  p3d_end_desc
+p3d_end_desc
+
+
+p3d_sel_desc_name P3D_ROBOT gundamm
+
+p3d_set_robot_steering_method Linear
+
+p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -2.241888 3.306784 89.514755
+p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -5.000000 3.000000 0.000000
+
+
+
+p3d_sel_desc_name P3D_ROBOT balle
+
+p3d_set_robot_steering_method Linear
+
+p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 4.375615 -4.719764 0.000000
+p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -4.424779 3.933136 0.000000

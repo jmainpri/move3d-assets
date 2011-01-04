@@ -1,0 +1,47 @@
+p3d_beg_desc P3D_BODY link34
+
+  p3d_add_desc_poly arm241 P3D_GRAPHIC
+
+    p3d_add_desc_vert -35.000000 -5.000000 0.000000
+    p3d_add_desc_vert 35.000000 -5.000000 0.000000
+    p3d_add_desc_vert 35.000000 5.000000 0.000000
+    p3d_add_desc_vert -35.000000 5.000000 0.000000
+    p3d_add_desc_vert -35.000000 -5.000000 70.000000
+    p3d_add_desc_vert 35.000000 -5.000000 70.000000
+    p3d_add_desc_vert 35.000000 5.000000 70.000000
+    p3d_add_desc_vert -35.000000 5.000000 70.000000
+
+    p3d_add_desc_face  1  4  3  2
+    p3d_add_desc_face  2  6  5  1
+    p3d_add_desc_face  5  8  4  1
+    p3d_add_desc_face  8  7  3  4
+    p3d_add_desc_face  7  6  2  3
+    p3d_add_desc_face  7  8  5  6
+
+  p3d_end_desc_poly
+
+  p3d_polyhedre_set_pos arm241 1 0 0 -2.3e-05 0 1 0 38.000061 0 0 1 2299 0 0 0 1
+
+  p3d_add_desc_poly arm242
+
+    p3d_add_desc_vert -35.000000 -35.000000 0.000000
+    p3d_add_desc_vert 35.000000 -35.000000 0.000000
+    p3d_add_desc_vert 35.000000 35.000000 0.000000
+    p3d_add_desc_vert -35.000000 35.000000 0.000000
+    p3d_add_desc_vert -35.000000 -35.000000 10.000000
+    p3d_add_desc_vert 35.000000 -35.000000 10.000000
+    p3d_add_desc_vert 35.000000 35.000000 10.000000
+    p3d_add_desc_vert -35.000000 35.000000 10.000000
+
+    p3d_add_desc_face  1  4  3  2
+    p3d_add_desc_face  2  6  5  1
+    p3d_add_desc_face  5  8  4  1
+    p3d_add_desc_face  8  7  3  4
+    p3d_add_desc_face  7  6  2  3
+    p3d_add_desc_face  7  8  5  6
+
+  p3d_end_desc_poly
+
+  p3d_polyhedre_set_pos arm242 1 0 0 -2.3e-05 0 1 0 6e-05 0 0 1 2299 0 0 0 1
+
+p3d_end_desc

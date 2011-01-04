@@ -1,0 +1,237 @@
+  p3d_beg_desc_jnt P3D_FIXED # J51
+    p3d_set_name dockPalm
+    p3d_set_prev_jnt 50
+    p3d_set_pos_axe_dh  0 0 0 0
+  p3d_end_desc
+  p3d_read_macro lPalm.macro lPalm
+
+#########################
+#######  THUMB   ########
+#########################
+
+  p3d_beg_desc_jnt P3D_FIXED # J52
+    p3d_set_name dockThumb
+    p3d_set_prev_jnt 51
+    p3d_set_pos_axe_dh  0 0 91.41 0
+  p3d_end_desc
+  p3d_beg_desc_jnt P3D_ROTATE # J53
+    p3d_set_name lTMetacarpal
+    p3d_set_prev_jnt 52
+    p3d_set_pos_axe_dh 62.15 -1.57 -45.14 0
+    p3d_set_dof_vmin -180
+    p3d_set_dof_vmax 0
+  p3d_end_desc
+
+  p3d_read_macro lThumbMetacarpal.macro lThumbMetacarpal
+
+  p3d_beg_desc_jnt P3D_ROTATE # J54
+    p3d_set_name lTProximalZ
+    p3d_set_prev_jnt 53
+    p3d_set_pos_axe_dh 27.95 -1.57 0.56 0
+    p3d_set_dof_vmin -10
+    p3d_set_dof_vmax 20
+  p3d_end_desc
+
+  p3d_beg_desc_jnt P3D_ROTATE # J55
+    p3d_set_name lTProximal
+    p3d_set_prev_jnt 54
+    p3d_set_pos_axe_dh 0 -1.57 0 0
+    p3d_set_dof_vmin -20
+    p3d_set_dof_vmax 20
+  p3d_end_desc
+  
+  p3d_read_macro lThumbProximal.macro lThumbProximal
+  
+  p3d_beg_desc_jnt P3D_ROTATE # J56
+    p3d_set_name lTIntermediate
+    p3d_set_prev_jnt 55
+    p3d_set_pos_axe_dh 46.39 0 0.44 0
+    p3d_set_dof_vmin 0
+    p3d_set_dof_vmax 90
+  p3d_end_desc
+  
+  p3d_read_macro lThumbIntermediate.macro lThumbIntermediate
+  
+  p3d_beg_desc_jnt P3D_ROTATE # J57
+    p3d_set_name lTDistal
+    p3d_set_prev_jnt 56
+    p3d_set_pos_axe_dh 50.58 0 -0.17 0
+    p3d_set_dof_vmin 0
+    p3d_set_dof_vmax 70
+  p3d_end_desc
+  
+  p3d_read_macro lThumbDistal.macro lThumbDistal
+
+#########################
+#######   RING   ########
+#########################
+
+  p3d_beg_desc_jnt P3D_FIXED # J58
+    p3d_set_name dockRing
+    p3d_set_prev_jnt 51
+    p3d_set_pos_axe_dh  0 0 124.37 0
+  p3d_end_desc
+  
+  p3d_beg_desc_jnt P3D_ROTATE # J59
+    p3d_set_name lRMetacarpal
+    p3d_set_prev_jnt 58
+    p3d_set_pos_axe_dh -52.10 1.57 -47.01 0
+    p3d_set_dof_vmin -180
+    p3d_set_dof_vmax 0
+  p3d_end_desc
+  
+  p3d_read_macro lRingMetacarpal.macro lRingMetacarpal
+  
+  p3d_beg_desc_jnt P3D_ROTATE # J60
+    p3d_set_name lRProximalZ
+    p3d_set_prev_jnt 59
+    p3d_set_pos_axe_dh -27.94 -1.57 0.47 0
+    p3d_set_dof_vmin -10
+    p3d_set_dof_vmax 20
+  p3d_end_desc
+  
+  p3d_beg_desc_jnt P3D_ROTATE # J61
+    p3d_set_name lRProximal
+    p3d_set_prev_jnt 60
+    p3d_set_pos_axe_dh 0 -1.57 0 0
+    p3d_set_dof_vmin -20
+    p3d_set_dof_vmax 20
+  p3d_end_desc
+  
+  p3d_read_macro lRingProximal.macro lRingProximal
+  
+  p3d_beg_desc_jnt P3D_ROTATE # J62
+    p3d_set_name lRIntermediate
+    p3d_set_prev_jnt 61
+    p3d_set_pos_axe_dh -47.25 0 0.88 0
+    p3d_set_dof_vmin 0
+    p3d_set_dof_vmax 90
+  p3d_end_desc
+
+  p3d_read_macro lRingIntermediate.macro lRingIntermediate
+  
+  p3d_beg_desc_jnt P3D_ROTATE # J63
+    p3d_set_name lRDistal
+    p3d_set_prev_jnt 62
+    p3d_set_pos_axe_dh -50.25 0 -0.78 0
+    p3d_set_dof_vmin 0
+    p3d_set_dof_vmax 70
+  p3d_end_desc
+
+  p3d_read_macro lRingDistal.macro lRingDistal
+
+#########################
+#######  MIDDLE  ########
+#########################
+
+  p3d_beg_desc_jnt P3D_FIXED # J64
+    p3d_set_name dockMiddle
+    p3d_set_prev_jnt 51
+    p3d_set_pos_axe_dh  0 0 131.05 0
+  p3d_end_desc
+  
+  p3d_beg_desc_jnt P3D_ROTATE # J65
+    p3d_set_name lMMetacarpal
+    p3d_set_prev_jnt 64
+    p3d_set_pos_axe_dh -49.75 1.57 -1.94 0
+    p3d_set_dof_vmin -180
+    p3d_set_dof_vmax 00
+  p3d_end_desc
+  
+  p3d_read_macro lMiddleMetacarpal.macro lMiddleMetacarpal
+  
+  p3d_beg_desc_jnt P3D_ROTATE # J66
+    p3d_set_name lMProximalZ
+    p3d_set_prev_jnt 65
+    p3d_set_pos_axe_dh -27.79 -1.57 0.83 0
+    p3d_set_dof_vmin -10
+    p3d_set_dof_vmax 20
+  p3d_end_desc
+  
+  p3d_beg_desc_jnt P3D_ROTATE # J67
+    p3d_set_name lMProximal
+    p3d_set_prev_jnt 66
+    p3d_set_pos_axe_dh 0 -1.57 0 0
+    p3d_set_dof_vmin -20
+    p3d_set_dof_vmax 20
+  p3d_end_desc
+  
+  p3d_read_macro lMiddleProximal.macro lMiddleProximal
+  
+  p3d_beg_desc_jnt P3D_ROTATE # J68
+    p3d_set_name lMIntermediate
+    p3d_set_prev_jnt 67
+    p3d_set_pos_axe_dh -49.58 0 1.03 0
+    p3d_set_dof_vmin 0
+    p3d_set_dof_vmax 90
+  p3d_end_desc
+
+  p3d_read_macro lMiddleIntermediate.macro lMiddleIntermediate
+  
+  p3d_beg_desc_jnt P3D_ROTATE # J69
+    p3d_set_name lMDistal
+    p3d_set_prev_jnt 68
+    p3d_set_pos_axe_dh -50.83 0 1.03 0
+    p3d_set_dof_vmin 0
+    p3d_set_dof_vmax 70
+  p3d_end_desc
+
+  p3d_read_macro lMiddleDistal.macro lMiddleDistal
+
+#########################
+#######  INDEX   ########
+#########################
+
+  p3d_beg_desc_jnt P3D_FIXED # J70
+    p3d_set_name dockIndex
+    p3d_set_prev_jnt 51
+    p3d_set_pos_axe_dh  0 0 134.25 0
+  p3d_end_desc
+  
+  p3d_beg_desc_jnt P3D_ROTATE # J71
+    p3d_set_name lIMetacarpal
+    p3d_set_prev_jnt 70
+    p3d_set_pos_axe_dh -46.71 1.57 38.69 0
+    p3d_set_dof_vmin -180
+    p3d_set_dof_vmax 0
+  p3d_end_desc
+  
+  p3d_read_macro lIndexMetacarpal.macro lIndexMetacarpal
+  
+  p3d_beg_desc_jnt P3D_ROTATE # J72
+    p3d_set_name lIProximalZ
+    p3d_set_prev_jnt 71
+    p3d_set_pos_axe_dh -27.85 -1.57 1.55 0
+    p3d_set_dof_vmin -10
+    p3d_set_dof_vmax 20
+  p3d_end_desc
+  
+  p3d_beg_desc_jnt P3D_ROTATE # J73
+    p3d_set_name lIProximal
+    p3d_set_prev_jnt 72
+    p3d_set_pos_axe_dh 0 -1.57 0 0
+    p3d_set_dof_vmin -20
+    p3d_set_dof_vmax 20
+  p3d_end_desc
+  
+  p3d_read_macro lIndexProximal.macro lIndexProximal
+  
+  p3d_beg_desc_jnt P3D_ROTATE # J74
+    p3d_set_name lIIntermediate
+    p3d_set_prev_jnt 73
+    p3d_set_pos_axe_dh -49.83 0 4.21 0
+    p3d_set_dof_vmin 0
+    p3d_set_dof_vmax 90
+  p3d_end_desc
+
+  p3d_read_macro lIndexIntermediate.macro lIndexIntermediate
+  
+  p3d_beg_desc_jnt P3D_ROTATE # J75
+    p3d_set_name lIDistal
+    p3d_set_prev_jnt 74
+    p3d_set_pos_axe_dh -50.75 0 0.48 0
+    p3d_set_dof_vmin 0
+    p3d_set_dof_vmax 70
+  p3d_end_desc
+
+  p3d_read_macro lIndexDistal.macro lIndexDistal

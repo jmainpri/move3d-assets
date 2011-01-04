@@ -1,0 +1,70 @@
+p3d_beg_desc P3D_ROBOT
+
+p3d_read_macro base.macro baseArm1
+p3d_add_desc_jnt P3D_ROTATE 0 0 1479 0 0 1 0.0 -180.0 180.0 0
+#p3d_add_desc_jnt P3D_ROTATE 0 0 1479 0 0 1 0.0 -90.0 180.0 0
+#p3d_add_desc_jnt P3D_ROTATE 0 0 1479 0 0 1 90.0 0.0 180.0 0 
+p3d_read_macro ./link1.macro link1Arm1
+
+p3d_add_desc_jnt P3D_ROTATE 0 0 1479 0 -1 0 -90.0 -180.0 180.0 1
+#p3d_add_desc_jnt P3D_ROTATE 0 0 1479 0 -1 0 -90.0 -170.0 170.0 1
+#p3d_add_desc_jnt P3D_ROTATE 0 0 1479 0 1 0 70.0 -45.0 130.0 1
+p3d_read_macro ./link2.macro link2Arm1
+
+p3d_add_desc_jnt P3D_ROTATE 0 0 1944 0 -1 0 -90.0 -180.0 180.0 2
+#p3d_add_desc_jnt P3D_ROTATE 0 0 1944 0 -1 0 -90.0 -170.0 170.0 2
+#p3d_add_desc_jnt P3D_ROTATE 0 0 1944 0 1 0 90.0 0.0 145.0 2
+p3d_read_macro ./link3.macro link3Arm1
+
+p3d_add_desc_jnt P3D_ROTATE 0 0 2339 0 0 1 0.0 -180.0 180.0 3
+#p3d_add_desc_jnt P3D_ROTATE 0 0 2339 0 0 1 0.0 -170.0 170.0 3
+#p3d_add_desc_jnt P3D_ROTATE 0 0 2339 0 0 1 0.0 -150.0 150.0 3
+p3d_read_macro ./link4.macro link4Arm1
+
+p3d_add_desc_jnt P3D_ROTATE 0 0 2339 0 -1 0 0.0 -180.0 180.0 4
+#p3d_add_desc_jnt P3D_ROTATE 0 0 2339 0 -1 0 0.0 -90.0 90.0 4
+#p3d_add_desc_jnt P3D_ROTATE 0 0 2339 0 1 0 -70.0 -90.0 90.0 4
+p3d_read_macro ./link5.macro link5Arm1
+
+p3d_add_desc_jnt P3D_ROTATE 0 0 2339 0 0 1 0.0 -180.0 180.0 5
+#p3d_add_desc_jnt P3D_ROTATE 0 0 2339 0 0 1 0.0 -150.0 150.0 5
+#p3d_add_desc_jnt P3D_ROTATE 0 0 2339 0 0 1 0.0 0.0 180.0 5
+p3d_read_macro ./link6.macro link6Arm1
+p3d_beg_desc P3D_BODY barre
+ 	p3d_add_desc_cylindre rob_barre 10. 400.0 
+  	p3d_set_prim_pos rob_barre  -150 0 2500 0 90 0
+p3d_end_desc
+
+p3d_beg_desc_jnt P3D_FREEFLYER
+	p3d_set_name virtual_object
+    p3d_set_prev_jnt 0
+    p3d_set_pos_axe 0 0 0 0 0 1
+    p3d_set_dof_vmin -2000 -2000 0 -170 -170 -170
+    p3d_set_dof_vmax 2000 2000 3000 170 170 170
+p3d_end_desc
+p3d_beg_desc P3D_BODY fictiveObject
+    p3d_add_desc_sphere sphere 10 P3D_GRAPHIC
+    p3d_set_prim_pos sphere 0 0 0 0 0 0
+p3d_end_desc
+
+
+p3d_end_desc
+
+
+############################################
+
+p3d_set_body_poly_color baseArm1.armBase 2 Black
+
+p3d_set_body_poly_color link2Arm1.link12 1 Black
+p3d_set_body_poly_color link2Arm1.link12 2 Black
+p3d_set_body_poly_color link2Arm1.link12 4 Black
+p3d_set_body_poly_color link2Arm1.link12 6 Black
+
+p3d_set_body_poly_color link3Arm1.link23 1 Black
+p3d_set_body_poly_color link3Arm1.link23 3 Black
+
+p3d_set_body_poly_color link6Arm1.link56 1 Black
+p3d_set_body_poly_color link6Arm1.link56 2 Black
+p3d_set_body_poly_color link6Arm1.link56 3 Black
+
+p3d_set_body_poly_color barre 1 Green

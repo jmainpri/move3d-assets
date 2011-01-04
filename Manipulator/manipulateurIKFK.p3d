@@ -1,0 +1,71 @@
+p3d_beg_desc P3D_ENV manipulateur
+
+p3d_beg_desc P3D_OBSTACLE bm.barre1
+p3d_add_desc_cylindre bm.barre1 100.0 2500.0 
+p3d_set_prim_pos bm.barre1 400.0 300.0 1225.0 0.0 0.0 0.0
+p3d_end_desc
+
+p3d_beg_desc P3D_OBSTACLE bm.barre2
+p3d_add_desc_cylindre bm.barre2 100.0 2500.0 
+p3d_set_prim_pos bm.barre2 400.0 -300.0 1225.0 0.0 0.0 0.0
+p3d_end_desc
+
+p3d_beg_desc P3D_OBSTACLE bm.mur
+p3d_add_desc_box bm.mur1 90.0 1200.0 900.0 
+p3d_set_prim_pos bm.mur1 -800.0 0.0 450.0 0.0 0.0 0.0
+p3d_add_desc_box bm.mur2 90.0 400.0 400.0 
+p3d_set_prim_pos bm.mur2 -800.0 400.0 1100.0 0.0 0.0 0.0
+p3d_add_desc_box bm.mur3 90.0 400.0 400.0 
+p3d_set_prim_pos bm.mur3 -800.0 -400.0 1100.0 0.0 0.0 0.0
+p3d_add_desc_box bm.mur4 90.0 1200.0 900.0 
+p3d_set_prim_pos bm.mur4 -800.0 0.0 1750.0 0.0 0.0 0.0
+p3d_end_desc
+#
+p3d_beg_desc P3D_OBSTACLE bm.caisse
+p3d_add_desc_box bm.caisse 400.0 400.0 1100.0 
+p3d_set_prim_pos bm.caisse 0.0 0.0 500.0 0.0 0.0 0.0
+p3d_end_desc
+
+p3d_set_obst_color bm.caisse Brown
+
+p3d_read_macro gt6agIK.macro gt6ag
+
+p3d_end_desc
+
+# en fait la desactivation rend les calculs plus lents....
+p3d_add_desc_rob_col_init gt6ag
+p3d_desactivate_col_check automatic 
+# p3d_desactivate_col_check bm.rob.arm2 bm.rob.arm4
+# p3d_desactivate_col_check bm.rob.arm2 bm.rob.arm5
+# p3d_desactivate_col_check bm.rob.arm2 bm.rob.arm6
+# p3d_desactivate_col_check bm.rob.arm2 bm.rob.arm7
+# p3d_desactivate_col_check bm.rob.arm3 bm.rob.arm5
+# p3d_desactivate_col_check bm.rob.arm3 bm.rob.arm6
+# p3d_desactivate_col_check bm.rob.arm3 bm.rob.arm7
+# p3d_desactivate_col_check bm.rob.arm3 bm.rob.arm8
+# p3d_desactivate_col_check bm.rob.arm4 bm.rob.arm6
+# p3d_desactivate_col_check bm.rob.arm4 bm.rob.arm7
+# p3d_desactivate_col_check bm.rob.arm4 bm.rob.arm8
+# p3d_desactivate_col_check bm.rob.arm5 bm.rob.arm7
+# p3d_desactivate_col_check bm.rob.arm5 bm.rob.arm8
+# p3d_desactivate_col_check bm.rob.arm6 bm.rob.arm8
+# p3d_desactivate_col_check bm.rob.arm7 bm.rob.arm8
+
+
+
+
+##################################################################
+p3d_set_env_box -1600.000000 1600.000000 -1600.000000 1600.000000 0.000000 2500.000000
+
+p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -0.439024 -67.609756 -71.121951 6.585366 16.243902 -2.195122 920.485047 -14.531384 1175.719243 175.906016 57.335786 7.814388
+p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 172.810349 -51.214637 -110.044074 -145.652192 14.093073 146.391611 -556.097561 29.268293 1112.195122 172.975610 -7.902439 6.146341
+
+ 		   
+p3d_constraint p3d_R6_arm_ik 1 1 1 7 3 465 395 0 1 3
+p3d_set_cntrt_Tatt 0  
+	-1.000000   +0.000000   -0.000000  +30.747249
+	 -0.000000   -1.000000   -0.000000   -0.299010
+	 -0.000000   -0.000000   +1.000000  -292.793251
+	   
+p3d_set_object_base_and_arm_constraints 7 0 0 1 0
+#p3d_set_random_loop_generator normal_chain 0 1 6

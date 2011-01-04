@@ -1,0 +1,29 @@
+  p3d_beg_desc P3D_OBSTACLE
+
+
+    p3d_add_desc_poly polyhedre507
+      p3d_add_desc_vert 0.0 0.0 -10.75
+      p3d_add_desc_vert 0.0 0.0 0.0
+      p3d_add_desc_vert 28.5 0.0 -10.75
+      p3d_add_desc_vert 28.5 0.0 0.0
+
+      p3d_add_desc_face 3 1 2
+      p3d_add_desc_face 2 4 3
+    p3d_end_desc_poly
+    p3d_set_prim_pos_by_mat polyhedre507 0.894736 0 0 -12.75 0 0 -0.999999 -5.375004 0 1 0 0 0 0 0 1
+
+    p3d_add_desc_poly polyhedre508
+      p3d_add_desc_vert 0.0 0.0 -10.75
+      p3d_add_desc_vert 0.0 0.0 0.0
+      p3d_add_desc_vert 28.5 0.0 -10.75
+      p3d_add_desc_vert 28.5 0.0 0.0
+
+      p3d_add_desc_face 1 3 2
+      p3d_add_desc_face 4 2 3
+    p3d_end_desc_poly
+    p3d_set_prim_pos_by_mat polyhedre508 0.894736 0 0 -12.75 0 0 -0.999999 -5.375004 0 1 0 0 0 0 0 1
+
+  p3d_end_desc
+
+p3d_set_obst_poly_color 1 Any 1.0 1.0 1.0
+p3d_set_obst_poly_color 2 Any 0.8 0.8 0.8

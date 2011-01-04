@@ -1,0 +1,84 @@
+
+Translation x y z in mm translated in direction of a fixed coordinate system, KUKA Sim
+Rotation R_z R_y R_x  in degree rotated about a fixed coordinate system, KUKA Sim
+Axis A1 A2 A3 A4 A5 A6 in degree, KUKA Sim
+
+
+
+
+
+OBSTACLES OF THE SCENE
+
+Cell
+Translation 0 0 0
+Rotation 0 0 0
+
+Car
+Translation 3680.93 36.76 770
+Rotation 0 0 0
+
+KR125_1_1
+Translation 5400 2899.94 1108.06
+Rotation 0 0 0
+
+KR125_1_3
+Translation 1900 2200 1403.19
+Rotation 0 0 0
+
+KR125_1_4
+Translation 5399.96 -2899.98 1096.23
+Rotation 0 0 0
+
+KR125_1_5
+Translation 3399.96 -3099.95 1399.92
+Rotation 0 0 0
+
+KR125_1_6
+Translation 1899.95 -2199.95 1394.14
+Rotation 0 0 0
+
+
+
+
+
+
+
+MOVEABLE ROBOT
+
+KR60-3 with Spotwelding Gun 
+(just exchange KR60-3_Link6.wrl of KR60-3 from Scenario 1 with KR60-3_Link6_with_Spotwelding_Gun.wrl...see directory "KR60-3_with_Spotwelding_Gun")
+Translation 3383.83 2494.68 1405.14
+Rotation 0 0 0
+
+
+
+
+
+
+TASK DESCRIPTION: SPOTWELDING
+
+Robot: KR60-3 with Spotwelding Gun
+
+Startposition
+Axis
+93.47 -61.30 137.00 -208.54 -7.24 60.00
+
+1st Spotwelding Point at
+Axis
+79.96 -15.18 11.49 -170.91 -90.52 14.11
+
+2nd Spotwelding Point at
+Axis
+94.43 -53.76 83.04 -196.11 -31.50 40.65
+
+3rd Spotwelding Point at
+Axis
+99.51 -45.91 63.70 -187.46 -52.40 27.02
+
+4th Spotwelding Point at
+Axis
+108.02 -38.32 49.60 -182.66 -57.84 -35.07
+
+5th Spotwelding Point at
+Axis
+110.56 -39.83 60.76 -171.70 -37.18 -29.88

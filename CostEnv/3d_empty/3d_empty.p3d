@@ -1,0 +1,29 @@
+p3d_beg_desc P3D_ENV empty
+
+ p3d_beg_desc P3D_ROBOT CylinderRob  
+   p3d_beg_desc_jnt P3D_FREEFLYER
+     p3d_set_prev_jnt 0
+     p3d_set_pos_xyz 0.0 0.0 0.0 0.0 0.0 0.0
+     p3d_set_dof 0 0 0  0   0   0
+     p3d_set_dof_vmin -2 -2 -1 0 0 0
+     p3d_set_dof_vmax 2 2 3 0 0 0
+   p3d_end_desc
+
+ p3d_CostEnvironment
+
+ p3d_beg_desc P3D_BODY body  
+  
+ p3d_add_desc_cylindre englobant 0.1 0.2 P3D_REAL  
+ p3d_set_prim_pos englobant 0.0 0.0 0.0 0.0 0.0 0.0  
+  
+ p3d_end_desc #BODY  
+  
+ p3d_end_desc #ROBOT  
+
+p3d_end_desc
+
+p3d_set_env_box -2 2 -2 2 -1 3
+#p3d_set_robot_box -450 100 -100 100 -100 100
+
+p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1 0 0 0 0 0
+p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1 0 2 0 0 0

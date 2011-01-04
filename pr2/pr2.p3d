@@ -1,0 +1,14 @@
+p3d_beg_desc P3D_ENV pr2
+
+p3d_read_macro pr2.macro ROBOT_PR2
+
+p3d_end_desc
+
+p3d_set_env_box -1 1 -1 1 0 2
+
+p3d_add_desc_rob_col_init ROBOT_PR2
+p3d_desactivate_col_check automatic
+
+p3d_desactivate_col_check larm.larm1 larm.larm3
+p3d_desactivate_col_check rarm.rarm1 rarm.rarm3
+

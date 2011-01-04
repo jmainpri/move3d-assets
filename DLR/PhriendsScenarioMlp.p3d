@@ -1,0 +1,223 @@
+p3d_beg_desc P3D_ENV JustinScenario
+
+#p3d_beg_desc P3D_OBSTACLE floor
+#	p3d_add_desc_box floor1 4 4 0.05
+#	p3d_set_prim_pos floor1 0 0 -0.025 0 0 0
+#p3d_end_desc
+
+#programmingTable
+#  p3d_read_macro ./obstacles/programmiertisch.macro programmiertisch
+#  p3d_set_obst_pos programmiertisch 10 1 0 0 0 90
+#shelf
+  p3d_read_macro ./obstacles/regal.macro regal
+  p3d_set_obst_pos regal -0.511 0.32 -0.002 90 0 180
+#table
+  p3d_read_macro ./obstacles/tisch.macro tisch
+  p3d_set_obst_pos tisch 0.38 -1.0106 0.0 90 0 -90
+
+#table2
+  p3d_read_macro ./obstacles/tisch.macro tisch2
+  p3d_set_obst_pos tisch2 -0.5574 -2.2716 0.03 90 0 180
+# p3d_set_obst_pos tisch2 -0.5574 -2.50 0.03 90 0 180
+
+  p3d_read_macro ./batmansmall.macro human
+
+  p3d_read_macro carafe.macro carafe
+  p3d_read_macro carafe.macro carafe2
+#  p3d_read_macro tallGlass.macro tallGlass
+  p3d_read_macro teaBox.macro teaBox
+  p3d_read_macro waterBottle.macro waterBottle
+  p3d_read_macro poster.macro poster
+  p3d_read_macro box.macro box
+
+  p3d_read_macro JustinMobilePlate.macro justin
+
+p3d_end_desc
+######################
+######## COLOR #######
+######################
+p3d_set_env_box -2.800 2.800 -2.800 2.800 -0.050 3.000
+
+######################
+##### CONSTRAINTS ####
+######################
+
+# Torso J3
+p3d_constraint p3d_min_max_dofs 0  2 4 3  2 0 135  0
+# Torso J4
+p3d_constraint p3d_lin_rel_dofs 1 5  2 3 4  3 -1 -1 0  0
+
+#Right Arm
+p3d_constraint p3d_kuka_arm_ik 6 10 11 13 14 15 16  1 29  0  3 12 1 3
+p3d_set_singularity 2  1 13 0
+p3d_set_singularity 2  2 11 0  12 0
+p3d_set_singularity 2  2 11 0  15 90
+p3d_set_singularity 2  2 14 0  15 0
+p3d_set_singular_rel 2 0 4  1 5  1 7  3 5  3 7
+p3d_set_singular_rel 2 1 2  1 3  5 7
+p3d_set_singular_rel 2 3 2  1 5  3 7
+
+#Left Arm
+p3d_constraint p3d_kuka_arm_ik 6 18 19 21 22 23 24  1 29  0  3 20 -1 1
+# p3d_set_singularity 6  1 20 0
+p3d_set_singularity 3  2 19 0  20 0
+# p3d_set_singular_rel 6 0 3  5 3  3 7  7 5
+p3d_set_singular_rel 3 0 1  1 3
+
+
+#Right Arm
+p3d_set_cntrt_Tatt 2 0.252663   0.376249   0.891402   -0.103059
+ -0.965411   0.036753   0.258128   -0.344582
+ 0.064359   -0.925790   0.372521   0.411140
+#Left Arm
+p3d_set_cntrt_Tatt 3 0.252670   0.376201   -0.891421   -0.103062
+ 0.965418   -0.036863   0.258087   0.344587
+ 0.064232   -0.925804   -0.372506   0.411135
+#Head
+p3d_constraint p3d_head_object_track 2 7 8  1 29  0 0
+
+######################
+#### MULTI GRAPH #####
+######################
+
+p3d_set_removable_bb_for_grasp 2 26 28
+p3d_set_object_base_and_arm_constraints 29 1 0  2  2 3
+
+
+p3d_set_open_chain_config 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -1.653320 0.451470 82.109633 0.000000 0.000000 12.167063 -12.167063 0.000000 0.000000 0 -114 0 0 90 0 0 0 -114 0 0 90 0 0 1.100 -0.600 0.061613 0.000000 0.000000 90.000000
+p3d_set_closed_chain_config 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -0.624204 -0.606100 6.746332 -3.676356 -35.051620 35.051620 0.000000 -3.645305 45.000000 -7.374254 -94.090432 -3.343162 112.166656 -3.077033 78.729798 26.882502 3.607756 -73.320304 -26.745325 111.807103 79.902094 61.589891 -44.997255 -0.270895 -0.615044 0.832842 0.000000 0.000000 1.769915
+
+p3d_set_robot_steering_method Multi-Localpath
+
+# DO NOT DESACTIVATE ANY MULTILOCALPATH_GROUP
+# p3d_multi_localpath_group 1 29 1->29
+# p3d_multi_localpath_data justinObj base R&S+linear 0.001 1
+
+p3d_multi_localpath_group 1 1 1
+p3d_multi_localpath_data base base R&S+linear 0.001 1
+
+p3d_multi_localpath_group 1 2 7 8
+p3d_multi_localpath_data head joint Linear
+
+p3d_multi_localpath_group 1 27 2->28
+p3d_multi_localpath_data upBody joint Linear
+
+p3d_multi_localpath_group 1 1 29
+p3d_multi_localpath_data object freeflyer Linear
+
+# DO NOT REMOVE THE FOLLOWING LINE TO USE MULTILOCALPATH
+p3d_set_robot_steering_method Multi-Localpath
+
+
+
+p3d_add_desc_rob_col_init justin
+p3d_desactivate_col_check automatic2
+p3d_desactivate_col_check GPlatform-1 GTorso3-1
+p3d_desactivate_col_check GPlatform-1 GTorso4-1
+p3d_desactivate_col_check GPlatform-1 Ghead1-1
+p3d_desactivate_col_check GPlatform-1 Ghead2-1
+p3d_desactivate_col_check GPlatform-1 GrArm1-1
+p3d_desactivate_col_check GPlatform-1 GrArm2-1
+p3d_desactivate_col_check GPlatform-1 GlArm1-1
+p3d_desactivate_col_check GPlatform-1 GlArm2-1
+
+p3d_desactivate_col_check GPlatform-2 GTorso3-1
+p3d_desactivate_col_check GPlatform-2 GTorso4-1
+p3d_desactivate_col_check GPlatform-2 Ghead1-1
+p3d_desactivate_col_check GPlatform-2 Ghead2-1
+p3d_desactivate_col_check GPlatform-2 GrArm1-1
+p3d_desactivate_col_check GPlatform-2 GrArm2-1
+p3d_desactivate_col_check GPlatform-2 GlArm1-1
+p3d_desactivate_col_check GPlatform-2 GlArm2-1
+
+p3d_desactivate_col_check GPlatform-3 GTorso3-1
+p3d_desactivate_col_check GPlatform-3 GTorso4-1
+p3d_desactivate_col_check GPlatform-3 Ghead1-1
+p3d_desactivate_col_check GPlatform-3 Ghead2-1
+p3d_desactivate_col_check GPlatform-3 GrArm1-1
+p3d_desactivate_col_check GPlatform-3 GrArm2-1
+p3d_desactivate_col_check GPlatform-3 GlArm1-1
+p3d_desactivate_col_check GPlatform-3 GlArm2-1
+
+p3d_desactivate_col_check GPlatform-4 GTorso3-1
+p3d_desactivate_col_check GPlatform-4 GTorso4-1
+p3d_desactivate_col_check GPlatform-4 Ghead1-1
+p3d_desactivate_col_check GPlatform-4 Ghead2-1
+p3d_desactivate_col_check GPlatform-4 GrArm1-1
+p3d_desactivate_col_check GPlatform-4 GrArm2-1
+p3d_desactivate_col_check GPlatform-4 GlArm1-1
+p3d_desactivate_col_check GPlatform-4 GlArm2-1
+
+p3d_desactivate_col_check GPlatform-5 GTorso3-1
+p3d_desactivate_col_check GPlatform-5 GTorso4-1
+p3d_desactivate_col_check GPlatform-5 Ghead1-1
+p3d_desactivate_col_check GPlatform-5 Ghead2-1
+p3d_desactivate_col_check GPlatform-5 GrArm1-1
+p3d_desactivate_col_check GPlatform-5 GrArm2-1
+p3d_desactivate_col_check GPlatform-5 GlArm1-1
+p3d_desactivate_col_check GPlatform-5 GlArm2-1
+
+p3d_desactivate_col_check GTorso1-1 GTorso4-1
+p3d_desactivate_col_check GTorso1-1 Ghead1-1
+p3d_desactivate_col_check GTorso1-1 Ghead2-1
+p3d_desactivate_col_check GTorso1-1 GrArm1-1
+p3d_desactivate_col_check GTorso1-1 GrArm2-1
+p3d_desactivate_col_check GTorso1-1 GlArm1-1
+p3d_desactivate_col_check GTorso1-1 GlArm2-1
+
+p3d_desactivate_col_check GTorso2-1 Ghead1-1
+p3d_desactivate_col_check GTorso2-1 Ghead2-1
+p3d_desactivate_col_check GTorso2-1 GrArm1-1
+p3d_desactivate_col_check GTorso2-1 GrArm2-1
+p3d_desactivate_col_check GTorso2-1 GlArm1-1
+p3d_desactivate_col_check GTorso2-1 GlArm2-1
+
+p3d_desactivate_col_check GTorso3-1 Ghead2-1
+p3d_desactivate_col_check GTorso3-1 GrArm1-1
+p3d_desactivate_col_check GTorso3-1 GrArm2-1
+p3d_desactivate_col_check GTorso3-1 GlArm1-1
+p3d_desactivate_col_check GTorso3-1 GlArm2-1
+
+p3d_desactivate_col_check Ghead1-1 GrArm1-1
+p3d_desactivate_col_check Ghead1-1 GrArm2-1
+p3d_desactivate_col_check Ghead1-1 GlArm1-1
+p3d_desactivate_col_check Ghead1-1 GlArm2-1
+
+p3d_desactivate_col_check Ghead2-1 GrArm1-1
+p3d_desactivate_col_check Ghead2-1 GrArm2-1
+p3d_desactivate_col_check Ghead2-1 GlArm1-1
+p3d_desactivate_col_check Ghead2-1 GlArm2-1
+
+p3d_desactivate_col_check GrArm1-1 GrArm4-1
+p3d_desactivate_col_check GrArm1-1 GrArm5-1
+p3d_desactivate_col_check GrArm1-1 GrArm6-1
+p3d_desactivate_col_check GrArm1-1 GrArm7-1
+
+p3d_desactivate_col_check GrArm2-1 GrArm5-1
+p3d_desactivate_col_check GrArm2-1 GrArm6-1
+p3d_desactivate_col_check GrArm2-1 GrArm7-1
+
+p3d_desactivate_col_check GrArm3-1 GrArm6-1
+p3d_desactivate_col_check GrArm3-1 GrArm7-1
+
+p3d_desactivate_col_check GrArm4-1 GrArm7-1
+p3d_desactivate_col_check GrArm4-1 GrHandPalm-1
+
+p3d_desactivate_col_check GrArm5-1 GrHandPalm-1
+
+p3d_desactivate_col_check GlArm1-1 GlArm4-1
+p3d_desactivate_col_check GlArm1-1 GlArm5-1
+p3d_desactivate_col_check GlArm1-1 GlArm6-1
+p3d_desactivate_col_check GlArm1-1 GlArm7-1
+
+p3d_desactivate_col_check GlArm2-1 GlArm5-1
+p3d_desactivate_col_check GlArm2-1 GlArm6-1
+p3d_desactivate_col_check GlArm2-1 GlArm7-1
+
+p3d_desactivate_col_check GlArm3-1 GlArm6-1
+p3d_desactivate_col_check GlArm3-1 GlArm7-1
+
+p3d_desactivate_col_check GlArm4-1 GlArm7-1
+p3d_desactivate_col_check GlArm4-1 GlHandPalm-1
+
+p3d_desactivate_col_check GlArm5-1 GlHandPalm-1

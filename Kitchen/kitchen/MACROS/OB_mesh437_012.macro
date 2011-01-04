@@ -1,0 +1,119 @@
+  p3d_beg_desc P3D_OBSTACLE
+
+
+    p3d_add_desc_poly polyhedre239
+      p3d_add_desc_vert 84.2054977417 0.0 -153.550201416
+      p3d_add_desc_vert 82.1835098267 0.0 -154.964401245
+      p3d_add_desc_vert 84.2054977417 0.0 -154.964401245
+      p3d_add_desc_vert 82.1835098267 0.0 -153.550201416
+      p3d_add_desc_vert 80.1615142822 0.0 -154.964401245
+      p3d_add_desc_vert 84.2054977417 0.0 -152.136001587
+      p3d_add_desc_vert 80.1615142822 0.0 -157.792800903
+      p3d_add_desc_vert 82.1835098267 0.0 -152.136001587
+      p3d_add_desc_vert 80.1615142822 0.0 -152.136001587
+      p3d_add_desc_vert 84.2054977417 0.0 -157.792800903
+      p3d_add_desc_vert 80.1615142822 0.0 -160.621200562
+      p3d_add_desc_vert 84.2054977417 0.0 -160.621200562
+      p3d_add_desc_vert 80.1615142822 0.0 -163.449615479
+      p3d_add_desc_vert 84.2054977417 0.0 -163.449615479
+
+      p3d_add_desc_face 3 1 2
+      p3d_add_desc_face 2 1 4
+    p3d_end_desc_poly
+    p3d_set_prim_pos_by_mat polyhedre239 0 0 1 156.520022 1 0 0 -82.183506 0 1 0 0 0 0 0 1
+
+    p3d_add_desc_poly polyhedre240
+      p3d_add_desc_vert 84.2054977417 0.0 -153.550201416
+      p3d_add_desc_vert 82.1835098267 0.0 -154.964401245
+      p3d_add_desc_vert 84.2054977417 0.0 -154.964401245
+      p3d_add_desc_vert 82.1835098267 0.0 -153.550201416
+      p3d_add_desc_vert 80.1615142822 0.0 -154.964401245
+      p3d_add_desc_vert 84.2054977417 0.0 -152.136001587
+      p3d_add_desc_vert 80.1615142822 0.0 -157.792800903
+      p3d_add_desc_vert 82.1835098267 0.0 -152.136001587
+      p3d_add_desc_vert 80.1615142822 0.0 -152.136001587
+      p3d_add_desc_vert 84.2054977417 0.0 -157.792800903
+      p3d_add_desc_vert 80.1615142822 0.0 -160.621200562
+      p3d_add_desc_vert 84.2054977417 0.0 -160.621200562
+      p3d_add_desc_vert 80.1615142822 0.0 -163.449615479
+      p3d_add_desc_vert 84.2054977417 0.0 -163.449615479
+
+      p3d_add_desc_face 11 13 12
+      p3d_add_desc_face 14 12 13
+    p3d_end_desc_poly
+    p3d_set_prim_pos_by_mat polyhedre240 0 0 1 156.520022 1 0 0 -82.183506 0 1 0 0 0 0 0 1
+
+    p3d_add_desc_poly polyhedre241
+      p3d_add_desc_vert 84.2054977417 0.0 -153.550201416
+      p3d_add_desc_vert 82.1835098267 0.0 -154.964401245
+      p3d_add_desc_vert 84.2054977417 0.0 -154.964401245
+      p3d_add_desc_vert 82.1835098267 0.0 -153.550201416
+      p3d_add_desc_vert 80.1615142822 0.0 -154.964401245
+      p3d_add_desc_vert 84.2054977417 0.0 -152.136001587
+      p3d_add_desc_vert 80.1615142822 0.0 -157.792800903
+      p3d_add_desc_vert 82.1835098267 0.0 -152.136001587
+      p3d_add_desc_vert 80.1615142822 0.0 -152.136001587
+      p3d_add_desc_vert 84.2054977417 0.0 -157.792800903
+      p3d_add_desc_vert 80.1615142822 0.0 -160.621200562
+      p3d_add_desc_vert 84.2054977417 0.0 -160.621200562
+      p3d_add_desc_vert 80.1615142822 0.0 -163.449615479
+      p3d_add_desc_vert 84.2054977417 0.0 -163.449615479
+
+      p3d_add_desc_face 2 5 3
+      p3d_add_desc_face 5 7 3
+      p3d_add_desc_face 10 3 7
+    p3d_end_desc_poly
+    p3d_set_prim_pos_by_mat polyhedre241 0 0 1 156.520022 1 0 0 -82.183506 0 1 0 0 0 0 0 1
+
+    p3d_add_desc_poly polyhedre242
+      p3d_add_desc_vert 84.2054977417 0.0 -153.550201416
+      p3d_add_desc_vert 82.1835098267 0.0 -154.964401245
+      p3d_add_desc_vert 84.2054977417 0.0 -154.964401245
+      p3d_add_desc_vert 82.1835098267 0.0 -153.550201416
+      p3d_add_desc_vert 80.1615142822 0.0 -154.964401245
+      p3d_add_desc_vert 84.2054977417 0.0 -152.136001587
+      p3d_add_desc_vert 80.1615142822 0.0 -157.792800903
+      p3d_add_desc_vert 82.1835098267 0.0 -152.136001587
+      p3d_add_desc_vert 80.1615142822 0.0 -152.136001587
+      p3d_add_desc_vert 84.2054977417 0.0 -157.792800903
+      p3d_add_desc_vert 80.1615142822 0.0 -160.621200562
+      p3d_add_desc_vert 84.2054977417 0.0 -160.621200562
+      p3d_add_desc_vert 80.1615142822 0.0 -163.449615479
+      p3d_add_desc_vert 84.2054977417 0.0 -163.449615479
+
+      p3d_add_desc_face 1 6 4
+      p3d_add_desc_face 8 4 6
+      p3d_add_desc_face 7 11 10
+      p3d_add_desc_face 12 10 11
+    p3d_end_desc_poly
+    p3d_set_prim_pos_by_mat polyhedre242 0 0 1 156.520022 1 0 0 -82.183506 0 1 0 0 0 0 0 1
+
+    p3d_add_desc_poly polyhedre243
+      p3d_add_desc_vert 84.2054977417 0.0 -153.550201416
+      p3d_add_desc_vert 82.1835098267 0.0 -154.964401245
+      p3d_add_desc_vert 84.2054977417 0.0 -154.964401245
+      p3d_add_desc_vert 82.1835098267 0.0 -153.550201416
+      p3d_add_desc_vert 80.1615142822 0.0 -154.964401245
+      p3d_add_desc_vert 84.2054977417 0.0 -152.136001587
+      p3d_add_desc_vert 80.1615142822 0.0 -157.792800903
+      p3d_add_desc_vert 82.1835098267 0.0 -152.136001587
+      p3d_add_desc_vert 80.1615142822 0.0 -152.136001587
+      p3d_add_desc_vert 84.2054977417 0.0 -157.792800903
+      p3d_add_desc_vert 80.1615142822 0.0 -160.621200562
+      p3d_add_desc_vert 84.2054977417 0.0 -160.621200562
+      p3d_add_desc_vert 80.1615142822 0.0 -163.449615479
+      p3d_add_desc_vert 84.2054977417 0.0 -163.449615479
+
+      p3d_add_desc_face 2 4 5
+      p3d_add_desc_face 9 5 4
+      p3d_add_desc_face 8 9 4
+    p3d_end_desc_poly
+    p3d_set_prim_pos_by_mat polyhedre243 0 0 1 156.520022 1 0 0 -82.183506 0 1 0 0 0 0 0 1
+
+  p3d_end_desc
+
+p3d_set_obst_poly_color 1 Any 0.8 0.8 0.8
+p3d_set_obst_poly_color 2 Any 0.227451 0.227451 0.227451
+p3d_set_obst_poly_color 3 Any 1.0 0.921569 0.803922
+p3d_set_obst_poly_color 4 Any 0.8 0.8 0.8
+p3d_set_obst_poly_color 5 Any 1.0 0.980392 0.980392

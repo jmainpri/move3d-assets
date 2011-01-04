@@ -1,0 +1,217 @@
+<!--Jido model (PA10 and SAHand models are in separate files) -->
+
+
+<robot name="Jido">
+<name> Jido </name>
+<models_directory> ./JidoH </models_directory>
+
+<joint name="root">
+  <name> root </name>
+  <type> revolute </type>
+  <qmin> 0 </qmin>
+  <qmax> 0  </qmax>
+  <q> 0 </q>    
+
+  <body name="base">
+    <name> base </name> 
+    <file>  base.obj  </file>
+    <collision>  no  </collision>
+    <color>  0.7 0.7 0.7 1.0 </color>   
+  </body>
+  <body name="Gbase">
+    <name> Gbase </name> 
+    <file>  Gbase.obj  </file>
+    <collision>  yes  </collision>
+    <display>  no  </display>
+    <color>  1.0 1.0 0.0 1.0 </color>   
+  </body>
+
+          
+  <body name="computer">
+    <name> computer  </name> 
+    <file>  computer.obj  </file>
+    <collision>  no  </collision>
+    <color>  0.1 0.1 0.1 1.0 </color> 
+  </body>   
+  <body name="Gcomputer">
+    <name> Gcomputer </name> 
+    <file>  Gcomputer.obj  </file>
+    <collision>  yes  </collision>
+    <display>  no  </display>
+    <color>  1.0 1.0 0.0 1.0 </color>   
+  </body>
+    
+
+  <body name="frontScreen">
+    <name> frontScreen  </name> 
+    <file>  frontScreen.obj  </file>
+    <collision>  no  </collision>
+    <color>  0.1 0.1 0.3 1.0 </color> 
+  </body>    
+
+  <body name="motorWheel">
+    <name> motorWheel  </name> 
+    <file>  motorWheel.obj  </file>
+    <collision>  no  </collision>
+    <color>  0.9 0.1 0.1 1.0 </color> 
+  </body>   
+  
+  <body name="GcameraWorkspace">
+    <name> GcameraWorkspace  </name> 
+    <cylinder>  0.175 0.1  </cylinder>
+    <transformation>
+      <translation> 0.243 0 1.35 </translation>
+    </transformation>     
+    <display>  no  </display>
+    <color> 1.0 1.0 0.0 1.0 </color>
+  </body>   
+  
+  <body name="pan">
+     <name> pan  </name> 
+     <file>  pan.obj  </file> 
+     <transformation>
+       <translation> 0.243 0 1.244 </translation>
+     </transformation>   
+     <collision>  no  </collision>
+     <color>  0.2 0.2 0.2 1.0 </color> 
+  </body> 
+
+  <body name="topCameras">
+     <name> topCameras  </name> 
+     <file>  topCameras.obj  </file>
+     <transformation>
+       <translation> 0.243 0 1.244 </translation>
+       <YPR_angles> 0 0 -90 </YPR_angles>
+     </transformation> 
+     <collision>  no  </collision>
+     <color>  0.2 0.2 0.5 1.0 </color> 
+  </body>   
+
+<!--
+  <joint name="panJoint">
+    <name> panJoint </name>
+    <type> revolute </type>
+    <transformation>
+       <translation> 0.243 0 1.244 </translation>
+    </transformation>         
+    <qmin> -170 </qmin>
+    <qmax> 170 </qmax>  
+    <body name="pan">
+      <name> pan  </name> 
+      <file>  pan.obj  </file>
+      <collision>  no  </collision>
+      <color>  0.2 0.2 0.2 1.0 </color> 
+    </body>    
+    <body name="Gpan">
+      <name> Gpan </name> 
+      <file>  Gpan.obj  </file>
+      <collision>  yes  </collision>
+      <display>  no  </display>
+      <color> 1.0 1.0 0.0 1.0 </color>   
+    </body>
+    <joint name="tiltJoint">
+      <name> tiltJoint </name>
+      <type> revolute </type>
+      <transformation>
+         <YPR_angles> 0 0 -90 </YPR_angles>
+      </transformation>  
+      <qmin> -45 </qmin>
+      <qmax> 30 </qmax>  
+      <body name="topCameras">
+        <name> topCameras  </name> 
+        <file>  topCameras.obj  </file>
+        <collision>  no  </collision>
+        <color>  0.2 0.2 0.5 1.0 </color> 
+      </body>   
+      <body name="GtopCameras">
+        <name> GtopCameras </name> 
+        <file>  GtopCameras.obj  </file>
+        <collision>  yes  </collision>
+        <display>  no  </display>
+        <color>  1.0 1.0 0.0 1.0 </color>   
+      </body>
+    </joint>
+  </joint>
+-->
+
+  <body name="sicks">
+    <name> sicks  </name> 
+    <file>  sicks.obj  </file>
+    <collision>  no  </collision>
+    <color>  0.1 0.1 0.9 1.0 </color> 
+  </body>    
+  <body name="Gsicks">
+    <name> Gsicks </name> 
+    <file>  Gsicks.obj  </file>
+    <collision>  yes  </collision>
+    <display>  no  </display>
+    <color>  1.0 1.0 0.0 1.0 </color>   
+  </body>
+
+
+   <body name="wheels">
+    <name> wheels  </name> 
+    <file>  wheels.obj  </file>
+    <collision>  no  </collision>
+    <color>  0.9 0.1 0.1 1.0 </color> 
+  </body>  
+
+  
+
+</joint>
+
+<subrobot>
+  <connection> root </connection>
+  <name> LWRLeft </name>
+  <transformation>
+   <translation> 0.165 0.27 0.907 </translation>
+   <YPR_angles> 0 -90 -90 </YPR_angles>
+  </transformation> 
+     <collision>  no  </collision>
+    <display>  no  </display>
+  <robot_file> LWR_left.xml </robot_file> 
+</subrobot>
+
+<subrobot>
+  <connection> root </connection>
+  <name> LWRRight </name>
+  <transformation>
+   <translation> 0.165 0.18 0.907 </translation>
+   <YPR_angles> 0 90 90 </YPR_angles>
+  </transformation> 
+      <collision>  yes  </collision>
+    <display>  yes  </display> 
+  <robot_file> LWR_right.xml </robot_file> 
+</subrobot>
+
+
+<subrobot>
+  <connection> LWR_right_Joint7 </connection>
+  <transformation>
+   <translation> 0.0 0.0 0.105 </translation>
+   <YPR_angles>  0 0 0 </YPR_angles>
+  </transformation> 
+     <collision>  yes  </collision>
+    <display>  yes  </display>
+  <robot_file> SAHand.xml </robot_file> 
+</subrobot>
+
+
+<!--<subrobot>
+  <connection> PA6PA7Joint </connection>
+  <transformation>
+    <translation> 0 0 0.2 </translation>
+  </transformation>  
+  <robot_file> SAHand.xml </robot_file> 
+</subrobot> -->
+
+<!--<subrobot>
+  <connection> PA5PA6Joint </connection>
+  <transformation>
+    <translation> 0 0 0.12 </translation>
+    <YPR_angles> -112.5 0 0  </YPR_angles> 
+  </transformation>  
+  <robot_file> gripper.xml </robot_file> 
+</subrobot> -->
+
+</robot>

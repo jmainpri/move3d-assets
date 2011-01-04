@@ -1,0 +1,64 @@
+
+p3d_beg_desc P3D_ROBOT
+  p3d_beg_desc_jnt P3D_FREEFLYER    
+    p3d_set_name wristJoint #J1
+    p3d_set_pos_axe 0 0 0   0 0 1
+    p3d_set_prev_jnt 0
+    p3d_set_dof 0 0 0 0 0 0
+    p3d_set_dof_vmin -0.5 -0.5 -0.5 -180 -180 -180
+    p3d_set_dof_vmax 0.5 0.5 0.5 180 180 180
+  p3d_end_desc
+
+  p3d_beg_desc_jnt P3D_ROTATE # J2
+    p3d_set_name fingerJointGripper_0
+    p3d_set_prev_jnt 1
+    p3d_set_pos_axe 0 0 -0.105   0 1 0
+    p3d_set_dof 0.0
+    p3d_set_dof_vmin 0
+    p3d_set_dof_vmax 31.3981
+  p3d_end_desc
+
+  p3d_beg_desc P3D_BODY hand.finger1.fingertip
+      p3d_add_desc_box box 0.007 0.02 0.03
+      p3d_set_prim_pos box 0.001 0 0  0 0 0
+  p3d_end_desc
+
+  p3d_read_macro ./pr2Parts/Gripper/rarm8.macro hand.finger1
+
+
+
+  p3d_beg_desc_jnt P3D_ROTATE # J3
+    p3d_set_name fingerJointGripper2
+    p3d_set_prev_jnt 1
+    p3d_set_pos_axe 0 0 -0.105   0 -1 0
+    p3d_set_dof 0.0
+    p3d_set_dof_vmin 0
+    p3d_set_dof_vmax 31.3981
+  p3d_end_desc
+
+  p3d_beg_desc P3D_BODY hand.finger2.fingertip
+      p3d_add_desc_box box 0.007 0.02 0.03
+      p3d_set_prim_pos box -0.001 0 0  0 0 0
+  p3d_end_desc
+
+  p3d_read_macro ./pr2Parts/Gripper/rarm9.macro hand.finger2
+
+
+
+p3d_end_desc
+
+### POSITIONS
+p3d_set_body_abs_pos hand.finger1.finger1 -0.0099 0 -0.105 -90 -90 0
+p3d_set_body_abs_pos hand.finger2.finger2 0.0099 0 -0.105   90 90 0
+
+
+### CONSTRAINTS
+#contrainte sur la fermeture de la pince:
+p3d_constraint p3d_lin_rel_dofs 1 3 1 2 2 1 0.0 0 
+
+
+p3d_set_body_poly_color hand.finger1.finger1 1 Any 0.9 0.9 0.9
+p3d_set_body_poly_color hand.finger2.finger2 1 Any 0.9 0.9 0.9
+p3d_set_body_poly_color hand.finger1.fingertip 1 Any  1 0 0
+p3d_set_body_poly_color hand.finger2.fingertip 1 Any  0 1 0
+

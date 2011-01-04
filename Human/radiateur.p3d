@@ -1,0 +1,42 @@
+p3d_beg_desc P3D_ENV radiateur
+
+p3d_read_macro obstacle.macro obstacle 1000
+p3d_set_obst_pos obstacle 700 0 -500 0 0 -90  
+
+p3d_read_macro SuperRadiateur.macro radiateur 1
+
+# p3d_end_desc
+
+p3d_set_env_box -1000 1000 -1000 1000 -1000 1000
+
+p3d_sel_desc_name P3D_ROBOT radiateur
+
+# p3d_set_robot_current 25 65 -60 0 0 0
+# p3d_set_robot_goto 25 -60 300 0 0 0
+
+# left arm
+#p3d_constraint p3d_R7_human_arm_ik 7 3 4 5 9 11 12 13 1 24 2 0 0 1 1 
+
+# RotnegXY
+#p3d_set_cntrt_Tatt 0  0  0  1  0 
+#         	     -1  0  0  0 
+# 	 	      0  1  0  0
+# RotXX
+#p3d_set_cntrt_Tatt2 0  1  0  0 0
+# 	               0 -1  0 0
+# 		       0  0 -1 0
+
+# right arm
+#p3d_constraint p3d_R7_human_arm_ik 7 6 7 8 10 14 15 16 1 25 2 0 1 1 1 
+
+# RotXY
+#p3d_set_cntrt_Tatt 1  0  0  1  0 
+# 		      1  0  0  0 
+# 	 	      0  1  0  0
+# RotXX
+#p3d_set_cntrt_Tatt2 1  1  0  0 0
+# 	               0 -1  0 0
+# 		       0  0 -1 0
+
+
+#p3d_set_parallel_sys fixmanip 0 23 1 0 

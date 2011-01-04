@@ -1,0 +1,141 @@
+p3d_beg_desc P3D_ROBOT
+########################
+####### TORSO ##########
+########################
+  p3d_read_macro KR60-3_Base.macro base
+  p3d_beg_desc_jnt P3D_ROTATE # J1
+    p3d_set_name Base
+    p3d_set_prev_jnt 0
+    p3d_set_pos_axe_dh 0 3.14 -815 0
+    p3d_set_dof_vmin -185
+    p3d_set_dof_vmax 185
+  p3d_end_desc
+    p3d_beg_desc P3D_BODY GKR60-3_Link1
+      p3d_add_desc_cylindre cyl1 450 500 P3D_GHOST
+      p3d_set_prim_pos cyl1 -100 0 250 0 0 0
+      p3d_add_desc_box b1 400 400 1000 P3D_GHOST
+      p3d_set_prim_pos b1 70 0 670 0 60 0
+      p3d_add_desc_cylindre cyl2 350 200 P3D_GHOST
+      p3d_set_prim_pos cyl2 0 0 600 0 0 0
+      p3d_add_desc_cylindre cyl3 150 100 P3D_GHOST
+      p3d_set_prim_pos cyl3 350 250 815 90 0 0
+    p3d_end_desc
+  p3d_read_macro KR60-3_Link1.macro link1
+  p3d_beg_desc_jnt P3D_ROTATE # J2
+    p3d_set_name Link1
+    p3d_set_prev_jnt 1
+    p3d_set_pos_axe_dh 350 1.57 -815 0
+    p3d_set_dof_vmin -135
+    p3d_set_dof_vmax 35
+  p3d_end_desc
+    p3d_beg_desc P3D_BODY GKR60-3_Link2
+      p3d_add_desc_box b1 300 250 1250 P3D_GHOST
+      p3d_set_prim_pos b1 775 -280 815 0 90 0
+    p3d_end_desc
+  p3d_read_macro KR60-3_Link2.macro link2
+  p3d_beg_desc_jnt P3D_ROTATE # J3
+    p3d_set_name Link2
+    p3d_set_prev_jnt 2
+    p3d_set_pos_axe_dh 850 0 0 0
+    p3d_set_dof_vmin -120
+    p3d_set_dof_vmax 158
+  p3d_end_desc
+  p3d_beg_desc P3D_BODY GKR60-3_Link3
+      p3d_add_desc_box b1 475 350 550 P3D_GHOST
+      p3d_set_prim_pos b1 1050 50 820 0 90 0
+      p3d_add_desc_box b2 150 180 300 P3D_GHOST
+      p3d_set_prim_pos b2 1350 0 800 0 50 0
+      p3d_add_desc_cylindre cyl1 100 100 P3D_GHOST
+      p3d_set_prim_pos cyl1 1200 260 815 90 0 0
+      p3d_add_desc_cylindre cyl2 120 350 P3D_GHOST
+      p3d_set_prim_pos cyl2 1450 0 960 0 90 0
+    p3d_end_desc
+  p3d_read_macro KR60-3_Link3.macro link3
+    p3d_beg_desc_jnt P3D_ROTATE # J4
+    p3d_set_name Link3
+    p3d_set_prev_jnt 3
+    p3d_set_pos_axe 2020 0 960 90 0 0
+    p3d_set_dof_vmin -180
+    p3d_set_dof_vmax 180
+  p3d_end_desc
+    p3d_beg_desc P3D_BODY GKR60-3_Link4
+      p3d_add_desc_cylindre cyl2 150 450 P3D_GHOST
+      p3d_set_prim_pos cyl2 1850 0 960 0 90 0
+    p3d_end_desc
+  p3d_read_macro KR60-3_Link4.macro link4
+  p3d_beg_desc_jnt P3D_ROTATE # J5
+    p3d_set_name Link4
+    p3d_set_prev_jnt 4
+    p3d_set_pos_axe_dh 0 -1.57 0 0
+    p3d_set_dof_vmin -119
+    p3d_set_dof_vmax 119
+  p3d_end_desc
+    p3d_beg_desc P3D_BODY GKR60-3_Link5
+      p3d_add_desc_cylindre cyl2 100 100 P3D_GHOST
+      p3d_set_prim_pos cyl2 2120 0 960 0 90 0
+    p3d_end_desc
+  p3d_read_macro KR60-3_Link5.macro link5
+  p3d_beg_desc_jnt P3D_ROTATE # J6
+    p3d_set_name Link5
+    p3d_set_prev_jnt 5
+    p3d_set_pos_axe_dh 0 1.57 0 0
+    p3d_set_dof_vmin -180
+    p3d_set_dof_vmax 180
+  p3d_end_desc
+  p3d_read_macro KR60-3_Link6.macro link6
+  p3d_beg_desc_jnt P3D_FIXED # J7
+    p3d_set_name Link6
+    p3d_set_prev_jnt 6
+    p3d_set_pos_axe_dh 0 3.14 -170 3.14
+  p3d_end_desc
+  p3d_beg_desc P3D_BODY GKR60-3_Link6
+    p3d_add_desc_cylindre cyl1 30 80 P3D_GHOST
+    p3d_set_prim_pos cyl1 2340 -100 1260 0 90 0
+    p3d_add_desc_cylindre cyl2 30 80 P3D_GHOST
+    p3d_set_prim_pos cyl2 2340 -300 1260 0 90 0
+    p3d_add_desc_cylindre cyl3 30 80 P3D_GHOST
+    p3d_set_prim_pos cyl3 2340 100 1260 0 90 0
+    p3d_add_desc_cylindre cyl4 30 80 P3D_GHOST
+    p3d_set_prim_pos cyl4 2340 300 1260 0 90 0
+    p3d_add_desc_cylindre cyl5 30 80 P3D_GHOST
+    p3d_set_prim_pos cyl5 2340 -100 960 0 90 0
+    p3d_add_desc_cylindre cyl6 30 80 P3D_GHOST
+    p3d_set_prim_pos cyl6 2340 -300 960 0 90 0
+    p3d_add_desc_cylindre cyl7 30 80 P3D_GHOST
+    p3d_set_prim_pos cyl7 2340 100 960 0 90 0
+    p3d_add_desc_cylindre cyl8 30 80 P3D_GHOST
+    p3d_set_prim_pos cyl8 2340 300 960 0 90 0
+    p3d_add_desc_cylindre cyl9 30 80 P3D_GHOST
+    p3d_set_prim_pos cyl9 2340 -100 660 0 90 0
+    p3d_add_desc_cylindre cyl10 30 80 P3D_GHOST
+    p3d_set_prim_pos cyl10 2340 -300 660 0 90 0
+    p3d_add_desc_cylindre cyl11 30 80 P3D_GHOST
+    p3d_set_prim_pos cyl11 2340 100 660 0 90 0
+    p3d_add_desc_cylindre cyl12 30 80 P3D_GHOST
+    p3d_set_prim_pos cyl12 2340 300 660 0 90 0
+  p3d_end_desc
+  p3d_read_macro KR60-3_Gripper.macro gripper
+p3d_end_desc
+#########################
+###### POSITIONS ########
+#########################
+p3d_set_body_abs_pos link1.KR60-3_Link1 0 0 0 180 0 0
+p3d_set_body_abs_pos link2.KR60-3_Link2 350 0 815 -90 0 0
+p3d_set_body_abs_pos link3.KR60-3_Link3 1200 0 815 -90 0 0
+p3d_set_body_abs_pos link4.KR60-3_Link4 1200 0 960 0 -90 0
+p3d_set_body_abs_pos link5.KR60-3_Link5 2020 0 960 0 -90 -90
+p3d_set_body_abs_pos link6.KR60-3_Link6 2020 0 960 0 -90 0 0
+p3d_set_body_abs_pos gripper.KR60-3_Gripper 2190 0 960 90 0 90
+#########################
+######## COLORS #########
+#########################
+p3d_set_body_poly_color base.KR60-3_Base 1 Any 0.8 0.8 0.8
+p3d_set_body_poly_color link1.KR60-3_Link1 1 Any 0.8 0.8 0.8
+p3d_set_body_poly_color link2.KR60-3_Link2 1 Any 0.8 0.8 0.8
+p3d_set_body_poly_color link3.KR60-3_Link3 1 Any 0.8 0.8 0.8
+p3d_set_body_poly_color link4.KR60-3_Link4 1 Any 0.8 0.8 0.8
+p3d_set_body_poly_color link5.KR60-3_Link5 1 Any 0.8 0.8 0.8
+p3d_set_body_poly_color link6.KR60-3_Link6 1 Any 0.8 0.8 0.8
+p3d_set_body_poly_color gripper.KR60-3_Gripper 1 Any 0.8 0.8 0.8
+p3d_set_body_poly_color gripper.KR60-3_Gripper 2 Any 0.8 0.8 0.8
+

@@ -1,0 +1,75 @@
+p3d_beg_desc P3D_ENV plannarTwoArms
+
+#############
+# OBSTACLES #
+#############
+
+p3d_beg_desc P3D_OBSTACLE bounding_box
+p3d_add_desc_box bb_l 1 300 1
+p3d_set_prim_pos bb_l -150 0 0.5 0.0 0.0 0.0 
+p3d_set_prim_color bb_l Black
+p3d_add_desc_box bb_l 1 300 1
+p3d_set_prim_pos bb_l 150 0 0.5 0.0 0.0 0.0 
+p3d_set_prim_color bb_l Black
+p3d_add_desc_box bb_t 302 1 1
+p3d_set_prim_pos bb_t 0 150 0.5 0.0 0.0 0.0 
+p3d_set_prim_color bb_t Black
+p3d_add_desc_box bb_t 302 1 1
+p3d_set_prim_pos bb_t 0 -150 0.5 0.0 0.0 0.0 
+p3d_set_prim_color bb_t Black
+p3d_end_desc
+
+p3d_beg_desc P3D_OBSTACLE obs
+p3d_add_desc_box sq1 20 20 5
+p3d_set_prim_pos sq1 50 100 2.5 0.0 0.0 30.0
+p3d_add_desc_box sq2 20 50 5
+p3d_set_prim_pos sq2 -40 20 2.5 0.0 0.0 -30.0
+p3d_add_desc_box sq3 30 10 5
+p3d_set_prim_pos sq3 10 -50 2.5 0.0 0.0 0.0
+p3d_add_desc_box sq4 30 30 5
+p3d_set_prim_pos sq4 00 00 2.5 0.0 0.0 30.0
+p3d_add_desc_box sq5 10 20 5
+p3d_set_prim_pos sq5 -100 -110 2.5 0.0 0.0 60.0
+p3d_add_desc_box sq6 30 20 5
+p3d_set_prim_pos sq6 70 -30 2.5 0.0 0.0 50.0
+p3d_add_desc_box sq7 80 5 5
+p3d_set_prim_pos sq7 -80 100 2.5 0.0 0.0 -45.0
+p3d_add_desc_box sq8 10 40 5
+p3d_set_prim_pos sq8 -130 30 2.5 0.0 0.0 0.0
+p3d_add_desc_box sq9 20 20 5
+p3d_set_prim_pos sq9 -70 -100 2.5 0.0 0.0 10.0
+p3d_add_desc_box sq10 40 20 5
+p3d_set_prim_pos sq10 120 100 2.5 0.0 0.0 0.0
+p3d_add_desc_box sq11 50 30 5
+p3d_set_prim_pos sq11 100 -100 2.5 0.0 0.0 0.0
+p3d_add_desc_box sq12 40 10 5
+p3d_set_prim_pos sq12 -30 -50 2.5 0.0 0.0 -30.0
+p3d_add_desc_box sq13 10 30 5
+p3d_set_prim_pos sq13 50 20 2.5 0.0 0.0 60.0
+p3d_add_desc_box sq14 30 30 5
+p3d_set_prim_pos sq14 -100 -30 2.5 0.0 0.0 0.0
+p3d_add_desc_box sq15 20 20 5
+p3d_set_prim_pos sq15 100 20 2.5 0.0 0.0 0.0
+p3d_add_desc_box sq16 30 10 5
+p3d_set_prim_pos sq16 0 -100 2.5 0.0 0.0 45.0
+p3d_add_desc_box sq17 20 40 5
+p3d_set_prim_pos sq17 -20 100 2.5 0.0 0.0 -15.0
+p3d_end_desc
+
+
+##########
+# ROBOTS #
+##########
+p3d_read_macro planarTwoArms.macro robot
+##########
+
+p3d_end_desc
+
+p3d_multi_graph 7  2 3 4 5 6 7 8
+p3d_multi_graph 7  9 10 11 12 13 14 15
+# 
+# p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -3.03 -3.03 39.33 18.15 34.03 -3.03 -3.03 39.33 18.15 34.03
+# 
+# p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 3.03 3.03 -39.33 -18.15 -34.03 3.03 3.03 -39.33 -18.15 -34.03
+
+# p3d_set_env_box -10 10  -4 15  0 15

@@ -1,0 +1,195 @@
+p3d_beg_desc P3D_ENV Test
+
+  p3d_beg_desc P3D_OBSTACLE BaseSupport1
+    p3d_add_desc_box base_foot_1 3 2 0.005
+    p3d_set_prim_pos base_foot_1 0.750 0 -0.1826 0 0 0
+    p3d_add_desc_box base_foot_2 0.300 0.300 0.180
+    p3d_set_prim_pos base_foot_2 0 0 -0.090 0 0 0
+  p3d_end_desc
+
+  p3d_beg_desc P3D_OBSTACLE Poutres
+    p3d_add_desc_cylindre poutre1 0.070 1.400
+    p3d_set_prim_pos poutre1 0.400 0.475 0.500 0 0 0
+  p3d_end_desc
+
+  p3d_read_macro ./Objects/Static/fauteuil.macro fauteuil 0.4
+  p3d_set_obst_pos fauteuil 1.300 0 0.080 0 0 0
+
+  p3d_set_obst_color Poutres Brown
+  p3d_read_macro AchileM.macro achile
+  p3d_read_macro JustinPlateFilled.macro justin
+
+p3d_end_desc
+######################
+######## COLOR #######
+######################
+#Obstacles
+  p3d_set_obst_color BaseSupport1 Any 1 0.75 0
+p3d_set_env_box 5.0 5.0 5.0 0.0 0.0 0.0
+
+
+
+
+p3d_sel_desc_name P3D_ROBOT achile
+
+p3d_set_robot_steering_method Linear
+
+p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.363029 0.012128 0.270403 1.769915 17.699125 180.000000 0.000000 5.280237 2.654867 0.000000 -9.336282 0.000000 65.993118 25.368732 27.389378 75.506393 0.000000 0.000000 2.359881 -75.334320 30.000000 -17.064894 -8.741397 3.539819 0.000000 0.000000 -0.113077 -90.000000 0.000000 109.921341 0.000000 0.000000 0.000000 0.000000 -90.000000 0.000000 110.609642 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+
+p3d_sel_desc_name P3D_ROBOT justin
+
+
+# p3d_constraint p3d_fixed_jnt 1 1  0  1 0 0
+p3d_constraint p3d_lin_rel_dofs 1 4  2 2 3  3 -1 -1 0  0
+p3d_constraint p3d_fixed_jnt 1 6  0  1 0 0
+p3d_constraint p3d_fixed_jnt 1 7  0  1 0 0
+p3d_constraint p3d_min_max_dofs 0  2 3 2  2 0 135  0
+
+
+#Right Arm
+p3d_constraint p3d_kuka_arm_ik 6 9 10 12 13 14 15  1 28  0  3 11 1 3
+p3d_set_singularity 4  1 12 0
+p3d_set_singularity 4  2 10 0  11 0
+p3d_set_singularity 4  2 10 0  14 90
+p3d_set_singularity 4  2 13 0  14 0
+p3d_set_singular_rel 4 0 4  1 5  1 7  3 5  3 7
+p3d_set_singular_rel 4 1 2  1 3  5 7
+p3d_set_singular_rel 4 3 2  1 5  3 7
+
+#Left Arm
+p3d_constraint p3d_kuka_arm_ik 6 17 18 20 21 22 23  1 28  0  3 19 -1 1
+# p3d_set_singularity 6  1 20 0
+p3d_set_singularity 5  2 18 0  19 0
+# p3d_set_singular_rel 6 0 3  5 3  3 7  7 5
+p3d_set_singular_rel 5 0 1  1 3
+
+
+#Right Arm
+p3d_set_cntrt_Tatt 4  0.187857   0.024630   0.981886   0.009841
+ 0.047056   0.998308   -0.034044   -0.510984
+ -0.981064   0.052599   0.186381   0.106862
+#Left Arm
+p3d_set_cntrt_Tatt 5  0.078788   0.021852   -0.996650   0.027147
+ -0.033821   -0.999121   -0.024580   0.488746
+ -0.996313   0.035645   -0.077981   0.106647
+
+
+p3d_set_object_base_and_arm_constraints 28 0 0  2  4 5
+
+p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -28.544735 29.668142 -1.123407 0.000000 0.000000 7.849348 -53.779500 -63.520157 72.906707 86.478200 20.750897 85.805219 4.954416 -62.569721 -58.505409 87.009778 92.909133 28.781759 60.369542 0.179056 -0.070796 0.263274 0.000000 0.000000 0.000000
+
+p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 16.814157 34.977879 -51.792036 0.000000 0.000000 46.137946 -37.894983 -73.549652 90.046804 125.289108 37.981968 65.572130 -89.191001 48.355355 33.431660 86.002167 145.844060 21.143997 96.988400 0.858899 0.017699 0.447640 0.000000 0.000000 0.000000
+
+p3d_set_robot_ikSol_current  1 1 1 1 3 1
+
+p3d_set_robot_ikSol_goto  1 1 1 1 3 3
+
+# Colcheck
+p3d_add_desc_rob_col_init justin
+p3d_desactivate_col_check automatic2
+p3d_desactivate_col_check GTorso1-1 GTorso4-1
+p3d_desactivate_col_check GTorso1-1 Ghead1-1
+p3d_desactivate_col_check GTorso1-1 Ghead2-1
+p3d_desactivate_col_check GTorso1-1 GrArm1-1
+p3d_desactivate_col_check GTorso1-1 GrArm2-1
+p3d_desactivate_col_check GTorso1-1 GlArm1-1
+p3d_desactivate_col_check GTorso1-1 GlArm2-1
+
+p3d_desactivate_col_check GTorso2-1 Ghead1-1
+p3d_desactivate_col_check GTorso2-1 Ghead2-1
+p3d_desactivate_col_check GTorso2-1 GrArm1-1
+p3d_desactivate_col_check GTorso2-1 GrArm2-1
+p3d_desactivate_col_check GTorso2-1 GlArm1-1
+p3d_desactivate_col_check GTorso2-1 GlArm2-1
+
+p3d_desactivate_col_check GTorso3-1 Ghead2-1
+p3d_desactivate_col_check GTorso3-1 GrArm1-1
+p3d_desactivate_col_check GTorso3-1 GrArm2-1
+p3d_desactivate_col_check GTorso3-1 GlArm1-1
+p3d_desactivate_col_check GTorso3-1 GlArm2-1
+
+p3d_desactivate_col_check Ghead1-1 GrArm1-1
+p3d_desactivate_col_check Ghead1-1 GrArm2-1
+p3d_desactivate_col_check Ghead1-1 GlArm1-1
+p3d_desactivate_col_check Ghead1-1 GlArm2-1
+
+p3d_desactivate_col_check Ghead2-1 GrArm1-1
+p3d_desactivate_col_check Ghead2-1 GrArm2-1
+p3d_desactivate_col_check Ghead2-1 GlArm1-1
+p3d_desactivate_col_check Ghead2-1 GlArm2-1
+
+p3d_desactivate_col_check GrArm1-1 GrArm4-1
+p3d_desactivate_col_check GrArm1-1 GrArm5-1
+p3d_desactivate_col_check GrArm1-1 GrArm6-1
+p3d_desactivate_col_check GrArm1-1 GrArm7-1
+
+p3d_desactivate_col_check GrArm2-1 GrArm5-1
+p3d_desactivate_col_check GrArm2-1 GrArm6-1
+p3d_desactivate_col_check GrArm2-1 GrArm7-1
+
+p3d_desactivate_col_check GrArm3-1 GrArm6-1
+p3d_desactivate_col_check GrArm3-1 GrArm7-1
+
+p3d_desactivate_col_check GrArm4-1 GrArm7-1
+p3d_desactivate_col_check GrArm4-1 GrHandPalm-1
+p3d_desactivate_col_check GrArm4-1 GrHandPalm-2
+p3d_desactivate_col_check GrArm4-1 GrHandPalm-3
+
+p3d_desactivate_col_check GrArm5-1 GrHandPalm-1
+p3d_desactivate_col_check GrArm4-1 GrHandPalm-2
+p3d_desactivate_col_check GrArm4-1 GrHandPalm-3
+
+p3d_desactivate_col_check GlArm1-1 GlArm4-1
+p3d_desactivate_col_check GlArm1-1 GlArm5-1
+p3d_desactivate_col_check GlArm1-1 GlArm6-1
+p3d_desactivate_col_check GlArm1-1 GlArm7-1
+
+p3d_desactivate_col_check GlArm2-1 GlArm5-1
+p3d_desactivate_col_check GlArm2-1 GlArm6-1
+p3d_desactivate_col_check GlArm2-1 GlArm7-1
+
+p3d_desactivate_col_check GlArm3-1 GlArm6-1
+p3d_desactivate_col_check GlArm3-1 GlArm7-1
+
+p3d_desactivate_col_check GlArm4-1 GlArm7-1
+p3d_desactivate_col_check GlArm4-1 GlHandPalm-1
+p3d_desactivate_col_check GlArm4-1 GlHandPalm-2
+p3d_desactivate_col_check GlArm4-1 GlHandPalm-3
+
+p3d_desactivate_col_check GlArm5-1 GlHandPalm-1
+p3d_desactivate_col_check GlArm5-1 GlHandPalm-2
+p3d_desactivate_col_check GlArm5-1 GlHandPalm-3
+
+#Object
+
+p3d_desactivate_col_check GlArm6-1 plate.plateThin
+p3d_desactivate_col_check GlArm6-1 glass.glass
+p3d_desactivate_col_check GrArm6-1 plate.plateThin
+p3d_desactivate_col_check GrArm6-1 glass.glass
+
+p3d_desactivate_col_check GlArm7-1 plate.plateThin
+p3d_desactivate_col_check GlArm7-1 glass.glass
+p3d_desactivate_col_check GrArm7-1 plate.plateThin
+p3d_desactivate_col_check GrArm7-1 glass.glass
+
+p3d_desactivate_col_check GlHandPalm-1 plate.plateThin
+p3d_desactivate_col_check GlHandPalm-1 glass.glass
+p3d_desactivate_col_check GrHandPalm-1 plate.plateThin
+p3d_desactivate_col_check GrHandPalm-1 glass.glass
+p3d_desactivate_col_check GlHandPalm-2 plate.plateThin
+p3d_desactivate_col_check GlHandPalm-2 glass.glass
+p3d_desactivate_col_check GrHandPalm-2 plate.plateThin
+p3d_desactivate_col_check GrHandPalm-2 glass.glass
+p3d_desactivate_col_check GlHandPalm-3 plate.plateThin
+p3d_desactivate_col_check GlHandPalm-3 glass.glass
+p3d_desactivate_col_check GrHandPalm-3 plate.plateThin
+p3d_desactivate_col_check GrHandPalm-3 glass.glass
+
+p3d_desactivate_col_check GlFingers-1 plate.plateThin
+p3d_desactivate_col_check GlFingers-1 glass.glass
+p3d_desactivate_col_check GrFingers-1 plate.plateThin
+p3d_desactivate_col_check GrFingers-1 glass.glass
+p3d_desactivate_col_check GlFingers-2 plate.plateThin
+p3d_desactivate_col_check GlFingers-2 glass.glass
+p3d_desactivate_col_check GrFingers-2 plate.plateThin
+p3d_desactivate_col_check GrFingers-2 glass.glass

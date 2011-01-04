@@ -1,0 +1,43 @@
+p3d_beg_desc P3D_ENV SamiScenario
+
+  p3d_read_macro ./obstacles/SamiObstacles.macro table
+
+  p3d_read_macro redBox.macro redBox1
+  p3d_read_macro redBox.macro redBox2
+  p3d_read_macro redBox.macro redBox3
+  p3d_read_macro blueBox.macro blueBox
+  p3d_read_macro kukaArm.macro kukaArm
+
+p3d_end_desc
+######################
+######## COLOR #######
+######################
+# p3d_set_obst_color BaseSupport1 Any 0.95 0.95 0.95
+p3d_set_env_box -2 2 -2 2 -0.050 3.000
+
+######################
+##### CONSTRAINTS ####
+######################
+
+# p3d_set_removable_bb_for_grasp 2 26 28
+# 27 28 29 30 31 32 33 34
+# p3d_set_object_base_and_arm_constraints 28 1 0  2  2 3
+
+# p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -0.48 -1.17 -12.01 -1.760074 -45.081123 81.438057 -36.356934 0.000000 0.000000 -40.117992 -101.474930 -18.387417 120.000000 -15.044244 -21.831367 1.903639 -41.789581 -97.935104 -15.044244 120.000000 1.671586 -25.518682 1.637167
+# p3d_create_reeds_shepp_local_method 0.001 1
+
+p3d_add_desc_rob_col_init kukaArm
+p3d_desactivate_col_check automatic2
+
+p3d_desactivate_col_check kuka1.Gkuka1 kuka4.Gkuka4
+p3d_desactivate_col_check kuka1.Gkuka1 kuka5.Gkuka5
+p3d_desactivate_col_check kuka1.Gkuka1 kuka6.Gkuka6
+
+p3d_desactivate_col_check kuka2.Gkuka2 kuka5.Gkuka5
+p3d_desactivate_col_check kuka2.Gkuka2 kuka6.Gkuka6
+
+p3d_desactivate_col_check kuka3.Gkuka3 kuka6.Gkuka6
+p3d_desactivate_col_check kuka6.Gkuka6 gripper.Ggripper
+ 
+p3d_desactivate_col_check kuka5.Gkuka5 gripper.Ggripper
+

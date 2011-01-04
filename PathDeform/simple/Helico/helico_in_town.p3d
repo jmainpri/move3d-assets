@@ -1,0 +1,201 @@
+p3d_beg_desc P3D_ENV helicoptere
+
+p3d_read_macro helico.macro heli
+
+p3d_read_macro moving_box.macro box1
+#p3d_set_body_poly_color box1 1 Blue
+
+p3d_read_macro moving_box.macro box2
+#p3d_set_body_poly_color box2 1 Grey
+
+p3d_read_macro moving_box.macro box3
+#p3d_set_body_poly_color box3 1 Red
+
+p3d_read_macro moving_box.macro box4
+#p3d_set_body_poly_color box3 1 Green
+
+p3d_read_macro moving_box.macro box5
+
+p3d_beg_desc P3D_OBSTACLE port
+p3d_add_desc_cylindre port.pied1 500.0 4000.0
+p3d_set_prim_pos port.pied1 10000.0 -2000.0 2000.0 0.0 0.0 0.0
+p3d_add_desc_cylindre port.pied2 500.0 4000.0
+p3d_set_prim_pos port.pied2 10000.0 4000.0 2000.0 0.0 0.0 0.0
+p3d_add_desc_cylindre port.pied3 500.0 4000.0
+p3d_set_prim_pos port.pied3 10000.0 10000.0 2000.0 0.0 0.0 0.0
+p3d_add_desc_cylindre port.pied4 500.0 4000.0
+p3d_set_prim_pos port.pied4 10000.0 16000.0 2000.0 0.0 0.0 0.0
+p3d_add_desc_box port.voute 700.0 21000.0 900.0
+p3d_set_prim_pos port.voute 10000.0 7000.0 4450.0 0.0 0.0 0.0
+p3d_end_desc
+p3d_set_obst_poly_color port 1 Grey
+p3d_set_obst_poly_color port 2 Grey
+p3d_set_obst_poly_color port 3 Grey
+p3d_set_obst_poly_color port 4 Grey
+p3d_set_obst_poly_color port 5 Black
+
+p3d_beg_desc P3D_OBSTACLE imm1
+p3d_add_desc_box imm1.barre1 20000.0 4000.0 15000.0
+p3d_set_prim_pos imm1.barre1 20000.0 -28000.0 7500.0 0.0 0.0 0.0
+p3d_add_desc_box imm1.barre2 4000.0 20000.0 15000.0
+p3d_set_prim_pos imm1.barre2 28000.0 -16000.0 7500.0 0.0 0.0 0.0
+p3d_add_desc_box imm1.barre3 20000.0 4000.0 15000.0
+p3d_set_prim_pos imm1.barre3 16000.0 -8000.0 7500.0 0.0 0.0 0.0
+p3d_add_desc_box imm1.barre4 4000.0 20000.0 15000.0
+p3d_set_prim_pos imm1.barre4 8000.0 -20000.0 7500.0 0.0 0.0 0.0
+p3d_end_desc
+
+p3d_beg_desc P3D_OBSTACLE imm2
+p3d_add_desc_box imm2.barre1 20000.0 10000.0 5000.0
+p3d_set_prim_pos imm2.barre1 -20000.0 -10000.0 2500.0 0.0 0.0 0.0
+p3d_add_desc_box imm2.barre2 6000.0 10000.0 5000.0
+p3d_set_prim_pos imm2.barre2 -27000.0 -10000.0 7500.0 0.0 0.0 0.0
+p3d_add_desc_box imm2.barre3 20000.0 10000.0 5000.0
+p3d_set_prim_pos imm2.barre3 -20000.0 -10000.0 12500.0 0.0 0.0 0.0
+p3d_add_desc_box imm2.barre4 6000.0 10000.0 5000.0
+p3d_set_prim_pos imm2.barre4 -13000.0 -10000.0 7500.0 0.0 0.0 0.0
+p3d_add_desc_box imm2.barre5 6000.0 10000.0 5000.0
+p3d_set_prim_pos imm2.barre5 -27000.0 -10000.0 17500.0 0.0 0.0 0.0
+p3d_add_desc_box imm2.barre6 20000.0 10000.0 5000.0
+p3d_set_prim_pos imm2.barre6 -20000.0 -10000.0 22500.0 0.0 0.0 0.0
+p3d_add_desc_box imm2.barre7 6000.0 10000.0 5000.0
+p3d_set_prim_pos imm2.barre7 -13000.0 -10000.0 17500.0 0.0 0.0 0.0
+p3d_add_desc_box imm2.barre8 6000.0 10000.0 5000.0
+p3d_set_prim_pos imm2.barre8 -27000.0 -10000.0 27500.0 0.0 0.0 0.0
+p3d_add_desc_box imm2.barre9 20000.0 10000.0 5000.0
+p3d_set_prim_pos imm2.barre9 -20000.0 -10000.0 32500.0 0.0 0.0 0.0
+p3d_add_desc_box imm2.barre10 6000.0 10000.0 5000.0
+p3d_set_prim_pos imm2.barre10 -13000.0 -10000.0 27500.0 0.0 0.0 0.0
+p3d_end_desc
+p3d_set_obst_color imm2 Yellow
+
+
+p3d_beg_desc P3D_OBSTACLE imm3
+p3d_add_desc_box imm3.barre2 4000.0 10000.0 2600.0
+p3d_set_prim_pos imm3.barre2 28000.0 12000.0 1300.0 0.0 0.0 0.0
+p3d_add_desc_box imm3.barre3 15000.0 10000.0 15000.0
+p3d_set_prim_pos imm3.barre3 22500.0 12000.0 10100.0 0.0 0.0 0.0
+p3d_add_desc_box imm3.barre4 4000.0 10000.0 2600.0
+p3d_set_prim_pos imm3.barre4 17000.0 12000.0 1300.0 0.0 0.0 0.0
+p3d_end_desc
+p3d_set_obst_color imm3 Brown
+p3d_set_obst_pos imm3 0.0 13000.0 0.0 0.0 0.0 0.0
+
+p3d_beg_desc P3D_OBSTACLE imm4
+p3d_add_desc_box imm4.barre1 10000.0 10000.0 20000.0
+p3d_set_prim_pos imm4.barre1 -10000.0 12000.0 10000.0 0.0 0.0 0.0
+p3d_add_desc_box imm4.barre2  5000.0 5000.0 10000.0
+p3d_set_prim_pos imm4.barre2 -10000.0 12000.0 25000.0 0.0 0.0 0.0
+p3d_add_desc_box imm4.barre3  2500.0 2500.0 10000.0
+p3d_set_prim_pos imm4.barre3 -10000.0 12000.0 35000.0 0.0 0.0 0.0
+p3d_end_desc
+p3d_set_obst_color imm4 Grey
+p3d_set_obst_pos imm4 0.0 13000.0 0.0 0.0 0.0 0.0
+
+
+p3d_beg_desc P3D_OBSTACLE imm5
+p3d_add_desc_cylindre imm5.barre 5000.0 20000.0
+p3d_set_prim_pos imm5.barre -25000.0 25000.0 10000.0 0.0 0.0 0.0
+p3d_end_desc
+p3d_set_obst_color imm5 Green
+
+
+p3d_beg_desc P3D_OBSTACLE imm6
+p3d_add_desc_cylindre imm6.barre1 7500.0 20000.0
+p3d_set_prim_pos imm6.barre1 5000.0 25000.0 10000.0 0.0 0.0 0.0
+p3d_add_desc_box imm6.barre2 5000.0 2000.0 1000.0
+p3d_set_prim_pos imm6.barre2 5000.0 28000.0 20500.0 0.0 0.0 0.0
+p3d_add_desc_box imm6.barre3 2000.0 5000.0 1000.0
+p3d_set_prim_pos imm6.barre3 6500.0 24500.0 20500.0 0.0 0.0 0.0
+p3d_add_desc_box imm6.barre4 6000.0 8000.0 10.0
+p3d_set_prim_pos imm6.barre4 4750.0 25250.0 21005.0 0.0 0.0 0.0
+p3d_add_desc_cylindre imm6.barre5 200.0 1000.0
+p3d_set_prim_pos imm6.barre5 3000.0 22000.0 20500.0 0.0 0.0 0.0
+p3d_end_desc
+p3d_set_obst_poly_color imm6 1 Red
+p3d_set_obst_poly_color imm6 2 Grey
+p3d_set_obst_poly_color imm6 3 Grey
+p3d_set_obst_poly_color imm6 4 Black
+p3d_set_obst_poly_color imm6 5 Grey
+
+
+
+p3d_beg_desc P3D_OBSTACLE cables1 
+p3d_add_desc_cylindre cable11 10.0 7000.0
+p3d_set_prim_pos cable11 -16500.0 12000.0 5000.0 0.0 90.0 0.0
+p3d_add_desc_cylindre cable12 10.0 7000.0
+p3d_set_prim_pos cable12 -16500.0 12000.0 5500.0 0.0 90.0 0.0
+p3d_add_desc_cylindre cable13 10.0 7000.0
+p3d_set_prim_pos cable13 -16500.0 12000.0 6000.0 0.0 90.0 0.0
+p3d_end_desc
+p3d_set_obst_color cables1 Black
+p3d_set_obst_pos cables1 0.0 13000.0 0.0 0.0 0.0 0.0
+
+p3d_beg_desc P3D_OBSTACLE cables2 
+p3d_add_desc_cylindre cable21 10.0 16000.0
+p3d_set_prim_pos cable21 -3000.0 -12000.0 10000.0 0.0 90.0 0.0
+p3d_add_desc_cylindre cable22 10.0 16000.0
+p3d_set_prim_pos cable22 -3000.0 -12000.0 10500.0 0.0 90.0 0.0
+p3d_add_desc_cylindre cable23 10.0 16000.0
+p3d_set_prim_pos cable23 -3000.0 -12000.0 11000.0 0.0 90.0 0.0
+p3d_end_desc
+p3d_set_obst_color cables2 Black
+
+p3d_beg_desc P3D_OBSTACLE cables3 
+p3d_add_desc_cylindre cable31 10.0 7000.0
+p3d_set_prim_pos cable31 -1500.0 25000.0 5000.0 0.0 90.0 0.0
+p3d_add_desc_cylindre cable32 10.0 7000.0
+p3d_set_prim_pos cable32 -1500.0 25000.0 5500.0 0.0 90.0 0.0
+p3d_add_desc_cylindre cable33 10.0 7000.0
+p3d_set_prim_pos cable33 -1500.0 25000.0 6000.0 0.0 90.0 0.0
+p3d_end_desc
+p3d_set_obst_color cables3 Black
+
+
+p3d_beg_desc P3D_OBSTACLE cables4 
+p3d_add_desc_cylindre cable41 10.0 7000.0
+p3d_set_prim_pos cable41 15000.0 25000.0 5000.0 0.0 90.0 0.0
+p3d_add_desc_cylindre cable42 10.0 7000.0
+p3d_set_prim_pos cable42 15000.0 25000.0 5500.0 0.0 90.0 0.0
+p3d_add_desc_cylindre cable43 10.0 7000.0
+p3d_set_prim_pos cable43 15000.0 25000.0 6000.0 0.0 90.0 0.0
+p3d_end_desc
+p3d_set_obst_color cables4 Black
+
+p3d_beg_desc P3D_OBSTACLE cables5 
+p3d_add_desc_cylindre cable51 10.0 7000.0
+p3d_set_prim_pos cable51 -16500.0 25000.0 10000.0 0.0 90.0 0.0
+p3d_add_desc_cylindre cable52 10.0 7000.0
+p3d_set_prim_pos cable52 -16500.0 25000.0 10500.0 0.0 90.0 0.0
+p3d_add_desc_cylindre cable53 10.0 7000.0
+p3d_set_prim_pos cable53 -16500.0 25000.0 11000.0 0.0 90.0 0.0
+p3d_end_desc
+p3d_set_obst_color cables5 Black
+
+p3d_beg_desc P3D_OBSTACLE cables6 
+p3d_add_desc_cylindre cable61 10.0 7000.0
+p3d_set_prim_pos cable61 -16500.0 25000.0 18500.0 0.0 90.0 0.0
+p3d_add_desc_cylindre cable62 10.0 7000.0
+p3d_set_prim_pos cable62 -16500.0 25000.0 19000.0 0.0 90.0 0.0
+p3d_add_desc_cylindre cable63 10.0 7000.0
+p3d_set_prim_pos cable63 -16500.0 25000.0 19500.0 0.0 90.0 0.0
+p3d_end_desc
+p3d_set_obst_color cables6 Black
+
+p3d_beg_desc P3D_OBSTACLE cables7 
+p3d_add_desc_cylindre cable71 10.0 30000.0
+p3d_set_prim_pos cable71 -11500.0 5000.0 18500.0 0.0 90.0 90.0
+p3d_add_desc_cylindre cable72 10.0 30000.0
+p3d_set_prim_pos cable72 -11500.0 5000.0 19000.0 0.0 90.0 90.0
+p3d_add_desc_cylindre cable73 10.0 30000.0
+p3d_set_prim_pos cable73 -11500.0 5000.0 19500.0 0.0 90.0 90.0
+p3d_end_desc
+p3d_set_obst_color cables7 Black
+
+p3d_end_desc
+
+p3d_sel_desc_name P3D_ROBOT heli
+#p3d_set_robot_radius 10000.0
+p3d_set_robot_pos 0.0 3000.0 800.0 0.0
+p3d_set_env_box -30000.0 30000.0 -30000.0 40000.0 0.0 40000.0
+p3d_set_robot_box -30000.0 30000.0 -30000.0 40000.0 800.0 40000.0 -180.0 180.0

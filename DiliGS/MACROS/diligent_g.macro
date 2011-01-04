@@ -1,0 +1,194 @@
+p3d_beg_desc P3D_ROBOT 
+
+p3d_add_desc_jnt P3D_PLAN 0 0 0 
+			  0 0 1 
+			  2000 -4600 11880
+			  -3000 -11900 1000
+			  0 -180   180
+		          0
+
+p3d_beg_desc P3D_BODY body
+
+p3d_add_desc_cylindre roue1 45 15 P3D_GRAPHIC
+p3d_set_prim_pos roue1 0 195 45 90.0 0.0 0.0
+p3d_add_desc_cylindre roue2 45 15 P3D_GRAPHIC
+p3d_set_prim_pos roue2 0 -195 45 90.0 0.0 0.0
+p3d_add_desc_cylindre roue3 45 15 P3D_GRAPHIC
+p3d_set_prim_pos roue3 195 0 45 90.0 0.0 0.0
+p3d_add_desc_cylindre roue4 45 15 P3D_GRAPHIC
+p3d_set_prim_pos roue4 -195 0 45 90.0 0.0 0.0
+
+p3d_add_desc_cylindre fond 270 15 P3D_GRAPHIC
+p3d_set_prim_pos fond 0 0 97.35 0.0 0.0 0.0
+
+p3d_add_desc_cylindre anbas 285 105 P3D_GRAPHIC
+p3d_set_prim_pos anbas 0 0 142.5 0.0 0.0 0.0
+
+p3d_add_desc_cylindre corps 270 525 P3D_GRAPHIC
+p3d_set_prim_pos corps 0 0 457.5 0.0 0.0 0.0
+
+p3d_add_desc_cylindre anhaut 285 105 P3D_GRAPHIC
+p3d_set_prim_pos anhaut 0 0 772.5 0.0 0.0 0.0
+
+p3d_add_desc_cylindre couv 270 15 P3D_GRAPHIC
+p3d_set_prim_pos couv 0 0 817.875 0.0 0.0 0.0
+
+p3d_add_desc_cylindre but1 22.5 30 P3D_GRAPHIC
+p3d_set_prim_pos but1 195 0 833.1 0.0 0.0 0.0
+p3d_add_desc_cylindre but2 22.5 30 P3D_GRAPHIC
+p3d_set_prim_pos but2 -195 0 833.1 0.0 0.0 0.0
+
+p3d_add_desc_box boit1 90 60 60 P3D_GRAPHIC
+p3d_set_prim_pos boit1 108.75 0 855.225 0.0 0.0 0.0
+p3d_add_desc_cylindre boitbut1 7.5 15 P3D_GRAPHIC
+p3d_set_prim_pos boitbut1 56.25 0 859.5 0.0 90.0 0.0
+
+p3d_add_desc_box boit2 90 60 60 P3D_GRAPHIC
+p3d_set_prim_pos boit2 108.75 0 915.225 0.0 0.0 0.0
+p3d_add_desc_cylindre boitbut2 7.5 15 P3D_GRAPHIC
+p3d_set_prim_pos boitbut2 56.25 0 915.225 0.0 90.0 0.0
+
+p3d_add_desc_box supp1 15 1.5 45 P3D_GRAPHIC
+p3d_set_prim_pos supp1 123.75 -30.75 937.5 0.0 0.0 0.0
+p3d_add_desc_box supp2 15 1.5 45 P3D_GRAPHIC
+p3d_set_prim_pos supp2 123.75 30.75 937.5 0.0 0.0 0.0
+p3d_add_desc_box supp3 15 150 1.5 P3D_GRAPHIC
+p3d_set_prim_pos supp3 123.75 0 960.75 0.0 0.0 0.0
+
+p3d_add_desc_box cam11 75 30 30 P3D_GRAPHIC
+p3d_set_prim_pos cam11 93.75 -60 976.5 0.0 0.0 0.0
+p3d_add_desc_cylindre cam12 15 45 P3D_GRAPHIC
+p3d_set_prim_pos cam12 153.75 -60 976.5 0.0 90.0 0.0
+
+p3d_add_desc_box cam21 75 30 30 P3D_GRAPHIC
+p3d_set_prim_pos cam21 93.75 60 976.5 0.0 0.0 0.0
+p3d_add_desc_cylindre cam22 15 45 P3D_GRAPHIC
+p3d_set_prim_pos cam22 153.75 60 976.5 0.0 90.0 0.0
+
+p3d_add_desc_box ant11 120 75 30 P3D_GRAPHIC
+p3d_set_prim_pos ant11 0 -157.5 840.3 0.0 0.0 0.0
+p3d_add_desc_cylindre ant22 3 75 P3D_GRAPHIC
+p3d_set_prim_pos ant22 15 -196.5 862.5 0.0 0.0 0.0
+p3d_add_desc_cylindre ant23 3 75 P3D_GRAPHIC
+p3d_set_prim_pos ant23 15 -118.5 862.5 0.0 0.0 0.0
+
+
+p3d_add_desc_cylindre caph1 30 15 P3D_GRAPHIC
+p3d_set_prim_pos caph1 279 0 757.5 0.0 90.0 0.0
+p3d_add_desc_cylindre caph2 30 15 P3D_GRAPHIC
+p3d_set_prim_pos caph2 265.35 86.22 757.5 0.0 90.0 18.0
+p3d_add_desc_cylindre caph3 30 15 P3D_GRAPHIC
+p3d_set_prim_pos caph3 225.72 163.995 757.5 0.0 90.0 36.0
+p3d_add_desc_cylindre caph4 30 15 P3D_GRAPHIC
+p3d_set_prim_pos caph4 163.995 225.72 757.5 0.0 90.0 54.0
+p3d_add_desc_cylindre caph5 30 15 P3D_GRAPHIC
+p3d_set_prim_pos caph5 86.22 265.35 757.5 0.0 90.0 72.0
+
+p3d_add_desc_cylindre caph6 30 15 P3D_GRAPHIC
+p3d_set_prim_pos caph6 0 279 757.5 0.0 90.0 90.0
+p3d_add_desc_cylindre caph7 30 15 P3D_GRAPHIC
+p3d_set_prim_pos caph7 -265.35 86.22 757.5 0.0 90.0 162.0
+p3d_add_desc_cylindre caph8 30 15 P3D_GRAPHIC
+p3d_set_prim_pos caph8 -225.72 163.995 757.5 0.0 90.0 144.0
+p3d_add_desc_cylindre caph9 30 15 P3D_GRAPHIC
+p3d_set_prim_pos caph9 -163.995 225.72 757.5 0.0 90.0 126.0
+p3d_add_desc_cylindre caph10 30 15 P3D_GRAPHIC
+p3d_set_prim_pos caph10 -86.22 265.35 757.5 0.0 90.0 108.0
+
+p3d_add_desc_cylindre caph11 30 15 P3D_GRAPHIC
+p3d_set_prim_pos caph11 -279 0 757.5 0.0 90.0 0.0
+p3d_add_desc_cylindre caph12 30 15 P3D_GRAPHIC
+p3d_set_prim_pos caph12 265.35 -86.22 757.5 0.0 90.0 -18.0
+p3d_add_desc_cylindre caph13 30 15 P3D_GRAPHIC
+p3d_set_prim_pos caph13 225.72 -163.995 757.5 0.0 90.0 -36.0
+p3d_add_desc_cylindre caph14 30 15 P3D_GRAPHIC
+p3d_set_prim_pos caph14 163.995 -225.72 757.5 0.0 90.0 -54.0
+p3d_add_desc_cylindre caph15 30 15 P3D_GRAPHIC
+p3d_set_prim_pos caph15 86.22 -265.35 757.5 0.0 90.0 -72.0
+
+p3d_add_desc_cylindre caph16 30 15 P3D_GRAPHIC
+p3d_set_prim_pos caph16 0 -279 757.5 0.0 90.0 -90.0
+p3d_add_desc_cylindre caph17 30 15 P3D_GRAPHIC
+p3d_set_prim_pos caph17 -265.35 -86.22 757.5 0.0 90.0 -162.0
+p3d_add_desc_cylindre caph18 30 15 P3D_GRAPHIC
+p3d_set_prim_pos caph18 -225.72 -163.995 757.5 0.0 90.0 -144.0
+p3d_add_desc_cylindre caph19 30 15 P3D_GRAPHIC
+p3d_set_prim_pos caph19 -163.995 -225.72 757.5 0.0 90.0 -126.0
+p3d_add_desc_cylindre caph20 30 15 P3D_GRAPHIC
+p3d_set_prim_pos caph20 -86.22 -265.35 757.5 0.0 90.0 -108.0
+
+
+p3d_add_desc_cylindre capb1 30 15 P3D_GRAPHIC
+p3d_set_prim_pos capb1 279 0 127.5 0.0 90.0 0.0
+p3d_add_desc_cylindre capb2 30 15 P3D_GRAPHIC
+p3d_set_prim_pos capb2 265.35 86.22 127.5 0.0 90.0 18.0
+p3d_add_desc_cylindre capb3 30 15 P3D_GRAPHIC
+p3d_set_prim_pos capb3 225.72 163.995 127.5 0.0 90.0 36.0
+p3d_add_desc_cylindre capb4 30 15 P3D_GRAPHIC
+p3d_set_prim_pos capb4 163.995 225.72 127.5 0.0 90.0 54.0
+p3d_add_desc_cylindre capb5 30 15 P3D_GRAPHIC
+p3d_set_prim_pos capb5 86.22 265.35 127.5 0.0 90.0 72.0
+
+
+p3d_add_desc_cylindre capb6 30 15 P3D_GRAPHIC
+p3d_set_prim_pos capb6 0 279 127.5 0.0 90.0 90.0
+p3d_add_desc_cylindre capb7 30 15 P3D_GRAPHIC
+p3d_set_prim_pos capb7 -265.35 86.22 127.5 0.0 90.0 162.0
+p3d_add_desc_cylindre capb8 30 15 P3D_GRAPHIC
+p3d_set_prim_pos capb8 -225.72 163.995 127.5 0.0 90.0 144.0
+p3d_add_desc_cylindre capb9 30 15 P3D_GRAPHIC
+p3d_set_prim_pos capb9 -163.995 225.72 127.5 0.0 90.0 126.0
+p3d_add_desc_cylindre capb10 30 15 P3D_GRAPHIC
+p3d_set_prim_pos capb10 -86.22 265.35 127.5 0.0 90.0 108.0
+
+p3d_add_desc_cylindre capb11 30 15 P3D_GRAPHIC
+p3d_set_prim_pos capb11 -279 0 127.5 0.0 90.0 0.0
+p3d_add_desc_cylindre capb12 30 15 P3D_GRAPHIC
+p3d_set_prim_pos capb12 265.35 -86.22 127.5 0.0 90.0 -18.0
+p3d_add_desc_cylindre capb13 30 15 P3D_GRAPHIC
+p3d_set_prim_pos capb13 225.72 -163.995 127.5 0.0 90.0 -36.0
+p3d_add_desc_cylindre capb14 30 15 P3D_GRAPHIC
+p3d_set_prim_pos capb14 163.995 -225.72 127.5 0.0 90.0 -54.0
+p3d_add_desc_cylindre capb15 30 15 P3D_GRAPHIC
+p3d_set_prim_pos capb15 86.22 -265.35 127.5 0.0 90.0 -72.0
+
+p3d_add_desc_cylindre capb16 30 15 P3D_GRAPHIC
+p3d_set_prim_pos capb16 0 -279 127.5 0.0 90.0 -90.0
+p3d_add_desc_cylindre capb17 30 15 P3D_GRAPHIC
+p3d_set_prim_pos capb17 -265.35 -86.22 127.5 0.0 90.0 -162.0
+p3d_add_desc_cylindre capb18 30 15 P3D_GRAPHIC
+p3d_set_prim_pos capb18 -225.72 -163.995 127.5 0.0 90.0 -144.0
+p3d_add_desc_cylindre capb19 30 15 P3D_GRAPHIC
+p3d_set_prim_pos capb19 -163.995 -225.72 127.5 0.0 90.0 -126.0
+p3d_add_desc_cylindre capb20 30 15 P3D_GRAPHIC
+p3d_set_prim_pos capb20 -86.22 -265.35 127.5 0.0 90.0 -108.0
+
+p3d_add_desc_cylindre englobant 285 1000 P3D_GHOST
+p3d_set_prim_pos englobant 0 0 500 0.0 0.0 0.0
+
+
+p3d_end_desc 
+
+p3d_end_desc 
+
+p3d_set_body_poly_color body 5 Grey
+p3d_set_body_poly_color body 6 Black
+p3d_set_body_poly_color body 7 Black
+p3d_set_body_poly_color body 8 Black
+p3d_set_body_poly_color body 9 Grey
+p3d_set_body_poly_color body 10 Red
+p3d_set_body_poly_color body 11 Red
+p3d_set_body_poly_color body 12 Black
+p3d_set_body_poly_color body 13 Grey
+p3d_set_body_poly_color body 14 Black
+p3d_set_body_poly_color body 15 Grey
+p3d_set_body_poly_color body 16 Grey
+p3d_set_body_poly_color body 17 Grey
+p3d_set_body_poly_color body 18 Grey
+p3d_set_body_poly_color body 19 Black
+p3d_set_body_poly_color body 20 Grey
+p3d_set_body_poly_color body 21 Black
+p3d_set_body_poly_color body 22 Grey
+p3d_set_body_poly_color body 23 White
+p3d_set_body_poly_color body 24 Grey
+p3d_set_body_poly_color body 25 Grey

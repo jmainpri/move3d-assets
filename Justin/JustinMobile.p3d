@@ -1,0 +1,139 @@
+p3d_beg_desc P3D_ENV JustinMobileRef
+
+p3d_beg_desc P3D_OBSTACLE box1
+p3d_add_desc_box obs 0.05 0.05 0.05
+p3d_end_desc
+p3d_set_obst_pos box1 -1.0 -1.0 0.0 0 0 0
+p3d_set_obst_poly_color box1 1 Red
+
+p3d_read_macro Objects/Movable/visballsmall.macro VISBALL
+p3d_read_macro JustinMobile.macro ROBOT_MOBILE_JUSTIN
+
+p3d_end_desc
+
+p3d_set_env_box -3.0 3.0 -3.0 3.0 -0.050 3.000
+
+######################
+##### CONSTRAINTS ####
+######################
+
+# Torso J3
+p3d_constraint p3d_min_max_dofs 0  2 4 3  2 0 135  0
+# Torso J4
+p3d_constraint p3d_lin_rel_dofs 1 5  2 3 4  3 -1 -1 0  0
+
+p3d_set_min_bounds -2 -2 -180 -140 -70 0 -90 -105 -90  -170 -120 -170 -120 -170 -45 -45  -170 -120 -170 -120 -170 -45 -45
+p3d_set_max_bounds 2 2 180 200 90 135 90 105 10  170 120 170 120 170 80 135  170 120 170 120 170 80 135
+
+
+p3d_add_desc_rob_col_init ROBOT_MOBILE_JUSTIN
+p3d_desactivate_col_check automatic2
+p3d_desactivate_col_check GPlatform-1 GTorso3-1
+p3d_desactivate_col_check GPlatform-1 GTorso4-1
+p3d_desactivate_col_check GPlatform-1 Ghead1-1
+p3d_desactivate_col_check GPlatform-1 Ghead2-1
+p3d_desactivate_col_check GPlatform-1 GrArm1-1
+p3d_desactivate_col_check GPlatform-1 GrArm2-1
+p3d_desactivate_col_check GPlatform-1 GlArm1-1
+p3d_desactivate_col_check GPlatform-1 GlArm2-1
+
+p3d_desactivate_col_check GPlatform-2 GTorso3-1
+p3d_desactivate_col_check GPlatform-2 GTorso4-1
+p3d_desactivate_col_check GPlatform-2 Ghead1-1
+p3d_desactivate_col_check GPlatform-2 Ghead2-1
+p3d_desactivate_col_check GPlatform-2 GrArm1-1
+p3d_desactivate_col_check GPlatform-2 GrArm2-1
+p3d_desactivate_col_check GPlatform-2 GlArm1-1
+p3d_desactivate_col_check GPlatform-2 GlArm2-1
+
+p3d_desactivate_col_check GPlatform-3 GTorso3-1
+p3d_desactivate_col_check GPlatform-3 GTorso4-1
+p3d_desactivate_col_check GPlatform-3 Ghead1-1
+p3d_desactivate_col_check GPlatform-3 Ghead2-1
+p3d_desactivate_col_check GPlatform-3 GrArm1-1
+p3d_desactivate_col_check GPlatform-3 GrArm2-1
+p3d_desactivate_col_check GPlatform-3 GlArm1-1
+p3d_desactivate_col_check GPlatform-3 GlArm2-1
+
+p3d_desactivate_col_check GPlatform-4 GTorso3-1
+p3d_desactivate_col_check GPlatform-4 GTorso4-1
+p3d_desactivate_col_check GPlatform-4 Ghead1-1
+p3d_desactivate_col_check GPlatform-4 Ghead2-1
+p3d_desactivate_col_check GPlatform-4 GrArm1-1
+p3d_desactivate_col_check GPlatform-4 GrArm2-1
+p3d_desactivate_col_check GPlatform-4 GlArm1-1
+p3d_desactivate_col_check GPlatform-4 GlArm2-1
+
+p3d_desactivate_col_check GPlatform-5 GTorso3-1
+p3d_desactivate_col_check GPlatform-5 GTorso4-1
+p3d_desactivate_col_check GPlatform-5 Ghead1-1
+p3d_desactivate_col_check GPlatform-5 Ghead2-1
+p3d_desactivate_col_check GPlatform-5 GrArm1-1
+p3d_desactivate_col_check GPlatform-5 GrArm2-1
+p3d_desactivate_col_check GPlatform-5 GlArm1-1
+p3d_desactivate_col_check GPlatform-5 GlArm2-1
+
+p3d_desactivate_col_check GTorso1-1 GTorso4-1
+p3d_desactivate_col_check GTorso1-1 Ghead1-1
+p3d_desactivate_col_check GTorso1-1 Ghead2-1
+p3d_desactivate_col_check GTorso1-1 GrArm1-1
+p3d_desactivate_col_check GTorso1-1 GrArm2-1
+p3d_desactivate_col_check GTorso1-1 GlArm1-1
+p3d_desactivate_col_check GTorso1-1 GlArm2-1
+
+p3d_desactivate_col_check GTorso2-1 Ghead1-1
+p3d_desactivate_col_check GTorso2-1 Ghead2-1
+p3d_desactivate_col_check GTorso2-1 GrArm1-1
+p3d_desactivate_col_check GTorso2-1 GrArm2-1
+p3d_desactivate_col_check GTorso2-1 GlArm1-1
+p3d_desactivate_col_check GTorso2-1 GlArm2-1
+
+p3d_desactivate_col_check GTorso3-1 Ghead2-1
+p3d_desactivate_col_check GTorso3-1 GrArm1-1
+p3d_desactivate_col_check GTorso3-1 GrArm2-1
+p3d_desactivate_col_check GTorso3-1 GlArm1-1
+p3d_desactivate_col_check GTorso3-1 GlArm2-1
+
+p3d_desactivate_col_check Ghead1-1 GrArm1-1
+p3d_desactivate_col_check Ghead1-1 GrArm2-1
+p3d_desactivate_col_check Ghead1-1 GlArm1-1
+p3d_desactivate_col_check Ghead1-1 GlArm2-1
+
+p3d_desactivate_col_check Ghead2-1 GrArm1-1
+p3d_desactivate_col_check Ghead2-1 GrArm2-1
+p3d_desactivate_col_check Ghead2-1 GlArm1-1
+p3d_desactivate_col_check Ghead2-1 GlArm2-1
+
+p3d_desactivate_col_check GrArm1-1 GrArm4-1
+p3d_desactivate_col_check GrArm1-1 GrArm5-1
+p3d_desactivate_col_check GrArm1-1 GrArm6-1
+p3d_desactivate_col_check GrArm1-1 GrArm7-1
+
+p3d_desactivate_col_check GrArm2-1 GrArm5-1
+p3d_desactivate_col_check GrArm2-1 GrArm6-1
+p3d_desactivate_col_check GrArm2-1 GrArm7-1
+
+p3d_desactivate_col_check GrArm3-1 GrArm6-1
+p3d_desactivate_col_check GrArm3-1 GrArm7-1
+
+p3d_desactivate_col_check GrArm4-1 GrArm7-1
+p3d_desactivate_col_check GrArm4-1 GrHandPalm-1
+
+p3d_desactivate_col_check GrArm5-1 GrHandPalm-1
+
+p3d_desactivate_col_check GlArm1-1 GlArm4-1
+p3d_desactivate_col_check GlArm1-1 GlArm5-1
+p3d_desactivate_col_check GlArm1-1 GlArm6-1
+p3d_desactivate_col_check GlArm1-1 GlArm7-1
+
+p3d_desactivate_col_check GlArm2-1 GlArm5-1
+p3d_desactivate_col_check GlArm2-1 GlArm6-1
+p3d_desactivate_col_check GlArm2-1 GlArm7-1
+
+p3d_desactivate_col_check GlArm3-1 GlArm6-1
+p3d_desactivate_col_check GlArm3-1 GlArm7-1
+
+p3d_desactivate_col_check GlArm4-1 GlArm7-1
+p3d_desactivate_col_check GlArm4-1 GlHandPalm-1
+
+p3d_desactivate_col_check GlArm5-1 GlHandPalm-1

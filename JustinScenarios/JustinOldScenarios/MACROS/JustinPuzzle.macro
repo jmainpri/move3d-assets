@@ -1,0 +1,503 @@
+p3d_beg_desc P3D_ROBOT
+########################
+####### TORSO ##########
+########################
+  p3d_beg_desc_jnt P3D_ROTATE # J1
+    p3d_set_name Base
+    p3d_set_prev_jnt 0
+    p3d_set_pos_axe_dh 0 0 105.5 0
+#     p3d_set_dof_vmin -140
+#     p3d_set_dof_vmax 200
+    p3d_set_dof_vmin -80
+    p3d_set_dof_vmax 80
+  p3d_end_desc
+    p3d_beg_desc P3D_BODY Glink12
+      p3d_add_desc_cylindre cyl 125 25 P3D_GHOST
+      p3d_set_prim_pos cyl 0 0 14 0 0 0
+      p3d_add_desc_box base1 125 260 150 P3D_GHOST
+      p3d_set_prim_pos base1 -84 0 88.5  0 0 0
+    p3d_end_desc
+  p3d_read_macro body-link2.macro torso1
+  p3d_beg_desc_jnt P3D_ROTATE # J2
+    p3d_set_name Torso1
+    p3d_set_prev_jnt 1
+    p3d_set_pos_axe_dh -88 -1.57 0 -1.57
+    p3d_set_dof_vmin -90
+    p3d_set_dof_vmax 90
+  p3d_end_desc
+    p3d_beg_desc P3D_BODY Glink2
+      p3d_add_desc_box base1 155 260 159 P3D_GHOST
+      p3d_set_prim_pos base1 -125 0 217 0 -15 0
+      p3d_add_desc_box base2 130 260 186 P3D_GHOST
+      p3d_set_prim_pos base2 -106 0 360 0 17 0
+    p3d_end_desc
+  p3d_read_macro body-link3.macro torso2
+  p3d_beg_desc_jnt P3D_ROTATE # J3
+    p3d_set_name Torso2
+    p3d_set_prev_jnt 2
+    p3d_set_pos_axe_dh 300 0 0 0
+    p3d_set_dof_vmin 0
+    p3d_set_dof_vmax 135
+  p3d_end_desc
+    p3d_beg_desc P3D_BODY Glink3
+      p3d_add_desc_box base1 174 260 186 P3D_GHOST
+      p3d_set_prim_pos base1 -125 0 513.5 0 -15 0
+      p3d_add_desc_box base2 110 260 210 P3D_GHOST
+      p3d_set_prim_pos base2 -110 0 667 0 20 0
+    p3d_end_desc
+  p3d_read_macro body-link3.macro torso3
+  p3d_beg_desc_jnt P3D_ROTATE # J4
+    p3d_set_name Torso3
+    p3d_set_prev_jnt 3
+    p3d_set_pos_axe_dh 300 0 0 0
+    p3d_set_dof_vmin -180
+    p3d_set_dof_vmax 135
+  p3d_end_desc
+#     p3d_beg_desc P3D_BODY Glink4
+#       p3d_add_desc_box base1 190 320 270
+#       p3d_set_prim_pos base1 -11 0 761 0 0 0
+#     p3d_end_desc
+  p3d_read_macro body-link5.macro torso4
+#########################
+######### HEAD ##########
+#########################
+  p3d_beg_desc_jnt P3D_FIXED # J5
+    p3d_set_name dockHead
+    p3d_set_pos_relative
+    p3d_set_prev_jnt 4
+    p3d_set_pos_mat 0 0 1 259.3  1 0 0 88  0 1 0 0  0 0 0 1
+  p3d_end_desc
+  p3d_beg_desc_jnt P3D_ROTATE # J6
+    p3d_set_name Head1
+    p3d_set_prev_jnt 5
+    p3d_set_pos_axe_dh 0 0 0 0
+    p3d_set_dof_vmin -105
+    p3d_set_dof_vmax 105
+  p3d_end_desc
+  p3d_beg_desc P3D_BODY Ghead1
+    p3d_add_desc_box base1 75 95 120 P3D_GHOST
+    p3d_set_prim_pos base1 0 0 953 0 0 0
+  p3d_end_desc
+  p3d_read_macro head1.macro head1
+  p3d_beg_desc_jnt P3D_ROTATE # J7
+    p3d_set_name Head2
+    p3d_set_prev_jnt 6
+    p3d_set_pos_axe_dh 0 -1.57 0 0
+    p3d_set_dof_vmin -90
+    p3d_set_dof_vmax 10
+  p3d_end_desc
+  p3d_beg_desc P3D_BODY Ghead2
+    p3d_add_desc_sphere base1 135.5 P3D_GHOST
+    p3d_set_prim_pos base1 65 0 1042 0 0 0
+  p3d_end_desc
+  p3d_read_macro head2.macro head2
+#########################
+###### RIGHT ARM ########
+#########################
+  p3d_beg_desc_jnt P3D_FIXED # J8
+    p3d_set_name dockRightArm
+    p3d_set_pos_relative
+    p3d_set_prev_jnt 4
+    p3d_set_pos_mat -0.866025 0 0.5 190  0 1 0 88  -0.5 0 -0.866025 -256  0 0 0 1
+  p3d_end_desc
+  p3d_beg_desc_jnt P3D_ROTATE # J9
+    p3d_set_name RightArm1
+    p3d_set_prev_jnt 8
+    p3d_set_pos_axe_dh 0 0 0 0
+    p3d_set_dof_vmin -170
+    p3d_set_dof_vmax 170
+  p3d_end_desc
+  p3d_beg_desc P3D_BODY GrArm1
+    p3d_add_desc_cylindre base1 75 175 P3D_GHOST
+    p3d_set_prim_pos base1 40 -232 882 60 0 0
+  p3d_end_desc
+  p3d_read_macro arm-link12-34.macro rArm1
+  p3d_beg_desc_jnt P3D_ROTATE # J10
+    p3d_set_name RightArm2
+    p3d_set_prev_jnt 9
+    p3d_set_pos_axe_dh 0 1.57 0 0
+    p3d_set_dof_vmin -120
+    p3d_set_dof_vmax 120
+  p3d_end_desc
+  p3d_beg_desc P3D_BODY GrArm2
+    p3d_add_desc_cylindre_oval base1 90 75 250 P3D_GHOST
+    p3d_set_prim_pos base1 -22.425 -322.46 931.89 60 0 0
+  p3d_end_desc
+  p3d_read_macro arm-link23-45.macro rArm2
+  p3d_beg_desc_jnt P3D_ROTATE # J11
+    p3d_set_name RightArm3
+    p3d_set_prev_jnt 10
+    p3d_set_pos_axe_dh 0 -1.57 400 -1.57
+    p3d_set_dof_vmin -170
+    p3d_set_dof_vmax 170
+  p3d_end_desc
+  p3d_beg_desc P3D_BODY GrArm3
+    p3d_add_desc_cylindre_oval base1 75 90 260 P3D_GHOST
+    p3d_set_prim_pos base1 -6.42 -554.57 1039.9 60 0 0
+  p3d_end_desc
+  p3d_read_macro arm-link12-34.macro rArm3
+  p3d_beg_desc_jnt P3D_ROTATE # J12
+    p3d_set_name RightArm4
+    p3d_set_prev_jnt 11
+    p3d_set_pos_axe_dh 0 1.57 0 0
+    p3d_set_dof_vmin -120
+    p3d_set_dof_vmax 120
+  p3d_end_desc
+  p3d_beg_desc P3D_BODY GrArm4
+    p3d_add_desc_cylindre_oval base1 75 90 260 P3D_GHOST
+    p3d_set_prim_pos base1 -6.42 -650.03 1153.29 60 0 0
+  p3d_end_desc
+  p3d_read_macro arm-link23-45.macro rArm4
+  p3d_beg_desc_jnt P3D_ROTATE # J13
+    p3d_set_name RightArm5
+    p3d_set_prev_jnt 12
+    p3d_set_pos_axe_dh 0 -1.57 390 -3.14
+    p3d_set_dof_vmin -170
+    p3d_set_dof_vmax 170
+  p3d_end_desc
+  p3d_beg_desc P3D_BODY GrArm5
+    p3d_add_desc_cylindre_oval base1 62.5 70 123 P3D_GHOST
+    p3d_set_prim_pos base1 -0.18 -828.12 1236.15 60 0 0
+  p3d_end_desc
+  p3d_read_macro arm-link56.macro rArm5
+  p3d_beg_desc_jnt P3D_ROTATE # J14
+    p3d_set_name RightArm6
+    p3d_set_prev_jnt 13
+    p3d_set_pos_axe_dh 0 1.57 0 1.57
+    p3d_set_dof_vmin -45
+    p3d_set_dof_vmax 80
+#     p3d_set_dof_vmin -180
+#     p3d_set_dof_vmax 180
+  p3d_end_desc
+  p3d_beg_desc P3D_BODY GrArm6
+    p3d_add_desc_box base1 150 160 120 P3D_GHOST
+    p3d_set_prim_pos base1 8.65 -935.45 1297.46 60 0 0
+  p3d_end_desc
+  p3d_read_macro arm-link67.macro rArm6
+  p3d_beg_desc_jnt P3D_ROTATE # J15
+    p3d_set_name RightArm7
+    p3d_set_prev_jnt 14
+    p3d_set_pos_axe_dh 0 1.57 0 -1.57
+    p3d_set_dof_vmin -45
+    p3d_set_dof_vmax 135
+  p3d_end_desc
+  p3d_beg_desc P3D_BODY GrArm7
+    p3d_add_desc_cylindre base1 35 100 P3D_GHOST
+    p3d_set_prim_pos base1 3.32 -1017.05 1335.9 60 0 0
+  p3d_end_desc
+  p3d_read_macro arm-link7-bsa.macro rArm7
+#########################
+####### LEFT ARM ########
+#########################
+  p3d_beg_desc_jnt P3D_FIXED # J16
+    p3d_set_name dockLeftArm
+    p3d_set_pos_relative
+    p3d_set_prev_jnt 4
+    p3d_set_pos_mat 0.866025 0 0.5 190  0 1 0 88  -0.5 0 0.866025 256  0 0 0 1
+  p3d_end_desc
+  p3d_beg_desc_jnt P3D_ROTATE # J17
+    p3d_set_name LeftArm1
+    p3d_set_prev_jnt 16
+    p3d_set_pos_axe_dh 0 3.14 0 0
+    p3d_set_dof_vmin -170
+    p3d_set_dof_vmax 170
+  p3d_end_desc
+  p3d_beg_desc P3D_BODY GlArm1
+    p3d_add_desc_cylindre base1 75 175 P3D_GHOST
+    p3d_set_prim_pos base1 40 232 882 -60 0 0
+  p3d_end_desc
+  p3d_read_macro arm-link12-34.macro lArm1
+  p3d_beg_desc_jnt P3D_ROTATE # J18
+    p3d_set_name LeftArm2
+    p3d_set_prev_jnt 17
+    p3d_set_pos_axe_dh 0 1.57 0 0
+    p3d_set_dof_vmin -120
+    p3d_set_dof_vmax 120
+  p3d_end_desc
+  p3d_beg_desc P3D_BODY GlArm2
+    p3d_add_desc_cylindre_oval base1 90 75 250 P3D_GHOST
+    p3d_set_prim_pos base1 -22.42 319.45 935.22 -60 0 0
+  p3d_end_desc
+  p3d_read_macro arm-link23-45.macro lArm2
+  p3d_beg_desc_jnt P3D_ROTATE # J19
+    p3d_set_name LeftArm3
+    p3d_set_prev_jnt 18
+    p3d_set_pos_axe_dh 0 -1.57 -400 -1.57
+    p3d_set_dof_vmin -170
+    p3d_set_dof_vmax 170
+  p3d_end_desc
+  p3d_beg_desc P3D_BODY GlArm3
+    p3d_add_desc_cylindre_oval base1 75 90 260 P3D_GHOST
+    p3d_set_prim_pos base1 1.45 554.27 1041.02 -60 0 0
+  p3d_end_desc
+  p3d_read_macro arm-link12-34.macro lArm3
+  p3d_beg_desc_jnt P3D_ROTATE # J20
+    p3d_set_name LeftArm4
+    p3d_set_prev_jnt 19
+    p3d_set_pos_axe_dh 0 1.57 0 0
+    p3d_set_dof_vmin -120
+    p3d_set_dof_vmax 120
+  p3d_end_desc
+  p3d_beg_desc P3D_BODY GlArm4
+    p3d_add_desc_cylindre_oval base1 75 90 260 P3D_GHOST
+    p3d_set_prim_pos base1 -1.54 652.12 1154.68 -60 0 0
+  p3d_end_desc
+  p3d_read_macro arm-link23-45.macro lArm4
+  p3d_beg_desc_jnt P3D_ROTATE # J21
+    p3d_set_name LeftArm5
+    p3d_set_prev_jnt 20
+    p3d_set_pos_axe_dh 0 -1.57 -390 0
+    p3d_set_dof_vmin -170
+    p3d_set_dof_vmax 170
+  p3d_end_desc
+  p3d_beg_desc P3D_BODY GlArm5
+    p3d_add_desc_cylindre_oval base1 62.5 70 123 P3D_GHOST
+    p3d_set_prim_pos base1 -3 826.86 1234.17 -60 0 0
+  p3d_end_desc
+  p3d_read_macro arm-link56.macro lArm5
+  p3d_beg_desc_jnt P3D_ROTATE # J22
+    p3d_set_name LeftArm6
+    p3d_set_prev_jnt 21
+    p3d_set_pos_axe_dh 0 -1.57 0 1.57
+    p3d_set_dof_vmin -45
+    p3d_set_dof_vmax 80
+#     p3d_set_dof_vmin -180
+#     p3d_set_dof_vmax 180
+  p3d_end_desc
+  p3d_beg_desc P3D_BODY GlArm6
+    p3d_add_desc_box base1 150 160 120 P3D_GHOST
+    p3d_set_prim_pos base1 9 934.16 1293.5 -60 0 0
+  p3d_end_desc
+  p3d_read_macro arm-link67.macro lArm6
+  p3d_beg_desc_jnt P3D_ROTATE # J23
+    p3d_set_name LeftArm7
+    p3d_set_prev_jnt 22
+    p3d_set_pos_axe_dh 0 -1.57 0 -1.57
+    p3d_set_dof_vmin -45
+    p3d_set_dof_vmax 135
+  p3d_end_desc
+  p3d_beg_desc P3D_BODY GlArm7
+    p3d_add_desc_cylindre base1 35 100 P3D_GHOST
+    p3d_set_prim_pos base1 -2.11 1015.45 1336.12 -60 0 0
+  p3d_end_desc
+  p3d_read_macro arm-link7-bsa.macro lArm7
+#########################
+###### RIGHT HAND #######
+#########################
+  p3d_beg_desc_jnt P3D_FIXED # J24
+    p3d_set_name RightWrist
+    p3d_set_prev_jnt 15
+    p3d_set_pos_axe_dh 0 -1.57 138 -3.14
+  p3d_end_desc
+  p3d_beg_desc P3D_BODY GRWrist
+    p3d_add_desc_cylindre rwrist 37.5 30 P3D_GHOST
+    p3d_set_prim_pos rwrist 0 -1073.79 1368.82 60 0 0
+  p3d_end_desc
+  p3d_read_macro right-hand-palm.macro rhandPalm
+  p3d_beg_desc_jnt P3D_FIXED # J25
+    p3d_set_name RightInch
+    p3d_set_prev_jnt 24
+    p3d_set_pos_axe_dh 0 0 0 0
+  p3d_end_desc
+  p3d_beg_desc P3D_BODY GRPouce
+    p3d_add_desc_box rpouce1 43 240 56 P3D_GHOST
+    p3d_set_prim_pos rpouce1 46.5 -1213.74 1362.26 2.44 -1.31 2.05
+  p3d_end_desc
+  p3d_read_macro right-hand-f1.macro rhandF1
+  p3d_beg_desc_jnt P3D_FIXED # J26
+    p3d_set_name RightFingers
+    p3d_set_prev_jnt 24
+    p3d_set_pos_axe_dh 0 0 0 0
+  p3d_end_desc
+  p3d_beg_desc P3D_BODY GRFinger
+    p3d_add_desc_box rhfinger1 37 270 55 P3D_GHOST
+    p3d_set_prim_pos rhfinger1 -65.80 -1170.59 1480.16 -41.13 -0.68 -3.9
+    p3d_add_desc_box rhfinger2 37 270 55 P3D_GHOST
+    p3d_set_prim_pos rhfinger2 -18.86 -1169.67 1480.15 -41.05 -1.39 -7.93
+    p3d_add_desc_box rhfinger3 37 270 55 P3D_GHOST
+    p3d_set_prim_pos rhfinger3 22.208 -1173.17 1485.400 -41.05 -1.39 -7.93
+  p3d_end_desc
+  p3d_read_macro right-hand-f2.macro rhandF2
+#########################
+####### LEFT HAND #######
+#########################
+  p3d_beg_desc_jnt P3D_FIXED # J27
+    p3d_set_name LeftWrist
+    p3d_set_prev_jnt 23
+    p3d_set_pos_axe_dh 0 -1.57 138 3.14
+  p3d_end_desc
+  p3d_beg_desc P3D_BODY GLWrist
+    p3d_add_desc_cylindre lwrist 37.5 30 P3D_GHOST
+    p3d_set_prim_pos lwrist 0 1073.79 1368.82 -60 0 0
+  p3d_end_desc
+  p3d_read_macro left-hand-palm.macro lhandPalm
+  p3d_beg_desc_jnt P3D_FIXED # J28
+    p3d_set_name LeftInch
+    p3d_set_prev_jnt 27
+    p3d_set_pos_axe_dh 0 0 0 0
+  p3d_end_desc
+  p3d_beg_desc P3D_BODY GLPouce
+    p3d_add_desc_box lpouce1 43 240 56 P3D_GHOST
+    p3d_set_prim_pos lpouce1 43.15 1206.23 1362.96 -2.7 -20.36 0.9
+  p3d_end_desc
+  p3d_read_macro left-hand-f1.macro lhandF1
+  p3d_beg_desc_jnt P3D_FIXED # J29
+    p3d_set_name LeftFingers
+    p3d_set_prev_jnt 27
+    p3d_set_pos_axe_dh 0 0 0 0
+  p3d_end_desc
+  p3d_beg_desc P3D_BODY GLFinger
+    p3d_add_desc_box rhfinger1 37 270 55 P3D_GHOST
+    p3d_set_prim_pos rhfinger1 -69.7 1186.48 1488.33 41.3 -19.07 -10.61
+    p3d_add_desc_box rhfinger2 37 270 55 P3D_GHOST
+    p3d_set_prim_pos rhfinger2 -22.06 1180.46 1491.27 41.30 -19.07 -10.61
+    p3d_add_desc_box rhfinger3 37 270 55 P3D_GHOST
+    p3d_set_prim_pos rhfinger3 19.82 1182.18 1497.57 41.30 -19.07 -10.61
+  p3d_end_desc
+  p3d_read_macro left-hand-f2.macro lhandF2
+#########################
+####### OBJECT ##########
+#########################
+#   p3d_beg_desc_jnt P3D_FIXED # J30
+#     p3d_set_name LeftWrist
+#     p3d_set_prev_jnt 23
+#     p3d_set_pos_axe_dh 0 -1.57 138 3.14
+#   p3d_end_desc
+#   p3d_beg_desc P3D_BODY puzzle
+#     p3d_add_desc_rtorusslice part1 75 50 150 6.28
+#     p3d_set_prim_pos part1 0 1260 1455 0 90 0
+#     p3d_add_desc_cylindre part2 75 10
+#     p3d_set_prim_pos part2 75 1260 1455 0 90 0
+#   p3d_end_desc
+
+  p3d_beg_desc_jnt P3D_FIXED # J31
+    p3d_set_name RightWrist
+    p3d_set_prev_jnt 15
+    p3d_set_pos_axe_dh 0 -1.57 138 -3.14
+  p3d_end_desc
+  p3d_beg_desc P3D_BODY puzzle2
+    p3d_add_desc_cylindre part2 30 400
+    p3d_set_prim_pos part2 0 -1205 1422 0 90 0
+  p3d_end_desc
+
+p3d_end_desc
+#########################
+###### POSITIONS ######## ABSOLUTES
+#########################
+#Torso
+p3d_set_body_abs_pos torso1.link2 0 0 0 90 0 0
+p3d_set_body_abs_pos torso2.link3 -88 0 105.5 180 0 0
+p3d_set_body_abs_pos torso3.link3 -88 0 405.5 180 0 0
+p3d_set_body_abs_pos torso4.link5 -88 0 705.5 180 0 90
+#Head
+p3d_set_body_abs_pos head1.head1 0 0 885.5 90 0 0
+p3d_set_body_abs_pos head2.head2 0 0 961.5 0 -30 0
+#Right arm
+p3d_set_body_abs_pos rArm1.link12-34 0 -256 895.5 120 0 -180
+p3d_set_body_abs_pos rArm2.link23-45 0 -256 895.5 60 0 0
+p3d_set_body_abs_pos rArm3.link12-34 0 -602.41 1095.5 180 -60 90
+p3d_set_body_abs_pos rArm4.link23-45 0 -602.41 1095.5 0 60 -90
+p3d_set_body_abs_pos rArm5.link56    0 -940.16 1290.5 180 60 -90
+p3d_set_body_abs_pos rArm6.link67    0 -940.16 1290.5 240 0 0
+p3d_set_body_abs_pos rArm7.link7-bsa 0 -940.16 1290.5 180 -60 90
+#Left arm
+p3d_set_body_abs_pos lArm1.link12-34 0 256 895.5 60 180 0
+p3d_set_body_abs_pos lArm2.link23-45 0 256 895.5 -60 0 0
+p3d_set_body_abs_pos lArm3.link12-34 0 602.41 1095.5 180 -60 -90
+p3d_set_body_abs_pos lArm4.link23-45 0 602.41 1095.5 0 60 90
+p3d_set_body_abs_pos lArm5.link56    0 940.16 1290.5 180 60 90
+p3d_set_body_abs_pos lArm6.link67    0 940.16 1290.5 -60 0 0
+p3d_set_body_abs_pos lArm7.link7-bsa 0 940.16 1290.5 180 60 90
+#Right hand
+p3d_set_body_abs_pos rhandPalm.right-hand-palm 0 -1062.487 1360.61 -90 120 90
+p3d_set_body_abs_pos rhandF1.right-hand-f1 0 -1062.487 1360.61 -90 120 90
+p3d_set_body_abs_pos rhandF2.right-hand-f2 0 -1062.487 1360.61 -90 120 90
+#Left hand
+p3d_set_body_abs_pos lhandPalm.left-hand-palm 0 1062.487 1360.61 -90 120 -90
+p3d_set_body_abs_pos lhandF1.left-hand-f1     0 1062.487 1360.61 -90 120 -90
+p3d_set_body_abs_pos lhandF2.left-hand-f2     0 1062.487 1360.61 -90 120 -90
+#########################
+######## COLORS #########
+#########################
+#Torso
+p3d_set_body_poly_color torso1.link2 1 Any 0.18 0.28 0.64
+p3d_set_body_poly_color torso1.link2 2 Any 0.87 0.94 1.0
+p3d_set_body_poly_color torso1.link2 3 Any 0.75 0.75 0.75
+p3d_set_body_poly_color torso2.link3 1 Any 0.18 0.28 0.64
+p3d_set_body_poly_color torso2.link3 2 Any 0.75 0.75 0.75
+p3d_set_body_poly_color torso3.link3 1 Any 0.18 0.28 0.64
+p3d_set_body_poly_color torso3.link3 2 Any 0.75 0.75 0.75
+p3d_set_body_poly_color torso4.link5 1 Any 0.75 0.75 0.75
+p3d_set_body_poly_color torso4.link5 2 Any 0.18 0.28 0.64
+#Head
+p3d_set_body_poly_color head1.head1 1 Any 0.87 0.94 1.0
+p3d_set_body_poly_color head1.head1 2 Any 0.18 0.28 0.64
+p3d_set_body_poly_color head2.head2 1 Any 0.75 0.75 0.75
+p3d_set_body_poly_color head2.head2 2 Any 0.8 0.8 0.8
+p3d_set_body_poly_color head2.head2 3 Any 0.8 0.8 0.8
+p3d_set_body_poly_color head2.head2 4 Any 0.8 0.8 0.8
+p3d_set_body_poly_color head2.head2 5 Any 0.18 0.28 0.64
+p3d_set_body_poly_color head2.head2 6 Any 0.87 0.94 1.0
+#Right arm
+p3d_set_body_poly_color rArm1.link12-34 1 Any 0.18 0.28 0.64
+p3d_set_body_poly_color rArm1.link12-34 2 Any 0.87 0.94 1.0
+p3d_set_body_poly_color rArm1.link12-34 3 Any 0.75 0.75 0.75
+p3d_set_body_poly_color rArm2.link23-45 1 Any 0.18 0.28 0.64
+p3d_set_body_poly_color rArm2.link23-45 2 Any 0.87 0.94 1.0
+p3d_set_body_poly_color rArm2.link23-45 3 Any 0.75 0.75 0.7
+p3d_set_body_poly_color rArm3.link12-34 1 Any 0.18 0.28 0.64
+p3d_set_body_poly_color rArm3.link12-34 2 Any 0.87 0.94 1.0
+p3d_set_body_poly_color rArm3.link12-34 3 Any 0.75 0.75 0.75
+p3d_set_body_poly_color rArm4.link23-45 1 Any 0.18 0.28 0.64
+p3d_set_body_poly_color rArm4.link23-45 2 Any 0.87 0.94 1.0
+p3d_set_body_poly_color rArm4.link23-45 3 Any 0.75 0.75 0.7
+p3d_set_body_poly_color rArm5.link56 1 Any 0.18 0.28 0.64
+p3d_set_body_poly_color rArm5.link56 2 Any 0.87 0.94 1.0
+p3d_set_body_poly_color rArm6.link67 1 Any 0.37 0.56 0.92
+p3d_set_body_poly_color rArm7.link7-bsa 1 Any 0.17 0.61 0.50
+p3d_set_body_poly_color rArm7.link7-bsa 2 Any 0.18 0.28 0.64
+p3d_set_body_poly_color rArm7.link7-bsa 3 Any 0.50 0.66 1.0
+p3d_set_body_poly_color rArm7.link7-bsa 4 Any 0.06 0.04 0.92
+p3d_set_body_poly_color rArm7.link7-bsa 5 Any 0.87 0.94 1.0
+p3d_set_body_poly_color rArm7.link7-bsa 6 Any 0.41 0.41 0.41
+p3d_set_body_poly_color rArm7.link7-bsa 7 Any 1.0 0.0 0.0
+#Left arm
+p3d_set_body_poly_color lArm1.link12-34 1 Any 0.18 0.28 0.64
+p3d_set_body_poly_color lArm1.link12-34 2 Any 0.87 0.94 1.0
+p3d_set_body_poly_color lArm1.link12-34 3 Any 0.75 0.75 0.75
+p3d_set_body_poly_color lArm2.link23-45 1 Any 0.18 0.28 0.64
+p3d_set_body_poly_color lArm2.link23-45 2 Any 0.87 0.94 1.0
+p3d_set_body_poly_color lArm2.link23-45 3 Any 0.75 0.75 0.7
+p3d_set_body_poly_color lArm3.link12-34 1 Any 0.18 0.28 0.64
+p3d_set_body_poly_color lArm3.link12-34 2 Any 0.87 0.94 1.0
+p3d_set_body_poly_color lArm3.link12-34 3 Any 0.75 0.75 0.75
+p3d_set_body_poly_color lArm4.link23-45 1 Any 0.18 0.28 0.64
+p3d_set_body_poly_color lArm4.link23-45 2 Any 0.87 0.94 1.0
+p3d_set_body_poly_color lArm4.link23-45 3 Any 0.75 0.75 0.7
+p3d_set_body_poly_color lArm5.link56 1 Any 0.18 0.28 0.64
+p3d_set_body_poly_color lArm5.link56 2 Any 0.87 0.94 1.0
+p3d_set_body_poly_color lArm6.link67 1 Any 0.37 0.56 0.92
+p3d_set_body_poly_color lArm7.link7-bsa 1 Any 0.17 0.61 0.50
+p3d_set_body_poly_color lArm7.link7-bsa 2 Any 0.18 0.28 0.64
+p3d_set_body_poly_color lArm7.link7-bsa 3 Any 0.50 0.66 1.0
+p3d_set_body_poly_color lArm7.link7-bsa 4 Any 0.06 0.04 0.92
+p3d_set_body_poly_color lArm7.link7-bsa 5 Any 0.87 0.94 1.0
+p3d_set_body_poly_color lArm7.link7-bsa 6 Any 0.41 0.41 0.41
+p3d_set_body_poly_color lArm7.link7-bsa 7 Any 1.0 0.0 0.0
+#right hand
+p3d_set_body_poly_color rhandPalm.right-hand-palm 1 Any 0.18 0.28 0.64
+p3d_set_body_poly_color rhandPalm.right-hand-palm 2 Any 0.296 0.524 0.281
+p3d_set_body_poly_color rhandPalm.right-hand-palm 3 Any 0.043 0.0 0.609
+p3d_set_body_poly_color rhandF1.right-hand-f1 1 Any 0.18 0.28 0.64
+p3d_set_body_poly_color rhandF1.right-hand-f1 2 Any 0.75 0.75 0.75
+p3d_set_body_poly_color rhandF2.right-hand-f2 1 Any 0.18 0.28 0.64
+p3d_set_body_poly_color rhandF2.right-hand-f2 2 Any 0.75 0.75 0.75
+#Left hand
+p3d_set_body_poly_color lhandPalm.left-hand-palm 1 Any 0.18 0.28 0.64
+p3d_set_body_poly_color lhandPalm.left-hand-palm 2 Any 0.296 0.524 0.281
+p3d_set_body_poly_color lhandPalm.left-hand-palm 3 Any 0.043 0.0 0.609
+p3d_set_body_poly_color lhandF1.left-hand-f1 1 Any 0.18 0.28 0.64
+p3d_set_body_poly_color lhandF1.left-hand-f1 2 Any 0.75 0.75 0.75
+p3d_set_body_poly_color lhandF2.left-hand-f2 1 Any 0.75 0.75 0.75
+p3d_set_body_poly_color lhandF2.left-hand-f2 2 Any 0.18 0.28 0.64
+

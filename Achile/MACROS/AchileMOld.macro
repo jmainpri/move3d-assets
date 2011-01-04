@@ -1,0 +1,403 @@
+p3d_beg_desc P3D_ROBOT
+
+########################
+####### Pelvis #########
+########################
+  p3d_beg_desc_jnt P3D_FREEFLYER # J1
+    p3d_set_name Pelvis
+    p3d_set_prev_jnt 0
+    p3d_set_pos_xyz 0 0 0 0 0 0
+    p3d_set_dof 0 0 0 0 0 0
+    p3d_set_dof_vmin -10 -10 -2 -180 -180 -180
+    p3d_set_dof_vmax 10 10 2 180 180 180
+  p3d_end_desc
+  p3d_read_macro ./AchileParts/pelvisM.macro pelvis
+
+########################
+######## Torso #########
+########################
+  p3d_beg_desc_jnt P3D_ROTATE # J2
+    p3d_set_name TorsoX
+    p3d_set_prev_jnt 1
+    p3d_set_pos_axe 0 -0.0165 0.1397 1 0 0
+    p3d_set_dof_vmin -20
+    p3d_set_dof_vmax 40
+  p3d_end_desc
+  p3d_beg_desc_jnt P3D_ROTATE # J3
+    p3d_set_name TorsoY
+    p3d_set_prev_jnt 2
+    p3d_set_pos_axe 0 -0.0165 0.1397 0 1 0
+    p3d_set_dof_vmin -45
+    p3d_set_dof_vmax 45
+  p3d_end_desc
+  p3d_beg_desc_jnt P3D_ROTATE # J4
+    p3d_set_name TorsoZ
+    p3d_set_prev_jnt 3
+    p3d_set_pos_axe 0 -0.0165 0.1397 0 0 1
+    p3d_set_dof_vmin -45
+    p3d_set_dof_vmax 45
+  p3d_end_desc
+  p3d_read_macro ./AchileParts/torsoM.macro torso
+
+########################
+######## Head #########
+########################
+  p3d_beg_desc_jnt P3D_ROTATE # J5
+    p3d_set_name HeadX
+    p3d_set_prev_jnt 4
+    p3d_set_pos_axe 0 -0.0025 0.5939 1 0 0
+    p3d_set_dof_vmin -60
+    p3d_set_dof_vmax 30
+  p3d_end_desc
+  p3d_beg_desc_jnt P3D_ROTATE # J6
+    p3d_set_name HeadY
+    p3d_set_prev_jnt 5
+    p3d_set_pos_axe 0 -0.0025 0.5939 0 1 0
+    p3d_set_dof_vmin -45
+    p3d_set_dof_vmax 45
+  p3d_end_desc
+  p3d_beg_desc_jnt P3D_ROTATE # J7
+    p3d_set_name HeadZ
+    p3d_set_prev_jnt 6
+    p3d_set_pos_axe 0 -0.0025 0.5939 0 0 1
+    p3d_set_dof_vmin -45
+    p3d_set_dof_vmax 45
+  p3d_end_desc
+  p3d_read_macro ./AchileParts/headM.macro head
+
+########################
+###### Right arm #######
+########################
+#Shoulder
+  p3d_beg_desc_jnt P3D_ROTATE # J8
+    p3d_set_name rShoulderX
+    p3d_set_prev_jnt 4
+    p3d_set_pos_axe -0.2398 0.0321 0.4285 1 0 0
+    p3d_set_dof_vmin -30
+    p3d_set_dof_vmax 30
+  p3d_end_desc
+  p3d_beg_desc_jnt P3D_ROTATE # J9
+    p3d_set_name rShoulderY
+    p3d_set_prev_jnt 8
+    p3d_set_pos_axe -0.2398 0.0321 0.4285 0 1 0
+    p3d_set_dof_vmin -100
+    p3d_set_dof_vmax 90
+  p3d_end_desc
+  p3d_beg_desc_jnt P3D_ROTATE # J10
+    p3d_set_name rShoulderZ
+    p3d_set_prev_jnt 9
+    p3d_set_pos_axe -0.2398 0.0321 0.4285 0 0 1
+    p3d_set_dof_vmin -90
+    p3d_set_dof_vmax 120
+  p3d_end_desc
+  p3d_read_macro ./AchileParts/rHumerusM.macro rHumerus
+#elbow
+  p3d_beg_desc_jnt P3D_ROTATE # J11
+    p3d_set_name rElbowZ
+    p3d_set_prev_jnt 10
+    p3d_set_pos_axe -0.4464 0.0279 0.4302 0 0 1
+    p3d_set_dof_vmin 0
+    p3d_set_dof_vmax 140
+  p3d_end_desc
+  p3d_read_macro ./AchileParts/rRadiusM.macro rRadius
+#wrist
+  p3d_beg_desc_jnt P3D_ROTATE # J12
+    p3d_set_name rWristX
+    p3d_set_prev_jnt 11
+    p3d_set_pos_axe -0.697 0.0251 0.4347 1 0 0
+    p3d_set_dof_vmin -180
+    p3d_set_dof_vmax 0
+  p3d_end_desc
+  p3d_beg_desc_jnt P3D_ROTATE # J13
+    p3d_set_name rWristY
+    p3d_set_prev_jnt 12
+    p3d_set_pos_axe -0.697 0.0251 0.4347 0 1 0
+    p3d_set_dof_vmin -90
+    p3d_set_dof_vmax 90
+  p3d_end_desc
+  p3d_beg_desc_jnt P3D_ROTATE # J14
+    p3d_set_name rWristZ
+    p3d_set_prev_jnt 13
+    p3d_set_pos_axe -0.697 0.0251 0.4347 0 0 1
+    p3d_set_dof_vmin -40
+    p3d_set_dof_vmax 40
+  p3d_end_desc
+  p3d_read_macro ./AchileParts/rHandM.macro rHand
+
+########################
+####### Left arm #######
+########################
+#Shoulder
+  p3d_beg_desc_jnt P3D_ROTATE # J15
+    p3d_set_name lShoulderX
+    p3d_set_prev_jnt 4
+    p3d_set_pos_axe 0.2398 0.0321 0.4285 1 0 0
+    p3d_set_dof_vmin -30
+    p3d_set_dof_vmax 30
+  p3d_end_desc
+  p3d_beg_desc_jnt P3D_ROTATE # J16
+    p3d_set_name lShoulderY
+    p3d_set_prev_jnt 15
+    p3d_set_pos_axe 0.2398 0.0321 0.4285 0 1 0
+    p3d_set_dof_vmin -90
+    p3d_set_dof_vmax 100
+  p3d_end_desc
+  p3d_beg_desc_jnt P3D_ROTATE # J17
+    p3d_set_name lShoulderZ
+    p3d_set_prev_jnt 16
+    p3d_set_pos_axe 0.2398 0.0321 0.4285 0 0 1
+    p3d_set_dof_vmin -120
+    p3d_set_dof_vmax 90
+  p3d_end_desc
+  p3d_read_macro ./AchileParts/lHumerusM.macro lHumerus
+#elbow
+  p3d_beg_desc_jnt P3D_ROTATE # J18
+    p3d_set_name lElbowZ
+    p3d_set_prev_jnt 17
+    p3d_set_pos_axe 0.4464 0.0279 0.4302 0 0 1
+    p3d_set_dof_vmin -140
+    p3d_set_dof_vmax 0
+  p3d_end_desc
+  p3d_read_macro ./AchileParts/lRadiusM.macro lRadius
+#wrist
+  p3d_beg_desc_jnt P3D_ROTATE # J19
+    p3d_set_name lWristX
+    p3d_set_prev_jnt 18
+    p3d_set_pos_axe 0.697 0.0251 0.4347 1 0 0
+    p3d_set_dof_vmin -180
+    p3d_set_dof_vmax 0
+  p3d_end_desc
+  p3d_beg_desc_jnt P3D_ROTATE # J20
+    p3d_set_name lWristY
+    p3d_set_prev_jnt 19
+    p3d_set_pos_axe 0.697 0.0251 0.4347 0 1 0
+    p3d_set_dof_vmin -90
+    p3d_set_dof_vmax 90
+  p3d_end_desc
+  p3d_beg_desc_jnt P3D_ROTATE # J21
+    p3d_set_name lWristZ
+    p3d_set_prev_jnt 20
+    p3d_set_pos_axe 0.697 0.0251 0.4347 0 0 1
+    p3d_set_dof_vmin -40
+    p3d_set_dof_vmax 40
+  p3d_end_desc
+  p3d_read_macro ./AchileParts/lHandM.macro lHand
+
+########################
+###### Right leg #######
+########################
+#hip
+  p3d_beg_desc_jnt P3D_ROTATE # J22
+    p3d_set_name rHipX
+    p3d_set_prev_jnt 1
+    p3d_set_pos_axe -0.1009 -0.0015 -0.086 1 0 0
+    p3d_set_dof_vmin -90
+    p3d_set_dof_vmax 90
+  p3d_end_desc
+  p3d_beg_desc_jnt P3D_ROTATE # J23
+    p3d_set_name rHipY
+    p3d_set_prev_jnt 22
+    p3d_set_pos_axe -0.1009 -0.0015 -0.086 0 1 0
+    p3d_set_dof_vmin -10
+    p3d_set_dof_vmax 100
+  p3d_end_desc
+  p3d_beg_desc_jnt P3D_ROTATE # J24
+    p3d_set_name rHipZ
+    p3d_set_prev_jnt 23
+    p3d_set_pos_axe -0.1009 -0.0015 -0.086 0 0 1
+    p3d_set_dof_vmin -40
+    p3d_set_dof_vmax 40
+  p3d_end_desc
+  p3d_read_macro ./AchileParts/rFemurM.macro rFemur
+#knee
+  p3d_beg_desc_jnt P3D_ROTATE # J25
+    p3d_set_name rKnee
+    p3d_set_prev_jnt 24
+    p3d_set_pos_axe -0.0977 0.0233 -0.5543 1 0 0
+    p3d_set_dof_vmin 0
+    p3d_set_dof_vmax 140
+  p3d_end_desc
+  p3d_read_macro ./AchileParts/rTibiaM.macro rTibia
+#ankle
+  p3d_beg_desc_jnt P3D_ROTATE # J26
+    p3d_set_name rAnkleY
+    p3d_set_prev_jnt 25
+    p3d_set_pos_axe -0.0923 0.0373 -0.9429 1 0 0
+    p3d_set_dof_vmin -30
+    p3d_set_dof_vmax 30
+  p3d_end_desc
+  p3d_beg_desc_jnt P3D_ROTATE # J27
+    p3d_set_name rAnkleY
+    p3d_set_prev_jnt 26
+    p3d_set_pos_axe -0.0923 0.0373 -0.9429 0 1 0
+    p3d_set_dof_vmin -20
+    p3d_set_dof_vmax 20
+  p3d_end_desc
+  p3d_beg_desc_jnt P3D_ROTATE # J28
+    p3d_set_name rAnkleZ
+    p3d_set_prev_jnt 27
+    p3d_set_pos_axe -0.0923 0.0373 -0.9429 0 0 1
+    p3d_set_dof_vmin -40
+    p3d_set_dof_vmax 40
+  p3d_end_desc
+  p3d_read_macro ./AchileParts/rFootM.macro rFoot
+
+########################
+###### Left leg #######
+########################
+#hip
+  p3d_beg_desc_jnt P3D_ROTATE # J29
+    p3d_set_name lHipX
+    p3d_set_prev_jnt 1
+    p3d_set_pos_axe 0.1009 -0.0015 -0.086 1 0 0
+    p3d_set_dof_vmin -90
+    p3d_set_dof_vmax 90
+  p3d_end_desc
+  p3d_beg_desc_jnt P3D_ROTATE # J30
+    p3d_set_name lHipY
+    p3d_set_prev_jnt 29
+    p3d_set_pos_axe 0.1009 -0.0015 -0.086 0 1 0
+    p3d_set_dof_vmin -100
+    p3d_set_dof_vmax 10
+  p3d_end_desc
+  p3d_beg_desc_jnt P3D_ROTATE # J31
+    p3d_set_name lHipZ
+    p3d_set_prev_jnt 30
+    p3d_set_pos_axe 0.1009 -0.0015 -0.086 0 0 1
+    p3d_set_dof_vmin -40
+    p3d_set_dof_vmax 40
+  p3d_end_desc
+  p3d_read_macro ./AchileParts/lFemurM.macro lFemur
+#knee
+  p3d_beg_desc_jnt P3D_ROTATE # J32
+    p3d_set_name lKnee
+    p3d_set_prev_jnt 31
+    p3d_set_pos_axe 0.0977 0.0233 -0.5543 1 0 0
+    p3d_set_dof_vmin 0
+    p3d_set_dof_vmax 140
+  p3d_end_desc
+  p3d_read_macro ./AchileParts/lTibiaM.macro lTibia
+#ankle
+  p3d_beg_desc_jnt P3D_ROTATE # J33
+    p3d_set_name lAnkleY
+    p3d_set_prev_jnt 32
+    p3d_set_pos_axe 0.0923 0.0373 -0.9429 1 0 0
+    p3d_set_dof_vmin -30
+    p3d_set_dof_vmax 30
+  p3d_end_desc
+  p3d_beg_desc_jnt P3D_ROTATE # J34
+    p3d_set_name lAnkleY
+    p3d_set_prev_jnt 33
+    p3d_set_pos_axe 0.0923 0.0373 -0.9429 0 1 0
+    p3d_set_dof_vmin -20
+    p3d_set_dof_vmax 20
+  p3d_end_desc
+  p3d_beg_desc_jnt P3D_ROTATE # J35
+    p3d_set_name lAnkleZ
+    p3d_set_prev_jnt 34
+    p3d_set_pos_axe 0.0923 0.0373 -0.9429 0 0 1
+    p3d_set_dof_vmin -40
+    p3d_set_dof_vmax 40
+  p3d_end_desc
+  p3d_read_macro ./AchileParts/lFootM.macro lFoot
+ p3d_beg_desc_jnt P3D_FIXED #J36
+      p3d_set_pos_axe -0.84 0.0251 0.4247 0 0 1
+      p3d_set_prev_jnt 14
+      p3d_set_dof_vmin -180
+      p3d_set_dof_vmax 180
+    p3d_end_desc
+
+  p3d_beg_desc P3D_BODY rightreach
+    p3d_add_desc_sphere reachr 0.01 P3D_GRAPHIC
+  p3d_end_desc
+  p3d_set_prim_pos reachr 0.0 0.0 0 0 180 0
+
+  p3d_beg_desc_jnt P3D_FIXED #J37
+    p3d_set_pos_axe 0.84 0.0251 0.4247 0 0 1
+    p3d_set_prev_jnt 21
+    p3d_set_dof_vmin -180
+    p3d_set_dof_vmax 180
+  p3d_end_desc
+
+  p3d_beg_desc P3D_BODY leftreach
+    p3d_add_desc_sphere reachs 0.01 P3D_GRAPHIC
+  p3d_end_desc
+  p3d_set_prim_pos reachs 0.0 0.0 0.0 0 180 0
+
+p3d_end_desc
+########################
+###### Positions #######
+########################
+p3d_set_body_abs_pos torso.torso 0 -0.0165 0.1397 0 0 0
+p3d_set_body_abs_pos head.head 0 -0.0025 0.5939 0 0 0
+p3d_set_body_abs_pos rHumerus.rHumerus -0.2398 0.0321 0.4285 0 0 0
+p3d_set_body_abs_pos rRadius.rRadius -0.4464 0.0279 0.4302 0 0 0
+p3d_set_body_abs_pos rHand.rHand -0.697 0.0251 0.4347 0 0 0
+p3d_set_body_abs_pos lHumerus.lHumerus 0.2398 0.0321 0.4285 0 0 0
+p3d_set_body_abs_pos lRadius.lRadius 0.4464 0.0279 0.4302 0 0 0
+p3d_set_body_abs_pos lHand.lHand 0.697 0.0251 0.4347 0 0 0
+p3d_set_body_abs_pos rFemur.rFemur -0.1009 -0.0015 -0.086 0 0 0
+p3d_set_body_abs_pos rTibia.rTibia -0.0977 0.0233 -0.5543 0 0 0
+p3d_set_body_abs_pos rFoot.rFoot -0.0923 0.0373 -0.9429 0 0 0
+p3d_set_body_abs_pos lFemur.lFemur 0.1009 -0.0015 -0.086 0 0 0
+p3d_set_body_abs_pos lTibia.lTibia 0.0977 0.0233 -0.5543 0 0 0
+p3d_set_body_abs_pos lFoot.lFoot 0.0923 0.0373 -0.9429 0 0 0
+
+########################
+####### Colors #########
+########################
+# Pelvis
+p3d_set_body_poly_color pelvis.pelvis 1 Any 0.901961 0.772549 0.694118
+p3d_set_body_poly_color pelvis.pelvis 2 Any 0.9924843 0.466773 0.466773
+p3d_set_body_poly_color pelvis.pelvis 3 Any 0.1904009 0.3114967 0.8053696
+p3d_set_body_poly_color pelvis.pelvis 4 Any 0.3230488 0.1863743 0.1366745
+p3d_set_body_poly_color pelvis.pelvis 5 Any 0.0627451 0.5450981 0.7960784
+p3d_set_body_poly_color pelvis.pelvis 6 Any 1.0 0.8823529 0.0
+#Torso
+p3d_set_body_poly_color torso.torso 1 Any 0.901961 0.772549 0.694118
+p3d_set_body_poly_color torso.torso 2 Any 0.9921569 0.4666667 0.4666667
+p3d_set_body_poly_color torso.torso 3 Any 0.0627451 0.5450981 0.7960784
+p3d_set_body_poly_color torso.torso 4 Any 1.0 0.8823529 0.0
+p3d_set_body_poly_color torso.torso 5 Any 0.7529412 0.7529412 0.7529412
+p3d_set_body_poly_color torso.torso 6 Any 0.9924843 0.466773 0.466773
+#head
+p3d_set_body_poly_color head.head 1 Any 0.901961 0.772549 0.694118
+p3d_set_body_poly_color head.head 2 Any 0.0 0.0 0.0
+p3d_set_body_poly_color head.head 3 Any 0.901961 0.772549 0.694118
+p3d_set_body_poly_color head.head 4 Any 1.0 1.0 1.0
+p3d_set_body_poly_color head.head 5 Any 0.0 0.0 0.0
+p3d_set_body_poly_color head.head 6 Any 0.0 0.0 0.0
+# right humerus
+p3d_set_body_poly_color rHumerus.rHumerus 1 Any 0.901961 0.772549 0.694118
+p3d_set_body_poly_color rHumerus.rHumerus 2 Any 0.9921569 0.4666667 0.4666667
+# right radius
+p3d_set_body_poly_color rRadius.rRadius 1 Any 0.901961 0.772549 0.694118
+# right hand
+p3d_set_body_poly_color rHand.rHand 1 Any 0.901961 0.772549 0.694118
+#right femur
+p3d_set_body_poly_color rFemur.rFemur 1 Any 0.19 0.3110001 0.805
+#right tibia
+p3d_set_body_poly_color rTibia.rTibia 1 Any 0.1882353 0.3098039 0.8039216
+#right foot
+p3d_set_body_poly_color rFoot.rFoot 1 Any 1.0 1.0 1.0
+p3d_set_body_poly_color rFoot.rFoot 2 Any 0.6196079 0.6196079 0.6196079
+p3d_set_body_poly_color rFoot.rFoot 3 Any 0.0 0.0 0.0
+p3d_set_body_poly_color rFoot.rFoot 4 Any 0.1647059 0.1647059 0.4470588
+p3d_set_body_poly_color rFoot.rFoot 5 Any 0.5686275 0.0 0.0
+#left humerus
+p3d_set_body_poly_color lHumerus.lHumerus 1 Any 0.901961 0.772549 0.694118
+p3d_set_body_poly_color lHumerus.lHumerus 2 Any 0.9921569 0.4666667 0.4666667
+#left radius
+p3d_set_body_poly_color lRadius.lRadius 1 Any 0.901961 0.772549 0.694118
+#left hand
+p3d_set_body_poly_color lHand.lHand 1 Any 0.901961 0.772549 0.694118
+#left femur
+p3d_set_body_poly_color lFemur.lFemur 1 Any 0.19 0.3110001 0.805
+#left tibia
+p3d_set_body_poly_color lTibia.lTibia 1 Any 0.1882353 0.3098039 0.8039216
+#left foot
+p3d_set_body_poly_color lFoot.lFoot 1 Any 1.0 1.0 1.0
+p3d_set_body_poly_color lFoot.lFoot 2 Any 0.6196079 0.6196079 0.6196079
+p3d_set_body_poly_color lFoot.lFoot 3 Any 0.0 0.0 0.0
+p3d_set_body_poly_color lFoot.lFoot 4 Any 0.1647059 0.1647059 0.4470588
+p3d_set_body_poly_color lFoot.lFoot 5 Any 0.5686275 0.0 0.0

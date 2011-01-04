@@ -1,0 +1,67 @@
+p3d_beg_desc P3D_ENV Stones_plain
+
+# p3d_read_macro diligent_g.macro dili 0.06
+
+
+
+p3d_beg_desc P3D_OBSTACLE Stones
+p3d_add_desc_box stone_1 20.0 80.0 20.0
+p3d_set_prim_pos stone_1 50. 100. 0. 0. 0. 30.
+
+p3d_add_desc_box stone_2 20.0 60.0 20.0
+p3d_set_prim_pos stone_2 90. 80. 0. 0. 0. -60.
+
+p3d_add_desc_box stone_3 20.0 40.0 20.0
+p3d_set_prim_pos stone_3 20. 400. 0. 0. 0. -30.
+
+p3d_add_desc_box stone_4 20.0 60.0 20.0
+p3d_set_prim_pos stone_4 320. 710. 0. 0. 0. -30.
+
+p3d_add_desc_box stone_5 50.0 50.0 20.0
+p3d_set_prim_pos stone_5 200. 400. 0. 0. 0. -50.
+
+p3d_add_desc_box stone_6 30.0 30.0 20.0
+p3d_set_prim_pos stone_6 100. 600. 0. 0. 0. -20.
+
+p3d_add_desc_box stone_7 20.0 200.0 20.0
+p3d_set_prim_pos stone_7 200. 200. 0. 0. 0. 90.
+
+p3d_add_desc_box stone_8 30.0 30.0 20.0
+p3d_set_prim_pos stone_8 310. 100. 0. 0. 0. 0.
+
+p3d_add_desc_box stone_9 30.0 30.0 20.0
+p3d_set_prim_pos stone_9 100. 740. 0. 0. 0. 50.
+
+p3d_add_desc_box stone_10 30.0 140.0 20.0
+p3d_set_prim_pos stone_10 330. 430. 0. 0. 0. 10.
+
+p3d_add_desc_box stone_11 20.0 100.0 20.0
+p3d_set_prim_pos stone_11 230. 600. 0. 0. 0. 100.
+p3d_end_desc
+
+
+p3d_beg_desc P3D_ROBOT robot_cycle
+
+#p3d_add_desc_jnt P3D_PLAN 0 0 0 
+#			  0 0 1 
+#			  200 0 400
+#			  400 0 800
+#			  0 0 0
+#		          0
+
+p3d_add_desc_jnt P3D_PLAN 0 0 0 0 0 1  200 -50 450 400 0 800  0 -180 180  0
+
+
+
+p3d_beg_desc P3D_BODY body
+
+p3d_add_desc_cylindre cyl 20 20 
+p3d_set_prim_pos cyl 0.0 0.0 0.0 0.0 0.0 0.0
+
+p3d_end_desc
+p3d_end_desc
+
+p3d_set_env_box -70 470 -10 810 -10 50
+
+# p3d_sel_desc_name P3D_ROBOT dili
+# p3d_set_robot_pos 250.0 400.0 0.0 0.0 0.0 0.0

@@ -1,0 +1,17 @@
+p3d_beg_desc P3D_ENV KR60-3_Link4
+
+  p3d_beg_desc P3D_ROBOT pipo
+    p3d_beg_desc P3D_BODY pipo.body
+#      p3d_add_desc_box box 0 0 0
+#      p3d_set_prim_pos box 1e+32 1e+32 1e+32  0.0 0.0 0.0
+    p3d_end_desc
+  p3d_end_desc
+
+  p3d_read_macro OB_Mesh.macro OB_Mesh
+  p3d_set_obst_pos OB_Mesh -652.145004 0 -121.097 0.0 0.0 0.0
+
+
+p3d_end_desc
+
+p3d_set_env_box -100 100 -100 100 -100 100
+p3d_set_robot_box -100 100 -100 100 -100 100

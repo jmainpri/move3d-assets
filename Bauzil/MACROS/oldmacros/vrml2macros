@@ -1,0 +1,6 @@
+#!/bin/sh
+for wrlFile in ls *.wrl
+   do echo "$wrlFile"
+    ~/BioMove3D/bin/script/vrml2move3d -o $wrlFile ~/scripts/macros/"$wrlFile".p3d
+done
+

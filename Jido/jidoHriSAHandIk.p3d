@@ -1,0 +1,20 @@
+p3d_beg_desc P3D_ENV JidoRef
+
+  p3d_beg_desc P3D_OBSTACLE Floor
+    p3d_add_desc_box floor 5 5 0.005
+    p3d_set_prim_pos floor 0 0 -0.0027 0 0 0
+  p3d_end_desc
+
+p3d_read_macro jidoHriSAHand.macro jido
+
+p3d_end_desc
+
+p3d_set_env_box -5.0 5.0 -5.0 5.0 -0.050 3.000
+
+#contrainte sur la fermeture de la pince:
+p3d_constraint p3d_lin_rel_dofs 1 13  1 12  2 1 0.0  0
+
+p3d_constraint p3d_pa10_6_arm_ik 6 5 6 7 8 9 10  1 16  0  1 7
+p3d_set_cntrt_Tatt 1  0 0 1 -0.275  0.36 0.92 0 0  -0.92 0.36 0 0
+
+p3d_create_reeds_shepp_local_method 0.3 1

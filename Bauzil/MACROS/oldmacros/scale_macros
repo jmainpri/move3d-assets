@@ -1,0 +1,6 @@
+#!/bin/sh
+for macroFile in ls *.macro
+   do echo "$macroFile"
+    ~/BioMove3D/bin/script/p3d_scale $macroFile ../"$macroFile" 0.001
+done
+

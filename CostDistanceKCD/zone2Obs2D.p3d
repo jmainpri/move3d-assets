@@ -1,0 +1,62 @@
+p3d_beg_desc P3D_ENV Montains3
+
+	 p3d_beg_desc P3D_ROBOT CylinderRob 
+	 
+		 p3d_beg_desc_jnt P3D_PLAN  
+			 p3d_set_pos_xyz 0.0 0.0 -1.0 0.0 0.0 0.0  
+			 p3d_set_prev_jnt 0  
+			 p3d_set_dof 0.0 0.0 0.0  
+			 p3d_set_dof_vmin 0.0 0.0 0.0
+			 p3d_set_dof_vmax 50.0 50.0 0.0
+		 p3d_end_desc  
+	
+		 p3d_CostEnvironment
+	
+		 p3d_beg_desc P3D_BODY body  
+			 p3d_add_desc_cylindre englobant 1.0 1.0 P3D_REAL  
+			 p3d_set_prim_pos englobant 0.0 0.0 1.0 0.0 0.0 0.0  
+		 p3d_end_desc #BODY  
+  
+ 	p3d_end_desc #ROBOT  
+
+
+	p3d_beg_desc P3D_OBSTACLE zone_hri
+		p3d_add_desc_sphere zone_hri 1.0
+		p3d_set_prim_pos zone_hri 25.0 25.0 0.0 0.0 0.0 0.0
+	p3d_end_desc
+	
+	p3d_beg_desc P3D_OBSTACLE bm.barre1
+		p3d_add_desc_box bm.barre1 1.0 32.0 1.0
+		p3d_set_prim_pos bm.barre1 25.0 0.0 0.0 0.0 0.0 0.0
+	p3d_end_desc
+	
+	p3d_beg_desc P3D_OBSTACLE bm.barre2
+		p3d_add_desc_box bm.barre2 1.0 32.0 1.0
+		p3d_set_prim_pos bm.barre2 25.0 50.0 0.0 0.0 0.0 0.0
+	p3d_end_desc
+	
+	#p3d_beg_desc P3D_OBSTACLE bm.cadre
+	#p3d_add_desc_box bm.cadre 50.0 50.0 0.5 P3D_GRAPHIC
+	#p3d_set_prim_pos bm.cadre 25.0 25.0 -1.0 0.0 0.0 0.0
+	#p3d_end_desc
+	
+	p3d_beg_desc P3D_OBSTACLE bm.zone 
+		p3d_add_desc_sphere bm.zone 12.0 P3D_GRAPHIC
+		p3d_set_prim_pos bm.zone 25.0 25.0 0.0 0.0 0.0 0.0
+	p3d_end_desc
+	
+	p3d_set_obst_color bm.zone 		Any  0.0 1.0 0.0 0.7
+	p3d_set_obst_color zone_hri		Red
+	p3d_set_obst_color bm.barre2 	Brown
+	p3d_set_obst_color bm.barre1 	Brown
+	#p3d_set_obst_color bm.cadre 	Any  1.0 1.0 1.0 1.0
+	
+	p3d_set_body_color body 		Blue
+
+p3d_end_desc
+
+p3d_set_env_box 0 50 0 50 0 1
+p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.0 0.0 0.000000
+p3d_set_robot_goto    0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 50.0 50.0 0.000000
+
+

@@ -1,0 +1,42 @@
+p3d_beg_desc P3D_ENV lydia
+
+  p3d_beg_desc P3D_OBSTACLE o
+    p3d_add_desc_box kavraki.o1 200 60 5 
+     p3d_set_prim_pos kavraki.o1 100 30 0 0 0 0
+    p3d_add_desc_box kavraki.o2 50  30 5
+     p3d_set_prim_pos kavraki.o2 25  75 0 0 0 0
+     p3d_add_desc_box kavraki.o3 50  30 5
+     p3d_set_prim_pos kavraki.o3 175 75 0 0 0 0
+     p3d_add_desc_box kavraki.o4 200 60 5
+     p3d_set_prim_pos kavraki.o4 100 120 0 0 0 0
+  p3d_end_desc
+
+  p3d_beg_desc P3D_ROBOT lydia2.robot
+    p3d_add_desc_jnt P3D_FREEFLYER 0.0 0.0 0.0  0.0 0.0 1.0  
+          100    0 200  
+          75    0 150 
+          75  -75  75
+            0 -180 180
+            0 -180 180
+            0 -180 180
+            0
+  
+    p3d_beg_desc P3D_BODY body2
+      p3d_add_desc_box r1 50 10 10 
+      p3d_add_desc_box r2 50 10 10
+      p3d_set_prim_pos r2 30 20 0 0 0 90
+      p3d_add_desc_box r3 60 10 10
+      p3d_set_prim_pos r3 5 50 0 0 0 0
+      p3d_add_desc_box r4 50 10 10 
+      p3d_set_prim_pos r4 -20 0 -30 0 90 0 
+      p3d_add_desc_box r5 50 10 10 
+      p3d_set_prim_pos r5 -20 -30 -50 0 0 90
+    p3d_end_desc 
+  
+  p3d_end_desc 
+p3d_end_desc
+
+#################################################################################
+p3d_set_env_box -50 250 -50 200 -150 100
+p3d_set_robot_current 	100 75  75 0 0 0
+p3d_set_robot_goto 	100 75 -75 0 0 0

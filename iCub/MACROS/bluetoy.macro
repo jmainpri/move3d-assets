@@ -1,0 +1,20 @@
+p3d_beg_desc P3D_ROBOT
+
+p3d_beg_desc_jnt P3D_FREEFLYER  #1
+  p3d_set_prev_jnt   0
+  p3d_set_pos_xyz 0.0 0.0 0.0 0.0 0.0 0.0
+  p3d_set_dof       0  0  0   0   0   0
+  p3d_set_dof_vmin -1 -1  0 -90 -90 -90
+  p3d_set_dof_vmax  1  1  2  90  90  90
+p3d_end_desc
+
+p3d_beg_desc P3D_BODY bluetoy
+
+p3d_add_desc_box toy 0.03 0.062 0.062
+p3d_set_prim_pos toy 0 0 0 0 0 0
+
+p3d_end_desc
+p3d_end_desc
+
+p3d_set_body_poly_color bluetoy 1 Any 0 0 0.50
+

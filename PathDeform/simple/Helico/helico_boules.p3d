@@ -1,0 +1,386 @@
+p3d_beg_desc P3D_ENV helico
+
+p3d_beg_desc P3D_ROBOT heli
+
+p3d_beg_desc P3D_BODY  heli
+
+p3d_add_desc_box heli.cock1 1000.0 1000.0 1000.0 
+p3d_set_prim_pos heli.cock1 0.0 0.0 0.0 0.0 0.0 0.0
+
+p3d_add_desc_poly  heli.cock2
+
+  p3d_add_desc_vert 1000.0 -240.0 140.0
+  p3d_add_desc_vert 1000.0  240.0 140.0
+  p3d_add_desc_vert 1000.0  240.0 -350.0
+  p3d_add_desc_vert 1000.0 -240.0 -350.0
+  p3d_add_desc_vert 500.0 -500.0 500.0
+  p3d_add_desc_vert 500.0  500.0 500.0
+  p3d_add_desc_vert 500.0  500.0 -500.0
+  p3d_add_desc_vert 500.0 -500.0 -500.0
+
+  p3d_add_desc_face 1 4 3 2
+  p3d_add_desc_face 5 6 7 8
+  p3d_add_desc_face 3 7 6 2
+  p3d_add_desc_face 2 6 5 1
+  p3d_add_desc_face 1 5 8 4
+  p3d_add_desc_face 4 8 7 3
+
+p3d_end_desc_poly
+
+p3d_add_desc_poly  heli.vitres P3D_GRAPHIC
+
+  p3d_add_desc_vert 1000.0 -250.0 150.0
+  p3d_add_desc_vert 1000.0  250.0 150.0
+  p3d_add_desc_vert 1000.0  250.0 0.0
+  p3d_add_desc_vert 1000.0 -250.0 0.0
+  p3d_add_desc_vert 500.0 -500.0 500.0
+  p3d_add_desc_vert 500.0  500.0 500.0
+  p3d_add_desc_vert 500.0  500.0 0.0
+  p3d_add_desc_vert 500.0 -500.0 0.0
+
+  p3d_add_desc_face 1 4 3 2
+  p3d_add_desc_face 5 6 7 8
+  p3d_add_desc_face 3 7 6 2
+  p3d_add_desc_face 2 6 5 1
+  p3d_add_desc_face 1 5 8 4
+  p3d_add_desc_face 4 8 7 3
+
+p3d_end_desc_poly
+
+p3d_add_desc_poly  heli.cock3
+
+  p3d_add_desc_vert 1300.0 -100.0 70.0
+  p3d_add_desc_vert 1300.0  100.0 70.0
+  p3d_add_desc_vert 1300.0  100.0 -100.0
+  p3d_add_desc_vert 1300.0 -100.0 -100.0
+  p3d_add_desc_vert 1000.0 -250.0 150.0
+  p3d_add_desc_vert 1000.0  250.0 150.0
+  p3d_add_desc_vert 1000.0  250.0 -350.0
+  p3d_add_desc_vert 1000.0 -250.0 -350.0
+
+  p3d_add_desc_face 1 4 3 2
+  p3d_add_desc_face 5 6 7 8
+  p3d_add_desc_face 3 7 6 2
+  p3d_add_desc_face 2 6 5 1
+  p3d_add_desc_face 1 5 8 4
+  p3d_add_desc_face 4 8 7 3
+
+p3d_end_desc_poly
+
+
+p3d_add_desc_poly  heli.cock4
+
+  p3d_add_desc_vert -500.0 -500.0 500.0
+  p3d_add_desc_vert -500.0  500.0 500.0
+  p3d_add_desc_vert -500.0  500.0 -500.0
+  p3d_add_desc_vert -500.0 -500.0 -500.0
+  p3d_add_desc_vert -1200.0 -250.0 500.0
+  p3d_add_desc_vert -1200.0  250.0 500.0
+  p3d_add_desc_vert -1200.0  250.0  50.0
+  p3d_add_desc_vert -1200.0 -250.0  50.0
+  
+  p3d_add_desc_face 1 4 3 2
+  p3d_add_desc_face 5 6 7 8
+  p3d_add_desc_face 3 7 6 2
+  p3d_add_desc_face 2 6 5 1
+  p3d_add_desc_face 1 5 8 4
+  p3d_add_desc_face 4 8 7 3
+
+p3d_end_desc_poly
+
+p3d_add_desc_poly  heli.cock5
+
+  p3d_add_desc_vert -500.0 -250.0 800.0
+  p3d_add_desc_vert -500.0  250.0 800.0
+  p3d_add_desc_vert 50.0  250.0 800.0
+  p3d_add_desc_vert 50.0 -250.0 800.0
+  p3d_add_desc_vert -500.0 -500.0 500.0
+  p3d_add_desc_vert -500.0  500.0 500.0
+  p3d_add_desc_vert 500.0  500.0 500.0
+  p3d_add_desc_vert 500.0 -500.0 500.0
+
+  p3d_add_desc_face 1 4 3 2
+  p3d_add_desc_face 5 6 7 8
+  p3d_add_desc_face 3 7 6 2
+  p3d_add_desc_face 2 6 5 1
+  p3d_add_desc_face 1 5 8 4
+  p3d_add_desc_face 4 8 7 3
+
+p3d_end_desc_poly
+
+p3d_add_desc_poly  heli.cock6
+
+  p3d_add_desc_vert -500.0 -250.0 800.0
+  p3d_add_desc_vert -500.0  250.0 800.0
+  p3d_add_desc_vert -750.0  250.0 800.0
+  p3d_add_desc_vert -750.0 -250.0 800.0
+  p3d_add_desc_vert -500.0 -500.0 500.0
+  p3d_add_desc_vert -500.0  500.0 500.0
+  p3d_add_desc_vert -1200.0  250.0 500.0
+  p3d_add_desc_vert -1200.0 -250.0 500.0
+
+  p3d_add_desc_face 1 2 3 4
+  p3d_add_desc_face 8 7 6 5
+  p3d_add_desc_face 3 2 6 7
+  p3d_add_desc_face 1 5 6 2
+  p3d_add_desc_face 4 8 5 1
+  p3d_add_desc_face 3 7 8 4
+
+p3d_end_desc_poly
+
+p3d_add_desc_cylindre h.rotor11 100.0 200.0
+p3d_set_prim_pos h.rotor11 -400.0 0.0 900.0 0.0 0.0 0.0
+
+p3d_add_desc_cylindre h.rotor12 150.0 200.0
+p3d_set_prim_pos h.rotor12 -400.0 0.0 1100.0 0.0 0.0 0.0
+
+p3d_add_desc_cylindre h.rotor13 2000.0 10.0
+p3d_set_prim_pos h.rotor13 -400.0 0.0 1100.0 0.0 0.0 0.0
+
+
+p3d_add_desc_poly  heli.queue1
+
+  p3d_add_desc_vert -1200.0 -250.0 500.0
+  p3d_add_desc_vert -1200.0  250.0 500.0
+  p3d_add_desc_vert -1200.0  250.0  50.0
+  p3d_add_desc_vert -1200.0 -250.0  50.0
+  p3d_add_desc_vert -3500.0 -100.0 500.0
+  p3d_add_desc_vert -3500.0  100.0 500.0
+  p3d_add_desc_vert -3500.0  100.0 300.0
+  p3d_add_desc_vert -3500.0 -100.0 300.0
+
+  p3d_add_desc_face 1 4 3 2
+  p3d_add_desc_face 5 6 7 8
+  p3d_add_desc_face 3 7 6 2
+  p3d_add_desc_face 2 6 5 1
+  p3d_add_desc_face 1 5 8 4
+  p3d_add_desc_face 4 8 7 3
+
+p3d_end_desc_poly
+
+p3d_add_desc_cube heli.queue2 300.0
+p3d_set_prim_pos heli.queue2 -3600.0 0.0 400.0 0.0 0.0 0.0
+
+p3d_add_desc_poly  heli.queue3
+
+  p3d_add_desc_vert -3600.0 -10.0 1250.0
+  p3d_add_desc_vert -3600.0  10.0 1250.0
+  p3d_add_desc_vert -3750.0  10.0 1250.0
+  p3d_add_desc_vert -3750.0 -10.0 1250.0
+  p3d_add_desc_vert -3450.0 -50.0 550.0
+  p3d_add_desc_vert -3450.0  50.0 550.0
+  p3d_add_desc_vert -3750.0  50.0 550.0
+  p3d_add_desc_vert -3750.0 -50.0 550.0
+
+  p3d_add_desc_face 1 2 3 4
+  p3d_add_desc_face 8 7 6 5
+  p3d_add_desc_face 2 6 7 3
+  p3d_add_desc_face 1 5 6 2
+  p3d_add_desc_face 4 8 5 1
+  p3d_add_desc_face 3 7 8 4
+
+p3d_end_desc_poly
+
+p3d_add_desc_cylindre h.rotor21 50.0 100.0
+p3d_set_prim_pos h.rotor21 -3600.0 200.0 400.0 90.0 0.0 0.0
+
+p3d_add_desc_cylindre h.rotor22 75.0 100.0
+p3d_set_prim_pos h.rotor22 -3600.0 300.0 400.0 90.0 0.0 0.0
+
+p3d_add_desc_cylindre h.rotor23 500.0 10.0
+p3d_set_prim_pos h.rotor23 -3600.0 300.0 400.0 90.0 0.0 0.0
+
+p3d_add_desc_cylindre h.pied11 20.0 300.0
+p3d_set_prim_pos h.pied11 400.0 -400.0 -650.0 0.0 0.0 0.0
+p3d_add_desc_cylindre h.pied21 20.0 300.0
+p3d_set_prim_pos h.pied21 400.0 400.0 -650.0 0.0 0.0 0.0
+p3d_add_desc_cylindre h.pied12 20.0 300.0
+p3d_set_prim_pos h.pied12 -400.0 -400.0 -650.0 0.0 0.0 0.0
+p3d_add_desc_cylindre h.pied22 20.0 300.0
+p3d_set_prim_pos h.pied22 -400.0 400.0 -650.0 0.0 0.0 0.0
+p3d_add_desc_cylindre h.ski11 20.0 1500.0
+p3d_set_prim_pos h.ski11 0.0 400.0 -800.0 0.0 90.0 0.0
+p3d_add_desc_cylindre h.ski21 20.0 1500.0
+p3d_set_prim_pos h.ski21 0.0 -400.0 -800.0 0.0 90.0 0.0
+p3d_add_desc_cylindre h.ski12 20.0 300.0
+p3d_set_prim_pos h.ski12 870.0 400.0 -725.0 0.0 60.0 0.0
+p3d_add_desc_cylindre h.ski22 20.0 300.0
+p3d_set_prim_pos h.ski22 870.0 -400.0 -725.0 0.0 60.0 0.0
+
+p3d_add_desc_box heli.l11 50.0 20.0 400.0 P3D_GRAPHIC
+p3d_set_prim_pos heli.l11 385.0 510.0 0.0 0.0 -5.0 0.0 
+p3d_add_desc_box heli.l12 50.0 20.0 200.0 P3D_GRAPHIC
+p3d_set_prim_pos heli.l12 305.0 510.0 -175.0 0.0 90.0 0.0
+p3d_add_desc_box heli.a111 50.0 20.0 400.0 P3D_GRAPHIC
+p3d_set_prim_pos heli.a111 115.0 510.0 0.0 0.0 -10.0 0.0 
+p3d_add_desc_box heli.a112 50.0 20.0 400.0 P3D_GRAPHIC
+p3d_set_prim_pos heli.a112 35.0 510.0 0.0 0.0 10.0 0.0 
+p3d_add_desc_box heli.a113 50.0 20.0 150.0 P3D_GRAPHIC
+p3d_set_prim_pos heli.a113 75.0 510.0 -75.0 0.0 90.0 0.0
+p3d_add_desc_box heli.a121 50.0 20.0 400.0 P3D_GRAPHIC
+p3d_set_prim_pos heli.a121 -95.0 510.0 0.0 0.0 -10.0 0.0 
+p3d_add_desc_box heli.a122 50.0 20.0 400.0 P3D_GRAPHIC
+p3d_set_prim_pos heli.a122 -175.0 510.0 0.0 0.0 10.0 0.0 
+p3d_add_desc_box heli.a123 50.0 20.0 150.0 P3D_GRAPHIC
+p3d_set_prim_pos heli.a123 -135.0 510.0 -75.0 0.0 90.0 0.0
+p3d_add_desc_box heli.s11 50.0 20.0 150.0 P3D_GRAPHIC
+p3d_set_prim_pos heli.s11 -385.0 510.0 175.0 0.0 90.0 0.0
+p3d_add_desc_box heli.s12 50.0 20.0 200.0 P3D_GRAPHIC
+p3d_set_prim_pos heli.s12 -295.0 510.0 100.0 0.0 -5.0 0.0
+p3d_add_desc_box heli.s13 50.0 20.0 200.0 P3D_GRAPHIC
+p3d_set_prim_pos heli.s13 -365.0 510.0 25.0 0.0 90.0 0.0
+p3d_add_desc_box heli.s14 50.0 20.0 200.0 P3D_GRAPHIC
+p3d_set_prim_pos heli.s14 -430.0 510.0 -100.0 0.0 -5.0 0.0
+p3d_add_desc_box heli.s15 50.0 20.0 200.0 P3D_GRAPHIC
+p3d_set_prim_pos heli.s15 -345.0 510.0 -175.0 0.0 90.0 0.0
+
+p3d_add_desc_box heli.l21 50.0 20.0 400.0 P3D_GRAPHIC
+p3d_set_prim_pos heli.l21 -385.0 -510.0 0.0 0.0 5.0 0.0 
+p3d_add_desc_box heli.l22 50.0 20.0 200.0 P3D_GRAPHIC
+p3d_set_prim_pos heli.l22 -305.0 -510.0 -175.0 0.0 90.0 0.0
+p3d_add_desc_box heli.a211 50.0 20.0 400.0 P3D_GRAPHIC
+p3d_set_prim_pos heli.a211 -115.0 -510.0 0.0 0.0 -10.0 180.0 
+p3d_add_desc_box heli.a212 50.0 20.0 400.0 P3D_GRAPHIC
+p3d_set_prim_pos heli.a212 -35.0 -510.0 0.0 0.0 10.0 180.0 
+p3d_add_desc_box heli.a213 50.0 20.0 150.0 P3D_GRAPHIC
+p3d_set_prim_pos heli.a213 -75.0 -510.0 -75.0 0.0 90.0 180.0
+p3d_add_desc_box heli.a221 50.0 20.0 400.0 P3D_GRAPHIC
+p3d_set_prim_pos heli.a221 95.0 -510.0 0.0 0.0 -10.0 180.0 
+p3d_add_desc_box heli.a222 50.0 20.0 400.0 P3D_GRAPHIC
+p3d_set_prim_pos heli.a222 175.0 -510.0 0.0 0.0 10.0 180.0 
+p3d_add_desc_box heli.a223 50.0 20.0 150.0 P3D_GRAPHIC
+p3d_set_prim_pos heli.a223 135.0 -510.0 -75.0 0.0 90.0 180.0
+p3d_add_desc_box heli.s21 50.0 20.0 150.0 P3D_GRAPHIC
+p3d_set_prim_pos heli.s21 385.0 -510.0 175.0 0.0 90.0 0.0
+p3d_add_desc_box heli.s22 50.0 20.0 200.0 P3D_GRAPHIC
+p3d_set_prim_pos heli.s22 295.0 -510.0 100.0 0.0 5.0 0.0
+p3d_add_desc_box heli.s23 50.0 20.0 200.0 P3D_GRAPHIC
+p3d_set_prim_pos heli.s23 365.0 -510.0 25.0 0.0 90.0 0.0
+p3d_add_desc_box heli.s24 50.0 20.0 200.0 P3D_GRAPHIC
+p3d_set_prim_pos heli.s24 430.0 -510.0 -100.0 0.0 5.0 0.0
+p3d_add_desc_box heli.s25 50.0 20.0 200.0 P3D_GRAPHIC
+p3d_set_prim_pos heli.s25 345.0 -510.0 -175.0 0.0 90.0 0.0	
+p3d_end_desc
+
+p3d_end_desc
+
+p3d_set_body_poly_color heli 1 Red
+p3d_set_body_poly_color heli 2 Red
+p3d_set_body_poly_color heli 3 White
+p3d_set_body_poly_color heli 4 Red
+p3d_set_body_poly_color heli 5 Red
+p3d_set_body_poly_color heli 6 Red
+p3d_set_body_poly_color heli 7 Red
+p3d_set_body_poly_color heli 8 Black
+p3d_set_body_poly_color heli 9 Black
+p3d_set_body_poly_color heli 10 Grey
+p3d_set_body_poly_color heli 11 Red
+p3d_set_body_poly_color heli 12 Red
+p3d_set_body_poly_color heli 13 Red
+p3d_set_body_poly_color heli 14 Black
+p3d_set_body_poly_color heli 15 Black
+p3d_set_body_poly_color heli 16 Grey
+p3d_set_body_poly_color heli 17 Grey
+p3d_set_body_poly_color heli 18 Grey
+p3d_set_body_poly_color heli 19 Grey
+p3d_set_body_poly_color heli 20 Grey
+p3d_set_body_poly_color heli 21 Grey
+p3d_set_body_poly_color heli 22 Grey
+p3d_set_body_poly_color heli 23 Grey
+p3d_set_body_poly_color heli 24 Grey
+
+
+
+p3d_beg_desc P3D_OBSTACLE spheres
+p3d_add_desc_sphere h1 2000
+p3d_set_prim_pos h1 5000. 5000. 5000. .0 .0 .0
+
+p3d_add_desc_sphere h1 2000
+p3d_set_prim_pos h1 15000. 5000. 5000. .0 .0 .0
+
+p3d_add_desc_sphere h1 2000
+p3d_set_prim_pos h1 25000. 5000. 5000. .0 .0 .0
+
+#p3d_add_desc_sphere h1 2000
+#p3d_set_prim_pos h1 5000. 15000. 5000. .0 .0 .0
+
+p3d_add_desc_sphere h1 2000
+p3d_set_prim_pos h1 15000. 15000. 5000. .0 .0 .0
+
+p3d_add_desc_sphere h1 2000
+p3d_set_prim_pos h1 25000. 15000. 5000. .0 .0 .0
+
+#p3d_add_desc_sphere h1 2000
+#p3d_set_prim_pos h1 5000. 25000. 5000. .0 .0 .0
+
+p3d_add_desc_sphere h1 2000
+p3d_set_prim_pos h1 15000. 25000. 5000. .0 .0 .0
+
+p3d_add_desc_sphere h1 2000
+p3d_set_prim_pos h1 25000. 25000. 5000. .0 .0 .0
+
+p3d_add_desc_sphere h1 2000
+p3d_set_prim_pos h1 10000. 10000. 12000. .0 .0 .0
+
+#p3d_add_desc_sphere h1 2000
+#p3d_set_prim_pos h1 20000. 10000. 12000. .0 .0 .0
+
+p3d_add_desc_sphere h1 2000
+p3d_set_prim_pos h1 10000. 20000. 12000. .0 .0 .0
+
+p3d_add_desc_sphere h1 2000
+p3d_set_prim_pos h1 20000. 20000. 12000. .0 .0 .0
+
+p3d_add_desc_sphere h1 2000
+p3d_set_prim_pos h1 5000. 5000. 19000. .0 .0 .0
+
+#p3d_add_desc_sphere h1 2000
+#p3d_set_prim_pos h1 15000. 5000. 19000. .0 .0 .0
+
+p3d_add_desc_sphere h1 2000
+p3d_set_prim_pos h1 25000. 5000. 19000. .0 .0 .0
+
+p3d_add_desc_sphere h1 2000
+p3d_set_prim_pos h1 5000. 15000. 19000. .0 .0 .0
+
+p3d_add_desc_sphere h1 2000
+p3d_set_prim_pos h1 15000. 15000. 19000. .0 .0 .0
+
+p3d_add_desc_sphere h1 2000
+p3d_set_prim_pos h1 25000. 15000. 19000. .0 .0 .0
+
+p3d_add_desc_sphere h1 2000
+p3d_set_prim_pos h1 5000. 25000. 19000. .0 .0 .0
+
+p3d_add_desc_sphere h1 2000
+p3d_set_prim_pos h1 15000. 25000. 19000. .0 .0 .0
+
+#p3d_add_desc_sphere h1 2000
+#p3d_set_prim_pos h1 25000. 25000. 19000. .0 .0 .0
+
+
+
+
+p3d_end_desc
+p3d_set_obst_color spheres Blue
+
+p3d_beg_desc P3D_OBSTACLE sol
+p3d_add_desc_box h1 28000. 28000. 100.
+p3d_set_prim_pos h1 14000. 14000. 0. .0 .0 .0
+p3d_end_desc
+p3d_set_obst_color sol Brown
+
+p3d_beg_desc P3D_OBSTACLE plafond
+p3d_add_desc_box h1 28000. 28000. 100.
+p3d_set_prim_pos h1 14000. 14000. 22000. .0 .0 .0
+p3d_end_desc
+p3d_set_obst_color plafond Brown
+
+p3d_end_desc
+
+p3d_sel_desc_name P3D_ROBOT heli
+p3d_set_robot_radius 10000.0
+p3d_set_robot_pos 0.0 3000.0 800.0 0.0
+p3d_set_env_box 0.0 28000.0 0. 28000.0 0.0  22000.0
+p3d_set_robot_box 0.0 28000.0 0.0 28000.0 800.0 20000.0 -180.0 180.0
+
