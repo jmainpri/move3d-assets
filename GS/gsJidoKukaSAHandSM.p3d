@@ -137,96 +137,96 @@ p3d_desactivate_col_check kuka5.Gkuka5 kuka7.kuka7
 
 #Arm vs Hands Autocol
 #Right Arm/hand
-p3d_desactivate_col_check kuka4.Gkuka4 hand1.palm
-p3d_desactivate_col_check kuka4.Gkuka4 hand1.finger2.proximalPhalanx
-p3d_desactivate_col_check kuka4.Gkuka4 hand1.finger2.middlePhalanx
-p3d_desactivate_col_check kuka4.Gkuka4 hand1.finger2.fingertip
-p3d_desactivate_col_check kuka4.Gkuka4 hand1.finger3.proximalPhalanx
-p3d_desactivate_col_check kuka4.Gkuka4 hand1.finger3.middlePhalanx
-p3d_desactivate_col_check kuka4.Gkuka4 hand1.finger3.fingertip
-p3d_desactivate_col_check kuka4.Gkuka4 hand1.finger4.proximalPhalanx
-p3d_desactivate_col_check kuka4.Gkuka4 hand1.finger4.middlePhalanx
-p3d_desactivate_col_check kuka4.Gkuka4 hand1.finger4.fingertip
+p3d_desactivate_col_check kuka4.Gkuka4 hand0.palm
+p3d_desactivate_col_check kuka4.Gkuka4 hand0.finger2.proximalPhalanx
+p3d_desactivate_col_check kuka4.Gkuka4 hand0.finger2.middlePhalanx
+p3d_desactivate_col_check kuka4.Gkuka4 hand0.finger2.fingertip
+p3d_desactivate_col_check kuka4.Gkuka4 hand0.finger3.proximalPhalanx
+p3d_desactivate_col_check kuka4.Gkuka4 hand0.finger3.middlePhalanx
+p3d_desactivate_col_check kuka4.Gkuka4 hand0.finger3.fingertip
+p3d_desactivate_col_check kuka4.Gkuka4 hand0.finger4.proximalPhalanx
+p3d_desactivate_col_check kuka4.Gkuka4 hand0.finger4.middlePhalanx
+p3d_desactivate_col_check kuka4.Gkuka4 hand0.finger4.fingertip
 
-p3d_desactivate_col_check kuka5.Gkuka5 hand1.palm
-p3d_desactivate_col_check kuka5.Gkuka5 hand1.finger1.proximalPhalanx
-p3d_desactivate_col_check kuka5.Gkuka5 hand1.finger1.middlePhalanx
-p3d_desactivate_col_check kuka5.Gkuka5 hand1.finger1.fingertip
-p3d_desactivate_col_check kuka5.Gkuka5 hand1.finger2.proximalPhalanx
-p3d_desactivate_col_check kuka5.Gkuka5 hand1.finger2.middlePhalanx
-p3d_desactivate_col_check kuka5.Gkuka5 hand1.finger2.fingertip
-p3d_desactivate_col_check kuka5.Gkuka5 hand1.finger3.proximalPhalanx
-p3d_desactivate_col_check kuka5.Gkuka5 hand1.finger3.middlePhalanx
-p3d_desactivate_col_check kuka5.Gkuka5 hand1.finger3.fingertip
-p3d_desactivate_col_check kuka5.Gkuka5 hand1.finger4.proximalPhalanx
-p3d_desactivate_col_check kuka5.Gkuka5 hand1.finger4.middlePhalanx
-p3d_desactivate_col_check kuka5.Gkuka5 hand1.finger4.fingertip
+p3d_desactivate_col_check kuka5.Gkuka5 hand0.palm
+p3d_desactivate_col_check kuka5.Gkuka5 hand0.finger1.proximalPhalanx
+p3d_desactivate_col_check kuka5.Gkuka5 hand0.finger1.middlePhalanx
+p3d_desactivate_col_check kuka5.Gkuka5 hand0.finger1.fingertip
+p3d_desactivate_col_check kuka5.Gkuka5 hand0.finger2.proximalPhalanx
+p3d_desactivate_col_check kuka5.Gkuka5 hand0.finger2.middlePhalanx
+p3d_desactivate_col_check kuka5.Gkuka5 hand0.finger2.fingertip
+p3d_desactivate_col_check kuka5.Gkuka5 hand0.finger3.proximalPhalanx
+p3d_desactivate_col_check kuka5.Gkuka5 hand0.finger3.middlePhalanx
+p3d_desactivate_col_check kuka5.Gkuka5 hand0.finger3.fingertip
+p3d_desactivate_col_check kuka5.Gkuka5 hand0.finger4.proximalPhalanx
+p3d_desactivate_col_check kuka5.Gkuka5 hand0.finger4.middlePhalanx
+p3d_desactivate_col_check kuka5.Gkuka5 hand0.finger4.fingertip
 
-p3d_desactivate_col_check kuka6.Gkuka6 hand1.palm
-p3d_desactivate_col_check kuka6.Gkuka6 hand1.thumbBase
-p3d_desactivate_col_check kuka6.Gkuka6 hand1.finger1.proximalPhalanx
-p3d_desactivate_col_check kuka6.Gkuka6 hand1.finger1.middlePhalanx
-p3d_desactivate_col_check kuka6.Gkuka6 hand1.finger1.fingertip
-p3d_desactivate_col_check kuka6.Gkuka6 hand1.finger2.proximalPhalanx
-p3d_desactivate_col_check kuka6.Gkuka6 hand1.finger2.middlePhalanx
-p3d_desactivate_col_check kuka6.Gkuka6 hand1.finger2.fingertip
-p3d_desactivate_col_check kuka6.Gkuka6 hand1.finger3.proximalPhalanx
-p3d_desactivate_col_check kuka6.Gkuka6 hand1.finger3.middlePhalanx
-p3d_desactivate_col_check kuka6.Gkuka6 hand1.finger3.fingertip
-p3d_desactivate_col_check kuka6.Gkuka6 hand1.finger4.proximalPhalanx
-p3d_desactivate_col_check kuka6.Gkuka6 hand1.finger4.middlePhalanx
-p3d_desactivate_col_check kuka6.Gkuka6 hand1.finger4.fingertip
+p3d_desactivate_col_check kuka6.Gkuka6 hand0.palm
+p3d_desactivate_col_check kuka6.Gkuka6 hand0.thumbBase
+p3d_desactivate_col_check kuka6.Gkuka6 hand0.finger1.proximalPhalanx
+p3d_desactivate_col_check kuka6.Gkuka6 hand0.finger1.middlePhalanx
+p3d_desactivate_col_check kuka6.Gkuka6 hand0.finger1.fingertip
+p3d_desactivate_col_check kuka6.Gkuka6 hand0.finger2.proximalPhalanx
+p3d_desactivate_col_check kuka6.Gkuka6 hand0.finger2.middlePhalanx
+p3d_desactivate_col_check kuka6.Gkuka6 hand0.finger2.fingertip
+p3d_desactivate_col_check kuka6.Gkuka6 hand0.finger3.proximalPhalanx
+p3d_desactivate_col_check kuka6.Gkuka6 hand0.finger3.middlePhalanx
+p3d_desactivate_col_check kuka6.Gkuka6 hand0.finger3.fingertip
+p3d_desactivate_col_check kuka6.Gkuka6 hand0.finger4.proximalPhalanx
+p3d_desactivate_col_check kuka6.Gkuka6 hand0.finger4.middlePhalanx
+p3d_desactivate_col_check kuka6.Gkuka6 hand0.finger4.fingertip
 
-p3d_desactivate_col_check kuka7.kuka7 hand1.palm
-p3d_desactivate_col_check kuka7.kuka7 hand1.thumbBase
-p3d_desactivate_col_check kuka7.kuka7 hand1.finger1.proximalPhalanx
-p3d_desactivate_col_check kuka7.kuka7 hand1.finger1.middlePhalanx
-p3d_desactivate_col_check kuka7.kuka7 hand1.finger1.fingertip
-p3d_desactivate_col_check kuka7.kuka7 hand1.finger2.proximalPhalanx
-p3d_desactivate_col_check kuka7.kuka7 hand1.finger2.middlePhalanx
-p3d_desactivate_col_check kuka7.kuka7 hand1.finger2.fingertip
-p3d_desactivate_col_check kuka7.kuka7 hand1.finger3.proximalPhalanx
-p3d_desactivate_col_check kuka7.kuka7 hand1.finger3.middlePhalanx
-p3d_desactivate_col_check kuka7.kuka7 hand1.finger3.fingertip
-p3d_desactivate_col_check kuka7.kuka7 hand1.finger4.proximalPhalanx
-p3d_desactivate_col_check kuka7.kuka7 hand1.finger4.middlePhalanx
-p3d_desactivate_col_check kuka7.kuka7 hand1.finger4.fingertip
+p3d_desactivate_col_check kuka7.kuka7 hand0.palm
+p3d_desactivate_col_check kuka7.kuka7 hand0.thumbBase
+p3d_desactivate_col_check kuka7.kuka7 hand0.finger1.proximalPhalanx
+p3d_desactivate_col_check kuka7.kuka7 hand0.finger1.middlePhalanx
+p3d_desactivate_col_check kuka7.kuka7 hand0.finger1.fingertip
+p3d_desactivate_col_check kuka7.kuka7 hand0.finger2.proximalPhalanx
+p3d_desactivate_col_check kuka7.kuka7 hand0.finger2.middlePhalanx
+p3d_desactivate_col_check kuka7.kuka7 hand0.finger2.fingertip
+p3d_desactivate_col_check kuka7.kuka7 hand0.finger3.proximalPhalanx
+p3d_desactivate_col_check kuka7.kuka7 hand0.finger3.middlePhalanx
+p3d_desactivate_col_check kuka7.kuka7 hand0.finger3.fingertip
+p3d_desactivate_col_check kuka7.kuka7 hand0.finger4.proximalPhalanx
+p3d_desactivate_col_check kuka7.kuka7 hand0.finger4.middlePhalanx
+p3d_desactivate_col_check kuka7.kuka7 hand0.finger4.fingertip
 
 # There are plenty of collision tests to deactivate with the hand.
 # Some deactivations are redundent but they are listed in order to be methodic, so let them.
 # right hand:
-p3d_desactivate_col_check hand1.palm hand1.finger2.proximalPhalanx
-p3d_desactivate_col_check hand1.palm hand1.finger2.middlePhalanx
-p3d_desactivate_col_check hand1.palm hand1.finger2.fingertip
+p3d_desactivate_col_check hand0.palm hand0.finger2.proximalPhalanx
+p3d_desactivate_col_check hand0.palm hand0.finger2.middlePhalanx
+p3d_desactivate_col_check hand0.palm hand0.finger2.fingertip
 
-p3d_desactivate_col_check hand1.palm hand1.finger3.proximalPhalanx
-p3d_desactivate_col_check hand1.palm hand1.finger3.middlePhalanx
-p3d_desactivate_col_check hand1.palm hand1.finger3.fingertip
+p3d_desactivate_col_check hand0.palm hand0.finger3.proximalPhalanx
+p3d_desactivate_col_check hand0.palm hand0.finger3.middlePhalanx
+p3d_desactivate_col_check hand0.palm hand0.finger3.fingertip
 
-p3d_desactivate_col_check hand1.palm hand1.finger4.proximalPhalanx
-p3d_desactivate_col_check hand1.palm hand1.finger4.middlePhalanx
-p3d_desactivate_col_check hand1.palm hand1.finger4.fingertip
+p3d_desactivate_col_check hand0.palm hand0.finger4.proximalPhalanx
+p3d_desactivate_col_check hand0.palm hand0.finger4.middlePhalanx
+p3d_desactivate_col_check hand0.palm hand0.finger4.fingertip
 
-p3d_desactivate_col_check hand1.thumbBase hand1.finger1.proximalPhalanx
-p3d_desactivate_col_check hand1.thumbBase hand1.finger1.middlePhalanx
-p3d_desactivate_col_check hand1.thumbBase hand1.finger1.fingertip
+p3d_desactivate_col_check hand0.thumbBase hand0.finger1.proximalPhalanx
+p3d_desactivate_col_check hand0.thumbBase hand0.finger1.middlePhalanx
+p3d_desactivate_col_check hand0.thumbBase hand0.finger1.fingertip
 
-p3d_desactivate_col_check hand1.thumbBase hand1.finger2.proximalPhalanx
-p3d_desactivate_col_check hand1.thumbBase hand1.finger2.middlePhalanx
-p3d_desactivate_col_check hand1.thumbBase hand1.finger2.fingertip
+p3d_desactivate_col_check hand0.thumbBase hand0.finger2.proximalPhalanx
+p3d_desactivate_col_check hand0.thumbBase hand0.finger2.middlePhalanx
+p3d_desactivate_col_check hand0.thumbBase hand0.finger2.fingertip
 
-p3d_desactivate_col_check hand1.thumbBase hand1.finger3.proximalPhalanx
-p3d_desactivate_col_check hand1.thumbBase hand1.finger3.middlePhalanx
-p3d_desactivate_col_check hand1.thumbBase hand1.finger3.fingertip
+p3d_desactivate_col_check hand0.thumbBase hand0.finger3.proximalPhalanx
+p3d_desactivate_col_check hand0.thumbBase hand0.finger3.middlePhalanx
+p3d_desactivate_col_check hand0.thumbBase hand0.finger3.fingertip
 
-p3d_desactivate_col_check hand1.thumbBase hand1.finger4.proximalPhalanx
-p3d_desactivate_col_check hand1.thumbBase hand1.finger4.middlePhalanx
-p3d_desactivate_col_check hand1.thumbBase hand1.finger4.fingertip
+p3d_desactivate_col_check hand0.thumbBase hand0.finger4.proximalPhalanx
+p3d_desactivate_col_check hand0.thumbBase hand0.finger4.middlePhalanx
+p3d_desactivate_col_check hand0.thumbBase hand0.finger4.fingertip
 
-p3d_desactivate_col_check hand1.finger1.proximalPhalanx hand1.finger1.fingertip
-p3d_desactivate_col_check hand1.finger2.proximalPhalanx hand1.finger2.fingertip
-p3d_desactivate_col_check hand1.finger3.proximalPhalanx hand1.finger3.fingertip
-p3d_desactivate_col_check hand1.finger4.proximalPhalanx hand1.finger4.fingertip
+p3d_desactivate_col_check hand0.finger1.proximalPhalanx hand0.finger1.fingertip
+p3d_desactivate_col_check hand0.finger2.proximalPhalanx hand0.finger2.fingertip
+p3d_desactivate_col_check hand0.finger3.proximalPhalanx hand0.finger3.fingertip
+p3d_desactivate_col_check hand0.finger4.proximalPhalanx hand0.finger4.fingertip
 
 
 ######################
