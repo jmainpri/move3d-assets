@@ -1,5 +1,14 @@
- p3d_beg_desc P3D_BODY base
-    p3d_add_desc_poly poly1
+ p3d_beg_desc P3D_BODY Gbase
+   p3d_add_desc_box base 0.698 0.685 0.272 P3D_GHOST
+   p3d_set_prim_pos base 0 0 0.154 0 0 0
+   p3d_add_desc_box hokuyo 0.140 0.121 0.092 P3D_GHOST
+   p3d_set_prim_pos hokuyo 0.235 0 0.3 0 0 0
+   p3d_add_desc_box torsoBase 0.096 0.475 0.444 P3D_GHOST
+   p3d_set_prim_pos torsoBase -0.285 0 0.497 0 0 0
+ p3d_end_desc
+
+  p3d_beg_desc P3D_BODY base
+    p3d_add_desc_poly poly1 P3D_GRAPHIC
       p3d_add_desc_vert 0.274385005236 0.0922624990344 0.316051006317
       p3d_add_desc_vert 0.300231009722 0.0897961035371 0.295105010271
       p3d_add_desc_vert 0.296853005886 0.202822998166 0.290197014809

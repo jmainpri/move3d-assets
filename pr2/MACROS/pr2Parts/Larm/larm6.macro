@@ -1,5 +1,5 @@
- p3d_beg_desc P3D_BODY larm6
-    p3d_add_desc_poly body52_polyhedre25
+p3d_beg_desc P3D_BODY larm6
+    p3d_add_desc_poly body52_polyhedre25 P3D_GRAPHIC
       p3d_add_desc_vert -0.0347287990153 0.00125203002244 -0.0214780997485
       p3d_add_desc_vert -0.0317000001669 0.00414584996179 -0.0214275997132
       p3d_add_desc_vert -0.0347726009786 9.23705972593e-17 -0.0215000007302
@@ -1493,7 +1493,7 @@
   #p3d_end_desc
   
    # p3d_beg_desc P3D_BODY p2s-body54_polyhedre26.p2s-body54_polyhedre26
-    p3d_add_desc_poly body54_polyhedre26
+    p3d_add_desc_poly body54_polyhedre26 P3D_GRAPHIC
       p3d_add_desc_vert 0.0269498992711 -0.0145193999633 0.00133213994559
       p3d_add_desc_vert 0.0278069004416 -0.0142355002463 0.00112316000741
       p3d_add_desc_vert 0.0279341991991 -0.0148927997798 0.00147761998232

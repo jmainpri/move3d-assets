@@ -1,5 +1,10 @@
+ p3d_beg_desc P3D_BODY Glarm1
+   p3d_add_desc_cylindre larm1 0.137 0.67 P3D_GHOST
+   p3d_set_prim_pos larm1 -0.05 0.188 0.617 0 0 0
+ p3d_end_desc
+
 p3d_beg_desc P3D_BODY larm1
-    p3d_add_desc_poly body38_polyhedre18
+    p3d_add_desc_poly body38_polyhedre18 P3D_GRAPHIC
       p3d_add_desc_vert 0.00151017995086 -0.489284992218 0.123351998627
       p3d_add_desc_vert -0.0203862003982 -0.483667999506 0.125742003322
       p3d_add_desc_vert -0.0235392004251 -0.490853995085 0.118771001697

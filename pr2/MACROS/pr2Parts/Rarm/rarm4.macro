@@ -1,5 +1,10 @@
+ p3d_beg_desc P3D_BODY Grarm4
+   p3d_add_desc_box rarm4 0.019 0.095 0.124 P3D_GHOST            
+   p3d_set_prim_pos rarm4 0.537 -0.188 0.778 0 0 0
+ p3d_end_desc
+
 p3d_beg_desc P3D_BODY rarm4
-    p3d_add_desc_poly body76_polyhedre37
+    p3d_add_desc_poly body76_polyhedre37 P3D_GRAPHIC
       p3d_add_desc_vert 0.0915111973882 -0.0674898028374 0.0121563002467
       p3d_add_desc_vert 0.0922255963087 -0.0652773007751 0.0131345996633
       p3d_add_desc_vert 0.0910909026861 -0.0661282017827 0.0134364999831
@@ -1508,7 +1513,7 @@ p3d_beg_desc P3D_BODY rarm4
    #p3d_add_desc_jnt P3D_ROTATE 0.45 -0.188005 0.790675 0 0 1 0.0 -180.0 180.0 18  #19
 
   #p3d_beg_desc P3D_BODY p2s-body78_polyhedre38.p2s-body78_polyhedre38
-    p3d_add_desc_poly body78_polyhedre38
+    p3d_add_desc_poly body78_polyhedre38 P3D_GRAPHIC
       p3d_add_desc_vert 0.10600399971 0.0402528010309 0.00932459998876
       p3d_add_desc_vert 0.105982996523 0.0410021990538 0.00998003967106
       p3d_add_desc_vert 0.106503002346 0.0403237007558 0.00987270008773

@@ -1,5 +1,5 @@
  p3d_beg_desc P3D_BODY rbwheel
-    p3d_add_desc_poly support
+    p3d_add_desc_poly support P3D_GRAPHIC
       p3d_add_desc_vert -0.0715062022209 0.133466005325 0.0621879994869
       p3d_add_desc_vert -0.057104498148 0.133466005325 0.0621879994869
       p3d_add_desc_vert -0.0749697983265 0.133466005325 0.0570554994047
@@ -1509,7 +1509,7 @@
 
 
  #p3d_beg_desc P3D_BODY lwheel
-    p3d_add_desc_poly lwheel
+    p3d_add_desc_poly lwheel P3D_GRAPHIC
       p3d_add_desc_vert -0.0411254018545 0.0169983003289 0.01600000076
       p3d_add_desc_vert -0.0500200018287 0.00994979962707 0.01600000076
       p3d_add_desc_vert -0.0509999990463 -9.79685006957e-19 0.01600000076
@@ -3588,7 +3588,7 @@
 
 
 # p3d_beg_desc P3D_BODY rwheel
-    p3d_add_desc_poly rwheel
+    p3d_add_desc_poly rwheel P3D_GRAPHIC
       p3d_add_desc_vert -0.0411254018545 0.0169983003289 0.01600000076
       p3d_add_desc_vert -0.0500200018287 0.00994979962707 0.01600000076
       p3d_add_desc_vert -0.0509999990463 -9.79685006957e-19 0.01600000076

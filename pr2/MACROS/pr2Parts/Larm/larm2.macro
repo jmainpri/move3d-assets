@@ -1,5 +1,10 @@
- p3d_beg_desc P3D_BODY larm2
-    p3d_add_desc_poly body40_polyhedre19
+ p3d_beg_desc P3D_BODY Glarm2
+   p3d_add_desc_cylindre larm2 0.125 0.26 P3D_GHOST
+   p3d_set_prim_pos larm2 0.054 0.188 0.794 90 0 0
+ p3d_end_desc 
+
+p3d_beg_desc P3D_BODY larm2
+    p3d_add_desc_poly body40_polyhedre19 P3D_GRAPHIC
       p3d_add_desc_vert 0.120999999344 -0.0729999989271 -0.000108000000182
       p3d_add_desc_vert 0.100235000253 -0.0729999989271 -0.000108000000182
       p3d_add_desc_vert 0.101242996752 -0.0717122033238 0.0152909001336
@@ -1470,7 +1475,7 @@
       p3d_add_desc_face 253 221 220
     p3d_end_desc_poly
     p3d_set_prim_pos_by_mat body40_polyhedre19 1 0 0 0.050001 0 0 -1 0.187993 0 1 0 0.790675 0 0 0 1
-    p3d_add_desc_poly body42_polyhedre20
+    p3d_add_desc_poly body42_polyhedre20 P3D_GRAPHIC
       p3d_add_desc_vert 0.138370007277 -0.0529999993742 -0.0281029995531
       p3d_add_desc_vert 0.140369996428 -0.054999999702 -0.0272745992988
       p3d_add_desc_vert 0.140369996428 -0.0558283999562 -0.0281029995531

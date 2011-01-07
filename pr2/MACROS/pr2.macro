@@ -24,7 +24,7 @@ p3d_beg_desc_jnt P3D_TRANSLATE # J2
   p3d_set_dof_vmin 0
   p3d_set_dof_vmax 0.31
 p3d_end_desc
-p3d_read_macro ./pr2Parts/Platform/shoulder.macro shoulder
+p3d_read_macro ./pr2Parts/Platform/torso.macro torso
 
 #---------------------------------------------------------------
 # Head
@@ -37,7 +37,7 @@ p3d_beg_desc_jnt P3D_ROTATE # J3
   p3d_set_dof_vmin -172.288
   p3d_set_dof_vmax 172.288
 p3d_end_desc
-p3d_read_macro ./pr2Parts/Camera/pan.macro camera
+p3d_read_macro ./pr2Parts/Head/pan.macro head
 
 p3d_beg_desc_jnt P3D_ROTATE # J4
   p3d_set_name tilt_cam
@@ -47,7 +47,7 @@ p3d_beg_desc_jnt P3D_ROTATE # J4
   p3d_set_dof_vmin -80
   p3d_set_dof_vmax 30
 p3d_end_desc
-p3d_read_macro ./pr2Parts/Camera/tilt.macro camera
+p3d_read_macro ./pr2Parts/Head/tilt.macro head
 
 #---------------------------------------------------------------
 # Laser
@@ -60,7 +60,7 @@ p3d_beg_desc_jnt P3D_ROTATE # J5
   p3d_set_dof_vmin -45
   p3d_set_dof_vmax 85
 p3d_end_desc
-p3d_read_macro ./pr2Parts/Camera/laser.macro camera
+p3d_read_macro ./pr2Parts/Head/laser.macro head
 
 #---------------------------------------------------------------
 # Left ARM
@@ -353,11 +353,13 @@ p3d_set_body_poly_color base.lfwheel 1 Any 0 0 0
 p3d_set_body_poly_color base.lfwheel 2 Any 0 0 0
 p3d_set_body_poly_color base.lfwheel 3 Any 0 0 0
 
-p3d_set_body_poly_color shoulder.shoulder 1 Any 1 1 1
+p3d_set_body_poly_color torso.torso 1 Any 1 1 1
 
-p3d_set_body_poly_color camera.pan 1 Any 1 1 1
-p3d_set_body_poly_color camera.tilt 1 Any 0.8 0.8 0.8
-p3d_set_body_poly_color camera.laser 1 Any 0.3 0.3 0.3
+p3d_set_body_poly_color head.pan 1 Any 1 1 1
+p3d_set_body_poly_color head.tilt 1 Any 0.8 0.8 0.8
+p3d_set_body_poly_color head.tilt 2 Any 0 0 0
+p3d_set_body_poly_color head.tilt 3 Any 0.1663615 0.0307033 0.7741647
+p3d_set_body_poly_color head.laser 1 Any 0.3 0.3 0.3
 
 p3d_set_body_poly_color larm.larm1 1 Any 0.8 0.8 0.8
 p3d_set_body_poly_color larm.larm2 1 Any 0.3 0.3 0.3
@@ -388,20 +390,4 @@ p3d_set_body_poly_color rarm.rarm8 1 Any 0.9 0.9 0.9
 p3d_set_body_poly_color rarm.rarm8 2 Any 0.9 0.9 0.9
 p3d_set_body_poly_color rarm.rarm9 1 Any 0.9 0.9 0.9
 p3d_set_body_poly_color rarm.rarm9 2 Any 0.9 0.9 0.9
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
