@@ -1,0 +1,209 @@
+p3d_beg_desc P3D_ENV sticksbox
+
+
+p3d_beg_desc P3D_OBSTACLE box
+  p3d_add_desc_box bot 22.0 2.0 1.0
+  p3d_set_prim_pos bot 0.0 -10.0 0.0 0.0 0.0 0.0 
+  p3d_add_desc_box l1  2.0 8.0 1.0
+  p3d_set_prim_pos l1  -10.0 -5.0 0.0 0.0 0.0 0.0 
+  p3d_add_desc_box l2  5.0 5.0 1.0
+  p3d_set_prim_pos l2  -8.5 1.5 0.0 0.0 0.0 0.0 
+  p3d_add_desc_box l3  3.0 4.0 1.0
+  p3d_set_prim_pos l3  -9.5 6.0 0.0 0.0 0.0 0.0 
+  p3d_add_desc_box l4  6.0 3.0 1.0
+  p3d_set_prim_pos l4  -8.0 9.5 0.0 0.0 0.0 0.0 
+  p3d_add_desc_box r1  5.0 6.0 1.0
+  p3d_set_prim_pos r1  8.5 -6.0 0.0 0.0 0.0 0.0 
+  p3d_add_desc_box r2  2.0 7.0 1.0
+  p3d_set_prim_pos r2  10.0 0.5 0.0 0.0 0.0 0.0 
+  p3d_add_desc_box r3  5.0 7.0 1.0
+  p3d_set_prim_pos r3  8.5 7.5 0.0 0.0 0.0 0.0 
+
+  p3d_add_desc_box l2_1  5.0 6.0 1.0
+  p3d_set_prim_pos l2_1  -8.5 14.0 0.0 0.0 0.0 0.0 
+  p3d_add_desc_box l2_2  2.0 7.0 1.0
+  p3d_set_prim_pos l2_2  -10.0 20.5 0.0 0.0 0.0 0.0 
+  p3d_add_desc_box l2_3  5.0 7.0 1.0
+  p3d_set_prim_pos l2_3  -8.5 27.5 0.0 0.0 0.0 0.0 
+  p3d_add_desc_box r2_1  2.0 8.0 1.0
+  p3d_set_prim_pos r2_1  10.0 15.0 0.0 0.0 0.0 0.0 
+  p3d_add_desc_box r2_2  5.0 5.0 1.0
+  p3d_set_prim_pos r2_2  8.5 21.5 0.0 0.0 0.0 0.0 
+  p3d_add_desc_box r2_3  3.0 4.0 1.0
+  p3d_set_prim_pos r2_3  9.5 26.0 0.0 0.0 0.0 0.0 
+  p3d_add_desc_box r2_4  6.0 3.0 1.0
+  p3d_set_prim_pos r2_4  8.0 29.5 0.0 0.0 0.0 0.0 
+
+#  p3d_add_desc_cylindre cl1 1.0 1.2 P3D_GRAPHIC
+#  p3d_set_prim_pos cl1 -5.5 1.5 0.0 0.0 0.0 0.0
+#  p3d_set_prim_color cl1 White
+#  p3d_add_desc_cylindre cr1 1.0 1.2 P3D_GRAPHIC
+#  p3d_set_prim_pos cr1 5.5 -6.0 0.0 0.0 0.0 0.0
+#  p3d_set_prim_color cr1 White
+#  p3d_add_desc_cylindre cr2 1.0 1.2 P3D_GRAPHIC
+#  p3d_set_prim_pos cr2 5.5 7.5 0.0 0.0 0.0 0.0
+#  p3d_set_prim_color cr2 White
+
+#  p3d_add_desc_cylindre cl2 1.0 1.2 P3D_GRAPHIC
+#  p3d_set_prim_pos cl2 -5.5 14.0 0.0 0.0 0.0 0.0
+#  p3d_set_prim_color cl2 White
+#  p3d_add_desc_cylindre cl3 1.0 1.2 P3D_GRAPHIC
+#  p3d_set_prim_pos cl3 -5.5 27.0 0.0 0.0 0.0 0.0
+#  p3d_set_prim_color cl3 White
+#  p3d_add_desc_cylindre cr3 1.0 1.2 P3D_GRAPHIC
+#  p3d_set_prim_pos cr3 5.5 21.5 0.0 0.0 0.0 0.0
+#  p3d_set_prim_color cr3 White
+
+p3d_end_desc
+
+
+p3d_beg_desc P3D_ROBOT articulated_H
+
+p3d_beg_desc_jnt P3D_ROTATE
+  p3d_set_name stick1
+  p3d_set_pos_xyz 5.5 -6.0 0.0 0.0 0.0 0.0
+  p3d_set_prev_jnt 0
+  p3d_set_is_active_for_planner	0
+  p3d_set_dof -10 
+  p3d_set_dof_vmin -90
+  p3d_set_dof_vmax  90
+p3d_end_desc
+
+p3d_beg_desc P3D_BODY stick1
+  p3d_add_desc_box s1  8.5 1.0 1.0
+  p3d_set_prim_pos s1  0.5 -6.0 0.0 0.0 0.0 0.0 
+  p3d_set_prim_color s1 Blue2
+p3d_end_desc
+
+p3d_beg_desc_jnt P3D_ROTATE
+  p3d_set_name stick2
+  p3d_set_pos_xyz -5.5 1.5 0.0 0.0 0.0 0.0
+  p3d_set_prev_jnt 0
+  p3d_set_is_active_for_planner	0
+  p3d_set_dof 0 
+  p3d_set_dof_vmin -90
+  p3d_set_dof_vmax  90
+p3d_end_desc
+
+p3d_beg_desc P3D_BODY stick2
+  p3d_add_desc_box s2  8.5 1.0 1.0
+  p3d_set_prim_pos s2  -0.5 1.5 0.0 0.0 0.0 0.0 
+  p3d_set_prim_color s2 Blue2
+p3d_end_desc
+
+p3d_beg_desc_jnt P3D_ROTATE
+  p3d_set_name stick3
+  p3d_set_pos_xyz 5.5 7.5 0.0 0.0 0.0 0.0
+  p3d_set_prev_jnt 0
+  p3d_set_is_active_for_planner	0
+  p3d_set_dof 20 
+  p3d_set_dof_vmin -90
+  p3d_set_dof_vmax  90
+p3d_end_desc
+
+p3d_beg_desc P3D_BODY stick3
+  p3d_add_desc_box s3  6.5 1.0 1.0
+  p3d_set_prim_pos s3  1.5 7.5 0.0 0.0 0.0 0.0 
+  p3d_set_prim_color s3 Blue2
+p3d_end_desc
+
+p3d_beg_desc_jnt P3D_ROTATE
+  p3d_set_name stick4
+  p3d_set_pos_xyz -5.5 14.0 0.0 0.0 0.0 0.0
+  p3d_set_prev_jnt 0
+  p3d_set_is_active_for_planner	0
+  p3d_set_dof -10 
+  p3d_set_dof_vmin -90
+  p3d_set_dof_vmax  90
+p3d_end_desc
+
+p3d_beg_desc P3D_BODY stick4
+  p3d_add_desc_box s4  8.5 1.0 1.0
+  p3d_set_prim_pos s4  -0.5 14.0 0.0 0.0 0.0 0.0 
+  p3d_set_prim_color s4 Blue2
+p3d_end_desc
+
+p3d_beg_desc_jnt P3D_ROTATE
+  p3d_set_name stick5
+  p3d_set_pos_xyz 5.5 21.5 0.0 0.0 0.0 0.0
+  p3d_set_prev_jnt 0
+  p3d_set_is_active_for_planner	0
+  p3d_set_dof 0 
+  p3d_set_dof_vmin -90
+  p3d_set_dof_vmax  90
+p3d_end_desc
+
+p3d_beg_desc P3D_BODY stick5
+  p3d_add_desc_box s5  8.5 1.0 1.0
+  p3d_set_prim_pos s5  0.5 21.5 0.0 0.0 0.0 0.0 
+  p3d_set_prim_color s5 Blue2
+p3d_end_desc
+
+p3d_beg_desc_jnt P3D_ROTATE
+  p3d_set_name stick6
+  p3d_set_pos_xyz -5.5 27.0 0.0 0.0 0.0 0.0
+  p3d_set_prev_jnt 0
+  p3d_set_is_active_for_planner	0
+  p3d_set_dof 20 
+  p3d_set_dof_vmin -90
+  p3d_set_dof_vmax  90
+p3d_end_desc
+
+p3d_beg_desc P3D_BODY stick6
+  p3d_add_desc_box s6  6.5 1.0 1.0
+  p3d_set_prim_pos s6  -1.5 27.0 0.0 0.0 0.0 0.0 
+  p3d_set_prim_color s6 Blue2
+p3d_end_desc
+
+p3d_beg_desc_jnt P3D_FREEFLYER
+  p3d_set_name H-FF
+  p3d_set_pos_axe 0.0 0.0 0.0 0.0 0.0 0.0
+  p3d_set_prev_jnt 0
+  p3d_set_dof -5.0 -5.0  0.0  0.0  0.0  0.0
+#  p3d_set_dof_pos0 -5.0 -5.0  0.0  0.0  0.0  0.0
+  p3d_set_dof_vmin -10.0 -10.0  0.0  0.0  0.0 -180.0
+  p3d_set_dof_vmax  10.0  50.0  0.0  0.0  0.0  180.0
+#  p3d_set_dof_vmin -5.0 -5.0  0.0  0.0  0.0 -180.0
+#  p3d_set_dof_vmax  15.0  25.0  0.0  0.0  0.0  180.0
+p3d_end_desc
+
+p3d_beg_desc P3D_BODY Hb
+  p3d_add_desc_cylindre hc 0.7 1.2 P3D_GRAPHIC
+  p3d_set_prim_pos hc 0.0 0.0 0.0 0.0 0.0 0.0
+  p3d_set_prim_color hc White
+  p3d_add_desc_box hb1  6.0 1.0 1.0
+  p3d_set_prim_pos hb1  0.0 -2.5 0.0 0.0 0.0 0.0 
+  p3d_set_prim_color hb1 Red
+  p3d_add_desc_box hb2  1.0 2.0 1.0
+  p3d_set_prim_pos hb2  0.0 -1.5 0.0 0.0 0.0 0.0 
+  p3d_set_prim_color hb2 Red
+p3d_end_desc
+
+p3d_beg_desc_jnt P3D_ROTATE
+  p3d_set_name H-rot
+  p3d_set_pos_xyz 0.0 0.0 0.0 0.0 0.0 0.0
+  p3d_set_prev_jnt 7
+  p3d_set_is_active_for_planner	0
+  p3d_set_dof 10 
+  p3d_set_dof_vmin -45
+  p3d_set_dof_vmax  45
+p3d_end_desc
+
+p3d_beg_desc P3D_BODY Ht
+  p3d_add_desc_box ht1  6.0 1.0 1.0
+  p3d_set_prim_pos ht1  0.0 2.5 0.0 0.0 0.0 0.0 
+  p3d_set_prim_color ht1 Red
+  p3d_add_desc_box ht2  1.0 2.0 1.0
+  p3d_set_prim_pos ht2  0.0 1.5 0.0 0.0 0.0 0.0 
+  p3d_set_prim_color ht2 Red
+p3d_end_desc
+
+
+p3d_end_desc
+
+
+p3d_end_desc
+
+p3d_set_env_box -20.0 20.0 -20.0 60.0 -1.0 1.0
+p3d_set_robot_current 0 0 0 0 0 0 -10 0 20 -10 0 20 -5 -5 0 0 0 0 10
+p3d_set_robot_goto 0 0 0 0 0 0 -10 0 20 -10 0 20 0 40 0 0 0 0 0
