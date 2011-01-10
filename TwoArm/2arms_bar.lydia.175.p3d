@@ -1762,7 +1762,7 @@ p3d_set_body_poly_color arm26 3 Black
 
 p3d_end_desc
 
-p3d_set_env_box -8000.0 8000.0 -2600.0 6000.0 0.0 5000.0
+p3d_set_env_box -1000.0 1000.0 -1000.0 1000.0 0.0 1000.0
 
 p3d_set_robot_steering_method Linear
 
