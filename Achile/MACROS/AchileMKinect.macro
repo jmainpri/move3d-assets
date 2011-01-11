@@ -73,27 +73,27 @@ p3d_beg_desc_jnt P3D_ROTATE # J7
    p3d_set_name rShoulderX
    p3d_set_prev_jnt 4
    p3d_set_pos_axe -0.0112 -0.23982 0.428571 1 0 0
-   p3d_set_dof_vmin -100
-   p3d_set_dof_vmax 90
+   p3d_set_dof_vmin -180
+   p3d_set_dof_vmax 180
  p3d_end_desc
  p3d_beg_desc_jnt P3D_ROTATE # J9
    p3d_set_name rShoulderZ
    p3d_set_prev_jnt 8
    p3d_set_pos_axe -0.0112 -0.23982 0.428571 0 0 1
-   p3d_set_dof_vmin -90
-   p3d_set_dof_vmax 120
+   p3d_set_dof_vmin -180
+   p3d_set_dof_vmax 180
  p3d_end_desc
  p3d_beg_desc_jnt P3D_ROTATE # J10
    p3d_set_name rShoulderY
    p3d_set_prev_jnt 9
    p3d_set_pos_axe -0.0112 -0.23982 0.428571 0 -1 0
-   p3d_set_dof_vmin -30
-   p3d_set_dof_vmax 30
+   p3d_set_dof_vmin -180
+   p3d_set_dof_vmax 180
  p3d_end_desc
  p3d_read_macro ./AchileParts/rHumerusM.macro rHumerus
 
  p3d_beg_desc_jnt P3D_TRANSLATE # J11
-   p3d_set_name lPoint
+   p3d_set_name rArmTrans
    p3d_set_pos_relative 
    p3d_set_prev_jnt 10
    p3d_set_pos_mat 1 0 0 0   0 1 0 0   0 0 1 0   0 0 0 1	
@@ -106,8 +106,8 @@ p3d_beg_desc_jnt P3D_ROTATE # J7
    p3d_set_name rElbowZ
    p3d_set_prev_jnt 11
    p3d_set_pos_axe -0.007033 -0.446428 0.430224 0 0 1
-   p3d_set_dof_vmin 0
-   p3d_set_dof_vmax 140
+   p3d_set_dof_vmin -180
+   p3d_set_dof_vmax 180
  p3d_end_desc
  p3d_read_macro ./AchileParts/rRadiusM.macro rRadius
  
@@ -152,27 +152,27 @@ p3d_beg_desc_jnt P3D_ROTATE # J14
    p3d_set_name lShoulderX
    p3d_set_prev_jnt 4
    p3d_set_pos_axe -0.0112 0.23982 0.428571 1 0 0
-   p3d_set_dof_vmin -90
-   p3d_set_dof_vmax 100
+   p3d_set_dof_vmin -180
+   p3d_set_dof_vmax 180
  p3d_end_desc
  p3d_beg_desc_jnt P3D_ROTATE # J18
-   p3d_set_name lShoulderY
+   p3d_set_name lShoulderZ
    p3d_set_prev_jnt 17
    p3d_set_pos_axe -0.0112 0.23982 0.428571 0 0 1
-   p3d_set_dof_vmin -120
-   p3d_set_dof_vmax 90
+   p3d_set_dof_vmin -180
+   p3d_set_dof_vmax 180
  p3d_end_desc
  p3d_beg_desc_jnt P3D_ROTATE # J19
-   p3d_set_name lShoulderZ
+   p3d_set_name lShoulderY
    p3d_set_prev_jnt 18
    p3d_set_pos_axe -0.0112 0.23982 0.428571 0 -1 0
-   p3d_set_dof_vmin -30
-   p3d_set_dof_vmax 30
+   p3d_set_dof_vmin -180
+   p3d_set_dof_vmax 180
  p3d_end_desc
  p3d_read_macro ./AchileParts/lHumerusM.macro lHumerus
  
  p3d_beg_desc_jnt P3D_TRANSLATE # J20
-   p3d_set_name lPoint
+   p3d_set_name lArmTrans
    p3d_set_pos_relative 
    p3d_set_prev_jnt 19
    p3d_set_pos_mat  1 0 0 0   0 -1 0 0   0 0 -1 0   0 0 0 1	
@@ -185,8 +185,8 @@ p3d_beg_desc_jnt P3D_ROTATE # J14
    p3d_set_name lElbowZ
    p3d_set_prev_jnt 20
    p3d_set_pos_axe -0.007033 0.446428 0.430224 0 0 1
-   p3d_set_dof_vmin -140
-   p3d_set_dof_vmax 0
+   p3d_set_dof_vmin -180
+   p3d_set_dof_vmax 180
  p3d_end_desc
  p3d_read_macro ./AchileParts/lRadiusM.macro lRadius
  
