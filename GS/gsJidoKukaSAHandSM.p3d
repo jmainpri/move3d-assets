@@ -25,7 +25,7 @@ p3d_read_macro trash.macro TRASHBIN
 p3d_read_macro shelf.macro SHELF
 p3d_read_macro hrp2table.macro HRP2TABLE
 p3d_read_macro simplechair.macro SIMPLECHAIR
-p3d_read_macro ./Objects/Movable/HRP2BarTable.macro HRP2BARTable
+#p3d_read_macro ./Objects/Movable/HRP2BarTable.macro HRP2BARTable
 p3d_read_macro ./Objects/Movable/ikeaShelf.macro IKEA_SHELF
 
 # ***** MANIPULABLE OBJECTS
@@ -33,6 +33,7 @@ p3d_read_macro ./Objects/Movable/ikeaShelf.macro IKEA_SHELF
 p3d_read_macro toolbox.macro ACCESSKIT
 #p3d_read_macro Cup_with_handle.macro CUPHANDLE
 p3d_read_macro SpaceNav_Box.macro SPACENAVBOX
+p3d_read_macro BigPinkBox.macro PINK_TRASHBIN
 #p3d_read_macro BlueBottle.macro BLUE_BOTTLE
 #p3d_read_macro OrangeBottle.macro ORANGE_BOTTLE
 #p3d_read_macro YellowBottle.macro YELLOW_BOTTLE
