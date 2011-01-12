@@ -49,13 +49,16 @@ p3d_read_macro SAHandRight_robot.macro SAHandRight
 # ****** FURNITURE
 
 p3d_read_macro desk.macro BARTABLE1
-p3d_set_obst_pos BARTABLE1 2.11 -5.67 0 0 0 0
+p3d_set_obst_pos BARTABLE1 1.997 -6.74 0 0 0 90
 
 p3d_read_macro desk.macro BARTABLE2
-p3d_set_obst_pos BARTABLE2 3.21 -5.94 0 0 0 90
+p3d_set_obst_pos BARTABLE2 3.207 -6.74 0 0 0 90
 
 p3d_read_macro desk.macro BARTABLE3
-p3d_set_obst_pos BARTABLE3 4.94 -5.94 0 0 0 90
+p3d_set_obst_pos BARTABLE3 4.402 -6.74 0 0 0 90
+
+p3d_read_macro desk.macro BARTABLE4
+p3d_set_obst_pos BARTABLE4 5.602 -6.74 0 0 0 90
 
 p3d_read_macro bookcase2.macro library1
 p3d_set_obst_pos library1 0.3 -1.64 0.0 0 0 -90
