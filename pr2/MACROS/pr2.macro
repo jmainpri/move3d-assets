@@ -63,103 +63,9 @@ p3d_end_desc
 p3d_read_macro ./pr2Parts/Head/laser.macro head
 
 #---------------------------------------------------------------
-# Left ARM
-#---------------------------------------------------------------
-p3d_beg_desc_jnt P3D_ROTATE # J6
-  p3d_set_name left-Arm1
-  p3d_set_prev_jnt 2
-  p3d_set_pos_axe -0.049997 0.187994 0.790675 0 0 1
-  p3d_set_dof 0.0
-  p3d_set_dof_vmin -41
-  p3d_set_dof_vmax 131
-p3d_end_desc
-p3d_read_macro ./pr2Parts/Larm/larm1.macro larm
-
-p3d_beg_desc_jnt P3D_ROTATE # J7
-  p3d_set_name left-Arm2
-  p3d_set_prev_jnt 6
-  p3d_set_pos_axe 0.050001 0.187993 0.790675 0 1 0
-  p3d_set_dof 0.0
-  p3d_set_dof_vmin -30
-  p3d_set_dof_vmax 80
-p3d_end_desc
-p3d_read_macro ./pr2Parts/Larm/larm2.macro larm
-
-p3d_beg_desc_jnt P3D_ROTATE # J8
-  p3d_set_name left-Arm3
-  p3d_set_prev_jnt 7
-  p3d_set_pos_axe 0.050001 0.187993 0.790675 1 0 0
-  p3d_set_dof 0.0
-  p3d_set_dof_vmin -45
-  p3d_set_dof_vmax 223
-p3d_end_desc
-
-p3d_read_macro ./pr2Parts/Larm/larm3.macro larm
-
-p3d_beg_desc_jnt P3D_ROTATE # J9
-  p3d_set_name left-Arm4
-  p3d_set_prev_jnt 8
-  p3d_set_pos_axe 0.450001 0.187993 0.790675 0 1 0
-  p3d_set_dof 0.0
-  p3d_set_dof_vmin -133
-  p3d_set_dof_vmax 0
-p3d_end_desc
-p3d_read_macro ./pr2Parts/Larm/larm4.macro larm
-
-p3d_beg_desc_jnt P3D_ROTATE # J10
-  p3d_set_name left-Arm5
-  p3d_set_prev_jnt 9
-  p3d_set_pos_axe 0.450001 0.187993 0.790675 1 0 0
-  p3d_set_dof 0.0
-  p3d_set_dof_vmin -45
-  p3d_set_dof_vmax 223
-p3d_end_desc
-p3d_read_macro ./pr2Parts/Larm/larm5.macro larm
-
-p3d_beg_desc_jnt P3D_ROTATE # J11
-  p3d_set_name left-Arm6
-  p3d_set_prev_jnt 10
-  p3d_set_pos_axe 0.771001 0.187993 0.790675 0 1 0
-  p3d_set_dof 0.0
-  p3d_set_dof_vmin -119
-  p3d_set_dof_vmax 0
-p3d_end_desc
-p3d_read_macro ./pr2Parts/Larm/larm6.macro larm
-
-p3d_beg_desc_jnt P3D_ROTATE # J12
-  p3d_set_name left-Arm7
-  p3d_set_prev_jnt 11
-  p3d_set_pos_axe 0.771001 0.187993 0.790675 1 0 0
-  p3d_set_dof 0.0
-  p3d_set_dof_vmin -180
-  p3d_set_dof_vmax 180
-p3d_end_desc
-p3d_read_macro ./pr2Parts/Larm/larm7.macro larm
-
-p3d_beg_desc_jnt P3D_ROTATE # J13
-  p3d_set_name left-grip1
-  p3d_set_prev_jnt 12
-  p3d_set_pos_axe 0.847911 0.197993 0.790675 0 0 1
-  p3d_set_dof 0.0
-  p3d_set_dof_vmin 0
-  p3d_set_dof_vmax 31.3981
-p3d_end_desc
-p3d_read_macro ./pr2Parts/Larm/larm8.macro larm
-
-p3d_beg_desc_jnt P3D_ROTATE # J14
-  p3d_set_name left-grip2
-  p3d_set_prev_jnt 12
-  p3d_set_pos_axe 0.847911 0.177993 0.790675 0 0 -1
-  p3d_set_dof 0.0
-  p3d_set_dof_vmin 0
-  p3d_set_dof_vmax 31.3981
-p3d_end_desc
-p3d_read_macro ./pr2Parts/Larm/larm9.macro larm
-
-#---------------------------------------------------------------
 # Right ARM
 #---------------------------------------------------------------
-p3d_beg_desc_jnt P3D_ROTATE # J15
+p3d_beg_desc_jnt P3D_ROTATE # J6
   p3d_set_name right-Arm1
   p3d_set_prev_jnt 2
   p3d_set_pos_axe -0.049997 -0.187994 0.790675 0 0 1
@@ -169,9 +75,9 @@ p3d_beg_desc_jnt P3D_ROTATE # J15
 p3d_end_desc
 p3d_read_macro ./pr2Parts/Rarm/rarm1.macro rarm
 
-p3d_beg_desc_jnt P3D_ROTATE # J16
+p3d_beg_desc_jnt P3D_ROTATE # J7
   p3d_set_name right-Arm2
-  p3d_set_prev_jnt 15
+  p3d_set_prev_jnt 6
   p3d_set_pos_axe 0.050001 -0.187993 0.790675 0 1 0
   p3d_set_dof 0.0
   p3d_set_dof_vmin -30
@@ -179,9 +85,9 @@ p3d_beg_desc_jnt P3D_ROTATE # J16
 p3d_end_desc
 p3d_read_macro ./pr2Parts/Rarm/rarm2.macro rarm
 
-p3d_beg_desc_jnt P3D_ROTATE # J17
+p3d_beg_desc_jnt P3D_ROTATE # J8
   p3d_set_name right-Arm3
-  p3d_set_prev_jnt 16
+  p3d_set_prev_jnt 7
   p3d_set_pos_axe  0.050001 -0.187993 0.790675 1 0 0
   p3d_set_dof 0.0
   p3d_set_dof_vmin -223
@@ -189,9 +95,9 @@ p3d_beg_desc_jnt P3D_ROTATE # J17
 p3d_end_desc
 p3d_read_macro ./pr2Parts/Rarm/rarm3.macro rarm
 
-p3d_beg_desc_jnt P3D_ROTATE # J18
+p3d_beg_desc_jnt P3D_ROTATE # J9
   p3d_set_name right-Arm4
-  p3d_set_prev_jnt 17
+  p3d_set_prev_jnt 8
   p3d_set_pos_axe 0.450001 -0.187993 0.790675 0 1 0
   p3d_set_dof 0.0
   p3d_set_dof_vmin -133
@@ -199,9 +105,9 @@ p3d_beg_desc_jnt P3D_ROTATE # J18
 p3d_end_desc
 p3d_read_macro ./pr2Parts/Rarm/rarm4.macro rarm
 
-p3d_beg_desc_jnt P3D_ROTATE # J19
+p3d_beg_desc_jnt P3D_ROTATE # J10
   p3d_set_name right-Arm5
-  p3d_set_prev_jnt 18
+  p3d_set_prev_jnt 9
   p3d_set_pos_axe 0.450001 -0.187993 0.790675 1 0 0
   p3d_set_dof 0.0
   p3d_set_dof_vmin -223
@@ -209,9 +115,9 @@ p3d_beg_desc_jnt P3D_ROTATE # J19
 p3d_end_desc
 p3d_read_macro ./pr2Parts/Rarm/rarm5.macro rarm
 
-p3d_beg_desc_jnt P3D_ROTATE # J20
+p3d_beg_desc_jnt P3D_ROTATE # J11
   p3d_set_name right-Arm6
-  p3d_set_prev_jnt 19
+  p3d_set_prev_jnt 10
   p3d_set_pos_axe 0.771001 -0.187993 0.790675 0 1 0
   p3d_set_dof 0.0
   p3d_set_dof_vmin -119
@@ -219,9 +125,9 @@ p3d_beg_desc_jnt P3D_ROTATE # J20
 p3d_end_desc
 p3d_read_macro ./pr2Parts/Rarm/rarm6.macro rarm
 
-p3d_beg_desc_jnt P3D_ROTATE # J21
+p3d_beg_desc_jnt P3D_ROTATE # J12
   p3d_set_name right-Arm7
-  p3d_set_prev_jnt 20
+  p3d_set_prev_jnt 11
   p3d_set_pos_axe 0.771001 -0.187993 0.790675 1 0 0
   p3d_set_dof 0.0
   p3d_set_dof_vmin -180
@@ -229,9 +135,9 @@ p3d_beg_desc_jnt P3D_ROTATE # J21
 p3d_end_desc
 p3d_read_macro ./pr2Parts/Rarm/rarm7.macro rarm
 
-p3d_beg_desc_jnt P3D_ROTATE # J22
+p3d_beg_desc_jnt P3D_ROTATE # J13
   p3d_set_name right-grip1
-  p3d_set_prev_jnt 21
+  p3d_set_prev_jnt 12
   p3d_set_pos_axe 0.847911 -0.197993 0.790675 0 0 1
   p3d_set_dof 0.0
   p3d_set_dof_vmin 0
@@ -239,15 +145,109 @@ p3d_beg_desc_jnt P3D_ROTATE # J22
 p3d_end_desc
 p3d_read_macro ./pr2Parts/Rarm/rarm8.macro rarm
 
-p3d_beg_desc_jnt P3D_ROTATE # J23
+p3d_beg_desc_jnt P3D_ROTATE # J14
   p3d_set_name right-grip2
-  p3d_set_prev_jnt 21
+  p3d_set_prev_jnt 12
   p3d_set_pos_axe 0.847911 -0.177993 0.790675 0 0 -1
   p3d_set_dof 0.0
   p3d_set_dof_vmin 0
   p3d_set_dof_vmax 31.3981
 p3d_end_desc
 p3d_read_macro ./pr2Parts/Rarm/rarm9.macro rarm
+
+#---------------------------------------------------------------
+# Left ARM
+#---------------------------------------------------------------
+p3d_beg_desc_jnt P3D_ROTATE # J15
+  p3d_set_name left-Arm1
+  p3d_set_prev_jnt 2
+  p3d_set_pos_axe -0.049997 0.187994 0.790675 0 0 1
+  p3d_set_dof 0.0
+  p3d_set_dof_vmin -41
+  p3d_set_dof_vmax 131
+p3d_end_desc
+p3d_read_macro ./pr2Parts/Larm/larm1.macro larm
+
+p3d_beg_desc_jnt P3D_ROTATE # J16
+  p3d_set_name left-Arm2
+  p3d_set_prev_jnt 15
+  p3d_set_pos_axe 0.050001 0.187993 0.790675 0 1 0
+  p3d_set_dof 0.0
+  p3d_set_dof_vmin -30
+  p3d_set_dof_vmax 80
+p3d_end_desc
+p3d_read_macro ./pr2Parts/Larm/larm2.macro larm
+
+p3d_beg_desc_jnt P3D_ROTATE # J17
+  p3d_set_name left-Arm3
+  p3d_set_prev_jnt 16
+  p3d_set_pos_axe 0.050001 0.187993 0.790675 1 0 0
+  p3d_set_dof 0.0
+  p3d_set_dof_vmin -45
+  p3d_set_dof_vmax 223
+p3d_end_desc
+
+p3d_read_macro ./pr2Parts/Larm/larm3.macro larm
+
+p3d_beg_desc_jnt P3D_ROTATE # J18
+  p3d_set_name left-Arm4
+  p3d_set_prev_jnt 17
+  p3d_set_pos_axe 0.450001 0.187993 0.790675 0 1 0
+  p3d_set_dof 0.0
+  p3d_set_dof_vmin -133
+  p3d_set_dof_vmax 0
+p3d_end_desc
+p3d_read_macro ./pr2Parts/Larm/larm4.macro larm
+
+p3d_beg_desc_jnt P3D_ROTATE # J19
+  p3d_set_name left-Arm5
+  p3d_set_prev_jnt 18
+  p3d_set_pos_axe 0.450001 0.187993 0.790675 1 0 0
+  p3d_set_dof 0.0
+  p3d_set_dof_vmin -45
+  p3d_set_dof_vmax 223
+p3d_end_desc
+p3d_read_macro ./pr2Parts/Larm/larm5.macro larm
+
+p3d_beg_desc_jnt P3D_ROTATE # J20
+  p3d_set_name left-Arm6
+  p3d_set_prev_jnt 19
+  p3d_set_pos_axe 0.771001 0.187993 0.790675 0 1 0
+  p3d_set_dof 0.0
+  p3d_set_dof_vmin -119
+  p3d_set_dof_vmax 0
+p3d_end_desc
+p3d_read_macro ./pr2Parts/Larm/larm6.macro larm
+
+p3d_beg_desc_jnt P3D_ROTATE # J21
+  p3d_set_name left-Arm7
+  p3d_set_prev_jnt 20
+  p3d_set_pos_axe 0.771001 0.187993 0.790675 1 0 0
+  p3d_set_dof 0.0
+  p3d_set_dof_vmin -180
+  p3d_set_dof_vmax 180
+p3d_end_desc
+p3d_read_macro ./pr2Parts/Larm/larm7.macro larm
+
+p3d_beg_desc_jnt P3D_ROTATE # J22
+  p3d_set_name left-grip1
+  p3d_set_prev_jnt 21
+  p3d_set_pos_axe 0.847911 0.197993 0.790675 0 0 1
+  p3d_set_dof 0.0
+  p3d_set_dof_vmin 0
+  p3d_set_dof_vmax 31.3981
+p3d_end_desc
+p3d_read_macro ./pr2Parts/Larm/larm8.macro larm
+
+p3d_beg_desc_jnt P3D_ROTATE # J23
+  p3d_set_name left-grip2
+  p3d_set_prev_jnt 21
+  p3d_set_pos_axe 0.847911 0.177993 0.790675 0 0 -1
+  p3d_set_dof 0.0
+  p3d_set_dof_vmin 0
+  p3d_set_dof_vmax 31.3981
+p3d_end_desc
+p3d_read_macro ./pr2Parts/Larm/larm9.macro larm
 
 #---------------------------------------------------------------
 # JOINTS FOR HRI STUFF

@@ -36,6 +36,8 @@ p3d_desactivate_col_check base.Gbase head.Glaser
 
 p3d_desactivate_col_check base.Gbase larm.Glarm1
 p3d_desactivate_col_check base.Gbase rarm.Grarm1
+p3d_desactivate_col_check base.Gbase larm.Glarm2
+p3d_desactivate_col_check base.Gbase rarm.Grarm2
 
 #Torso
 p3d_desactivate_col_check torso.Gtorso head.Gtilt
