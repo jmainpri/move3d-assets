@@ -38,8 +38,8 @@
         <translation> -0.003  0.0271 0   </translation>
         <YPR_angles> 0 -180 0 </YPR_angles>  
       </transformation>    
-      <qmin> 0 </qmin>
-      <qmax> 90 </qmax>   
+      <qmin> -5 </qmin>
+      <qmax> 95 </qmax>   
  
       <body name="thumbBaseRight">
         <name> thumbBaseRight </name> 
@@ -80,7 +80,7 @@
         <transformation>
           <YPR_angles> 180 0 90 </YPR_angles>  
         </transformation>        
-        <qmin> -19 </qmin>
+        <qmin> -10 </qmin>
       <qmax> 90 </qmax>   
       
       <body name="thumbFingerPhaProxRight">
@@ -99,7 +99,7 @@
         <transformation>
           <translation> 0.0678 0 0  </translation>
          </transformation>
-        <qmin> 0 </qmin>
+        <qmin> -5 </qmin>
       <qmax> 90 </qmax>     
       <body name="thumbFingerPhaMidRight">
           <name> thumbFingerPhaMidRight </name> 
@@ -117,7 +117,7 @@
         <transformation>
           <translation> 0.03 0 0  </translation>
         </transformation>
-        <qmin> 0 </qmin>
+        <qmin> -5 </qmin>
       <qmax> 90 </qmax>   
       <body name="thumbFingerPhaDistRight">
         <name> thumbFingerPhaDistRight </name> 
@@ -162,7 +162,7 @@
         <transformation>
            <YPR_angles> 180 0 90 </YPR_angles>  
         </transformation>
-        <qmin> -24 </qmin>
+        <qmin> -5 </qmin>
         <qmax> 90 </qmax>   
 
         <body name="foreFingerPhaProxRight">
@@ -182,7 +182,7 @@
           <transformation>
             <translation> 0.0678 0 0  </translation>
           </transformation>
-          <qmin> 0 </qmin>
+          <qmin> -5 </qmin>
           <qmax> 90 </qmax>   
 
           <body name="foreFingerPhaMidRight">
@@ -202,7 +202,7 @@
             <transformation>
               <translation> 0.03 0 0  </translation>
             </transformation>
-            <qmin> 0 </qmin>
+            <qmin> -5 </qmin>
             <qmax> 90 </qmax>     
             
             <body name="foreFingerPhaDistRight">
@@ -248,7 +248,7 @@
           <transformation>
             <YPR_angles> 180 0 90 </YPR_angles>  
           </transformation>
-          <qmin> -24 </qmin>
+          <qmin> -20 </qmin>
           <qmax> 90 </qmax>   
           
           <body name="middleFingerPhaProxRight">
@@ -267,7 +267,7 @@
             <transformation>
               <translation> 0.0678 0 0  </translation>
             </transformation>
-            <qmin> 0 </qmin>
+            <qmin> -5 </qmin>
             <qmax> 90 </qmax>   
             
             <body name="middleFingerPhaMidRight">
@@ -286,7 +286,7 @@
               <transformation>
                 <translation> 0.03 0 0  </translation>
               </transformation>
-              <qmin> 0 </qmin>
+              <qmin> -5 </qmin>
               <qmax> 90 </qmax>     
               
               <body name="middleFingerPhaDistRight">
@@ -332,7 +332,7 @@
           <transformation>
            <YPR_angles> 180 0 90 </YPR_angles>  
           </transformation>
-          <qmin> -24 </qmin>
+          <qmin> -20 </qmin>
           <qmax> 90 </qmax>   
           
           <body name="ringFingerPhaProxRight">
@@ -351,7 +351,7 @@
             <transformation>
               <translation> 0.0678 0 0  </translation>
             </transformation>
-            <qmin> 0 </qmin>
+            <qmin> -5 </qmin>
             <qmax> 90 </qmax>   
             
             <body name="ringFingerPhaMidRight">
@@ -370,7 +370,7 @@
               <transformation>
                 <translation> 0.03 0 0  </translation>
               </transformation>
-              <qmin> 0 </qmin>
+              <qmin> -5 </qmin>
               <qmax> 90 </qmax>     
               
               <body name="ringFingerPhaDistRight">
