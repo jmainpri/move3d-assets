@@ -42,7 +42,7 @@ p3d_read_macro ./pr2Parts/Head/pan.macro head
 p3d_beg_desc_jnt P3D_ROTATE # J4
   p3d_set_name tilt_cam
   p3d_set_prev_jnt 3
-  p3d_set_pos_axe -0.00093 0 1.172125 0 -1 0
+  p3d_set_pos_axe -0.00093 0 1.172125 0 1 0
   p3d_set_dof 0.0
   p3d_set_dof_vmin -80
   p3d_set_dof_vmax 30
@@ -319,7 +319,7 @@ p3d_end_desc
  #   p3d_set_dof_velocity_max          0.15 0.15 0.15 0.3 0.3 0.3
   p3d_end_desc
   p3d_beg_desc P3D_BODY fictiveObject
-    p3d_add_desc_sphere sphere 0.05 P3D_GRAPHIC
+    p3d_add_desc_sphere sphere 0.005 P3D_GRAPHIC
     p3d_set_prim_pos sphere 0 0 0 0 0 0
   p3d_end_desc
 

@@ -13,7 +13,7 @@ p3d_read_macro GreyVideoTape.macro  GREY_TAPE
 p3d_read_macro AchileM.macro ACHILE_HUMAN1
 
 #p3d_read_macro batmansmall.macro SUPERMAN_HUMAN2
-
+p3d_read_macro pr2.macro PR2_ROBOT
 # ************* MOVABLE OBJECTS **************
 
 # ***** FURNITURE
@@ -89,7 +89,7 @@ p3d_read_macro jidoKukaSAHand.macro JIDOKUKA_ROBOT
 p3d_end_desc
 
 
-p3d_set_env_box -2 11.84286 -6.04226 1.06978 0 3
+p3d_set_env_box -2 11.84286 -7.2 1.06978 0 3
 
 
 #################################
