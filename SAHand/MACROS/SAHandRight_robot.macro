@@ -5,10 +5,10 @@
 # 16/12/2010: reverse abduction joints
 ############################################################################################
 # Le nom de chaque corps du robot doit commencer par un prefixe indiquant a quelle partie
-# du robot il appartient (platform., arm. hand0., hand0.finger1, hand0.finger2, etc.).
-# Les noms des corps des doigts commencent par hand0.finger1, hand0.finger2, etc.
+# du robot il appartient (platform., arm. hand., hand.finger1, hand.finger2, etc.).
+# Les noms des corps des doigts commencent par hand.finger1, hand.finger2, etc.
 # Les corps des bouts des doigts doivent s'appeler fingertip:
-# ex.: hand0.finger1.fingertip, hand0.finger2.fingertip,...
+# ex.: hand.finger1.fingertip, hand.finger2.fingertip,...
 # pour etre reconnus par leur nom dans Move3D quelque soit la main utilisee.
 # Les noms dans les macros des corps des fingertips doivent tous etre fingertip.
 # L'ordre des doigts choisi est thumb= 1, forefinger= 2, middle finger= 3, ring finger= 4.
@@ -27,8 +27,8 @@ p3d_beg_desc P3D_ROBOT
    p3d_set_dof_vmax 10.5 10.5 3 180 180 180
  p3d_end_desc
 
- #p3d_read_macro ./SAHandRight/GSAHandRightAHandRight_palm.macro hand0
- p3d_read_macro ./SAHandRight/SAHandRight_palm.macro hand0
+ #p3d_read_macro ./SAHandRight/GSAHandRightAHandRight_palm.macro hand
+ p3d_read_macro ./SAHandRight/SAHandRight_palm.macro hand
 #########################################################################
 
 
@@ -42,8 +42,8 @@ p3d_beg_desc P3D_ROBOT
     p3d_set_dof_vmin 0
     p3d_set_dof_vmax 90
    p3d_end_desc
-  #p3d_read_macro ./SAHandRight/GSAHandRightAHandRight_thumbBase.macro hand0
-  p3d_read_macro ./SAHandRight/SAHandRight_thumbBase.macro hand0
+  #p3d_read_macro ./SAHandRight/GSAHandRightAHandRight_thumbBase.macro hand
+  p3d_read_macro ./SAHandRight/SAHandRight_thumbBase.macro hand
 
 
   p3d_beg_desc_jnt P3D_ROTATE #J3
@@ -57,7 +57,7 @@ p3d_beg_desc P3D_ROBOT
     p3d_set_dof_vmin -15
     p3d_set_dof_vmax 15
   p3d_end_desc
-  p3d_read_macro ./SAHandRight/SAHandRight_thumbFingerBase.macro hand0.finger1
+  p3d_read_macro ./SAHandRight/SAHandRight_thumbFingerBase.macro hand.finger1
 
   p3d_beg_desc_jnt P3D_ROTATE #J4
     p3d_set_name fingerJointThumbProx_0
@@ -67,8 +67,8 @@ p3d_beg_desc P3D_ROBOT
     p3d_set_dof_vmin -4
     p3d_set_dof_vmax 75
   p3d_end_desc
-  #p3d_read_macro ./SAHandRight/GSAHandRightAHandRight_thumbFingerPhaProx.macro hand0.finger1
-  p3d_read_macro ./SAHandRight/SAHandRight_thumbFingerPhaProx.macro hand0.finger1
+  #p3d_read_macro ./SAHandRight/GSAHandRightAHandRight_thumbFingerPhaProx.macro hand.finger1
+  p3d_read_macro ./SAHandRight/SAHandRight_thumbFingerPhaProx.macro hand.finger1
 
   p3d_beg_desc_jnt P3D_ROTATE #J5
     p3d_set_name fingerJointThumbMid_0
@@ -78,8 +78,8 @@ p3d_beg_desc P3D_ROBOT
     p3d_set_dof_vmin 0
     p3d_set_dof_vmax 75
   p3d_end_desc
-  #p3d_read_macro ./SAHandRight/GSAHandRightAHandRight_thumbFingerPhaMid.macro hand0.finger1
-  p3d_read_macro ./SAHandRight/SAHandRight_thumbFingerPhaMid.macro hand0.finger1
+  #p3d_read_macro ./SAHandRight/GSAHandRightAHandRight_thumbFingerPhaMid.macro hand.finger1
+  p3d_read_macro ./SAHandRight/SAHandRight_thumbFingerPhaMid.macro hand.finger1
 
   p3d_beg_desc_jnt P3D_ROTATE #J6
     p3d_set_name fingerJointThumbDist_0
@@ -89,8 +89,8 @@ p3d_beg_desc P3D_ROBOT
     p3d_set_dof_vmin 0
     p3d_set_dof_vmax 75
   p3d_end_desc
-  #p3d_read_macro ./SAHandRight/GSAHandRightAHandRight_thumbFingerPhaDist.macro hand0.finger1
-  p3d_read_macro ./SAHandRight/SAHandRight_thumbFingerPhaDist.macro hand0.finger1
+  #p3d_read_macro ./SAHandRight/GSAHandRightAHandRight_thumbFingerPhaDist.macro hand.finger1
+  p3d_read_macro ./SAHandRight/SAHandRight_thumbFingerPhaDist.macro hand.finger1
 #########################################################################
 
 
@@ -108,7 +108,7 @@ p3d_beg_desc P3D_ROBOT
     p3d_set_dof_vmin -15
     p3d_set_dof_vmax 15
   p3d_end_desc
-  p3d_read_macro ./SAHandRight/SAHandRight_foreFingerBase.macro hand0.finger2
+  p3d_read_macro ./SAHandRight/SAHandRight_foreFingerBase.macro hand.finger2
 
 
   p3d_beg_desc_jnt P3D_ROTATE #J8
@@ -120,8 +120,8 @@ p3d_beg_desc P3D_ROBOT
     p3d_set_dof_vmin -4
     p3d_set_dof_vmax 75
   p3d_end_desc
-  #p3d_read_macro ./SAHandRight/GSAHandRightAHandRight_foreFingerPhaProx.macro hand0.finger2
-  p3d_read_macro ./SAHandRight/SAHandRight_foreFingerPhaProx.macro hand0.finger2
+  #p3d_read_macro ./SAHandRight/GSAHandRightAHandRight_foreFingerPhaProx.macro hand.finger2
+  p3d_read_macro ./SAHandRight/SAHandRight_foreFingerPhaProx.macro hand.finger2
 
   p3d_beg_desc_jnt P3D_ROTATE #J9
     p3d_set_name fingerJointForeMid_0
@@ -131,8 +131,8 @@ p3d_beg_desc P3D_ROBOT
     p3d_set_dof_vmin 0
     p3d_set_dof_vmax 75
   p3d_end_desc
-  #p3d_read_macro ./SAHandRight/GSAHandRightAHandRight_foreFingerPhaMid.macro hand0.finger2
-  p3d_read_macro ./SAHandRight/SAHandRight_foreFingerPhaMid.macro hand0.finger2
+  #p3d_read_macro ./SAHandRight/GSAHandRightAHandRight_foreFingerPhaMid.macro hand.finger2
+  p3d_read_macro ./SAHandRight/SAHandRight_foreFingerPhaMid.macro hand.finger2
 
  p3d_beg_desc_jnt P3D_ROTATE #J10
     p3d_set_name fingerJointForeDist_0
@@ -142,8 +142,8 @@ p3d_beg_desc P3D_ROBOT
     p3d_set_dof_vmin 0
     p3d_set_dof_vmax 75
   p3d_end_desc
- #p3d_read_macro ./SAHandRight/GSAHandRightAHandRight_foreFingerPhaDist.macro hand0.finger2
- p3d_read_macro ./SAHandRight/SAHandRight_foreFingerPhaDist.macro hand0.finger2
+ #p3d_read_macro ./SAHandRight/GSAHandRightAHandRight_foreFingerPhaDist.macro hand.finger2
+ p3d_read_macro ./SAHandRight/SAHandRight_foreFingerPhaDist.macro hand.finger2
 #########################################################################
 
 
@@ -159,7 +159,7 @@ p3d_beg_desc P3D_ROBOT
     p3d_set_dof_vmin -15
     p3d_set_dof_vmax 15
   p3d_end_desc
- p3d_read_macro ./SAHandRight/SAHandRight_middleFingerBase.macro hand0.finger3
+ p3d_read_macro ./SAHandRight/SAHandRight_middleFingerBase.macro hand.finger3
 
  p3d_beg_desc_jnt P3D_ROTATE #J12
     p3d_set_name fingerJointMiddleProx_0
@@ -170,8 +170,8 @@ p3d_beg_desc P3D_ROBOT
     p3d_set_dof_vmin -4
     p3d_set_dof_vmax 75
   p3d_end_desc
- #p3d_read_macro ./SAHandRight/GSAHandRightAHandRight_middleFingerPhaProx.macro hand0.finger3
- p3d_read_macro ./SAHandRight/SAHandRight_middleFingerPhaProx.macro hand0.finger3
+ #p3d_read_macro ./SAHandRight/GSAHandRightAHandRight_middleFingerPhaProx.macro hand.finger3
+ p3d_read_macro ./SAHandRight/SAHandRight_middleFingerPhaProx.macro hand.finger3
 
  p3d_beg_desc_jnt P3D_ROTATE #J13
     p3d_set_name fingerJointMiddleMid_0
@@ -181,8 +181,8 @@ p3d_beg_desc P3D_ROBOT
     p3d_set_dof_vmin 0
     p3d_set_dof_vmax 75
   p3d_end_desc
- #p3d_read_macro ./SAHandRight/GSAHandRightAHandRight_middleFingerPhaMid.macro hand0.finger3
- p3d_read_macro ./SAHandRight/SAHandRight_middleFingerPhaMid.macro hand0.finger3
+ #p3d_read_macro ./SAHandRight/GSAHandRightAHandRight_middleFingerPhaMid.macro hand.finger3
+ p3d_read_macro ./SAHandRight/SAHandRight_middleFingerPhaMid.macro hand.finger3
 
  p3d_beg_desc_jnt P3D_ROTATE #J14
     p3d_set_name fingerJointMiddleDist_0
@@ -192,8 +192,8 @@ p3d_beg_desc P3D_ROBOT
     p3d_set_dof_vmin 0
     p3d_set_dof_vmax 75
   p3d_end_desc 
- #p3d_read_macro ./SAHandRight/GSAHandRightAHandRight_middleFingerPhaDist.macro hand0.finger3
- p3d_read_macro ./SAHandRight/SAHandRight_middleFingerPhaDist.macro hand0.finger3
+ #p3d_read_macro ./SAHandRight/GSAHandRightAHandRight_middleFingerPhaDist.macro hand.finger3
+ p3d_read_macro ./SAHandRight/SAHandRight_middleFingerPhaDist.macro hand.finger3
 #########################################################################
 
 
@@ -211,7 +211,7 @@ p3d_beg_desc P3D_ROBOT
     p3d_set_dof_vmin -15
     p3d_set_dof_vmax 15
   p3d_end_desc
-  p3d_read_macro ./SAHandRight/SAHandRight_ringFingerBase.macro hand0.finger4
+  p3d_read_macro ./SAHandRight/SAHandRight_ringFingerBase.macro hand.finger4
 
  p3d_beg_desc_jnt P3D_ROTATE #J16
     p3d_set_name fingerJointRingProx_0
@@ -222,8 +222,8 @@ p3d_beg_desc P3D_ROBOT
     p3d_set_dof_vmin -4
     p3d_set_dof_vmax 75
   p3d_end_desc
- #p3d_read_macro ./SAHandRight/GSAHandRightAHandRight_ringFingerPhaProx.macro hand0.finger4
- p3d_read_macro ./SAHandRight/SAHandRight_ringFingerPhaProx.macro hand0.finger4
+ #p3d_read_macro ./SAHandRight/GSAHandRightAHandRight_ringFingerPhaProx.macro hand.finger4
+ p3d_read_macro ./SAHandRight/SAHandRight_ringFingerPhaProx.macro hand.finger4
 
  p3d_beg_desc_jnt P3D_ROTATE #J17
     p3d_set_name fingerJointRingMid_0
@@ -233,8 +233,8 @@ p3d_beg_desc P3D_ROBOT
     p3d_set_dof_vmin 0
     p3d_set_dof_vmax 75
   p3d_end_desc
- #p3d_read_macro ./SAHandRight/GSAHandRightAHandRight_ringFingerPhaMid.macro hand0.finger4
- p3d_read_macro ./SAHandRight/SAHandRight_ringFingerPhaMid.macro hand0.finger4
+ #p3d_read_macro ./SAHandRight/GSAHandRightAHandRight_ringFingerPhaMid.macro hand.finger4
+ p3d_read_macro ./SAHandRight/SAHandRight_ringFingerPhaMid.macro hand.finger4
 
  p3d_beg_desc_jnt P3D_ROTATE #J18
     p3d_set_name fingerJointRingDist_0
@@ -244,8 +244,8 @@ p3d_beg_desc P3D_ROBOT
     p3d_set_dof_vmin 0
     p3d_set_dof_vmax 75
   p3d_end_desc
-  #p3d_read_macro ./SAHandRight/GSAHandRightAHandRight_ringFingerPhaDist.macro hand0.finger4
-  p3d_read_macro ./SAHandRight/SAHandRight_ringFingerPhaDist.macro hand0.finger4
+  #p3d_read_macro ./SAHandRight/GSAHandRightAHandRight_ringFingerPhaDist.macro hand.finger4
+  p3d_read_macro ./SAHandRight/SAHandRight_ringFingerPhaDist.macro hand.finger4
 
 p3d_end_desc
 
@@ -253,24 +253,24 @@ p3d_end_desc
 
 ###############   POSITIONS  ###############
 
-p3d_set_body_abs_pos hand0.palm 0 0 0 90 0 -90
-p3d_set_body_abs_pos hand0.thumbBase 0 0 0 90 0 -90
-p3d_set_body_abs_pos hand0.finger1.base 0 0 0 90 0 -90
-p3d_set_body_abs_pos hand0.finger1.proximalPhalanx  0 0 0 90 0 -90
-p3d_set_body_abs_pos hand0.finger1.middlePhalanx 0 0 0 90 0 -90
-p3d_set_body_abs_pos hand0.finger1.fingertip 0 0 0 90 0 -90
-p3d_set_body_abs_pos hand0.finger2.base 0 0 0 90 0 -90
-p3d_set_body_abs_pos hand0.finger2.proximalPhalanx  0 0 0 90 0 -90
-p3d_set_body_abs_pos hand0.finger2.middlePhalanx 0 0 0 90 0 -90
-p3d_set_body_abs_pos hand0.finger2.fingertip 0 0 0 90 0 -90
-p3d_set_body_abs_pos hand0.finger3.base 0 0 0 90 0 -90
-p3d_set_body_abs_pos hand0.finger3.proximalPhalanx  0 0 0 90 0 -90
-p3d_set_body_abs_pos hand0.finger3.middlePhalanx 0 0 0 90 0 -90
-p3d_set_body_abs_pos hand0.finger3.fingertip 0 0 0 90 0 -90
-p3d_set_body_abs_pos hand0.finger4.base 0 0 0 90 0 -90
-p3d_set_body_abs_pos hand0.finger4.proximalPhalanx  0 0 0 90 0 -90
-p3d_set_body_abs_pos hand0.finger4.middlePhalanx 0 0 0 90 0 -90
-p3d_set_body_abs_pos hand0.finger4.fingertip 0 0 0 90 0 -90
+p3d_set_body_abs_pos hand.palm 0 0 0 90 0 -90
+p3d_set_body_abs_pos hand.thumbBase 0 0 0 90 0 -90
+p3d_set_body_abs_pos hand.finger1.base 0 0 0 90 0 -90
+p3d_set_body_abs_pos hand.finger1.proximalPhalanx  0 0 0 90 0 -90
+p3d_set_body_abs_pos hand.finger1.middlePhalanx 0 0 0 90 0 -90
+p3d_set_body_abs_pos hand.finger1.fingertip 0 0 0 90 0 -90
+p3d_set_body_abs_pos hand.finger2.base 0 0 0 90 0 -90
+p3d_set_body_abs_pos hand.finger2.proximalPhalanx  0 0 0 90 0 -90
+p3d_set_body_abs_pos hand.finger2.middlePhalanx 0 0 0 90 0 -90
+p3d_set_body_abs_pos hand.finger2.fingertip 0 0 0 90 0 -90
+p3d_set_body_abs_pos hand.finger3.base 0 0 0 90 0 -90
+p3d_set_body_abs_pos hand.finger3.proximalPhalanx  0 0 0 90 0 -90
+p3d_set_body_abs_pos hand.finger3.middlePhalanx 0 0 0 90 0 -90
+p3d_set_body_abs_pos hand.finger3.fingertip 0 0 0 90 0 -90
+p3d_set_body_abs_pos hand.finger4.base 0 0 0 90 0 -90
+p3d_set_body_abs_pos hand.finger4.proximalPhalanx  0 0 0 90 0 -90
+p3d_set_body_abs_pos hand.finger4.middlePhalanx 0 0 0 90 0 -90
+p3d_set_body_abs_pos hand.finger4.fingertip 0 0 0 90 0 -90
 
 
 ##################  CONSTRAINTS  ##################  
@@ -284,119 +284,119 @@ p3d_constraint p3d_lin_rel_dofs 1 18 1 17 2 1 0.0 0
 ##################  COLORS  ##################  
 
 #############################  black and green  #############################################
-p3d_set_body_color hand0.palm Any 0.1 0.1 0.1
+p3d_set_body_color hand.palm Any 0.1 0.1 0.1
 
-p3d_set_body_color hand0.thumbBase Any 0.1 0.1 0.1 
-p3d_set_body_color hand0.finger1.base Any 0.1 0.8 0.1
-p3d_set_body_color hand0.finger1.proximalPhalanx Any 0.1 0.1 0.1
-p3d_set_body_color hand0.finger1.middlePhalanx Any 0.1 0.8 0.1
-p3d_set_body_color hand0.finger1.fingertip Any 0.1 0.1 0.1
+p3d_set_body_color hand.thumbBase Any 0.1 0.1 0.1 
+p3d_set_body_color hand.finger1.base Any 0.1 0.8 0.1
+p3d_set_body_color hand.finger1.proximalPhalanx Any 0.1 0.1 0.1
+p3d_set_body_color hand.finger1.middlePhalanx Any 0.1 0.8 0.1
+p3d_set_body_color hand.finger1.fingertip Any 0.1 0.1 0.1
 
-p3d_set_body_color hand0.finger2.base Any 0.1 0.8 0.1
-p3d_set_body_color hand0.finger2.proximalPhalanx Any 0.1 0.1 0.1
-p3d_set_body_color hand0.finger2.middlePhalanx Any 0.1 0.8 0.1
-p3d_set_body_color hand0.finger2.fingertip Any 0.1 0.1 0.1
+p3d_set_body_color hand.finger2.base Any 0.1 0.8 0.1
+p3d_set_body_color hand.finger2.proximalPhalanx Any 0.1 0.1 0.1
+p3d_set_body_color hand.finger2.middlePhalanx Any 0.1 0.8 0.1
+p3d_set_body_color hand.finger2.fingertip Any 0.1 0.1 0.1
 
-p3d_set_body_color hand0.finger3.base Any 0.1 0.8 0.1
-p3d_set_body_color hand0.finger3.proximalPhalanx Any 0.1 0.1 0.1
-p3d_set_body_color hand0.finger3.middlePhalanx Any 0.1 0.8 0.1
-p3d_set_body_color hand0.finger3.fingertip Any 0.1 0.1 0.1
+p3d_set_body_color hand.finger3.base Any 0.1 0.8 0.1
+p3d_set_body_color hand.finger3.proximalPhalanx Any 0.1 0.1 0.1
+p3d_set_body_color hand.finger3.middlePhalanx Any 0.1 0.8 0.1
+p3d_set_body_color hand.finger3.fingertip Any 0.1 0.1 0.1
 
-p3d_set_body_color hand0.finger4.base Any 0.1 0.8 0.1
-p3d_set_body_color hand0.finger4.proximalPhalanx Any 0.1 0.1 0.1
-p3d_set_body_color hand0.finger4.middlePhalanx Any 0.1 0.8 0.1
-p3d_set_body_color hand0.finger4.fingertip Any 0.1 0.1 0.1
+p3d_set_body_color hand.finger4.base Any 0.1 0.8 0.1
+p3d_set_body_color hand.finger4.proximalPhalanx Any 0.1 0.1 0.1
+p3d_set_body_color hand.finger4.middlePhalanx Any 0.1 0.8 0.1
+p3d_set_body_color hand.finger4.fingertip Any 0.1 0.1 0.1
 
 
 #############################  blue, white and red  ##########################################
-p3d_set_body_color hand0.palm Any 0.1 0.1 0.9
+p3d_set_body_color hand.palm Any 0.1 0.1 0.9
 
-p3d_set_body_color hand0.thumbBase Any 0.1 0.1 0.9
-p3d_set_body_color hand0.finger1.base Any 0.9 0.9 0.9
-p3d_set_body_color hand0.finger1.proximalPhalanx Any 0.9 0.9 0.9
-p3d_set_body_color hand0.finger1.middlePhalanx Any 0.9 0.1 0.1
-p3d_set_body_color hand0.finger1.fingertip Any 0.9 0.1 0.1
+p3d_set_body_color hand.thumbBase Any 0.1 0.1 0.9
+p3d_set_body_color hand.finger1.base Any 0.9 0.9 0.9
+p3d_set_body_color hand.finger1.proximalPhalanx Any 0.9 0.9 0.9
+p3d_set_body_color hand.finger1.middlePhalanx Any 0.9 0.1 0.1
+p3d_set_body_color hand.finger1.fingertip Any 0.9 0.1 0.1
 
-p3d_set_body_color hand0.finger2.base Any 0.1 0.1 0.9
-p3d_set_body_color hand0.finger2.proximalPhalanx Any 0.9 0.9 0.9
-p3d_set_body_color hand0.finger2.middlePhalanx Any 0.9 0.1 0.1
-p3d_set_body_color hand0.finger2.fingertip Any 0.9 0.1 0.1
+p3d_set_body_color hand.finger2.base Any 0.1 0.1 0.9
+p3d_set_body_color hand.finger2.proximalPhalanx Any 0.9 0.9 0.9
+p3d_set_body_color hand.finger2.middlePhalanx Any 0.9 0.1 0.1
+p3d_set_body_color hand.finger2.fingertip Any 0.9 0.1 0.1
 
-p3d_set_body_color hand0.finger3.base Any 0.1 0.1 0.9
-p3d_set_body_color hand0.finger3.proximalPhalanx Any 0.9 0.9 0.9
-p3d_set_body_color hand0.finger3.middlePhalanx Any 0.9 0.1 0.1
-p3d_set_body_color hand0.finger3.fingertip Any 0.9 0.1 0.1
+p3d_set_body_color hand.finger3.base Any 0.1 0.1 0.9
+p3d_set_body_color hand.finger3.proximalPhalanx Any 0.9 0.9 0.9
+p3d_set_body_color hand.finger3.middlePhalanx Any 0.9 0.1 0.1
+p3d_set_body_color hand.finger3.fingertip Any 0.9 0.1 0.1
 
-p3d_set_body_color hand0.finger4.base Any 0.1 0.1 0.9
-p3d_set_body_color hand0.finger4.proximalPhalanx Any 0.9 0.9 0.9
-p3d_set_body_color hand0.finger4.middlePhalanx Any 0.9 0.1 0.1
-p3d_set_body_color hand0.finger4.fingertip Any 0.9 0.1 0.1
+p3d_set_body_color hand.finger4.base Any 0.1 0.1 0.9
+p3d_set_body_color hand.finger4.proximalPhalanx Any 0.9 0.9 0.9
+p3d_set_body_color hand.finger4.middlePhalanx Any 0.9 0.1 0.1
+p3d_set_body_color hand.finger4.fingertip Any 0.9 0.1 0.1
 
 #############################  blue and white  #############################################
-p3d_set_body_color hand0.palm Any 0.2 0.5 0.9
+p3d_set_body_color hand.palm Any 0.2 0.5 0.9
 
-p3d_set_body_color hand0.thumbBase Any 0.2 0.5 0.9 
-p3d_set_body_color hand0.finger1.base Any 0.6 0.8 0.9
-p3d_set_body_color hand0.finger1.proximalPhalanx Any 0.2 0.5 0.9 
-p3d_set_body_color hand0.finger1.middlePhalanx Any 0.6 0.8 0.9
-p3d_set_body_color hand0.finger1.fingertip Any 0.2 0.5 0.9 
+p3d_set_body_color hand.thumbBase Any 0.2 0.5 0.9 
+p3d_set_body_color hand.finger1.base Any 0.6 0.8 0.9
+p3d_set_body_color hand.finger1.proximalPhalanx Any 0.2 0.5 0.9 
+p3d_set_body_color hand.finger1.middlePhalanx Any 0.6 0.8 0.9
+p3d_set_body_color hand.finger1.fingertip Any 0.2 0.5 0.9 
 
-p3d_set_body_color hand0.finger2.base Any 0.6 0.8 0.9
-p3d_set_body_color hand0.finger2.proximalPhalanx Any 0.2 0.5 0.9
-p3d_set_body_color hand0.finger2.middlePhalanx Any 0.6 0.8 0.9
-p3d_set_body_color hand0.finger2.fingertip Any 0.2 0.5 0.9
+p3d_set_body_color hand.finger2.base Any 0.6 0.8 0.9
+p3d_set_body_color hand.finger2.proximalPhalanx Any 0.2 0.5 0.9
+p3d_set_body_color hand.finger2.middlePhalanx Any 0.6 0.8 0.9
+p3d_set_body_color hand.finger2.fingertip Any 0.2 0.5 0.9
 
-p3d_set_body_color hand0.finger3.base Any 0.6 0.8 0.9
-p3d_set_body_color hand0.finger3.proximalPhalanx Any 0.2 0.5 0.9
-p3d_set_body_color hand0.finger3.middlePhalanx Any 0.6 0.8 0.9
-p3d_set_body_color hand0.finger3.fingertip Any 0.2 0.5 0.9
+p3d_set_body_color hand.finger3.base Any 0.6 0.8 0.9
+p3d_set_body_color hand.finger3.proximalPhalanx Any 0.2 0.5 0.9
+p3d_set_body_color hand.finger3.middlePhalanx Any 0.6 0.8 0.9
+p3d_set_body_color hand.finger3.fingertip Any 0.2 0.5 0.9
 
-p3d_set_body_color hand0.finger4.base Any 0.6 0.8 0.9
-p3d_set_body_color hand0.finger4.proximalPhalanx Any 0.2 0.5 0.9
-p3d_set_body_color hand0.finger4.middlePhalanx Any 0.6 0.8 0.9
-p3d_set_body_color hand0.finger4.fingertip Any 0.2 0.5 0.9
+p3d_set_body_color hand.finger4.base Any 0.6 0.8 0.9
+p3d_set_body_color hand.finger4.proximalPhalanx Any 0.2 0.5 0.9
+p3d_set_body_color hand.finger4.middlePhalanx Any 0.6 0.8 0.9
+p3d_set_body_color hand.finger4.fingertip Any 0.2 0.5 0.9
 
 
-p3d_mark_as_hand_body hand0.palm
-p3d_set_distance_weight hand0.palm 1
+p3d_mark_as_hand_body hand.palm
+p3d_set_distance_weight hand.palm 1
 
-p3d_mark_as_hand_body hand0.thumbBase
-p3d_set_distance_weight hand0.thumbBase 1
-p3d_mark_as_finger_body hand0.finger1.base
-p3d_set_distance_weight hand0.finger1.base 1
-p3d_mark_as_finger_body hand0.finger1.proximalPhalanx
-p3d_set_distance_weight hand0.finger1.proximalPhalanx 1
-p3d_mark_as_finger_body hand0.finger1.middlePhalanx
-p3d_set_distance_weight hand0.finger1.middlePhalanx 1
-p3d_mark_as_fingertip_body hand0.finger1.fingertip
-p3d_set_distance_weight hand0.finger1.fingertip 1
+p3d_mark_as_hand_body hand.thumbBase
+p3d_set_distance_weight hand.thumbBase 1
+p3d_mark_as_finger_body hand.finger1.base
+p3d_set_distance_weight hand.finger1.base 1
+p3d_mark_as_finger_body hand.finger1.proximalPhalanx
+p3d_set_distance_weight hand.finger1.proximalPhalanx 1
+p3d_mark_as_finger_body hand.finger1.middlePhalanx
+p3d_set_distance_weight hand.finger1.middlePhalanx 1
+p3d_mark_as_fingertip_body hand.finger1.fingertip
+p3d_set_distance_weight hand.finger1.fingertip 1
 
-p3d_mark_as_finger_body hand0.finger2.base
-p3d_set_distance_weight hand0.finger2.base 1
-p3d_mark_as_finger_body hand0.finger2.proximalPhalanx
-p3d_set_distance_weight hand0.finger2.proximalPhalanx 1
-p3d_mark_as_finger_body hand0.finger2.middlePhalanx
-p3d_set_distance_weight hand0.finger2.middlePhalanx 1
-p3d_mark_as_fingertip_body hand0.finger2.fingertip
-p3d_set_distance_weight hand0.finger2.fingertip 1
+p3d_mark_as_finger_body hand.finger2.base
+p3d_set_distance_weight hand.finger2.base 1
+p3d_mark_as_finger_body hand.finger2.proximalPhalanx
+p3d_set_distance_weight hand.finger2.proximalPhalanx 1
+p3d_mark_as_finger_body hand.finger2.middlePhalanx
+p3d_set_distance_weight hand.finger2.middlePhalanx 1
+p3d_mark_as_fingertip_body hand.finger2.fingertip
+p3d_set_distance_weight hand.finger2.fingertip 1
 
-p3d_mark_as_finger_body hand0.finger3.base
-p3d_set_distance_weight hand0.finger3.base 1
-p3d_mark_as_finger_body hand0.finger3.proximalPhalanx
-p3d_set_distance_weight hand0.finger3.proximalPhalanx 1
-p3d_mark_as_finger_body hand0.finger3.middlePhalanx
-p3d_set_distance_weight hand0.finger3.middlePhalanx 1
-p3d_mark_as_fingertip_body hand0.finger3.fingertip
-p3d_set_distance_weight hand0.finger3.fingertip 1
+p3d_mark_as_finger_body hand.finger3.base
+p3d_set_distance_weight hand.finger3.base 1
+p3d_mark_as_finger_body hand.finger3.proximalPhalanx
+p3d_set_distance_weight hand.finger3.proximalPhalanx 1
+p3d_mark_as_finger_body hand.finger3.middlePhalanx
+p3d_set_distance_weight hand.finger3.middlePhalanx 1
+p3d_mark_as_fingertip_body hand.finger3.fingertip
+p3d_set_distance_weight hand.finger3.fingertip 1
 
-p3d_mark_as_finger_body hand0.finger4.base
-p3d_set_distance_weight hand0.finger4.base 1
-p3d_mark_as_finger_body hand0.finger4.proximalPhalanx
-p3d_set_distance_weight hand0.finger4.proximalPhalanx 1
-p3d_mark_as_finger_body hand0.finger4.middlePhalanx
-p3d_set_distance_weight hand0.finger4.middlePhalanx 1
-p3d_mark_as_fingertip_body hand0.finger4.fingertip
-p3d_set_distance_weight hand0.finger4.fingertip 1
+p3d_mark_as_finger_body hand.finger4.base
+p3d_set_distance_weight hand.finger4.base 1
+p3d_mark_as_finger_body hand.finger4.proximalPhalanx
+p3d_set_distance_weight hand.finger4.proximalPhalanx 1
+p3d_mark_as_finger_body hand.finger4.middlePhalanx
+p3d_set_distance_weight hand.finger4.middlePhalanx 1
+p3d_mark_as_fingertip_body hand.finger4.fingertip
+p3d_set_distance_weight hand.finger4.fingertip 1
 
 #p3d_set_finger_joints 2 3 4 5 7 8 9 11 12 13 15 16 17
 #p3d_set_finger1_joints 2 3 4 5
