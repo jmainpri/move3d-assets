@@ -44,8 +44,8 @@ p3d_beg_desc_jnt P3D_ROTATE # J4
   p3d_set_prev_jnt 3
   p3d_set_pos_axe -0.00093 0 1.172125 0 1 0
   p3d_set_dof 0.0
-  p3d_set_dof_vmin -80
-  p3d_set_dof_vmax 30
+  p3d_set_dof_vmin -30
+  p3d_set_dof_vmax 80
 p3d_end_desc
 p3d_read_macro ./pr2Parts/Head/tilt.macro head
 
@@ -136,7 +136,7 @@ p3d_end_desc
 p3d_read_macro ./pr2Parts/Rarm/rarm7.macro rarm
 
 p3d_beg_desc_jnt P3D_ROTATE # J13
-  p3d_set_name fingerJointGripper_1
+  p3d_set_name fingerJointGripper_0
   p3d_set_prev_jnt 12
   p3d_set_pos_axe 0.847911 -0.197993 0.790675 0 0 1
   p3d_set_dof 0.0
@@ -230,7 +230,7 @@ p3d_end_desc
 p3d_read_macro ./pr2Parts/Larm/larm7.macro larm
 
 p3d_beg_desc_jnt P3D_ROTATE # J22
-  p3d_set_name fingerJointGripper_2
+  p3d_set_name fingerJointGripper_1
   p3d_set_prev_jnt 21
   p3d_set_pos_axe 0.847911 0.197993 0.790675 0 0 1
   p3d_set_dof 0.0
