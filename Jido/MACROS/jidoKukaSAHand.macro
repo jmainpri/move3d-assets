@@ -171,8 +171,8 @@ p3d_beg_desc P3D_ROBOT
     p3d_set_prev_jnt 12
     p3d_set_pos_relative
     p3d_set_pos_axe -0.003 0.0271 0  0 0 -1
-    p3d_set_dof_vmin 0
-    p3d_set_dof_vmax 90
+    p3d_set_dof_vmin -1 #0
+    p3d_set_dof_vmax 91 #90
     p3d_set_dof_velocity_max      3.14
     p3d_set_dof_acceleration_max  15.7
     p3d_set_dof_jerk_max          118
@@ -187,8 +187,8 @@ p3d_beg_desc P3D_ROBOT
     # t= [ 0 ; 0.0855 ; -0.10282 ]
     #p3d_set_pos_mat -0.0122170 -0.9999254 0 0    0.5735336 -0.0070074 0.8191520 0.0855   -0.8190909 0.0100076    0.5735764 -0.10282   0 0 0 1
     p3d_set_pos_mat -0.0122170 0.9999254 0 0    0.5735336 0.0070074 -0.8191520 0.0855   -0.8190909 -0.0100076  -0.5735764 -0.10282   0 0 0 1
-    p3d_set_dof_vmin -15
-    p3d_set_dof_vmax  15
+    p3d_set_dof_vmin -16 #-15
+    p3d_set_dof_vmax  16 # 15
     p3d_set_dof_velocity_max      3.14
     p3d_set_dof_acceleration_max  15.7
     p3d_set_dof_jerk_max          118 
@@ -201,8 +201,8 @@ p3d_beg_desc P3D_ROBOT
     p3d_set_pos_relative
     #p3d_set_pos_axe  0 0 0 0 1 0
     p3d_set_pos_axe  0 0 0 0 -1 0
-    p3d_set_dof_vmin -4
-    p3d_set_dof_vmax 75
+    p3d_set_dof_vmin -5 #-4
+    p3d_set_dof_vmax  76 #75
     p3d_set_dof_velocity_max      3.14
     p3d_set_dof_acceleration_max  15.7
     p3d_set_dof_jerk_max          118 
@@ -214,8 +214,8 @@ p3d_beg_desc P3D_ROBOT
     p3d_set_prev_jnt 15
     p3d_set_pos_relative
     p3d_set_pos_axe 0.0678 0 0 0 0 1
-    p3d_set_dof_vmin  0 #4
-    p3d_set_dof_vmax 75
+    p3d_set_dof_vmin  -1 #4
+    p3d_set_dof_vmax 76 #75
     p3d_set_dof_velocity_max      3.14
     p3d_set_dof_acceleration_max  15.7
     p3d_set_dof_jerk_max          118 
@@ -227,8 +227,8 @@ p3d_beg_desc P3D_ROBOT
     p3d_set_prev_jnt 16
     p3d_set_pos_relative
     p3d_set_pos_axe 0.03 0 0  0 0 1
-    p3d_set_dof_vmin  0 #4
-    p3d_set_dof_vmax 75
+    p3d_set_dof_vmin  -1 #4
+    p3d_set_dof_vmax 76 #75
     p3d_set_dof_velocity_max      3.14
     p3d_set_dof_acceleration_max  15.7
     p3d_set_dof_jerk_max          118 
@@ -247,8 +247,8 @@ p3d_beg_desc P3D_ROBOT
     # t= [ -0.003 ; 0.04025 ; 0.15584 ]
     #p3d_set_pos_mat  0 0 -1 -0.003  0.0354751 0.9993706 0 0.04025   0.9993706 -0.0354751 0 0.15584  0 0 0 1
     p3d_set_pos_mat  0 0 1 -0.003  0.0354751 -0.9993706 0 0.04025   0.9993706 0.0354751 0 0.15584  0 0 0 1
-    p3d_set_dof_vmin -15
-    p3d_set_dof_vmax  15
+    p3d_set_dof_vmin -16 #-15
+    p3d_set_dof_vmax  16 #15
     p3d_set_dof_velocity_max      3.14
     p3d_set_dof_acceleration_max  15.7
     p3d_set_dof_jerk_max          118 
@@ -262,8 +262,8 @@ p3d_beg_desc P3D_ROBOT
     p3d_set_pos_relative
     #p3d_set_pos_axe  0 0 0 0 1 0
     p3d_set_pos_axe  0 0 0 0 -1 0
-    p3d_set_dof_vmin -4
-    p3d_set_dof_vmax 75
+    p3d_set_dof_vmin -5 #-4
+    p3d_set_dof_vmax 76 #75
     p3d_set_dof_velocity_max      3.14
     p3d_set_dof_acceleration_max  15.7
     p3d_set_dof_jerk_max          118 
@@ -275,8 +275,8 @@ p3d_beg_desc P3D_ROBOT
     p3d_set_prev_jnt 19
     p3d_set_pos_relative
     p3d_set_pos_axe  0.0678 0 0 0 0 1
-    p3d_set_dof_vmin  0 #4
-    p3d_set_dof_vmax 75
+    p3d_set_dof_vmin  -1 #0
+    p3d_set_dof_vmax 76 #75
     p3d_set_dof_velocity_max      3.14
     p3d_set_dof_acceleration_max  15.7
     p3d_set_dof_jerk_max          118 
@@ -288,8 +288,8 @@ p3d_beg_desc P3D_ROBOT
       p3d_set_prev_jnt 20
       p3d_set_pos_relative
       p3d_set_pos_axe 0.03 0 0  0 0 1
-      p3d_set_dof_vmin  0 #4
-      p3d_set_dof_vmax 75
+      p3d_set_dof_vmin  -1 #0
+      p3d_set_dof_vmax 76 #75
     p3d_set_dof_velocity_max      3.14
     p3d_set_dof_acceleration_max  15.7
     p3d_set_dof_jerk_max          118 
@@ -305,8 +305,8 @@ p3d_beg_desc P3D_ROBOT
       p3d_set_pos_relative
       #p3d_set_pos_axe -0.003 0 0.16056  -1 0 0
       p3d_set_pos_mat  0 0 1 -0.003  0 -1 0 0  1 0 0 0.16056   0 0 0 1
-      p3d_set_dof_vmin -15
-      p3d_set_dof_vmax  15
+      p3d_set_dof_vmin -16 #-15
+      p3d_set_dof_vmax  16 #15
     p3d_set_dof_velocity_max      3.14
     p3d_set_dof_acceleration_max  15.7
     p3d_set_dof_jerk_max          118 
@@ -319,8 +319,8 @@ p3d_beg_desc P3D_ROBOT
       p3d_set_pos_relative
       #p3d_set_pos_axe   0 0 0 0 1 0
       p3d_set_pos_axe   0 0 0 0 -1 0
-      p3d_set_dof_vmin -4
-      p3d_set_dof_vmax 75
+      p3d_set_dof_vmin -5 #-4
+      p3d_set_dof_vmax 76 #75
     p3d_set_dof_velocity_max      3.14
     p3d_set_dof_acceleration_max  15.7
     p3d_set_dof_jerk_max          118 
@@ -332,8 +332,8 @@ p3d_beg_desc P3D_ROBOT
       p3d_set_prev_jnt 23
       p3d_set_pos_relative
       p3d_set_pos_axe   0.0678 0 0 0 0 1
-      p3d_set_dof_vmin   0 #4
-      p3d_set_dof_vmax 75
+      p3d_set_dof_vmin   -1 #0
+      p3d_set_dof_vmax 76 #75
     p3d_set_dof_velocity_max      3.14
     p3d_set_dof_acceleration_max  15.7
     p3d_set_dof_jerk_max          118 
@@ -345,8 +345,8 @@ p3d_beg_desc P3D_ROBOT
       p3d_set_prev_jnt 24
       p3d_set_pos_relative
       p3d_set_pos_axe 0.03 0 0  0 0 1
-      p3d_set_dof_vmin   0 #4
-      p3d_set_dof_vmax 75
+      p3d_set_dof_vmin   -1 #0
+      p3d_set_dof_vmax 76 #75
     p3d_set_dof_velocity_max      3.14
     p3d_set_dof_acceleration_max  15.7
     p3d_set_dof_jerk_max          118 
@@ -366,8 +366,8 @@ p3d_beg_desc P3D_ROBOT
     # t= [ -0.003 ; -0.04025 ; 0.15584 ]
     #p3d_set_pos_mat 0 0 -1 -0.003  -0.0343239 0.9994108 0 -0.04025   0.9994108 0.0343239 0 0.15584   0 0 0 1
     p3d_set_pos_mat 0 0 1 -0.003  -0.0343239 -0.9994108 0 -0.04025   0.9994108 -0.0343239 0 0.15584   0 0 0 1
-    p3d_set_dof_vmin -15
-    p3d_set_dof_vmax  15
+    p3d_set_dof_vmin -16 #-15
+    p3d_set_dof_vmax  16 #15
     p3d_set_dof_velocity_max      3.14
     p3d_set_dof_acceleration_max  15.7
     p3d_set_dof_jerk_max          118 
@@ -380,8 +380,8 @@ p3d_beg_desc P3D_ROBOT
     p3d_set_pos_relative
     #p3d_set_pos_axe   0 0 0 0 1 0
     p3d_set_pos_axe   0 0 0 0 -1 0
-    p3d_set_dof_vmin -4
-    p3d_set_dof_vmax 75
+    p3d_set_dof_vmin -5 #-4
+    p3d_set_dof_vmax 76 #75
     p3d_set_dof_velocity_max      3.14
     p3d_set_dof_acceleration_max  15.7
     p3d_set_dof_jerk_max          118 
@@ -393,8 +393,8 @@ p3d_beg_desc P3D_ROBOT
     p3d_set_prev_jnt 27
     p3d_set_pos_relative
     p3d_set_pos_axe  0.0678 0 0 0 0 1
-    p3d_set_dof_vmin   0 #4
-    p3d_set_dof_vmax 75
+    p3d_set_dof_vmin   -1 #0
+    p3d_set_dof_vmax 76 #75
     p3d_set_dof_velocity_max      3.14
     p3d_set_dof_acceleration_max  15.7
     p3d_set_dof_jerk_max          118 
@@ -406,8 +406,8 @@ p3d_beg_desc P3D_ROBOT
       p3d_set_prev_jnt 28
       p3d_set_pos_relative
       p3d_set_pos_axe 0.03 0 0  0 0 1
-      p3d_set_dof_vmin   0 #4
-      p3d_set_dof_vmax 75
+      p3d_set_dof_vmin  -1 #0
+      p3d_set_dof_vmax 76 #75
     p3d_set_dof_velocity_max      3.14
     p3d_set_dof_acceleration_max  15.7
     p3d_set_dof_jerk_max          118 
