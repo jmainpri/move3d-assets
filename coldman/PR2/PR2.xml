@@ -1,0 +1,632 @@
+<!-- Exported from Move3D 
+ creation date: Thu Feb 17 12:09:44 2011
+ -->
+
+<robot name="PR2">
+<name> PR2 </name>
+<models_directory> ./PR2 </models_directory>
+
+<joint name="platformJoint">
+	<name> platformJoint </name>
+	<type> base </type>
+	<qmin> -1.000000 -1.000000 </qmin>
+	<qmax> 1.000000 1.000000 </qmax>
+	<body name="Gbase">
+	 <name> Gbase </name>
+	 <file> Gbase.obj </file>
+	 <display> no </display>
+	 <color> 1.0 1.0 0.0  1.0 </color>
+	</body>
+	<body name="base">
+	 <name> base </name>
+	 <file> base.obj </file>
+	 <collision> no </collision>
+	 <color> 1.000000 1.000000 1.000000 1.000000 </color>
+	</body>
+	<body name="lbwheel">
+	 <name> lbwheel </name>
+	 <file> lbwheel.obj </file>
+	 <collision> no </collision>
+	 <color> 0.000000 0.000000 0.000000 1.000000 </color>
+	</body>
+	<body name="lfwheel">
+	 <name> lfwheel </name>
+	 <file> lfwheel.obj </file>
+	 <collision> no </collision>
+	 <color> 0.000000 0.000000 0.000000 1.000000 </color>
+	</body>
+	<body name="rbwheel">
+	 <name> rbwheel </name>
+	 <file> rbwheel.obj </file>
+	 <collision> no </collision>
+	 <color> 0.000000 0.000000 0.000000 1.000000 </color>
+	</body>
+	<body name="rfwheel">
+	 <name> rfwheel </name>
+	 <file> rfwheel.obj </file>
+	 <collision> no </collision>
+	 <color> 0.000000 0.000000 0.000000 1.000000 </color>
+	</body>
+
+		<joint name="Torso">
+			<name> Torso </name>
+			<type> prismatic </type>
+			<qmin> 0.000000 </qmin>
+			<qmax> 0.310000 </qmax>
+			<transformation>
+			<ht_matrix> 
+			 1.000000 0.000000 0.000000 -0.049998 
+			 0.000000 1.000000 0.000000 0.000000 
+			 0.000000 0.000000 1.000000 0.790675 
+			</ht_matrix>
+			</transformation>
+			<body name="Gtorso">
+			 <name> Gtorso </name>
+			 <file> Gtorso.obj </file>
+			 <display> no </display>
+			 <color> 1.0 1.0 0.0  1.0 </color>
+			</body>
+			<body name="torso">
+			 <name> torso </name>
+			 <file> torso.obj </file>
+			 <collision> no </collision>
+			 <color> 1.000000 1.000000 1.000000 1.000000 </color>
+			</body>
+
+				<joint name="left-Arm1">
+					<name> left-Arm1 </name>
+					<type> revolute </type>
+					<qmin> -41.000000 </qmin>
+					<qmax> 131.000000 </qmax>
+					<transformation>
+					<ht_matrix> 
+					 1.000000 0.000000 0.000000 0.000001 
+					 0.000000 1.000000 0.000000 0.187994 
+					 0.000000 0.000000 1.000000 0.000000 
+					</ht_matrix>
+					</transformation>
+					<body name="Glarm1">
+					 <name> Glarm1 </name>
+					 <file> Glarm1.obj </file>
+					 <display> no </display>
+					 <color> 1.0 1.0 0.0  1.0 </color>
+					</body>
+					<body name="larm1">
+					 <name> larm1 </name>
+					 <file> larm1.obj </file>
+					 <collision> no </collision>
+					 <color> 0.800000 0.800000 0.800000 1.000000 </color>
+					</body>
+
+						<joint name="left-Arm2">
+							<name> left-Arm2 </name>
+							<type> revolute </type>
+							<qmin> -30.000000 </qmin>
+							<qmax> 80.000000 </qmax>
+							<transformation>
+							<ht_matrix> 
+							 1.000000 0.000000 0.000000 0.099998 
+							 0.000000 0.000000 1.000000 -0.000001 
+							 0.000000 -1.000000 0.000000 0.000000 
+							</ht_matrix>
+							</transformation>
+							<body name="Glarm2">
+							 <name> Glarm2 </name>
+							 <file> Glarm2.obj </file>
+							 <display> no </display>
+							 <color> 1.0 1.0 0.0  1.0 </color>
+							</body>
+							<body name="larm2">
+							 <name> larm2 </name>
+							 <file> larm2.obj </file>
+							 <collision> no </collision>
+							 <color> 0.335611 0.335611 0.335611 1.000000 </color>
+							</body>
+
+								<joint name="left-Arm3">
+									<name> left-Arm3 </name>
+									<type> revolute </type>
+									<qmin> -45.000000 </qmin>
+									<qmax> 223.000000 </qmax>
+									<transformation>
+									<ht_matrix> 
+									 0.000000 0.000000 1.000000 0.000000 
+									 1.000000 0.000000 -0.000000 0.000000 
+									 -0.000000 1.000000 0.000000 -0.000000 
+									</ht_matrix>
+									</transformation>
+									<body name="Glarm3">
+									 <name> Glarm3 </name>
+									 <file> Glarm3.obj </file>
+									 <display> no </display>
+									 <color> 1.0 1.0 0.0  1.0 </color>
+									</body>
+									<body name="larm3">
+									 <name> larm3 </name>
+									 <file> larm3.obj </file>
+									 <collision> no </collision>
+									 <color> 0.600000 0.600000 0.600000 1.000000 </color>
+									</body>
+
+										<joint name="left-Arm4">
+											<name> left-Arm4 </name>
+											<type> revolute </type>
+											<qmin> -133.000000 </qmin>
+											<qmax> 0.000000 </qmax>
+											<transformation>
+											<ht_matrix> 
+											 0.000000 1.000000 -0.000000 0.000000 
+											 0.000000 0.000000 1.000000 0.000000 
+											 1.000000 -0.000000 0.000000 0.400000 
+											</ht_matrix>
+											</transformation>
+											<body name="Glarm4">
+											 <name> Glarm4 </name>
+											 <file> Glarm4.obj </file>
+											 <display> no </display>
+											 <color> 1.0 1.0 0.0  1.0 </color>
+											</body>
+											<body name="larm4">
+											 <name> larm4 </name>
+											 <file> larm4.obj </file>
+											 <collision> no </collision>
+											 <color> 0.600000 0.600000 0.600000 1.000000 </color>
+											</body>
+
+												<joint name="left-Arm5">
+													<name> left-Arm5 </name>
+													<type> revolute </type>
+													<qmin> -45.000000 </qmin>
+													<qmax> 223.000000 </qmax>
+													<transformation>
+													<ht_matrix> 
+													 0.000000 0.000000 1.000000 0.000000 
+													 1.000000 0.000000 -0.000000 0.000000 
+													 -0.000000 1.000000 0.000000 -0.000000 
+													</ht_matrix>
+													</transformation>
+													<body name="Glarm5">
+													 <name> Glarm5 </name>
+													 <file> Glarm5.obj </file>
+													 <display> no </display>
+													 <color> 1.0 1.0 0.0  1.0 </color>
+													</body>
+													<body name="larm5">
+													 <name> larm5 </name>
+													 <file> larm5.obj </file>
+													 <collision> no </collision>
+													 <color> 0.600000 0.600000 0.600000 1.000000 </color>
+													</body>
+
+														<joint name="left-Arm6">
+															<name> left-Arm6 </name>
+															<type> revolute </type>
+															<qmin> -119.000000 </qmin>
+															<qmax> 0.000000 </qmax>
+															<transformation>
+															<ht_matrix> 
+															 0.000000 1.000000 -0.000000 0.000000 
+															 0.000000 0.000000 1.000000 0.000000 
+															 1.000000 -0.000000 0.000000 0.321000 
+															</ht_matrix>
+															</transformation>
+															<body name="larm6">
+															 <name> larm6 </name>
+															 <file> larm6.obj </file>
+															 <collision> no </collision>
+															 <color> 0.600000 0.600000 0.600000 1.000000 </color>
+															</body>
+
+																<joint name="left-Arm7">
+																	<name> left-Arm7 </name>
+																	<type> revolute </type>
+																	<qmin> -180.000000 </qmin>
+																	<qmax> 180.000000 </qmax>
+																	<transformation>
+																	<ht_matrix> 
+																	 0.000000 0.000000 1.000000 0.000000 
+																	 1.000000 0.000000 -0.000000 0.000000 
+																	 -0.000000 1.000000 0.000000 -0.000000 
+																	</ht_matrix>
+																	</transformation>
+																	<body name="Glarm7">
+																	 <name> Glarm7 </name>
+																	 <file> Glarm7.obj </file>
+																	 <display> no </display>
+																	 <color> 1.0 1.0 0.0  1.0 </color>
+																	</body>
+																	<body name="larm7">
+																	 <name> larm7 </name>
+																	 <file> larm7.obj </file>
+																	 <collision> no </collision>
+																	 <color> 0.600000 0.600000 0.600000 1.000000 </color>
+																	</body>
+
+																		<joint name="rPalm">
+																			<name> rPalm </name>
+																			<type> revolute </type> <!--fixed-->
+																			<qmin> 0 </qmin>
+																			<qmax> 0 </qmax>
+																			<transformation>
+																			<ht_matrix> 
+																			 0.000000 0.000000 -1.000000 0.000000 
+																			 0.000000 1.000000 0.000000 0.000000 
+																			 1.000000 0.000000 0.000000 0.180000 
+																			</ht_matrix>
+																			</transformation>
+																		</joint> <!--rPalm-->
+
+																		<joint name="left-grip2">
+																			<name> left-grip2 </name>
+																			<type> revolute </type>
+																			<qmin> 0.000000 </qmin>
+																			<qmax> 31.398100 </qmax>
+																			<transformation>
+																			<ht_matrix> 
+																			 0.000000 0.000000 1.000000 0.000000 
+																			 0.000000 1.000000 0.000000 -0.010000 
+																			 -1.000000 0.000000 0.000000 0.076910 
+																			</ht_matrix>
+																			</transformation>
+																			<body name="larm9">
+																			 <name> larm9 </name>
+																			 <file> larm9.obj </file>
+																			 <color> 0.900000 0.900000 0.900000 1.000000 </color>
+																			</body>
+																		</joint> left-grip2
+
+																		<joint name="fingerJointGripper_1">
+																			<name> fingerJointGripper_1 </name>
+																			<type> revolute </type>
+																			<qmin> 0.000000 </qmin>
+																			<qmax> 31.398100 </qmax>
+																			<transformation>
+																			<ht_matrix> 
+																			 0.000000 0.000000 -1.000000 0.000000 
+																			 0.000000 1.000000 0.000000 0.010000 
+																			 1.000000 0.000000 0.000000 0.076910 
+																			</ht_matrix>
+																			</transformation>
+																			<body name="larm8">
+																			 <name> larm8 </name>
+																			 <file> larm8.obj </file>
+																			 <color> 0.900000 0.900000 0.900000 1.000000 </color>
+																			</body>
+																		</joint> fingerJointGripper_1
+																</joint> <!--left-Arm7-->
+														</joint> <!--left-Arm6-->
+												</joint> <!--left-Arm5-->
+										</joint> <!--left-Arm4-->
+								</joint> <!--left-Arm3-->
+						</joint> <!--left-Arm2-->
+				</joint> <!--left-Arm1-->
+
+				<joint name="right-Arm1">
+					<name> right-Arm1 </name>
+					<type> revolute </type>
+					<qmin> -131.000000 </qmin>
+					<qmax> 41.000000 </qmax>
+					<transformation>
+					<ht_matrix> 
+					 1.000000 0.000000 0.000000 0.000001 
+					 0.000000 1.000000 0.000000 -0.187994 
+					 0.000000 0.000000 1.000000 0.000000 
+					</ht_matrix>
+					</transformation>
+					<body name="Grarm1">
+					 <name> Grarm1 </name>
+					 <file> Grarm1.obj </file>
+					 <display> no </display>
+					 <color> 1.0 1.0 0.0  1.0 </color>
+					</body>
+					<body name="rarm1">
+					 <name> rarm1 </name>
+					 <file> rarm1.obj </file>
+					 <collision> no </collision>
+					 <color> 0.800000 0.800000 0.800000 1.000000 </color>
+					</body>
+
+						<joint name="right-Arm2">
+							<name> right-Arm2 </name>
+							<type> revolute </type>
+							<qmin> -30.000000 </qmin>
+							<qmax> 80.000000 </qmax>
+							<transformation>
+							<ht_matrix> 
+							 1.000000 0.000000 0.000000 0.099998 
+							 0.000000 0.000000 1.000000 0.000001 
+							 0.000000 -1.000000 0.000000 0.000000 
+							</ht_matrix>
+							</transformation>
+							<body name="Grarm2">
+							 <name> Grarm2 </name>
+							 <file> Grarm2.obj </file>
+							 <display> no </display>
+							 <color> 1.0 1.0 0.0  1.0 </color>
+							</body>
+							<body name="rarm2">
+							 <name> rarm2 </name>
+							 <file> rarm2.obj </file>
+							 <collision> no </collision>
+							 <color> 0.335611 0.335611 0.335611 1.000000 </color>
+							</body>
+
+								<joint name="right-Arm3">
+									<name> right-Arm3 </name>
+									<type> revolute </type>
+									<qmin> -223.000000 </qmin>
+									<qmax> 45.000000 </qmax>
+									<transformation>
+									<ht_matrix> 
+									 0.000000 0.000000 1.000000 0.000000 
+									 1.000000 0.000000 -0.000000 -0.000000 
+									 -0.000000 1.000000 0.000000 -0.000000 
+									</ht_matrix>
+									</transformation>
+									<body name="Grarm3">
+									 <name> Grarm3 </name>
+									 <file> Grarm3.obj </file>
+									 <display> no </display>
+									 <color> 1.0 1.0 0.0  1.0 </color>
+									</body>
+									<body name="rarm3">
+									 <name> rarm3 </name>
+									 <file> rarm3.obj </file>
+									 <collision> no </collision>
+									 <color> 0.600000 0.600000 0.600000 1.000000 </color>
+									</body>
+
+										<joint name="right-Arm4">
+											<name> right-Arm4 </name>
+											<type> revolute </type>
+											<qmin> -133.000000 </qmin>
+											<qmax> 0.000000 </qmax>
+											<transformation>
+											<ht_matrix> 
+											 0.000000 1.000000 -0.000000 0.000000 
+											 0.000000 0.000000 1.000000 0.000000 
+											 1.000000 -0.000000 0.000000 0.400000 
+											</ht_matrix>
+											</transformation>
+											<body name="Grarm4">
+											 <name> Grarm4 </name>
+											 <file> Grarm4.obj </file>
+											 <display> no </display>
+											 <color> 1.0 1.0 0.0  1.0 </color>
+											</body>
+											<body name="rarm4">
+											 <name> rarm4 </name>
+											 <file> rarm4.obj </file>
+											 <collision> no </collision>
+											 <color> 0.600000 0.600000 0.600000 1.000000 </color>
+											</body>
+
+												<joint name="right-Arm5">
+													<name> right-Arm5 </name>
+													<type> revolute </type>
+													<qmin> -223.000000 </qmin>
+													<qmax> 45.000000 </qmax>
+													<transformation>
+													<ht_matrix> 
+													 0.000000 0.000000 1.000000 0.000000 
+													 1.000000 0.000000 -0.000000 -0.000000 
+													 -0.000000 1.000000 0.000000 -0.000000 
+													</ht_matrix>
+													</transformation>
+													<body name="Grarm5">
+													 <name> Grarm5 </name>
+													 <file> Grarm5.obj </file>
+													 <display> no </display>
+													 <color> 1.0 1.0 0.0  1.0 </color>
+													</body>
+													<body name="rarm5">
+													 <name> rarm5 </name>
+													 <file> rarm5.obj </file>
+													 <collision> no </collision>
+													 <color> 0.600000 0.600000 0.600000 1.000000 </color>
+													</body>
+
+														<joint name="right-Arm6">
+															<name> right-Arm6 </name>
+															<type> revolute </type>
+															<qmin> -119.000000 </qmin>
+															<qmax> 0.000000 </qmax>
+															<transformation>
+															<ht_matrix> 
+															 0.000000 1.000000 -0.000000 0.000000 
+															 0.000000 0.000000 1.000000 0.000000 
+															 1.000000 -0.000000 0.000000 0.321000 
+															</ht_matrix>
+															</transformation>
+															<body name="rarm6">
+															 <name> rarm6 </name>
+															 <file> rarm6.obj </file>
+															 <collision> no </collision>
+															 <color> 0.600000 0.600000 0.600000 1.000000 </color>
+															</body>
+
+																<joint name="right-Arm7">
+																	<name> right-Arm7 </name>
+																	<type> revolute </type>
+																	<qmin> -180.000000 </qmin>
+																	<qmax> 180.000000 </qmax>
+																	<transformation>
+																	<ht_matrix> 
+																	 0.000000 0.000000 1.000000 0.000000 
+																	 1.000000 0.000000 -0.000000 -0.000000 
+																	 -0.000000 1.000000 0.000000 -0.000000 
+																	</ht_matrix>
+																	</transformation>
+																	<body name="Grarm7">
+																	 <name> Grarm7 </name>
+																	 <file> Grarm7.obj </file>
+																	 <display> no </display>
+																	 <color> 1.0 1.0 0.0  1.0 </color>
+																	</body>
+																	<body name="rarm7">
+																	 <name> rarm7 </name>
+																	 <file> rarm7.obj </file>
+																	 <collision> no </collision>
+																	 <color> 0.600000 0.600000 0.600000 1.000000 </color>
+																	</body>
+
+																		<joint name="lPalm">
+																			<name> lPalm </name>
+																			<type> revolute </type> <!--fixed-->
+																			<qmin> 0 </qmin>
+																			<qmax> 0 </qmax>
+																			<transformation>
+																			<ht_matrix> 
+																			 0.000000 0.000000 -1.000000 0.000000 
+																			 0.000000 1.000000 0.000000 0.000000 
+																			 1.000000 0.000000 0.000000 0.180000 
+																			</ht_matrix>
+																			</transformation>
+																		</joint> <!--lPalm-->
+
+																		<joint name="right-grip2">
+																			<name> right-grip2 </name>
+																			<type> revolute </type>
+																			<qmin> 0.000000 </qmin>
+																			<qmax> 31.398100 </qmax>
+																			<transformation>
+																			<ht_matrix> 
+																			 0.000000 0.000000 1.000000 0.000000 
+																			 0.000000 1.000000 0.000000 0.010000 
+																			 -1.000000 0.000000 0.000000 0.076910 
+																			</ht_matrix>
+																			</transformation>
+																			<body name="rarm9">
+																			 <name> rarm9 </name>
+																			 <file> rarm9.obj </file>
+																			 <color> 0.900000 0.900000 0.900000 1.000000 </color>
+																			</body>
+																		</joint> right-grip2
+
+																		<joint name="fingerJointGripper_0">
+																			<name> fingerJointGripper_0 </name>
+																			<type> revolute </type>
+																			<qmin> 0.000000 </qmin>
+																			<qmax> 31.398100 </qmax>
+																			<transformation>
+																			<ht_matrix> 
+																			 0.000000 0.000000 -1.000000 0.000000 
+																			 0.000000 1.000000 0.000000 -0.010000 
+																			 1.000000 0.000000 0.000000 0.076910 
+																			</ht_matrix>
+																			</transformation>
+																			<body name="rarm8">
+																			 <name> rarm8 </name>
+																			 <file> rarm8.obj </file>
+																			 <color> 0.900000 0.900000 0.900000 1.000000 </color>
+																			</body>
+																		</joint> fingerJointGripper_0
+																</joint> <!--right-Arm7-->
+														</joint> <!--right-Arm6-->
+												</joint> <!--right-Arm5-->
+										</joint> <!--right-Arm4-->
+								</joint> <!--right-Arm3-->
+						</joint> <!--right-Arm2-->
+				</joint> <!--right-Arm1-->
+
+				<joint name="laser-jnt">
+					<name> laser-jnt </name>
+					<type> revolute </type>
+					<qmin> -45.000000 </qmin>
+					<qmax> 85.000000 </qmax>
+					<transformation>
+					<ht_matrix> 
+					 1.000000 0.000000 0.000000 0.098929 
+					 0.000000 0.000000 1.000000 0.000005 
+					 0.000000 -1.000000 0.000000 0.226999 
+					</ht_matrix>
+					</transformation>
+					<body name="Glaser">
+					 <name> Glaser </name>
+					 <file> Glaser.obj </file>
+					 <display> no </display>
+					 <color> 1.0 1.0 0.0  1.0 </color>
+					</body>
+					<body name="laser">
+					 <name> laser </name>
+					 <file> laser.obj </file>
+					 <collision> no </collision>
+					 <color> 0.300000 0.300000 0.300000 1.000000 </color>
+					</body>
+				</joint> laser-jnt
+
+				<joint name="pan_cam">
+					<name> pan_cam </name>
+					<type> revolute </type>
+					<qmin> -172.288000 </qmin>
+					<qmax> 172.288000 </qmax>
+					<transformation>
+					<ht_matrix> 
+					 1.000000 0.000000 0.000000 -0.017070 
+					 0.000000 1.000000 0.000000 0.000000 
+					 0.000000 0.000000 1.000000 0.381450 
+					</ht_matrix>
+					</transformation>
+					<body name="Gpan">
+					 <name> Gpan </name>
+					 <file> Gpan.obj </file>
+					 <display> no </display>
+					 <color> 1.0 1.0 0.0  1.0 </color>
+					</body>
+					<body name="pan">
+					 <name> pan </name>
+					 <file> pan.obj </file>
+					 <collision> no </collision>
+					 <color> 1.000000 1.000000 1.000000 1.000000 </color>
+					</body>
+
+						<joint name="tilt_cam">
+							<name> tilt_cam </name>
+							<type> revolute </type>
+							<qmin> -30.000000 </qmin>
+							<qmax> 80.000000 </qmax>
+							<transformation>
+							<ht_matrix> 
+							 1.000000 0.000000 0.000000 0.066138 
+							 0.000000 0.000000 1.000000 0.000000 
+							 0.000000 -1.000000 0.000000 0.000000 
+							</ht_matrix>
+							</transformation>
+							<body name="Gtilt">
+							 <name> Gtilt </name>
+							 <file> Gtilt.obj </file>
+							 <display> no </display>
+							 <color> 1.0 1.0 0.0  1.0 </color>
+							</body>
+							<body name="tilt">
+							 <name> tilt </name>
+							 <file> tilt.obj </file>
+							 <collision> no </collision>
+							 <color> 0.648314 0.621293 0.769379 1.000000 </color>
+							</body>
+						</joint> <!--tilt_cam-->
+				</joint> <!--pan_cam-->
+		</joint> <!--Torso-->
+</joint> <!--platformJoint-->
+
+<constraint>
+<type> linear </type>
+<master> left-grip2 </master>
+<slave> fingerJointGripper_1 </slave>
+<master_dof> 0 </master_dof>
+<slave_dof> 0 </slave_dof>
+<parameters> 1 0 </parameters>
+</constraint>
+
+<constraint>
+<type> linear </type>
+<master> right-grip2 </master>
+<slave> fingerJointGripper_0 </slave>
+<master_dof> 0 </master_dof>
+<slave_dof> 0 </slave_dof>
+<parameters> 1 0 </parameters>
+</constraint>
+
+
+
+</robot>
