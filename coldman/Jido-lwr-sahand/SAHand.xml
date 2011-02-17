@@ -14,18 +14,18 @@
     <name> palmRight </name> 
     <file>  palmRight.obj  </file> 
     <display> yes </display> 
-    <collision>  no </collision>
+    <collision>  yes </collision>
     <color>  0.86 0.87 0.858 1.0 </color> 
     <texture> none </texture>
     </body>
 
        <body name="GpalmRight">
     <name> GpalmRight  </name> 
-    <box>  0.1 0.2  0.25  </box>
+    <box>  0.08 0.15  0.2  </box>
     <transformation>
       <translation> 0 0 0.125 </translation>  
     </transformation>  
-    <collision>  yes  </collision>
+    <collision>  no  </collision>
     <display>  no  </display>
     <color>  1.0 1.0 0.0 1.0 </color> 
   </body> 
@@ -45,7 +45,7 @@
         <name> thumbBaseRight </name> 
         <file>  thumbBaseRight.obj  </file> 
         <display> yes </display>
-    <collision>  no </collision>
+    <collision>  yes </collision>
         <color>  0.86 0.87 0.858 1.0 </color> 
         <texture> none </texture>
         <material> plastic </material> 
@@ -67,7 +67,7 @@
        <name> thumbFingerBaseRight </name> 
        <file>  fingerBase.obj  </file>
        <display> yes </display>
-    <collision>  no </collision>
+    <collision>  yes </collision>
        <color>  0.86 0.87 0.858 1.0 </color>  
        <texture> none </texture>
        <material> plastic </material> 
@@ -87,7 +87,7 @@
         <name> thumbFingerPhaProxRight </name> 
         <file>  fingerPhaProx.obj  </file>
         <display> yes </display>
-    <collision>  no </collision>
+    <collision>  yes </collision>
         <color>  0.86 0.87 0.858 1.0 </color> 
         <texture> none </texture>
         <material> plastic </material> 
@@ -105,7 +105,7 @@
           <name> thumbFingerPhaMidRight </name> 
           <file>  fingerPhaMid.obj  </file>
           <display> yes </display>
-    <collision>  no </collision>
+    <collision>  yes </collision>
           <color>  0.86 0.87 0.858 1.0 </color>  
           <texture> none </texture>
           <material> plastic </material> 
@@ -123,7 +123,7 @@
         <name> thumbFingerPhaDistRight </name> 
         <file>  fingerPhaDist.obj  </file>
         <display> yes </display>
-    <collision>  no </collision>
+    <collision>  yes </collision>
         <color>  0.86 0.87 0.858 1.0 </color> 
         <texture> none </texture>
         <material> plastic </material> 
@@ -149,7 +149,7 @@
         <name> foreFingerBaseRight </name> 
         <file> fingerBase.obj  </file>
         <display> yes </display>
-    <collision>  no </collision>
+    <collision>  yes </collision>
         <color>  0.86 0.87 0.858 1.0 </color>  
         <texture> none </texture>
         <material> plastic </material> 
@@ -169,7 +169,7 @@
           <name> foreFingerPhaProxRight </name> 
           <file> fingerPhaProx.obj  </file>
           <display> yes </display>
-    <collision>  no </collision>
+    <collision>  yes </collision>
           <color>  0.86 0.87 0.858 1.0 </color>  
           <texture> none </texture>
           <material> plastic </material> 
@@ -189,7 +189,7 @@
             <name> foreFingerPhaMidRight </name> 
             <file> fingerPhaMid.obj  </file>
             <display> yes </display>
-    <collision>  no </collision>
+    <collision>  yes </collision>
             <color>  0.86 0.87 0.858 1.0 </color>   
             <texture> none </texture>
             <material> plastic </material> 
@@ -209,7 +209,7 @@
               <name> foreFingerPhaDistRight </name> 
               <file> fingerPhaDist.obj  </file>
               <display> yes </display>
-    <collision>  no </collision>
+    <collision>  yes </collision>
               <color>  0.86 0.87 0.858 1.0 </color> 
               <texture> none </texture>
               <material> plastic </material> 
@@ -236,7 +236,7 @@
           <name> middleFingerBaseRight </name> 
           <file> fingerBase.obj  </file>
           <display> yes </display>
-    <collision>  no </collision>
+    <collision>  yes </collision>
           <color>  0.86 0.87 0.858 1.0 </color>  
           <texture> none </texture>
           <material> plastic </material>   
@@ -255,7 +255,7 @@
             <name> middleFingerPhaProxRight </name> 
             <file> fingerPhaProx.obj  </file>
             <display> yes </display>
-    <collision>  no </collision>
+    <collision>  yes </collision>
             <color>  0.86 0.87 0.858 1.0 </color> 
             <texture> none </texture>
             <material> plastic </material> 
@@ -274,7 +274,7 @@
               <name> middleFingerPhaMidRight </name> 
               <file> fingerPhaMid.obj  </file>
               <display> yes </display>
-    <collision>  no </collision>
+    <collision>  yes </collision>
               <color>  0.86 0.87 0.858 1.0 </color>  
               <texture> none </texture>
               <material> plastic </material> 
@@ -293,7 +293,7 @@
                 <name> middleFingerPhaDistRight </name> 
                 <file> fingerPhaDist.obj  </file>
                 <display> yes </display>
-    <collision>  no </collision>
+    <collision>  yes </collision>
                 <color>  0.86 0.87 0.858 1.0 </color> 
                 <texture> none </texture>
                 <material> plastic </material> 
@@ -320,7 +320,7 @@
           <name> ringFingerBaseRight </name> 
           <file> fingerBase.obj  </file>
           <display> yes </display>
-    <collision>  no </collision>
+    <collision>  yes </collision>
           <color>  0.86 0.87 0.858 1.0 </color>  
           <texture> none </texture>
           <material> plastic </material> 
@@ -339,7 +339,7 @@
             <name> ringFingerPhaProxRight </name> 
             <file> fingerPhaProx.obj  </file>
             <display> yes </display>
-    <collision>  no </collision>
+    <collision>  yes </collision>
             <color>  0.86 0.87 0.858 1.0 </color> 
             <texture> none </texture>
             <material> plastic </material> 
@@ -358,7 +358,7 @@
               <name> ringFingerPhaMidRight </name> 
               <file>  fingerPhaMid.obj  </file>
               <display> yes </display>
-    <collision>  no </collision>
+    <collision>  yes </collision>
               <color>  0.86 0.87 0.858 1.0 </color>  
               <texture> none </texture>
               <material> plastic </material> 
@@ -377,7 +377,7 @@
                 <name> ringFingerPhaDistRight </name> 
                 <file> fingerPhaDist.obj  </file>
                 <display> yes </display>
-    <collision>  no </collision>
+    <collision>  yes </collision>
                 <color>  0.86 0.87 0.858 1.0 </color>  
                 <texture> none </texture>
                 <material> plastic </material> 
