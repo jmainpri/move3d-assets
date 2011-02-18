@@ -19,6 +19,7 @@ p3d_read_macro GreyVideoTape.macro  GREY_TAPE
 # ************* HUMANS ***************
 
 p3d_read_macro AchileM.macro ACHILE_HUMAN1
+#p3d_read_macro AchileMKinect.macro HERAKLES_HUMAN1
 
 #p3d_read_macro batmansmall.macro SUPERMAN_HUMAN2
 p3d_read_macro pr2.macro PR2_ROBOT
@@ -87,7 +88,6 @@ p3d_set_obst_pos TABLEREUNION -1 -2 .0 .0 .0 0
 
 p3d_read_macro GsWalls.macro Walls
 
-
 # ************* ROBOTS ***************
 
 # NOTE: Jido must be declared at the end 
@@ -100,6 +100,11 @@ p3d_end_desc
 p3d_set_env_box -2 11.84286 -7.2 1.06978 0 3
 
 p3d_set_obst_color floor Any 1 0.87 0.49
+
+######################
+##### HRI_COSTSPACE ##
+######################
+#p3d_CostEnvironment
 
 #################################
 ##### COLLISION DEACTIVATION ####
@@ -259,7 +264,6 @@ p3d_set_object_base_and_arm_constraints 34 1 0  1 4
 
 p3d_set_open_chain_config 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 3.539823 -2.163225 0.000000 0.000000 0.000000 0.000000 0.000000 1.097561 85.621003 34.674642 -9.121951 115.404309 5.402781 -35.684947 -11.793681 90.000000 -0.658537 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 4.100000 -2.510000 0.809756 0.000000 0.000000 0.000000
 
- 
 
 ##############################
 ## MULTILOCALPATHGROUP #######
