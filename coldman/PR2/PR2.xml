@@ -1,5 +1,5 @@
 <!-- Exported from Move3D 
- creation date: Thu Feb 17 12:09:44 2011
+ creation date: Fri Feb 18 14:05:38 2011
  -->
 
 <robot name="PR2">
@@ -9,8 +9,8 @@
 <joint name="platformJoint">
 	<name> platformJoint </name>
 	<type> base </type>
-	<qmin> -1.000000 -1.000000 </qmin>
-	<qmax> 1.000000 1.000000 </qmax>
+	<qmin> -1 -1 </qmin>
+	<qmax> 1 1 </qmax>
 	<body name="Gbase">
 	 <name> Gbase </name>
 	 <file> Gbase.obj </file>
@@ -54,11 +54,8 @@
 			<qmin> 0.000000 </qmin>
 			<qmax> 0.310000 </qmax>
 			<transformation>
-			<ht_matrix> 
-			 1.000000 0.000000 0.000000 -0.049998 
-			 0.000000 1.000000 0.000000 0.000000 
-			 0.000000 0.000000 1.000000 0.790675 
-			</ht_matrix>
+			<translation>  -0.049998 0.000000 0.790675 </translation>
+			<YPR_angles>  0.000000 -0.000000 0.000000 </YPR_angles>
 			</transformation>
 			<body name="Gtorso">
 			 <name> Gtorso </name>
@@ -79,11 +76,8 @@
 					<qmin> -41.000000 </qmin>
 					<qmax> 131.000000 </qmax>
 					<transformation>
-					<ht_matrix> 
-					 1.000000 0.000000 0.000000 0.000001 
-					 0.000000 1.000000 0.000000 0.187994 
-					 0.000000 0.000000 1.000000 0.000000 
-					</ht_matrix>
+					<translation>  0.000001 0.187994 0.000000 </translation>
+					<YPR_angles>  0.000000 -0.000000 0.000000 </YPR_angles>
 					</transformation>
 					<body name="Glarm1">
 					 <name> Glarm1 </name>
@@ -104,11 +98,8 @@
 							<qmin> -30.000000 </qmin>
 							<qmax> 80.000000 </qmax>
 							<transformation>
-							<ht_matrix> 
-							 1.000000 0.000000 0.000000 0.099998 
-							 0.000000 0.000000 1.000000 -0.000001 
-							 0.000000 -1.000000 0.000000 0.000000 
-							</ht_matrix>
+							<translation>  0.099998 -0.000001 0.000000 </translation>
+							<YPR_angles>  0.000000 -0.000000 -90.000000 </YPR_angles>
 							</transformation>
 							<body name="Glarm2">
 							 <name> Glarm2 </name>
@@ -129,11 +120,8 @@
 									<qmin> -45.000000 </qmin>
 									<qmax> 223.000000 </qmax>
 									<transformation>
-									<ht_matrix> 
-									 0.000000 0.000000 1.000000 0.000000 
-									 1.000000 0.000000 -0.000000 0.000000 
-									 -0.000000 1.000000 0.000000 -0.000000 
-									</ht_matrix>
+									<translation>  0.000000 0.000000 -0.000000 </translation>
+									<YPR_angles>  90.000000 0.000000 90.000000 </YPR_angles>
 									</transformation>
 									<body name="Glarm3">
 									 <name> Glarm3 </name>
@@ -154,11 +142,8 @@
 											<qmin> -133.000000 </qmin>
 											<qmax> 0.000000 </qmax>
 											<transformation>
-											<ht_matrix> 
-											 0.000000 1.000000 -0.000000 0.000000 
-											 0.000000 0.000000 1.000000 0.000000 
-											 1.000000 -0.000000 0.000000 0.400000 
-											</ht_matrix>
+											<translation>  0.000000 0.000000 0.400000 </translation>
+											<YPR_angles>  -90.000000 -90.000000 0.000000 </YPR_angles>
 											</transformation>
 											<body name="Glarm4">
 											 <name> Glarm4 </name>
@@ -179,11 +164,8 @@
 													<qmin> -45.000000 </qmin>
 													<qmax> 223.000000 </qmax>
 													<transformation>
-													<ht_matrix> 
-													 0.000000 0.000000 1.000000 0.000000 
-													 1.000000 0.000000 -0.000000 0.000000 
-													 -0.000000 1.000000 0.000000 -0.000000 
-													</ht_matrix>
+													<translation>  0.000000 0.000000 -0.000000 </translation>
+													<YPR_angles>  90.000000 0.000000 90.000000 </YPR_angles>
 													</transformation>
 													<body name="Glarm5">
 													 <name> Glarm5 </name>
@@ -204,11 +186,8 @@
 															<qmin> -119.000000 </qmin>
 															<qmax> 0.000000 </qmax>
 															<transformation>
-															<ht_matrix> 
-															 0.000000 1.000000 -0.000000 0.000000 
-															 0.000000 0.000000 1.000000 0.000000 
-															 1.000000 -0.000000 0.000000 0.321000 
-															</ht_matrix>
+															<translation>  0.000000 0.000000 0.321000 </translation>
+															<YPR_angles>  -90.000000 -90.000000 0.000000 </YPR_angles>
 															</transformation>
 															<body name="larm6">
 															 <name> larm6 </name>
@@ -223,11 +202,8 @@
 																	<qmin> -180.000000 </qmin>
 																	<qmax> 180.000000 </qmax>
 																	<transformation>
-																	<ht_matrix> 
-																	 0.000000 0.000000 1.000000 0.000000 
-																	 1.000000 0.000000 -0.000000 0.000000 
-																	 -0.000000 1.000000 0.000000 -0.000000 
-																	</ht_matrix>
+																	<translation>  0.000000 0.000000 -0.000000 </translation>
+																	<YPR_angles>  90.000000 0.000000 90.000000 </YPR_angles>
 																	</transformation>
 																	<body name="Glarm7">
 																	 <name> Glarm7 </name>
@@ -248,12 +224,10 @@
 																			<qmin> 0 </qmin>
 																			<qmax> 0 </qmax>
 																			<transformation>
-																			<ht_matrix> 
-																			 0.000000 0.000000 -1.000000 0.000000 
-																			 0.000000 1.000000 0.000000 0.000000 
-																			 1.000000 0.000000 0.000000 0.180000 
-																			</ht_matrix>
+																			<translation>  0.000000 0.000000 0.180000 </translation>
+																			<YPR_angles>  -0.000000 -90.000000 0.000000 </YPR_angles>
 																			</transformation>
+
 																		</joint> <!--rPalm-->
 
 																		<joint name="left-grip2">
@@ -262,18 +236,15 @@
 																			<qmin> 0.000000 </qmin>
 																			<qmax> 31.398100 </qmax>
 																			<transformation>
-																			<ht_matrix> 
-																			 0.000000 0.000000 1.000000 0.000000 
-																			 0.000000 1.000000 0.000000 -0.010000 
-																			 -1.000000 0.000000 0.000000 0.076910 
-																			</ht_matrix>
+																			<translation>  0.000000 -0.010000 0.076910 </translation>
+																			<YPR_angles>  -0.000000 90.000000 0.000000 </YPR_angles>
 																			</transformation>
 																			<body name="larm9">
 																			 <name> larm9 </name>
 																			 <file> larm9.obj </file>
 																			 <color> 0.900000 0.900000 0.900000 1.000000 </color>
 																			</body>
-																		</joint> left-grip2
+																		</joint> <!--left-grip2-->
 
 																		<joint name="fingerJointGripper_1">
 																			<name> fingerJointGripper_1 </name>
@@ -281,18 +252,15 @@
 																			<qmin> 0.000000 </qmin>
 																			<qmax> 31.398100 </qmax>
 																			<transformation>
-																			<ht_matrix> 
-																			 0.000000 0.000000 -1.000000 0.000000 
-																			 0.000000 1.000000 0.000000 0.010000 
-																			 1.000000 0.000000 0.000000 0.076910 
-																			</ht_matrix>
+																			<translation>  0.000000 0.010000 0.076910 </translation>
+																			<YPR_angles>  -0.000000 -90.000000 0.000000 </YPR_angles>
 																			</transformation>
 																			<body name="larm8">
 																			 <name> larm8 </name>
 																			 <file> larm8.obj </file>
 																			 <color> 0.900000 0.900000 0.900000 1.000000 </color>
 																			</body>
-																		</joint> fingerJointGripper_1
+																		</joint> <!--fingerJointGripper_1-->
 																</joint> <!--left-Arm7-->
 														</joint> <!--left-Arm6-->
 												</joint> <!--left-Arm5-->
@@ -307,11 +275,8 @@
 					<qmin> -131.000000 </qmin>
 					<qmax> 41.000000 </qmax>
 					<transformation>
-					<ht_matrix> 
-					 1.000000 0.000000 0.000000 0.000001 
-					 0.000000 1.000000 0.000000 -0.187994 
-					 0.000000 0.000000 1.000000 0.000000 
-					</ht_matrix>
+					<translation>  0.000001 -0.187994 0.000000 </translation>
+					<YPR_angles>  0.000000 -0.000000 0.000000 </YPR_angles>
 					</transformation>
 					<body name="Grarm1">
 					 <name> Grarm1 </name>
@@ -332,11 +297,8 @@
 							<qmin> -30.000000 </qmin>
 							<qmax> 80.000000 </qmax>
 							<transformation>
-							<ht_matrix> 
-							 1.000000 0.000000 0.000000 0.099998 
-							 0.000000 0.000000 1.000000 0.000001 
-							 0.000000 -1.000000 0.000000 0.000000 
-							</ht_matrix>
+							<translation>  0.099998 0.000001 0.000000 </translation>
+							<YPR_angles>  0.000000 -0.000000 -90.000000 </YPR_angles>
 							</transformation>
 							<body name="Grarm2">
 							 <name> Grarm2 </name>
@@ -357,11 +319,8 @@
 									<qmin> -223.000000 </qmin>
 									<qmax> 45.000000 </qmax>
 									<transformation>
-									<ht_matrix> 
-									 0.000000 0.000000 1.000000 0.000000 
-									 1.000000 0.000000 -0.000000 -0.000000 
-									 -0.000000 1.000000 0.000000 -0.000000 
-									</ht_matrix>
+									<translation>  0.000000 -0.000000 -0.000000 </translation>
+									<YPR_angles>  90.000000 0.000000 90.000000 </YPR_angles>
 									</transformation>
 									<body name="Grarm3">
 									 <name> Grarm3 </name>
@@ -382,11 +341,8 @@
 											<qmin> -133.000000 </qmin>
 											<qmax> 0.000000 </qmax>
 											<transformation>
-											<ht_matrix> 
-											 0.000000 1.000000 -0.000000 0.000000 
-											 0.000000 0.000000 1.000000 0.000000 
-											 1.000000 -0.000000 0.000000 0.400000 
-											</ht_matrix>
+											<translation>  0.000000 0.000000 0.400000 </translation>
+											<YPR_angles>  -90.000000 -90.000000 0.000000 </YPR_angles>
 											</transformation>
 											<body name="Grarm4">
 											 <name> Grarm4 </name>
@@ -407,11 +363,8 @@
 													<qmin> -223.000000 </qmin>
 													<qmax> 45.000000 </qmax>
 													<transformation>
-													<ht_matrix> 
-													 0.000000 0.000000 1.000000 0.000000 
-													 1.000000 0.000000 -0.000000 -0.000000 
-													 -0.000000 1.000000 0.000000 -0.000000 
-													</ht_matrix>
+													<translation>  0.000000 -0.000000 -0.000000 </translation>
+													<YPR_angles>  90.000000 0.000000 90.000000 </YPR_angles>
 													</transformation>
 													<body name="Grarm5">
 													 <name> Grarm5 </name>
@@ -432,11 +385,8 @@
 															<qmin> -119.000000 </qmin>
 															<qmax> 0.000000 </qmax>
 															<transformation>
-															<ht_matrix> 
-															 0.000000 1.000000 -0.000000 0.000000 
-															 0.000000 0.000000 1.000000 0.000000 
-															 1.000000 -0.000000 0.000000 0.321000 
-															</ht_matrix>
+															<translation>  0.000000 0.000000 0.321000 </translation>
+															<YPR_angles>  -90.000000 -90.000000 0.000000 </YPR_angles>
 															</transformation>
 															<body name="rarm6">
 															 <name> rarm6 </name>
@@ -451,11 +401,8 @@
 																	<qmin> -180.000000 </qmin>
 																	<qmax> 180.000000 </qmax>
 																	<transformation>
-																	<ht_matrix> 
-																	 0.000000 0.000000 1.000000 0.000000 
-																	 1.000000 0.000000 -0.000000 -0.000000 
-																	 -0.000000 1.000000 0.000000 -0.000000 
-																	</ht_matrix>
+																	<translation>  0.000000 -0.000000 -0.000000 </translation>
+																	<YPR_angles>  90.000000 0.000000 90.000000 </YPR_angles>
 																	</transformation>
 																	<body name="Grarm7">
 																	 <name> Grarm7 </name>
@@ -476,12 +423,10 @@
 																			<qmin> 0 </qmin>
 																			<qmax> 0 </qmax>
 																			<transformation>
-																			<ht_matrix> 
-																			 0.000000 0.000000 -1.000000 0.000000 
-																			 0.000000 1.000000 0.000000 0.000000 
-																			 1.000000 0.000000 0.000000 0.180000 
-																			</ht_matrix>
+																			<translation>  0.000000 0.000000 0.180000 </translation>
+																			<YPR_angles>  -0.000000 -90.000000 0.000000 </YPR_angles>
 																			</transformation>
+
 																		</joint> <!--lPalm-->
 
 																		<joint name="right-grip2">
@@ -490,18 +435,15 @@
 																			<qmin> 0.000000 </qmin>
 																			<qmax> 31.398100 </qmax>
 																			<transformation>
-																			<ht_matrix> 
-																			 0.000000 0.000000 1.000000 0.000000 
-																			 0.000000 1.000000 0.000000 0.010000 
-																			 -1.000000 0.000000 0.000000 0.076910 
-																			</ht_matrix>
+																			<translation>  0.000000 0.010000 0.076910 </translation>
+																			<YPR_angles>  -0.000000 90.000000 0.000000 </YPR_angles>
 																			</transformation>
 																			<body name="rarm9">
 																			 <name> rarm9 </name>
 																			 <file> rarm9.obj </file>
 																			 <color> 0.900000 0.900000 0.900000 1.000000 </color>
 																			</body>
-																		</joint> right-grip2
+																		</joint> <!--right-grip2-->
 
 																		<joint name="fingerJointGripper_0">
 																			<name> fingerJointGripper_0 </name>
@@ -509,18 +451,15 @@
 																			<qmin> 0.000000 </qmin>
 																			<qmax> 31.398100 </qmax>
 																			<transformation>
-																			<ht_matrix> 
-																			 0.000000 0.000000 -1.000000 0.000000 
-																			 0.000000 1.000000 0.000000 -0.010000 
-																			 1.000000 0.000000 0.000000 0.076910 
-																			</ht_matrix>
+																			<translation>  0.000000 -0.010000 0.076910 </translation>
+																			<YPR_angles>  -0.000000 -90.000000 0.000000 </YPR_angles>
 																			</transformation>
 																			<body name="rarm8">
 																			 <name> rarm8 </name>
 																			 <file> rarm8.obj </file>
 																			 <color> 0.900000 0.900000 0.900000 1.000000 </color>
 																			</body>
-																		</joint> fingerJointGripper_0
+																		</joint> <!--fingerJointGripper_0-->
 																</joint> <!--right-Arm7-->
 														</joint> <!--right-Arm6-->
 												</joint> <!--right-Arm5-->
@@ -535,11 +474,8 @@
 					<qmin> -45.000000 </qmin>
 					<qmax> 85.000000 </qmax>
 					<transformation>
-					<ht_matrix> 
-					 1.000000 0.000000 0.000000 0.098929 
-					 0.000000 0.000000 1.000000 0.000005 
-					 0.000000 -1.000000 0.000000 0.226999 
-					</ht_matrix>
+					<translation>  0.098929 0.000005 0.226999 </translation>
+					<YPR_angles>  0.000000 -0.000000 -90.000000 </YPR_angles>
 					</transformation>
 					<body name="Glaser">
 					 <name> Glaser </name>
@@ -553,7 +489,7 @@
 					 <collision> no </collision>
 					 <color> 0.300000 0.300000 0.300000 1.000000 </color>
 					</body>
-				</joint> laser-jnt
+				</joint> <!--laser-jnt-->
 
 				<joint name="pan_cam">
 					<name> pan_cam </name>
@@ -561,11 +497,8 @@
 					<qmin> -172.288000 </qmin>
 					<qmax> 172.288000 </qmax>
 					<transformation>
-					<ht_matrix> 
-					 1.000000 0.000000 0.000000 -0.017070 
-					 0.000000 1.000000 0.000000 0.000000 
-					 0.000000 0.000000 1.000000 0.381450 
-					</ht_matrix>
+					<translation>  -0.017070 0.000000 0.381450 </translation>
+					<YPR_angles>  0.000000 -0.000000 0.000000 </YPR_angles>
 					</transformation>
 					<body name="Gpan">
 					 <name> Gpan </name>
@@ -586,11 +519,8 @@
 							<qmin> -30.000000 </qmin>
 							<qmax> 80.000000 </qmax>
 							<transformation>
-							<ht_matrix> 
-							 1.000000 0.000000 0.000000 0.066138 
-							 0.000000 0.000000 1.000000 0.000000 
-							 0.000000 -1.000000 0.000000 0.000000 
-							</ht_matrix>
+							<translation>  0.066138 0.000000 0.000000 </translation>
+							<YPR_angles>  0.000000 -0.000000 -90.000000 </YPR_angles>
 							</transformation>
 							<body name="Gtilt">
 							 <name> Gtilt </name>
@@ -610,23 +540,99 @@
 </joint> <!--platformJoint-->
 
 <constraint>
-<type> linear </type>
-<master> left-grip2 </master>
-<slave> fingerJointGripper_1 </slave>
-<master_dof> 0 </master_dof>
-<slave_dof> 0 </slave_dof>
-<parameters> 1 0 </parameters>
+  <type> linear </type>
+  <master> left-grip2 </master>
+  <slave> fingerJointGripper_1 </slave>
+  <master_dof> 0 </master_dof>
+  <slave_dof> 0 </slave_dof>
+  <parameters> 1 0 </parameters>
 </constraint>
 
 <constraint>
-<type> linear </type>
-<master> right-grip2 </master>
-<slave> fingerJointGripper_0 </slave>
-<master_dof> 0 </master_dof>
-<slave_dof> 0 </slave_dof>
-<parameters> 1 0 </parameters>
+  <type> linear </type>
+  <master> right-grip2 </master>
+  <slave> fingerJointGripper_0 </slave>
+  <master_dof> 0 </master_dof>
+  <slave_dof> 0 </slave_dof>
+  <parameters> 1 0 </parameters>
 </constraint>
 
+<deactivate_collision_pair> Gbase Gpan </deactivate_collision_pair>
+<deactivate_collision_pair> Gbase Gtilt </deactivate_collision_pair>
+<deactivate_collision_pair> Gbase Glaser </deactivate_collision_pair>
+<deactivate_collision_pair> Gbase Glarm1 </deactivate_collision_pair>
+<deactivate_collision_pair> Gbase Grarm1 </deactivate_collision_pair>
 
+
+<deactivate_collision_pair> Gtorso Gtilt </deactivate_collision_pair>
+<deactivate_collision_pair> Gtorso Glarm2 </deactivate_collision_pair>
+<deactivate_collision_pair> Gtorso Grarm2 </deactivate_collision_pair>
+
+
+<deactivate_collision_pair> Gpan Glaser </deactivate_collision_pair>
+<deactivate_collision_pair> Gpan Glarm1 </deactivate_collision_pair>
+<deactivate_collision_pair> Gpan Glarm2 </deactivate_collision_pair>
+<deactivate_collision_pair> Gpan Grarm1 </deactivate_collision_pair>
+<deactivate_collision_pair> Gpan Grarm2 </deactivate_collision_pair>
+
+<deactivate_collision_pair> Gtilt Glaser </deactivate_collision_pair>
+<deactivate_collision_pair> Gtilt Glarm1 </deactivate_collision_pair>
+<deactivate_collision_pair> Gtilt Glarm2 </deactivate_collision_pair>
+<deactivate_collision_pair> Gtilt Grarm1 </deactivate_collision_pair>
+<deactivate_collision_pair> Gtilt Grarm2 </deactivate_collision_pair>
+
+<deactivate_collision_pair> Glaser Glarm1 </deactivate_collision_pair>
+<deactivate_collision_pair> Glaser Glarm2 </deactivate_collision_pair>
+<deactivate_collision_pair> Glaser Grarm1 </deactivate_collision_pair>
+<deactivate_collision_pair> Glaser Grarm2 </deactivate_collision_pair>
+
+
+<deactivate_collision_pair> Glarm1 Glarm3 </deactivate_collision_pair>
+<deactivate_collision_pair> Glarm1 Glarm4 </deactivate_collision_pair>
+<deactivate_collision_pair> Glarm1 Glarm5 </deactivate_collision_pair>
+<deactivate_collision_pair> Glarm1 Glarm7 </deactivate_collision_pair>
+
+<deactivate_collision_pair> Glarm2 Glarm4 </deactivate_collision_pair>
+<deactivate_collision_pair> Glarm2 Glarm5 </deactivate_collision_pair>
+<deactivate_collision_pair> Glarm2 Glarm7 </deactivate_collision_pair>
+
+<deactivate_collision_pair> Glarm3 Glarm5 </deactivate_collision_pair>
+<deactivate_collision_pair> Glarm3 Glarm7 </deactivate_collision_pair>
+<deactivate_collision_pair> Glarm3 larm8 </deactivate_collision_pair>
+<deactivate_collision_pair> Glarm3 larm9 </deactivate_collision_pair>
+
+<deactivate_collision_pair> Glarm4 Glarm7 </deactivate_collision_pair>
+<deactivate_collision_pair> Glarm4 larm8 </deactivate_collision_pair>
+<deactivate_collision_pair> Glarm4 larm9 </deactivate_collision_pair>
+
+<deactivate_collision_pair> Glarm5 Glarm7 </deactivate_collision_pair>
+<deactivate_collision_pair> Glarm5 larm8 </deactivate_collision_pair>
+<deactivate_collision_pair> Glarm5 larm9 </deactivate_collision_pair>
+
+<deactivate_collision_pair> larm8 larm9 </deactivate_collision_pair>
+
+<deactivate_collision_pair> Grarm1 Grarm3 </deactivate_collision_pair>
+<deactivate_collision_pair> Grarm1 Grarm4 </deactivate_collision_pair>
+<deactivate_collision_pair> Grarm1 Grarm5 </deactivate_collision_pair>
+<deactivate_collision_pair> Grarm1 Grarm7 </deactivate_collision_pair>
+
+<deactivate_collision_pair> Grarm2 Grarm4 </deactivate_collision_pair>
+<deactivate_collision_pair> Grarm2 Grarm5 </deactivate_collision_pair>
+<deactivate_collision_pair> Grarm2 Grarm7 </deactivate_collision_pair>
+
+<deactivate_collision_pair> Grarm3 Grarm5 </deactivate_collision_pair>
+<deactivate_collision_pair> Grarm3 Grarm7 </deactivate_collision_pair>
+<deactivate_collision_pair> Grarm3 rarm8 </deactivate_collision_pair>
+<deactivate_collision_pair> Grarm3 rarm9 </deactivate_collision_pair>
+
+<deactivate_collision_pair> Grarm4 Grarm7 </deactivate_collision_pair>
+<deactivate_collision_pair> Grarm4 rarm8 </deactivate_collision_pair>
+<deactivate_collision_pair> Grarm4 rarm9 </deactivate_collision_pair>
+
+<deactivate_collision_pair> Grarm5 Grarm7 </deactivate_collision_pair>
+<deactivate_collision_pair> Grarm5 rarm8 </deactivate_collision_pair>
+<deactivate_collision_pair> Grarm5 rarm9 </deactivate_collision_pair>
+
+<deactivate_collision_pair> rarm8 rarm9 </deactivate_collision_pair>
 
 </robot>
