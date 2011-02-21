@@ -176,7 +176,7 @@
   <connection> root </connection>
   <name> LWRRight </name>
   <transformation>
-   <translation> 0.165 0.18 0.907 </translation>
+   <translation> 0.165 0.20 0.907 </translation>
    <YPR_angles> 0 90 90 </YPR_angles>
   </transformation> 
       <collision>  yes  </collision>

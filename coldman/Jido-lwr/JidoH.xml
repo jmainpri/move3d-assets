@@ -163,7 +163,7 @@
 <subrobot>
   <connection> root </connection>
   <transformation>
-   <translation> 0.165 0.18 0.907 </translation>
+   <translation> 0.165 0.20 0.907 </translation>
    <YPR_angles> 0 90 90 </YPR_angles>
   </transformation>  
   <robot_file> LWR.xml </robot_file> 
