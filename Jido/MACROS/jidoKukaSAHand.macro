@@ -43,10 +43,11 @@ p3d_beg_desc P3D_ROBOT
 #Arm
   p3d_beg_desc_jnt P3D_FIXED # J4
     p3d_set_name armBaseJoint
-    p3d_set_pos_relative
+#    p3d_set_pos_relative
     p3d_set_prev_jnt 1
 #   p3d_set_pos_mat 0 -1 0 0.165 0 0 -1 -0.137 1 0 0 0.907 0 0 0 1
-    p3d_set_pos_mat 0 1 0 0.165 0 0 -1 -0.1305 -1 0 0 0.907 0 0 0 1
+#    p3d_set_pos_mat 0 1 0 0.165 0 0 -1 -0.1305 -1 0 0 0.907 0 0 0 1
+    p3d_set_pos_mat 0 1 0 0.165 0 0 -1 -0.1105 -1 0 0 0.907 0 0 0 1
   p3d_end_desc
   p3d_read_macro ./JidoParts/kukaArmBody/kukaBase.macro base
 
@@ -506,23 +507,23 @@ p3d_set_body_abs_pos topCameras.GtopCameras 0.243 0 1.244 0 0 0
 #p3d_set_body_abs_pos kuka6.Gkuka6  0.165 -0.91 0.907 90 90 0
 
  #0 1 0 0.165 0 0 -1 -0.137 -1 0 0 0.907 0 0 0 1
-p3d_set_body_abs_pos base.GkukaBase   0.165 0.18 0.907 90 90 0
-p3d_set_body_abs_pos kuka1.Gkuka1     0.165 0.18 0.907 90 90 0
-p3d_set_body_abs_pos kuka2.Gkuka2     0.165 0.18 0.907 90 90 0
+p3d_set_body_abs_pos base.GkukaBase   0.165 0.2 0.907 90 90 0
+p3d_set_body_abs_pos kuka1.Gkuka1     0.165 0.2 0.907 90 90 0
+p3d_set_body_abs_pos kuka2.Gkuka2     0.165 0.2 0.907 90 90 0
 
-p3d_set_body_abs_pos kuka3.Gkuka3   0.165 0.18 0.907 90 90 0
-p3d_set_body_abs_pos kuka4.Gkuka4   0.165 0.18 0.907 90 90 0
-p3d_set_body_abs_pos kuka5.Gkuka5   0.165 0.18 0.907 90 90 0
-p3d_set_body_abs_pos kuka6.Gkuka6   0.165 0.18 0.907 90 90 0
+p3d_set_body_abs_pos kuka3.Gkuka3   0.165 0.2 0.907 90 90 0
+p3d_set_body_abs_pos kuka4.Gkuka4   0.165 0.2 0.907 90 90 0
+p3d_set_body_abs_pos kuka5.Gkuka5   0.165 0.2 0.907 90 90 0
+p3d_set_body_abs_pos kuka6.Gkuka6   0.165 0.2 0.907 90 90 0
 
-p3d_set_body_abs_pos base.base   0.165 0.18 0.907 90 90 0
-p3d_set_body_abs_pos kuka1.kuka1 0.165 0.18 0.907 90 90 0
-p3d_set_body_abs_pos kuka2.kuka2 0.165 0.18 0.907 90 90 0
-p3d_set_body_abs_pos kuka3.kuka3 0.165 0.18 0.907 90 90 0
-p3d_set_body_abs_pos kuka4.kuka4 0.165 0.18 0.907 90 90 0
-p3d_set_body_abs_pos kuka5.kuka5 0.165 0.18 0.907 90 90 0
-p3d_set_body_abs_pos kuka6.kuka6 0.165 0.18 0.907 90 90 0
-p3d_set_body_abs_pos kuka7.kuka7 0.165 0.18 0.907 90 90 0
+p3d_set_body_abs_pos base.base   0.165 0.2 0.907 90 90 0
+p3d_set_body_abs_pos kuka1.kuka1 0.165 0.2 0.907 90 90 0
+p3d_set_body_abs_pos kuka2.kuka2 0.165 0.2 0.907 90 90 0
+p3d_set_body_abs_pos kuka3.kuka3 0.165 0.2 0.907 90 90 0
+p3d_set_body_abs_pos kuka4.kuka4 0.165 0.2 0.907 90 90 0
+p3d_set_body_abs_pos kuka5.kuka5 0.165 0.2 0.907 90 90 0
+p3d_set_body_abs_pos kuka6.kuka6 0.165 0.2 0.907 90 90 0
+p3d_set_body_abs_pos kuka7.kuka7 0.165 0.2 0.907 90 90 0
 
 #End effector
 
@@ -537,24 +538,24 @@ p3d_set_body_abs_pos kuka7.kuka7 0.165 0.18 0.907 90 90 0
 
 
 #Right hand
-p3d_set_body_abs_pos hand0.palm                         0.165 -1.032 0.907 180 180 0
-p3d_set_body_abs_pos hand0.thumbBase                    0.165 -1.032 0.907 180 180 0
-p3d_set_body_abs_pos hand0.finger1.base                 0.165 -1.032 0.907 180 180 0
-p3d_set_body_abs_pos hand0.finger1.proximalPhalanx      0.165 -1.032 0.907 180 180 0
-p3d_set_body_abs_pos hand0.finger1.middlePhalanx        0.165 -1.032 0.907 180 180 0
-p3d_set_body_abs_pos hand0.finger1.fingertip            0.165 -1.032 0.907 180 180 0
-p3d_set_body_abs_pos hand0.finger2.base                 0.165 -1.032 0.907 180 180 0
-p3d_set_body_abs_pos hand0.finger2.proximalPhalanx      0.165 -1.032 0.907 180 180 0
-p3d_set_body_abs_pos hand0.finger2.middlePhalanx        0.165 -1.032 0.907 180 180 0
-p3d_set_body_abs_pos hand0.finger2.fingertip            0.165 -1.032 0.907 180 180 0
-p3d_set_body_abs_pos hand0.finger3.base                 0.165 -1.032 0.907 180 180 0
-p3d_set_body_abs_pos hand0.finger3.proximalPhalanx      0.165 -1.032 0.907 180 180 0
-p3d_set_body_abs_pos hand0.finger3.middlePhalanx        0.165 -1.032 0.907 180 180 0
-p3d_set_body_abs_pos hand0.finger3.fingertip            0.165 -1.032 0.907 180 180 0
-p3d_set_body_abs_pos hand0.finger4.base                 0.165 -1.032 0.907 180 180 0
-p3d_set_body_abs_pos hand0.finger4.proximalPhalanx      0.165 -1.032 0.907 180 180 0
-p3d_set_body_abs_pos hand0.finger4.middlePhalanx        0.165 -1.032 0.907 180 180 0
-p3d_set_body_abs_pos hand0.finger4.fingertip            0.165 -1.032 0.907 180 180 0
+p3d_set_body_abs_pos hand0.palm                         0.165 -1.002 0.907 180 180 0
+p3d_set_body_abs_pos hand0.thumbBase                    0.165 -1.002 0.907 180 180 0
+p3d_set_body_abs_pos hand0.finger1.base                 0.165 -1.002 0.907 180 180 0
+p3d_set_body_abs_pos hand0.finger1.proximalPhalanx      0.165 -1.002 0.907 180 180 0
+p3d_set_body_abs_pos hand0.finger1.middlePhalanx        0.165 -1.002 0.907 180 180 0
+p3d_set_body_abs_pos hand0.finger1.fingertip            0.165 -1.002 0.907 180 180 0
+p3d_set_body_abs_pos hand0.finger2.base                 0.165 -1.002 0.907 180 180 0
+p3d_set_body_abs_pos hand0.finger2.proximalPhalanx      0.165 -1.002 0.907 180 180 0
+p3d_set_body_abs_pos hand0.finger2.middlePhalanx        0.165 -1.002 0.907 180 180 0
+p3d_set_body_abs_pos hand0.finger2.fingertip            0.165 -1.002 0.907 180 180 0
+p3d_set_body_abs_pos hand0.finger3.base                 0.165 -1.002 0.907 180 180 0
+p3d_set_body_abs_pos hand0.finger3.proximalPhalanx      0.165 -1.002 0.907 180 180 0
+p3d_set_body_abs_pos hand0.finger3.middlePhalanx        0.165 -1.002 0.907 180 180 0
+p3d_set_body_abs_pos hand0.finger3.fingertip            0.165 -1.002 0.907 180 180 0
+p3d_set_body_abs_pos hand0.finger4.base                 0.165 -1.002 0.907 180 180 0
+p3d_set_body_abs_pos hand0.finger4.proximalPhalanx      0.165 -1.002 0.907 180 180 0
+p3d_set_body_abs_pos hand0.finger4.middlePhalanx        0.165 -1.002 0.907 180 180 0
+p3d_set_body_abs_pos hand0.finger4.fingertip            0.165 -1.002 0.907 180 180 0
 
 ##############################
 ######## CONSTRAINTS #########
