@@ -214,4 +214,86 @@
   <robot_file> gripper.xml </robot_file> 
 </subrobot> -->
 
+<deactivate_collision_pair> foreFingerBaseRight  middleFingerBaseRight </deactivate_collision_pair>
+<deactivate_collision_pair> middleFingerBaseRight   ringFingerBaseRight </deactivate_collision_pair>
+
+
+<deactivate_collision_pair> foreFingerBaseRight  middleFingerPhaProxRight </deactivate_collision_pair>
+<deactivate_collision_pair> foreFingerPhaProxRight  middleFingerBaseRight </deactivate_collision_pair>
+<deactivate_collision_pair> middleFingerBaseRight   ringFingerPhaProxRight </deactivate_collision_pair>
+<deactivate_collision_pair> middleFingerPhaProxRight  middleFingerBaseRight </deactivate_collision_pair>
+
+<deactivate_collision_pair> foreFingerPhaProxRight  middleFingerPhaProxRight </deactivate_collision_pair>
+<deactivate_collision_pair> middleFingerPhaProxRight  ringFingerPhaProxRight </deactivate_collision_pair>
+<deactivate_collision_pair> foreFingerPhaMidRight  middleFingerPhaMidRight </deactivate_collision_pair>
+<deactivate_collision_pair> middleFingerPhaMidRight  ringFingerPhaMidRight </deactivate_collision_pair>
+<deactivate_collision_pair> foreFingerPhaDistRight  middleFingerPhaDistRight </deactivate_collision_pair>
+<deactivate_collision_pair> middleFingerPhaDistRight  ringFingerPhaDistRight </deactivate_collision_pair>
+
+<deactivate_collision_pair> foreFingerPhaProxRight  middleFingerPhaMidRight </deactivate_collision_pair>
+<deactivate_collision_pair> foreFingerPhaMidRight  middleFingerPhaProxRight </deactivate_collision_pair>
+<deactivate_collision_pair> middleFingerPhaProxRight  ringFingerPhaMidRight </deactivate_collision_pair>
+<deactivate_collision_pair> middleFingerPhaMidRight  ringFingerPhaProxRight </deactivate_collision_pair>
+
+<deactivate_collision_pair> foreFingerPhaMidRight  middleFingerPhaDistRight </deactivate_collision_pair>
+<deactivate_collision_pair> foreFingerPhaDistRight  middleFingerPhaMidRight </deactivate_collision_pair>
+<deactivate_collision_pair> middleFingerPhaMidRight  ringFingerPhaDistRight </deactivate_collision_pair>
+<deactivate_collision_pair> middleFingerPhaDistRight  ringFingerPhaMidRight </deactivate_collision_pair>
+
+<deactivate_collision_pair> foreFingerPhaProxRight  middleFingerPhaDistRight </deactivate_collision_pair>
+<deactivate_collision_pair> foreFingerPhaDistRight  middleFingerPhaProxRight </deactivate_collision_pair>
+<deactivate_collision_pair> middleFingerPhaProxRight  ringFingerPhaDistRight </deactivate_collision_pair>
+<deactivate_collision_pair> middleFingerPhaDistRight  ringFingerPhaProxRight </deactivate_collision_pair>
+
+<deactivate_collision_pair> foreFingerPhaMidRight  ringFingerPhaMidRight </deactivate_collision_pair>
+
+<deactivate_collision_pair> foreFingerPhaProxRight  palmRight </deactivate_collision_pair>
+<deactivate_collision_pair> middleFingerPhaProxRight  palmRight </deactivate_collision_pair>
+<deactivate_collision_pair> ringFingerPhaProxRight  palmRight </deactivate_collision_pair>
+
+<deactivate_collision_pair> thumbFingerPhaProxRight  foreFingerBaseRight </deactivate_collision_pair>
+<deactivate_collision_pair> thumbFingerPhaProxRight  foreFingerPhaProxRight </deactivate_collision_pair>
+<deactivate_collision_pair> thumbFingerPhaProxRight  foreFingerPhaMidRight </deactivate_collision_pair>
+<deactivate_collision_pair> thumbFingerPhaProxRight  foreFingerPhaDistRight </deactivate_collision_pair>
+
+<deactivate_collision_pair> thumbFingerPhaProxRight  middleFingerBaseRight </deactivate_collision_pair>
+<deactivate_collision_pair> thumbFingerPhaProxRight  middleFingerPhaProxRight </deactivate_collision_pair>
+<deactivate_collision_pair> thumbFingerPhaProxRight  middleFingerPhaMidRight </deactivate_collision_pair>
+<deactivate_collision_pair> thumbFingerPhaProxRight  middleFingerPhaDistRight </deactivate_collision_pair>
+
+<deactivate_collision_pair> thumbFingerPhaProxRight  ringFingerBaseRight </deactivate_collision_pair>
+<deactivate_collision_pair> thumbFingerPhaProxRight  ringFingerPhaProxRight </deactivate_collision_pair>
+<deactivate_collision_pair> thumbFingerPhaProxRight  ringFingerPhaMidRight </deactivate_collision_pair>
+<deactivate_collision_pair> thumbFingerPhaProxRight  ringFingerPhaDistRight </deactivate_collision_pair>
+
+<deactivate_collision_pair> thumbFingerPhaMidRight  foreFingerBaseRight </deactivate_collision_pair>
+<deactivate_collision_pair> thumbFingerPhaMidRight  foreFingerPhaProxRight </deactivate_collision_pair>
+<deactivate_collision_pair> thumbFingerPhaMidRight  foreFingerPhaMidRight </deactivate_collision_pair>
+<deactivate_collision_pair> thumbFingerPhaMidRight  foreFingerPhaDistRight </deactivate_collision_pair>
+
+<deactivate_collision_pair> thumbFingerPhaMidRight  middleFingerBaseRight </deactivate_collision_pair>
+<deactivate_collision_pair> thumbFingerPhaMidRight  middleFingerPhaProxRight </deactivate_collision_pair>
+<deactivate_collision_pair> thumbFingerPhaMidRight  middleFingerPhaMidRight </deactivate_collision_pair>
+<deactivate_collision_pair> thumbFingerPhaMidRight  middleFingerPhaDistRight </deactivate_collision_pair>
+
+<deactivate_collision_pair> thumbFingerPhaMidRight  ringFingerBaseRight </deactivate_collision_pair>
+<deactivate_collision_pair> thumbFingerPhaMidRight  ringFingerPhaProxRight </deactivate_collision_pair>
+<deactivate_collision_pair> thumbFingerPhaMidRight  ringFingerPhaMidRight </deactivate_collision_pair>
+<deactivate_collision_pair> thumbFingerPhaMidRight  ringFingerPhaDistRight </deactivate_collision_pair>
+
+<deactivate_collision_pair> thumbFingerPhaDistRight  foreFingerBaseRight </deactivate_collision_pair>
+<deactivate_collision_pair> thumbFingerPhaDistRight  foreFingerPhaProxRight </deactivate_collision_pair>
+<deactivate_collision_pair> thumbFingerPhaDistRight  foreFingerPhaMidRight </deactivate_collision_pair>
+<deactivate_collision_pair> thumbFingerPhaDistRight  foreFingerPhaDistRight </deactivate_collision_pair>
+
+<deactivate_collision_pair> thumbFingerPhaDistRight  middleFingerBaseRight </deactivate_collision_pair>
+<deactivate_collision_pair> thumbFingerPhaDistRight  middleFingerPhaProxRight </deactivate_collision_pair>
+<deactivate_collision_pair> thumbFingerPhaDistRight  middleFingerPhaMidRight </deactivate_collision_pair>
+<deactivate_collision_pair> thumbFingerPhaDistRight  middleFingerPhaDistRight </deactivate_collision_pair>
+
+<deactivate_collision_pair> thumbFingerPhaDistRight  ringFingerBaseRight </deactivate_collision_pair>
+<deactivate_collision_pair> thumbFingerPhaDistRight  ringFingerPhaProxRight </deactivate_collision_pair>
+<deactivate_collision_pair> thumbFingerPhaDistRight  ringFingerPhaMidRight </deactivate_collision_pair>
+<deactivate_collision_pair> thumbFingerPhaDistRight  ringFingerPhaDistRight </deactivate_collision_pair>
+
 </robot>
