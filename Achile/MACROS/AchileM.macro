@@ -46,7 +46,7 @@ p3d_beg_desc P3D_ROBOT
    p3d_set_name HeadZ
    p3d_set_prev_jnt 4
    p3d_set_pos_axe 0.023497 0 0.593966 0 0 1
-   p3d_set_dof_vmin -45
+   p3d_set_dof_vmin -80
    p3d_set_dof_vmax 45
  p3d_end_desc
  p3d_beg_desc_jnt P3D_ROTATE # J6 TILT
