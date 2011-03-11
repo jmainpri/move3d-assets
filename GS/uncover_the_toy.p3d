@@ -35,6 +35,7 @@ p3d_read_macro ./Objects/Movable/surprise_box.macro SURPRISE_BOX
 p3d_read_macro LotrTape.macro       LOTR_TAPE
 p3d_read_macro WalleTape.macro      WALLE_TAPE
 p3d_read_macro GreyVideoTape.macro  GREY_TAPE
+p3d_read_macro ./Objects/Movable/toyCube_yellow.macro TOYCUBE_YELLOW  
 
 # ***** PLACEHOLDERS
 
