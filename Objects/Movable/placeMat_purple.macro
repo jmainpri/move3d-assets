@@ -11,6 +11,7 @@
   p3d_beg_desc P3D_BODY placeMat
     p3d_add_desc_box placeMat 0.297 0.421 0.002 P3D_GRAPHIC
     p3d_set_prim_pos placeMat 0 0 0.001 0 0 0
+    p3d_force_BB_computation placeMat
   p3d_end_desc
 p3d_end_desc
 
