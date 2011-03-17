@@ -347,7 +347,7 @@ p3d_beg_desc_jnt P3D_FIXED #J40
 #  p3d_set_pos_axe -0.004259 -0.85 0.43478 1 0 0
    p3d_set_name rPalm
    p3d_set_pos_relative 
-   p3d_set_prev_jnt 14
+   p3d_set_prev_jnt 16
    p3d_set_pos_mat 0 1 0 0 -1 0 0 -0.15 0 0 1 0 0 0 0 1	
    p3d_set_dof_vmin -180
    p3d_set_dof_vmax 180
@@ -362,7 +362,7 @@ p3d_beg_desc_jnt P3D_FIXED #J41
 #  p3d_set_pos_axe -0.004259 0.85 0.43478 0 0 1
    p3d_set_name lPalm
    p3d_set_pos_relative 
-   p3d_set_prev_jnt 21
+   p3d_set_prev_jnt 25
    p3d_set_pos_mat 0 -1 0 0 1 0 0 0.15 0 0 1 0 0 0 0 1	
    p3d_set_dof_vmin -180
    p3d_set_dof_vmax 180
