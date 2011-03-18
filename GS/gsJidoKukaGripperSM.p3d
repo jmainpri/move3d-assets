@@ -212,7 +212,7 @@ p3d_desactivate_col_check hand0.finger2.fingertip hand0.finger1.fingertip
 p3d_constraint  p3d_lwr_arm_ik 6 5 6 8 9 10 11  1 19  0  2 7 2
 
 p3d_set_cntrt_Tatt 1 -0.438683 0.100912 0.892958 -0.246214 0.897586 0.001049 0.440839 -0.172975 0.043549 0.994895 -0.091037 0.029823
-p3d_set_cntrt_Tatt2  1  1 0 0 0  0 1 0 0  0 0 1 -0.105
+p3d_set_cntrt_Tatt2  1  -0.382683 -0.923879 0 0  0.923879 -0.382683 0 0  0 0 1 -0.27
 
 p3d_set_object_base_and_arm_constraints 19 1 0  1 1
 
@@ -251,5 +251,5 @@ p3d_set_robot_steering_method Multi-Localpath
 
 #p3d_set_arm_data cntrtId objectMultilocalpathGroupIdLinear  objectMultilocalpathGroupIdSm handMultilocalpathGroupIdLinear handMultilocalpathGroupIdSoftMotion handType virtualObjectJntId
 p3d_set_arm_data 1 -1 -1 -1 -1 0 19
-p3d_set_config_cost_threshold 0.20
+p3d_set_config_cost_threshold 0.40
 
