@@ -1,0 +1,20 @@
+p3d_beg_desc P3D_ROBOT
+
+p3d_beg_desc_jnt P3D_FREEFLYER  #1
+  p3d_set_prev_jnt   0
+  p3d_set_pos_xyz 0.0 0.0 0.0 0.0 0.0 0.0
+  p3d_set_dof      0 0 0  0   0   0
+  p3d_set_dof_vmin -3 -6 0 -180 -180 -180
+  p3d_set_dof_vmax 12 1 2 180 180 180
+p3d_end_desc
+
+p3d_beg_desc P3D_BODY box
+
+p3d_add_desc_box bottom 0.30 0.15 0.15
+p3d_set_prim_pos bottom 0 0 0.15 0 0 0
+
+p3d_end_desc
+p3d_end_desc
+
+p3d_set_body_poly_color box 1 Green
+

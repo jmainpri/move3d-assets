@@ -1,0 +1,49 @@
+p3d_beg_desc P3D_ENV prague
+
+p3d_read_macro batmansmall.macro human1
+
+p3d_read_macro visballsmall.macro visball
+
+p3d_read_macro jidoKukaGripper.macro robot
+
+#MOVABLE TABLE - CHAIRS - SHELF - TRASH
+p3d_read_macro tablebot.macro COFFEETABLE
+#p3d_read_macro fautbot.macro BlueCouch1
+#p3d_read_macro fautbot.macro BlueCouch2
+#p3d_read_macro trash.macro TRASHBIN
+p3d_read_macro shelf.macro CUPBOARDTABLE
+
+
+
+
+#BARRIERS
+p3d_beg_desc P3D_OBSTACLE east.barrier
+p3d_add_desc_box obs 19.0 0.05 2
+p3d_end_desc
+p3d_set_obst_poly_color east.barrier 1 Grey
+#p3d_set_obst_poly_color west.barrier 1 DGrey
+p3d_set_obst_pos east.barrier 14.0 -3.5 1.0 0 0 90
+
+p3d_beg_desc P3D_OBSTACLE north.barrier
+p3d_add_desc_box obs 25.3 0.05 2
+p3d_end_desc
+p3d_set_obst_poly_color north.barrier 1 Grey
+p3d_set_obst_pos north.barrier 1.35 6.0 1.0 0 0 0
+
+p3d_beg_desc P3D_OBSTACLE south.barrier
+p3d_add_desc_box obs 25.3 0.05 2
+p3d_end_desc
+p3d_set_obst_poly_color south.barrier 1 Grey
+p3d_set_obst_pos south.barrier 1.35 -13 1.0 0 0 0
+
+p3d_beg_desc P3D_OBSTACLE west.barrier
+p3d_add_desc_box obs 19.0 0.05 2
+p3d_end_desc
+p3d_set_obst_poly_color west.barrier 1 Grey
+p3d_set_obst_pos west.barrier -11.3 -3.5 1.0 0 0 90
+
+
+
+p3d_end_desc
+
+p3d_set_env_box -11 14 -13 6 0 0.7

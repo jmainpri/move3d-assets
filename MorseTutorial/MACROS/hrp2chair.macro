@@ -1,0 +1,69 @@
+p3d_beg_desc P3D_ROBOT
+
+p3d_beg_desc_jnt P3D_FREEFLYER  #1
+  p3d_set_prev_jnt   0
+  p3d_set_pos_xyz 0.0 0.0 0.0 0.0 0.0 0.0
+  p3d_set_dof      0 0 0  0   0   0
+  p3d_set_dof_vmin -3 -6 0 -180 -180 -180
+  p3d_set_dof_vmax 12 1 2 180 180 180
+p3d_end_desc
+
+p3d_beg_desc P3D_BODY chair
+
+p3d_add_desc_box top 0.445 0.425 0.045
+p3d_set_prim_pos top 0 0 0.4175 0 0 0
+
+p3d_add_desc_box leg1 0.025 0.025 0.325
+p3d_set_prim_pos leg1 0.21 0.20 0.2525 0 0 0
+
+p3d_add_desc_box leg2 0.025 0.025 0.325
+p3d_set_prim_pos leg2 0.21 -0.20 0.2525 0 0 0
+
+p3d_add_desc_box feet 0.315 0.5 0.02
+p3d_set_prim_pos feet 0.3375 0 0.08 0 0 0
+
+p3d_add_desc_cylindre wheell1 0.035 0.02
+p3d_set_prim_pos wheell1 0.21 0.20 0.035 90 0 0
+
+p3d_add_desc_cylindre wheell2 0.035 0.02
+p3d_set_prim_pos wheell2 0.21 -0.20 0.035 90 0 0
+
+p3d_add_desc_cylindre wheelf1 0.035 0.02
+p3d_set_prim_pos wheelf1 0.46 0.20 0.035 90 0 0
+
+p3d_add_desc_cylindre wheelf2 0.035 0.02
+p3d_set_prim_pos wheelf2 0.46 -0.20 0.035 90 0 0
+
+p3d_add_desc_box leg3 0.025 0.025 0.56
+p3d_set_prim_pos leg3 -0.21 0.20 0.34 0 0 0
+
+p3d_add_desc_box leg3 0.025 0.025 0.56
+p3d_set_prim_pos leg3 -0.21 -0.20 0.34 0 0 0
+
+p3d_add_desc_cylindre wheelb3 0.03 0.02
+p3d_set_prim_pos wheelb3 -0.21 0.20 0.03 90 0 0
+
+p3d_add_desc_cylindre wheelb4 0.03 0.02
+p3d_set_prim_pos wheelb4 -0.21 -0.20 0.03 90 0 0
+
+p3d_add_desc_box back 0.03 0.5 0.2
+p3d_set_prim_pos back -0.21 0 0.7 0 -15 0
+
+p3d_end_desc
+
+p3d_end_desc
+
+p3d_set_body_poly_color chair 1 Grey
+p3d_set_body_poly_color chair 2 Grey
+p3d_set_body_poly_color chair 3 Grey
+p3d_set_body_poly_color chair 4 Grey
+p3d_set_body_poly_color chair 5 Black
+p3d_set_body_poly_color chair 6 Black
+p3d_set_body_poly_color chair 7 Black
+p3d_set_body_poly_color chair 8 Black
+p3d_set_body_poly_color chair 9 Grey
+p3d_set_body_poly_color chair 10 Grey
+p3d_set_body_poly_color chair 11 Black
+p3d_set_body_poly_color chair 12 Black
+p3d_set_body_poly_color chair 13 Grey
+
