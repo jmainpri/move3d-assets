@@ -313,5 +313,5 @@
   p3d_end_desc
 p3d_end_desc
 
-p3d_set_obst_poly_color 1 Any 0.2675585 1.0 0.4041142
-p3d_set_obst_poly_color 2 Any 1.0 1.0 1.0
+p3d_set_body_poly_color surprise_box 1 Any 0.2675585 1.0 0.4041142
+p3d_set_body_poly_color surprise_box 2 Any 1 1 1
