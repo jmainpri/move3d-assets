@@ -151,7 +151,7 @@ p3d_beg_desc P3D_ROBOT
 #End effector
 
   p3d_beg_desc_jnt P3D_FIXED # J12
-    p3d_set_name wristJoint
+    p3d_set_name RightWrist
     p3d_set_pos_relative
     p3d_set_prev_jnt 11
   p3d_set_pos_mat 0 -0.3826834 0.9238795 0  0 -0.9238795 -0.3826834 0 1 0 0 0.105  0 0 0 1
