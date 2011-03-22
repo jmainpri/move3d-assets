@@ -1,8 +1,8 @@
 p3d_beg_desc P3D_ROBOT
 
   p3d_add_desc_jnt P3D_FREEFLYER 0 0 0 0 0 1
-	0 -3 12
-	0 -6 1
+	-0.5 -9 9
+	2 -9 9
 	0.84 0.84 0.84
 	0 -180 180
 	0 -180 180
