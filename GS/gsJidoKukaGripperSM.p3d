@@ -36,6 +36,7 @@ p3d_read_macro simplechair.macro SIMPLECHAIR
 #p3d_read_macro ./Objects/Movable/HRP2BarTable.macro HRP2BARTable
 p3d_read_macro ./Objects/Movable/ikeaShelf.macro IKEA_SHELF
 p3d_read_macro ./Objects/Movable/surprise_box.macro SURPRISE_BOX
+p3d_read_macro ./Objects/Movable/toyCube_wood.macro TOYCUBE_WOOD
 p3d_read_macro ./Objects/Movable/placeMat_red.macro PLACEMAT_RED
 p3d_read_macro ./Objects/Movable/placeMat_blue.macro PLACEMAT_BLUE
 p3d_read_macro ./Objects/Movable/placeMat_green.macro PLACEMAT_GREEN
