@@ -307,7 +307,7 @@ p3d_read_macro ./pr2Parts/Larm/larm7.macro larm
 p3d_beg_desc_jnt P3D_FIXED #23
   p3d_set_name lIkJoint
   p3d_set_prev_jnt 22
-  p3d_set_pos_axe 0.771001 -0.187993 0.802 0 0 1
+  p3d_set_pos_axe 0.771001 0.187993 0.802 0 0 1
 p3d_end_desc
 
 p3d_beg_desc_jnt P3D_ROTATE # J24
