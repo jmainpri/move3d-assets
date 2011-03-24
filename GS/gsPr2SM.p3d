@@ -10,7 +10,7 @@ p3d_end_desc
 
 # ************* SCENARIO SPECIFIC OBJECTS *************
 
-p3d_read_macro MovingBox.macro      MOVING_BOX
+#p3d_read_macro MovingBox.macro      MOVING_BOX
 p3d_read_macro LotrTape.macro       LOTR_TAPE
 p3d_read_macro WalleTape.macro      WALLE_TAPE
 p3d_read_macro GreyK7.macro         GREY_K7
@@ -21,7 +21,6 @@ p3d_read_macro GreyVideoTape.macro  GREY_TAPE
 p3d_read_macro AchileM.macro ACHILE_HUMAN1
 #p3d_read_macro AchileMKinect.macro HERAKLES_HUMAN1
 
-#p3d_read_macro batmansmall.macro SUPERMAN_HUMAN2
 # ************* MOVABLE OBJECTS **************
 
 # ***** FURNITURE
@@ -30,18 +29,23 @@ p3d_read_macro tablebot.macro LOWTABLE
 p3d_read_macro fautbot.macro CHAIR1
 p3d_read_macro fautbot.macro CHAIR2
 p3d_read_macro trash.macro TRASHBIN
-p3d_read_macro shelf.macro SHELF
+#p3d_read_macro shelf.macro SHELF
 p3d_read_macro hrp2table.macro HRP2TABLE
 p3d_read_macro simplechair.macro SIMPLECHAIR
 #p3d_read_macro ./Objects/Movable/HRP2BarTable.macro HRP2BARTable
-p3d_read_macro ./Objects/Movable/ikeaShelf.macro IKEA_SHELF 1.015
+p3d_read_macro ./Objects/Movable/ikeaShelf.macro IKEA_SHELF
+p3d_read_macro ./Objects/Movable/surprise_box.macro SURPRISE_BOX
+p3d_read_macro ./Objects/Movable/placeMat_red.macro PLACEMAT_RED
+p3d_read_macro ./Objects/Movable/placeMat_blue.macro PLACEMAT_BLUE
+p3d_read_macro ./Objects/Movable/placeMat_green.macro PLACEMAT_GREEN
+p3d_read_macro ./Objects/Movable/placeMat_purple.macro PLACEMAT_PURPLE
 
 # ***** MANIPULABLE OBJECTS
 
 p3d_read_macro toolbox.macro ACCESSKIT
 #p3d_read_macro Cup_with_handle.macro CUPHANDLE
 p3d_read_macro SpaceNav_Box.macro SPACENAVBOX
-p3d_read_macro BigPinkBox.macro PINK_TRASHBIN
+#p3d_read_macro BigPinkBox.macro PINK_TRASHBIN
 p3d_read_macro ./Objects/Movable/PaperDog.macro PAPERDOG
 #p3d_read_macro BlueBottle.macro BLUE_BOTTLE
 #p3d_read_macro OrangeBottle.macro ORANGE_BOTTLE
@@ -213,7 +217,7 @@ p3d_set_cntrt_Tatt 3 1.000000 0.000000 0.000000 -0.180000 0.000000 1.000000 0.00
 p3d_set_cntrt_Tatt2 3 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 1.000000 0.000000 0.000000 -0.180000
 
 # head
-#p3d_constraint p3d_head_object_track 2 3 4  1 30  0 0
+p3d_constraint p3d_head_object_track 2 3 4  1 32  0 0
 
 p3d_set_open_chain_config 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 4.146341 -2.390244 0.000000 0.000000 0.000000 0.000000 0.160000 0.000000 0.000000 0.000000 -15.959833 28.386015 0.551220 -132.652479 -163.281034 -103.821279 -176.400661 1.463272 1.463272 15.959834 28.386015 -0.551220 -132.652479 163.281034 -103.821279 176.400660 0.946148 0.946148 0.885356 2.126606 0.627320 4.634146 -2.682927 1.082927 0.000000 0.000000 0.000000 4.634146 -2.097561 1.082927 0.000000 0.000000 0.000000
 
