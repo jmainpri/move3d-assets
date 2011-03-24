@@ -1,9 +1,11 @@
 p3d_beg_desc P3D_ENV pr2
 
-p3d_read_macro pr2_gripper_robot.macro GRIPPER_PR2
+p3d_read_macro ./Objects/Movable/GreyVideoTape.macro  GREY_TAPE
+
+p3d_read_macro pr2_gripper_robot.macro PR2_GRIPPER
 
 p3d_end_desc
 
 p3d_set_env_box -1 1 -1 1 0 2
 
-
+p3d_set_jnt_dofs_min_max 1 -0.5 0.5 -0.5 0.5 -0.5 0.5  -180 180 -180 180 -180 180

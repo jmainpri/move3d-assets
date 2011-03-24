@@ -6,28 +6,28 @@ p3d_end_desc
 
 p3d_set_env_box -1 1 -1 1 0 2
 
-p3d_add_desc_rob_col_init ROBOT_PR2
-p3d_desactivate_col_check automatic
-
-p3d_desactivate_col_check larm.larm1 larm.larm3
-p3d_desactivate_col_check rarm.rarm1 rarm.rarm3
-
-# left
-p3d_constraint p3d_pr2_arm_ik 6 6 7 9 10 11 12  1 30  0  2 8 1
 
 # right
-p3d_constraint p3d_pr2_arm_ik 6 15 16 18 19 20 21  1 30 0  2 17 3
+p3d_constraint p3d_pr2_arm_ik 7 6 7 9 10 11 12 13  1 32  0  1 8
 
-p3d_set_cntrt_Tatt 2    1 0 0 0
-                        0 1 0 0
-                        0 0 1 0
+# left
+p3d_constraint p3d_pr2_arm_ik 7 16 17 19 20 21 22 23  1 33 0  1 18
 
-p3d_set_cntrt_Tatt 3    1 0 0 0
-                        0 1 0 0
-                        0 0 1 0
+p3d_set_cntrt_Tatt 2 1.000000 0.000000 0.000000 -0.180000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000
+p3d_set_cntrt_Tatt2 2 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 1.000000 0.000000 0.000000 -0.180000
+
+p3d_set_cntrt_Tatt 3 1.000000 0.000000 0.000000 -0.180000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000
+p3d_set_cntrt_Tatt2 3 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 1.000000 0.000000 0.000000 -0.180000
 
 #p3d_create_reeds_shepp_local_method 0.3 1
 
+#################################
+###### COLLISION DEACTIVATION ####
+##################################
+
+# For Pr2
+p3d_add_desc_rob_col_init PR2_ROBOT
+p3d_desactivate_col_check automatic
 
 #Base
 p3d_desactivate_col_check base.Gbase head.Gpan
@@ -74,18 +74,18 @@ p3d_desactivate_col_check larm.Glarm2 larm.Glarm7
 
 p3d_desactivate_col_check larm.Glarm3 larm.Glarm5
 p3d_desactivate_col_check larm.Glarm3 larm.Glarm7
-p3d_desactivate_col_check larm.Glarm3 larm.larm8
-p3d_desactivate_col_check larm.Glarm3 larm.larm9
+p3d_desactivate_col_check larm.Glarm3 hand1.finger1.larm8
+p3d_desactivate_col_check larm.Glarm3 hand1.finger2.larm9
 
 p3d_desactivate_col_check larm.Glarm4 larm.Glarm7
-p3d_desactivate_col_check larm.Glarm4 larm.larm8
-p3d_desactivate_col_check larm.Glarm4 larm.larm9
+p3d_desactivate_col_check larm.Glarm4 hand1.finger1.larm8
+p3d_desactivate_col_check larm.Glarm4 hand1.finger2.larm9
 
 p3d_desactivate_col_check larm.Glarm5 larm.Glarm7
-p3d_desactivate_col_check larm.Glarm5 larm.larm8
-p3d_desactivate_col_check larm.Glarm5 larm.larm9
+p3d_desactivate_col_check larm.Glarm5 hand1.finger1.larm8
+p3d_desactivate_col_check larm.Glarm5 hand1.finger2.larm9
 
-p3d_desactivate_col_check larm.larm8 larm.larm9
+p3d_desactivate_col_check hand1.finger1.larm8 hand1.finger2.larm9
 
 #Right Arm
 p3d_desactivate_col_check rarm.Grarm1 rarm.Grarm3
@@ -99,15 +99,15 @@ p3d_desactivate_col_check rarm.Grarm2 rarm.Grarm7
 
 p3d_desactivate_col_check rarm.Grarm3 rarm.Grarm5
 p3d_desactivate_col_check rarm.Grarm3 rarm.Grarm7
-p3d_desactivate_col_check rarm.Grarm3 rarm.rarm8
-p3d_desactivate_col_check rarm.Grarm3 rarm.rarm9
+p3d_desactivate_col_check rarm.Grarm3 hand0.finger1.rarm8
+p3d_desactivate_col_check rarm.Grarm3 hand0.finger2.rarm9
 
 p3d_desactivate_col_check rarm.Grarm4 rarm.Grarm7
-p3d_desactivate_col_check rarm.Grarm4 rarm.rarm8
-p3d_desactivate_col_check rarm.Grarm4 rarm.rarm9
+p3d_desactivate_col_check rarm.Grarm4 hand0.finger1.rarm8
+p3d_desactivate_col_check rarm.Grarm4 hand0.finger2.rarm9
 
 p3d_desactivate_col_check rarm.Grarm5 rarm.Grarm7
-p3d_desactivate_col_check rarm.Grarm5 rarm.rarm8
-p3d_desactivate_col_check rarm.Grarm5 rarm.rarm9
+p3d_desactivate_col_check rarm.Grarm5 hand0.finger1.rarm8
+p3d_desactivate_col_check rarm.Grarm5 hand0.finger2.rarm9
 
-p3d_desactivate_col_check rarm.rarm8 rarm.rarm9
+p3d_desactivate_col_check hand0.finger1.rarm8 hand0.finger2.rarm9
