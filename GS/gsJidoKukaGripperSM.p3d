@@ -250,7 +250,7 @@ p3d_multi_localpath_data jointsToExport joint Linear
 p3d_set_robot_steering_method Multi-Localpath
 
 
-#p3d_set_arm_data cntrtId objectMultilocalpathGroupIdLinear  objectMultilocalpathGroupIdSm handMultilocalpathGroupIdLinear handMultilocalpathGroupIdSoftMotion handType virtualObjectJntId
-p3d_set_arm_data 1 -1 -1 -1 -1 0 19
+#p3d_set_arm_data cntrtId handType virtualObjectJntId
+p3d_set_arm_data 1 0 19
 p3d_set_config_cost_threshold 0.40
 

@@ -245,9 +245,9 @@ p3d_set_robot_steering_method Multi-Localpath
 
 
 p3d_set_object_base_and_arm_constraints 32 1 0  2 2 3
-#p3d_set_arm_data cntrtId objectMultilocalpathGroupIdLinear  objectMultilocalpathGroupIdSm handMultilocalpathGroupIdLinear handMultilocalpathGroupIdSoftMotion handType virtualObjectJntId
+#p3d_set_arm_data cntrtId handType virtualObjectJntId
 
-p3d_set_arm_data 2 -1 -1 -1 -1 3 32
-p3d_set_arm_data 3 -1 -1 -1 -1 3 33
+p3d_set_arm_data 2 3 32
+p3d_set_arm_data 3 3 33
 
 p3d_set_config_cost_threshold 0.20
