@@ -99,8 +99,8 @@ p3d_beg_desc_jnt P3D_ROTATE # J7
   p3d_set_pos_axe 0.050001 -0.187993 0.802 0 1 0
 #  p3d_set_pos_mat  0 1 0 0.050001  0 0 1 -0.187993  1 0 0 0.802 0 0 0 1
   p3d_set_dof 0.0
-  p3d_set_dof_vmin -30
-  p3d_set_dof_vmax 80
+  p3d_set_dof_vmin -80
+  p3d_set_dof_vmax 30
   p3d_set_dof_jerk_max           3.123  # max 12.492	
   p3d_set_dof_acceleration_max   1.044  # max 4.176
   p3d_set_dof_velocity_max       0.522  # max 2.082
@@ -255,7 +255,7 @@ p3d_read_macro ./pr2Parts/Larm/larm3.macro larm
 p3d_beg_desc_jnt P3D_ROTATE # J19
   p3d_set_name left-Arm4
   p3d_set_prev_jnt 18
-  p3d_set_pos_axe 0.450001 0.187993 0.802 0 -1 0
+  p3d_set_pos_axe 0.450001 0.187993 0.802 0 1 0
   p3d_set_dof 0.0
   p3d_set_dof_vmin 0
   p3d_set_dof_vmax 133
@@ -268,7 +268,7 @@ p3d_read_macro ./pr2Parts/Larm/larm4.macro larm
 p3d_beg_desc_jnt P3D_ROTATE # J20
   p3d_set_name left-Arm5
   p3d_set_prev_jnt 19
-  p3d_set_pos_axe 0.450001 0.187993 0.802 -1 0 0
+  p3d_set_pos_axe 0.450001 0.187993 0.802 1 0 0
   p3d_set_dof 0.0
   p3d_set_dof_vmin -223
   p3d_set_dof_vmax 45
@@ -281,7 +281,7 @@ p3d_read_macro ./pr2Parts/Larm/larm5.macro larm
 p3d_beg_desc_jnt P3D_ROTATE # J21
   p3d_set_name left-Arm6
   p3d_set_prev_jnt 20
-  p3d_set_pos_axe 0.771001 0.187993 0.802 0 -1 0
+  p3d_set_pos_axe 0.771001 0.187993 0.802 0 1 0
   p3d_set_dof 0.0
   p3d_set_dof_vmin 0
   p3d_set_dof_vmax 119
