@@ -9,8 +9,25 @@
   p3d_end_desc
 
   p3d_beg_desc P3D_BODY toyCube
-    p3d_add_desc_box toyCube 0.06 0.06 0.06
-    p3d_set_prim_pos toyCube 0 0 0.03 0 0 0
+  
+ p3d_add_desc_poly polyhedre1
+      p3d_add_desc_vert 0.0299999844283 0.0299999825656 0.0
+      p3d_add_desc_vert 0.0299999844283 -0.0299999844283 0.0
+      p3d_add_desc_vert -0.0299999881536 -0.0299999788404 0.0
+      p3d_add_desc_vert -0.0299999732524 0.0299999956042 0.0
+      p3d_add_desc_vert 0.0299999993294 0.0299999676645 0.0599999986589
+      p3d_add_desc_vert 0.0299999639392 -0.0300000030547 0.0599999986589
+      p3d_add_desc_vert -0.0299999956042 -0.0299999732524 0.0599999986589
+      p3d_add_desc_vert -0.0299999825656 0.0299999844283 0.0599999986589
+
+      p3d_add_desc_face 1 2 3 4
+      p3d_add_desc_face 5 8 7 6
+      p3d_add_desc_face 1 5 6 2
+      p3d_add_desc_face 2 6 7 3
+      p3d_add_desc_face 3 7 8 4
+      p3d_add_desc_face 5 1 4 8
+    p3d_end_desc_poly 
+
   p3d_end_desc
 p3d_end_desc
 
