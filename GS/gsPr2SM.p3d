@@ -163,18 +163,18 @@ p3d_desactivate_col_check larm.Glarm2 larm.Glarm7
 
 p3d_desactivate_col_check larm.Glarm3 larm.Glarm5
 p3d_desactivate_col_check larm.Glarm3 larm.Glarm7
-p3d_desactivate_col_check larm.Glarm3 hand1.finger1.larm8
-p3d_desactivate_col_check larm.Glarm3 hand1.finger2.larm9
+p3d_desactivate_col_check larm.Glarm3 hand1.finger1.fingertip
+p3d_desactivate_col_check larm.Glarm3 hand1.finger2.fingertip
 
 p3d_desactivate_col_check larm.Glarm4 larm.Glarm7
-p3d_desactivate_col_check larm.Glarm4 hand1.finger1.larm8
-p3d_desactivate_col_check larm.Glarm4 hand1.finger2.larm9
+p3d_desactivate_col_check larm.Glarm4 hand1.finger1.fingertip
+p3d_desactivate_col_check larm.Glarm4 hand1.finger2.fingertip
 
 p3d_desactivate_col_check larm.Glarm5 larm.Glarm7
-p3d_desactivate_col_check larm.Glarm5 hand1.finger1.larm8
-p3d_desactivate_col_check larm.Glarm5 hand1.finger2.larm9
+p3d_desactivate_col_check larm.Glarm5 hand1.finger1.fingertip
+p3d_desactivate_col_check larm.Glarm5 hand1.finger2.fingertip
 
-p3d_desactivate_col_check hand1.finger1.larm8 hand1.finger2.larm9
+p3d_desactivate_col_check hand1.finger1.larm8 hand1.finger2.fingertip
 
 #Right Arm
 p3d_desactivate_col_check rarm.Grarm1 rarm.Grarm3
@@ -188,18 +188,18 @@ p3d_desactivate_col_check rarm.Grarm2 rarm.Grarm7
 
 p3d_desactivate_col_check rarm.Grarm3 rarm.Grarm5
 p3d_desactivate_col_check rarm.Grarm3 rarm.Grarm7
-p3d_desactivate_col_check rarm.Grarm3 hand0.finger1.rarm8
-p3d_desactivate_col_check rarm.Grarm3 hand0.finger2.rarm9
+p3d_desactivate_col_check rarm.Grarm3 hand0.finger1.fingertip
+p3d_desactivate_col_check rarm.Grarm3 hand0.finger2.fingertip
 
 p3d_desactivate_col_check rarm.Grarm4 rarm.Grarm7
-p3d_desactivate_col_check rarm.Grarm4 hand0.finger1.rarm8
-p3d_desactivate_col_check rarm.Grarm4 hand0.finger2.rarm9
+p3d_desactivate_col_check rarm.Grarm4 hand0.finger1.fingertip
+p3d_desactivate_col_check rarm.Grarm4 hand0.finger2.fingertip
 
 p3d_desactivate_col_check rarm.Grarm5 rarm.Grarm7
-p3d_desactivate_col_check rarm.Grarm5 hand0.finger1.rarm8
-p3d_desactivate_col_check rarm.Grarm5 hand0.finger2.rarm9
+p3d_desactivate_col_check rarm.Grarm5 hand0.finger1.fingertip
+p3d_desactivate_col_check rarm.Grarm5 hand0.finger2.fingertip
 
-p3d_desactivate_col_check hand0.finger1.rarm8 hand0.finger2.rarm9
+p3d_desactivate_col_check hand0.finger1.rarm8 hand0.finger2.fingertip
 
 #######################
 ###### CONSTRAINTS ####
