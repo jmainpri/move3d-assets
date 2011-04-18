@@ -1,4 +1,4 @@
-p3d_beg_desc P3D_BODY larm9
+p3d_beg_desc P3D_BODY fingertip
     p3d_add_desc_poly body62_polyhedre30
       p3d_add_desc_vert 0.0491310991347 0.0277536995709 0.0393270999193
       p3d_add_desc_vert 0.0513763986528 0.0277500003576 0.00358416000381

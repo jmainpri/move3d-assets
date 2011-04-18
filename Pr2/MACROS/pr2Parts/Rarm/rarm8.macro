@@ -1,4 +1,4 @@
- p3d_beg_desc P3D_BODY rarm8
+ p3d_beg_desc P3D_BODY fingertip
     p3d_add_desc_poly body88_polyhedre43
       p3d_add_desc_vert 0.0491224005818 -0.0277500003576 -0.0393406003714
       p3d_add_desc_vert 0.051375400275 -0.0277500003576 -0.00359807000495

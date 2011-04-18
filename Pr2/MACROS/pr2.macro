@@ -527,10 +527,10 @@ p3d_set_body_poly_color rarm.rarm5 1 Any 0.6 0.6 0.6
 p3d_set_body_poly_color rarm.rarm6 1 Any 0.6 0.6 0.6
 p3d_set_body_poly_color rarm.rarm6 2 Any 0.6 0.6 0.6
 p3d_set_body_poly_color rarm.rarm7 1 Any 0.6 0.6 0.6
-p3d_set_body_poly_color hand0.finger1.rarm8 1 Any 0.9 0.9 0.9
-p3d_set_body_poly_color hand0.finger1.rarm8 2 Any 0.9 0.9 0.9
-p3d_set_body_poly_color hand0.finger2.rarm9 1 Any 0.9 0.9 0.9
-p3d_set_body_poly_color hand0.finger2.rarm9 2 Any 0.9 0.9 0.9
+p3d_set_body_poly_color hand0.finger1.fingertip 1 Any 0.9 0.9 0.9
+p3d_set_body_poly_color hand0.finger1.fingertip 2 Any 0.9 0.9 0.9
+p3d_set_body_poly_color hand0.finger2.fingertip 1 Any 0.9 0.9 0.9
+p3d_set_body_poly_color hand0.finger2.fingertip 2 Any 0.9 0.9 0.9
 
 p3d_set_body_poly_color larm.larm1 1 Any 0.8 0.8 0.8
 p3d_set_body_poly_color larm.larm2 1 Any 0.3 0.3 0.3
@@ -542,10 +542,10 @@ p3d_set_body_poly_color larm.larm5 1 Any 0.6 0.6 0.6
 p3d_set_body_poly_color larm.larm6 1 Any 0.6 0.6 0.6
 p3d_set_body_poly_color larm.larm6 2 Any 0.6 0.6 0.6
 p3d_set_body_poly_color larm.larm7 1 Any 0.6 0.6 0.6
-p3d_set_body_poly_color hand1.finger1.larm8 1 Any 0.9 0.9 0.9
-p3d_set_body_poly_color hand1.finger1.larm8 2 Any 0.9 0.9 0.9
-p3d_set_body_poly_color hand1.finger2.larm9 1 Any 0.9 0.9 0.9
-p3d_set_body_poly_color hand1.finger2.larm9 2 Any 0.9 0.9 0.9
+p3d_set_body_poly_color hand1.finger1.fingertip 1 Any 0.9 0.9 0.9
+p3d_set_body_poly_color hand1.finger1.fingertip 2 Any 0.9 0.9 0.9
+p3d_set_body_poly_color hand1.finger2.fingertip 1 Any 0.9 0.9 0.9
+p3d_set_body_poly_color hand1.finger2.fingertip 2 Any 0.9 0.9 0.9
 
 p3d_set_body_poly_color fictiveObject_right 1 Any 0 1 0
 p3d_set_body_poly_color fictiveObject_left 1 Any 0 0 1
