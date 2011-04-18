@@ -174,7 +174,7 @@ p3d_desactivate_col_check larm.Glarm5 larm.Glarm7
 p3d_desactivate_col_check larm.Glarm5 hand1.finger1.fingertip
 p3d_desactivate_col_check larm.Glarm5 hand1.finger2.fingertip
 
-p3d_desactivate_col_check hand1.finger1.larm8 hand1.finger2.fingertip
+p3d_desactivate_col_check hand1.finger1.fingertip hand1.finger2.fingertip
 
 #Right Arm
 p3d_desactivate_col_check rarm.Grarm1 rarm.Grarm3
@@ -199,7 +199,7 @@ p3d_desactivate_col_check rarm.Grarm5 rarm.Grarm7
 p3d_desactivate_col_check rarm.Grarm5 hand0.finger1.fingertip
 p3d_desactivate_col_check rarm.Grarm5 hand0.finger2.fingertip
 
-p3d_desactivate_col_check hand0.finger1.rarm8 hand0.finger2.fingertip
+p3d_desactivate_col_check hand0.finger1.fingertip hand0.finger2.fingertip
 
 #######################
 ###### CONSTRAINTS ####

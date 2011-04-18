@@ -80,6 +80,8 @@ p3d_end_desc
 p3d_read_macro ./pr2Parts/Head/laser.macro head
 
 #---------------------------------------------------------------
+# Right ARM
+#---------------------------------------------------------------
 p3d_beg_desc_jnt P3D_ROTATE # J6
   p3d_set_name right-Arm1
   p3d_set_prev_jnt 2
@@ -455,8 +457,8 @@ p3d_set_body_abs_pos rarm.rarm4 0 0 0.011325 0 0 0
 p3d_set_body_abs_pos rarm.rarm5 0 0 0.011325 0 0 0
 p3d_set_body_abs_pos rarm.rarm6 0 0 0.011325 0 0 0
 p3d_set_body_abs_pos rarm.rarm7 0 0 0.011325 0 0 0
-p3d_set_body_abs_pos hand0.finger1.rarm8 0 0 0.011325 0 0 0
-p3d_set_body_abs_pos hand0.finger2.rarm9 0 0 0.011325 0 0 0
+p3d_set_body_abs_pos hand0.finger1.fingertip 0 0 0.011325 0 0 0
+p3d_set_body_abs_pos hand0.finger2.fingertip 0 0 0.011325 0 0 0
 
 #rArm Ghosts
 p3d_set_body_abs_pos rarm.Grarm1 0 0 0.011325 0 0 0
@@ -475,8 +477,8 @@ p3d_set_body_abs_pos larm.larm4 0 0 0.011325 0 0 0
 p3d_set_body_abs_pos larm.larm5 0 0 0.011325 0 0 0
 p3d_set_body_abs_pos larm.larm6 0 0 0.011325 0 0 0
 p3d_set_body_abs_pos larm.larm7 0 0 0.011325 0 0 0
-p3d_set_body_abs_pos hand1.finger1.larm8 0 0 0.011325 0 0 0
-p3d_set_body_abs_pos hand1.finger2.larm9 0 0 0.011325 0 0 0
+p3d_set_body_abs_pos hand1.finger1.fingertip 0 0 0.011325 0 0 0
+p3d_set_body_abs_pos hand1.finger2.fingertip 0 0 0.011325 0 0 0
 
 #lArm Ghosts
 p3d_set_body_abs_pos larm.Glarm1 0 0 0.011325 0 0 0
