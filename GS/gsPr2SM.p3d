@@ -106,7 +106,7 @@ p3d_desactivate_col_check automatic
 p3d_desactivate_col_check larm.larm1 larm.larm3
 p3d_desactivate_col_check rarm.rarm1 rarm.rarm3
 
-p3d_set_env_box -2 11.84286 -6.04226 1.06978 0 3
+p3d_set_env_box -2 11.84286 -7.2 1.06978 0 3
 
 p3d_set_obst_color floor Any 1 0.87 0.49
 
