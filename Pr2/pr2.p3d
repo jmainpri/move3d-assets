@@ -1,12 +1,19 @@
 p3d_beg_desc P3D_ENV pr2
 
-p3d_read_macro pr2.macro ROBOT_PR2
+p3d_read_macro visballsmall.macro VISBALL
+
+p3d_read_macro pr2.macro PR2_ROBOT
 
 p3d_end_desc
 
 p3d_set_env_box -1 1 -1 1 0 2
 
-p3d_add_desc_rob_col_init ROBOT_PR2
+p3d_sel_desc_name P3D_ROBOT VISBALL
+p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.700000 0.000000 0.700000 0.000000 0.000000 0.000000
+p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+
+# For Pr2
+p3d_add_desc_rob_col_init PR2_ROBOT
 p3d_desactivate_col_check automatic
 
 #Base
@@ -16,6 +23,8 @@ p3d_desactivate_col_check base.Gbase head.Glaser
 
 p3d_desactivate_col_check base.Gbase larm.Glarm1
 p3d_desactivate_col_check base.Gbase rarm.Grarm1
+p3d_desactivate_col_check base.Gbase larm.Glarm2
+p3d_desactivate_col_check base.Gbase rarm.Grarm2
 
 #Torso
 p3d_desactivate_col_check torso.Gtorso head.Gtilt
@@ -52,18 +61,18 @@ p3d_desactivate_col_check larm.Glarm2 larm.Glarm7
 
 p3d_desactivate_col_check larm.Glarm3 larm.Glarm5
 p3d_desactivate_col_check larm.Glarm3 larm.Glarm7
-p3d_desactivate_col_check larm.Glarm3 larm.larm8
-p3d_desactivate_col_check larm.Glarm3 larm.larm9
+p3d_desactivate_col_check larm.Glarm3 hand1.finger1.fingertip
+p3d_desactivate_col_check larm.Glarm3 hand1.finger2.fingertip
 
 p3d_desactivate_col_check larm.Glarm4 larm.Glarm7
-p3d_desactivate_col_check larm.Glarm4 larm.larm8
-p3d_desactivate_col_check larm.Glarm4 larm.larm9
+p3d_desactivate_col_check larm.Glarm4 hand1.finger1.fingertip
+p3d_desactivate_col_check larm.Glarm4 hand1.finger2.fingertip
 
 p3d_desactivate_col_check larm.Glarm5 larm.Glarm7
-p3d_desactivate_col_check larm.Glarm5 larm.larm8
-p3d_desactivate_col_check larm.Glarm5 larm.larm9
+p3d_desactivate_col_check larm.Glarm5 hand1.finger1.fingertip
+p3d_desactivate_col_check larm.Glarm5 hand1.finger2.fingertip
 
-p3d_desactivate_col_check larm.larm8 larm.larm9
+p3d_desactivate_col_check hand1.finger1.fingertip hand1.finger2.fingertip
 
 #Right Arm
 p3d_desactivate_col_check rarm.Grarm1 rarm.Grarm3
@@ -77,15 +86,16 @@ p3d_desactivate_col_check rarm.Grarm2 rarm.Grarm7
 
 p3d_desactivate_col_check rarm.Grarm3 rarm.Grarm5
 p3d_desactivate_col_check rarm.Grarm3 rarm.Grarm7
-p3d_desactivate_col_check rarm.Grarm3 rarm.rarm8
-p3d_desactivate_col_check rarm.Grarm3 rarm.rarm9
+p3d_desactivate_col_check rarm.Grarm3 hand0.finger1.fingertip
+p3d_desactivate_col_check rarm.Grarm3 hand0.finger2.fingertip
 
 p3d_desactivate_col_check rarm.Grarm4 rarm.Grarm7
-p3d_desactivate_col_check rarm.Grarm4 rarm.rarm8
-p3d_desactivate_col_check rarm.Grarm4 rarm.rarm9
+p3d_desactivate_col_check rarm.Grarm4 hand0.finger1.fingertip
+p3d_desactivate_col_check rarm.Grarm4 hand0.finger2.fingertip
 
 p3d_desactivate_col_check rarm.Grarm5 rarm.Grarm7
-p3d_desactivate_col_check rarm.Grarm5 rarm.rarm8
-p3d_desactivate_col_check rarm.Grarm5 rarm.rarm9
+p3d_desactivate_col_check rarm.Grarm5 hand0.finger1.fingertip
+p3d_desactivate_col_check rarm.Grarm5 hand0.finger2.fingertip
 
-p3d_desactivate_col_check rarm.rarm8 rarm.rarm9
+p3d_desactivate_col_check hand0.finger1.fingertip hand0.finger2.fingertip
+
