@@ -60,6 +60,12 @@ p3d_read_macro ./Objects/Movable/PaperDog.macro PAPERDOG
 p3d_read_macro visballsmall.macro VISBALL_INTERNAL
 p3d_read_macro Gripper_robot.macro JIDO_GRIPPER
 
+# For calculating Mightability Maps
+p3d_read_macro test_cube_Mightability.macro VISBALL_MIGHTABILITY
+
+#For calculating Graspability of Human
+p3d_read_macro SAHandRight_robot.macro SAHandRight2
+
 # *************** STATIC/UNMOVABLE OBSTACLES *************
 
 # ****** FURNITURE
