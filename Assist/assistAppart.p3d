@@ -1,0 +1,293 @@
+p3d_beg_desc P3D_ENV assistAppart
+
+  p3d_beg_desc P3D_ROBOT pipo
+    p3d_beg_desc P3D_BODY pipo.body
+#      p3d_add_desc_box box 0 0 0
+#      p3d_set_prim_pos box 1e+32 1e+32 1e+32  0.0 0.0 0.0
+    p3d_end_desc
+  p3d_end_desc
+
+  p3d_read_macro OB_GBath2.macro OB_GBath2
+  p3d_set_obst_pos OB_GBath2 3.912914 9.328825 -0.159031 0.0 0.0 0.0
+
+  p3d_read_macro OB_GNightTable2.macro OB_GNightTable2
+  p3d_set_obst_pos OB_GNightTable2 0.186745 6.704311 0.011288 0.0 0.0 0.0
+
+  p3d_read_macro OB_GNightTable1.macro OB_GNightTable1
+  p3d_set_obst_pos OB_GNightTable1 0.186745 8.87001 0.011288 0.0 0.0 0.0
+
+  p3d_read_macro OB_GBed.macro OB_GBed
+  p3d_set_obst_pos OB_GBed 1.058444 7.783863 -0.20558 0.0 0.0 0.0
+
+  p3d_read_macro OB_GSofa.macro OB_GSofa
+  p3d_set_obst_pos OB_GSofa 1.048692 4.687161 -0.212959 0.0 0.0 0.0
+
+  p3d_read_macro OB_GTV.macro OB_GTV
+  p3d_set_obst_pos OB_GTV 0.427336 0.412591 -0.20558 0.0 0.0 0.0
+
+  p3d_read_macro OB_GKitchen.macro OB_GKitchen
+  p3d_set_obst_pos OB_GKitchen 4.285398 1.806548 -0.203803 0.0 0.0 0.0
+
+  p3d_read_macro OB_GWallIn.macro OB_GWallIn
+  p3d_set_obst_pos OB_GWallIn 2.748701 7.255932 -0.220018 0.0 0.0 0.0
+
+  p3d_read_macro OB_GBath.macro OB_GBath
+  p3d_set_obst_pos OB_GBath 5.024855 6.574758 -0.241595 0.0 0.0 0.0
+
+  p3d_read_macro OB_GWallOut.macro OB_GWallOut
+  p3d_set_obst_pos OB_GWallOut 2.759565 4.648945 -0.226332 0.0 0.0 0.0
+
+  p3d_read_macro OB_Door3.macro OB_Door3
+  p3d_set_obst_pos OB_Door3 3.211791 5.798899 0.001999 0.0 0.0 0.0
+
+  p3d_read_macro OB_Door2.macro OB_Door2
+  p3d_set_obst_pos OB_Door2 3.496832 5.7989 0.001999 0.0 0.0 0.0
+
+  p3d_read_macro OB_NightTable1.macro OB_NightTable1
+  p3d_set_obst_pos OB_NightTable1 0.226749 8.869913 0 0.0 0.0 0.0
+
+  p3d_read_macro OB_Heater2.macro OB_Heater2
+  p3d_set_obst_pos OB_Heater2 0.032566 3.740863 0.043615 0.0 0.0 0.0
+
+  p3d_read_macro OB_Heater3.macro OB_Heater3
+  p3d_set_obst_pos OB_Heater3 3.464094 7.534697 0.036305 0.0 0.0 0.0
+
+  p3d_read_macro OB_Washer.macro OB_Washer
+  p3d_set_obst_pos OB_Washer 5.16851 1.816701 0.641571 0.0 0.0 0.0
+
+  p3d_read_macro OB_DishWasher.macro OB_DishWasher
+  p3d_set_obst_pos OB_DishWasher 4.51445 3.310655 0.302 0.0 0.0 0.0
+
+  p3d_read_macro OB_Hoven.macro OB_Hoven
+  p3d_set_obst_pos OB_Hoven 3.24425 0.3734 0.632 0.0 0.0 0.0
+
+  p3d_read_macro OB_MicroWave.macro OB_MicroWave
+  p3d_set_obst_pos OB_MicroWave 3.879439 0.31653 0.868129 0.0 0.0 0.0
+
+  p3d_read_macro OB_WallAndKitchen_002.macro OB_WallAndKitchen_002
+  p3d_set_obst_pos OB_WallAndKitchen_002 4.993741 0.674998 0.851838 0.0 0.0 0.0
+
+  p3d_read_macro OB_WallAndKitchen.macro OB_WallAndKitchen
+  p3d_set_obst_pos OB_WallAndKitchen 2.72425 4.7394 -0.188 0.0 0.0 0.0
+
+  p3d_read_macro OB_GWallAndKitchen.macro OB_GWallAndKitchen
+  p3d_set_obst_pos OB_GWallAndKitchen 2.716087 4.737806 -0.206227 0.0 0.0 0.0
+
+  p3d_read_macro OB_Sofa.macro OB_Sofa
+  p3d_set_obst_pos OB_Sofa 1.329332 4.640037 0.002 0.0 0.0 0.0
+
+  p3d_read_macro OB_Door.macro OB_Door
+  p3d_set_obst_pos OB_Door 5.466249 4.719399 0.001999 0.0 0.0 0.0
+
+  p3d_read_macro OB_Door4.macro OB_Door4
+  p3d_set_obst_pos OB_Door4 3.34625 6.714399 0.001999 0.0 0.0 0.0
+
+  p3d_read_macro OB_Window.macro OB_Window
+  p3d_set_obst_pos OB_Window 5.54675 2.2794 1.202 0.0 0.0 0.0
+
+  p3d_read_macro OB_Window2.macro OB_Window2
+  p3d_set_obst_pos OB_Window2 -0.09825 2.2644 0.002 0.0 0.0 0.0
+
+  p3d_read_macro OB_Window4.macro OB_Window4
+  p3d_set_obst_pos OB_Window4 3.98925 9.5769 1.352 0.0 0.0 0.0
+
+  p3d_read_macro OB_Window3.macro OB_Window3
+  p3d_set_obst_pos OB_Window3 1.674249 9.5769 1.202 0.0 0.0 0.0
+
+  p3d_read_macro OB_TowTable.macro OB_TowTable
+  p3d_set_obst_pos OB_TowTable 0.869249 3.539399 0.001999 0.0 0.0 0.0
+
+  p3d_read_macro OB_Heater.macro OB_Heater
+  p3d_set_obst_pos OB_Heater 1.597021 9.444459 0.028996 0.0 0.0 0.0
+
+  p3d_read_macro OB_Chair3.macro OB_Chair3
+  p3d_set_obst_pos OB_Chair3 2.160264 0.949399 -0.008266 0.0 0.0 0.0
+
+  p3d_read_macro OB_Chair2.macro OB_Chair2
+  p3d_set_obst_pos OB_Chair2 1.77425 0.454785 0.002 0.0 0.0 0.0
+
+  p3d_read_macro OB_Chair.macro OB_Chair
+  p3d_set_obst_pos OB_Chair 1.216635 0.9444 -0.008266 0.0 0.0 0.0
+
+  p3d_read_macro OB_Bath.macro OB_Bath
+  p3d_set_obst_pos OB_Bath 5.100538 6.199151 0.001999 0.0 0.0 0.0
+
+  p3d_read_macro OB_Sink.macro OB_Sink
+  p3d_set_obst_pos OB_Sink 3.926185 9.307022 0.001999 0.0 0.0 0.0
+
+  p3d_read_macro OB_WC.macro OB_WC
+  p3d_set_obst_pos OB_WC 5.019054 7.442736 0.002 0.0 0.0 0.0
+
+  p3d_read_macro OB_Table.macro OB_Table
+  p3d_set_obst_pos OB_Table 1.684249 1.249399 0.001999 0.0 0.0 0.0
+
+  p3d_read_macro OB_TVDesk.macro OB_TVDesk
+  p3d_set_obst_pos OB_TVDesk 0.39615 0.42311 0.001999 0.0 0.0 0.0
+
+  p3d_read_macro OB_NightTable2.macro OB_NightTable2
+  p3d_set_obst_pos OB_NightTable2 0.226749 6.699399 0.001999 0.0 0.0 0.0
+
+  p3d_read_macro OB_Bed.macro OB_Bed
+  p3d_set_obst_pos OB_Bed 1.04425 7.7844 0.001999 0.0 0.0 0.0
+
+  p3d_read_macro OB_Armoire.macro OB_Armoire
+  p3d_set_obst_pos OB_Armoire 1.099249 5.546029 0.001999 0.0 0.0 0.0
+
+  p3d_read_macro OB_TV.macro OB_TV
+  p3d_set_obst_pos OB_TV 0.370343 0.411958 0.352 0.0 0.0 0.0
+
+  p3d_read_macro jidoKukaGripper.macro JIDOKUKA_ROBOT
+p3d_end_desc
+
+
+p3d_set_env_box 0 10 0 10 0 3
+
+#p3d_set_obst_color floor Any 1 0.87 0.49
+
+######################
+##### HRI_COSTSPACE ##
+######################
+#p3d_CostEnvironment
+
+#################################
+##### COLLISION DEACTIVATION ####
+#################################
+
+# For Jido
+p3d_add_desc_rob_col_init JIDOKUKA_ROBOT
+
+p3d_desactivate_col_check automatic
+
+p3d_desactivate_col_check platform.platformGhost pan.Gpan
+p3d_desactivate_col_check platform.platformGhost topCameras.GtopCameras 
+p3d_desactivate_col_check platform.platformGhost base.GkukaBase
+p3d_desactivate_col_check platform.platformGhost kuka1.Gkuka1
+
+p3d_desactivate_col_check base.GkukaBase pan.Gpan
+p3d_desactivate_col_check base.GkukaBase topCameras.GtopCameras
+p3d_desactivate_col_check base.GkukaBase kuka2.Gkuka2
+p3d_desactivate_col_check base.GkukaBase kuka3.Gkuka3
+p3d_desactivate_col_check base.GkukaBase kuka4.Gkuka4
+p3d_desactivate_col_check base.GkukaBase kuka5.Gkuka5
+p3d_desactivate_col_check base.GkukaBase kuka6.Gkuka6
+p3d_desactivate_col_check base.GkukaBase kuka7.kuka7
+
+p3d_desactivate_col_check kuka1.Gkuka1 pan.Gpan
+p3d_desactivate_col_check kuka1.Gkuka1 topCameras.GtopCameras
+p3d_desactivate_col_check kuka1.Gkuka1 kuka3.Gkuka3
+p3d_desactivate_col_check kuka1.Gkuka1 kuka4.Gkuka4
+p3d_desactivate_col_check kuka1.Gkuka1 kuka5.Gkuka5
+p3d_desactivate_col_check kuka1.Gkuka1 kuka6.Gkuka6
+p3d_desactivate_col_check kuka1.Gkuka1 kuka7.kuka7
+
+p3d_desactivate_col_check kuka2.Gkuka2 pan.Gpan
+p3d_desactivate_col_check kuka2.Gkuka2 topCameras.GtopCameras
+p3d_desactivate_col_check kuka2.Gkuka2 kuka4.Gkuka4
+p3d_desactivate_col_check kuka2.Gkuka2 kuka5.Gkuka5
+p3d_desactivate_col_check kuka2.Gkuka2 kuka6.Gkuka6
+p3d_desactivate_col_check kuka2.Gkuka2 kuka7.kuka7
+
+p3d_desactivate_col_check kuka3.Gkuka3 kuka5.Gkuka5
+p3d_desactivate_col_check kuka3.Gkuka3 kuka6.Gkuka6
+p3d_desactivate_col_check kuka3.Gkuka3 kuka7.kuka7
+
+p3d_desactivate_col_check kuka4.Gkuka4 kuka6.Gkuka6
+p3d_desactivate_col_check kuka4.Gkuka4 kuka7.kuka7
+
+p3d_desactivate_col_check kuka5.Gkuka5 kuka7.kuka7
+
+#Arm vs Hands Autocol
+#Right Arm/hand
+p3d_desactivate_col_check kuka4.Gkuka4 hand0.palm
+p3d_desactivate_col_check kuka4.Gkuka4 hand0.finger1.finger1
+p3d_desactivate_col_check kuka4.Gkuka4 hand0.finger2.finger2
+p3d_desactivate_col_check kuka4.Gkuka4 hand0.finger1.fingertip
+p3d_desactivate_col_check kuka4.Gkuka4 hand0.finger2.fingertip
+p3d_desactivate_col_check kuka4.Gkuka4 hand0.finger3.fingertip
+
+p3d_desactivate_col_check kuka5.Gkuka5 hand0.palm
+p3d_desactivate_col_check kuka5.Gkuka5 hand0.finger1.finger1
+p3d_desactivate_col_check kuka5.Gkuka5 hand0.finger2.finger2
+p3d_desactivate_col_check kuka5.Gkuka5 hand0.finger1.fingertip
+p3d_desactivate_col_check kuka5.Gkuka5 hand0.finger2.fingertip
+p3d_desactivate_col_check kuka5.Gkuka5 hand0.finger3.fingertip
+
+p3d_desactivate_col_check kuka6.Gkuka6 hand0.palm
+p3d_desactivate_col_check kuka6.Gkuka6 hand0.finger1.finger1
+p3d_desactivate_col_check kuka6.Gkuka6 hand0.finger2.finger2
+p3d_desactivate_col_check kuka6.Gkuka6 hand0.finger1.fingertip
+p3d_desactivate_col_check kuka6.Gkuka6 hand0.finger2.fingertip
+p3d_desactivate_col_check kuka6.Gkuka6 hand0.finger3.fingertip
+
+p3d_desactivate_col_check kuka7.kuka7 hand0.palm
+p3d_desactivate_col_check kuka7.kuka7 hand0.finger1.finger1
+p3d_desactivate_col_check kuka7.kuka7 hand0.finger2.finger2
+p3d_desactivate_col_check kuka7.kuka7 hand0.finger1.fingertip
+p3d_desactivate_col_check kuka7.kuka7 hand0.finger2.fingertip
+p3d_desactivate_col_check kuka7.kuka7 hand0.finger3.fingertip
+
+#Gripper
+p3d_desactivate_col_check hand0.palm hand0.finger1.finger1
+p3d_desactivate_col_check hand0.palm hand0.finger2.finger2
+p3d_desactivate_col_check hand0.palm hand0.finger1.fingertip
+p3d_desactivate_col_check hand0.palm hand0.finger2.fingertip
+p3d_desactivate_col_check hand0.palm hand0.finger3.fingertip
+
+
+p3d_desactivate_col_check hand0.finger1.finger1 hand0.finger2.finger2
+p3d_desactivate_col_check hand0.finger1.finger1 hand0.finger1.fingertip
+p3d_desactivate_col_check hand0.finger1.finger1 hand0.finger2.fingertip
+
+p3d_desactivate_col_check hand0.finger2.finger2 hand0.finger3.fingertip
+
+p3d_desactivate_col_check hand0.finger3.fingertip hand0.finger1.fingertip
+p3d_desactivate_col_check hand0.finger2.fingertip hand0.finger1.fingertip
+
+######################
+##### CONSTRAINTS ####
+######################
+
+p3d_constraint  p3d_lwr_arm_ik 6 5 6 8 9 10 11  1 19  0  2 7 2
+
+p3d_set_cntrt_Tatt 1 -0.438683 0.100912 0.892958 -0.246214 0.897586 0.001049 0.440839 -0.172975 0.043549 0.994895 -0.091037 0.029823
+p3d_set_cntrt_Tatt2  1  -0.382683 -0.923879 0 0  0.923879 -0.382683 0 0  0 0 1 -0.27
+
+p3d_set_object_base_and_arm_constraints 19 1 0  1 1
+
+#p3d_set_open_chain_config 0 0 0 0 0 0 0 0 0 0 0 0 0 0  4.133601 82.073823 114.332120 93.965849  0.0 -88.833434 -52.263824 0.0325 0.0325 0 0 0.432645 0.270403 1.216323 0 0 0
+
+p3d_set_open_chain_config 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 3.539823 -2.163225 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 78.726669 22.570136 -0.829268 119.074436 16.836678 -20.721622 -82.969898 0.032500 0.032500 2.736585 0.797133 4.146341 -2.487805 0.829268 0.000000 0.000000 0.000000
+
+##############################
+## MULTILOCALPATHGROUP #######
+##############################
+p3d_set_robot_steering_method Multi-Localpath
+
+#DO NOT DESACTIVATE ANY MULTILOCALPATH_GROUP
+p3d_multi_localpath_group 1 19 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+p3d_multi_localpath_data jido base R&S+linear 1 1
+
+p3d_multi_localpath_group 1 1 1
+p3d_multi_localpath_data jido-base base R&S+linear 1 1
+
+p3d_multi_localpath_group 1 2 2 3
+p3d_multi_localpath_data jido-cam joint Linear
+
+p3d_multi_localpath_group 1 14 5 6 7 8 9 10 11 13 14 15 16 17 18 19
+p3d_multi_localpath_data upBody upBodyCart Linear
+
+p3d_multi_localpath_group  1 14 5 6 7 8 9 10 11 13 14 15 16 17 18 19
+p3d_multi_localpath_data upBodySm upBodyCart Soft-Motion
+
+p3d_multi_localpath_group 1 7 5 6 7 8 9 10 11
+p3d_multi_localpath_data jointsToExport joint Linear
+
+
+#DO NOT REMOVE THE FOLLOWING LINE TO USE MULTILOCALPATH
+p3d_set_robot_steering_method Multi-Localpath
+
+
+#p3d_set_arm_data cntrtId handType virtualObjectJntId
+p3d_set_arm_data 1 0 19
+p3d_set_config_cost_threshold 0.40
+
