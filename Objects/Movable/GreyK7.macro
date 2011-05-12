@@ -1,0 +1,34 @@
+p3d_beg_desc P3D_ROBOT
+
+  p3d_beg_desc_jnt P3D_FREEFLYER  #1
+    p3d_set_prev_jnt   0
+    p3d_set_pos_xyz 0.0 0.0 0.0 0.0 0.0 0.0
+    p3d_set_dof      0 0 0  0   0   0
+    p3d_set_dof_vmin -3 -6 0 -180 -180 -180
+    p3d_set_dof_vmax 12 1 2 180 180 180
+  p3d_end_desc
+
+  p3d_beg_desc P3D_BODY greyK7
+
+    p3d_add_desc_poly polyhedre1
+      p3d_add_desc_vert 0.00999999511987 0.0374999754131 0.0
+      p3d_add_desc_vert 0.00999999511987 -0.037499986589 0.0
+      p3d_add_desc_vert -0.00999999884516 -0.0374999791384 0.0
+      p3d_add_desc_vert -0.00999999325722 0.0374999903142 0.0
+      p3d_add_desc_vert 0.00999999977648 0.0374999567866 0.108000002801
+      p3d_add_desc_vert 0.00999998860061 -0.0375000089407 0.108000002801
+      p3d_add_desc_vert -0.0100000007078 -0.0374999754131 0.108000002801
+      p3d_add_desc_vert -0.00999999605119 0.0374999791384 0.108000002801
+
+      p3d_add_desc_face 1 2 3 4
+      p3d_add_desc_face 5 8 7 6
+      p3d_add_desc_face 1 5 6 2
+      p3d_add_desc_face 2 6 7 3
+      p3d_add_desc_face 3 7 8 4
+      p3d_add_desc_face 5 1 4 8
+    p3d_end_desc_poly
+  p3d_end_desc
+
+p3d_end_desc
+
+p3d_set_body_poly_color greyK7 1 Any 0.22 0.22 0.22

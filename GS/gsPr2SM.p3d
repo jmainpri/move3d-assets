@@ -13,7 +13,7 @@ p3d_end_desc
 #p3d_read_macro MovingBox.macro      MOVING_BOX
 p3d_read_macro LotrTape.macro       LOTR_TAPE
 p3d_read_macro WalleTape.macro      WALLE_TAPE
-p3d_read_macro GreyK7.macro         GREY_K7
+p3d_read_macro ./Objects/Movable/GreyK7.macro GREY_K7
 p3d_read_macro GreyVideoTape.macro  GREY_TAPE
 
 # ************* HUMANS ***************
