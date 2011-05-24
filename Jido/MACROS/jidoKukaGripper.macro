@@ -34,8 +34,8 @@ p3d_beg_desc P3D_ROBOT
     p3d_set_name Tilt
     p3d_set_prev_jnt 2
     p3d_set_pos_axe 0.243 0 1.244 0 -1 0
-    p3d_set_dof_vmin -45
-    p3d_set_dof_vmax 30
+    p3d_set_dof_vmin -48
+    p3d_set_dof_vmax 32
   p3d_end_desc
   p3d_read_macro ./JidoParts/Platform/TopCam.macro topCameras
 
