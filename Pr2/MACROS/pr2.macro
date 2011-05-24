@@ -345,9 +345,9 @@ p3d_beg_desc_jnt P3D_FIXED #26
    p3d_set_name Eyes
    p3d_set_pos_relative
    p3d_set_prev_jnt 4
-   p3d_set_pos_mat 1 0 0 0.13 0 0 1 0.1 0 -1 0 0 0 0 0 1  
+   p3d_set_pos_mat 1 0 0 0.10  0 0 1 -0.13  0 -1 0 0.00  0 0 0 1  
    p3d_set_dof_vmin -10 -10 0 -180 -180 -180
-  p3d_set_dof_vmax  10  10 2  180  180  180
+   p3d_set_dof_vmax  10  10 2  180  180  180
 p3d_end_desc
 
 p3d_beg_desc_jnt P3D_FIXED #J27
@@ -384,7 +384,7 @@ p3d_beg_desc_jnt P3D_TRANSLATE #J29
    p3d_set_name HriLookJoint
    p3d_set_pos_relative
    p3d_set_prev_jnt 4
-   p3d_set_pos_mat 0 0 1 0.13 0 1 0 0.12 -1 0 0 0 0 0 0 1
+   p3d_set_pos_mat 0 0 1 0.13 0 1 0 -0.13 -1 0 0 0 0 0 0 1
    p3d_set_dof_vmin 0
    p3d_set_dof_vmax 10
    p3d_set_dof_velocity_max      50
