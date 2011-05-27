@@ -1,0 +1,42 @@
+<!--Jido model (PA10 and SAHand models are in separate files) -->
+
+
+<robot name="Jido">
+<name> Jido </name>
+<models_directory> ./ </models_directory>
+
+<joint name="root">
+  <name> root </name>
+  <type> revolute </type>
+  <qmin> 0 </qmin>
+  <qmax> 0  </qmax>
+  <q> 0 </q>    
+</joint>
+
+<subrobot>
+  <connection> root </connection>
+  <name> LWRLeft </name>
+  <transformation>
+   <translation> 0.165 0.27 0.907 </translation>
+   <YPR_angles> 0 -90 -90 </YPR_angles>
+  </transformation> 
+     <collision>  no  </collision>
+    <display>  no  </display>
+  <robot_file> LWR_left.xml </robot_file> 
+</subrobot>
+
+<subrobot>
+  <connection> root </connection>
+  <name> LWRRight </name>
+  <transformation>
+   <translation> 0 0 0.78 </translation>
+   <YPR_angles> 180 0 0 </YPR_angles>
+  </transformation> 
+      <collision>  yes  </collision>
+    <display>  yes  </display> 
+  <robot_file> LWR_right.xml </robot_file> 
+</subrobot>
+
+
+
+</robot>
