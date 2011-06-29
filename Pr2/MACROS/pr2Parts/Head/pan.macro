@@ -1,4 +1,4 @@
-  p3d_beg_desc P3D_BODY Gpan
+  p3d_beg_desc P3D_BODY GpanCamera
    p3d_add_desc_box pan1 0.115 0.335 0.091 P3D_GHOST
    p3d_set_prim_pos pan1 -0.121 0 1.152 0 0 0
    p3d_add_desc_cylindre pan2 0.071 0.356 P3D_GHOST
