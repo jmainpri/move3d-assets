@@ -20,6 +20,8 @@ p3d_read_macro GreyVideoTape.macro  GREY_TAPE
 
 #p3d_read_macro AchileM.macro ACHILE_HUMAN1
 p3d_read_macro AchileMKinect.macro HERAKLES_HUMAN1
+p3d_read_macro AchileMKinect.macro HERAKLES_HUMAN2
+#p3d_read_macro AchileMKinect.macro HERAKLES_HUMAN3
 
 # ************* MOVABLE OBJECTS **************
 
@@ -122,7 +124,7 @@ p3d_add_desc_rob_col_init PR2_ROBOT
 p3d_desactivate_col_check automatic
 
 #Base
-p3d_desactivate_col_check base.Gbase head.Gpan
+p3d_desactivate_col_check base.Gbase head.GpanCamera
 p3d_desactivate_col_check base.Gbase head.Gtilt
 p3d_desactivate_col_check base.Gbase head.Glaser
 
@@ -137,11 +139,11 @@ p3d_desactivate_col_check torso.Gtorso larm.Glarm2
 p3d_desactivate_col_check torso.Gtorso rarm.Grarm2
 
 #Head
-p3d_desactivate_col_check head.Gpan head.Glaser
-p3d_desactivate_col_check head.Gpan larm.Glarm1
-p3d_desactivate_col_check head.Gpan larm.Glarm2
-p3d_desactivate_col_check head.Gpan rarm.Grarm1
-p3d_desactivate_col_check head.Gpan rarm.Grarm2
+p3d_desactivate_col_check head.GpanCamera head.Glaser
+p3d_desactivate_col_check head.GpanCamera larm.Glarm1
+p3d_desactivate_col_check head.GpanCamera larm.Glarm2
+p3d_desactivate_col_check head.GpanCamera rarm.Grarm1
+p3d_desactivate_col_check head.GpanCamera rarm.Grarm2
 
 p3d_desactivate_col_check head.Gtilt head.Glaser
 p3d_desactivate_col_check head.Gtilt larm.Glarm1
