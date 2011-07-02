@@ -341,8 +341,9 @@ p3d_beg_desc_jnt P3D_ROTATE # J14
  p3d_end_desc
  p3d_read_macro ./AchileParts/lFootM.macro lFoot
 
-######## JOINTS FOR HRI STUFF ##############
-
+#---------------------------------------------------------------
+# JOINTS FOR HRI STUFF
+#---------------------------------------------------------------
 p3d_beg_desc_jnt P3D_FIXED #J40
 #  p3d_set_pos_axe -0.004259 -0.85 0.43478 1 0 0
    p3d_set_name rPalm
@@ -483,7 +484,7 @@ p3d_set_body_abs_pos lFoot.lFoot -0.016412 0.092302 -0.94291 0 0 0
 ########################
 # Pelvis
 p3d_set_body_poly_color pelvis.pelvis 1 Any 0.901961 0.772549 0.694118
-p3d_set_body_poly_color pelvis.pelvis 2 Any 0.9924843 0.466773 0.466773
+p3d_set_body_poly_color pelvis.pelvis 2 Any 0.9921569 0.4666667 0.4666667
 p3d_set_body_poly_color pelvis.pelvis 3 Any 0.1904009 0.3114967 0.8053696
 p3d_set_body_poly_color pelvis.pelvis 4 Any 0.3230488 0.1863743 0.1366745
 p3d_set_body_poly_color pelvis.pelvis 5 Any 0.0627451 0.5450981 0.7960784
