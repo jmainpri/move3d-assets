@@ -7,6 +7,8 @@ p3d_beg_desc P3D_ENV JidoRef
 
 p3d_read_macro jido.macro jido
 
+p3d_read_macro visballsmall.macro VISBALL
+
 p3d_end_desc
 
 p3d_set_env_box -5.0 5.0 -5.0 5.0 -0.050 3.000

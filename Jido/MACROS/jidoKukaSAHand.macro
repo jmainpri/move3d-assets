@@ -461,9 +461,9 @@ p3d_beg_desc P3D_ROBOT
     p3d_set_pos_mat 0 0 1 0  0 1 0 0  1 0 0 0.30  0 0 0 1
   p3d_end_desc
  p3d_beg_desc P3D_BODY objectgrasp
-#   p3d_add_desc_sphere grasp 0.01 P3D_GRAPHIC
-# p3d_end_desc
-# p3d_set_prim_pos grasp 0.0 0.0 0.0 0 180 0
+ p3d_add_desc_sphere grasp 0.01 P3D_GRAPHIC
+ p3d_end_desc 
+ p3d_set_prim_pos grasp 0.0 0.0 0.0 0 180 0
 
 #Object
   p3d_beg_desc_jnt P3D_FREEFLYER # J34

@@ -47,7 +47,7 @@ p3d_read_macro ./Objects/Movable/placeMat_purple.macro PLACEMAT_PURPLE
 p3d_read_macro toolbox.macro ACCESSKIT
 #p3d_read_macro Cup_with_handle.macro CUPHANDLE
 p3d_read_macro SpaceNav_Box.macro SPACENAVBOX
-#p3d_read_macro BigPinkBox.macro PINK_TRASHBIN
+p3d_read_macro BigPinkBox.macro PINK_TRASHBIN
 p3d_read_macro ./Objects/Movable/PaperDog.macro PAPERDOG
 #p3d_read_macro BlueBottle.macro BLUE_BOTTLE
 #p3d_read_macro OrangeBottle.macro ORANGE_BOTTLE
@@ -104,7 +104,7 @@ p3d_read_macro GsWalls.macro Walls
 
 # NOTE: Jido must be declared at the end 
 
-p3d_read_macro jidoKukaGripper.macro JIDOKUKA_ROBOT
+p3d_read_macro jidoKukaGripperHighVel.macro JIDOKUKA_ROBOT
 
 p3d_end_desc
 

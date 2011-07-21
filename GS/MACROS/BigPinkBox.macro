@@ -10,16 +10,19 @@ p3d_end_desc
 
 p3d_beg_desc P3D_BODY bigpinkbox
 
-p3d_add_desc_box side1 0.01 0.405 0.23 
+p3d_add_desc_box side1 0.04 0.405 0.23 
 p3d_set_prim_pos side1 -0.1575 0 0.115 0 0 0
-p3d_add_desc_box side2 0.315 0.01 0.23 
+
+p3d_add_desc_box side2 0.315 0.04 0.23 
 p3d_set_prim_pos side2 0 0.2025 0.115 0 0 0
-p3d_add_desc_box side3 0.01 0.405 0.23 
+
+p3d_add_desc_box side3 0.04 0.405 0.23 
 p3d_set_prim_pos side3 0.1575 0 0.115 0 0 0
-p3d_add_desc_box side4 0.315 0.01 0.23 
+
+p3d_add_desc_box side4 0.315 0.04 0.23 
 p3d_set_prim_pos side4 0 -0.2025 0.115 0 0 0
 
-p3d_add_desc_box bottom 0.315 0.405  0.01 
+p3d_add_desc_box bottom 0.315 0.405  0.04 
 p3d_set_prim_pos bottom 0 0 0 0 0 0
 
 p3d_end_desc
