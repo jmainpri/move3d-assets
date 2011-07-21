@@ -1,6 +1,6 @@
 p3d_beg_desc P3D_ENV JidoRef
 
-#p3d_read_macro AchileSafetyZonesM.macro HUMAN
+p3d_read_macro AchileSafetyZonesM.macro HUMAN
 p3d_read_macro jidoHriGripperHorizontal.macro ROBOT
 p3d_read_macro Objects/Movable/legLamp.macro legLamp 1.5
 p3d_read_macro Objects/Movable/trash.macro trashbin
@@ -26,18 +26,18 @@ p3d_set_obst_poly_color box2 1 Blue
 # p3d_set_obst_pos box3 0.53 0.8 1.25 0 0 30
 # p3d_set_obst_poly_color box3 1 Green
 
-# p3d_beg_desc P3D_OBSTACLE box4
-# p3d_add_desc_box obs 0.10 0.2 0.50
-# p3d_end_desc
-# p3d_set_obst_pos box4 0.50 0.90 1.45 0 90 0
-# p3d_set_obst_poly_color box4 1 Black
-# 
-# 	p3d_beg_desc P3D_OBSTACLE table	
-# 	p3d_add_desc_box obs 0.90 1.8 0.1
-# 	p3d_end_desc
-# 	
-# 	p3d_set_obst_pos table 0.0 0.9 1.0 0 0 90
-# 	p3d_set_obst_poly_color table 1 Any 0.18 0.28 0.64
+p3d_beg_desc P3D_OBSTACLE box4
+p3d_add_desc_box obs 0.10 0.2 0.50
+p3d_end_desc
+p3d_set_obst_pos box4 0.50 0.90 1.45 0 90 0
+p3d_set_obst_poly_color box4 1 Black
+
+	p3d_beg_desc P3D_OBSTACLE table	
+	p3d_add_desc_box obs 0.90 1.8 0.1
+	p3d_end_desc
+	
+	p3d_set_obst_pos table 0.0 0.9 1.0 0 0 90
+	p3d_set_obst_poly_color table 1 Any 0.18 0.28 0.64
 	
 # 	p3d_read_macro ./Objects/Static/dlrTable.macro table
 # 	p3d_set_obst_pos table 0.38 -1.0106 0.0 90 0 -90
@@ -97,15 +97,15 @@ p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.00000
 
 
 #-----------------------------------------------
-# p3d_sel_desc_name P3D_ROBOT HUMAN
-# 
-# p3d_set_robot_steering_method Linear
-# 
-# p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.179941 0.983285 1.101278 0.000000 -1.769915 10.619467 3.215340 0.000000 0.000000 8.008853 -4.867257 -16.371681 20.943954 -83.466072 10.870206 75.506393 -85.575226 -2.654867 -0.786626 30.000000 73.190765 -26.356934 -45.909538 -90.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
-# p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
-# 
-# p3d_add_desc_rob_col_init HUMAN
-# p3d_desactivate_col_check automatic
+p3d_sel_desc_name P3D_ROBOT HUMAN
+
+p3d_set_robot_steering_method Linear
+
+p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.179941 0.983285 1.101278 0.000000 -1.769915 10.619467 3.215340 0.000000 0.000000 8.008853 -4.867257 -16.371681 20.943954 -83.466072 10.870206 75.506393 -85.575226 -2.654867 -0.786626 30.000000 73.190765 -26.356934 -45.909538 -90.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+
+p3d_add_desc_rob_col_init HUMAN
+p3d_desactivate_col_check automatic
 
 #p3d_desactivate_col_check safety_zone_ghost_1 pelvis.pelvisGhost
 #p3d_desactivate_col_check safety_zone_ghost_1 torso.torsoGhost

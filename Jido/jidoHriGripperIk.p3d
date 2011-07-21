@@ -11,6 +11,8 @@ p3d_end_desc
 
 p3d_set_env_box -5.0 5.0 -5.0 5.0 -0.050 3.000
 
+
+
 #contrainte sur la fermeture de la pince:
 p3d_constraint p3d_lin_rel_dofs 1 13  1 12  2 1 0.0  0
 
@@ -19,8 +21,3 @@ p3d_set_cntrt_Tatt 1  0 0 1 -0.275  0.36 0.92 0 0  -0.92 0.36 0 0
 
 p3d_create_reeds_shepp_local_method 0.3 1
 p3d_constraint p3d_head_object_track 2 2 3  1 17  0 0
-
-p3d_sel_desc_name P3D_ROBOT VISBALL
-p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.700000 0.000000 0.700000 0.000000 0.000000 0.000000
-p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
-
