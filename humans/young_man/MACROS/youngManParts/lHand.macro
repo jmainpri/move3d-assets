@@ -1,0 +1,478 @@
+ p3d_beg_desc P3D_BODY lHand
+     p3d_add_desc_poly lHand
+     p3d_add_desc_vert 69.9701004028 140.880996704 0.803761959076
+      p3d_add_desc_vert 68.9987030029 143.712997437 1.88729214668
+      p3d_add_desc_vert 74.049697876 141.134002686 0.491203546524
+      p3d_add_desc_vert 72.7432022095 140.944000244 2.25676560402
+      p3d_add_desc_vert 71.0483016968 143.35899353 3.2742638588
+      p3d_add_desc_vert 72.3623962402 145.300003052 2.42442297935
+      p3d_add_desc_vert 73.7723007202 141.158004761 2.97897529602
+      p3d_add_desc_vert 74.6233978271 141.649993896 1.56511306763
+      p3d_add_desc_vert 79.2929000854 140.505004883 5.47044563293
+      p3d_add_desc_vert 72.9841003418 142.906997681 4.28489780426
+      p3d_add_desc_vert 73.782699585 144.177001953 3.56055212021
+      p3d_add_desc_vert 74.9693984985 143.455993652 3.96118712425
+      p3d_add_desc_vert 74.1989974976 142.320007324 4.81550645828
+      p3d_add_desc_vert 77.8851013184 142.688995361 6.01123142242
+      p3d_add_desc_vert 77.2013015747 141.638000488 6.78563404083
+      p3d_add_desc_vert 76.8099975586 140.38999939 5.4158782959
+      p3d_add_desc_vert 75.2263031006 140.658996582 4.34145545959
+      p3d_add_desc_vert 75.0764007568 142.024993896 5.38802719116
+      p3d_add_desc_vert 76.1108016968 141.727996826 5.92520332336
+      p3d_add_desc_vert 75.8645019531 143.18699646 4.5141043663
+      p3d_add_desc_vert 76.8330001831 142.792999268 5.12444782257
+      p3d_add_desc_vert 76.489402771 142.520996094 2.94090032578
+      p3d_add_desc_vert 76.0972976685 140.962005615 2.83164978027
+      p3d_add_desc_vert 77.6055984497 140.636001587 4.01952648163
+      p3d_add_desc_vert 77.948600769 142.069000244 4.15344047546
+      p3d_add_desc_vert 78.2408981323 140.263000488 6.56841087341
+      p3d_add_desc_vert 79.3684997559 140.421005249 7.31151390076
+      p3d_add_desc_vert 78.2754974365 141.363998413 7.51206970215
+      p3d_add_desc_vert 79.5264968872 141.195999146 8.13725090027
+      p3d_add_desc_vert 78.9514007568 142.401992798 6.74666929245
+      p3d_add_desc_vert 79.3345031738 141.942993164 5.3299741745
+      p3d_add_desc_vert 80.1304016113 141.591003418 6.44872903824
+      p3d_add_desc_vert 79.9973983765 141.919998169 7.60401535034
+      p3d_add_desc_vert 78.7857971191 145.414001465 -9.0974817276
+      p3d_add_desc_vert 79.6212997437 145.526000977 0.715706169605
+      p3d_add_desc_vert 79.7475967407 145.664001465 -0.933597207069
+      p3d_add_desc_vert 88.1985015869 142.501998901 0.739848017693
+      p3d_add_desc_vert 84.0495986938 145.274993896 -0.315623432398
+      p3d_add_desc_vert 83.9515991211 145.272994995 0.963334918022
+      p3d_add_desc_vert 87.4136962891 144.718994141 0.0772801339626
+      p3d_add_desc_vert 87.3243026733 144.716995239 1.24320590496
+      p3d_add_desc_vert 83.24659729 143.953994751 1.30424010754
+      p3d_add_desc_vert 81.25340271 143.92199707 1.25943827629
+      p3d_add_desc_vert 81.2883987427 145.447006226 0.802813768387
+      p3d_add_desc_vert 82.6771011353 145.375 0.861506223679
+      p3d_add_desc_vert 81.4026031494 145.447006226 -0.688695073128
+      p3d_add_desc_vert 82.7791976929 145.375 -0.47101905942
+      p3d_add_desc_vert 81.4375991821 143.92199707 -1.14531505108
+      p3d_add_desc_vert 81.3454971313 142.979003906 0.0570599138737
+      p3d_add_desc_vert 83.2869033813 143.121002197 0.24971807003
+      p3d_add_desc_vert 83.4074020386 143.955993652 -0.794617891312
+      p3d_add_desc_vert 86.5697021484 143.645004272 1.53079664707
+      p3d_add_desc_vert 84.8591995239 143.800003052 1.46415364742
+      p3d_add_desc_vert 84.9580993652 145.227005005 1.07867634296
+      p3d_add_desc_vert 86.0462036133 145.024002075 1.13200092316
+      p3d_add_desc_vert 85.0582962036 145.227996826 -0.229618042707
+      p3d_add_desc_vert 86.1380996704 145.024993896 -0.0667414069176
+      p3d_add_desc_vert 85.0197982788 143.802001953 -0.632532835007
+      p3d_add_desc_vert 84.8970031738 142.919006348 0.410423189402
+      p3d_add_desc_vert 86.6019973755 142.81199646 0.580729484558
+      p3d_add_desc_vert 86.7145004272 143.647003174 -0.359153777361
+      p3d_add_desc_vert 87.9926986694 143.304992676 1.65992450714
+      p3d_add_desc_vert 89.1897964478 143.214996338 1.49461936951
+      p3d_add_desc_vert 88.4804992676 144.378005981 1.35154366493
+      p3d_add_desc_vert 89.712600708 143.979995728 1.29810583591
+      p3d_add_desc_vert 88.568901062 144.378997803 0.199178352952
+      p3d_add_desc_vert 88.1356964111 143.307998657 -0.204634398222
+      p3d_add_desc_vert 89.2893981934 143.216995239 0.195610880852
+      p3d_add_desc_vert 89.7742004395 143.981002808 0.495275914669
+      p3d_add_desc_vert 79.5843963623 145.51600647 -7.76221227646
+      p3d_add_desc_vert 79.3836975098 145.259994507 -9.06255054474
+      p3d_add_desc_vert 85.9607009888 142.697998047 -9.71513462067
+      p3d_add_desc_vert 82.8086013794 145.069000244 -9.6105556488
+      p3d_add_desc_vert 82.9652023315 145.07800293 -8.60242271423
+      p3d_add_desc_vert 85.3495025635 144.49899292 -10.0986118317
+      p3d_add_desc_vert 85.4928970337 144.511993408 -9.17978572845
+      p3d_add_desc_vert 82.4283981323 144.06300354 -8.1523141861
+      p3d_add_desc_vert 80.8764038086 143.981002808 -7.71538877487
+      p3d_add_desc_vert 80.8208999634 145.197006226 -8.07540130615
+      p3d_add_desc_vert 81.9012985229 145.139007568 -8.35764694214
+      p3d_add_desc_vert 80.6392974854 145.197006226 -9.25134277344
+      p3d_add_desc_vert 81.7391967773 145.139007568 -9.4082403183
+      p3d_add_desc_vert 80.5838012695 143.981002808 -9.61134433746
+      p3d_add_desc_vert 80.7301025391 143.229003906 -8.66336536407
+      p3d_add_desc_vert 82.3005981445 143.397003174 -8.97970867157
+      p3d_add_desc_vert 82.1728973389 144.06300354 -9.80710315704
+      p3d_add_desc_vert 84.9927978516 143.636993408 -8.74927902222
+      p3d_add_desc_vert 83.6747970581 143.856002808 -8.40046024323
+      p3d_add_desc_vert 83.7570037842 144.98500061 -8.74997711182
+      p3d_add_desc_vert 84.591796875 144.761993408 -8.96130657196
+      p3d_add_desc_vert 83.5968017578 144.975997925 -9.78121852875
+      p3d_add_desc_vert 84.445098877 144.753997803 -9.9062128067
+      p3d_add_desc_vert 83.4180984497 143.841995239 -10.053147316
+      p3d_add_desc_vert 83.4657974243 143.149993896 -9.20282745361
+      p3d_add_desc_vert 84.8009033203 142.970001221 -9.47148990631
+      p3d_add_desc_vert 84.7613983154 143.62399292 -10.2390146255
+      p3d_add_desc_vert 86.0106964111 143.356002808 -8.97942352295
+      p3d_add_desc_vert 86.8957977295 143.216995239 -9.38698101044
+      p3d_add_desc_vert 86.3836975098 144.179992676 -9.36040973663
+      p3d_add_desc_vert 87.3004989624 143.794998169 -9.68196201324
+      p3d_add_desc_vert 86.2419967651 144.167007446 -10.2685556412
+      p3d_add_desc_vert 85.78150177 143.335006714 -10.4488248825
+      p3d_add_desc_vert 86.7360992432 143.20199585 -10.4106941223
+      p3d_add_desc_vert 87.2017974854 143.785995483 -10.3146591187
+      p3d_add_desc_vert 79.6455001831 145.880996704 -4.9835395813
+      p3d_add_desc_vert 79.6455001831 145.802001953 -6.74664306641
+      p3d_add_desc_vert 79.3268966675 143.205001831 -5.89481449127
+      p3d_add_desc_vert 79.3554992676 144.106994629 -7.28114652634
+      p3d_add_desc_vert 87.851600647 142.604995728 -5.8948135376
+      p3d_add_desc_vert 84.0485992432 145.621994019 -6.5553612709
+      p3d_add_desc_vert 84.0485992432 145.621994019 -5.23425626755
+      p3d_add_desc_vert 87.2701034546 144.970001221 -6.49698925018
+      p3d_add_desc_vert 87.2701034546 144.970001221 -5.29262828827
+      p3d_add_desc_vert 83.4281997681 144.255996704 -4.81079769135
+      p3d_add_desc_vert 81.3704986572 144.151000977 -4.65281438828
+      p3d_add_desc_vert 81.3704986572 145.720001221 -5.12447929382
+      p3d_add_desc_vert 82.7987976074 145.645996094 -5.20658922195
+      p3d_add_desc_vert 81.3704986572 145.720001221 -6.66513824463
+      p3d_add_desc_vert 82.7987976074 145.645996094 -6.5830283165
+      p3d_add_desc_vert 81.3704986572 144.151000977 -7.13681411743
+      p3d_add_desc_vert 81.3704986572 143.180999756 -5.89481449127
+      p3d_add_desc_vert 83.4281997681 143.397994995 -5.89481449127
+      p3d_add_desc_vert 83.4281997681 144.255996704 -6.9788312912
+      p3d_add_desc_vert 86.6623001099 143.772994995 -4.91869020462
+      p3d_add_desc_vert 84.9177017212 144.046005249 -4.81191730499
+      p3d_add_desc_vert 85.084197998 145.507003784 -5.21910905838
+      p3d_add_desc_vert 86.1878967285 145.225006104 -5.27568817139
+      p3d_add_desc_vert 85.084197998 145.507003784 -6.57051992416
+      p3d_add_desc_vert 86.1878967285 145.225006104 -6.51394081116
+      p3d_add_desc_vert 84.9177017212 144.046005249 -6.97771167755
+      p3d_add_desc_vert 84.8149032593 143.143997192 -5.8948135376
+      p3d_add_desc_vert 86.5651016235 142.919998169 -5.8948135376
+      p3d_add_desc_vert 86.6623001099 143.772994995 -6.87092733383
+      p3d_add_desc_vert 87.8116989136 143.442993164 -4.93180370331
+      p3d_add_desc_vert 89.0063018799 143.207992554 -5.22389554977
+      p3d_add_desc_vert 88.4142990112 144.483001709 -5.29963111877
+      p3d_add_desc_vert 89.6159973145 143.927001953 -5.48016357422
+      p3d_add_desc_vert 88.4142990112 144.483001709 -6.48998641968
+      p3d_add_desc_vert 87.8116989136 143.442993164 -6.85782527924
+      p3d_add_desc_vert 89.0063018799 143.207992554 -6.56572198868
+      p3d_add_desc_vert 89.6159973145 143.927001953 -6.30945396423
+      p3d_add_desc_vert 79.6228027344 144.082000732 -1.45325386524
+      p3d_add_desc_vert 79.9746017456 145.910995483 -2.04930663109
+      p3d_add_desc_vert 79.9746017456 145.910995483 -3.86833834648
+      p3d_add_desc_vert 79.6558990479 143.139007568 -2.95882153511
+      p3d_add_desc_vert 79.4914016724 144.197006226 -4.47345924377
+      p3d_add_desc_vert 88.927696228 142.608001709 -2.95882153511
+      p3d_add_desc_vert 84.6847991943 145.768005371 -3.66411304474
+      p3d_add_desc_vert 84.6847991943 145.768005371 -2.25353074074
+      p3d_add_desc_vert 88.179397583 145.098999023 -3.60178828239
+      p3d_add_desc_vert 88.179397583 145.098999023 -2.31585478783
+      p3d_add_desc_vert 83.886100769 144.348999023 -1.80138754845
+      p3d_add_desc_vert 81.8379974365 144.147994995 -1.63270115852
+      p3d_add_desc_vert 81.8379974365 145.824005127 -2.13631725311
+      p3d_add_desc_vert 83.3629989624 145.744995117 -2.22399044037
+      p3d_add_desc_vert 81.8379974365 145.824005127 -3.78132653236
+      p3d_add_desc_vert 83.3629989624 145.744995117 -3.69365477562
+      p3d_add_desc_vert 81.8379974365 144.147994995 -4.28493022919
+      p3d_add_desc_vert 81.8379974365 143.111999512 -2.95882153511
+      p3d_add_desc_vert 83.8061981201 143.434997559 -2.95882153511
+      p3d_add_desc_vert 83.886100769 144.348999023 -4.11625528336
+      p3d_add_desc_vert 87.5262985229 143.867004395 -1.91659069061
+      p3d_add_desc_vert 85.65650177 144.11000061 -1.80258703232
+      p3d_add_desc_vert 85.793296814 145.673995972 -2.23735547066
+      p3d_add_desc_vert 86.9792022705 145.404006958 -2.29776024818
+      p3d_add_desc_vert 85.793296814 145.673995972 -3.68028855324
+      p3d_add_desc_vert 86.9792022705 145.404006958 -3.61988258362
+      p3d_add_desc_vert 85.65650177 144.11000061 -4.1150560379
+      p3d_add_desc_vert 85.5719985962 143.143997192 -2.95882153511
+      p3d_add_desc_vert 87.4464035034 142.953994751 -2.95882153511
+      p3d_add_desc_vert 87.5262985229 143.867004395 -4.00105237961
+      p3d_add_desc_vert 88.8396987915 143.50100708 -1.93058419228
+      p3d_add_desc_vert 90.1264038086 143.313995361 -2.24247169495
+      p3d_add_desc_vert 89.4259033203 144.64100647 -2.32333683968
+      p3d_add_desc_vert 90.7375030518 144.113998413 -2.516092062
+      p3d_add_desc_vert 89.4259033203 144.64100647 -3.59430599213
+      p3d_add_desc_vert 88.8396987915 143.50100708 -3.98705887794
+      p3d_add_desc_vert 90.1264038086 143.313995361 -3.67517066002
+      p3d_add_desc_vert 90.7375030518 144.113998413 -3.40155053139
+      p3d_add_desc_vert 69.8320007324 140.869995117 -1.85224270821
+      p3d_add_desc_vert 79.0099029541 146.298995972 -4.48973798752
+      p3d_add_desc_vert 74.7554016113 146.429992676 -4.38698673248
+      p3d_add_desc_vert 74.7554016113 146.078994751 -7.41430807114
+      p3d_add_desc_vert 78.8927993774 146.117996216 -7.28898286819
+      p3d_add_desc_vert 69.8320007324 141.231994629 -4.42212200165
+      p3d_add_desc_vert 74.7553024292 142.643997192 -4.38698387146
+      p3d_add_desc_vert 69.8320007324 141.742004395 -7.19694471359
+      p3d_add_desc_vert 79.0457992554 145.697998047 1.31210947037
+      p3d_add_desc_vert 75.2816009521 145.729003906 1.50812041759
+      p3d_add_desc_vert 74.7554016113 146.429992676 -1.61913144588
+      p3d_add_desc_vert 79.0585021973 146.255004883 -1.5256896019
+      p3d_add_desc_vert 70.7052993774 146.807998657 0.326255828142
+      p3d_add_desc_vert 70.668296814 144.102996826 -9.19754981995
+      p3d_add_desc_vert 75.3226013184 144.56199646 -9.69256305695
+      p3d_add_desc_vert 74.7553024292 142.45199585 -7.41430616379
+      p3d_add_desc_vert 79.1701965332 143.248001099 -8.34918212891
+      p3d_add_desc_vert 79.0078964233 144.016998291 -9.40065383911
+      p3d_add_desc_vert 70.2146987915 146.51499939 -7.19694757462
+      p3d_add_desc_vert 70.2969970703 147.152999878 -4.42212438583
+      p3d_add_desc_vert 74.7553024292 142.138000488 -1.61914050579
+      p3d_add_desc_vert 75.0826034546 143.192001343 1.65639472008
+      p3d_add_desc_vert 79.2649002075 143.966995239 1.19296658039
+      p3d_add_desc_vert 79.3669967651 143.003005981 -0.140667825937
+      p3d_add_desc_vert 67.4845962524 142.013000488 -0.816710352898
+      p3d_add_desc_vert 67.5559005737 141.520996094 -4.26557826996
+      p3d_add_desc_vert 67.7393035889 142.296005249 -6.9286365509
+      p3d_add_desc_vert 68.1623001099 143.964004517 -8.28475475311
+      p3d_add_desc_vert 67.9311981201 147.041000366 -6.92863893509
+      p3d_add_desc_vert 67.9458999634 147.600006104 -4.26558065414
+      p3d_add_desc_vert 67.8746032715 146.98500061 -0.816713809967
+      p3d_add_desc_vert 67.2212982178 144.151992798 0.328870624304
+      p3d_add_desc_vert 67.0291137695 142.418197632 -1.40098714828
+      p3d_add_desc_vert 66.8141860962 144.164245605 -0.465855628252
+      p3d_add_desc_vert 67.0873184204 142.016571045 -4.21627902985
+      p3d_add_desc_vert 67.2370300293 142.649200439 -6.39011859894
+      p3d_add_desc_vert 67.582321167 144.010787964 -7.49711036682
+      p3d_add_desc_vert 67.3936691284 146.522521973 -6.39012050629
+      p3d_add_desc_vert 67.3474731445 146.476806641 -1.40098977089
+      p3d_add_desc_vert 67.405670166 146.97883606 -4.21628093719
+      p3d_add_desc_vert 66.6648101807 142.852783203 -2.07838010788
+      p3d_add_desc_vert 66.707824707 142.555938721 -4.15912294388
+      p3d_add_desc_vert 66.9431152344 146.223480225 -4.15912437439
+      p3d_add_desc_vert 66.9342498779 145.886230469 -5.76577854156
+      p3d_add_desc_vert 66.900100708 145.85244751 -2.07838201523
+      p3d_add_desc_vert 66.5059585571 144.143264771 -1.38723754883
+      p3d_add_desc_vert 67.073677063 144.029846191 -6.58393955231
+      p3d_add_desc_vert 66.8184738159 143.023513794 -5.76577711105
+      p3d_add_desc_vert 66.4836730957 144.279083252 -3.99721765518
+      p3d_add_desc_vert 66.4836730957 144.279083252 -3.99721765518
+      p3d_add_desc_vert 66.4836730957 144.279083252 -3.99721765518
+      p3d_add_desc_vert 66.4836730957 144.279083252 -3.99721765518
+      p3d_add_desc_vert 66.4836730957 144.279083252 -3.99721765518
+      p3d_add_desc_vert 66.4836730957 144.279083252 -3.99721765518
+      p3d_add_desc_vert 66.4836730957 144.279083252 -3.99721765518
+      p3d_add_desc_vert 66.4836730957 144.279083252 -3.99721765518
+
+      p3d_add_desc_face 3 200 201
+      p3d_add_desc_face 180 1 204
+      p3d_add_desc_face 3 180 200
+      p3d_add_desc_face 197 34 71
+      p3d_add_desc_face 34 194 183
+      p3d_add_desc_face 194 34 197
+      p3d_add_desc_face 35 188 202
+      p3d_add_desc_face 6 201 189
+      p3d_add_desc_face 201 6 11
+      p3d_add_desc_face 8 3 201
+      p3d_add_desc_face 32 27 9
+      p3d_add_desc_face 13 10 7
+      p3d_add_desc_face 12 201 11
+      p3d_add_desc_face 15 19 16
+      p3d_add_desc_face 14 25 21
+      p3d_add_desc_face 27 26 9
+      p3d_add_desc_face 32 9 31
+      p3d_add_desc_face 108 184 106
+      p3d_add_desc_face 108 70 184
+      p3d_add_desc_face 191 142 143
+      p3d_add_desc_face 36 142 191
+      p3d_add_desc_face 146 181 144
+      p3d_add_desc_face 146 105 181
+      p3d_add_desc_face 203 145 142
+      p3d_add_desc_face 145 107 146
+      p3d_add_desc_face 107 196 108
+      p3d_add_desc_face 68 63 37
+      p3d_add_desc_face 39 45 42
+      p3d_add_desc_face 38 51 47
+      p3d_add_desc_face 41 55 52
+      p3d_add_desc_face 40 61 57
+      p3d_add_desc_face 63 62 37
+      p3d_add_desc_face 68 37 67
+      p3d_add_desc_face 103 98 72
+      p3d_add_desc_face 74 80 77
+      p3d_add_desc_face 73 86 82
+      p3d_add_desc_face 76 90 87
+      p3d_add_desc_face 75 96 92
+      p3d_add_desc_face 98 97 72
+      p3d_add_desc_face 103 72 102
+      p3d_add_desc_face 140 135 109
+      p3d_add_desc_face 111 117 114
+      p3d_add_desc_face 110 123 119
+      p3d_add_desc_face 113 127 124
+      p3d_add_desc_face 112 133 129
+      p3d_add_desc_face 135 134 109
+      p3d_add_desc_face 140 109 139
+      p3d_add_desc_face 178 173 147
+      p3d_add_desc_face 149 155 152
+      p3d_add_desc_face 148 161 157
+      p3d_add_desc_face 151 165 162
+      p3d_add_desc_face 150 171 167
+      p3d_add_desc_face 173 172 147
+      p3d_add_desc_face 178 147 177
+      p3d_add_desc_face 107 195 196
+      p3d_add_desc_face 107 186 195
+      p3d_add_desc_face 200 145 203
+      p3d_add_desc_face 186 145 200
+      p3d_add_desc_face 186 107 145
+      p3d_add_desc_face 34 183 184
+      p3d_add_desc_face 6 192 2 5
+      p3d_add_desc_face 6 189 190 192
+      p3d_add_desc_face 2 192 210 211
+      p3d_add_desc_face 4 1 180 3
+      p3d_add_desc_face 204 1 2 211
+      p3d_add_desc_face 1 4 5 2
+      p3d_add_desc_face 201 202 188 189
+      p3d_add_desc_face 7 4 3 8
+      p3d_add_desc_face 10 5 4 7
+      p3d_add_desc_face 11 6 5 10
+      p3d_add_desc_face 8 23 17 7
+      p3d_add_desc_face 17 18 13 7
+      p3d_add_desc_face 13 18 20 12
+      p3d_add_desc_face 12 20 22 201
+      p3d_add_desc_face 201 22 23 8
+      p3d_add_desc_face 24 9 26 16
+      p3d_add_desc_face 26 28 15 16
+      p3d_add_desc_face 15 28 30 14
+      p3d_add_desc_face 14 30 31 25
+      p3d_add_desc_face 25 31 9 24
+      p3d_add_desc_face 13 12 11 10
+      p3d_add_desc_face 15 14 21 19
+      p3d_add_desc_face 29 27 32 33
+      p3d_add_desc_face 24 16 17 23
+      p3d_add_desc_face 19 18 17 16
+      p3d_add_desc_face 19 21 20 18
+      p3d_add_desc_face 21 25 22 20
+      p3d_add_desc_face 25 24 23 22
+      p3d_add_desc_face 27 29 28 26
+      p3d_add_desc_face 29 33 30 28
+      p3d_add_desc_face 33 32 31 30
+      p3d_add_desc_face 36 191 188 35
+      p3d_add_desc_face 71 34 184 70
+      p3d_add_desc_face 106 184 181 105
+      p3d_add_desc_face 144 181 191 143
+      p3d_add_desc_face 203 49 43 202
+      p3d_add_desc_face 202 43 44 35
+      p3d_add_desc_face 35 44 46 36
+      p3d_add_desc_face 36 46 48 142
+      p3d_add_desc_face 142 48 49 203
+      p3d_add_desc_face 50 59 53 42
+      p3d_add_desc_face 53 54 39 42
+      p3d_add_desc_face 39 54 56 38
+      p3d_add_desc_face 38 56 58 51
+      p3d_add_desc_face 51 58 59 50
+      p3d_add_desc_face 60 37 62 52
+      p3d_add_desc_face 62 64 41 52
+      p3d_add_desc_face 41 64 66 40
+      p3d_add_desc_face 40 66 67 61
+      p3d_add_desc_face 61 67 37 60
+      p3d_add_desc_face 39 38 47 45
+      p3d_add_desc_face 41 40 57 55
+      p3d_add_desc_face 65 63 68 69
+      p3d_add_desc_face 50 42 43 49
+      p3d_add_desc_face 45 44 43 42
+      p3d_add_desc_face 45 47 46 44
+      p3d_add_desc_face 47 51 48 46
+      p3d_add_desc_face 51 50 49 48
+      p3d_add_desc_face 60 52 53 59
+      p3d_add_desc_face 55 54 53 52
+      p3d_add_desc_face 55 57 56 54
+      p3d_add_desc_face 57 61 58 56
+      p3d_add_desc_face 61 60 59 58
+      p3d_add_desc_face 63 65 64 62
+      p3d_add_desc_face 65 69 66 64
+      p3d_add_desc_face 69 68 67 66
+      p3d_add_desc_face 196 84 78 108
+      p3d_add_desc_face 108 78 79 70
+      p3d_add_desc_face 70 79 81 71
+      p3d_add_desc_face 71 81 83 197
+      p3d_add_desc_face 197 83 84 196
+      p3d_add_desc_face 85 94 88 77
+      p3d_add_desc_face 88 89 74 77
+      p3d_add_desc_face 74 89 91 73
+      p3d_add_desc_face 73 91 93 86
+      p3d_add_desc_face 86 93 94 85
+      p3d_add_desc_face 95 72 97 87
+      p3d_add_desc_face 97 99 76 87
+      p3d_add_desc_face 76 99 101 75
+      p3d_add_desc_face 75 101 102 96
+      p3d_add_desc_face 96 102 72 95
+      p3d_add_desc_face 74 73 82 80
+      p3d_add_desc_face 76 75 92 90
+      p3d_add_desc_face 100 98 103 104
+      p3d_add_desc_face 85 77 78 84
+      p3d_add_desc_face 80 79 78 77
+      p3d_add_desc_face 80 82 81 79
+      p3d_add_desc_face 82 86 83 81
+      p3d_add_desc_face 86 85 84 83
+      p3d_add_desc_face 95 87 88 94
+      p3d_add_desc_face 90 89 88 87
+      p3d_add_desc_face 90 92 91 89
+      p3d_add_desc_face 92 96 93 91
+      p3d_add_desc_face 96 95 94 93
+      p3d_add_desc_face 98 100 99 97
+      p3d_add_desc_face 100 104 101 99
+      p3d_add_desc_face 104 103 102 101
+      p3d_add_desc_face 107 121 115 146
+      p3d_add_desc_face 146 115 116 105
+      p3d_add_desc_face 105 116 118 106
+      p3d_add_desc_face 106 118 120 108
+      p3d_add_desc_face 108 120 121 107
+      p3d_add_desc_face 122 131 125 114
+      p3d_add_desc_face 125 126 111 114
+      p3d_add_desc_face 111 126 128 110
+      p3d_add_desc_face 110 128 130 123
+      p3d_add_desc_face 123 130 131 122
+      p3d_add_desc_face 132 109 134 124
+      p3d_add_desc_face 134 136 113 124
+      p3d_add_desc_face 113 136 138 112
+      p3d_add_desc_face 112 138 139 133
+      p3d_add_desc_face 133 139 109 132
+      p3d_add_desc_face 111 110 119 117
+      p3d_add_desc_face 113 112 129 127
+      p3d_add_desc_face 137 135 140 141
+      p3d_add_desc_face 122 114 115 121
+      p3d_add_desc_face 117 116 115 114
+      p3d_add_desc_face 117 119 118 116
+      p3d_add_desc_face 119 123 120 118
+      p3d_add_desc_face 123 122 121 120
+      p3d_add_desc_face 132 124 125 131
+      p3d_add_desc_face 127 126 125 124
+      p3d_add_desc_face 127 129 128 126
+      p3d_add_desc_face 129 133 130 128
+      p3d_add_desc_face 133 132 131 130
+      p3d_add_desc_face 135 137 136 134
+      p3d_add_desc_face 137 141 138 136
+      p3d_add_desc_face 141 140 139 138
+      p3d_add_desc_face 145 159 153 142
+      p3d_add_desc_face 142 153 154 143
+      p3d_add_desc_face 143 154 156 144
+      p3d_add_desc_face 144 156 158 146
+      p3d_add_desc_face 146 158 159 145
+      p3d_add_desc_face 160 169 163 152
+      p3d_add_desc_face 163 164 149 152
+      p3d_add_desc_face 149 164 166 148
+      p3d_add_desc_face 148 166 168 161
+      p3d_add_desc_face 161 168 169 160
+      p3d_add_desc_face 170 147 172 162
+      p3d_add_desc_face 172 174 151 162
+      p3d_add_desc_face 151 174 176 150
+      p3d_add_desc_face 150 176 177 171
+      p3d_add_desc_face 171 177 147 170
+      p3d_add_desc_face 149 148 157 155
+      p3d_add_desc_face 151 150 167 165
+      p3d_add_desc_face 175 173 178 179
+      p3d_add_desc_face 160 152 153 159
+      p3d_add_desc_face 155 154 153 152
+      p3d_add_desc_face 155 157 156 154
+      p3d_add_desc_face 157 161 158 156
+      p3d_add_desc_face 161 160 159 158
+      p3d_add_desc_face 170 162 163 169
+      p3d_add_desc_face 165 164 163 162
+      p3d_add_desc_face 165 167 166 164
+      p3d_add_desc_face 167 171 168 166
+      p3d_add_desc_face 171 170 169 168
+      p3d_add_desc_face 173 175 174 172
+      p3d_add_desc_face 175 179 176 174
+      p3d_add_desc_face 179 178 177 176
+      p3d_add_desc_face 185 180 204 205
+      p3d_add_desc_face 207 193 187 206
+      p3d_add_desc_face 206 187 185 205
+      p3d_add_desc_face 182 199 192 190
+      p3d_add_desc_face 193 198 183 194
+      p3d_add_desc_face 198 199 182 183
+      p3d_add_desc_face 181 182 190 191
+      p3d_add_desc_face 186 200 180 185
+      p3d_add_desc_face 193 194 195 187
+      p3d_add_desc_face 184 183 182 181
+      p3d_add_desc_face 187 195 186 185
+      p3d_add_desc_face 191 190 189 188
+      p3d_add_desc_face 209 210 192 199
+      p3d_add_desc_face 208 198 193 207
+      p3d_add_desc_face 197 196 195 194
+      p3d_add_desc_face 208 209 199 198
+      p3d_add_desc_face 203 202 201 200
+    p3d_end_desc_poly
+    p3d_set_prim_pos_by_mat lHand -0.000414 -0.005008 0.008066 0.711197 0.009371 -0.001511 -0.000456 0.228304 0.001523 0.007934 0.005004 0.146059 0 0 0 1
+  p3d_end_desc
+
