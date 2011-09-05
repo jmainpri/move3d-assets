@@ -7,8 +7,8 @@ p3d_beg_desc_jnt P3D_FREEFLYER # J1
   p3d_set_name platformJoint
   p3d_set_prev_jnt 0
   p3d_set_pos_axe 0 0 0 0 0 0
-  p3d_set_dof_vmin -2 -10 0  0 0 -180
-  p3d_set_dof_vmax  10  2 0.01  0.1 0.1  180
+  p3d_set_dof_vmin -10 -10 0  0 0 -180
+  p3d_set_dof_vmax  10  2 1  0.1 0.1  180
   p3d_set_dof_jerk_max              0.09  0.09 0.09 0.18 0.18 0.18
   p3d_set_dof_acceleration_max      0.03  0.03  0.03  0.06 0.06 0.06
   p3d_set_dof_velocity_max          0.5 0.5 0.5 0.3 0.3 0.3
