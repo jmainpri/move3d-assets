@@ -1,0 +1,30 @@
+p3d_beg_desc P3D_ROBOT
+
+p3d_beg_desc_jnt P3D_FREEFLYER  #1
+  p3d_set_prev_jnt   0
+  p3d_set_pos_xyz 0.0 0.0 0.0 0.0 0.0 0.0
+  p3d_set_dof      0 0 0  0   0   0
+  p3d_set_dof_vmin -3 -6  0 -180 -180 -180
+  p3d_set_dof_vmax 12 1 2 180 180 180
+p3d_end_desc
+
+p3d_beg_desc P3D_BODY smallBoard
+
+p3d_add_desc_box leg1 0.38 0.05 0.05 
+p3d_set_prim_pos leg1 0 -0.295 0.1 0 0 0
+
+p3d_add_desc_box leg2 0.38 0.05 0.05
+p3d_set_prim_pos leg2 0 0.295 0.1 0 0 0
+
+p3d_add_desc_box board 0.02 1.0 1.9 
+p3d_set_prim_pos board 0 0 1.075 0 0 0
+
+p3d_end_desc
+p3d_end_desc
+
+p3d_set_body_poly_color smallBoard 1 White 
+p3d_set_body_poly_color smallBoard 2 White
+p3d_set_body_poly_color smallBoard 3 White 
+
+
+
