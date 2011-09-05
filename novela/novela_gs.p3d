@@ -23,11 +23,11 @@ p3d_beg_desc P3D_ENV novela
   p3d_read_macro OB_Mesh01.macro OB_Mesh01
    p3d_set_obst_pos_by_mat OB_Mesh01 0.422618 0.906307 0 -0.189376 -0.906307 0.422618 0 -7.92941 0 0 1 0.312454 0 0 0 1 
 
-#  p3d_read_macro rideau_jardin.macro rideau_jardin
-#   p3d_set_obst_pos_by_mat rideau_jardin 0.422618 0.906307 0 -5.148141 -0.906307 0.422618 0 -9.581718 0 0 1 0.39129 0 0 0 1 
+  p3d_read_macro rideau_jardin.macro rideau_jardin
+   p3d_set_obst_pos_by_mat rideau_jardin 0.422618 0.906307 0 -5.148141 -0.906307 0.422618 0 -9.581718 0 0 1 0.39129 0 0 0 1 
 
-#  p3d_read_macro rideau_cour.macro rideau_cour
-#   p3d_set_obst_pos_by_mat rideau_cour 0.422618 0.906307 0 4.419207 -0.906307 0.422618 0 -5.12039 0 0 1 0.39129 0 0 0 1 
+  p3d_read_macro rideau_cour.macro rideau_cour
+   p3d_set_obst_pos_by_mat rideau_cour 0.422618 0.906307 0 4.419207 -0.906307 0.422618 0 -5.12039 0 0 1 0.39129 0 0 0 1 
 
   p3d_read_macro OB_Mesh04.macro OB_Mesh04
    p3d_set_obst_pos_by_mat OB_Mesh04 0.422618 0.906307 0 -0.326721 -0.906307 0.422618 0 -7.673486 0 0 1 0.028733 0 0 0 1 
