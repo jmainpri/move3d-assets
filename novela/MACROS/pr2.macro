@@ -1,1 +1,568 @@
-../../robots/pr2/MACROS/pr2.macro
+p3d_beg_desc P3D_ROBOT
+
+#---------------------------------------------------------------
+# Platform
+#---------------------------------------------------------------
+p3d_beg_desc_jnt P3D_FREEFLYER # J1
+  p3d_set_name platformJoint
+  p3d_set_prev_jnt 0
+  p3d_set_pos_axe 0 0 0 0 0 0
+  p3d_set_dof_vmin -2 -10 0  0 0 -180
+  p3d_set_dof_vmax  10  2 0.01  0.1 0.1  180
+  p3d_set_dof_jerk_max              0.09  0.09 0.09 0.18 0.18 0.18
+  p3d_set_dof_acceleration_max      0.03  0.03  0.03  0.06 0.06 0.06
+  p3d_set_dof_velocity_max          0.5 0.5 0.5 0.3 0.3 0.3
+p3d_end_desc
+
+p3d_read_macro ./pr2Parts/Platform/base.macro base 
+p3d_read_macro ./pr2Parts/Platform/lbwheel.macro base
+p3d_read_macro ./pr2Parts/Platform/lfwheel.macro base
+p3d_read_macro ./pr2Parts/Platform/rbwheel.macro base
+p3d_read_macro ./pr2Parts/Platform/rfwheel.macro base
+
+p3d_beg_desc_jnt P3D_TRANSLATE # J2
+  p3d_set_name Torso
+  p3d_set_prev_jnt 1
+#  p3d_set_pos_axe -0.05 0 0.790675 0 0 1
+  p3d_set_pos_axe -0.05 0 0.802 0 0 1
+  p3d_set_dof_vmin 0
+  p3d_set_dof_vmax 0.31
+  p3d_set_dof_jerk_max           0.078 #  max  0.078
+  p3d_set_dof_acceleration_max   0.026 #  max  0.026
+  p3d_set_dof_velocity_max       0.013 #  max  0.013
+
+p3d_end_desc
+p3d_read_macro ./pr2Parts/Platform/torso.macro torso
+
+#---------------------------------------------------------------
+# Head
+#---------------------------------------------------------------
+p3d_beg_desc_jnt P3D_ROTATE # J3
+  p3d_set_name pan_cam
+  p3d_set_prev_jnt 2
+  p3d_set_pos_axe -0.067068 0 1.172125 0 0 1
+  p3d_set_dof 0.0
+  p3d_set_dof_vmin -172.288
+  p3d_set_dof_vmax 172.288
+  p3d_set_dof_jerk_max            18  #  max  36
+  p3d_set_dof_acceleration_max    6   #  max  12
+  p3d_set_dof_velocity_max        6   #  max  6
+p3d_end_desc
+p3d_read_macro ./pr2Parts/Head/pan.macro head
+
+p3d_beg_desc_jnt P3D_ROTATE # J4
+  p3d_set_name tilt_cam
+  p3d_set_prev_jnt 3
+  p3d_set_pos_axe -0.00093 0 1.172125 0 1 0
+  p3d_set_dof 0.0
+  p3d_set_dof_vmin -30
+  p3d_set_dof_vmax 80
+  p3d_set_dof_jerk_max            15 #  max 30
+  p3d_set_dof_acceleration_max    5  #  max 10
+  p3d_set_dof_velocity_max        5  #  max 5
+p3d_end_desc
+p3d_read_macro ./pr2Parts/Head/tilt.macro head
+
+#---------------------------------------------------------------
+# Laser
+#---------------------------------------------------------------
+p3d_beg_desc_jnt P3D_ROTATE # J5
+  p3d_set_name laser-jnt
+  p3d_set_prev_jnt 2
+  p3d_set_pos_axe 0.048931 0.000005 1.017674 0 1 0
+  p3d_set_dof 0.0
+  p3d_set_dof_vmin -45
+  p3d_set_dof_vmax 85
+  p3d_set_dof_jerk_max              60
+  p3d_set_dof_acceleration_max      20
+  p3d_set_dof_velocity_max          10
+p3d_end_desc
+p3d_read_macro ./pr2Parts/Head/laser.macro head
+
+#---------------------------------------------------------------
+# Right ARM
+#---------------------------------------------------------------
+p3d_beg_desc_jnt P3D_ROTATE # J6
+  p3d_set_name right-Arm1
+  p3d_set_prev_jnt 2
+  p3d_set_pos_axe -0.049997 -0.187994 0.802 0 0 1
+  p3d_set_dof 0.0
+  p3d_set_dof_vmin -131
+  p3d_set_dof_vmax 41
+  p3d_set_dof_jerk_max            4.5 # 3.132 # max  12.528
+  p3d_set_dof_acceleration_max    1.5 # 1.044 # max  4.164
+  p3d_set_dof_velocity_max        1.5 # 0.522 # max  2.088
+p3d_end_desc
+p3d_read_macro ./pr2Parts/Rarm/rarm1.macro rarm
+
+p3d_beg_desc_jnt P3D_ROTATE # J7
+  p3d_set_name right-Arm2
+  p3d_set_prev_jnt 6
+  p3d_set_pos_axe 0.050001 -0.187993 0.802 0 1 0
+#  p3d_set_pos_mat  0 1 0 0.050001  0 0 1 -0.187993  1 0 0 0.802 0 0 0 1
+  p3d_set_dof 0.0
+  p3d_set_dof_vmin -30
+  p3d_set_dof_vmax 80
+  p3d_set_dof_jerk_max           4.52 # 3.123  # max 12.492	
+  p3d_set_dof_acceleration_max   1.52 # 1.044  # max 4.176
+  p3d_set_dof_velocity_max       1.52 # 0.522  # max 2.082
+p3d_end_desc
+p3d_read_macro ./pr2Parts/Rarm/rarm2.macro rarm
+
+p3d_beg_desc_jnt P3D_ROTATE # J8
+  p3d_set_name right-Arm3
+  p3d_set_prev_jnt 7
+  p3d_set_pos_axe  0.050001 -0.187993 0.802 1 0 0
+  p3d_set_dof 0.0
+  p3d_set_dof_vmin -223
+  p3d_set_dof_vmax 45
+  p3d_set_dof_jerk_max          4.5 # 4.905    # max 19.62	
+  p3d_set_dof_acceleration_max  1.5 # 1.6350   # max 6.54
+  p3d_set_dof_velocity_max      1.5 #0.27 0.8175   # max 3.27
+p3d_end_desc
+p3d_read_macro ./pr2Parts/Rarm/rarm3.macro rarm
+
+p3d_beg_desc_jnt P3D_ROTATE # J9
+  p3d_set_name right-Arm4
+  p3d_set_prev_jnt 8
+  p3d_set_pos_axe 0.450001 -0.187993 0.802 0 1 0
+#  p3d_set_pos_mat  0 1 0 0.450001  0 0 1 -0.187993  1 0 0 0.802 0 0 0 1  
+  p3d_set_dof 0.0
+  p3d_set_dof_vmin -133
+  p3d_set_dof_vmax 0
+  p3d_set_dof_jerk_max          4.5 # 5.4  # max  19.8	
+  p3d_set_dof_acceleration_max  1.5 # 1.8  # max  6.6
+  p3d_set_dof_velocity_max      1.5 # 0.9  # max  3.3
+p3d_end_desc
+p3d_read_macro ./pr2Parts/Rarm/rarm4.macro rarm
+
+p3d_beg_desc_jnt P3D_ROTATE # J10
+  p3d_set_name right-Arm5
+  p3d_set_prev_jnt 9
+  p3d_set_pos_axe 0.450001 -0.187993 0.802 1 0 0
+#  p3d_set_pos_mat 0 0 1 0.450001  0 -1 0 -0.187993  1 0 0 0.802  0 0 0 1
+  p3d_set_dof 0.0
+  p3d_set_dof_vmin -180
+  p3d_set_dof_vmax 180
+  p3d_set_dof_jerk_max          4.5 # 5.4 # max  19.8	
+  p3d_set_dof_acceleration_max  1.5 # 1.8 # max   6.6
+  p3d_set_dof_velocity_max      1.5 # 0.9 # max   3.3
+p3d_end_desc
+p3d_read_macro ./pr2Parts/Rarm/rarm5.macro rarm
+
+p3d_beg_desc_jnt P3D_ROTATE # J11
+  p3d_set_name right-Arm6
+  p3d_set_prev_jnt 10
+  p3d_set_pos_axe 0.771001 -0.187993 0.802 0 1 0
+#  p3d_set_pos_mat 0 1 0 0.771001  0 0 1 -0.187993  1 0 0 0.802 0 0 0 1 
+  p3d_set_dof 0.0
+  p3d_set_dof_vmin -119
+  p3d_set_dof_vmax 0
+ p3d_set_dof_jerk_max           4.5 # 5.4 # max   12.28
+  p3d_set_dof_acceleration_max  1.5 # 1.8 # max   6.146
+  p3d_set_dof_velocity_max      1.5 # 0.9 # max   3.078
+p3d_end_desc
+p3d_read_macro ./pr2Parts/Rarm/rarm6.macro rarm
+
+p3d_beg_desc_jnt P3D_ROTATE # J12
+  p3d_set_name right-Arm7
+  p3d_set_prev_jnt 11
+  p3d_set_pos_axe 0.771001 -0.187993 0.802 1 0 0
+#  p3d_set_pos_mat 0 0 1 0.771001  0 -1 0 -0.187993  1 0 0 0.802  0 0 0 1 
+  p3d_set_dof 0.0
+  p3d_set_dof_vmin -180
+  p3d_set_dof_vmax 180
+ p3d_set_dof_jerk_max           4.5 # 5.4 # max   21.6
+  p3d_set_dof_acceleration_max  1.5 # 1.8 # max   7.2
+  p3d_set_dof_velocity_max      1.5 # 0.9 # max   3.6
+p3d_end_desc
+p3d_read_macro ./pr2Parts/Rarm/rarm7.macro rarm
+
+p3d_beg_desc_jnt P3D_FIXED #13
+  p3d_set_name rIkJoint
+  p3d_set_prev_jnt 12
+  p3d_set_pos_axe 0.771001 -0.187993 0.802 0 0 1
+p3d_end_desc
+
+p3d_beg_desc_jnt P3D_ROTATE # J14
+  p3d_set_name fingerJointGripper_0
+  p3d_set_prev_jnt 12
+  p3d_set_pos_axe 0.847911 -0.197993 0.802 0 0 1
+  p3d_set_dof 0.0
+  p3d_set_dof_vmin -0.2
+  p3d_set_dof_vmax 31.3981
+ p3d_set_dof_jerk_max           5.4 # max   
+  p3d_set_dof_acceleration_max  1.8 # max   
+  p3d_set_dof_velocity_max      0.9 # max   
+p3d_end_desc
+p3d_read_macro ./pr2Parts/Rarm/rarm8.macro hand0.finger1
+
+p3d_beg_desc_jnt P3D_ROTATE # J15
+  p3d_set_name right-grip2
+  p3d_set_prev_jnt 12
+  p3d_set_pos_axe 0.847911 -0.177993 0.802 0 0 -1
+  p3d_set_dof 0.0
+  p3d_set_dof_vmin -0.2
+  p3d_set_dof_vmax 31.3981
+ p3d_set_dof_jerk_max           5.4 # max   
+  p3d_set_dof_acceleration_max  1.8 # max   
+  p3d_set_dof_velocity_max      0.9 # max
+p3d_end_desc
+p3d_read_macro ./pr2Parts/Rarm/rarm9.macro hand0.finger2
+
+
+#---------------------------------------------------------------
+# Left ARM
+#---------------------------------------------------------------
+p3d_beg_desc_jnt P3D_ROTATE # J16
+  p3d_set_name left-Arm1
+  p3d_set_prev_jnt 2
+  p3d_set_pos_axe -0.049997 0.187994 0.802 0 0 1
+  p3d_set_dof 0.0
+  p3d_set_dof_vmin -41
+  p3d_set_dof_vmax 131
+  p3d_set_dof_jerk_max            4.5 # 3.132 # max  12.528
+  p3d_set_dof_acceleration_max    1.5 # 1.044 # max  4.164
+  p3d_set_dof_velocity_max        1.5 # 0.522 # max  2.088
+p3d_end_desc
+p3d_read_macro ./pr2Parts/Larm/larm1.macro larm
+
+p3d_beg_desc_jnt P3D_ROTATE # J17
+  p3d_set_name left-Arm2
+  p3d_set_prev_jnt 16
+  p3d_set_pos_axe 0.050001 0.187993 0.802 0 1 0
+  p3d_set_dof 0.0
+  p3d_set_dof_vmin -30
+  p3d_set_dof_vmax 80
+  p3d_set_dof_jerk_max           4.52 # 3.123  # max 12.492	
+  p3d_set_dof_acceleration_max   1.52 # 1.044  # max 4.176
+  p3d_set_dof_velocity_max       1.52 # 0.522  # max 2.082
+p3d_end_desc
+p3d_read_macro ./pr2Parts/Larm/larm2.macro larm
+
+p3d_beg_desc_jnt P3D_ROTATE # J18
+  p3d_set_name left-Arm3
+  p3d_set_prev_jnt 17
+  p3d_set_pos_axe 0.050001 0.187993 0.802 1 0 0
+  p3d_set_dof 0.0
+  p3d_set_dof_vmin -45
+  p3d_set_dof_vmax 223
+  p3d_set_dof_jerk_max          4.5 # 4.905    # max 19.62	
+  p3d_set_dof_acceleration_max  1.5 # 1.6350   # max 6.54
+  p3d_set_dof_velocity_max      1.5 # 0.8175   # max 3.27
+p3d_end_desc
+
+p3d_read_macro ./pr2Parts/Larm/larm3.macro larm
+
+p3d_beg_desc_jnt P3D_ROTATE # J19
+  p3d_set_name left-Arm4
+  p3d_set_prev_jnt 18
+  p3d_set_pos_axe 0.450001 0.187993 0.802 0 1 0
+  p3d_set_dof 0.0
+  p3d_set_dof_vmin -133
+  p3d_set_dof_vmax 0
+  p3d_set_dof_jerk_max          4.5 # 5.4  # max  19.8	
+  p3d_set_dof_acceleration_max  1.5 # 1.8  # max  6.6
+  p3d_set_dof_velocity_max      1.5 # 0.9  # max  3.3
+p3d_end_desc
+p3d_read_macro ./pr2Parts/Larm/larm4.macro larm
+
+p3d_beg_desc_jnt P3D_ROTATE # J20
+  p3d_set_name left-Arm5
+  p3d_set_prev_jnt 19
+  p3d_set_pos_axe 0.450001 0.187993 0.802 1 0 0
+  p3d_set_dof 0.0
+  p3d_set_dof_vmin -180
+  p3d_set_dof_vmax 180
+ p3d_set_dof_jerk_max           4.5 # 5.4 # max  19.8	
+  p3d_set_dof_acceleration_max  1.5 # 1.8 # max   6.6
+  p3d_set_dof_velocity_max      1.5 # 0.9 # max   3.3
+p3d_end_desc
+p3d_read_macro ./pr2Parts/Larm/larm5.macro larm
+
+p3d_beg_desc_jnt P3D_ROTATE # J21
+  p3d_set_name left-Arm6
+  p3d_set_prev_jnt 20
+  p3d_set_pos_axe 0.771001 0.187993 0.802 0 1 0
+  p3d_set_dof 0.0
+  p3d_set_dof_vmin -119
+  p3d_set_dof_vmax 0
+ p3d_set_dof_jerk_max           4.5 # 5.4 # max   12.28
+  p3d_set_dof_acceleration_max  1.5 # 1.8 # max   6.146
+  p3d_set_dof_velocity_max      1.5 # 0.9 # max   3.078
+p3d_end_desc
+p3d_read_macro ./pr2Parts/Larm/larm6.macro larm
+
+p3d_beg_desc_jnt P3D_ROTATE # J22
+  p3d_set_name left-Arm7
+  p3d_set_prev_jnt 21
+  p3d_set_pos_axe 0.771001 0.187993 0.802 1 0 0
+  p3d_set_dof 0.0
+  p3d_set_dof_vmin -180
+  p3d_set_dof_vmax 180
+ p3d_set_dof_jerk_max           4.5 # 5.4 # max   21.6
+  p3d_set_dof_acceleration_max  1.5 # 1.8 # max   7.2
+  p3d_set_dof_velocity_max      1.5 # 0.9 # max   3.6
+p3d_end_desc
+p3d_read_macro ./pr2Parts/Larm/larm7.macro larm
+
+p3d_beg_desc_jnt P3D_FIXED #23
+  p3d_set_name lIkJoint
+  p3d_set_prev_jnt 22
+  p3d_set_pos_axe 0.771001 0.187993 0.802 0 0 1
+p3d_end_desc
+
+p3d_beg_desc_jnt P3D_ROTATE # J24
+  p3d_set_name fingerJointGripper_1
+  p3d_set_prev_jnt 23
+  p3d_set_pos_axe 0.847911 0.197993 0.802 0 0 1
+  p3d_set_dof 0.0
+  p3d_set_dof_vmin -0.2
+  p3d_set_dof_vmax 31.3981
+ p3d_set_dof_jerk_max           5.4 # max   
+  p3d_set_dof_acceleration_max  1.8 # max   
+  p3d_set_dof_velocity_max      0.9 # max
+p3d_end_desc
+p3d_read_macro ./pr2Parts/Larm/larm8.macro hand1.finger1
+
+p3d_beg_desc_jnt P3D_ROTATE # J25
+  p3d_set_name left-grip2
+  p3d_set_prev_jnt 23
+  p3d_set_pos_axe 0.847911 0.177993 0.802 0 0 -1
+  p3d_set_dof 0.0
+  p3d_set_dof_vmin -0.2
+  p3d_set_dof_vmax 31.3981
+ p3d_set_dof_jerk_max           5.4 # max   
+  p3d_set_dof_acceleration_max  1.8 # max   
+  p3d_set_dof_velocity_max      0.9 # max
+p3d_end_desc
+p3d_read_macro ./pr2Parts/Larm/larm9.macro hand1.finger2
+
+#---------------------------------------------------------------
+# JOINTS FOR HRI STUFF
+#---------------------------------------------------------------
+p3d_beg_desc_jnt P3D_FIXED #26
+   p3d_set_name Eyes
+   p3d_set_pos_relative
+   p3d_set_prev_jnt 4
+   p3d_set_pos_mat 1 0 0 0.10  0 0 1 -0.13  0 -1 0 0.00  0 0 0 1  
+   p3d_set_dof_vmin -10 -10 0 -180 -180 -180
+   p3d_set_dof_vmax  10  10 2  180  180  180
+p3d_end_desc
+
+p3d_beg_desc_jnt P3D_FIXED #J27
+   p3d_set_name rPalm
+   p3d_set_pos_relative 
+   p3d_set_prev_jnt 22
+   p3d_set_pos_mat 0 1 0 0  -1 0 0 0  0 0 1 0.25  0 0 0 1	
+   p3d_set_dof_vmin -180
+   p3d_set_dof_vmax 180
+p3d_end_desc
+
+p3d_beg_desc P3D_BODY rightreach
+   p3d_add_desc_sphere reachr 0.01 P3D_GRAPHIC
+p3d_end_desc
+p3d_set_prim_pos reachr 0.0 0.0 0 0 180 0
+
+p3d_beg_desc_jnt P3D_FIXED #J28
+   p3d_set_name lPalm
+   p3d_set_pos_relative 
+   p3d_set_prev_jnt 12
+   p3d_set_pos_mat 0 -1 0 0  1 0 0 0  0 0 1 0.25  0 0 0 1	
+   p3d_set_dof_vmin -180
+   p3d_set_dof_vmax 180
+p3d_end_desc
+
+p3d_beg_desc P3D_BODY leftreach
+   p3d_add_desc_sphere reachs 0.01 P3D_GRAPHIC
+p3d_end_desc
+p3d_set_prim_pos reachs 0.0 0.0 0.0 0 180 0
+
+#Virtual HRI joints
+
+p3d_beg_desc_jnt P3D_TRANSLATE #J29
+   p3d_set_name HriLookJoint
+   p3d_set_pos_relative
+   p3d_set_prev_jnt 4
+   p3d_set_pos_mat 0 0 1 0.13 0 1 0 -0.13 -1 0 0 0 0 0 0 1
+   p3d_set_dof_vmin 0
+   p3d_set_dof_vmax 10
+   p3d_set_dof_velocity_max      50
+   p3d_set_dof_acceleration_max  100
+   p3d_set_dof_jerk_max          300
+p3d_end_desc
+
+p3d_beg_desc_jnt P3D_TRANSLATE #J30
+   p3d_set_name rPoint
+   p3d_set_pos_relative
+   p3d_set_prev_jnt 27
+   p3d_set_pos_mat 0 0 1 0 0 1 0 0 -1 0 0 0 0 0 0 1
+   p3d_set_dof_vmin 0
+   p3d_set_dof_vmax 10
+   p3d_set_dof_velocity_max      50
+   p3d_set_dof_acceleration_max  100
+   p3d_set_dof_jerk_max          300
+p3d_end_desc
+
+p3d_beg_desc_jnt P3D_TRANSLATE #J31
+   p3d_set_name lPoint
+   p3d_set_pos_relative
+   p3d_set_prev_jnt 28
+   p3d_set_pos_mat 0 0 1 0 0 1 0 0 -1 0 0 0 0 0 0 1
+   p3d_set_dof_vmin 0
+   p3d_set_dof_vmax 10
+   p3d_set_dof_velocity_max      50
+   p3d_set_dof_acceleration_max  100
+   p3d_set_dof_jerk_max          300
+p3d_end_desc
+
+
+#Object
+  p3d_beg_desc_jnt P3D_FREEFLYER # J32
+    p3d_set_name virtual_object_right
+    p3d_set_prev_jnt 0
+    p3d_set_pos_axe 0 0 0 0 0 1
+    p3d_set_dof_vmin -10 -10 0 -180 -180 -180
+    p3d_set_dof_vmax  10  10 2  180  180  180
+    p3d_set_dof_jerk_max              0.9 0.9  0.9 3 3 3
+    p3d_set_dof_acceleration_max      0.3 0.3  0.3 1 1 1
+    p3d_set_dof_velocity_max          0.3 0.3  0.3 1 1 1
+  p3d_end_desc
+  p3d_beg_desc P3D_BODY fictiveObject_right
+    p3d_add_desc_sphere sphere 0.02 P3D_GRAPHIC
+    p3d_set_prim_pos sphere 0 0 0 0 0 0
+  p3d_end_desc
+
+  p3d_beg_desc_jnt P3D_FREEFLYER # J33
+    p3d_set_name virtual_object_left
+    p3d_set_prev_jnt 0
+    p3d_set_pos_axe 0 0 0 0 0 1
+    p3d_set_dof_vmin -10 -10 0 -180 -180 -180
+    p3d_set_dof_vmax  10  10 2  180  180  180
+    p3d_set_dof_jerk_max              0.9 0.9  0.9 3 3 3
+    p3d_set_dof_acceleration_max      0.3 0.3  0.3 1 1 1
+    p3d_set_dof_velocity_max          0.3 0.3  0.3 1 1 1
+#    p3d_set_dof_jerk_max              0.45  0.45  0.45  0.9 0.9 0.9
+#    p3d_set_dof_acceleration_max      0.15  0.15  0.15  0.3 0.3 0.3
+#    p3d_set_dof_velocity_max          0.15 0.15 0.15 0.3 0.3 0.3
+  p3d_end_desc
+  p3d_beg_desc P3D_BODY fictiveObject_left
+    p3d_add_desc_sphere sphere 0.02 P3D_GRAPHIC
+    p3d_set_prim_pos sphere 0 0 0 0 0 0
+  p3d_end_desc
+
+p3d_end_desc
+
+### CONSTRAINTS
+# constraint on gripper joints:
+p3d_constraint p3d_lin_rel_dofs 1 15 1 14 2 1 0.0 0
+p3d_constraint p3d_lin_rel_dofs 1 25 1 24 2 1 0.0 0
+
+
+#---------------------------------------------------------------
+# Position
+#---------------------------------------------------------------
+
+#rArm
+p3d_set_body_abs_pos rarm.rarm1 0 0 0.011325 0 0 0
+p3d_set_body_abs_pos rarm.rarm2 0 0 0.011325 0 0 0
+p3d_set_body_abs_pos rarm.rarm3 0 0 0.011325 0 0 0
+p3d_set_body_abs_pos rarm.rarm4 0 0 0.011325 0 0 0
+p3d_set_body_abs_pos rarm.rarm5 0 0 0.011325 0 0 0
+p3d_set_body_abs_pos rarm.rarm6 0 0 0.011325 0 0 0
+p3d_set_body_abs_pos rarm.rarm7 0 0 0.011325 0 0 0
+p3d_set_body_abs_pos hand0.finger1.fingertip 0 0 0.011325 0 0 0
+p3d_set_body_abs_pos hand0.finger2.fingertip 0 0 0.011325 0 0 0
+
+#rArm Ghosts
+p3d_set_body_abs_pos rarm.Grarm1 0 0 0.011325 0 0 0
+p3d_set_body_abs_pos rarm.Grarm2 0 0 0.011325 0 0 0
+p3d_set_body_abs_pos rarm.Grarm3 0 0 0.011325 0 0 0
+p3d_set_body_abs_pos rarm.Grarm4 0 0 0.011325 0 0 0
+p3d_set_body_abs_pos rarm.Grarm5 0 0 0.011325 0 0 0
+p3d_set_body_abs_pos rarm.Grarm7 0 0 0.011325 0 0 0
+
+
+#lArm
+p3d_set_body_abs_pos larm.larm1 0 0 0.011325 0 0 0
+p3d_set_body_abs_pos larm.larm2 0 0 0.011325 0 0 0
+p3d_set_body_abs_pos larm.larm3 0 0 0.011325 0 0 0
+p3d_set_body_abs_pos larm.larm4 0 0 0.011325 0 0 0
+p3d_set_body_abs_pos larm.larm5 0 0 0.011325 0 0 0
+p3d_set_body_abs_pos larm.larm6 0 0 0.011325 0 0 0
+p3d_set_body_abs_pos larm.larm7 0 0 0.011325 0 0 0
+p3d_set_body_abs_pos hand1.finger1.fingertip 0 0 0.011325 0 0 0
+p3d_set_body_abs_pos hand1.finger2.fingertip 0 0 0.011325 0 0 0
+
+#lArm Ghosts
+p3d_set_body_abs_pos larm.Glarm1 0 0 0.011325 0 0 0
+p3d_set_body_abs_pos larm.Glarm2 0 0 0.011325 0 0 0
+p3d_set_body_abs_pos larm.Glarm3 0 0 0.011325 0 0 0
+p3d_set_body_abs_pos larm.Glarm4 0 0 0.011325 0 0 0
+p3d_set_body_abs_pos larm.Glarm5 0 0 0.011325 0 0 0
+p3d_set_body_abs_pos larm.Glarm7 0 0 0.011325 0 0 0
+
+
+
+#---------------------------------------------------------------
+# COLORS
+#---------------------------------------------------------------
+
+p3d_set_body_poly_color base.base 1 Any 1 1 1 
+
+p3d_set_body_poly_color base.rbwheel 1 Any 0 0 0
+p3d_set_body_poly_color base.rbwheel 2 Any 0 0 0
+p3d_set_body_poly_color base.rbwheel 3 Any 0 0 0
+
+p3d_set_body_poly_color base.lbwheel 1 Any 0 0 0
+p3d_set_body_poly_color base.lbwheel 2 Any 0 0 0
+p3d_set_body_poly_color base.lbwheel 3 Any 0 0 0
+
+p3d_set_body_poly_color base.rfwheel 1 Any 0 0 0
+p3d_set_body_poly_color base.rfwheel 2 Any 0 0 0
+p3d_set_body_poly_color base.rfwheel 3 Any 0 0 0
+p3d_set_body_poly_color base.lfwheel 1 Any 0 0 0
+p3d_set_body_poly_color base.lfwheel 2 Any 0 0 0
+p3d_set_body_poly_color base.lfwheel 3 Any 0 0 0
+
+p3d_set_body_poly_color torso.torso 1 Any 1 1 1
+
+p3d_set_body_poly_color head.pan 1 Any 1 1 1
+p3d_set_body_poly_color head.tilt 1 Any 0.8 0.8 0.8
+p3d_set_body_poly_color head.tilt 2 Any 0 0 0
+p3d_set_body_poly_color head.tilt 3 Any 0.1663615 0.0307033 0.7741647
+p3d_set_body_poly_color head.laser 1 Any 0.3 0.3 0.3
+
+p3d_set_body_poly_color rarm.rarm1 1 Any 0.8 0.8 0.8
+p3d_set_body_poly_color rarm.rarm2 1 Any 0.3 0.3 0.3
+p3d_set_body_poly_color rarm.rarm2 2 Any 0.6 0.6 0.6
+p3d_set_body_poly_color rarm.rarm3 1 Any 0.6 0.6 0.6
+p3d_set_body_poly_color rarm.rarm4 1 Any 0.6 0.6 0.6
+p3d_set_body_poly_color rarm.rarm4 2 Any 0.6 0.6 0.6
+p3d_set_body_poly_color rarm.rarm5 1 Any 0.6 0.6 0.6
+p3d_set_body_poly_color rarm.rarm6 1 Any 0.6 0.6 0.6
+p3d_set_body_poly_color rarm.rarm6 2 Any 0.6 0.6 0.6
+p3d_set_body_poly_color rarm.rarm7 1 Any 0.6 0.6 0.6
+p3d_set_body_poly_color hand0.finger1.fingertip 1 Any 0.9 0.9 0.9
+p3d_set_body_poly_color hand0.finger1.fingertip 2 Any 0.9 0.9 0.9
+p3d_set_body_poly_color hand0.finger2.fingertip 1 Any 0.9 0.9 0.9
+p3d_set_body_poly_color hand0.finger2.fingertip 2 Any 0.9 0.9 0.9
+
+p3d_set_body_poly_color larm.larm1 1 Any 0.8 0.8 0.8
+p3d_set_body_poly_color larm.larm2 1 Any 0.3 0.3 0.3
+p3d_set_body_poly_color larm.larm2 2 Any 0.6 0.6 0.6
+p3d_set_body_poly_color larm.larm3 1 Any 0.6 0.6 0.6
+p3d_set_body_poly_color larm.larm4 1 Any 0.6 0.6 0.6
+p3d_set_body_poly_color larm.larm4 2 Any 0.6 0.6 0.6
+p3d_set_body_poly_color larm.larm5 1 Any 0.6 0.6 0.6
+p3d_set_body_poly_color larm.larm6 1 Any 0.6 0.6 0.6
+p3d_set_body_poly_color larm.larm6 2 Any 0.6 0.6 0.6
+p3d_set_body_poly_color larm.larm7 1 Any 0.6 0.6 0.6
+p3d_set_body_poly_color hand1.finger1.fingertip 1 Any 0.9 0.9 0.9
+p3d_set_body_poly_color hand1.finger1.fingertip 2 Any 0.9 0.9 0.9
+p3d_set_body_poly_color hand1.finger2.fingertip 1 Any 0.9 0.9 0.9
+p3d_set_body_poly_color hand1.finger2.fingertip 2 Any 0.9 0.9 0.9
+
+p3d_set_body_poly_color fictiveObject_right 1 Any 0 1 0
+p3d_set_body_poly_color fictiveObject_left 1 Any 0 0 1
+
