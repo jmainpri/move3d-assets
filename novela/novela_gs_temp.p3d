@@ -18,87 +18,87 @@ p3d_beg_desc P3D_ENV novela
 ################################################
 
   p3d_read_macro OB_Model.macro OB_Model
-   p3d_set_obst_pos_by_mat OB_Model 0.422618 0.906307 0 -2.193792 -0.906307 0.422618 0 -3.278572 0 0 1 1.990086 0 0 0 1 
+   p3d_set_obst_pos_by_mat OB_Model 0.608761 0.793352 0 1.067822 -0.793352 0.608761 0 -2.17568 0 0 1 1.990086 0 0 0 1 
 
   p3d_read_macro OB_Mesh01.macro OB_Mesh01
-   p3d_set_obst_pos_by_mat OB_Mesh01 0.422618 0.906307 0 -0.189376 -0.906307 0.422618 0 -7.92941 0 0 1 0.004454 0 0 0 1 
+   p3d_set_obst_pos_by_mat OB_Mesh01 0.608761 0.793352 0 4.031351 -0.793352 0.608761 0 -6.282439 0 0 1 0.004454 0 0 0 1 
 
   p3d_read_macro rideau_jardin.macro rideau_jardin
-   p3d_set_obst_pos_by_mat rideau_jardin 0.422618 0.906307 0 -5.148141 -0.906307 0.422618 0 -9.581718 0 0 1 0.08329 0 0 0 1 
+   p3d_set_obst_pos_by_mat rideau_jardin 0.608761 0.793352 0 -0.452246 -0.793352 0.608761 0 -8.968854 0 0 1 0.08329 0 0 0 1 
 
   p3d_read_macro rideau_cour.macro rideau_cour
-   p3d_set_obst_pos_by_mat rideau_cour 0.422618 0.906307 0 4.419207 -0.906307 0.422618 0 -5.12039 0 0 1 0.08329 0 0 0 1 
+   p3d_set_obst_pos_by_mat rideau_cour 0.608761 0.793352 0 7.922709 -0.793352 0.608761 0 -2.542524 0 0 1 0.08329 0 0 0 1 
 
   p3d_read_macro OB_Mesh04.macro OB_Mesh04
-   p3d_set_obst_pos_by_mat OB_Mesh04 0.422618 0.906307 0 -0.326721 -0.906307 0.422618 0 -7.673486 0 0 1 -0.279267 0 0 0 1 
+   p3d_set_obst_pos_by_mat OB_Mesh04 0.608761 0.793352 0 3.841869 -0.793352 0.608761 0 -6.062309 0 0 1 -0.279267 0 0 0 1 
 
   p3d_read_macro OB_Mesh117.macro OB_Mesh117
-   p3d_set_obst_pos_by_mat OB_Mesh117 0.422618 0.906307 0 0.327753 -0.906307 0.422618 0 -8.980865 0 0 1 -0.297145 0 0 0 1 
+   p3d_set_obst_pos_by_mat OB_Mesh117 0.608761 0.793352 0 4.763798 -0.793352 0.608761 0 -7.197043 0 0 1 -0.297145 0 0 0 1 
 
   p3d_read_macro OB_Mesh118.macro OB_Mesh118
-   p3d_set_obst_pos_by_mat OB_Mesh118 0.422618 0.906307 0 2.325622 -0.906307 0.422618 0 -0.995955 0 0 1 -0.284457 0 0 0 1 
+   p3d_set_obst_pos_by_mat OB_Mesh118 0.608761 0.793352 0 4.986059 -0.793352 0.608761 0 1.031009 0 0 1 -0.284457 0 0 0 1 
 
   p3d_read_macro OB_Mesh125.macro OB_Mesh125
-   p3d_set_obst_pos_by_mat OB_Mesh125 0.422618 0.906307 0 -0.58674 -0.906307 0.422618 0 -4.328841 0 0 1 -0.001464 0 0 0 1 
+   p3d_set_obst_pos_by_mat OB_Mesh125 0.608761 0.793352 0 2.8641 -0.793352 0.608761 0 -2.853223 0 0 1 -0.001464 0 0 0 1 
 
   p3d_read_macro OB_Mesh126.macro OB_Mesh126
-   p3d_set_obst_pos_by_mat OB_Mesh126 0.422618 0.906307 0 -4.268378 -0.906307 0.422618 0 -9.132038 0 0 1 2.961031 0 0 0 1 
+   p3d_set_obst_pos_by_mat OB_Mesh126 0.608761 0.793352 0 0.309334 -0.793352 0.608761 0 -8.339418 0 0 1 2.961031 0 0 0 1 
 
   p3d_read_macro OB_Mesh127.macro OB_Mesh127
-   p3d_set_obst_pos_by_mat OB_Mesh127 0.422618 0.906307 0 -5.52694 -0.906307 0.422618 0 -9.751319 0 0 1 3.195935 0 0 0 1 
+   p3d_set_obst_pos_by_mat OB_Mesh127 0.608761 0.793352 0 -0.785357 -0.793352 0.608761 0 -9.216422 0 0 1 3.195935 0 0 0 1 
 
   p3d_read_macro OB_Mesh128.macro OB_Mesh128
-   p3d_set_obst_pos_by_mat OB_Mesh128 0.422618 0.906307 0 -6.079079 -0.906307 0.422618 0 -9.968293 0 0 1 2.843541 0 0 0 1 
+   p3d_set_obst_pos_by_mat OB_Mesh128 0.608761 0.793352 0 -1.277447 -0.793352 0.608761 0 -9.547758 0 0 1 2.843541 0 0 0 1 
 
   p3d_read_macro OB_Mesh129.macro OB_Mesh129
-   p3d_set_obst_pos_by_mat OB_Mesh129 0.422618 0.906307 0 3.588615 -0.906307 0.422618 0 -5.500661 0 0 1 3.430523 0 0 0 1 
+   p3d_set_obst_pos_by_mat OB_Mesh129 0.608761 0.793352 0 7.194111 -0.793352 0.608761 0 -3.093554 0 0 1 3.430523 0 0 0 1 
 
   p3d_read_macro OB_Mesh130.macro OB_Mesh130
-   p3d_set_obst_pos_by_mat OB_Mesh130 0.422618 0.906307 0 5.141917 -0.906307 0.422618 0 -4.776348 0 0 1 2.960412 0 0 0 1 
+   p3d_set_obst_pos_by_mat OB_Mesh130 0.608761 0.793352 0 8.553823 -0.793352 0.608761 0 -2.050214 0 0 1 2.960412 0 0 0 1 
 
   p3d_read_macro OB_Mesh131.macro OB_Mesh131
-   p3d_set_obst_pos_by_mat OB_Mesh131 0.422618 0.906307 0 5.309609 -0.906307 0.422618 0 -4.693524 0 0 1 2.961034 0 0 0 1 
+   p3d_set_obst_pos_by_mat OB_Mesh131 0.608761 0.793352 0 8.699614 -0.793352 0.608761 0 -1.933059 0 0 1 2.961034 0 0 0 1 
 
   p3d_read_macro OB_Mesh132.macro OB_Mesh132
-   p3d_set_obst_pos_by_mat OB_Mesh132 0.422618 0.906307 0 5.284786 -0.906307 0.422618 0 -4.640291 0 0 1 2.961036 0 0 0 1 
+   p3d_set_obst_pos_by_mat OB_Mesh132 0.608761 0.793352 0 8.663858 -0.793352 0.608761 0 -1.88646 0 0 1 2.961036 0 0 0 1 
 
   p3d_read_macro OB_Mesh133.macro OB_Mesh133
-   p3d_set_obst_pos_by_mat OB_Mesh133 0.422618 0.906307 0 2.208613 -0.906307 0.422618 0 -13.014382 0 0 1 -0.297145 0 0 0 1 
+   p3d_set_obst_pos_by_mat OB_Mesh133 0.608761 0.793352 0 7.473087 -0.793352 0.608761 0 -10.727857 0 0 1 -0.297145 0 0 0 1 
 
   p3d_read_macro OB_Mesh134.macro OB_Mesh134
-   p3d_set_obst_pos_by_mat OB_Mesh134 0.422618 0.906307 0 -2.378732 -0.906307 0.422618 0 -4.096293 0 0 1 0.66539 0 0 0 1 
+   p3d_set_obst_pos_by_mat OB_Mesh134 0.608761 0.793352 0 1.064253 -0.793352 0.608761 0 -3.014046 0 0 1 0.66539 0 0 0 1 
 
   p3d_read_macro OB_Mesh135.macro OB_Mesh135
-   p3d_set_obst_pos_by_mat OB_Mesh135 0.422618 0.906307 0 3.150821 -0.906307 0.422618 0 -5.268902 0 0 1 -0.001464 0 0 0 1 
+   p3d_set_obst_pos_by_mat OB_Mesh135 0.608761 0.793352 0 6.716533 -0.793352 0.608761 0 -2.962045 0 0 1 -0.001464 0 0 0 1 
 
   p3d_read_macro OB_Mesh136.macro OB_Mesh136
-   p3d_set_obst_pos_by_mat OB_Mesh136 0.422618 0.906307 0 2.727413 -0.906307 0.422618 0 -1.42032 0 0 1 -0.287119 0 0 0 1 
+   p3d_set_obst_pos_by_mat OB_Mesh136 0.608761 0.793352 0 5.470175 -0.793352 0.608761 0 0.703667 0 0 1 -0.287119 0 0 0 1 
 
   p3d_read_macro OB_Mesh137.macro OB_Mesh137
-   p3d_set_obst_pos_by_mat OB_Mesh137 0.422618 0.906307 0 -2.748775 -0.906307 0.422618 0 -6.366258 0 0 1 0.037949 0 0 0 1 
+   p3d_set_obst_pos_by_mat OB_Mesh137 0.608761 0.793352 0 1.194292 -0.793352 0.608761 0 -5.310296 0 0 1 0.037949 0 0 0 1 
 
   p3d_read_macro OB_Mesh138.macro OB_Mesh138
-   p3d_set_obst_pos_by_mat OB_Mesh138 0.422618 0.906307 0 2.258807 -0.906307 0.422618 0 -0.41539 0 0 1 -0.287119 0 0 0 1 
+   p3d_set_obst_pos_by_mat OB_Mesh138 0.608761 0.793352 0 4.795171 -0.793352 0.608761 0 1.583351 0 0 1 -0.287119 0 0 0 1 
 
 ################################################
 #   Chaises et tables scène
 ################################################
 
   p3d_read_macro petite_table.macro petite_table
-   p3d_set_obst_pos_by_mat petite_table 0.422618 0.906307 0 0.958838 -0.906307 0.422618 0 -5.057799 0 0 1 -0.003079 0 0 0 1 
+   p3d_set_obst_pos_by_mat petite_table 0.608761 0.793352 0 4.530817 -0.793352 0.608761 0 -3.230378 0 0 1 -0.003079 0 0 0 1 
   
   p3d_read_macro Chaise_Novela.macro Chaise_petite_table
-     p3d_set_obst_pos_by_mat Chaise_petite_table 0.9 -0.43 0 1.3 0.43 0.9 0 -4.85 0 0 1 -0.003079 0 0 0 1 
+     p3d_set_obst_pos_by_mat Chaise_petite_table 0.785597 -0.614602 0 4.818916 0.614602 0.785597 0 -2.953664 0 0 1 -0.003079 0 0 0 1 
 
  
   p3d_read_macro grande_table.macro grande_table
-   p3d_set_obst_pos_by_mat grande_table 0.422618 0.906307 0 -4.814739 -0.906307 0.422618 0 -6.66465 0 0 1 -0.003079 0 0 0 1 
+   p3d_set_obst_pos_by_mat grande_table 0.608761 0.793352 0 -0.758116 -0.793352 0.608761 0 -6.048771 0 0 1 -0.003079 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_grande_table_01
-      p3d_set_obst_pos_by_mat Chaise_grande_table_01 -0.638 -0.769 0 -4.9 0.769 -0.638 0 -6.1 0 0 1 -0.003079 0 0 0 1 
+      p3d_set_obst_pos_by_mat Chaise_grande_table_01 -0.789318 -0.612683 0 -0.963568 0.612683 -0.789318 0 -5.515959 0 0 1 -0.003079 0 0 0 1 
   
   p3d_read_macro Chaise_Novela.macro Chaise_grande_table_02
-   p3d_set_obst_pos_by_mat Chaise_grande_table_02 -0.638 -0.769 0 -5.35 0.769 -0.638 0 -6.55 0 0 1 -0.003079 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_grande_table_02 -0.789318 -0.612683 0 -1.305504 0.612683 -0.789318 0 -6.05269 0 0 1 -0.003079 0 0 0 1 
   
 #  p3d_read_macro Chaise_Novela.macro Chaise_grande_table_03
 #   p3d_set_obst_pos_by_mat Chaise_grande_table_03 0.422618 0 0.906307 -5.522668 -0.906307 0 0.422618 -7.314654 0 -1 0 0.305612 0 0 0 1 
@@ -109,340 +109,340 @@ p3d_beg_desc P3D_ENV novela
 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela05
-   p3d_set_obst_pos_by_mat Chaise_Novela05 0.422618 0.906307 0 6.500965 -0.906307 0.422618 0 -12.805592 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela05 0.608761 0.793352 0 11.618503 -0.793352 0.608761 0 -9.594981 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela06
-   p3d_set_obst_pos_by_mat Chaise_Novela06 0.422618 0.906307 0 6.11368 -0.906307 0.422618 0 -11.968928 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela06 0.608761 0.793352 0 11.059311 -0.793352 0.608761 0 -8.861974 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela07
-   p3d_set_obst_pos_by_mat Chaise_Novela07 0.422618 0.906307 0 5.726394 -0.906307 0.422618 0 -11.132265 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela07 0.608761 0.793352 0 10.500118 -0.793352 0.608761 0 -8.128967 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela08
-   p3d_set_obst_pos_by_mat Chaise_Novela08 0.422618 0.906307 0 5.339108 -0.906307 0.422618 0 -10.2956 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela08 0.608761 0.793352 0 9.940925 -0.793352 0.608761 0 -7.395958 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela09
-   p3d_set_obst_pos_by_mat Chaise_Novela09 0.422618 0.906307 0 4.951822 -0.906307 0.422618 0 -9.458937 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela09 0.608761 0.793352 0 9.381732 -0.793352 0.608761 0 -6.662951 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela10
-   p3d_set_obst_pos_by_mat Chaise_Novela10 0.422618 0.906307 0 4.564537 -0.906307 0.422618 0 -8.622273 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela10 0.608761 0.793352 0 8.82254 -0.793352 0.608761 0 -5.929944 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela11
-   p3d_set_obst_pos_by_mat Chaise_Novela11 0.422618 0.906307 0 4.177253 -0.906307 0.422618 0 -7.785609 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela11 0.608761 0.793352 0 8.263349 -0.793352 0.608761 0 -5.196935 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela12
-   p3d_set_obst_pos_by_mat Chaise_Novela12 0.422618 0.906307 0 3.789966 -0.906307 0.422618 0 -6.948946 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela12 0.608761 0.793352 0 7.704155 -0.793352 0.608761 0 -4.463929 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela13
-   p3d_set_obst_pos_by_mat Chaise_Novela13 0.422618 0.906307 0 6.024946 -0.906307 0.422618 0 -13.025236 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela13 0.608761 0.793352 0 11.201307 -0.793352 0.608761 0 -9.912448 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela14
-   p3d_set_obst_pos_by_mat Chaise_Novela14 0.422618 0.906307 0 5.637661 -0.906307 0.422618 0 -12.188572 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela14 0.608761 0.793352 0 10.642115 -0.793352 0.608761 0 -9.179441 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela15
-   p3d_set_obst_pos_by_mat Chaise_Novela15 0.422618 0.906307 0 5.250375 -0.906307 0.422618 0 -11.351908 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela15 0.608761 0.793352 0 10.082922 -0.793352 0.608761 0 -8.446433 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela16
-   p3d_set_obst_pos_by_mat Chaise_Novela16 0.422618 0.906307 0 4.863088 -0.906307 0.422618 0 -10.515243 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela16 0.608761 0.793352 0 9.523728 -0.793352 0.608761 0 -7.713424 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela17
-   p3d_set_obst_pos_by_mat Chaise_Novela17 0.422618 0.906307 0 4.475803 -0.906307 0.422618 0 -9.678579 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela17 0.608761 0.793352 0 8.964536 -0.793352 0.608761 0 -6.980416 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela18
-   p3d_set_obst_pos_by_mat Chaise_Novela18 0.422618 0.906307 0 4.088517 -0.906307 0.422618 0 -8.841916 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela18 0.608761 0.793352 0 8.405343 -0.793352 0.608761 0 -6.24741 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela19
-   p3d_set_obst_pos_by_mat Chaise_Novela19 0.422618 0.906307 0 3.701231 -0.906307 0.422618 0 -8.005252 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela19 0.608761 0.793352 0 7.84615 -0.793352 0.608761 0 -5.514402 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela20
-   p3d_set_obst_pos_by_mat Chaise_Novela20 0.422618 0.906307 0 3.313946 -0.906307 0.422618 0 -7.168588 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela20 0.608761 0.793352 0 7.286958 -0.793352 0.608761 0 -4.781394 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela21
-   p3d_set_obst_pos_by_mat Chaise_Novela21 0.422618 0.906307 0 5.548925 -0.906307 0.422618 0 -13.244877 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela21 0.608761 0.793352 0 10.784109 -0.793352 0.608761 0 -10.229913 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela22
-   p3d_set_obst_pos_by_mat Chaise_Novela22 0.422618 0.906307 0 5.16164 -0.906307 0.422618 0 -12.408214 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela22 0.608761 0.793352 0 10.224917 -0.793352 0.608761 0 -9.496906 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela23
-   p3d_set_obst_pos_by_mat Chaise_Novela23 0.422618 0.906307 0 4.774354 -0.906307 0.422618 0 -11.57155 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela23 0.608761 0.793352 0 9.665724 -0.793352 0.608761 0 -8.763898 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela24
-   p3d_set_obst_pos_by_mat Chaise_Novela24 0.422618 0.906307 0 4.387069 -0.906307 0.422618 0 -10.734886 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela24 0.608761 0.793352 0 9.106532 -0.793352 0.608761 0 -8.03089 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela25
-   p3d_set_obst_pos_by_mat Chaise_Novela25 0.422618 0.906307 0 3.999783 -0.906307 0.422618 0 -9.898222 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela25 0.608761 0.793352 0 8.547339 -0.793352 0.608761 0 -7.297883 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela26
-   p3d_set_obst_pos_by_mat Chaise_Novela26 0.422618 0.906307 0 3.612498 -0.906307 0.422618 0 -9.061559 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela26 0.608761 0.793352 0 7.988147 -0.793352 0.608761 0 -6.564876 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela27
-   p3d_set_obst_pos_by_mat Chaise_Novela27 0.422618 0.906307 0 3.225213 -0.906307 0.422618 0 -8.224894 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela27 0.608761 0.793352 0 7.428955 -0.793352 0.608761 0 -5.831867 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela28
-   p3d_set_obst_pos_by_mat Chaise_Novela28 0.422618 0.906307 0 2.837927 -0.906307 0.422618 0 -7.388231 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela28 0.608761 0.793352 0 6.869762 -0.793352 0.608761 0 -5.09886 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela29
-   p3d_set_obst_pos_by_mat Chaise_Novela29 0.422618 0.906307 0 5.072906 -0.906307 0.422618 0 -13.464521 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela29 0.608761 0.793352 0 10.366913 -0.793352 0.608761 0 -10.54738 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela30
-   p3d_set_obst_pos_by_mat Chaise_Novela30 0.422618 0.906307 0 4.68562 -0.906307 0.422618 0 -12.627857 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela30 0.608761 0.793352 0 9.80772 -0.793352 0.608761 0 -9.814372 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela31
-   p3d_set_obst_pos_by_mat Chaise_Novela31 0.422618 0.906307 0 4.298334 -0.906307 0.422618 0 -11.791193 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela31 0.608761 0.793352 0 9.248527 -0.793352 0.608761 0 -9.081364 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela32
-   p3d_set_obst_pos_by_mat Chaise_Novela32 0.422618 0.906307 0 3.911049 -0.906307 0.422618 0 -10.954529 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela32 0.608761 0.793352 0 8.689335 -0.793352 0.608761 0 -8.348356 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela33
-   p3d_set_obst_pos_by_mat Chaise_Novela33 0.422618 0.906307 0 3.523763 -0.906307 0.422618 0 -10.117865 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela33 0.608761 0.793352 0 8.130142 -0.793352 0.608761 0 -7.615349 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela34
-   p3d_set_obst_pos_by_mat Chaise_Novela34 0.422618 0.906307 0 3.136477 -0.906307 0.422618 0 -9.281201 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela34 0.608761 0.793352 0 7.570949 -0.793352 0.608761 0 -6.882341 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela35
-   p3d_set_obst_pos_by_mat Chaise_Novela35 0.422618 0.906307 0 2.749192 -0.906307 0.422618 0 -8.444537 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela35 0.608761 0.793352 0 7.011757 -0.793352 0.608761 0 -6.149333 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela36
-   p3d_set_obst_pos_by_mat Chaise_Novela36 0.422618 0.906307 0 2.361906 -0.906307 0.422618 0 -7.607873 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela36 0.608761 0.793352 0 6.452564 -0.793352 0.608761 0 -5.416326 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela37
-   p3d_set_obst_pos_by_mat Chaise_Novela37 0.422618 0.906307 0 4.596886 -0.906307 0.422618 0 -13.684163 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela37 0.608761 0.793352 0 9.949716 -0.793352 0.608761 0 -10.864845 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela38
-   p3d_set_obst_pos_by_mat Chaise_Novela38 0.422618 0.906307 0 4.2096 -0.906307 0.422618 0 -12.847499 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela38 0.608761 0.793352 0 9.390523 -0.793352 0.608761 0 -10.131837 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela39
-   p3d_set_obst_pos_by_mat Chaise_Novela39 0.422618 0.906307 0 3.822314 -0.906307 0.422618 0 -12.010836 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela39 0.608761 0.793352 0 8.83133 -0.793352 0.608761 0 -9.398831 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela40
-   p3d_set_obst_pos_by_mat Chaise_Novela40 0.422618 0.906307 0 3.435028 -0.906307 0.422618 0 -11.174172 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela40 0.608761 0.793352 0 8.272137 -0.793352 0.608761 0 -8.665823 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela41
-   p3d_set_obst_pos_by_mat Chaise_Novela41 0.422618 0.906307 0 3.047743 -0.906307 0.422618 0 -10.337508 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela41 0.608761 0.793352 0 7.712945 -0.793352 0.608761 0 -7.932815 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela42
-   p3d_set_obst_pos_by_mat Chaise_Novela42 0.422618 0.906307 0 2.660458 -0.906307 0.422618 0 -9.500844 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela42 0.608761 0.793352 0 7.153753 -0.793352 0.608761 0 -7.199807 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela43
-   p3d_set_obst_pos_by_mat Chaise_Novela43 0.422618 0.906307 0 2.273172 -0.906307 0.422618 0 -8.66418 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela43 0.608761 0.793352 0 6.59456 -0.793352 0.608761 0 -6.466799 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela44
-   p3d_set_obst_pos_by_mat Chaise_Novela44 0.422618 0.906307 0 1.885887 -0.906307 0.422618 0 -7.827516 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela44 0.608761 0.793352 0 6.035368 -0.793352 0.608761 0 -5.733791 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela45
-   p3d_set_obst_pos_by_mat Chaise_Novela45 0.422618 0.906307 0 4.120865 -0.906307 0.422618 0 -13.903806 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela45 0.608761 0.793352 0 9.532518 -0.793352 0.608761 0 -11.182311 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela46
-   p3d_set_obst_pos_by_mat Chaise_Novela46 0.422618 0.906307 0 3.73358 -0.906307 0.422618 0 -13.067142 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela46 0.608761 0.793352 0 8.973326 -0.793352 0.608761 0 -10.449303 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela47
-   p3d_set_obst_pos_by_mat Chaise_Novela47 0.422618 0.906307 0 3.346294 -0.906307 0.422618 0 -12.230478 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela47 0.608761 0.793352 0 8.414133 -0.793352 0.608761 0 -9.716296 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela48
-   p3d_set_obst_pos_by_mat Chaise_Novela48 0.422618 0.906307 0 2.959009 -0.906307 0.422618 0 -11.393814 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela48 0.608761 0.793352 0 7.854941 -0.793352 0.608761 0 -8.983288 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela49
-   p3d_set_obst_pos_by_mat Chaise_Novela49 0.422618 0.906307 0 2.571723 -0.906307 0.422618 0 -10.55715 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela49 0.608761 0.793352 0 7.295748 -0.793352 0.608761 0 -8.25028 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela50
-   p3d_set_obst_pos_by_mat Chaise_Novela50 0.422618 0.906307 0 2.184438 -0.906307 0.422618 0 -9.720486 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela50 0.608761 0.793352 0 6.736556 -0.793352 0.608761 0 -7.517272 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela51
-   p3d_set_obst_pos_by_mat Chaise_Novela51 0.422618 0.906307 0 1.797152 -0.906307 0.422618 0 -8.883823 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela51 0.608761 0.793352 0 6.177363 -0.793352 0.608761 0 -6.784266 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela52
-   p3d_set_obst_pos_by_mat Chaise_Novela52 0.422618 0.906307 0 1.409866 -0.906307 0.422618 0 -8.047158 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela52 0.608761 0.793352 0 5.61817 -0.793352 0.608761 0 -6.051257 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela53
-   p3d_set_obst_pos_by_mat Chaise_Novela53 0.422618 0.906307 0 3.644846 -0.906307 0.422618 0 -14.123448 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela53 0.608761 0.793352 0 9.115322 -0.793352 0.608761 0 -11.499776 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela54
-   p3d_set_obst_pos_by_mat Chaise_Novela54 0.422618 0.906307 0 3.25756 -0.906307 0.422618 0 -13.286785 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela54 0.608761 0.793352 0 8.556129 -0.793352 0.608761 0 -10.76677 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela55
-   p3d_set_obst_pos_by_mat Chaise_Novela55 0.422618 0.906307 0 2.870274 -0.906307 0.422618 0 -12.450121 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela55 0.608761 0.793352 0 7.996936 -0.793352 0.608761 0 -10.033762 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela56
-   p3d_set_obst_pos_by_mat Chaise_Novela56 0.422618 0.906307 0 2.482988 -0.906307 0.422618 0 -11.613457 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela56 0.608761 0.793352 0 7.437743 -0.793352 0.608761 0 -9.300754 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela57
-   p3d_set_obst_pos_by_mat Chaise_Novela57 0.422618 0.906307 0 2.095703 -0.906307 0.422618 0 -10.776793 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela57 0.608761 0.793352 0 6.878551 -0.793352 0.608761 0 -8.567746 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela58
-   p3d_set_obst_pos_by_mat Chaise_Novela58 0.422618 0.906307 0 1.708418 -0.906307 0.422618 0 -9.940129 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela58 0.608761 0.793352 0 6.319359 -0.793352 0.608761 0 -7.834738 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela59
-   p3d_set_obst_pos_by_mat Chaise_Novela59 0.422618 0.906307 0 1.321132 -0.906307 0.422618 0 -9.103465 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela59 0.608761 0.793352 0 5.760166 -0.793352 0.608761 0 -7.101731 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela60
-   p3d_set_obst_pos_by_mat Chaise_Novela60 0.422618 0.906307 0 0.933847 -0.906307 0.422618 0 -8.266802 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela60 0.608761 0.793352 0 5.200974 -0.793352 0.608761 0 -6.368724 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela61
-   p3d_set_obst_pos_by_mat Chaise_Novela61 0.422618 0.906307 0 1.787499 -0.906307 0.422618 0 -14.984885 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela61 0.608761 0.793352 0 7.48845 -0.793352 0.608761 0 -12.742797 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela62
-   p3d_set_obst_pos_by_mat Chaise_Novela62 0.422618 0.906307 0 1.400213 -0.906307 0.422618 0 -14.148221 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela62 0.608761 0.793352 0 6.929257 -0.793352 0.608761 0 -12.00979 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela63
-   p3d_set_obst_pos_by_mat Chaise_Novela63 0.422618 0.906307 0 1.012927 -0.906307 0.422618 0 -13.311557 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela63 0.608761 0.793352 0 6.370064 -0.793352 0.608761 0 -11.276782 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela64
-   p3d_set_obst_pos_by_mat Chaise_Novela64 0.422618 0.906307 0 0.625642 -0.906307 0.422618 0 -12.474894 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela64 0.608761 0.793352 0 5.810873 -0.793352 0.608761 0 -10.543775 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela65
-   p3d_set_obst_pos_by_mat Chaise_Novela65 0.422618 0.906307 0 0.238357 -0.906307 0.422618 0 -11.63823 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela65 0.608761 0.793352 0 5.25168 -0.793352 0.608761 0 -9.810767 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela66
-   p3d_set_obst_pos_by_mat Chaise_Novela66 0.422618 0.906307 0 -0.148928 -0.906307 0.422618 0 -10.801566 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela66 0.608761 0.793352 0 4.692488 -0.793352 0.608761 0 -9.077759 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela67
-   p3d_set_obst_pos_by_mat Chaise_Novela67 0.422618 0.906307 0 -0.536214 -0.906307 0.422618 0 -9.964902 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela67 0.608761 0.793352 0 4.133295 -0.793352 0.608761 0 -8.344751 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela68
-   p3d_set_obst_pos_by_mat Chaise_Novela68 0.422618 0.906307 0 -0.923499 -0.906307 0.422618 0 -9.128238 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela68 0.608761 0.793352 0 3.574103 -0.793352 0.608761 0 -7.611744 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela69
-   p3d_set_obst_pos_by_mat Chaise_Novela69 0.422618 0.906307 0 1.311479 -0.906307 0.422618 0 -15.204529 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela69 0.608761 0.793352 0 7.071254 -0.793352 0.608761 0 -13.060264 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela70
-   p3d_set_obst_pos_by_mat Chaise_Novela70 0.422618 0.906307 0 0.924193 -0.906307 0.422618 0 -14.367864 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela70 0.608761 0.793352 0 6.51206 -0.793352 0.608761 0 -12.327256 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela71
-   p3d_set_obst_pos_by_mat Chaise_Novela71 0.422618 0.906307 0 0.536907 -0.906307 0.422618 0 -13.531201 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela71 0.608761 0.793352 0 5.952868 -0.793352 0.608761 0 -11.594249 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela72
-   p3d_set_obst_pos_by_mat Chaise_Novela72 0.422618 0.906307 0 0.149622 -0.906307 0.422618 0 -12.694537 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela72 0.608761 0.793352 0 5.393676 -0.793352 0.608761 0 -10.861241 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela73
-   p3d_set_obst_pos_by_mat Chaise_Novela73 0.422618 0.906307 0 -0.237663 -0.906307 0.422618 0 -11.857873 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela73 0.608761 0.793352 0 4.834484 -0.793352 0.608761 0 -10.128233 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela74
-   p3d_set_obst_pos_by_mat Chaise_Novela74 0.422618 0.906307 0 -0.624948 -0.906307 0.422618 0 -11.021209 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela74 0.608761 0.793352 0 4.275291 -0.793352 0.608761 0 -9.395225 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela75
-   p3d_set_obst_pos_by_mat Chaise_Novela75 0.422618 0.906307 0 -1.012234 -0.906307 0.422618 0 -10.184546 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela75 0.608761 0.793352 0 3.716099 -0.793352 0.608761 0 -8.662219 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela76
-   p3d_set_obst_pos_by_mat Chaise_Novela76 0.422618 0.906307 0 -1.399519 -0.906307 0.422618 0 -9.347881 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela76 0.608761 0.793352 0 3.156906 -0.793352 0.608761 0 -7.92921 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela77
-   p3d_set_obst_pos_by_mat Chaise_Novela77 0.422618 0.906307 0 0.835458 -0.906307 0.422618 0 -15.424171 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela77 0.608761 0.793352 0 6.654055 -0.793352 0.608761 0 -13.37773 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela78
-   p3d_set_obst_pos_by_mat Chaise_Novela78 0.422618 0.906307 0 0.448173 -0.906307 0.422618 0 -14.587507 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela78 0.608761 0.793352 0 6.094863 -0.793352 0.608761 0 -12.644722 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela79
-   p3d_set_obst_pos_by_mat Chaise_Novela79 0.422618 0.906307 0 0.060888 -0.906307 0.422618 0 -13.750843 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela79 0.608761 0.793352 0 5.535671 -0.793352 0.608761 0 -11.911714 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela80
-   p3d_set_obst_pos_by_mat Chaise_Novela80 0.422618 0.906307 0 -0.326397 -0.906307 0.422618 0 -12.91418 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela80 0.608761 0.793352 0 4.97648 -0.793352 0.608761 0 -11.178707 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela81
-   p3d_set_obst_pos_by_mat Chaise_Novela81 0.422618 0.906307 0 -0.713682 -0.906307 0.422618 0 -12.077515 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela81 0.608761 0.793352 0 4.417287 -0.793352 0.608761 0 -10.445698 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela82
-   p3d_set_obst_pos_by_mat Chaise_Novela82 0.422618 0.906307 0 -1.100968 -0.906307 0.422618 0 -11.240853 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela82 0.608761 0.793352 0 3.858095 -0.793352 0.608761 0 -9.712692 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela83
-   p3d_set_obst_pos_by_mat Chaise_Novela83 0.422618 0.906307 0 -1.488254 -0.906307 0.422618 0 -10.404189 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela83 0.608761 0.793352 0 3.298902 -0.793352 0.608761 0 -8.979685 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela84
-   p3d_set_obst_pos_by_mat Chaise_Novela84 0.422618 0.906307 0 -1.875539 -0.906307 0.422618 0 -9.567524 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela84 0.608761 0.793352 0 2.739709 -0.793352 0.608761 0 -8.246676 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela85
-   p3d_set_obst_pos_by_mat Chaise_Novela85 0.422618 0.906307 0 0.359439 -0.906307 0.422618 0 -15.643814 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela85 0.608761 0.793352 0 6.236859 -0.793352 0.608761 0 -13.695196 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela86
-   p3d_set_obst_pos_by_mat Chaise_Novela86 0.422618 0.906307 0 -0.027846 -0.906307 0.422618 0 -14.80715 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela86 0.608761 0.793352 0 5.677667 -0.793352 0.608761 0 -12.962188 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela87
-   p3d_set_obst_pos_by_mat Chaise_Novela87 0.422618 0.906307 0 -0.415131 -0.906307 0.422618 0 -13.970486 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela87 0.608761 0.793352 0 5.118475 -0.793352 0.608761 0 -12.22918 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela88
-   p3d_set_obst_pos_by_mat Chaise_Novela88 0.422618 0.906307 0 -0.802417 -0.906307 0.422618 0 -13.133822 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela88 0.608761 0.793352 0 4.559282 -0.793352 0.608761 0 -11.496172 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela89
-   p3d_set_obst_pos_by_mat Chaise_Novela89 0.422618 0.906307 0 -1.189702 -0.906307 0.422618 0 -12.297159 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela89 0.608761 0.793352 0 4.000091 -0.793352 0.608761 0 -10.763165 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela90
-   p3d_set_obst_pos_by_mat Chaise_Novela90 0.422618 0.906307 0 -1.576988 -0.906307 0.422618 0 -11.460495 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela90 0.608761 0.793352 0 3.440898 -0.793352 0.608761 0 -10.030158 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela91
-   p3d_set_obst_pos_by_mat Chaise_Novela91 0.422618 0.906307 0 -1.964273 -0.906307 0.422618 0 -10.623831 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela91 0.608761 0.793352 0 2.881705 -0.793352 0.608761 0 -9.29715 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela92
-   p3d_set_obst_pos_by_mat Chaise_Novela92 0.422618 0.906307 0 -2.351559 -0.906307 0.422618 0 -9.787167 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela92 0.608761 0.793352 0 2.322512 -0.793352 0.608761 0 -8.564142 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela93
-   p3d_set_obst_pos_by_mat Chaise_Novela93 0.422618 0.906307 0 -0.116581 -0.906307 0.422618 0 -15.863456 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela93 0.608761 0.793352 0 5.819662 -0.793352 0.608761 0 -14.012661 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela94
-   p3d_set_obst_pos_by_mat Chaise_Novela94 0.422618 0.906307 0 -0.503867 -0.906307 0.422618 0 -15.026793 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela94 0.608761 0.793352 0 5.260469 -0.793352 0.608761 0 -13.279654 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela95
-   p3d_set_obst_pos_by_mat Chaise_Novela95 0.422618 0.906307 0 -0.891151 -0.906307 0.422618 0 -14.19013 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela95 0.608761 0.793352 0 4.701279 -0.793352 0.608761 0 -12.546647 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela96
-   p3d_set_obst_pos_by_mat Chaise_Novela96 0.422618 0.906307 0 -1.278437 -0.906307 0.422618 0 -13.353465 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela96 0.608761 0.793352 0 4.142085 -0.793352 0.608761 0 -11.813638 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela97
-   p3d_set_obst_pos_by_mat Chaise_Novela97 0.422618 0.906307 0 -1.665723 -0.906307 0.422618 0 -12.516802 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela97 0.608761 0.793352 0 3.582893 -0.793352 0.608761 0 -11.080632 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela98
-   p3d_set_obst_pos_by_mat Chaise_Novela98 0.422618 0.906307 0 -2.053008 -0.906307 0.422618 0 -11.680138 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela98 0.608761 0.793352 0 3.023701 -0.793352 0.608761 0 -10.347624 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela99
-   p3d_set_obst_pos_by_mat Chaise_Novela99 0.422618 0.906307 0 -2.440295 -0.906307 0.422618 0 -10.843474 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela99 0.608761 0.793352 0 2.464507 -0.793352 0.608761 0 -9.614616 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela100
-   p3d_set_obst_pos_by_mat Chaise_Novela100 0.422618 0.906307 0 -2.82758 -0.906307 0.422618 0 -10.00681 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela100 0.608761 0.793352 0 1.905315 -0.793352 0.608761 0 -8.881608 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela101
-   p3d_set_obst_pos_by_mat Chaise_Novela101 0.422618 0.906307 0 -0.592601 -0.906307 0.422618 0 -16.0831 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela101 0.608761 0.793352 0 5.402465 -0.793352 0.608761 0 -14.330128 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela102
-   p3d_set_obst_pos_by_mat Chaise_Novela102 0.422618 0.906307 0 -0.979886 -0.906307 0.422618 0 -15.246436 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela102 0.608761 0.793352 0 4.843273 -0.793352 0.608761 0 -13.59712 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela103
-   p3d_set_obst_pos_by_mat Chaise_Novela103 0.422618 0.906307 0 -1.367171 -0.906307 0.422618 0 -14.409772 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela103 0.608761 0.793352 0 4.284081 -0.793352 0.608761 0 -12.864112 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela104
-   p3d_set_obst_pos_by_mat Chaise_Novela104 0.422618 0.906307 0 -1.754456 -0.906307 0.422618 0 -13.573109 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela104 0.608761 0.793352 0 3.72489 -0.793352 0.608761 0 -12.131105 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela105
-   p3d_set_obst_pos_by_mat Chaise_Novela105 0.422618 0.906307 0 -2.141743 -0.906307 0.422618 0 -12.736444 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela105 0.608761 0.793352 0 3.165695 -0.793352 0.608761 0 -11.398097 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela106
-   p3d_set_obst_pos_by_mat Chaise_Novela106 0.422618 0.906307 0 -2.529028 -0.906307 0.422618 0 -11.899781 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela106 0.608761 0.793352 0 2.606504 -0.793352 0.608761 0 -10.66509 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela107
-   p3d_set_obst_pos_by_mat Chaise_Novela107 0.422618 0.906307 0 -2.916314 -0.906307 0.422618 0 -11.063117 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela107 0.608761 0.793352 0 2.047311 -0.793352 0.608761 0 -9.932082 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela108
-   p3d_set_obst_pos_by_mat Chaise_Novela108 0.422618 0.906307 0 -3.3036 -0.906307 0.422618 0 -10.226454 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela108 0.608761 0.793352 0 1.488118 -0.793352 0.608761 0 -9.199076 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela109
-   p3d_set_obst_pos_by_mat Chaise_Novela109 0.422618 0.906307 0 -1.06862 -0.906307 0.422618 0 -16.302742 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela109 0.608761 0.793352 0 4.985269 -0.793352 0.608761 0 -14.647593 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela110
-   p3d_set_obst_pos_by_mat Chaise_Novela110 0.422618 0.906307 0 -1.455906 -0.906307 0.422618 0 -15.466079 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela110 0.608761 0.793352 0 4.426076 -0.793352 0.608761 0 -13.914586 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela111
-   p3d_set_obst_pos_by_mat Chaise_Novela111 0.422618 0.906307 0 -1.843191 -0.906307 0.422618 0 -14.629415 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela111 0.608761 0.793352 0 3.866884 -0.793352 0.608761 0 -13.181578 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela112
-   p3d_set_obst_pos_by_mat Chaise_Novela112 0.422618 0.906307 0 -2.230477 -0.906307 0.422618 0 -13.792751 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela112 0.608761 0.793352 0 3.307691 -0.793352 0.608761 0 -12.448571 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela113
-   p3d_set_obst_pos_by_mat Chaise_Novela113 0.422618 0.906307 0 -2.617762 -0.906307 0.422618 0 -12.956087 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela113 0.608761 0.793352 0 2.748499 -0.793352 0.608761 0 -11.715563 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela114
-   p3d_set_obst_pos_by_mat Chaise_Novela114 0.422618 0.906307 0 -3.005048 -0.906307 0.422618 0 -12.119423 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela114 0.608761 0.793352 0 2.189306 -0.793352 0.608761 0 -10.982555 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela115
-   p3d_set_obst_pos_by_mat Chaise_Novela115 0.422618 0.906307 0 -3.392334 -0.906307 0.422618 0 -11.28276 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela115 0.608761 0.793352 0 1.630114 -0.793352 0.608761 0 -10.249548 0 0 1 -0.285002 0 0 0 1 
 
   p3d_read_macro Chaise_Novela.macro Chaise_Novela116
-   p3d_set_obst_pos_by_mat Chaise_Novela116 0.422618 0.906307 0 -3.779619 -0.906307 0.422618 0 -10.446096 0 0 1 -0.285002 0 0 0 1 
+   p3d_set_obst_pos_by_mat Chaise_Novela116 0.608761 0.793352 0 1.070922 -0.793352 0.608761 0 -9.516541 0 0 1 -0.285002 0 0 0 1 
 
 ################################################
 #   Humain : Xavier
@@ -462,7 +462,7 @@ p3d_desactivate_col_check automatic
 p3d_desactivate_col_check larm.larm1 larm.larm3
 p3d_desactivate_col_check rarm.rarm1 rarm.rarm3
 
-p3d_set_env_box -9 19 -27.308 3 0 9.692
+p3d_set_env_box -6.5 20.5 -27.308 5.5 1.5 9.692
 
 #################################
 ###### COLLISION DEACTIVATION ####
