@@ -79,7 +79,7 @@ p3d_set_pos_axe -0.1 -0.2 0.40  1 0 0
  p3d_beg_desc_jnt P3D_ROTATE # J9
    p3d_set_name rShoulderZ
    p3d_set_prev_jnt 8
- p3d_set_pos_axe -0.1 -0.2 0.40   0 0 1
+ p3d_set_pos_axe -0.1 -0.2 0.40  0 0 1
    p3d_set_dof_vmin -180
    p3d_set_dof_vmax 180
  p3d_end_desc
