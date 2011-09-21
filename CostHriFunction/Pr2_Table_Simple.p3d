@@ -1,17 +1,27 @@
 p3d_beg_desc P3D_ENV Ikea
 
-# ************* Kitchen ***************
+# ************* Static ***************
 
-p3d_read_macro OB_mesh6_002.macro OB_mesh1_007 0.01
-p3d_set_obst_pos OB_mesh1_007 -0.8242905 -0.71299084 0.00029881 0 0 0
+p3d_read_macro Objects/Static/dlrTable.macro Table1 
+p3d_set_obst_pos Table1 0.00 0.00 0.00 90 0 90
+
+#p3d_read_macro Objects/Static/glassTable.macro Table2 0.1
+#p3d_set_obst_pos Table2 0.00 0.00 0.00 0 0 90
+
+#p3d_read_macro Objects/Static/lowTable.macro Table3
+#p3d_set_obst_pos Table3 0.00 0.00 0.00 0 0 0
+
 
 # ************* The Floor *************
 
 p3d_beg_desc P3D_OBSTACLE floor
-  p3d_add_desc_box floor 8 7 0.05
-  p3d_set_prim_pos floor 1.50 -1 -0.07 0 0 0
+  p3d_add_desc_box floor 4 4 0.05
+  p3d_set_prim_pos floor 0 0 -0.07 0 0 0
 p3d_end_desc
 
+p3d_read_macro Objects/Movable/OrangeBottle.macro ORANGE_BOTTLE
+p3d_read_macro Objects/Movable/YellowBottle.macro YELLOW_BOTTLE
+p3d_read_macro Objects/Movable/RedBottle.macro RED_BOTTLE
 
 p3d_read_macro Objects/Movable/Lampe.macro Lampe 0.001
 p3d_read_macro Objects/Movable/Assiette.macro Assiette 0.05
@@ -21,68 +31,18 @@ p3d_read_macro Objects/Movable/Tabouret.macro Tabouret 0.005
 #p3d_read_macro Objects/Movable/Tabouret.macro Tabouret2 0.005
 #p3d_read_macro Objects/Movable/legLamp.macro legLamp 1.5
 
-p3d_read_macro Objects/Movable/sailLamp.macro sailLamp1 0.01
-p3d_read_macro Objects/Movable/sailLamp.macro sailLamp2 0.01
-p3d_read_macro Objects/Movable/sailLamp.macro sailLamp3 0.01
+#p3d_read_macro Objects/Movable/sailLamp.macro sailLamp1 0.01
+#p3d_read_macro Objects/Movable/sailLamp.macro sailLamp2 0.01
+#p3d_read_macro Objects/Movable/sailLamp.macro sailLamp3 0.01
 
 p3d_read_macro AchileMKinect.macro HERAKLES_HUMAN1
 p3d_read_macro pr2.macro PR2_ROBOT
   
 p3d_end_desc
 
-p3d_set_env_box -1 3 -4 1.45 0 3
-#p3d_set_env_box -3 4 -5 2.45 0 3
-#p3d_set_env_box -5 5 -5 5 0 4
-#p3d_set_obst_color floor Any 1 0.87 0.49
+p3d_set_env_box -2 2 -2 2 0 3
 p3d_set_obst_color floor Any 0.80 0.80 0.80
 
-#--------------------------------------------------------------------------------------------------
-#p3d_sel_desc_name P3D_ROBOT Lampe
-#
-#p3d_set_robot_steering_method Linear
-#p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.260000 -1.150000 0.770000 0.000000 0.000000 0.000000
-#p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
-#
-#
-#p3d_sel_desc_name P3D_ROBOT Assiette
-#
-#p3d_set_robot_steering_method Linear
-#p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.020000 -1.470000 0.787611 0.000000 0.000000 0.000000
-#p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
-#
-#
-#p3d_sel_desc_name P3D_ROBOT Pommes
-#p3d_set_robot_steering_method Linear
-#p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.442478 -1.622419 0.762537 0.000000 0.000000 0.000000
-#p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
-#
-#
-#p3d_sel_desc_name P3D_ROBOT Tabouret
-#p3d_set_robot_steering_method Linear
-#p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -0.36 0.22 0.000000 0.000000 0.000000 0.000000
-#p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
-
-# p3d_sel_desc_name P3D_ROBOT legLamp
-# 
-# p3d_set_robot_steering_method Linear
-# 
-# p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.207317 0.219512 0.000000 0.000000 0.000000 0.000000
-# p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
-#
-#p3d_sel_desc_name P3D_ROBOT sailLamp1
-#p3d_set_robot_steering_method Linear
-#p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.060000 -0.690000 2.950000 0.000000 0.000000 0.000000
-#p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
-#
-#p3d_sel_desc_name P3D_ROBOT sailLamp2
-#p3d_set_robot_steering_method Linear
-#p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.060000 -0.390000 2.950000 0.000000 0.000000 0.000000
-#p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
-#
-#p3d_sel_desc_name P3D_ROBOT sailLamp3
-#p3d_set_robot_steering_method Linear
-#p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.060000 -0.090000 2.950000 0.000000 0.000000 -19.300000
-#p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
 #--------------------------------------------------------------------------------------------------
 
 #################################
