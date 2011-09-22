@@ -13,18 +13,6 @@ p3d_beg_desc P3D_ENV novela
 
 # *************** STATIC/UNMOVABLE OBSTACLES *************
 
-
-#p3d_beg_desc P3D_OBSTACLE FLOOR
-#  p3d_add_desc_box floor 13.84286 8.26978 0.05
-#  p3d_set_prim_pos floor 5.12143 -3.06511 -0.07 0 0 0
-#p3d_end_desc
-#p3d_set_obst_color FLOOR Any 1 0.87 0.49
-
-
-
-
-
-
 ################################################
 #   Scène
 ################################################
@@ -457,10 +445,18 @@ p3d_beg_desc P3D_ENV novela
 #   p3d_set_obst_pos_by_mat Chaise_Novela116 0.608761 0.793352 0 1.070922 -0.793352 0.608761 0 -9.516541 0 0 1 -0.285002 0 0 0 1 
 
 ################################################
+#   Autres objets
+################################################
+p3d_read_macro GreyVideoTape.macro GREY_TAPE
+
+
+################################################
 #   Humain : Xavier
 ################################################
-#p3d_read_macro xavier.macro XAVIER
-p3d_read_macro AchileMKinect.macro HERAKLES_HUMAN1
+p3d_read_macro xavier.macro XAVIER_HUMAN
+#p3d_read_macro AchileMKinect.macro HERAKLES_HUMAN1
+
+
 ################################################
 #   Robot : PR2
 ################################################
