@@ -84,9 +84,10 @@ p3d_beg_desc P3D_ENV novela
 #   Objets divers
 ################################################
 
+p3d_read_macro CHAIR_DESIGN.macro   CHAIR_DESIGN
 p3d_read_macro LotrTape.macro       LOTR_TAPE
 p3d_read_macro WalleTape.macro      WALLE_TAPE
-p3d_read_macro GreyK7.macro GREY_K7
+p3d_read_macro GreyK7.macro         GREY_K7
 p3d_read_macro GreyVideoTape.macro  GREY_TAPE
 
 ################################################
