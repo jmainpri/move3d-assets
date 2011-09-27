@@ -94,7 +94,7 @@ p3d_read_macro GreyVideoTape.macro  GREY_TAPE
 #   Meubles
 ################################################
 
-p3d_read_macro ikeaShelf.macro IKEASHELF
+p3d_read_macro ikeaShelf.macro IKEA_SHELF
 
 # p3d_read_macro hrp2table.macro HRP2TABLE
 p3d_read_macro petite_table.macro HRP2TABLE
