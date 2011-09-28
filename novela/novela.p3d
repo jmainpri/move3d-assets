@@ -91,6 +91,10 @@ p3d_read_macro LotrTape.macro       LOTR_TAPE
 p3d_read_macro WalleTape.macro      WALLE_TAPE
 p3d_read_macro GreyK7.macro         GREY_K7
 p3d_read_macro GreyVideoTape.macro  GREY_TAPE
+p3d_read_macro PHONE_RED.macro      PHONE_RED
+p3d_read_macro LAMP.macro           LAMP
+p3d_read_macro FAN.macro            FAN
+p3d_read_macro VAN.macro            VAN
 
 ################################################
 #   Meubles
