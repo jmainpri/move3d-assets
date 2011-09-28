@@ -1,14 +1,17 @@
 p3d_beg_desc P3D_ROBOT
 
-  p3d_beg_desc P3D_BODY robot_CHAIR_DESIGN.freeflying
-  p3d_end_desc
+p3d_beg_desc_jnt P3D_FREEFLYER  #1
+  p3d_set_prev_jnt   0
+  p3d_set_pos_xyz 0.0 0.0 0.0 0.0 0.0 0.0
+  p3d_set_dof      0 0 0  0   0   0
+  p3d_set_dof_vmin -3 -6 0 -180 -180 -180
+  p3d_set_dof_vmax 12 1 2 180 180 180
+p3d_end_desc
 
-  p3d_add_desc_jnt P3D_ROTATE 0.378093 0 0.320639  1.0 0.0 0.0 0.0 -180.0 180.0 0
-  p3d_add_desc_jnt P3D_ROTATE 0.378093 0 0.320639  0.0 1.0 0.0 0.0 -180.0 180.0 1
+ p3d_beg_desc P3D_BODY CHAIR_DESIGN
 
-  p3d_beg_desc P3D_BODY CHAIR_DESIGN-body2_polyhedre1.CHAIR_DESIGN-body2_polyhedre1
 
-    p3d_add_desc_poly body2_polyhedre1
+    p3d_add_desc_poly model
       p3d_add_desc_vert 0.190182119608 -0.0423083305359 0.0935950875282
       p3d_add_desc_vert 0.190182119608 -0.0423083305359 0.0935950875282
       p3d_add_desc_vert 0.190182119608 -0.0423043370247 0.0935950875282
@@ -45062,9 +45065,9 @@ p3d_beg_desc P3D_ROBOT
       p3d_add_desc_face 18376 18377 18378 18379
       p3d_add_desc_face 18380 18381 18382
     p3d_end_desc_poly
-    p3d_set_prim_pos_by_mat body2_polyhedre1 0 0 1 -0.134118 -0.995951 0.089892 0 -0.026588 -0.089892 -0.995951 0 0.319429 0 0 0 1
+   
   p3d_end_desc
-
 p3d_end_desc
 
-p3d_set_body_poly_color CHAIR_DESIGN-body2_polyhedre1.CHAIR_DESIGN-body2_polyhedre1 1 Any 0.7742714 0.3103841 0.0686312
+
+p3d_set_body_poly_color CHAIR_DESIGN 1 Any 0.7742714 0.3103841 0.0686312
