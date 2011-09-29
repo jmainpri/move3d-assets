@@ -84,30 +84,36 @@ p3d_beg_desc P3D_ENV novela
 #   Objets divers
 ################################################
 
-p3d_read_macro CHAIR_DESIGN.macro   CHAIR_DESIGN
-#p3d_read_macro BOAT.macro           BOAT 
-p3d_read_macro BOTTLE.macro         BOTTLE
-p3d_read_macro LotrTape.macro       LOTR_TAPE
-p3d_read_macro WalleTape.macro      WALLE_TAPE
-p3d_read_macro GreyK7.macro         GREY_K7
-p3d_read_macro GreyVideoTape.macro  GREY_TAPE
-p3d_read_macro PHONE_RED.macro      PHONE_RED
-p3d_read_macro LAMP.macro           LAMP
+p3d_read_macro ARMCHAIR.macro       ARMCHAIR
+p3d_read_macro ROBY.macro           ROBY
+p3d_read_macro WASH_MACHINE.macro   WASH_MACHINE
+p3d_read_macro PHONE_PUBLIC.macro   PHONE_PUBLIC 
 p3d_read_macro FAN.macro            FAN
+p3d_read_macro ELEPHANT.macro       ELEPHANT
+p3d_read_macro DOLPHIN.macro        DOLPHIN
+p3d_read_macro DOG.macro            DOG 
+p3d_read_macro DOG_HOUSE.macro      DOG_HOUSE
+p3d_read_macro DESK_WOOD.macro      DESK_WOOD
 p3d_read_macro VAN.macro            VAN
+p3d_read_macro LAMP.macro           LAMP
+p3d_read_macro SHELTER.macro        SHELTER
+p3d_read_macro HANGER.macro         HANGER
+p3d_read_macro PHONE_NEW.macro      PHONE_NEW
+p3d_read_macro PHONE_RED.macro      PHONE_RED
+p3d_read_macro BOAT.macro           BOAT 
+p3d_read_macro BOTTLE.macro         BOTTLE
+
+p3d_read_macro GreyVideoTape.macro  GREY_TAPE
 
 ################################################
 #   Meubles
 ################################################
 
-p3d_read_macro ikeaShelf.macro IKEA_SHELF
-
-# p3d_read_macro hrp2table.macro HRP2TABLE
 p3d_read_macro petite_table.macro HRP2TABLE
 p3d_set_obst_pos_by_mat HRP2TABLE 0.608761 0.793352 0 4.530817 -0.793352 0.608761 0 -3.230378 0 0 1 -0.003079 0 0 0 1 
   
-p3d_read_macro Chaise_Novela.macro CHAISE_XAVIER
-p3d_set_obst_pos_by_mat CHAISE_XAVIER 0.785597 -0.614602 0 4.818916 0.614602 0.785597 0 -2.953664 0 0 1 -0.003079 0 0 0 1 
+p3d_read_macro Chaise_Novela.macro CHAISE_NOVELA
+p3d_set_obst_pos_by_mat CHAISE_NOVELA 0.785597 -0.614602 0 4.818916 0.614602 0.785597 0 -2.953664 0 0 1 -0.003079 0 0 0 1 
 
 
 
