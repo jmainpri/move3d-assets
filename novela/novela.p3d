@@ -110,17 +110,7 @@ p3d_read_macro GreyVideoTape.macro  GREY_TAPE
 ################################################
 
 p3d_read_macro hrp2table.macro HRP2TABLE
-p3d_sel_desc_name P3D_ROBOT HRP2TABLE
-p3d_set_robot_steering_method Linear
-p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 4.74323605103 -3.27826203182 0.008000 0.973932051429 0.0028404144457 -0.0187450696318 
-p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
-
-  
 p3d_read_macro simplechair.macro CHAISE_NOVELA
-p3d_sel_desc_name P3D_ROBOT CHAISE_NOVELA
-p3d_set_robot_steering_method Linear
-p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 5.200000 -3.327000 0.000000 0.000000 0.000000 -180.000000
-p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
 
 
 
