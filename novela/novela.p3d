@@ -84,8 +84,8 @@ p3d_beg_desc P3D_ENV novela
 #   Objets divers
 ################################################
 
-p3d_read_macro ARMCHAIR.macro       ARMCHAIR
-p3d_read_macro ROBY.macro           ROBY
+#p3d_read_macro ARMCHAIR.macro       ARMCHAIR
+#p3d_read_macro ROBY.macro           ROBY
 p3d_read_macro WASH_MACHINE.macro   WASH_MACHINE
 p3d_read_macro PHONE_PUBLIC.macro   PHONE_PUBLIC 
 p3d_read_macro FAN.macro            FAN
@@ -96,8 +96,8 @@ p3d_read_macro DOG_HOUSE.macro      DOG_HOUSE
 p3d_read_macro DESK_WOOD.macro      DESK_WOOD
 p3d_read_macro VAN.macro            VAN
 p3d_read_macro LAMP.macro           LAMP
-p3d_read_macro SHELTER.macro        SHELTER
-p3d_read_macro HANGER.macro         HANGER
+#p3d_read_macro SHELTER.macro        SHELTER
+#p3d_read_macro HANGER.macro         HANGER
 p3d_read_macro PHONE_NEW.macro      PHONE_NEW
 p3d_read_macro PHONE_RED.macro      PHONE_RED
 p3d_read_macro BOAT.macro           BOAT 

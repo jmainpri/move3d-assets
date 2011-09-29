@@ -1,17 +1,14 @@
 p3d_beg_desc P3D_ROBOT
 
-p3d_beg_desc_jnt P3D_FREEFLYER  #1
-  p3d_set_prev_jnt   0
-  p3d_set_pos_xyz 0.0 0.0 0.0 0.0 0.0 0.0
-  p3d_set_dof      0 0 0  0   0   0
-  p3d_set_dof_vmin -3 -6 0 -180 -180 -180
-  p3d_set_dof_vmax 12 1 2 180 180 180
-p3d_end_desc
+  p3d_beg_desc P3D_BODY robot_BOTTLE.freeflying
+  p3d_end_desc
 
- p3d_beg_desc P3D_BODY Bottle
+  p3d_add_desc_jnt P3D_ROTATE 0.013041 0 -0.004397  1.0 0.0 0.0 0.0 -180.0 180.0 0
+  p3d_add_desc_jnt P3D_ROTATE 0.013041 0 -0.004397  0.0 1.0 0.0 0.0 -180.0 180.0 1
 
+  p3d_beg_desc P3D_BODY BOTTLE-body2_polyhedre1.BOTTLE-body2_polyhedre1
 
-    p3d_add_desc_poly model
+    p3d_add_desc_poly body2_polyhedre1
       p3d_add_desc_vert 0.0198811292648 0.20679807663 -0.0112810134888
       p3d_add_desc_vert 0.0190631151199 0.206456065178 -0.011372089386
       p3d_add_desc_vert 0.0178381204605 0.206456065178 -0.00641703605652
@@ -4089,11 +4086,10 @@ p3d_end_desc
       p3d_add_desc_face 892 904 890
       p3d_add_desc_face 892 890 889
       p3d_add_desc_face 892 889 891
-p3d_end_desc_poly
-   
+    p3d_end_desc_poly
+    p3d_set_prim_pos_by_mat body2_polyhedre1 0 0 1 0.013546 1 0 0 0.000369 0 1 0 0.055143 0 0 0 1
   p3d_end_desc
+
 p3d_end_desc
 
-p3d_set_body_color Bottle Blue
-
-#p3d_set_body_poly_color Bottle 1 Any 0.2 1 0
+p3d_set_body_poly_color BOTTLE-body2_polyhedre1.BOTTLE-body2_polyhedre1 1 Any 0.0570025 0.3107592 1.0
