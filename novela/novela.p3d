@@ -92,7 +92,7 @@ p3d_read_macro FAN.macro            FAN
 p3d_read_macro ELEPHANT.macro      ELEPHANT 1.2
 #p3d_read_macro DOLPHIN.macro        DOLPHIN
 p3d_read_macro DOG.macro            DOG 
-p3d_read_macro DOG_HOUSE.macro      DOG_HOUSE
+#p3d_read_macro DOG_HOUSE.macro      DOG_HOUSE
 p3d_read_macro DESK_WOOD.macro      DESK_WOOD
 p3d_read_macro VAN.macro            VAN
 p3d_read_macro LAMP.macro           LAMP
@@ -117,6 +117,10 @@ p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.00000
 
   
 p3d_read_macro simplechair.macro CHAISE_NOVELA
+p3d_sel_desc_name P3D_ROBOT CHAISE_NOVELA
+p3d_set_robot_steering_method Linear
+p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 5.200000 -3.327000 0.000000 0.000000 0.000000 -180.000000
+p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
 
 
 
