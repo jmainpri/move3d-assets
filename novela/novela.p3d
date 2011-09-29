@@ -91,9 +91,9 @@ p3d_read_macro WASH_MACHINE.macro   WASH_MACHINE
 p3d_read_macro FAN.macro            FAN
 p3d_read_macro ELEPHANT.macro      ELEPHANT 0.4
 #p3d_read_macro DOLPHIN.macro        DOLPHIN
-p3d_read_macro DOG.macro            DOG 
-p3d_read_macro DOG_HOUSE.macro      DOG_HOUSE
-p3d_read_macro DESK_WOOD.macro      DESK_WOOD
+#p3d_read_macro DOG.macro            DOG 
+#p3d_read_macro DOG_HOUSE.macro      DOG_HOUSE
+#p3d_read_macro DESK_WOOD.macro      DESK_WOOD
 #p3d_read_macro VAN.macro            VAN
 p3d_read_macro LAMP.macro           LAMP
 #p3d_read_macro SHELTER.macro        SHELTER
@@ -109,12 +109,14 @@ p3d_read_macro GreyVideoTape.macro  GREY_TAPE
 #   Meubles
 ################################################
 
-#p3d_read_macro petite_table.macro HRP2TABLE
 p3d_read_macro hrp2table.macro HRP2TABLE
-p3d_set_obst_pos_by_mat HRP2TABLE 0.608761 0.793352 0 4.530817 -0.793352 0.608761 0 -3.230378 0 0 1 -0.003079 0 0 0 1 
+p3d_sel_desc_name P3D_ROBOT HRP2TABLE
+p3d_set_robot_steering_method Linear
+p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 4.74323605103 -3.27826203182 0.000000 0.973932051429 0.0028404144457 -0.0187450696318 
+p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+
   
-p3d_read_macro Chaise_Novela.macro CHAISE_NOVELA
-p3d_set_obst_pos_by_mat CHAISE_NOVELA 0.785597 -0.614602 0 4.818916 0.614602 0.785597 0 -2.953664 0 0 1 -0.003079 0 0 0 1 
+p3d_read_macro simplechair.macro CHAISE_NOVELA
 
 
 

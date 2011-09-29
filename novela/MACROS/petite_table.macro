@@ -1,5 +1,14 @@
-  p3d_beg_desc P3D_OBSTACLE
+p3d_beg_desc P3D_ROBOT
 
+p3d_beg_desc_jnt P3D_FREEFLYER  #1
+  p3d_set_prev_jnt   0
+  p3d_set_pos_xyz 0.0 0.0 0.0 0.0 0.0 0.0
+  p3d_set_dof      0 0 0  0   0   0
+  p3d_set_dof_vmin -3 -6  0 -180 -180 -180
+  p3d_set_dof_vmax 12 1 2 180 180 180
+p3d_end_desc
+
+p3d_beg_desc P3D_BODY petite_table
 
     p3d_add_desc_poly polyhedre1
       p3d_add_desc_vert 1.61113083363 1.00491893291 -2.80848407745
@@ -246,5 +255,6 @@
     p3d_end_desc_poly
     p3d_set_prim_pos_by_mat polyhedre1 0 0 1 2.301136 1 0 0 -1.93239 0 1 0 -0.30492 0 0 0 1
   p3d_end_desc
+p3d_end_desc
 
 p3d_set_obst_poly_color 1 Any 0.627451 0.3215686 0.1764706
