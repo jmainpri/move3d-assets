@@ -92,7 +92,7 @@ p3d_read_macro DOG.macro            DOG
 p3d_read_macro DESK_WOOD.macro      DESK_WOOD
 p3d_read_macro VAN.macro            VAN
 p3d_read_macro LAMP.macro           LAMP
-p3d_read_macro SHELTER.macro        SHELTER 0.6
+p3d_read_macro SHELTER.macro        SHELTER 
 p3d_read_macro HANGER.macro         HANGER
 p3d_read_macro PHONE_NEW.macro      PHONE_NEW
 p3d_read_macro PHONE_RED.macro      PHONE_RED
