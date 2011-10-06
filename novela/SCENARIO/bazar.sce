@@ -8,7 +8,7 @@ p3d_sel_desc_name P3D_ENV novela
 
 
 
-p3d_sel_desc_name P3D_ROBOT ARMCHAIR
+p3d_sel_desc_name P3D_ROBOT SOFA
 
 p3d_set_robot_steering_method Linear
 
