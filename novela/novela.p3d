@@ -87,7 +87,8 @@ p3d_beg_desc P3D_ENV novela
 p3d_read_macro ARMCHAIR.macro       SOFA
 p3d_read_macro WASH_MACHINE.macro   WASH_MACHINE
 p3d_read_macro FAN.macro            FAN
-p3d_read_macro ELEPHANT.macro       ELEPHANT 1.2
+p3d_read_macro ELEPHANT.macro       ELEPHANT 
+p3d_read_macro MAMOUTH.macro        MAMOUTH 1.2
 p3d_read_macro DOG.macro            DOG 
 p3d_read_macro DESK_WOOD.macro      DESK_WOOD
 p3d_read_macro VAN.macro            VAN
