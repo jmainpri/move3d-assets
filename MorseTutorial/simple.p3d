@@ -4,7 +4,7 @@ p3d_read_macro batmansmall.macro human1
 
 p3d_read_macro Objects/Movable/visballsmall.macro visball
 
-p3d_read_macro jidoKukaGripper.macro robot
+p3d_read_macro jidoKukaGripper.macro jido_robot
 
 #MOVABLE TABLE - CHAIRS - SHELF - TRASH
 p3d_read_macro Objects/Movable/tablechairs.macro CHAIR1
