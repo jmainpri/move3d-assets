@@ -28,7 +28,7 @@ p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.00000
 
 
 
-p3d_sel_desc_name P3D_ROBOT robot
+p3d_sel_desc_name P3D_ROBOT jido_robot
 
 p3d_set_robot_steering_method Linear
 
