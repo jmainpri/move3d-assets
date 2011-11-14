@@ -39,7 +39,8 @@ p3d_read_macro squareTable.macro SQUARE_TABLE
 #p3d_read_macro shelf.macro SHELF
 p3d_read_macro hrp2table.macro HRP2TABLE
 p3d_read_macro simplechair.macro SIMPLECHAIR
-#p3d_read_macro smallRollingBoard.macro SMALLBOARD
+p3d_read_macro smallRollingBoard.macro M_WALL_1
+p3d_read_macro smallRollingBoard.macro M_WALL_2
 #p3d_read_macro largeRollingBoard.macro LARGEBOARD
 #p3d_read_macro ./Objects/Movable/HRP2BarTable.macro HRP2BARTable
 #p3d_read_macro ./Objects/Movable/ikeaShelf.macro IKEA_SHELF
