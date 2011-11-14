@@ -19,7 +19,7 @@ p3d_set_prim_pos leg2 0 0.295 0.1 0 0 0
 p3d_add_desc_box board 0.02 1.0 1.9 
 p3d_set_prim_pos board 0 0 1.075 0 0 0
 
-p3d_add_desc_box board 0.06 1.1 1.9 P3D_GHOST
+p3d_add_desc_box board 0.06 1.05 1.9 P3D_GHOST
 p3d_set_prim_pos board 0 0 1.075 0 0 0
 
 
