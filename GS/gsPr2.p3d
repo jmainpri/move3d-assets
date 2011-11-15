@@ -168,6 +168,7 @@ p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.00000
 
 
 p3d_sel_desc_name P3D_ROBOT PR2_ROBOT
+p3d_set_jnt_dofs_min_max 1 -1 10 -6 0 0 0.01 0 0.01 0 0.01 -180 180
 
 p3d_set_robot_steering_method Multi-Localpath
 p3d_set_robot_radius 1.000000
