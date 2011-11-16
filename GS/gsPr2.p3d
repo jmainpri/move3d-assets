@@ -61,7 +61,7 @@ p3d_read_macro ./Objects/Movable/placeMat_blue.macro PLACEMAT_BLUE
 
 # ***** MANIPULABLE OBJECTS
 
-#p3d_read_macro toolbox.macro ACCESSKIT
+p3d_read_macro toolbox.macro ACCESSKIT
 #p3d_read_macro Cup_with_handle.macro CUPHANDLE
 #p3d_read_macro SpaceNav_Box.macro SPACENAVBOX
 #p3d_read_macro BigPinkBox.macro PINK_TRASHBIN
