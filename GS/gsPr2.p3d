@@ -68,7 +68,7 @@ p3d_read_macro toolbox.macro ACCESSKIT
 #p3d_read_macro ./Objects/Movable/PaperDog.macro PAPERDOG
 #p3d_read_macro BlueBottle.macro BLUE_BOTTLE
 p3d_read_macro OrangeBottle.macro ORANGE_BOTTLE
-#p3d_read_macro YellowBottle.macro YELLOW_BOTTLE
+p3d_read_macro YellowBottle.macro YELLOW_BOTTLE
 #p3d_read_macro RedBottle.macro RED_BOTTLE
 #p3d_read_macro CoffeeJar.macro COFFEEJAR
 p3d_read_macro ./Objects/Movable/PR2Cylinder.macro PR_2CYLINDER
