@@ -18,8 +18,8 @@ p3d_read_macro GreyVideoTape.macro  GREY_TAPE
 
 # ************* HUMANS ***************
 
-p3d_read_macro AchileM.macro ACHILE_HUMAN1
-#p3d_read_macro AchileMKinect.macro HERAKLES_HUMAN1
+#p3d_read_macro AchileM.macro ACHILE_HUMAN1
+p3d_read_macro AchileMKinect.macro HERAKLES_HUMAN1
 
 p3d_read_macro pr2.macro PR2_ROBOT
 # ************* MOVABLE OBJECTS **************
