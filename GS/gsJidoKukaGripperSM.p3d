@@ -47,7 +47,7 @@ p3d_read_macro ./Objects/Movable/placeMat_purple.macro PLACEMAT_PURPLE
 p3d_read_macro toolbox.macro ACCESSKIT
 #p3d_read_macro Cup_with_handle.macro CUPHANDLE
 p3d_read_macro SpaceNav_Box.macro SPACENAVBOX
-#p3d_read_macro BigPinkBox.macro PINK_TRASHBIN
+p3d_read_macro BigPinkBox.macro PINK_TRASHBIN
 p3d_read_macro ./Objects/Movable/PaperDog.macro PAPERDOG
 #p3d_read_macro BlueBottle.macro BLUE_BOTTLE
 #p3d_read_macro OrangeBottle.macro ORANGE_BOTTLE
@@ -106,7 +106,7 @@ p3d_read_macro visballsmall.macro DAGGER
 
 # NOTE: Jido must be declared at the end 
 
-p3d_read_macro jidoKukaGripper.macro JIDOKUKA_ROBOT
+p3d_read_macro jidoKukaGripperHighVel.macro JIDOKUKA_ROBOT
 
 p3d_end_desc
 
@@ -261,4 +261,6 @@ p3d_set_robot_steering_method Multi-Localpath
 #p3d_set_arm_data cntrtId handType virtualObjectJntId
 p3d_set_arm_data 1 0 19
 p3d_set_config_cost_threshold 0.40
+
+p3d_set_active_robot JIDOKUKA_ROBOT
 
