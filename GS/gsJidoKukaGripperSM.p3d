@@ -100,6 +100,8 @@ p3d_set_obst_pos TABLEREUNION -1 -2 .0 .0 .0 0
 
 p3d_read_macro GsWalls.macro Walls
 
+p3d_read_macro visballsmall.macro DAGGER
+
 # ************* ROBOTS ***************
 
 # NOTE: Jido must be declared at the end 
