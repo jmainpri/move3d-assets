@@ -30,7 +30,7 @@ p3d_read_macro tablebot.macro LOWTABLE
 p3d_read_macro fautbot.macro CHAIR1
 p3d_read_macro fautbot.macro CHAIR2
 p3d_read_macro trash.macro TRASHBIN
-#p3d_read_macro shelf.macro SHELF
+p3d_read_macro shelf.macro SHELF
 p3d_read_macro hrp2table.macro HRP2TABLE
 p3d_read_macro simplechair.macro SIMPLECHAIR
 #p3d_read_macro ./Objects/Movable/HRP2BarTable.macro HRP2BARTable
