@@ -1,0 +1,91 @@
+p3d_beg_desc P3D_ENV garching
+
+# p3d_read_macro Jido.macro robot
+p3d_read_macro B21cloneRR.macro robot
+# p3d_read_macro B21cloneRR.macro other
+
+p3d_read_macro batmansmall.macro human1
+# p3d_read_macro batmansmall.macro human2
+# p3d_read_macro batmansmall.macro human3
+# p3d_read_macro batmansmall.macro human4
+# p3d_read_macro batmansmall.macro human5
+
+# required as else segfault happens
+p3d_read_macro visballsmall.macro visball
+p3d_read_macro rhand.macro lhand
+p3d_read_macro rhand.macro rhand
+p3d_read_macro head.macro head
+p3d_read_macro disc.macro track
+
+############### MOVABLE TABLE - CHAIRS - SHELF - TRASH  ##############
+#p3d_read_macro tablebot.macro COFFEETABLE
+#p3d_read_macro fautbot.macro BlueCouch1
+#p3d_read_macro fautbot.macro BlueCouch2
+#p3d_read_macro trash.macro TRASHBIN
+#p3d_read_macro shelf.macro CUPBOARDTABLE
+#p3d_read_macro tablechairs.macro expchair1
+#p3d_read_macro tablechairs.macro expchair2
+
+
+############### helper box 1 x 1 x 1 #################################
+# p3d_beg_desc P3D_OBSTACLE help.box
+#   p3d_add_desc_box obs 1.0 1.0 1.0
+# p3d_end_desc
+# p3d_set_obst_poly_color help.box 1 Brown
+# p3d_set_obst_pos help.box 3.0 2.0 0.5 0 0 0
+
+
+
+#fridge
+p3d_beg_desc P3D_OBSTACLE fridge
+p3d_add_desc_box obs 0.6 0.6 2.0
+p3d_end_desc
+p3d_set_obst_poly_color fridge 1 Grey
+p3d_set_obst_pos fridge 0.30 1.10 1.0 0 0 0
+
+# stove + sink
+p3d_beg_desc P3D_OBSTACLE worktop
+p3d_add_desc_box obs 0.6 2.2 0.80
+p3d_end_desc
+p3d_set_obst_poly_color worktop 1 Grey
+p3d_set_obst_pos worktop 0.30 2.50 0.4 0 0 0
+
+#edge
+p3d_beg_desc P3D_OBSTACLE edge
+# length, height, width
+p3d_add_desc_box obs 1.3 0.23 3.0
+p3d_end_desc
+p3d_set_obst_poly_color edge 1 DGrey
+p3d_set_obst_pos edge 0.65 4.46 1.5 0 0 0
+
+#side sink etc.
+p3d_beg_desc P3D_OBSTACLE sink
+p3d_add_desc_box obs 0.6 0.5 0.2
+p3d_end_desc
+p3d_set_obst_poly_color sink 1 Grey
+p3d_set_obst_pos sink 0.5 4.10 0.7 0 0 0
+
+p3d_beg_desc P3D_OBSTACLE cupboard
+# length, height, width
+p3d_add_desc_box obs 2.8 0.45 2.0
+p3d_end_desc
+p3d_set_obst_poly_color cupboard 1 Grey
+p3d_set_obst_pos cupboard 2.7 4.34 1 0 0 0
+
+
+
+
+
+#Table
+# p3d_beg_desc P3D_OBSTACLE tabletop
+# p3d_add_desc_box obs 1.15 0.8 0.7
+# p3d_end_desc
+# p3d_set_obst_poly_color tabletop 1 Brown
+# p3d_set_obst_pos tabletop 3.2 0.7 0.35 0 0 0
+
+
+
+p3d_end_desc
+
+# minx, maxx, miny, maxy, minz, maxz
+p3d_set_env_box 0 7.4 0 4.57 0 3
