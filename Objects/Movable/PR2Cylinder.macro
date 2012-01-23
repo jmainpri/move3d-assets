@@ -4,13 +4,13 @@ p3d_beg_desc_jnt P3D_FREEFLYER  #1
   p3d_set_prev_jnt   0
   p3d_set_pos_xyz 0.0 0.0 0.0 0.0 0.0 0.0
   p3d_set_dof      0 0 0  0   0   0
-  p3d_set_dof_vmin -3 -6 1.0 -180 -180 -180
-  p3d_set_dof_vmax 12 1 1.0 180 180 180
+  p3d_set_dof_vmin -20 -20 1.0 -180 -180 -180
+  p3d_set_dof_vmax 20 20 1.0 180 180 180
 p3d_end_desc
 
 p3d_beg_desc P3D_BODY PR2CYL
-  p3d_add_desc_cylindre cylinder 0.50 2.00 P3D_GHOST
-  p3d_set_prim_pos cylinder 0 0.00 1.00  0.0 0.0 0.0
+  p3d_add_desc_cylindre cylinder 0.50 1.75 P3D_GHOST
+  p3d_set_prim_pos cylinder 0 0.00 0.90  0.0 0.0 0.0
 p3d_end_desc
 
 #p3d_beg_desc P3D_BODY PR2CYL

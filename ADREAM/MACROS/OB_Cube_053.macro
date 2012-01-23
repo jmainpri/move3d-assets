@@ -1,0 +1,91 @@
+  p3d_beg_desc P3D_OBSTACLE
+
+
+    p3d_add_desc_poly polyhedre29
+      p3d_add_desc_vert 0.421770393848 0.389458119869 -0.421770632267
+      p3d_add_desc_vert 0.421770513058 0.389458149672 0.421770393848
+      p3d_add_desc_vert -0.421770483255 0.389458060265 0.421770453453
+      p3d_add_desc_vert -0.421770274639 -0.421770483255 -0.421770751476
+      p3d_add_desc_vert -1.33872210979 23.9704589844 -0.421770453453
+      p3d_add_desc_vert -1.33872282505 23.970457077 0.421770691872
+      p3d_add_desc_vert -2.05185747147 23.970457077 0.421770095825
+      p3d_add_desc_vert -2.05185747147 23.970457077 -0.421770602465
+      p3d_add_desc_vert 0.38908624649 2.96646046638 0.389086186886
+      p3d_add_desc_vert 0.389086216688 6.50011968613 0.389086306095
+      p3d_add_desc_vert 0.389086186886 10.0337781906 0.3890863657
+      p3d_add_desc_vert 0.389086067677 13.5674381256 0.389086425304
+      p3d_add_desc_vert 0.385962605476 17.0894412994 0.392654418945
+      p3d_add_desc_vert -0.0675772428513 20.0771160126 0.393010258675
+      p3d_add_desc_vert -1.36153256893 22.3850688934 0.381129562855
+      p3d_add_desc_vert 0.389086186886 2.9664607048 -0.389086306095
+      p3d_add_desc_vert 0.38908624649 6.50012016296 -0.389086276293
+      p3d_add_desc_vert 0.389086306095 10.0337791443 -0.38908624649
+      p3d_add_desc_vert 0.389086306095 13.5674390793 -0.389086186886
+      p3d_add_desc_vert 0.385962963104 17.0894412994 -0.392654061317
+      p3d_add_desc_vert -0.0675768405199 20.0771179199 -0.393009960651
+      p3d_add_desc_vert -1.36153209209 22.3850708008 -0.381129384041
+      p3d_add_desc_vert -0.389086306095 2.96646046638 0.389086216688
+      p3d_add_desc_vert -0.389086306095 6.50011968613 0.389086186886
+      p3d_add_desc_vert -0.389086335897 10.0337781906 0.389086186886
+      p3d_add_desc_vert -0.3890863657 13.5674381256 0.389086186886
+      p3d_add_desc_vert -0.393236577511 17.112285614 0.385374367237
+      p3d_add_desc_vert -0.853145360947 20.1475505829 0.384987652302
+      p3d_add_desc_vert -2.01382303238 22.432844162 0.396410346031
+      p3d_add_desc_vert -0.389086127281 2.96646046638 -0.389086484909
+      p3d_add_desc_vert -0.389086186886 6.50011968613 -0.389086484909
+      p3d_add_desc_vert -0.389086186886 10.0337781906 -0.389086395502
+      p3d_add_desc_vert -0.38908624649 13.5674381256 -0.389086335897
+      p3d_add_desc_vert -0.393236488104 17.112285614 -0.385374546051
+      p3d_add_desc_vert -0.853145182133 20.1475505829 -0.384987831116
+      p3d_add_desc_vert -2.01382303238 22.432844162 -0.396410822868
+      p3d_add_desc_vert -1.15915763378 -0.286565512419 1.15915763378
+      p3d_add_desc_vert 1.15915763378 -0.286565274 1.15915751457
+      p3d_add_desc_vert 1.15915739536 -0.286565363407 -1.1591578722
+      p3d_add_desc_vert 2.75633907318 -0.827383637428 -2.75634002686
+      p3d_add_desc_vert 2.75633955002 -0.827383458614 2.75633955002
+      p3d_add_desc_vert -2.75633955002 -0.827384054661 2.75633955002
+
+      p3d_add_desc_face 1 2 3 4
+      p3d_add_desc_face 5 8 7 6
+      p3d_add_desc_face 1 16 9 2
+      p3d_add_desc_face 16 17 10 9
+      p3d_add_desc_face 17 18 11 10
+      p3d_add_desc_face 18 19 12 11
+      p3d_add_desc_face 19 20 13 12
+      p3d_add_desc_face 20 21 14 13
+      p3d_add_desc_face 21 22 15 14
+      p3d_add_desc_face 22 5 6 15
+      p3d_add_desc_face 2 9 23 3
+      p3d_add_desc_face 9 10 24 23
+      p3d_add_desc_face 10 11 25 24
+      p3d_add_desc_face 11 12 26 25
+      p3d_add_desc_face 12 13 27 26
+      p3d_add_desc_face 13 14 28 27
+      p3d_add_desc_face 14 15 29 28
+      p3d_add_desc_face 15 6 7 29
+      p3d_add_desc_face 3 23 30 4
+      p3d_add_desc_face 23 24 31 30
+      p3d_add_desc_face 24 25 32 31
+      p3d_add_desc_face 25 26 33 32
+      p3d_add_desc_face 26 27 34 33
+      p3d_add_desc_face 27 28 35 34
+      p3d_add_desc_face 28 29 36 35
+      p3d_add_desc_face 29 7 8 36
+      p3d_add_desc_face 5 22 36 8
+      p3d_add_desc_face 22 21 35 36
+      p3d_add_desc_face 21 20 34 35
+      p3d_add_desc_face 20 19 33 34
+      p3d_add_desc_face 19 18 32 33
+      p3d_add_desc_face 18 17 31 32
+      p3d_add_desc_face 17 16 30 31
+      p3d_add_desc_face 16 1 4 30
+      p3d_add_desc_face 1 2 38 39
+      p3d_add_desc_face 2 3 37 38
+      p3d_add_desc_face 38 37 42 41
+      p3d_add_desc_face 39 38 41 40
+    p3d_end_desc_poly
+    p3d_set_prim_pos_by_mat polyhedre29 -0.024655 0 -0.025353 0 0.025353 0 -0.024655 0 0 0.035364 0 0.02926 0 0 0 1
+
+  p3d_end_desc
+
+p3d_set_obst_poly_color 1 Any 0.8 0.8 0.8
