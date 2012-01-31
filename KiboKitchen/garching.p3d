@@ -12,10 +12,6 @@ p3d_read_macro batmansmall.macro human1
 
 # required as else segfault happens
 p3d_read_macro visballsmall.macro visball
-p3d_read_macro rhand.macro lhand
-p3d_read_macro rhand.macro rhand
-p3d_read_macro head.macro head
-p3d_read_macro disc.macro track
 
 ############### MOVABLE TABLE - CHAIRS - SHELF - TRASH  ##############
 #p3d_read_macro tablebot.macro COFFEETABLE

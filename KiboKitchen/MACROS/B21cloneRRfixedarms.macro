@@ -3881,25 +3881,6 @@ p3d_end_desc
 #end freeflyer joint
 
 
-    p3d_beg_desc_jnt P3D_FIXED #J4
-#p3d_set_pos_axe 0.191 0 0 0 1 0
-      p3d_set_pos_axe 0.180 0 0.354 0 1 0  # 0.037 = 0.924-0.317-0.57
-      p3d_set_prev_jnt 1
-      p3d_set_dof_vmin 0
-      p3d_set_dof_vmax 0
-    p3d_end_desc
-
-    p3d_read_macro ./jidopieces/npa1.macro PA1
-
-p3d_beg_desc_jnt P3D_ROTATE #J5
-      p3d_set_name armBaseJoint
-       p3d_set_pos_axe 0.180 0 0.354  0 0 1
-      p3d_set_prev_jnt 2
-      p3d_set_dof_vmin -177
-      p3d_set_dof_vmax 177
-    p3d_end_desc
-
-    p3d_read_macro ./jidopieces/npa2.macro PA2
 
 
 p3d_end_desc
