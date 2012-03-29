@@ -1,7 +1,7 @@
   p3d_beg_desc P3D_OBSTACLE
 
 
-    p3d_add_desc_poly polyhedre97
+    p3d_add_desc_poly polyhedre67
       p3d_add_desc_vert 0.269790649414 -4.88034582138 57.4276733398
       p3d_add_desc_vert 0.0704040527344 -4.88034582138 39.5330200195
       p3d_add_desc_vert 0.0704040527344 -5.03034591675 39.5330200195
@@ -5126,9 +5126,9 @@
       p3d_add_desc_face 291 289 283
       p3d_add_desc_face 291 290 289
     p3d_end_desc_poly
-    p3d_set_prim_pos_by_mat polyhedre97 -0.805624 0 -0.592426 5.047948 -0.592426 0 0.805624 13.090884 0 1 0 5.030345 0 0 0 1
+    p3d_set_prim_pos_by_mat polyhedre67 0.812357 0 0.58316 -5.197561 0.58316 0 -0.812357 -13.032206 0 1 0 5.030345 0 0 0 1
 
-    p3d_add_desc_poly polyhedre98
+    p3d_add_desc_poly polyhedre68
       p3d_add_desc_vert 0.269790649414 -4.88034582138 57.4276733398
       p3d_add_desc_vert 0.0704040527344 -4.88034582138 39.5330200195
       p3d_add_desc_vert 0.0704040527344 -5.03034591675 39.5330200195
@@ -12047,9 +12047,9 @@
       p3d_add_desc_face 4960 4958 4957
       p3d_add_desc_face 4960 4959 4958
     p3d_end_desc_poly
-    p3d_set_prim_pos_by_mat polyhedre98 -0.805624 0 -0.592426 5.047948 -0.592426 0 0.805624 13.090884 0 1 0 5.030345 0 0 0 1
+    p3d_set_prim_pos_by_mat polyhedre68 0.812357 0 0.58316 -5.197561 0.58316 0 -0.812357 -13.032206 0 1 0 5.030345 0 0 0 1
 
-    p3d_add_desc_poly polyhedre99
+    p3d_add_desc_poly polyhedre69
       p3d_add_desc_vert 0.269790649414 -4.88034582138 57.4276733398
       p3d_add_desc_vert 0.0704040527344 -4.88034582138 39.5330200195
       p3d_add_desc_vert 0.0704040527344 -5.03034591675 39.5330200195
@@ -18214,8 +18214,7 @@
       p3d_add_desc_face 1048 1046 1045
       p3d_add_desc_face 1048 1047 1046
     p3d_end_desc_poly
-    p3d_set_prim_pos_by_mat polyhedre99 -0.805624 0 -0.592426 5.047948 -0.592426 0 0.805624 13.090884 0 1 0 5.030345 0 0 0 1
-
+    p3d_set_prim_pos_by_mat polyhedre69 0.812357 0 0.58316 -5.197561 0.58316 0 -0.812357 -13.032206 0 1 0 5.030345 0 0 0 1
   p3d_end_desc
 
 p3d_set_obst_poly_color 1 Any 0.7059823 0.7176471 0.6571298

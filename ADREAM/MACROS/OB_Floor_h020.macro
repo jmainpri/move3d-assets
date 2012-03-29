@@ -1,0 +1,47 @@
+  p3d_beg_desc P3D_OBSTACLE
+
+
+    p3d_add_desc_poly polyhedre56
+      p3d_add_desc_vert 22.5059604645 0.0 -10.4847383499
+      p3d_add_desc_vert 22.5059604645 0.0 1.16329848766
+      p3d_add_desc_vert -2.24561524391 0.0 1.16329789162
+      p3d_add_desc_vert 4.05491876602 0.0 1.16329813004
+      p3d_add_desc_vert 22.5817832947 0.0 -4.8976650238
+      p3d_add_desc_vert 4.09283018112 0.0 -10.4847393036
+      p3d_add_desc_vert -2.24561476707 0.0 -4.84079933167
+      p3d_add_desc_vert 4.05491876602 0.0 -4.87870979309
+      p3d_add_desc_vert 22.5817832947 0.0 -4.8976650238
+      p3d_add_desc_vert 22.5817832947 0.0 -4.8976650238
+      p3d_add_desc_vert 22.5817832947 -0.019999999553 -4.8976650238
+      p3d_add_desc_vert 22.5817832947 -0.019999999553 -4.8976650238
+      p3d_add_desc_vert 4.05491876602 -0.019999999553 -4.87870979309
+      p3d_add_desc_vert -2.24561476707 -0.019999999553 -4.84079933167
+      p3d_add_desc_vert 4.09283018112 -0.019999999553 -10.4847393036
+      p3d_add_desc_vert 22.5817832947 -0.019999999553 -4.8976650238
+      p3d_add_desc_vert 4.05491876602 -0.019999999553 1.16329813004
+      p3d_add_desc_vert -2.24561524391 -0.019999999553 1.16329789162
+      p3d_add_desc_vert 22.5059604645 -0.019999999553 1.16329848766
+      p3d_add_desc_vert 22.5059604645 -0.019999999553 -10.4847383499
+
+      p3d_add_desc_face 1 6 8 5
+      p3d_add_desc_face 8 7 3 4
+      p3d_add_desc_face 5 8 4 2
+      p3d_add_desc_face 9 10 11 12
+      p3d_add_desc_face 9 5 16 12
+      p3d_add_desc_face 8 6 15 13
+      p3d_add_desc_face 7 8 13 14
+      p3d_add_desc_face 3 7 14 18
+      p3d_add_desc_face 6 1 20 15
+      p3d_add_desc_face 5 2 19 16
+      p3d_add_desc_face 1 5 16 20
+      p3d_add_desc_face 4 3 18 17
+      p3d_add_desc_face 2 4 17 19
+      p3d_add_desc_face 13 15 20 16
+      p3d_add_desc_face 18 14 13 17
+      p3d_add_desc_face 17 13 16 19
+    p3d_end_desc_poly
+    p3d_set_prim_pos_by_mat polyhedre56 0 0 1 4.66072 1 0 0 -10.168084 0 1 0 0.019999 0 0 0 1
+
+  p3d_end_desc
+
+p3d_set_obst_poly_color 1 Any 0.3031901 0.27399 0.2414835
