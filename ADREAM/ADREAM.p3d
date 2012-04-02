@@ -3,186 +3,267 @@ p3d_beg_desc P3D_ENV ADREAM
 
 # ************* BUILDING ***************
 
-
   p3d_read_macro OB_window_h22_003.macro OB_window_h22_003
-  p3d_set_obst_pos OB_window_h22_003 5.555447 -23.752357 0.992343 0.0 0.0 0.0
+  p3d_set_obst_pos OB_window_h22_003 5.552899 -5.340157 0.992253 0.0 0.0 0.0
 
   p3d_read_macro OB_window_h22_002.macro OB_window_h22_002
-  p3d_set_obst_pos OB_window_h22_002 5.54805 -19.469595 0.992343 0.0 0.0 0.0
+  p3d_set_obst_pos OB_window_h22_002 5.545503 -1.057397 0.992253 0.0 0.0 0.0
 
   p3d_read_macro OB_window_h22_001.macro OB_window_h22_001
-  p3d_set_obst_pos OB_window_h22_001 4.743043 -18.463569 0.992343 0.0 0.0 0.0
+  p3d_set_obst_pos OB_window_h22_001 4.740496 -0.051371 0.992253 0.0 0.0 0.0
 
   p3d_read_macro OB_Floor_h016_002.macro OB_Floor_h016_002
-  p3d_set_obst_pos OB_Floor_h016_002 -11.196994 -3.480569 -0.02 0.0 0.0 0.0
+  p3d_set_obst_pos OB_Floor_h016_002 -11.19954 14.931631 -0.020091 0.0 0.0 0.0
 
   p3d_read_macro OB_Floor_h016_001.macro OB_Floor_h016_001
-  p3d_set_obst_pos OB_Floor_h016_001 -12.834602 -9.715003 -0.020004 0.0 0.0 0.0
+  p3d_set_obst_pos OB_Floor_h016_001 -12.837147 8.697196 -0.020094 0.0 0.0 0.0
 
   p3d_read_macro OB_door_h20_10_001.macro OB_door_h20_10_001
-  p3d_set_obst_pos OB_door_h20_10_001 -0.101907 -22.179375 -0.003356 0.0 0.0 0.0
+  p3d_set_obst_pos OB_door_h20_10_001 -0.104455 -3.767178 -0.003445 0.0 0.0 0.0
 
   p3d_read_macro OB_door_h20_9_001.macro OB_door_h20_9_001
-  p3d_set_obst_pos OB_door_h20_9_001 -0.103992 -22.901492 -0.003356 0.0 0.0 0.0
+  p3d_set_obst_pos OB_door_h20_9_001 -0.106539 -4.489295 -0.003445 0.0 0.0 0.0
 
   p3d_read_macro OB_window_h20_1_002.macro OB_window_h20_1_002
-  p3d_set_obst_pos OB_window_h20_1_002 -2.854829 -10.103251 0.003623 0.0 0.0 0.0
+  p3d_set_obst_pos OB_window_h20_1_002 -2.857376 8.308945 0.003533 0.0 0.0 0.0
 
   p3d_read_macro OB_glass_wall_h20_2_001.macro OB_glass_wall_h20_2_001
-  p3d_set_obst_pos OB_glass_wall_h20_2_001 -5.370285 -10.110495 0.00112 0.0 0.0 0.0
+  p3d_set_obst_pos OB_glass_wall_h20_2_001 -5.372831 8.301702 0.00103 0.0 0.0 0.0
 
   p3d_read_macro OB_window_h20_1_001.macro OB_window_h20_1_001
-  p3d_set_obst_pos OB_window_h20_1_001 -0.054555 -1.526703 0.000132 0.0 0.0 0.0
+  p3d_set_obst_pos OB_window_h20_1_001 -0.057101 16.885495 4e-05 0.0 0.0 0.0
 
   p3d_read_macro OB_window_h22.macro OB_window_h22
-  p3d_set_obst_pos OB_window_h22 8.215834 0.039172 0.992342 0.0 0.0 0.0
+  p3d_set_obst_pos OB_window_h22 8.213287 18.45137 0.992252 0.0 0.0 0.0
 
   p3d_read_macro OB_window_h20_2.macro OB_window_h20_2
-  p3d_set_obst_pos OB_window_h20_2 -0.061986 -17.224276 0.987054 0.0 0.0 0.0
+  p3d_set_obst_pos OB_window_h20_2 -0.064533 1.18792 0.986964 0.0 0.0 0.0
 
   p3d_read_macro OB_window_h20_1.macro OB_window_h20_1
-  p3d_set_obst_pos OB_window_h20_1 -0.061986 -14.698171 0.987054 0.0 0.0 0.0
+  p3d_set_obst_pos OB_window_h20_1 -0.064532 3.714025 0.986964 0.0 0.0 0.0
 
   p3d_read_macro OB_glass_wall_h20_2.macro OB_glass_wall_h20_2
-  p3d_set_obst_pos OB_glass_wall_h20_2 -0.061986 -12.176032 0.00112 0.0 0.0 0.0
+  p3d_set_obst_pos OB_glass_wall_h20_2 -0.064533 6.236164 0.00103 0.0 0.0 0.0
 
   p3d_read_macro OB_glass_wall_h10.macro OB_glass_wall_h10
-  p3d_set_obst_pos OB_glass_wall_h10 -5.098528 1.854401 0.00623 0.0 0.0 0.0
+  p3d_set_obst_pos OB_glass_wall_h10 -5.101072 20.266597 0.006137 0.0 0.0 0.0
 
   p3d_read_macro OB_door_h15_2.macro OB_door_h15_2
-  p3d_set_obst_pos OB_door_h15_2 -5.319986 -10.074732 -0.003356 0.0 0.0 0.0
+  p3d_set_obst_pos OB_door_h15_2 -5.322533 8.337464 -0.003446 0.0 0.0 0.0
 
   p3d_read_macro OB_door_h15_1.macro OB_door_h15_1
-  p3d_set_obst_pos OB_door_h15_1 -6.273267 -10.494971 -0.003356 0.0 0.0 0.0
+  p3d_set_obst_pos OB_door_h15_1 -6.275815 7.917227 -0.003446 0.0 0.0 0.0
 
   p3d_read_macro OB_Floor_h020bis.macro OB_Floor_h020bis
-  p3d_set_obst_pos OB_Floor_h020bis 10.507298 -25.573647 -0.019998 0.0 0.0 0.0
+  p3d_set_obst_pos OB_Floor_h020bis 10.50475 -7.161452 -0.020087 0.0 0.0 0.0
 
   p3d_read_macro OB_Floor_h002.macro OB_Floor_h002
-  p3d_set_obst_pos OB_Floor_h002 1.888325 7.653204 -0.019999 0.0 0.0 0.0
+  p3d_set_obst_pos OB_Floor_h002 1.885781 26.065406 -0.020091 0.0 0.0 0.0
 
   p3d_read_macro OB_Floor_h004.macro OB_Floor_h004
-  p3d_set_obst_pos OB_Floor_h004 7.803004 6.28503 -0.019999 0.0 0.0 0.0
+  p3d_set_obst_pos OB_Floor_h004 7.800459 24.697232 -0.020092 0.0 0.0 0.0
 
   p3d_read_macro OB_Floor_h016.macro OB_Floor_h016
-  p3d_set_obst_pos OB_Floor_h016 1.87729 3.967712 -0.019999 0.0 0.0 0.0
+  p3d_set_obst_pos OB_Floor_h016 1.874746 22.379912 -0.02009 0.0 0.0 0.0
 
   p3d_read_macro OB_Floor_h023.macro OB_Floor_h023
-  p3d_set_obst_pos OB_Floor_h023 1.910395 1.313831 -0.02 0.0 0.0 0.0
+  p3d_set_obst_pos OB_Floor_h023 1.90785 19.726029 -0.02009 0.0 0.0 0.0
 
   p3d_read_macro OB_Floor_h003.macro OB_Floor_h003
-  p3d_set_obst_pos OB_Floor_h003 8.44613 8.717249 -0.02 0.0 0.0 0.0
+  p3d_set_obst_pos OB_Floor_h003 8.443588 27.129448 -0.020092 0.0 0.0 0.0
 
   p3d_read_macro OB_Floor_h022.macro OB_Floor_h022
-  p3d_set_obst_pos OB_Floor_h022 7.822759 2.604761 -0.02 0.0 0.0 0.0
+  p3d_set_obst_pos OB_Floor_h022 7.820215 21.016961 -0.020091 0.0 0.0 0.0
 
   p3d_read_macro OB_Floor_h030.macro OB_Floor_h030
-  p3d_set_obst_pos OB_Floor_h030 13.477728 -8.183325 -0.019999 0.0 0.0 0.0
+  p3d_set_obst_pos OB_Floor_h030 13.475181 10.228872 -0.02009 0.0 0.0 0.0
 
   p3d_read_macro OB_Cube.macro OB_Cube
-  p3d_set_obst_pos OB_Cube -2.608309 -6.316713 -0.010392 0.0 0.0 0.0
+  p3d_set_obst_pos OB_Cube -2.610854 12.095482 -0.010483 0.0 0.0 0.0
 
   p3d_read_macro OB_door_h10_2.macro OB_door_h10_2
-  p3d_set_obst_pos OB_door_h10_2 -6.572295 1.291244 -0.003356 0.0 0.0 0.0
+  p3d_set_obst_pos OB_door_h10_2 -6.57484 19.703445 -0.003447 0.0 0.0 0.0
 
   p3d_read_macro OB_door_h10_1.macro OB_door_h10_1
-  p3d_set_obst_pos OB_door_h10_1 -5.434177 1.620443 -0.003356 0.0 0.0 0.0
+  p3d_set_obst_pos OB_door_h10_1 -5.436722 20.032647 -0.003447 0.0 0.0 0.0
 
   p3d_read_macro OB_door_h20_9.macro OB_door_h20_9
-  p3d_set_obst_pos OB_door_h20_9 0.100784 -11.474208 -0.003356 0.0 0.0 0.0
+  p3d_set_obst_pos OB_door_h20_9 0.098237 6.937987 -0.003446 0.0 0.0 0.0
 
   p3d_read_macro OB_door_h20_10.macro OB_door_h20_10
-  p3d_set_obst_pos OB_door_h20_10 -0.042425 -12.23029 -0.003356 0.0 0.0 0.0
+  p3d_set_obst_pos OB_door_h20_10 -0.044972 6.181905 -0.003446 0.0 0.0 0.0
 
   p3d_read_macro OB_door_h20_3.macro OB_door_h20_3
-  p3d_set_obst_pos OB_door_h20_3 11.38053 -22.762881 -0.003356 0.0 0.0 0.0
+  p3d_set_obst_pos OB_door_h20_3 11.377982 -4.350684 -0.003446 0.0 0.0 0.0
 
   p3d_read_macro OB_door_h20_4.macro OB_door_h20_4
-  p3d_set_obst_pos OB_door_h20_4 11.30523 -21.723143 -0.003356 0.0 0.0 0.0
+  p3d_set_obst_pos OB_door_h20_4 11.302683 -3.310946 -0.003446 0.0 0.0 0.0
 
   p3d_read_macro OB_door_h20_6.macro OB_door_h20_6
-  p3d_set_obst_pos OB_door_h20_6 11.545155 -11.960746 -0.003356 0.0 0.0 0.0
+  p3d_set_obst_pos OB_door_h20_6 11.542609 6.451448 -0.003446 0.0 0.0 0.0
 
   p3d_read_macro OB_door_h20_5.macro OB_door_h20_5
-  p3d_set_obst_pos OB_door_h20_5 11.546152 -12.858529 -0.003356 0.0 0.0 0.0
+  p3d_set_obst_pos OB_door_h20_5 11.543606 5.553666 -0.003446 0.0 0.0 0.0
 
   p3d_read_macro OB_door_h20_7.macro OB_door_h20_7
-  p3d_set_obst_pos OB_door_h20_7 11.542823 -2.88562 -0.003356 0.0 0.0 0.0
+  p3d_set_obst_pos OB_door_h20_7 11.540278 15.526576 -0.003447 0.0 0.0 0.0
 
   p3d_read_macro OB_door_h20_8.macro OB_door_h20_8
-  p3d_set_obst_pos OB_door_h20_8 11.325753 -1.915129 -0.003356 0.0 0.0 0.0
+  p3d_set_obst_pos OB_door_h20_8 11.323208 16.497066 -0.003446 0.0 0.0 0.0
 
   p3d_read_macro OB_glass_wall_h20_1.macro OB_glass_wall_h20_1
-  p3d_set_obst_pos OB_glass_wall_h20_1 11.576481 -12.275643 0.00112 0.0 0.0 0.0
+  p3d_set_obst_pos OB_glass_wall_h20_1 11.573935 6.136554 0.00103 0.0 0.0 0.0
 
   p3d_read_macro OB_door_h22_2.macro OB_door_h22_2
-  p3d_set_obst_pos OB_door_h22_2 5.335745 0.066897 4.6e-05 0.0 0.0 0.0
+  p3d_set_obst_pos OB_door_h22_2 5.333201 18.479097 -4.3e-05 0.0 0.0 0.0
 
   p3d_read_macro OB_door_h23_2.macro OB_door_h23_2
-  p3d_set_obst_pos OB_door_h23_2 1.173305 0.036178 4.6e-05 0.0 0.0 0.0
+  p3d_set_obst_pos OB_door_h23_2 1.170759 18.448378 -4.3e-05 0.0 0.0 0.0
 
   p3d_read_macro OB_door_h21_2.macro OB_door_h21_2
-  p3d_set_obst_pos OB_door_h21_2 1.219384 -18.426012 4.6e-05 0.0 0.0 0.0
+  p3d_set_obst_pos OB_door_h21_2 1.216837 -0.013814 -4.3e-05 0.0 0.0 0.0
 
   p3d_read_macro OB_door_h21_1.macro OB_door_h21_1
-  p3d_set_obst_pos OB_door_h21_1 0.356638 -18.894022 4.6e-05 0.0 0.0 0.0
+  p3d_set_obst_pos OB_door_h21_1 0.354088 -0.481824 -4.2e-05 0.0 0.0 0.0
 
   p3d_read_macro OB_door_h16_1.macro OB_door_h16_1
-  p3d_set_obst_pos OB_door_h16_1 -0.193776 3.508717 4.6e-05 0.0 0.0 0.0
+  p3d_set_obst_pos OB_door_h16_1 -0.196321 21.920916 -4.2e-05 0.0 0.0 0.0
 
   p3d_read_macro OB_door_h22_1.macro OB_door_h22_1
-  p3d_set_obst_pos OB_door_h22_1 4.531031 0.43394 4.6e-05 0.0 0.0 0.0
+  p3d_set_obst_pos OB_door_h22_1 4.528486 18.846139 -4.3e-05 0.0 0.0 0.0
 
   p3d_read_macro OB_door_h23_1.macro OB_door_h23_1
-  p3d_set_obst_pos OB_door_h23_1 0.40292 0.412606 4.6e-05 0.0 0.0 0.0
+  p3d_set_obst_pos OB_door_h23_1 0.400375 18.824805 -4.3e-05 0.0 0.0 0.0
 
   p3d_read_macro OB_Floor_h010.macro OB_Floor_h010
-  p3d_set_obst_pos OB_Floor_h010 -5.938235 -2.349194 0.029795 0.0 0.0 0.0
+  p3d_set_obst_pos OB_Floor_h010 -5.940783 16.063002 0.029705 0.0 0.0 0.0
 
   p3d_read_macro OB_Floor_h020.macro OB_Floor_h020
-  p3d_set_obst_pos OB_Floor_h020 5.758373 -12.323319 -0.019999 0.0 0.0 0.0
+  p3d_set_obst_pos OB_Floor_h020 5.755825 6.088876 -0.02009 0.0 0.0 0.0
 
   p3d_read_macro OB_Floor_h021.macro OB_Floor_h021
-  p3d_set_obst_pos OB_Floor_h021 2.724959 -21.59627 -0.019999 0.0 0.0 0.0
+  p3d_set_obst_pos OB_Floor_h021 2.722412 -3.184073 -0.02009 0.0 0.0 0.0
 
   p3d_read_macro OB_Floor_h006.macro OB_Floor_h006
-  p3d_set_obst_pos OB_Floor_h006 4.627118 -27.190857 -0.019999 0.0 0.0 0.0
+  p3d_set_obst_pos OB_Floor_h006 4.624568 -8.778658 -0.020089 0.0 0.0 0.0
 
   p3d_read_macro OB_door_h20_2.macro OB_door_h20_2
-  p3d_set_obst_pos OB_door_h20_2 -0.336875 -4.165 4.6e-05 0.0 0.0 0.0
+  p3d_set_obst_pos OB_door_h20_2 -0.339421 14.247197 -4.3e-05 0.0 0.0 0.0
 
   p3d_read_macro OB_door_h20_1.macro OB_door_h20_1
-  p3d_set_obst_pos OB_door_h20_1 -0.17487 -3.199274 4.6e-05 0.0 0.0 0.0
+  p3d_set_obst_pos OB_door_h20_1 -0.177415 15.212922 -4.3e-05 0.0 0.0 0.0
 
   p3d_read_macro OB_solar_alley.macro OB_solar_alley
-  p3d_set_obst_pos OB_solar_alley 14.486501 -8.196754 0.000167 0.0 0.0 0.0
+  p3d_set_obst_pos OB_solar_alley 14.483955 10.215444 7.8e-05 0.0 0.0 0.0
 
   p3d_read_macro OB_door_h14.macro OB_door_h14
-  p3d_set_obst_pos OB_door_h14 -6.683611 -8.611039 4.6e-05 0.0 0.0 0.0
+  p3d_set_obst_pos OB_door_h14 -6.686155 9.801157 -4.3e-05 0.0 0.0 0.0
 
   p3d_read_macro OB_walls.macro OB_walls
-  p3d_set_obst_pos OB_walls -3.52424 -9.720883 -0.002138 0.0 0.0 0.0
+  p3d_set_obst_pos OB_walls -3.526784 8.691316 -0.002231 0.0 0.0 0.0
 
   p3d_read_macro OB_solar_panels.macro OB_solar_panels
-  p3d_set_obst_pos OB_solar_panels 15.243726 -8.228993 -0.031068 0.0 0.0 0.0
+  p3d_set_obst_pos OB_solar_panels 15.241182 10.183202 -0.031156 0.0 0.0 0.0
 
-  #p3d_read_macro OB_Parking.macro OB_Parking
-  #p3d_set_obst_pos OB_Parking 11.799633 10.513515 -0.160599 0.0 0.0 0.0
+  p3d_read_macro OB_Parking.macro OB_Parking
+  p3d_set_obst_pos OB_Parking 29.186876 7.627432 -0.160678 0.0 0.0 0.0
 
+
+# ********** FIXED FURNITURE *********
+
+  p3d_read_macro ./Objects/Static/cupboard_small.macro cupboard_small1
+  p3d_set_obst_pos cupboard_small1 5.9 -0.6 0 0.0 0.0 0.0
+
+  p3d_read_macro ./Objects/Static/cupboard_small.macro cupboard_small2
+  p3d_set_obst_pos cupboard_small2 5.9 -1.85 0 0.0 0.0 0.0
+
+  p3d_read_macro ./Objects/Static/cupboard_small.macro cupboard_small3
+  p3d_set_obst_pos cupboard_small3 5.5 0.3 0 0.0 0.0 90.0
+
+  p3d_read_macro ./Objects/Static/cupboard_small.macro cupboard_small4
+  p3d_set_obst_pos cupboard_small4 4.25 0.3 0 0.0 0.0 90.0
+
+  p3d_read_macro ./Objects/Static/cupboard_tall_closed.macro cupboard_tall1
+  p3d_set_obst_pos cupboard_tall1 0.25 9.640 0 0.0 0.0 0.0
+
+  p3d_read_macro ./Objects/Static/cupboard_tall_closed.macro cupboard_tall2
+  p3d_set_obst_pos cupboard_tall2 6.3 -6 0 0.0 0.0 90.0
+
+  p3d_read_macro ./Objects/Static/cupboard_tall_closed.macro cupboard_tall3
+  p3d_set_obst_pos cupboard_tall3 7.55 -6 0 0.0 0.0 90.0
+
+  p3d_read_macro ./Objects/Static/cupboard_tall_closed.macro cupboard_tall4
+  p3d_set_obst_pos cupboard_tall4 8.8 -6 0 0.0 0.0 90.0
+
+  p3d_read_macro ./Objects/Static/table_adream_obs.macro table_adream_obs1
+  p3d_set_obst_pos table_adream_obs1 1.84 -2.48 0 0.0 0.0 90.0
+
+  p3d_read_macro ./Objects/Static/table_adream_obs.macro table_adream_obs2
+  p3d_set_obst_pos table_adream_obs2 3.24 -2.48 0 0.0 0.0 90.0
+
+  p3d_read_macro ./Objects/Static/table_adream_obs.macro table_adream_obs3
+  p3d_set_obst_pos table_adream_obs3 1.49 -3.53 0 0 0.0 0.0
+
+  p3d_read_macro ./Objects/Static/table_adream_obs.macro table_adream_obs4
+  p3d_set_obst_pos table_adream_obs4 3.59 -3.53 0 0 0.0 0.0
+
+  p3d_read_macro ./Objects/Static/table_adream_obs.macro table_adream_obs5
+  p3d_set_obst_pos table_adream_obs5 3.24 -4.58 0 0.0 0.0 90.0
+
+  p3d_read_macro ./Objects/Static/table_adream_obs.macro table_adream_obs6
+  p3d_set_obst_pos table_adream_obs6 1.84 -4.58 0 0.0 0.0 90.0
+
+  p3d_read_macro ./Objects/Static/desk_adream_obs.macro desk_adream_obs1
+  p3d_set_obst_pos desk_adream_obs1 10 3.7 0 0.0 0.0 90.0
+
+  p3d_read_macro ./Objects/Static/desk_adream_obs.macro desk_adream_obs2
+  p3d_set_obst_pos desk_adream_obs2 9.6 4.9 0 0.0 0.0 0.0
+
+  p3d_read_macro ./Objects/Static/desk_adream_obs.macro desk_adream_obs3
+  p3d_set_obst_pos desk_adream_obs3 9.6 6.5 0 0.0 0.0 0.0
 
 
 # ************* HUMANS ***************
 
 p3d_read_macro AchileMKinect.macro HERAKLES_HUMAN1
+p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 2 0 0.01 0 0.01 -180 180
 #p3d_read_macro AchileMKinect.macro HERAKLES_HUMAN2
 #p3d_read_macro AchileMKinect.macro HERAKLES_HUMAN3
 
 # ************* FURNITURE ************
 
 p3d_read_macro simplechair.macro SIMPLECHAIR
+p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
 
 p3d_read_macro ./Objects/Movable/PR2Cylinder.macro PR_2CYLINDER
+p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
+
 p3d_read_macro ./Objects/Movable/HumanCylinder.macro HUMCYLINDER
+p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
+
+#p3d_read_macro ./Objects/Static/DESK_ADREAM.macro DESK
+#p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
+
+p3d_read_macro ./Objects/Static/TABLE_ADREAM.macro TABLE1
+p3d_set_jnt_dofs_min_max 1 0 11 -10 18 0 0.01 0 0.01 0 0.01 -180 180
+
+p3d_read_macro ./Objects/Static/TABLE_ADREAM.macro TABLE2
+p3d_set_jnt_dofs_min_max 1 0 11 -10 18 0 0.01 0 0.01 0 0.01 -180 180
+
+p3d_read_macro ./Objects/Static/TABLE_ADREAM.macro TABLE3
+p3d_set_jnt_dofs_min_max 1 0 11 -10 18 0 0.01 0 0.01 0 0.01 -180 180
+
+p3d_read_macro ./Objects/Static/TABLE_ADREAM.macro TABLE4
+p3d_set_jnt_dofs_min_max 1 0 11 -10 18 0 0.01 0 0.01 0 0.01 -180 180
+
+p3d_read_macro ./Objects/Static/DRAWERS.macro DRAWERS1
+p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
+
+p3d_read_macro ./Objects/Static/DRAWERS.macro DRAWERS2
+p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
+
+#p3d_read_macro ./Objects/Static/CUPBOARD_TALL_OPPENNED.macro CUPBOARD
+#p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
 
 # ******* MANIPULATION OBJECT ********
 
@@ -199,10 +280,10 @@ p3d_desactivate_col_check automatic
 p3d_desactivate_col_check larm.larm1 larm.larm3
 p3d_desactivate_col_check rarm.rarm1 rarm.rarm3
 
-p3d_set_env_box 0 11 -18 0 0 3
+p3d_set_env_box 0 11 0 18 0 3
 
 p3d_sel_desc_name P3D_ROBOT PR2_ROBOT
-#p3d_set_jnt_dofs_min_max 1 -1 10 -6 0 0 0.01 0 0.01 0 0.01 -180 180
+p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
 
 
 
