@@ -244,22 +244,22 @@ p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
 #p3d_read_macro ./Objects/Static/DESK_ADREAM.macro DESK
 #p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
 
-p3d_read_macro ./Objects/Static/TABLE_ADREAM.macro TABLE1
+p3d_read_macro ./Objects/Static/TABLE_ADREAM.macro TABLE_1
 p3d_set_jnt_dofs_min_max 1 0 11 -10 18 0 0.01 0 0.01 0 0.01 -180 180
 
-p3d_read_macro ./Objects/Static/TABLE_ADREAM.macro TABLE2
+p3d_read_macro ./Objects/Static/TABLE_ADREAM.macro TABLE_2
 p3d_set_jnt_dofs_min_max 1 0 11 -10 18 0 0.01 0 0.01 0 0.01 -180 180
 
-p3d_read_macro ./Objects/Static/TABLE_ADREAM.macro TABLE3
+p3d_read_macro ./Objects/Static/TABLE_ADREAM.macro TABLE_3
 p3d_set_jnt_dofs_min_max 1 0 11 -10 18 0 0.01 0 0.01 0 0.01 -180 180
 
-p3d_read_macro ./Objects/Static/TABLE_ADREAM.macro TABLE4
+p3d_read_macro ./Objects/Static/TABLE_ADREAM.macro TABLE_4
 p3d_set_jnt_dofs_min_max 1 0 11 -10 18 0 0.01 0 0.01 0 0.01 -180 180
 
-p3d_read_macro ./Objects/Static/DRAWERS.macro DRAWERS1
+p3d_read_macro ./Objects/Static/DRAWERS.macro DRAWERS_1
 p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
 
-p3d_read_macro ./Objects/Static/DRAWERS.macro DRAWERS2
+p3d_read_macro ./Objects/Static/DRAWERS.macro DRAWERS_2
 p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
 
 #p3d_read_macro ./Objects/Static/CUPBOARD_TALL_OPPENNED.macro CUPBOARD
