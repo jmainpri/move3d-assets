@@ -160,18 +160,6 @@ p3d_end_desc
     p3d_set_prim_pos_by_mat body2_polyhedre1 0 0 0.215 -0.0022 0.295 0 0 0.00183 0 0.26 0 -0.002382 0 0 0 1
   p3d_end_desc
 
-  p3d_add_desc_jnt P3D_ROTATE -0.0022 0.00183 -0.002382  1.0 0.0 0.0 0.0 -180 180 2 #2 ##3
-
-  p3d_beg_desc P3D_BODY DRAWERS-body3_polyhedre2.DRAWERS-body3_polyhedre2_1-X
-  p3d_end_desc
-
-  p3d_add_desc_jnt P3D_ROTATE -0.0022 0.00183 -0.002382  0.0 1.0 0.0 0.0 -180 180 3 ##4
-
-  p3d_beg_desc P3D_BODY DRAWERS-body3_polyhedre2.DRAWERS-body3_polyhedre2_1-Y
-  p3d_end_desc
-
-  p3d_add_desc_jnt P3D_ROTATE -0.0022 0.00183 -0.002382  0.0 0.0 1.0 0.0 -180.0 180.0 4 #(2) ##5
-
   p3d_beg_desc P3D_BODY DRAWERS-body3_polyhedre2.DRAWERS-body3_polyhedre2
     p3d_add_desc_poly body3_polyhedre2
       p3d_add_desc_vert 0.999999940395 0.153846263885 -0.999999940395

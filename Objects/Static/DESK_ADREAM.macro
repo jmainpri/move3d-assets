@@ -96,17 +96,6 @@ p3d_end_desc
     p3d_set_prim_pos_by_mat body2_polyhedre1 0 0 1 0.00117 1 0 0 0 0 1 0 0 0 0 0 1
   p3d_end_desc
 
-  p3d_add_desc_jnt P3D_ROTATE 0.00117 0 0  1.0 0.0 0.0 0.0 -180 180 2 #2 ##3
-
-  p3d_beg_desc P3D_BODY DESK_ADREAM-body3_polyhedre2.DESK_ADREAM-body3_polyhedre2_1-X
-  p3d_end_desc
-
-  p3d_add_desc_jnt P3D_ROTATE 0.00117 0 0  0.0 1.0 0.0 0.0 -180 180 3 ##4
-
-  p3d_beg_desc P3D_BODY DESK_ADREAM-body3_polyhedre2.DESK_ADREAM-body3_polyhedre2_1-Y
-  p3d_end_desc
-
-  p3d_add_desc_jnt P3D_ROTATE 0.00117 0 0  0.0 0.0 1.0 0.0 -180.0 180.0 4 #(2) ##5
 
   p3d_beg_desc P3D_BODY DESK_ADREAM-body3_polyhedre2.DESK_ADREAM-body3_polyhedre2
     p3d_add_desc_poly body3_polyhedre2
