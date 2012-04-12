@@ -5,7 +5,7 @@ p3d_beg_desc_jnt P3D_FREEFLYER  #1
   p3d_set_pos_xyz 0.0 0.0 0.0 0.0 0.0 0.0
   p3d_set_dof      0 0 0  0   0   0
   p3d_set_dof_vmin -3 -6 0 -180 -180 -180
-  p3d_set_dof_vmax 12 1 2 180 180 180
+  p3d_set_dof_vmax 12 12 2 180 180 180
 p3d_end_desc
 
 
