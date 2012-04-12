@@ -222,13 +222,36 @@ p3d_beg_desc P3D_ENV ADREAM
   p3d_read_macro ./Objects/Static/desk_adream_obs.macro desk_adream_obs3
   p3d_set_obst_pos desk_adream_obs3 9.6 6.5 0 0.0 0.0 0.0
 
-
+  
 # ************* HUMANS ***************
 
 p3d_read_macro AchileMKinect.macro HERAKLES_HUMAN1
 p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 2 0 0.01 0 0.01 -180 180
 #p3d_read_macro AchileMKinect.macro HERAKLES_HUMAN2
 #p3d_read_macro AchileMKinect.macro HERAKLES_HUMAN3
+
+# ************* INTERNAL OBJECTS ***************
+
+p3d_read_macro pr2_gripper_robot.macro PR2_GRIPPER
+p3d_read_macro pr2_gripper_robot.macro PR2_GRIPPER_LEFT
+
+# For Mightability Analysis
+p3d_read_macro ./Objects/Movable/test_cube_Mightability.macro VISBALL_MIGHTABILITY
+p3d_read_macro ./Objects/Movable/test_bar_Mightability.macro HUMAN_BAR
+
+#For calculating Graspability of Human
+p3d_read_macro SAHandRight_robot.macro SAHandRight2
+
+# ************* HRI Task and Mightability SCENARIO SPECIFIC OBJECTS *************
+
+#p3d_read_macro ./Objects/Movable/LotrTape.macro LOTR_TAPE
+#p3d_read_macro ./Objects/Movable/WalleTape.macro WALLE_TAPE
+#p3d_read_macro ./Objects/Movable/GreyK7.macro GREY_K7
+#p3d_read_macro ./Objects/Movable/GreyVideoTape.macro  GREY_TAPE
+#p3d_read_macro ./Objects/Movable/toolbox.macro ACCESSKIT
+#p3d_read_macro ./Objects/Movable/Cup_with_handle.macro CUPHANDLE
+#p3d_read_macro ./Objects/Movable/BigPinkBox.macro PINK_TRASHBIN
+#p3d_read_macro ./Objects/Movable/trash.macro TRASHBIN
 
 # ************* FURNITURE ************
 
@@ -292,8 +315,8 @@ p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
 #p3d_read_macro ./Objects/MovableObstacles/DESK_ADREAM.macro DESK
 #p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
 
-#p3d_read_macro ./Objects/MovableObstacles/TABLE_ADREAM.macro TABLE_1
-#p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
+p3d_read_macro ./Objects/MovableObstacles/TABLE_ADREAM.macro TABLE_1
+p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
 
 #p3d_read_macro ./Objects/MovableObstacles/DRAWERS.macro DRAWERS_1
 #p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
