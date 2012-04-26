@@ -1,0 +1,89 @@
+p3d_beg_desc P3D_ENV Stones_plain
+
+p3d_beg_desc P3D_OBSTACLE Stones
+
+p3d_add_desc_box stone_1 0.2 0.8 0.2
+p3d_set_prim_pos stone_1 0.5 1 0 0. 0. 30.
+
+p3d_add_desc_box stone_2 0.2 0.6 0.2
+p3d_set_prim_pos stone_2 0.9 0.8 0 0. 0. -60.
+
+p3d_add_desc_box stone_3 0.2 0.4 0.2
+p3d_set_prim_pos stone_3 0.2 4 0 0. 0. -30.
+
+p3d_add_desc_box stone_4 0.2 0.6 0.2
+p3d_set_prim_pos stone_4 3.2 7.1 0 0. 0. -30.
+
+p3d_add_desc_box stone_5 0.5 0.5 0.2
+p3d_set_prim_pos stone_5 2 4 0 0. 0. -50.
+
+p3d_add_desc_box stone_6 0.3 0.3 0.2
+p3d_set_prim_pos stone_6 1 6 0 0. 0. -20.
+
+p3d_add_desc_box stone_7 0.2 2 0.2
+p3d_set_prim_pos stone_7 2 2 0 0. 0. 90.
+
+p3d_add_desc_box stone_8 0.3 0.3 0.2
+p3d_set_prim_pos stone_8 3.1 1 0 0. 0. 0.
+
+p3d_add_desc_box stone_9 0.3 0.3 0.2
+p3d_set_prim_pos stone_9 1 7.4 0 0. 0. 50.
+
+p3d_add_desc_box stone_10 0.3 1.4 0.2
+p3d_set_prim_pos stone_10 3.3 4.3 0 0. 0. 10.
+
+p3d_add_desc_box stone_11 0.2 1 0.2
+p3d_set_prim_pos stone_11 2.3 6 0 0. 0. 100.
+
+p3d_end_desc
+
+p3d_beg_desc P3D_ROBOT CYCLE_ROBOT
+p3d_beg_desc_jnt P3D_PLAN # J1
+   p3d_set_prev_jnt 0
+   p3d_set_pos_xyz 0 0 0 0 0 0
+   p3d_set_dof 0 0 0 0 0 0
+   p3d_set_dof_vmin -0.5 -0.05 0
+   p3d_set_dof_vmax 4.5 8.00 0
+p3d_end_desc
+p3d_beg_desc P3D_BODY body
+p3d_add_desc_cylindre cyl 0.2 0.2
+p3d_set_prim_pos cyl 0 0 0 0.0 0.0 0.0
+p3d_end_desc
+
+p3d_beg_desc P3D_ROBOT CYCLE_SIMUL
+p3d_beg_desc_jnt P3D_PLAN # J1
+   p3d_set_prev_jnt 0
+   p3d_set_pos_xyz 0 0 0 0 0 0
+   p3d_set_dof 0 0 0 0 0 0
+   p3d_set_dof_vmin -0.5 -0.05 0
+   p3d_set_dof_vmax 4.5 8.00 0
+p3d_end_desc
+p3d_beg_desc P3D_BODY body
+p3d_add_desc_cylindre cyl 0.2 0.2
+p3d_set_prim_pos cyl 0 0 0 0.0 0.0 0.0
+p3d_end_desc
+
+p3d_beg_desc P3D_ROBOT HERAKLES_HUMAN1
+p3d_beg_desc_jnt P3D_FREEFLYER # J1
+   p3d_set_name Pelvis
+   p3d_set_prev_jnt 0
+   p3d_set_pos_xyz 0 0 0 0 0 0
+   p3d_set_dof 0 0 0 0 0 0
+   p3d_set_dof_vmin -10 -10 0 -180 -180 -180
+   p3d_set_dof_vmax 10 10 2.5 180 180 180
+ p3d_end_desc
+p3d_beg_desc P3D_BODY body
+p3d_add_desc_box obst 0.2 1 0.2
+p3d_set_prim_pos obst 0 0 0 0.0 0.0 0.0
+p3d_end_desc
+
+p3d_end_desc
+
+p3d_set_env_box -0.7 4.7 -0.1 8.1 -0.1 0.5
+
+p3d_sel_desc_name P3D_ROBOT CYCLE_ROBOT
+
+p3d_set_robot_steering_method Linear
+
+p3d_set_robot_current 0. 0. 0. 0. 0. 0. 0.2000000 0.50000000 0.000000 
+p3d_set_robot_goto 0. 0. 0. 0. 0. 0. 2.00000000 7.00000000 0.000000 
