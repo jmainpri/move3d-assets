@@ -1,0 +1,948 @@
+p3d_beg_desc P3D_ROBOT
+
+p3d_add_desc_jnt P3D_ROTATE 0 0 0 0.0 0.0 1.0 90.0 -180.0 180.0 0
+
+p3d_beg_desc P3D_BODY bm.rob.arm1
+
+p3d_add_desc_poly bm.rob.arm11 P3D_GRAPHIC
+
+  p3d_add_desc_vert -0.075 0 0
+  p3d_add_desc_vert -0.064951904 0.0375 0
+  p3d_add_desc_vert -0.0375 0.064951904 0
+  p3d_add_desc_vert 0 0.075 0
+  p3d_add_desc_vert 0.0375 0.064951904 0
+  p3d_add_desc_vert 0.064951904 0.0375 0
+  p3d_add_desc_vert 0.075 0 0
+  p3d_add_desc_vert 0.064951904 -0.0375 0
+  p3d_add_desc_vert 0.0375 -0.064951904 0
+  p3d_add_desc_vert 0 -0.075 0
+  p3d_add_desc_vert -0.0375 -0.064951904 0
+  p3d_add_desc_vert -0.064951904 -0.0375 0
+  p3d_add_desc_vert -0.075 0 0.255
+  p3d_add_desc_vert -0.064951904 0.0375 0.255
+  p3d_add_desc_vert -0.0375 0.064951904 0.255
+  p3d_add_desc_vert 0 0.075 0.255
+  p3d_add_desc_vert 0.0375 0.064951904 0.255
+  p3d_add_desc_vert 0.064951904 0.0375 0.255
+  p3d_add_desc_vert 0.075 0 0.255
+  p3d_add_desc_vert 0.064951904 -0.0375 0.255
+  p3d_add_desc_vert 0.0375 -0.064951904 0.255
+  p3d_add_desc_vert 0 -0.075 0.255
+  p3d_add_desc_vert -0.0375 -0.064951904 0.255
+  p3d_add_desc_vert -0.064951904 -0.0375 0.255
+
+   p3d_add_desc_face  1  2  3  4  5  6  7  8  9  10  11  12  
+   p3d_add_desc_face  2  1  13  14  
+   p3d_add_desc_face  3  2  14  15  
+   p3d_add_desc_face  4  3  15  16  
+   p3d_add_desc_face  5  4  16  17  
+   p3d_add_desc_face  6  5  17  18  
+   p3d_add_desc_face  7  6  18  19  
+   p3d_add_desc_face  8  7  19  20  
+   p3d_add_desc_face  9  8  20  21  
+   p3d_add_desc_face  10  9  21  22  
+   p3d_add_desc_face  11  10  22  23  
+   p3d_add_desc_face  12  11  23  24  
+   p3d_add_desc_face  1  12  24  13  
+   p3d_add_desc_face  24  23  22  21  20  19  18  17  16  15  14  13 
+  
+ p3d_end_desc_poly 
+
+p3d_set_prim_pos_by_mat bm.rob.arm11 1.000000 0.000000 0.000000 0 0.000000 1.000000 0.000000 0 0.000000 0.000000 1.000000 0.764 0.000000 0.000000 0.000000 1.000000
+
+#BEG GHOST BOX
+  p3d_add_desc_box BB_bm.rob.arm11 0.15 0.15 0.255 P3D_GHOST
+  p3d_set_prim_pos_by_mat BB_bm.rob.arm11 1.000000 0.000000 0.000000 0 0.000000 1.000000 0.000000 0 0.000000 0.000000 1.000000 0.8915 0.0 0.0 0.0 1.0
+#END GHOST BOX
+
+
+
+p3d_add_desc_poly bm.rob.arm12  P3D_GRAPHIC
+
+  p3d_add_desc_vert -0.06 0 0
+  p3d_add_desc_vert -0.051961523 0.03 0
+  p3d_add_desc_vert -0.03 0.051961523 0
+  p3d_add_desc_vert 0 0.06 0
+  p3d_add_desc_vert 0.03 0.051961523 0
+  p3d_add_desc_vert 0.051961523 0.03 0
+  p3d_add_desc_vert 0.06 0 0
+  p3d_add_desc_vert 0.051961523 -0.03 0
+  p3d_add_desc_vert 0.03 -0.051961523 0
+  p3d_add_desc_vert 0 -0.06 0
+  p3d_add_desc_vert -0.03 -0.051961523 0
+  p3d_add_desc_vert -0.051961523 -0.03 0
+  p3d_add_desc_vert -0.06 0 0.05
+  p3d_add_desc_vert -0.051961523 0.03 0.05
+  p3d_add_desc_vert -0.03 0.051961523 0.05
+  p3d_add_desc_vert 0 0.06 0.05
+  p3d_add_desc_vert 0.03 0.051961523 0.05
+  p3d_add_desc_vert 0.051961523 0.03 0.05
+  p3d_add_desc_vert 0.06 0 0.05
+  p3d_add_desc_vert 0.051961523 -0.03 0.05
+  p3d_add_desc_vert 0.03 -0.051961523 0.05
+  p3d_add_desc_vert 0 -0.06 0.05
+  p3d_add_desc_vert -0.03 -0.051961523 0.05
+  p3d_add_desc_vert -0.051961523 -0.03 0.05
+
+   p3d_add_desc_face  1  2  3  4  5  6  7  8  9  10  11  12  
+   p3d_add_desc_face  2  1  13  14  
+   p3d_add_desc_face  3  2  14  15  
+   p3d_add_desc_face  4  3  15  16  
+   p3d_add_desc_face  5  4  16  17  
+   p3d_add_desc_face  6  5  17  18  
+   p3d_add_desc_face  7  6  18  19  
+   p3d_add_desc_face  8  7  19  20  
+   p3d_add_desc_face  9  8  20  21  
+   p3d_add_desc_face  10  9  21  22  
+   p3d_add_desc_face  11  10  22  23  
+   p3d_add_desc_face  12  11  23  24  
+   p3d_add_desc_face  1  12  24  13  
+   p3d_add_desc_face  24  23  22  21  20  19  18  17  16  15  14  13  
+ p3d_end_desc_poly 
+
+p3d_set_prim_pos_by_mat bm.rob.arm12 1.000000 0.000000 0.000000 0 0.000000 1.000000 0.000000 6e-08 0.000000 0.000000 1.000000 1.019 0.000000 0.000000 0.000000 1.000000
+
+#BEG GHOST BOX
+  p3d_add_desc_box BB_bm.rob.arm12 0.12 0.12 0.05 P3D_GHOST
+  p3d_set_prim_pos_by_mat BB_bm.rob.arm12 1.000000 0.000000 0.000000 0 0.000000 1.000000 0.000000 6e-08 0.000000 0.000000 1.000000 1.044 0.0 0.0 0.0 1.0
+#END GHOST BOX
+
+
+p3d_add_desc_poly bm.rob.arm13  P3D_GRAPHIC
+
+  p3d_add_desc_vert -0.075 -0.045 0
+  p3d_add_desc_vert 0.075 -0.045 0
+  p3d_add_desc_vert 0.075 0.045 0
+  p3d_add_desc_vert -0.075 0.045 0
+  p3d_add_desc_vert -0.075 -0.045 0.1795
+  p3d_add_desc_vert 0.075 -0.045 0.1795
+  p3d_add_desc_vert 0.075 0.045 0.1795
+  p3d_add_desc_vert -0.075 0.045 0.1795
+ 
+   p3d_add_desc_face  1  4  3  2  
+   p3d_add_desc_face  2  6  5  1  
+   p3d_add_desc_face  5  8  4  1  
+   p3d_add_desc_face  8  7  3  4  
+   p3d_add_desc_face  7  6  2  3  
+   p3d_add_desc_face  7  8  5  6  
+
+ p3d_end_desc_poly 
+
+p3d_set_prim_pos_by_mat bm.rob.arm13 1.000000 0.000000 0.000000 0 0.000000 1.000000 0.000000 6e-08 0.000000 0.000000 1.000000 1.069 0.000000 0.000000 0.000000 1.000000
+
+#BEG GHOST BOX
+  p3d_add_desc_box BB_bm.rob.arm13 0.15 0.09 0.1795 P3D_GHOST
+  p3d_set_prim_pos_by_mat BB_bm.rob.arm13 1.000000 0.000000 0.000000 0 0.000000 1.000000 0.000000 6e-08 0.000000 0.000000 1.000000 1.15875 0.0 0.0 0.0 1.0
+#END GHOST BOX
+
+
+p3d_end_desc 
+
+p3d_add_desc_jnt P3D_ROTATE 0 0.085 1.179 0.0 1.0 0.0 90.0 0.0 145.0 1
+
+p3d_beg_desc P3D_BODY bm.rob.arm2
+
+p3d_add_desc_poly bm.rob.arm21 P3D_GRAPHIC
+
+  p3d_add_desc_vert -0.06 0 0
+  p3d_add_desc_vert -0.051961523 0.03 0
+  p3d_add_desc_vert -0.03 0.051961523 0
+  p3d_add_desc_vert 0 0.06 0
+  p3d_add_desc_vert 0.03 0.051961523 0
+  p3d_add_desc_vert 0.051961523 0.03 0
+  p3d_add_desc_vert 0.06 0 0
+  p3d_add_desc_vert 0.051961523 -0.03 0
+  p3d_add_desc_vert 0.03 -0.051961523 0
+  p3d_add_desc_vert 0 -0.06 0
+  p3d_add_desc_vert -0.03 -0.051961523 0
+  p3d_add_desc_vert -0.051961523 -0.03 0
+  p3d_add_desc_vert -0.06 0 0.04
+  p3d_add_desc_vert -0.051961523 0.03 0.04
+  p3d_add_desc_vert -0.03 0.051961523 0.04
+  p3d_add_desc_vert 0 0.06 0.04
+  p3d_add_desc_vert 0.03 0.051961523 0.04
+  p3d_add_desc_vert 0.051961523 0.03 0.04
+  p3d_add_desc_vert 0.06 0 0.04
+  p3d_add_desc_vert 0.051961523 -0.03 0.04
+  p3d_add_desc_vert 0.03 -0.051961523 0.04
+  p3d_add_desc_vert 0 -0.06 0.04
+  p3d_add_desc_vert -0.03 -0.051961523 0.04
+  p3d_add_desc_vert -0.051961523 -0.03 0.04
+ 
+   p3d_add_desc_face  1  2  3  4  5  6  7  8  9  10  11  12  
+   p3d_add_desc_face  2  1  13  14  
+   p3d_add_desc_face  3  2  14  15  
+   p3d_add_desc_face  4  3  15  16  
+   p3d_add_desc_face  5  4  16  17  
+   p3d_add_desc_face  6  5  17  18  
+   p3d_add_desc_face  7  6  18  19  
+   p3d_add_desc_face  8  7  19  20  
+   p3d_add_desc_face  9  8  20  21  
+   p3d_add_desc_face  10  9  21  22  
+   p3d_add_desc_face  11  10  22  23  
+   p3d_add_desc_face  12  11  23  24  
+   p3d_add_desc_face  1  12  24  13  
+   p3d_add_desc_face  24  23  22  21  20  19  18  17  16  15  14  13 
+  
+ p3d_end_desc_poly 
+
+p3d_set_prim_pos_by_mat bm.rob.arm21 1.000000 0.000000 0.000000 0 0.000000 0.000000 -1.000000 0.085 0.000000 1.000000 0.000000 1.179 0.000000 0.000000 0.000000 1.000000
+
+#BEG GHOST BOX
+  p3d_add_desc_box BB_bm.rob.arm21 0.12 0.12 0.04 P3D_GHOST
+  p3d_set_prim_pos_by_mat BB_bm.rob.arm21 1.000000 0.000000 0.000000 0 0.000000 0.000000 -1.000000 0.065 0.000000 1.000000 0.000000 1.179 0.0 0.0 0.0 1.0
+#END GHOST BOX
+
+
+p3d_add_desc_poly bm.rob.arm22  P3D_GRAPHIC
+
+  p3d_add_desc_vert -0.07 -0.025 0
+  p3d_add_desc_vert 0.07 -0.025 0
+  p3d_add_desc_vert 0.07 0.025 0
+  p3d_add_desc_vert -0.07 0.025 0
+  p3d_add_desc_vert -0.07 -0.025 0.73
+  p3d_add_desc_vert 0.07 -0.025 0.73
+  p3d_add_desc_vert 0.07 0.025 0.73
+  p3d_add_desc_vert -0.07 0.025 0.73
+
+   p3d_add_desc_face  1  4  3  2  
+   p3d_add_desc_face  2  6  5  1  
+   p3d_add_desc_face  5  8  4  1  
+   p3d_add_desc_face  8  7  3  4  
+   p3d_add_desc_face  7  6  2  3  
+   p3d_add_desc_face  7  8  5  6 
+ 
+ p3d_end_desc_poly 
+
+p3d_set_prim_pos_by_mat bm.rob.arm22 1.000000 0.000000 0.000000 0 0.000000 1.000000 0.000000 0.135 0.000000 0.000000 1.000000 0.914 0.000000 0.000000 0.000000 1.000000
+
+#BEG GHOST BOX
+  p3d_add_desc_box BB_bm.rob.arm22 0.14 0.05 0.73 P3D_GHOST
+  p3d_set_prim_pos_by_mat BB_bm.rob.arm22 1.000000 0.000000 0.000000 0 0.000000 1.000000 0.000000 0.135 0.000000 0.000000 1.000000 1.279 0.0 0.0 0.0 1.0
+#END GHOST BOX
+
+
+p3d_add_desc_poly bm.rob.arm23  P3D_GRAPHIC
+
+  p3d_add_desc_vert -0.07 -0.0147 0
+  p3d_add_desc_vert 0.07 -0.0147 0
+  p3d_add_desc_vert 0.07 0.0147 0
+  p3d_add_desc_vert -0.07 0.0147 0
+  p3d_add_desc_vert -0.07 -0.0147 0.73
+  p3d_add_desc_vert 0.07 -0.0147 0.73
+  p3d_add_desc_vert 0.07 0.0147 0.73
+  p3d_add_desc_vert -0.07 0.0147 0.73
+ 
+   p3d_add_desc_face  1  4  3  2  
+   p3d_add_desc_face  2  6  5  1  
+   p3d_add_desc_face  5  8  4  1  
+   p3d_add_desc_face  8  7  3  4  
+   p3d_add_desc_face  7  6  2  3  
+   p3d_add_desc_face  7  8  5  6  
+
+ p3d_end_desc_poly 
+
+p3d_set_prim_pos_by_mat bm.rob.arm23 1.000000 0.000000 0.000000 0 0.000000 1.000000 0.000000 0.1026 0.000000 0.000000 1.000000 0.914 0.000000 0.000000 0.000000 1.000000
+
+#BEG GHOST BOX
+  p3d_add_desc_box BB_bm.rob.arm23 0.14 0.0294 0.73 P3D_GHOST
+  p3d_set_prim_pos_by_mat BB_bm.rob.arm23 1.000000 0.000000 0.000000 0 0.000000 1.000000 0.000000 0.1026 0.000000 0.000000 1.000000 1.279 0.0 0.0 0.0 1.0
+#END GHOST BOX
+
+
+p3d_add_desc_poly bm.rob.arm24 P3D_GRAPHIC
+
+  p3d_add_desc_vert -0.07 0 0
+  p3d_add_desc_vert -0.060621777 0.035 0
+  p3d_add_desc_vert -0.035 0.060621777 0
+  p3d_add_desc_vert 0 0.07 0
+  p3d_add_desc_vert 0.035 0.060621777 0
+  p3d_add_desc_vert 0.060621777 0.035 0
+  p3d_add_desc_vert 0.07 0 0
+  p3d_add_desc_vert 0.060621777 -0.035 0
+  p3d_add_desc_vert 0.035 -0.060621777 0
+  p3d_add_desc_vert 0 -0.07 0
+  p3d_add_desc_vert -0.035 -0.060621777 0
+  p3d_add_desc_vert -0.060621777 -0.035 0
+  p3d_add_desc_vert -0.07 0 0.1
+  p3d_add_desc_vert -0.060621777 0.035 0.1
+  p3d_add_desc_vert -0.035 0.060621777 0.1
+  p3d_add_desc_vert 0 0.07 0.1
+  p3d_add_desc_vert 0.035 0.060621777 0.1
+  p3d_add_desc_vert 0.060621777 0.035 0.1
+  p3d_add_desc_vert 0.07 0 0.1
+  p3d_add_desc_vert 0.060621777 -0.035 0.1
+  p3d_add_desc_vert 0.035 -0.060621777 0.1
+  p3d_add_desc_vert 0 -0.07 0.1
+  p3d_add_desc_vert -0.035 -0.060621777 0.1
+  p3d_add_desc_vert -0.060621777 -0.035 0.1
+
+   p3d_add_desc_face  1  2  3  4  5  6  7  8  9  10  11  12  
+   p3d_add_desc_face  2  1  13  14  
+   p3d_add_desc_face  3  2  14  15  
+   p3d_add_desc_face  4  3  15  16  
+   p3d_add_desc_face  5  4  16  17  
+   p3d_add_desc_face  6  5  17  18  
+   p3d_add_desc_face  7  6  18  19  
+   p3d_add_desc_face  8  7  19  20  
+   p3d_add_desc_face  9  8  20  21  
+   p3d_add_desc_face  10  9  21  22  
+   p3d_add_desc_face  11  10  22  23  
+   p3d_add_desc_face  12  11  23  24  
+   p3d_add_desc_face  1  12  24  13  
+   p3d_add_desc_face  24  23  22  21  20  19  18  17  16  15  14  13 
+ 
+ p3d_end_desc_poly
+
+ p3d_set_prim_pos_by_mat bm.rob.arm24 1.000000 0.000000 0.000000 0 0.000000 0.000000 1.000000 0.11 0.000000 -1.000000 0.000000 0.914 0.000000 0.000000 0.000000 1.000000
+
+ #BEG GHOST BOX
+   p3d_add_desc_box BB_bm.rob.arm24 0.14 0.14 0.1 P3D_GHOST
+   p3d_set_prim_pos_by_mat BB_bm.rob.arm24 1.000000 0.000000 0.000000 0 0.000000 0.000000 1.000000 0.16 0.000000 -1.000000 0.000000 0.914 0.0 0.0 0.0 1.0
+ #END GHOST BOX
+
+
+p3d_add_desc_poly bm.rob.arm25  P3D_GRAPHIC
+
+  p3d_add_desc_vert -0.07 0 0
+  p3d_add_desc_vert -0.060621777 0.035 0
+  p3d_add_desc_vert -0.035 0.060621777 0
+  p3d_add_desc_vert 0 0.07 0
+  p3d_add_desc_vert 0.035 0.060621777 0
+  p3d_add_desc_vert 0.060621777 0.035 0
+  p3d_add_desc_vert 0.07 0 0
+  p3d_add_desc_vert 0.060621777 -0.035 0
+  p3d_add_desc_vert 0.035 -0.060621777 0
+  p3d_add_desc_vert 0 -0.07 0
+  p3d_add_desc_vert -0.035 -0.060621777 0
+  p3d_add_desc_vert -0.060621777 -0.035 0
+  p3d_add_desc_vert -0.07 0 0.0294
+  p3d_add_desc_vert -0.060621777 0.035 0.0294
+  p3d_add_desc_vert -0.035 0.060621777 0.0294
+  p3d_add_desc_vert 0 0.07 0.0294
+  p3d_add_desc_vert 0.035 0.060621777 0.0294
+  p3d_add_desc_vert 0.060621777 0.035 0.0294
+  p3d_add_desc_vert 0.07 0 0.0294
+  p3d_add_desc_vert 0.060621777 -0.035 0.0294
+  p3d_add_desc_vert 0.035 -0.060621777 0.0294
+  p3d_add_desc_vert 0 -0.07 0.0294
+  p3d_add_desc_vert -0.035 -0.060621777 0.0294
+  p3d_add_desc_vert -0.060621777 -0.035 0.0294
+
+   p3d_add_desc_face  1  2  3  4  5  6  7  8  9  10  11  12  
+   p3d_add_desc_face  2  1  13  14  
+   p3d_add_desc_face  3  2  14  15  
+   p3d_add_desc_face  4  3  15  16  
+   p3d_add_desc_face  5  4  16  17  
+   p3d_add_desc_face  6  5  17  18  
+   p3d_add_desc_face  7  6  18  19  
+   p3d_add_desc_face  8  7  19  20  
+   p3d_add_desc_face  9  8  20  21  
+   p3d_add_desc_face  10  9  21  22  
+   p3d_add_desc_face  11  10  22  23  
+   p3d_add_desc_face  12  11  23  24  
+   p3d_add_desc_face  1  12  24  13  
+   p3d_add_desc_face  24  23  22  21  20  19  18  17  16  15  14  13  
+
+ p3d_end_desc_poly 
+
+p3d_set_prim_pos_by_mat bm.rob.arm25 1.000000 0.000000 0.000000 0 0.000000 0.000000 1.000000 0.0806 0.000000 -1.000000 0.000000 0.914 0.000000 0.000000 0.000000 1.000000
+
+#BEG GHOST BOX
+  p3d_add_desc_box BB_bm.rob.arm25 0.14 0.14 0.0294 P3D_GHOST
+  p3d_set_prim_pos_by_mat BB_bm.rob.arm25 1.000000 0.000000 0.000000 0 0.000000 0.000000 1.000000 0.0953 0.000000 -1.000000 0.000000 0.914 0.0 0.0 0.0 1.0
+#END GHOST BOX
+
+
+p3d_add_desc_poly bm.rob.arm26  P3D_GRAPHIC
+
+  p3d_add_desc_vert -0.07 0 0
+  p3d_add_desc_vert -0.060621777 0.035 0
+  p3d_add_desc_vert -0.035 0.060621777 0
+  p3d_add_desc_vert 0 0.07 0
+  p3d_add_desc_vert 0.035 0.060621777 0
+  p3d_add_desc_vert 0.060621777 0.035 0
+  p3d_add_desc_vert 0.07 0 0
+  p3d_add_desc_vert 0.060621777 -0.035 0
+  p3d_add_desc_vert 0.035 -0.060621777 0
+  p3d_add_desc_vert 0 -0.07 0
+  p3d_add_desc_vert -0.035 -0.060621777 0
+  p3d_add_desc_vert -0.060621777 -0.035 0
+  p3d_add_desc_vert -0.07 0 0.05
+  p3d_add_desc_vert -0.060621777 0.035 0.05
+  p3d_add_desc_vert -0.035 0.060621777 0.05
+  p3d_add_desc_vert 0 0.07 0.05
+  p3d_add_desc_vert 0.035 0.060621777 0.05
+  p3d_add_desc_vert 0.060621777 0.035 0.05
+  p3d_add_desc_vert 0.07 0 0.05
+  p3d_add_desc_vert 0.060621777 -0.035 0.05
+  p3d_add_desc_vert 0.035 -0.060621777 0.05
+  p3d_add_desc_vert 0 -0.07 0.05
+  p3d_add_desc_vert -0.035 -0.060621777 0.05
+  p3d_add_desc_vert -0.060621777 -0.035 0.05
+
+   p3d_add_desc_face  1  2  3  4  5  6  7  8  9  10  11  12  
+   p3d_add_desc_face  2  1  13  14  
+   p3d_add_desc_face  3  2  14  15  
+   p3d_add_desc_face  4  3  15  16  
+   p3d_add_desc_face  5  4  16  17  
+   p3d_add_desc_face  6  5  17  18  
+   p3d_add_desc_face  7  6  18  19  
+   p3d_add_desc_face  8  7  19  20  
+   p3d_add_desc_face  9  8  20  21  
+   p3d_add_desc_face  10  9  21  22  
+   p3d_add_desc_face  11  10  22  23  
+   p3d_add_desc_face  12  11  23  24  
+   p3d_add_desc_face  1  12  24  13  
+   p3d_add_desc_face  24  23  22  21  20  19  18  17  16  15  14  13 
+ 
+ p3d_end_desc_poly 
+
+ p3d_set_prim_pos_by_mat bm.rob.arm26 1.000000 0.000000 0.000000 0 0.000000 0.000000 1.000000 0.11 0.000000 -1.000000 0.000000 1.644 0.000000 0.000000 0.000000 1.000000
+
+ #BEG GHOST BOX
+   p3d_add_desc_box BB_bm.rob.arm26 0.14 0.14 0.05 P3D_GHOST
+   p3d_set_prim_pos_by_mat BB_bm.rob.arm26 1.000000 0.000000 0.000000 0 0.000000 0.000000 1.000000 0.135 0.000000 -1.000000 0.000000 1.644 0.0 0.0 0.0 1.0
+ #END GHOST BOX
+
+
+p3d_add_desc_poly bm.rob.arm27 P3D_GRAPHIC
+
+  p3d_add_desc_vert -0.07 0 0
+  p3d_add_desc_vert -0.060621777 0.035 0
+  p3d_add_desc_vert -0.035 0.060621777 0
+  p3d_add_desc_vert 0 0.07 0
+  p3d_add_desc_vert 0.035 0.060621777 0
+  p3d_add_desc_vert 0.060621777 0.035 0
+  p3d_add_desc_vert 0.07 0 0
+  p3d_add_desc_vert 0.060621777 -0.035 0
+  p3d_add_desc_vert 0.035 -0.060621777 0
+  p3d_add_desc_vert 0 -0.07 0
+  p3d_add_desc_vert -0.035 -0.060621777 0
+  p3d_add_desc_vert -0.060621777 -0.035 0
+  p3d_add_desc_vert -0.07 0 0.0294
+  p3d_add_desc_vert -0.060621777 0.035 0.0294
+  p3d_add_desc_vert -0.035 0.060621777 0.0294
+  p3d_add_desc_vert 0 0.07 0.0294
+  p3d_add_desc_vert 0.035 0.060621777 0.0294
+  p3d_add_desc_vert 0.060621777 0.035 0.0294
+  p3d_add_desc_vert 0.07 0 0.0294
+  p3d_add_desc_vert 0.060621777 -0.035 0.0294
+  p3d_add_desc_vert 0.035 -0.060621777 0.0294
+  p3d_add_desc_vert 0 -0.07 0.0294
+  p3d_add_desc_vert -0.035 -0.060621777 0.0294
+  p3d_add_desc_vert -0.060621777 -0.035 0.0294
+
+   p3d_add_desc_face  1  2  3  4  5  6  7  8  9  10  11  12  
+   p3d_add_desc_face  2  1  13  14  
+   p3d_add_desc_face  3  2  14  15  
+   p3d_add_desc_face  4  3  15  16  
+   p3d_add_desc_face  5  4  16  17  
+   p3d_add_desc_face  6  5  17  18  
+   p3d_add_desc_face  7  6  18  19  
+   p3d_add_desc_face  8  7  19  20  
+   p3d_add_desc_face  9  8  20  21  
+   p3d_add_desc_face  10  9  21  22  
+   p3d_add_desc_face  11  10  22  23  
+   p3d_add_desc_face  12  11  23  24  
+   p3d_add_desc_face  1  12  24  13  
+   p3d_add_desc_face  24  23  22  21  20  19  18  17  16  15  14  13 
+ 
+ p3d_end_desc_poly 
+
+p3d_set_prim_pos_by_mat bm.rob.arm27 1.000000 0.000000 0.000000 0 0.000000 0.000000 1.000000 0.0806 0.000000 -1.000000 0.000000 1.644 0.000000 0.000000 0.000000 1.000000
+
+#BEG GHOST BOX
+  p3d_add_desc_box BB_bm.rob.arm27 0.14 0.14 0.0294 P3D_GHOST
+  p3d_set_prim_pos_by_mat BB_bm.rob.arm27 1.000000 0.000000 0.000000 0 0.000000 0.000000 1.000000 0.0953 0.000000 -1.000000 0.000000 1.644 0.0 0.0 0.0 1.0
+#END GHOST BOX
+
+
+p3d_end_desc
+
+p3d_add_desc_jnt P3D_ROTATE 0 0.045 1.644 0.0 1.0 0.0 90.0 -60.0 145.0 2
+
+p3d_beg_desc P3D_BODY bm.rob.arm3
+
+p3d_add_desc_poly bm.rob.arm31 P3D_GRAPHIC
+
+  p3d_add_desc_vert -0.06 0 0
+  p3d_add_desc_vert -0.051961523 0.03 0
+  p3d_add_desc_vert -0.03 0.051961523 0
+  p3d_add_desc_vert 0 0.06 0
+  p3d_add_desc_vert 0.03 0.051961523 0
+  p3d_add_desc_vert 0.051961523 0.03 0
+  p3d_add_desc_vert 0.06 0 0
+  p3d_add_desc_vert 0.051961523 -0.03 0
+  p3d_add_desc_vert 0.03 -0.051961523 0
+  p3d_add_desc_vert 0 -0.06 0
+  p3d_add_desc_vert -0.03 -0.051961523 0
+  p3d_add_desc_vert -0.051961523 -0.03 0
+  p3d_add_desc_vert -0.06 0 0.03
+  p3d_add_desc_vert -0.051961523 0.03 0.03
+  p3d_add_desc_vert -0.03 0.051961523 0.03
+  p3d_add_desc_vert 0 0.06 0.03
+  p3d_add_desc_vert 0.03 0.051961523 0.03
+  p3d_add_desc_vert 0.051961523 0.03 0.03
+  p3d_add_desc_vert 0.06 0 0.03
+  p3d_add_desc_vert 0.051961523 -0.03 0.03
+  p3d_add_desc_vert 0.03 -0.051961523 0.03
+  p3d_add_desc_vert 0 -0.06 0.03
+  p3d_add_desc_vert -0.03 -0.051961523 0.03
+  p3d_add_desc_vert -0.051961523 -0.03 0.03
+ 
+   p3d_add_desc_face  1  2  3  4  5  6  7  8  9  10  11  12  
+   p3d_add_desc_face  2  1  13  14  
+   p3d_add_desc_face  3  2  14  15  
+   p3d_add_desc_face  4  3  15  16  
+   p3d_add_desc_face  5  4  16  17  
+   p3d_add_desc_face  6  5  17  18  
+   p3d_add_desc_face  7  6  18  19  
+   p3d_add_desc_face  8  7  19  20  
+   p3d_add_desc_face  9  8  20  21  
+   p3d_add_desc_face  10  9  21  22  
+   p3d_add_desc_face  11  10  22  23  
+   p3d_add_desc_face  12  11  23  24  
+   p3d_add_desc_face  1  12  24  13  
+   p3d_add_desc_face  24  23  22  21  20  19  18  17  16  15  14  13  
+
+ p3d_end_desc_poly 
+
+p3d_set_prim_pos_by_mat bm.rob.arm31 1.000000 0.000000 0.000000 0 0.000000 0.000000 1.000000 0.045 0.000000 -1.000000 0.000000 1.644 0.000000 0.000000 0.000000 1.000000
+
+#BEG GHOST BOX
+  p3d_add_desc_box BB_bm.rob.arm31 0.12 0.12 0.03 P3D_GHOST
+  p3d_set_prim_pos_by_mat BB_bm.rob.arm31 1.000000 0.000000 0.000000 0 0.000000 0.000000 1.000000 0.06 0.000000 -1.000000 0.000000 1.644 0.0 0.0 0.0 1.0
+#END GHOST BOX
+
+
+p3d_add_desc_poly bm.rob.arm32  P3D_GRAPHIC
+
+  p3d_add_desc_vert -0.065 0 0
+  p3d_add_desc_vert -0.05629165 0.0325 0
+  p3d_add_desc_vert -0.0325 0.05629165 0
+  p3d_add_desc_vert 0 0.065 0
+  p3d_add_desc_vert 0.0325 0.05629165 0
+  p3d_add_desc_vert 0.05629165 0.0325 0
+  p3d_add_desc_vert 0.065 0 0
+  p3d_add_desc_vert 0.05629165 -0.0325 0
+  p3d_add_desc_vert 0.0325 -0.05629165 0
+  p3d_add_desc_vert 0 -0.065 0
+  p3d_add_desc_vert -0.0325 -0.05629165 0
+  p3d_add_desc_vert -0.05629165 -0.0325 0
+  p3d_add_desc_vert -0.065 0 0.09
+  p3d_add_desc_vert -0.05629165 0.0325 0.09
+  p3d_add_desc_vert -0.0325 0.05629165 0.09
+  p3d_add_desc_vert 0 0.065 0.09
+  p3d_add_desc_vert 0.0325 0.05629165 0.09
+  p3d_add_desc_vert 0.05629165 0.0325 0.09
+  p3d_add_desc_vert 0.065 0 0.09
+  p3d_add_desc_vert 0.05629165 -0.0325 0.09
+  p3d_add_desc_vert 0.0325 -0.05629165 0.09
+  p3d_add_desc_vert 0 -0.065 0.09
+  p3d_add_desc_vert -0.0325 -0.05629165 0.09
+  p3d_add_desc_vert -0.05629165 -0.0325 0.09
+
+   p3d_add_desc_face  1  2  3  4  5  6  7  8  9  10  11  12  
+   p3d_add_desc_face  2  1  13  14  
+   p3d_add_desc_face  3  2  14  15  
+   p3d_add_desc_face  4  3  15  16  
+   p3d_add_desc_face  5  4  16  17  
+   p3d_add_desc_face  6  5  17  18  
+   p3d_add_desc_face  7  6  18  19  
+   p3d_add_desc_face  8  7  19  20  
+   p3d_add_desc_face  9  8  20  21  
+   p3d_add_desc_face  10  9  21  22  
+   p3d_add_desc_face  11  10  22  23  
+   p3d_add_desc_face  12  11  23  24  
+   p3d_add_desc_face  1  12  24  13  
+   p3d_add_desc_face  24  23  22  21  20  19  18  17  16  15  14  13  
+
+ p3d_end_desc_poly 
+
+p3d_set_prim_pos_by_mat bm.rob.arm32 1.000000 0.000000 0.000000 0 0.000000 0.000000 1.000000 -0.044999939 0.000000 -1.000000 0.000000 1.644 0.000000 0.000000 0.000000 1.000000
+
+#BEG GHOST BOX
+  p3d_add_desc_box BB_bm.rob.arm32 0.13 0.13 0.09 P3D_GHOST
+  p3d_set_prim_pos_by_mat BB_bm.rob.arm32 1.000000 0.000000 0.000000 0 0.000000 0.000000 1.000000 6.10000000023092e-08 0.000000 -1.000000 0.000000 1.644 0.0 0.0 0.0 1.0
+#END GHOST BOX
+
+
+p3d_add_desc_poly bm.rob.arm33 P3D_GRAPHIC
+
+  p3d_add_desc_vert -0.0315 0 0
+  p3d_add_desc_vert -0.0272798 0.01575 0
+  p3d_add_desc_vert -0.01575 0.0272798 0
+  p3d_add_desc_vert 0 0.0315 0
+  p3d_add_desc_vert 0.01575 0.0272798 0
+  p3d_add_desc_vert 0.0272798 0.01575 0
+  p3d_add_desc_vert 0.0315 0 0
+  p3d_add_desc_vert 0.0272798 -0.01575 0
+  p3d_add_desc_vert 0.01575 -0.0272798 0
+  p3d_add_desc_vert 0 -0.0315 0
+  p3d_add_desc_vert -0.01575 -0.0272798 0
+  p3d_add_desc_vert -0.0272798 -0.01575 0
+  p3d_add_desc_vert -0.0315 0 0.47
+  p3d_add_desc_vert -0.0272798 0.01575 0.47
+  p3d_add_desc_vert -0.01575 0.0272798 0.47
+  p3d_add_desc_vert 0 0.0315 0.47
+  p3d_add_desc_vert 0.01575 0.0272798 0.47
+  p3d_add_desc_vert 0.0272798 0.01575 0.47
+  p3d_add_desc_vert 0.0315 0 0.47
+  p3d_add_desc_vert 0.0272798 -0.01575 0.47
+  p3d_add_desc_vert 0.01575 -0.0272798 0.47
+  p3d_add_desc_vert 0 -0.0315 0.47
+  p3d_add_desc_vert -0.01575 -0.0272798 0.47
+  p3d_add_desc_vert -0.0272798 -0.01575 0.47
+
+   p3d_add_desc_face  1  2  3  4  5  6  7  8  9  10  11  12  
+   p3d_add_desc_face  2  1  13  14  
+   p3d_add_desc_face  3  2  14  15  
+   p3d_add_desc_face  4  3  15  16  
+   p3d_add_desc_face  5  4  16  17  
+   p3d_add_desc_face  6  5  17  18  
+   p3d_add_desc_face  7  6  18  19  
+   p3d_add_desc_face  8  7  19  20  
+   p3d_add_desc_face  9  8  20  21  
+   p3d_add_desc_face  10  9  21  22  
+   p3d_add_desc_face  11  10  22  23  
+   p3d_add_desc_face  12  11  23  24  
+   p3d_add_desc_face  1  12  24  13  
+   p3d_add_desc_face  24  23  22  21  20  19  18  17  16  15  14  13 
+ 
+ p3d_end_desc_poly 
+
+p3d_set_prim_pos_by_mat bm.rob.arm33 1.000000 0.000000 0.000000 0 0.000000 1.000000 0.000000 -0.00499994 0.000000 0.000000 1.000000 1.524 0.000000 0.000000 0.000000 1.000000
+
+#BEG GHOST BOX
+  p3d_add_desc_box BB_bm.rob.arm33 0.063 0.063 0.47 P3D_GHOST
+  p3d_set_prim_pos_by_mat BB_bm.rob.arm33 1.000000 0.000000 0.000000 0 0.000000 1.000000 0.000000 -0.00499994 0.000000 0.000000 1.000000 1.759 0.0 0.0 0.0 1.0
+#END GHOST BOX
+
+
+p3d_end_desc 
+
+p3d_add_desc_jnt P3D_ROTATE 0 -0.005 1.994 0.0 0.0 1.0 0.0 -90.0 90.0 3
+
+p3d_beg_desc P3D_BODY bm.rob.arm4
+
+p3d_add_desc_poly bm.rob.arm41  P3D_GRAPHIC
+
+  p3d_add_desc_vert -0.035 -0.005 0
+  p3d_add_desc_vert 0.035 -0.005 0
+  p3d_add_desc_vert 0.035 0.005 0
+  p3d_add_desc_vert -0.035 0.005 0
+  p3d_add_desc_vert -0.035 -0.005 0.07
+  p3d_add_desc_vert 0.035 -0.005 0.07
+  p3d_add_desc_vert 0.035 0.005 0.07
+  p3d_add_desc_vert -0.035 0.005 0.07
+ 
+   p3d_add_desc_face  1  4  3  2  
+   p3d_add_desc_face  2  6  5  1  
+   p3d_add_desc_face  5  8  4  1  
+   p3d_add_desc_face  8  7  3  4  
+   p3d_add_desc_face  7  6  2  3  
+   p3d_add_desc_face  7  8  5  6 
+ 
+ p3d_end_desc_poly 
+
+p3d_set_prim_pos_by_mat bm.rob.arm41 1.000000 0.000000 0.000000 0 0.000000 1.000000 0.000000 0.030000061 0.000000 0.000000 1.000000 1.999 0.000000 0.000000 0.000000 1.000000
+
+#BEG GHOST BOX
+  p3d_add_desc_box BB_bm.rob.arm41 0.07 0.01 0.07 P3D_GHOST
+  p3d_set_prim_pos_by_mat BB_bm.rob.arm41 1.000000 0.000000 0.000000 0 0.000000 1.000000 0.000000 0.030000061 0.000000 0.000000 1.000000 2.034 0.0 0.0 0.0 1.0
+#END GHOST BOX
+
+
+p3d_add_desc_poly bm.rob.arm42  P3D_GRAPHIC
+
+  p3d_add_desc_vert -0.035 -0.035 0
+  p3d_add_desc_vert 0.035 -0.035 0
+  p3d_add_desc_vert 0.035 0.035 0
+  p3d_add_desc_vert -0.035 0.035 0
+  p3d_add_desc_vert -0.035 -0.035 0.01
+  p3d_add_desc_vert 0.035 -0.035 0.01
+  p3d_add_desc_vert 0.035 0.035 0.01
+  p3d_add_desc_vert -0.035 0.035 0.01
+
+   p3d_add_desc_face  1  4  3  2  
+   p3d_add_desc_face  2  6  5  1  
+   p3d_add_desc_face  5  8  4  1  
+   p3d_add_desc_face  8  7  3  4  
+   p3d_add_desc_face  7  6  2  3  
+   p3d_add_desc_face  7  8  5  6  
+
+ p3d_end_desc_poly 
+
+p3d_set_prim_pos_by_mat bm.rob.arm42 1.000000 0.000000 0.000000 0 0.000000 1.000000 0.000000 6e-08 0.000000 0.000000 1.000000 1.999 0.000000 0.000000 0.000000 1.000000
+
+#BEG GHOST BOX
+  p3d_add_desc_box BB_bm.rob.arm42 0.07 0.07 0.01 P3D_GHOST
+  p3d_set_prim_pos_by_mat BB_bm.rob.arm42 1.000000 0.000000 0.000000 0 0.000000 1.000000 0.000000 6e-08 0.000000 0.000000 1.000000 2.004 0.0 0.0 0.0 1.0
+#END GHOST BOX
+
+
+p3d_end_desc
+
+p3d_add_desc_jnt P3D_ROTATE 0 0.025 2.039 0.0 -1.0 0.0 0.0 -90.0 90.0 4
+
+p3d_beg_desc P3D_BODY bm.rob.arm5
+
+p3d_add_desc_poly bm.rob.arm51  P3D_GRAPHIC
+
+  p3d_add_desc_vert -0.0315 0 0
+  p3d_add_desc_vert -0.0272798 0.01575 0
+  p3d_add_desc_vert -0.01575 0.0272798 0
+  p3d_add_desc_vert 0 0.0315 0
+  p3d_add_desc_vert 0.01575 0.0272798 0
+  p3d_add_desc_vert 0.0272798 0.01575 0
+  p3d_add_desc_vert 0.0315 0 0
+  p3d_add_desc_vert 0.0272798 -0.01575 0
+  p3d_add_desc_vert 0.01575 -0.0272798 0
+  p3d_add_desc_vert 0 -0.0315 0
+  p3d_add_desc_vert -0.01575 -0.0272798 0
+  p3d_add_desc_vert -0.0272798 -0.01575 0
+  p3d_add_desc_vert -0.0315 0 0.13
+  p3d_add_desc_vert -0.0272798 0.01575 0.13
+  p3d_add_desc_vert -0.01575 0.0272798 0.13
+  p3d_add_desc_vert 0 0.0315 0.13
+  p3d_add_desc_vert 0.01575 0.0272798 0.13
+  p3d_add_desc_vert 0.0272798 0.01575 0.13
+  p3d_add_desc_vert 0.0315 0 0.13
+  p3d_add_desc_vert 0.0272798 -0.01575 0.13
+  p3d_add_desc_vert 0.01575 -0.0272798 0.13
+  p3d_add_desc_vert 0 -0.0315 0.13
+  p3d_add_desc_vert -0.01575 -0.0272798 0.13
+  p3d_add_desc_vert -0.0272798 -0.01575 0.13
+
+   p3d_add_desc_face  1  2  3  4  5  6  7  8  9  10  11  12  
+   p3d_add_desc_face  2  1  13  14  
+   p3d_add_desc_face  3  2  14  15  
+   p3d_add_desc_face  4  3  15  16  
+   p3d_add_desc_face  5  4  16  17  
+   p3d_add_desc_face  6  5  17  18  
+   p3d_add_desc_face  7  6  18  19  
+   p3d_add_desc_face  8  7  19  20  
+   p3d_add_desc_face  9  8  20  21  
+   p3d_add_desc_face  10  9  21  22  
+   p3d_add_desc_face  11  10  22  23  
+   p3d_add_desc_face  12  11  23  24  
+   p3d_add_desc_face  1  12  24  13  
+   p3d_add_desc_face  24  23  22  21  20  19  18  17  16  15  14  13  
+
+ p3d_end_desc_poly 
+
+p3d_set_prim_pos_by_mat bm.rob.arm51 1.000000 0.000000 0.000000 0 0.000000 0.000000 1.000000 -0.104999939 0.000000 -1.000000 0.000000 2.039 0.000000 0.000000 0.000000 1.000000
+
+#BEG GHOST BOX
+  p3d_add_desc_box BB_bm.rob.arm51 0.063 0.063 0.13 P3D_GHOST
+  p3d_set_prim_pos_by_mat BB_bm.rob.arm51 1.000000 0.000000 0.000000 0 0.000000 0.000000 1.000000 -0.039999939 0.000000 -1.000000 0.000000 2.039 0.0 0.0 0.0 1.0
+#END GHOST BOX
+
+
+p3d_add_desc_poly bm.rob.arm52  P3D_GRAPHIC
+
+  p3d_add_desc_vert -0.0315 0 0
+  p3d_add_desc_vert -0.0272798 0.01575 0
+  p3d_add_desc_vert -0.01575 0.0272798 0
+  p3d_add_desc_vert 0 0.0315 0
+  p3d_add_desc_vert 0.01575 0.0272798 0
+  p3d_add_desc_vert 0.0272798 0.01575 0
+  p3d_add_desc_vert 0.0315 0 0
+  p3d_add_desc_vert 0.0272798 -0.01575 0
+  p3d_add_desc_vert 0.01575 -0.0272798 0
+  p3d_add_desc_vert 0 -0.0315 0
+  p3d_add_desc_vert -0.01575 -0.0272798 0
+  p3d_add_desc_vert -0.0272798 -0.01575 0
+  p3d_add_desc_vert -0.0315 0 0.04
+  p3d_add_desc_vert -0.0272798 0.01575 0.04
+  p3d_add_desc_vert -0.01575 0.0272798 0.04
+  p3d_add_desc_vert 0 0.0315 0.04
+  p3d_add_desc_vert 0.01575 0.0272798 0.04
+  p3d_add_desc_vert 0.0272798 0.01575 0.04
+  p3d_add_desc_vert 0.0315 0 0.04
+  p3d_add_desc_vert 0.0272798 -0.01575 0.04
+  p3d_add_desc_vert 0.01575 -0.0272798 0.04
+  p3d_add_desc_vert 0 -0.0315 0.04
+  p3d_add_desc_vert -0.01575 -0.0272798 0.04
+  p3d_add_desc_vert -0.0272798 -0.01575 0.04
+
+   p3d_add_desc_face  1  2  3  4  5  6  7  8  9  10  11  12  
+   p3d_add_desc_face  2  1  13  14  
+   p3d_add_desc_face  3  2  14  15  
+   p3d_add_desc_face  4  3  15  16  
+   p3d_add_desc_face  5  4  16  17  
+   p3d_add_desc_face  6  5  17  18  
+   p3d_add_desc_face  7  6  18  19  
+   p3d_add_desc_face  8  7  19  20  
+   p3d_add_desc_face  9  8  20  21  
+   p3d_add_desc_face  10  9  21  22  
+   p3d_add_desc_face  11  10  22  23  
+   p3d_add_desc_face  12  11  23  24  
+   p3d_add_desc_face  1  12  24  13  
+   p3d_add_desc_face  24  23  22  21  20  19  18  17  16  15  14  13  
+
+ p3d_end_desc_poly 
+
+p3d_set_prim_pos_by_mat bm.rob.arm52 1.000000 0.000000 0.000000 0 0.000000 1.000000 0.000000 -0.01 0.000000 0.000000 1.000000 2.039 0.000000 0.000000 0.000000 1.000000
+
+#BEG GHOST BOX
+  p3d_add_desc_box BB_bm.rob.arm52 0.063 0.063 0.04 P3D_GHOST
+  p3d_set_prim_pos_by_mat BB_bm.rob.arm52 1.000000 0.000000 0.000000 0 0.000000 1.000000 0.000000 -0.01 0.000000 0.000000 1.000000 2.059 0.0 0.0 0.0 1.0
+#END GHOST BOX
+
+
+p3d_end_desc
+
+p3d_add_desc_jnt P3D_ROTATE 0 -0.01 2.079 0.0 0.0 1.0 0.0 -90.0 90.0 5
+
+p3d_beg_desc P3D_BODY bm.rob.arm6
+
+p3d_add_desc_poly bm.rob.arm61  P3D_GRAPHIC
+
+  p3d_add_desc_vert -0.0315 0 0
+  p3d_add_desc_vert -0.0272798 0.01575 0
+  p3d_add_desc_vert -0.01575 0.0272798 0
+  p3d_add_desc_vert 0 0.0315 0
+  p3d_add_desc_vert 0.01575 0.0272798 0
+  p3d_add_desc_vert 0.0272798 0.01575 0
+  p3d_add_desc_vert 0.0315 0 0
+  p3d_add_desc_vert 0.0272798 -0.01575 0
+  p3d_add_desc_vert 0.01575 -0.0272798 0
+  p3d_add_desc_vert 0 -0.0315 0
+  p3d_add_desc_vert -0.01575 -0.0272798 0
+  p3d_add_desc_vert -0.0272798 -0.01575 0
+  p3d_add_desc_vert -0.0315 0 0.05
+  p3d_add_desc_vert -0.0272798 0.01575 0.05
+  p3d_add_desc_vert -0.01575 0.0272798 0.05
+  p3d_add_desc_vert 0 0.0315 0.05
+  p3d_add_desc_vert 0.01575 0.0272798 0.05
+  p3d_add_desc_vert 0.0272798 0.01575 0.05
+  p3d_add_desc_vert 0.0315 0 0.05
+  p3d_add_desc_vert 0.0272798 -0.01575 0.05
+  p3d_add_desc_vert 0.01575 -0.0272798 0.05
+  p3d_add_desc_vert 0 -0.0315 0.05
+  p3d_add_desc_vert -0.01575 -0.0272798 0.05
+  p3d_add_desc_vert -0.0272798 -0.01575 0.05
+
+   p3d_add_desc_face  1  2  3  4  5  6  7  8  9  10  11  12  
+   p3d_add_desc_face  2  1  13  14  
+   p3d_add_desc_face  3  2  14  15  
+   p3d_add_desc_face  4  3  15  16  
+   p3d_add_desc_face  5  4  16  17  
+   p3d_add_desc_face  6  5  17  18  
+   p3d_add_desc_face  7  6  18  19  
+   p3d_add_desc_face  8  7  19  20  
+   p3d_add_desc_face  9  8  20  21  
+   p3d_add_desc_face  10  9  21  22  
+   p3d_add_desc_face  11  10  22  23  
+   p3d_add_desc_face  12  11  23  24  
+   p3d_add_desc_face  1  12  24  13  
+   p3d_add_desc_face  24  23  22  21  20  19  18  17  16  15  14  13  
+
+ p3d_end_desc_poly 
+
+p3d_set_prim_pos_by_mat bm.rob.arm61 1.000000 0.000000 0.000000 0 0.000000 1.000000 0.000000 -0.01 0.000000 0.000000 1.000000 2.079 0.000000 0.000000 0.000000 1.000000
+
+#BEG GHOST BOX
+  p3d_add_desc_box BB_bm.rob.arm61 0.063 0.063 0.05 P3D_GHOST
+  p3d_set_prim_pos_by_mat BB_bm.rob.arm61 1.000000 0.000000 0.000000 0 0.000000 1.000000 0.000000 -0.01 0.000000 0.000000 1.000000 2.104 0.0 0.0 0.0 1.0
+#END GHOST BOX
+
+
+p3d_end_desc
+
+p3d_add_desc_jnt P3D_TRANSLATE 0 0.02 2.124 0.0 1.0 0.0 -0.01434 -0.01434 -0.01434 6
+
+p3d_beg_desc P3D_BODY bm.rob.arm7
+
+p3d_add_desc_poly bm.rob.arm71  P3D_GRAPHIC
+
+  p3d_add_desc_vert -0.005 -0.005 0
+  p3d_add_desc_vert 0.005 -0.005 0
+  p3d_add_desc_vert 0.005 0.005 0
+  p3d_add_desc_vert -0.005 0.005 0
+  p3d_add_desc_vert -0.005 -0.005 0.08
+  p3d_add_desc_vert 0.005 -0.005 0.08
+  p3d_add_desc_vert 0.005 0.005 0.08
+  p3d_add_desc_vert -0.005 0.005 0.08
+ 
+   p3d_add_desc_face  1  4  3  2  
+   p3d_add_desc_face  2  6  5  1  
+   p3d_add_desc_face  5  8  4  1  
+   p3d_add_desc_face  8  7  3  4  
+   p3d_add_desc_face  7  6  2  3  
+   p3d_add_desc_face  7  8  5  6  
+
+ p3d_end_desc_poly 
+
+p3d_set_prim_pos_by_mat bm.rob.arm71 1.000000 0.000000 0.000000 0 0.000000 1.000000 0.000000 0.02 0.000000 0.000000 1.000000 2.124 0.000000 0.000000 0.000000 1.000000
+
+#BEG GHOST BOX
+  p3d_add_desc_box BB_bm.rob.arm71 0.01 0.01 0.08 P3D_GHOST
+  p3d_set_prim_pos_by_mat BB_bm.rob.arm71 1.000000 0.000000 0.000000 0 0.000000 1.000000 0.000000 0.02 0.000000 0.000000 1.000000 2.164 0.0 0.0 0.0 1.0
+#END GHOST BOX
+
+
+p3d_end_desc
+
+p3d_add_desc_jnt P3D_TRANSLATE 0 -0.04 2.124 0.0 1.0 0.0 0.01434 0.01434 0.01434 6
+
+p3d_beg_desc P3D_BODY bm.rob.arm8
+
+p3d_add_desc_poly bm.rob.arm81 P3D_GRAPHIC
+
+  p3d_add_desc_vert -0.005 -0.005 0
+  p3d_add_desc_vert 0.005 -0.005 0
+  p3d_add_desc_vert 0.005 0.005 0
+  p3d_add_desc_vert -0.005 0.005 0
+  p3d_add_desc_vert -0.005 -0.005 0.08
+  p3d_add_desc_vert 0.005 -0.005 0.08
+  p3d_add_desc_vert 0.005 0.005 0.08
+  p3d_add_desc_vert -0.005 0.005 0.08
+
+   p3d_add_desc_face  1  4  3  2  
+   p3d_add_desc_face  2  6  5  1  
+   p3d_add_desc_face  5  8  4  1  
+   p3d_add_desc_face  8  7  3  4  
+   p3d_add_desc_face  7  6  2  3  
+   p3d_add_desc_face  7  8  5  6  
+
+ p3d_end_desc_poly 
+
+p3d_set_prim_pos_by_mat bm.rob.arm81 1.000000 0.000000 0.000000 0 0.000000 1.000000 0.000000 -0.04 0.000000 0.000000 1.000000 2.124 0.000000 0.000000 0.000000 1.000000
+
+#BEG GHOST BOX
+  p3d_add_desc_box BB_bm.rob.arm81 0.01 0.01 0.08 P3D_GHOST
+  p3d_set_prim_pos_by_mat BB_bm.rob.arm81 1.000000 0.000000 0.000000 0 0.000000 1.000000 0.000000 -0.04 0.000000 0.000000 1.000000 2.164 0.0 0.0 0.0 1.0
+#END GHOST BOX
+
+
+p3d_add_desc_cylindre bm.rob.barre 0.01 0.4
+p3d_set_prim_pos bm.rob.barre -0.18 -0.025 2.18 0.0 90.0 0.0
+
+
+
+
+p3d_end_desc
+
+p3d_end_desc 
+
+p3d_set_body_poly_color bm.rob.arm1 3 Black
+
+p3d_set_body_poly_color bm.rob.arm2 1 Black
+p3d_set_body_poly_color bm.rob.arm2 3 Black
+p3d_set_body_poly_color bm.rob.arm2 7 Black
+p3d_set_body_poly_color bm.rob.arm2 11 Black
+
+
+p3d_set_body_poly_color bm.rob.arm3 1 Black
+p3d_set_body_poly_color bm.rob.arm3 5 Black
+
+p3d_set_body_poly_color bm.rob.arm6 1 Black
+p3d_set_body_poly_color bm.rob.arm7 1 Black
+p3d_set_body_poly_color bm.rob.arm8 1 Black
+p3d_set_body_poly_color bm.rob.arm8 3 Green
+
+
+
