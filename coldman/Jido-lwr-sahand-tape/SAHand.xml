@@ -1,0 +1,430 @@
+<!-- Schunk Anthropomorphic hand model-->
+
+<robot type="SAHand">
+<name> SAHand </name>
+<models_directory> ./bodies </models_directory>
+<joint name="root">
+    <name> root </name>
+    <type> freeflyer </type>
+    <qmin> 0 0 0  </qmin>
+    <qmax> 0.3 0.3 0.3  </qmax>
+    <q> 0 0 0 0 0 0 </q>      
+    
+    <body name="palmRight">
+    <name> palmRight </name> 
+    <file>  palmRight.obj  </file> 
+    <display> yes </display> 
+    <collision>  yes </collision>
+    <color>  0.86 0.87 0.858 1.0 </color> 
+    <texture> none </texture>
+    </body>
+
+       <body name="GpalmRight">
+    <name> GpalmRight  </name> 
+    <box>  0.08 0.15  0.2  </box>
+    <transformation>
+      <translation> 0 0 0.125 </translation>  
+    </transformation>  
+    <collision>  no  </collision>
+    <display>  no  </display>
+    <color>  1.0 1.0 0.0 1.0 </color> 
+  </body> 
+
+    <!--####################### THUMB ####################################-->    
+    <joint name="fingerJointThumbRotation">
+      <name> fingerJointThumbRotation </name>
+      <type> revolute </type>
+      <transformation>
+        <translation> -0.003  0.0271 0   </translation>
+        <YPR_angles> 0 -180 0 </YPR_angles>  
+      </transformation>    
+      <qmin> -5 </qmin>
+      <qmax> 95 </qmax>   
+ 
+      <body name="thumbBaseRight">
+        <name> thumbBaseRight </name> 
+        <file>  thumbBaseRight.obj  </file> 
+        <display> yes </display>
+    <collision>  yes </collision>
+        <color>  0.86 0.87 0.858 1.0 </color> 
+        <texture> none </texture>
+        <material> plastic </material> 
+      </body>
+    
+      <joint name="fingerJointThumbBase">
+        <name> fingerJointThumbBase </name>
+        <type> revolute </type>
+ <!--       # R= rotationY(pi/2)*rotationX(-pi/2)*rotationY(-35°)*rotationZ(0.7°);
+    # t= [ 0 ; 0.0855 ; -0.10282 ]-->
+        <transformation>
+          <translation> 0 0.0855 -0.10282 </translation>
+          <YPR_angles> 90 -125 0.7 </YPR_angles>           
+        </transformation>    
+        <qmin> -20 </qmin>
+      <qmax> 20 </qmax>   
+      
+      <body name="thumbFingerBaseRight">
+       <name> thumbFingerBaseRight </name> 
+       <file>  fingerBase.obj  </file>
+       <display> yes </display>
+    <collision>  yes </collision>
+       <color>  0.86 0.87 0.858 1.0 </color>  
+       <texture> none </texture>
+       <material> plastic </material> 
+      </body>
+
+      
+      <joint name="fingerJointThumbProx">
+        <name> fingerJointThumbProx </name>
+        <type> revolute </type>
+        <transformation>
+          <YPR_angles> 180 0 90 </YPR_angles>  
+        </transformation>        
+        <qmin> -10 </qmin>
+      <qmax> 90 </qmax>   
+      
+      <body name="thumbFingerPhaProxRight">
+        <name> thumbFingerPhaProxRight </name> 
+        <file>  fingerPhaProx.obj  </file>
+        <display> yes </display>
+    <collision>  yes </collision>
+        <color>  0.86 0.87 0.858 1.0 </color> 
+        <texture> none </texture>
+        <material> plastic </material> 
+      </body>             
+      
+      <joint name="fingerJointThumbMid">
+        <name> fingerJointThumbMid </name>
+        <type> revolute </type>
+        <transformation>
+          <translation> 0.0678 0 0  </translation>
+         </transformation>
+        <qmin> -5 </qmin>
+      <qmax> 90 </qmax>     
+      <body name="thumbFingerPhaMidRight">
+          <name> thumbFingerPhaMidRight </name> 
+          <file>  fingerPhaMid.obj  </file>
+          <display> yes </display>
+    <collision>  yes </collision>
+          <color>  0.86 0.87 0.858 1.0 </color>  
+          <texture> none </texture>
+          <material> plastic </material> 
+      </body>   
+      
+      <joint name="fingerJointThumbDist">
+        <name> fingerJointThumbDist </name>
+        <type> revolute </type>
+        <transformation>
+          <translation> 0.03 0 0  </translation>
+        </transformation>
+        <qmin> -5 </qmin>
+      <qmax> 90 </qmax>   
+      <body name="thumbFingerPhaDistRight">
+        <name> thumbFingerPhaDistRight </name> 
+        <file>  fingerPhaDist.obj  </file>
+        <display> yes </display>
+    <collision>  yes </collision>
+        <color>  0.86 0.87 0.858 1.0 </color> 
+        <texture> none </texture>
+        <material> plastic </material> 
+      </body>          
+    </joint>
+    </joint>
+    </joint>
+    </joint> 
+    </joint>
+    
+    <!--####################### FOREFINGER ####################################-->
+    <joint name="fingerJointForeBase">
+      <name> fingerJointForeBase </name>
+      <type> revolute </type>
+      <transformation>
+        <translation> -0.003  0.04025  0.15584   </translation>
+        <YPR_angles> 2.033 90 0 </YPR_angles>  
+      </transformation>       
+      <qmin> -20 </qmin>
+      <qmax> 20 </qmax>   
+
+      <body name="foreFingerBaseRight">
+        <name> foreFingerBaseRight </name> 
+        <file> fingerBase.obj  </file>
+        <display> yes </display>
+    <collision>  yes </collision>
+        <color>  0.86 0.87 0.858 1.0 </color>  
+        <texture> none </texture>
+        <material> plastic </material> 
+        <display> no </display>     
+      </body>
+      
+      <joint name="fingerJointForeProx">
+        <name> fingerJointForeProx </name>
+        <type> revolute </type>
+        <transformation>
+           <YPR_angles> 180 0 90 </YPR_angles>  
+        </transformation>
+        <qmin> -5 </qmin>
+        <qmax> 90 </qmax>   
+
+        <body name="foreFingerPhaProxRight">
+          <name> foreFingerPhaProxRight </name> 
+          <file> fingerPhaProx.obj  </file>
+          <display> yes </display>
+    <collision>  yes </collision>
+          <color>  0.86 0.87 0.858 1.0 </color>  
+          <texture> none </texture>
+          <material> plastic </material> 
+          <display> no </display>     
+        </body>         
+        
+        <joint name="fingerJointForeMid">
+          <name> fingerJointForeMid </name>
+          <type> revolute </type>
+          <transformation>
+            <translation> 0.0678 0 0  </translation>
+          </transformation>
+          <qmin> -5 </qmin>
+          <qmax> 90 </qmax>   
+
+          <body name="foreFingerPhaMidRight">
+            <name> foreFingerPhaMidRight </name> 
+            <file> fingerPhaMid.obj  </file>
+            <display> yes </display>
+    <collision>  yes </collision>
+            <color>  0.86 0.87 0.858 1.0 </color>   
+            <texture> none </texture>
+            <material> plastic </material> 
+            <display> no </display>     
+          </body>        
+          
+          <joint name="fingerJointForeDist">
+            <name> fingerJointForeDist </name>
+            <type> revolute </type>
+            <transformation>
+              <translation> 0.03 0 0  </translation>
+            </transformation>
+            <qmin> -5 </qmin>
+            <qmax> 90 </qmax>     
+            
+            <body name="foreFingerPhaDistRight">
+              <name> foreFingerPhaDistRight </name> 
+              <file> fingerPhaDist.obj  </file>
+              <display> yes </display>
+    <collision>  yes </collision>
+              <color>  0.86 0.87 0.858 1.0 </color> 
+              <texture> none </texture>
+              <material> plastic </material> 
+              <display> no </display>     
+          </body>    
+            
+          </joint>
+          </joint>
+        </joint> 
+      </joint> 
+      
+      <!--####################### MIDDLEFINGER ####################################-->    
+      <joint name="fingerJointMiddleBase">
+        <name> fingerJointMiddleBase </name>
+        <type> revolute </type>
+        <transformation>
+          <translation>  -0.003 0 0.16056  </translation>
+          <YPR_angles> 0 90 0 </YPR_angles>  
+        </transformation> 
+        <qmin> -20 </qmin>
+        <qmax> 20 </qmax>   
+        
+        <body name="middleFingerBaseRight">
+          <name> middleFingerBaseRight </name> 
+          <file> fingerBase.obj  </file>
+          <display> yes </display>
+    <collision>  yes </collision>
+          <color>  0.86 0.87 0.858 1.0 </color>  
+          <texture> none </texture>
+          <material> plastic </material>   
+        </body>
+        
+        <joint name="fingerJointMiddleProx">
+          <name> fingerJointMiddleProx </name>
+          <type> revolute </type>
+          <transformation>
+            <YPR_angles> 180 0 90 </YPR_angles>  
+          </transformation>
+          <qmin> -20 </qmin>
+          <qmax> 90 </qmax>   
+          
+          <body name="middleFingerPhaProxRight">
+            <name> middleFingerPhaProxRight </name> 
+            <file> fingerPhaProx.obj  </file>
+            <display> yes </display>
+    <collision>  yes </collision>
+            <color>  0.86 0.87 0.858 1.0 </color> 
+            <texture> none </texture>
+            <material> plastic </material> 
+          </body>  
+          
+          <joint name="fingerJointMiddleMid">
+            <name> fingerJointMiddleMid </name>
+            <type> revolute </type>
+            <transformation>
+              <translation> 0.0678 0 0  </translation>
+            </transformation>
+            <qmin> -5 </qmin>
+            <qmax> 90 </qmax>   
+            
+            <body name="middleFingerPhaMidRight">
+              <name> middleFingerPhaMidRight </name> 
+              <file> fingerPhaMid.obj  </file>
+              <display> yes </display>
+    <collision>  yes </collision>
+              <color>  0.86 0.87 0.858 1.0 </color>  
+              <texture> none </texture>
+              <material> plastic </material> 
+            </body>
+
+            <joint name="fingerJointMiddleDist">
+              <name> fingerJointMiddleDist </name>
+              <type> revolute </type>
+              <transformation>
+                <translation> 0.03 0 0  </translation>
+              </transformation>
+              <qmin> -5 </qmin>
+              <qmax> 90 </qmax>     
+              
+              <body name="middleFingerPhaDistRight">
+                <name> middleFingerPhaDistRight </name> 
+                <file> fingerPhaDist.obj  </file>
+                <display> yes </display>
+    <collision>  yes </collision>
+                <color>  0.86 0.87 0.858 1.0 </color> 
+                <texture> none </texture>
+                <material> plastic </material> 
+              </body>   
+            </joint>
+          </joint>
+        </joint> 
+      </joint>     
+      
+      
+      
+      <!--####################### RINGFINGER ####################################-->
+      <joint name="fingerJointRingBase">
+        <name> fingerJointRingBase </name>
+        <type> revolute </type>
+        <transformation>
+          <translation> -0.003  -0.04025  0.15584   </translation>
+          <YPR_angles> -1.967 90 0 </YPR_angles>   
+        </transformation>       
+        <qmin> -20 </qmin>
+        <qmax> 20 </qmax>   
+        
+        <body name="ringFingerBaseRight">
+          <name> ringFingerBaseRight </name> 
+          <file> fingerBase.obj  </file>
+          <display> yes </display>
+    <collision>  yes </collision>
+          <color>  0.86 0.87 0.858 1.0 </color>  
+          <texture> none </texture>
+          <material> plastic </material> 
+        </body>
+        
+        <joint name="fingerJointRingProx">
+          <name> fingerJointRingProx </name>
+          <type> revolute </type>
+          <transformation>
+           <YPR_angles> 180 0 90 </YPR_angles>  
+          </transformation>
+          <qmin> -20 </qmin>
+          <qmax> 90 </qmax>   
+          
+          <body name="ringFingerPhaProxRight">
+            <name> ringFingerPhaProxRight </name> 
+            <file> fingerPhaProx.obj  </file>
+            <display> yes </display>
+    <collision>  yes </collision>
+            <color>  0.86 0.87 0.858 1.0 </color> 
+            <texture> none </texture>
+            <material> plastic </material> 
+          </body>       
+          
+          <joint name="fingerJointRingMid">
+            <name> fingerJointRingMid </name>
+            <type> revolute </type>
+            <transformation>
+              <translation> 0.0678 0 0  </translation>
+            </transformation>
+            <qmin> -5 </qmin>
+            <qmax> 90 </qmax>   
+            
+            <body name="ringFingerPhaMidRight">
+              <name> ringFingerPhaMidRight </name> 
+              <file>  fingerPhaMid.obj  </file>
+              <display> yes </display>
+    <collision>  yes </collision>
+              <color>  0.86 0.87 0.858 1.0 </color>  
+              <texture> none </texture>
+              <material> plastic </material> 
+            </body>         
+            
+            <joint name="fingerJointRingDist">
+              <name> fingerJointRingDist </name>
+              <type> revolute </type>
+              <transformation>
+                <translation> 0.03 0 0  </translation>
+              </transformation>
+              <qmin> -5 </qmin>
+              <qmax> 90 </qmax>     
+              
+              <body name="ringFingerPhaDistRight">
+                <name> ringFingerPhaDistRight </name> 
+                <file> fingerPhaDist.obj  </file>
+                <display> yes </display>
+    <collision>  yes </collision>
+                <color>  0.86 0.87 0.858 1.0 </color>  
+                <texture> none </texture>
+                <material> plastic </material> 
+              </body>      
+              
+            </joint>
+          </joint>
+        </joint> 
+      </joint> 
+</joint>
+
+
+<constraint> 
+  <type> linear </type>  
+  <master> fingerJointThumbMid </master>
+  <slave> fingerJointThumbDist </slave>
+  <master_dof> 0 </master_dof>
+  <slave_dof> 0 </slave_dof>    
+  <parameters> 1 0 </parameters> 
+</constraint> 
+
+<constraint> 
+  <type> linear </type>  
+  <master> fingerJointForeMid </master>
+  <slave> fingerJointForeDist </slave>
+  <master_dof> 0 </master_dof>
+  <slave_dof> 0 </slave_dof>    
+  <parameters> 1 0 </parameters> 
+</constraint> 
+    
+<constraint> 
+  <type> linear </type>  
+  <master> fingerJointMiddleMid </master>
+  <slave> fingerJointMiddleDist </slave>
+  <master_dof> 0 </master_dof>
+  <slave_dof> 0 </slave_dof>    
+  <parameters> 1 0 </parameters> 
+</constraint> 
+
+<constraint> 
+    <type> linear </type>  
+    <master> fingerJointRingMid </master>
+    <slave> fingerJointRingDist </slave>
+    <master_dof> 0 </master_dof>
+    <slave_dof> 0 </slave_dof>    
+    <parameters> 1 0 </parameters> 
+</constraint> 
+
+
+</robot>
