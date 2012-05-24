@@ -1,172 +1,176 @@
 p3d_beg_desc P3D_ENV ADREAM
 
-
-# ************* BUILDING ***************
-
   p3d_read_macro OB_window_h22_003.macro OB_window_h22_003
-  p3d_set_obst_pos OB_window_h22_003 5.552899 -5.340157 0.992253 0.0 0.0 0.0
+  p3d_set_obst_pos OB_window_h22_003 5.558603 -5.335776 0.992164 0.0 0.0 0.0
 
   p3d_read_macro OB_window_h22_002.macro OB_window_h22_002
-  p3d_set_obst_pos OB_window_h22_002 5.545503 -1.057397 0.992253 0.0 0.0 0.0
+  p3d_set_obst_pos OB_window_h22_002 5.551207 -1.053014 0.992164 0.0 0.0 0.0
 
   p3d_read_macro OB_window_h22_001.macro OB_window_h22_001
-  p3d_set_obst_pos OB_window_h22_001 4.740496 -0.051371 0.992253 0.0 0.0 0.0
+  p3d_set_obst_pos OB_window_h22_001 4.7462 -0.046988 0.992164 0.0 0.0 0.0
 
   p3d_read_macro OB_Floor_h016_002.macro OB_Floor_h016_002
-  p3d_set_obst_pos OB_Floor_h016_002 -11.19954 14.931631 -0.020091 0.0 0.0 0.0
+  p3d_set_obst_pos OB_Floor_h016_002 -11.193838 14.936012 -0.020178 0.0 0.0 0.0
 
   p3d_read_macro OB_Floor_h016_001.macro OB_Floor_h016_001
-  p3d_set_obst_pos OB_Floor_h016_001 -12.837147 8.697196 -0.020094 0.0 0.0 0.0
+  p3d_set_obst_pos OB_Floor_h016_001 -12.831446 8.701579 -0.020184 0.0 0.0 0.0
 
   p3d_read_macro OB_door_h20_10_001.macro OB_door_h20_10_001
-  p3d_set_obst_pos OB_door_h20_10_001 -0.104455 -3.767178 -0.003445 0.0 0.0 0.0
+  p3d_set_obst_pos OB_door_h20_10_001 -0.098751 -3.762795 -0.003534 0.0 0.0 0.0
 
   p3d_read_macro OB_door_h20_9_001.macro OB_door_h20_9_001
-  p3d_set_obst_pos OB_door_h20_9_001 -0.106539 -4.489295 -0.003445 0.0 0.0 0.0
+  p3d_set_obst_pos OB_door_h20_9_001 -0.100836 -4.484912 -0.003534 0.0 0.0 0.0
 
   p3d_read_macro OB_window_h20_1_002.macro OB_window_h20_1_002
-  p3d_set_obst_pos OB_window_h20_1_002 -2.857376 8.308945 0.003533 0.0 0.0 0.0
+  p3d_set_obst_pos OB_window_h20_1_002 -2.851672 8.313329 0.003443 0.0 0.0 0.0
 
   p3d_read_macro OB_glass_wall_h20_2_001.macro OB_glass_wall_h20_2_001
-  p3d_set_obst_pos OB_glass_wall_h20_2_001 -5.372831 8.301702 0.00103 0.0 0.0 0.0
+  p3d_set_obst_pos OB_glass_wall_h20_2_001 -5.367128 8.306087 0.00094 0.0 0.0 0.0
 
   p3d_read_macro OB_window_h20_1_001.macro OB_window_h20_1_001
-  p3d_set_obst_pos OB_window_h20_1_001 -0.057101 16.885495 4e-05 0.0 0.0 0.0
+  p3d_set_obst_pos OB_window_h20_1_001 -0.051398 16.889879 -4.8e-05 0.0 0.0 0.0
 
   p3d_read_macro OB_window_h22.macro OB_window_h22
-  p3d_set_obst_pos OB_window_h22 8.213287 18.45137 0.992252 0.0 0.0 0.0
+  p3d_set_obst_pos OB_window_h22 8.21899 18.455753 0.992163 0.0 0.0 0.0
 
   p3d_read_macro OB_window_h20_2.macro OB_window_h20_2
-  p3d_set_obst_pos OB_window_h20_2 -0.064533 1.18792 0.986964 0.0 0.0 0.0
+  p3d_set_obst_pos OB_window_h20_2 -0.058829 1.192303 0.986874 0.0 0.0 0.0
 
   p3d_read_macro OB_window_h20_1.macro OB_window_h20_1
-  p3d_set_obst_pos OB_window_h20_1 -0.064532 3.714025 0.986964 0.0 0.0 0.0
+  p3d_set_obst_pos OB_window_h20_1 -0.058828 3.71841 0.986873 0.0 0.0 0.0
 
   p3d_read_macro OB_glass_wall_h20_2.macro OB_glass_wall_h20_2
-  p3d_set_obst_pos OB_glass_wall_h20_2 -0.064533 6.236164 0.00103 0.0 0.0 0.0
+  p3d_set_obst_pos OB_glass_wall_h20_2 -0.058829 6.240549 0.000939 0.0 0.0 0.0
 
   p3d_read_macro OB_glass_wall_h10.macro OB_glass_wall_h10
-  p3d_set_obst_pos OB_glass_wall_h10 -5.101072 20.266597 0.006137 0.0 0.0 0.0
+  p3d_set_obst_pos OB_glass_wall_h10 -5.09537 20.270982 0.006048 0.0 0.0 0.0
 
   p3d_read_macro OB_door_h15_2.macro OB_door_h15_2
-  p3d_set_obst_pos OB_door_h15_2 -5.322533 8.337464 -0.003446 0.0 0.0 0.0
+  p3d_set_obst_pos OB_door_h15_2 -5.31683 8.341848 -0.003536 0.0 0.0 0.0
 
   p3d_read_macro OB_door_h15_1.macro OB_door_h15_1
-  p3d_set_obst_pos OB_door_h15_1 -6.275815 7.917227 -0.003446 0.0 0.0 0.0
+  p3d_set_obst_pos OB_door_h15_1 -6.27011 7.921608 -0.003537 0.0 0.0 0.0
 
   p3d_read_macro OB_Floor_h020bis.macro OB_Floor_h020bis
-  p3d_set_obst_pos OB_Floor_h020bis 10.50475 -7.161452 -0.020087 0.0 0.0 0.0
+  p3d_set_obst_pos OB_Floor_h020bis 10.510455 -7.157069 -0.020176 0.0 0.0 0.0
 
   p3d_read_macro OB_Floor_h002.macro OB_Floor_h002
-  p3d_set_obst_pos OB_Floor_h002 1.885781 26.065406 -0.020091 0.0 0.0 0.0
+  p3d_set_obst_pos OB_Floor_h002 1.891483 26.069791 -0.02018 0.0 0.0 0.0
 
   p3d_read_macro OB_Floor_h004.macro OB_Floor_h004
-  p3d_set_obst_pos OB_Floor_h004 7.800459 24.697232 -0.020092 0.0 0.0 0.0
+  p3d_set_obst_pos OB_Floor_h004 7.806162 24.701617 -0.020181 0.0 0.0 0.0
 
   p3d_read_macro OB_Floor_h016.macro OB_Floor_h016
-  p3d_set_obst_pos OB_Floor_h016 1.874746 22.379912 -0.02009 0.0 0.0 0.0
+  p3d_set_obst_pos OB_Floor_h016 1.880449 22.384297 -0.02018 0.0 0.0 0.0
 
   p3d_read_macro OB_Floor_h023.macro OB_Floor_h023
-  p3d_set_obst_pos OB_Floor_h023 1.90785 19.726029 -0.02009 0.0 0.0 0.0
+  p3d_set_obst_pos OB_Floor_h023 1.913553 19.730413 -0.02018 0.0 0.0 0.0
 
   p3d_read_macro OB_Floor_h003.macro OB_Floor_h003
-  p3d_set_obst_pos OB_Floor_h003 8.443588 27.129448 -0.020092 0.0 0.0 0.0
+  p3d_set_obst_pos OB_Floor_h003 8.449289 27.133835 -0.02018 0.0 0.0 0.0
 
   p3d_read_macro OB_Floor_h022.macro OB_Floor_h022
-  p3d_set_obst_pos OB_Floor_h022 7.820215 21.016961 -0.020091 0.0 0.0 0.0
+  p3d_set_obst_pos OB_Floor_h022 7.825918 21.021344 -0.020181 0.0 0.0 0.0
 
   p3d_read_macro OB_Floor_h030.macro OB_Floor_h030
-  p3d_set_obst_pos OB_Floor_h030 13.475181 10.228872 -0.02009 0.0 0.0 0.0
+  p3d_set_obst_pos OB_Floor_h030 13.480886 10.233255 -0.020179 0.0 0.0 0.0
 
   p3d_read_macro OB_Cube.macro OB_Cube
-  p3d_set_obst_pos OB_Cube -2.610854 12.095482 -0.010483 0.0 0.0 0.0
+  p3d_set_obst_pos OB_Cube -2.605151 12.099866 -0.010574 0.0 0.0 0.0
 
   p3d_read_macro OB_door_h10_2.macro OB_door_h10_2
-  p3d_set_obst_pos OB_door_h10_2 -6.57484 19.703445 -0.003447 0.0 0.0 0.0
+  p3d_set_obst_pos OB_door_h10_2 -6.569137 19.70783 -0.003537 0.0 0.0 0.0
 
   p3d_read_macro OB_door_h10_1.macro OB_door_h10_1
-  p3d_set_obst_pos OB_door_h10_1 -5.436722 20.032647 -0.003447 0.0 0.0 0.0
+  p3d_set_obst_pos OB_door_h10_1 -5.431018 20.037027 -0.003537 0.0 0.0 0.0
 
   p3d_read_macro OB_door_h20_9.macro OB_door_h20_9
-  p3d_set_obst_pos OB_door_h20_9 0.098237 6.937987 -0.003446 0.0 0.0 0.0
+  p3d_set_obst_pos OB_door_h20_9 0.103941 6.942373 -0.003536 0.0 0.0 0.0
 
   p3d_read_macro OB_door_h20_10.macro OB_door_h20_10
-  p3d_set_obst_pos OB_door_h20_10 -0.044972 6.181905 -0.003446 0.0 0.0 0.0
+  p3d_set_obst_pos OB_door_h20_10 -0.039268 6.18629 -0.003536 0.0 0.0 0.0
 
   p3d_read_macro OB_door_h20_3.macro OB_door_h20_3
-  p3d_set_obst_pos OB_door_h20_3 11.377982 -4.350684 -0.003446 0.0 0.0 0.0
+  p3d_set_obst_pos OB_door_h20_3 11.383687 -4.346301 -0.003534 0.0 0.0 0.0
 
   p3d_read_macro OB_door_h20_4.macro OB_door_h20_4
-  p3d_set_obst_pos OB_door_h20_4 11.302683 -3.310946 -0.003446 0.0 0.0 0.0
+  p3d_set_obst_pos OB_door_h20_4 11.308388 -3.306563 -0.003534 0.0 0.0 0.0
 
   p3d_read_macro OB_door_h20_6.macro OB_door_h20_6
-  p3d_set_obst_pos OB_door_h20_6 11.542609 6.451448 -0.003446 0.0 0.0 0.0
+  p3d_set_obst_pos OB_door_h20_6 11.548313 6.455833 -0.003535 0.0 0.0 0.0
 
   p3d_read_macro OB_door_h20_5.macro OB_door_h20_5
-  p3d_set_obst_pos OB_door_h20_5 11.543606 5.553666 -0.003446 0.0 0.0 0.0
+  p3d_set_obst_pos OB_door_h20_5 11.549311 5.558051 -0.003535 0.0 0.0 0.0
 
   p3d_read_macro OB_door_h20_7.macro OB_door_h20_7
-  p3d_set_obst_pos OB_door_h20_7 11.540278 15.526576 -0.003447 0.0 0.0 0.0
+  p3d_set_obst_pos OB_door_h20_7 11.545981 15.53096 -0.003535 0.0 0.0 0.0
 
   p3d_read_macro OB_door_h20_8.macro OB_door_h20_8
-  p3d_set_obst_pos OB_door_h20_8 11.323208 16.497066 -0.003446 0.0 0.0 0.0
+  p3d_set_obst_pos OB_door_h20_8 11.328913 16.501449 -0.003535 0.0 0.0 0.0
 
   p3d_read_macro OB_glass_wall_h20_1.macro OB_glass_wall_h20_1
-  p3d_set_obst_pos OB_glass_wall_h20_1 11.573935 6.136554 0.00103 0.0 0.0 0.0
+  p3d_set_obst_pos OB_glass_wall_h20_1 11.57964 6.140938 0.000941 0.0 0.0 0.0
 
   p3d_read_macro OB_door_h22_2.macro OB_door_h22_2
-  p3d_set_obst_pos OB_door_h22_2 5.333201 18.479097 -4.3e-05 0.0 0.0 0.0
+  p3d_set_obst_pos OB_door_h22_2 5.338903 18.48348 -0.000134 0.0 0.0 0.0
 
   p3d_read_macro OB_door_h23_2.macro OB_door_h23_2
-  p3d_set_obst_pos OB_door_h23_2 1.170759 18.448378 -4.3e-05 0.0 0.0 0.0
+  p3d_set_obst_pos OB_door_h23_2 1.176462 18.452763 -0.000134 0.0 0.0 0.0
 
   p3d_read_macro OB_door_h21_2.macro OB_door_h21_2
-  p3d_set_obst_pos OB_door_h21_2 1.216837 -0.013814 -4.3e-05 0.0 0.0 0.0
+  p3d_set_obst_pos OB_door_h21_2 1.22254 -0.009429 -0.000132 0.0 0.0 0.0
 
   p3d_read_macro OB_door_h21_1.macro OB_door_h21_1
-  p3d_set_obst_pos OB_door_h21_1 0.354088 -0.481824 -4.2e-05 0.0 0.0 0.0
+  p3d_set_obst_pos OB_door_h21_1 0.359793 -0.477441 -0.000132 0.0 0.0 0.0
 
   p3d_read_macro OB_door_h16_1.macro OB_door_h16_1
-  p3d_set_obst_pos OB_door_h16_1 -0.196321 21.920916 -4.2e-05 0.0 0.0 0.0
+  p3d_set_obst_pos OB_door_h16_1 -0.190618 21.925301 -0.000132 0.0 0.0 0.0
 
   p3d_read_macro OB_door_h22_1.macro OB_door_h22_1
-  p3d_set_obst_pos OB_door_h22_1 4.528486 18.846139 -4.3e-05 0.0 0.0 0.0
+  p3d_set_obst_pos OB_door_h22_1 4.534189 18.850522 -0.000134 0.0 0.0 0.0
 
   p3d_read_macro OB_door_h23_1.macro OB_door_h23_1
-  p3d_set_obst_pos OB_door_h23_1 0.400375 18.824805 -4.3e-05 0.0 0.0 0.0
+  p3d_set_obst_pos OB_door_h23_1 0.406078 18.829188 -0.000134 0.0 0.0 0.0
 
   p3d_read_macro OB_Floor_h010.macro OB_Floor_h010
-  p3d_set_obst_pos OB_Floor_h010 -5.940783 16.063002 0.029705 0.0 0.0 0.0
+  p3d_set_obst_pos OB_Floor_h010 -5.935079 16.067387 0.029616 0.0 0.0 0.0
 
   p3d_read_macro OB_Floor_h020.macro OB_Floor_h020
-  p3d_set_obst_pos OB_Floor_h020 5.755825 6.088876 -0.02009 0.0 0.0 0.0
+  p3d_set_obst_pos OB_Floor_h020 5.761528 6.093259 -0.020179 0.0 0.0 0.0
 
   p3d_read_macro OB_Floor_h021.macro OB_Floor_h021
-  p3d_set_obst_pos OB_Floor_h021 2.722412 -3.184073 -0.02009 0.0 0.0 0.0
+  p3d_set_obst_pos OB_Floor_h021 2.728115 -3.179688 -0.020179 0.0 0.0 0.0
 
   p3d_read_macro OB_Floor_h006.macro OB_Floor_h006
-  p3d_set_obst_pos OB_Floor_h006 4.624568 -8.778658 -0.020089 0.0 0.0 0.0
+  p3d_set_obst_pos OB_Floor_h006 4.630273 -8.774279 -0.020181 0.0 0.0 0.0
 
   p3d_read_macro OB_door_h20_2.macro OB_door_h20_2
-  p3d_set_obst_pos OB_door_h20_2 -0.339421 14.247197 -4.3e-05 0.0 0.0 0.0
+  p3d_set_obst_pos OB_door_h20_2 -0.333718 14.25158 -0.000133 0.0 0.0 0.0
 
   p3d_read_macro OB_door_h20_1.macro OB_door_h20_1
-  p3d_set_obst_pos OB_door_h20_1 -0.177415 15.212922 -4.3e-05 0.0 0.0 0.0
+  p3d_set_obst_pos OB_door_h20_1 -0.171712 15.217306 -0.000133 0.0 0.0 0.0
 
   p3d_read_macro OB_solar_alley.macro OB_solar_alley
-  p3d_set_obst_pos OB_solar_alley 14.483955 10.215444 7.8e-05 0.0 0.0 0.0
+  p3d_set_obst_pos OB_solar_alley 14.48966 10.219825 -1.1e-05 0.0 0.0 0.0
 
   p3d_read_macro OB_door_h14.macro OB_door_h14
-  p3d_set_obst_pos OB_door_h14 -6.686155 9.801157 -4.3e-05 0.0 0.0 0.0
+  p3d_set_obst_pos OB_door_h14 -6.68045 9.805541 -0.000134 0.0 0.0 0.0
 
   p3d_read_macro OB_walls.macro OB_walls
-  p3d_set_obst_pos OB_walls -3.526784 8.691316 -0.002231 0.0 0.0 0.0
+  p3d_set_obst_pos OB_walls -3.521082 8.695699 -0.002321 0.0 0.0 0.0
 
   p3d_read_macro OB_solar_panels.macro OB_solar_panels
-  p3d_set_obst_pos OB_solar_panels 15.241182 10.183202 -0.031156 0.0 0.0 0.0
+  p3d_set_obst_pos OB_solar_panels 15.246885 10.187588 -0.031245 0.0 0.0 0.0
 
   p3d_read_macro OB_Parking.macro OB_Parking
-  p3d_set_obst_pos OB_Parking 29.186876 7.627432 -0.160678 0.0 0.0 0.0
+  p3d_set_obst_pos OB_Parking 29.192579 7.631816 -0.160768 0.0 0.0 0.0
+
+  p3d_read_macro OB_C6_plein_ext_P.macro OB_C6_plein_ext_P
+  p3d_set_obst_pos OB_C6_plein_ext_P 5.83 9.049796 -0.00018 0.0 0.0 0.0
+
+  p3d_read_macro OB_C6_plein_ext_P1.macro OB_C6_plein_ext_P1
+  p3d_set_obst_pos OB_C6_plein_ext_P1 4.818551 6.466207 -0.00018 0.0 0.0 0.0
+
 
 
 # ********** FIXED FURNITURE *********
@@ -311,7 +315,7 @@ p3d_read_macro ./Objects/MovableObstacles/TABLE_ADREAM.macro TABLE_1
 p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
 
 p3d_read_macro ./Objects/MovableObstacles/TABLE_ADREAM.macro TABLE_4
-p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
+p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 -180 180 -180 180 -180 180
 
 #p3d_read_macro ./Objects/MovableObstacles/DRAWERS.macro DRAWERS_1
 #p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180

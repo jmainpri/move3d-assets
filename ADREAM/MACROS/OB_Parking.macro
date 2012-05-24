@@ -18215,6 +18215,7 @@
       p3d_add_desc_face 1048 1047 1046
     p3d_end_desc_poly
     p3d_set_prim_pos_by_mat polyhedre69 0.812357 -0.583159 0 -22.58735 0.583159 0.812357 0 8.266074 0 0 0.999999 5.030333 0 0 0 1
+
   p3d_end_desc
 
 p3d_set_obst_poly_color 1 Any 0.7059823 0.7176471 0.6571298

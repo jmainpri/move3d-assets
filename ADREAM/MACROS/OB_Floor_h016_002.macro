@@ -18,7 +18,7 @@
       p3d_add_desc_face 2 3 6 7
       p3d_add_desc_face 6 5 8 7
     p3d_end_desc_poly
-    p3d_set_prim_pos_by_mat polyhedre4 -0.609732 -0.792607 0 0.603314 0.792607 -0.609732 0 2.487556 0 0 0.999999 0.02 0 0 0 1
+    p3d_set_prim_pos_by_mat polyhedre4 -0.609732 -0.792607 0 0.603317 0.792607 -0.609732 1e-06 2.487556 0 0 0.999999 0.019996 0 0 0 1
 
   p3d_end_desc
 
