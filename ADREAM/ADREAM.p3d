@@ -280,6 +280,9 @@ p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
 p3d_read_macro ./Objects/MovableObstacles/shelf_ikea_expedit_light.macro IKEA_SHELF_LIGHT_1
 p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
 
+p3d_read_macro ./Objects/Static/TABLE_ADREAM.macro TABLE_4
+p3d_set_jnt_dofs_min_max 1 0 11 -10 18 0 0.01 -180 180 -180 180 -180 180
+
 p3d_read_macro ./Objects/MovableObstacles/shelf_ikea_expedit_light.macro IKEA_SHELF_LIGHT_2
 p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
 
