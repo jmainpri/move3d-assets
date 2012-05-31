@@ -1,5 +1,7 @@
 p3d_beg_desc P3D_ENV ADREAM
 
+# ************* BUILDING ***************
+
   p3d_read_macro OB_window_h22_003.macro OB_window_h22_003
   p3d_set_obst_pos OB_window_h22_003 5.558603 -5.335776 0.992164 0.0 0.0 0.0
 
@@ -168,8 +170,8 @@ p3d_beg_desc P3D_ENV ADREAM
   p3d_read_macro OB_C6_plein_ext_P.macro OB_C6_plein_ext_P
   p3d_set_obst_pos OB_C6_plein_ext_P 5.83 9.049796 -0.00018 0.0 0.0 0.0
 
-  p3d_read_macro OB_C6_plein_ext_P1.macro OB_C6_plein_ext_P1
-  p3d_set_obst_pos OB_C6_plein_ext_P1 4.818551 6.466207 -0.00018 0.0 0.0 0.0
+  #p3d_read_macro OB_C6_plein_ext_P1.macro OB_C6_plein_ext_P1
+  #p3d_set_obst_pos OB_C6_plein_ext_P1 4.818551 6.466207 -0.00018 0.0 0.0 0.0
 
 
 
@@ -188,16 +190,13 @@ p3d_beg_desc P3D_ENV ADREAM
   p3d_set_obst_pos cupboard_small4 4.25 0.3 0 0.0 0.0 90.0
 
   p3d_read_macro ./Objects/Static/cupboard_tall_closed.macro cupboard_tall1
-  p3d_set_obst_pos cupboard_tall1 0.25 9.640 0 0.0 0.0 0.0
+  p3d_set_obst_pos cupboard_tall1 6.3 -6 0 0.0 0.0 90.0
 
   p3d_read_macro ./Objects/Static/cupboard_tall_closed.macro cupboard_tall2
-  p3d_set_obst_pos cupboard_tall2 6.3 -6 0 0.0 0.0 90.0
+  p3d_set_obst_pos cupboard_tall2 7.55 -6 0 0.0 0.0 90.0
 
   p3d_read_macro ./Objects/Static/cupboard_tall_closed.macro cupboard_tall3
-  p3d_set_obst_pos cupboard_tall3 7.55 -6 0 0.0 0.0 90.0
-
-  p3d_read_macro ./Objects/Static/cupboard_tall_closed.macro cupboard_tall4
-  p3d_set_obst_pos cupboard_tall4 8.8 -6 0 0.0 0.0 90.0
+  p3d_set_obst_pos cupboard_tall3 8.8 -6 0 0.0 0.0 90.0
 
   p3d_read_macro ./Objects/Static/table_adream_obs.macro table_adream_obs1
   p3d_set_obst_pos table_adream_obs1 1.84 -2.48 0 0.0 0.0 90.0
@@ -218,13 +217,13 @@ p3d_beg_desc P3D_ENV ADREAM
   p3d_set_obst_pos table_adream_obs6 1.84 -4.58 0 0.0 0.0 90.0
 
   p3d_read_macro ./Objects/Static/desk_adream_obs.macro desk_adream_obs1
-  p3d_set_obst_pos desk_adream_obs1 10 3.7 0 0.0 0.0 90.0
+  p3d_set_obst_pos desk_adream_obs1 8.6 4.1 0 0.0 0.0 90.0
 
   p3d_read_macro ./Objects/Static/desk_adream_obs.macro desk_adream_obs2
-  p3d_set_obst_pos desk_adream_obs2 9.6 4.9 0 0.0 0.0 0.0
+  p3d_set_obst_pos desk_adream_obs2 9 5.3 0 0.0 0.0 0.0
 
   p3d_read_macro ./Objects/Static/desk_adream_obs.macro desk_adream_obs3
-  p3d_set_obst_pos desk_adream_obs3 9.6 6.5 0 0.0 0.0 0.0
+  p3d_set_obst_pos desk_adream_obs3 9 6.9 0 0.0 0.0 0.0
 
 
 # ************* HUMANS ***************
@@ -234,67 +233,84 @@ p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 2 0 0.01 0 0.01 -180 180
 #p3d_read_macro AchileMKinect.macro HERAKLES_HUMAN2
 #p3d_read_macro AchileMKinect.macro HERAKLES_HUMAN3
 
-# ************* EXPE ************
-p3d_read_macro ./Objects/Movable/RedCan.macro COLA_CAN
-p3d_read_macro ./Objects/Movable/OrangeCan.macro FANTA_CAN
-p3d_read_macro ./Objects/Movable/BlueCan.macro ORANGINA_CAN
-p3d_read_macro ./Objects/Movable/GreenCan.macro MINUTEMAID_APPLE_CAN
-p3d_read_macro ./Objects/Movable/GreenCan.macro NONAME_APPLE_CAN
-p3d_read_macro ./Objects/Movable/GreenCan.macro HEINEKEN_CAN
-p3d_read_macro ./Objects/Movable/RedBottle.macro WINE_BOTTLE
-p3d_read_macro ./Objects/Movable/VerreJusOrange.macro ORANGE_GLASS 0.03
-p3d_read_macro ./Objects/Movable/RedGlass.macro RED_GLASS 0.03
-#p3d_read_macro ./Objects/Movable/toolbox.macro ACCESSKIT
+# ************* APPART FURNITURE ************
+
+p3d_read_macro ./Objects/MovableObstacles/carpet_ikea_dragor.macro CARPET
+p3d_set_jnt_dofs_min_max 1 0 11 0 18 -0.2 0.01 0 0.01 0 0.01 -180 180
+p3d_set_robot_current 0 0 0 0 0 0 4.412000 6.874000 0 0 0 90
+p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
+
+p3d_read_macro ./Objects/MovableObstacles/fauteuil_ektorp.macro FAUTEUIL_1
+p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
+p3d_set_robot_current 0 0 0 0 0 0 4.836000 5.638000 0 0 0 118.692000
+p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
+
+p3d_read_macro ./Objects/MovableObstacles/fauteuil_ektorp.macro FAUTEUIL_2
+p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
+p3d_set_robot_current 0 0 0 0 0 0 3.535000 8.159000 0 0 0 -52.416000
+p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
+
+p3d_read_macro ./Objects/MovableObstacles/lamp_ikea_orgel.macro LAMP
+p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
+p3d_set_robot_current 0 0 0 0 0 0 2.508000 7.319000 0 0 0 0
+p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
+
+p3d_read_macro ./Objects/MovableObstacles/low_table_ikea_lack_large.macro LOW_TABLE_LARGE
+p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
+p3d_set_robot_current 0 0 0 0 0 0 4.261000 6.824000 0 0 0 -62.316000
+p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
+
+#p3d_read_macro ./Objects/MovableObstacles/low_table_ikea_lack_small.macro LOW_TABLE_SMALL
+#p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
+
+p3d_read_macro ./Objects/MovableObstacles/sofa_ikea_ektorp.macro SOFA
+p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
+p3d_set_robot_current 0 0 0 0 0 0 3.475000 6.181000 0 0 0 26.712000
+p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
+
+p3d_read_macro ./Objects/MovableObstacles/shelf_ikea_expedit_dark.macro IKEA_SHELF_DARK
+p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 3 0 0.01 0 0.01 -180 180
+p3d_set_robot_current 0 0 0 0 0 0 3.663000 4.785000 0.791 0 0 90
+p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
+
+p3d_read_macro ./Objects/MovableObstacles/shelf_ikea_expedit_light.macro IKEA_SHELF_LIGHT_1
+p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
+p3d_set_robot_current 0 0 0 0 0 0 3.663000 4.785000 0 0 0 90
+p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
+
+p3d_read_macro ./Objects/MovableObstacles/shelf_ikea_expedit_light.macro IKEA_SHELF_LIGHT_2
+p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
+p3d_set_robot_current 0 0 0 0 0 0 4.453 4.785 0 0 0 90
+p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
+
+p3d_read_macro ./Objects/MovableObstacles/plant.macro PLANT
+p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.1 0 0.01 0 0.01 -180 180
+p3d_set_robot_current 0 0 0 0 0 0 4.261000 8.505000 0.049000 0 0 0
+p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
+
+p3d_read_macro ./Objects/MovableObstacles/pillow.macro PILLOW_1
+p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 2 -180 180 -180 180 -180 180
+p3d_set_robot_current 0 0 0 0 0 0 3.203000 6.527000 0.698000 -40.536000 -50.436000 -124.632000
+p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
+
+p3d_read_macro ./Objects/MovableObstacles/pillow.macro PILLOW_2
+p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 2 -180 180 -180 180 -180 180
+p3d_set_robot_current 0 0 0 0 0 0 4.865000 5.638000 0.577000 -113.724000 0 0
+p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
+
+
 
 # ************* FURNITURE ************
 
 p3d_read_macro simplechair.macro SIMPLECHAIR
 p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
 
+
 p3d_read_macro ./Objects/Movable/PR2Cylinder.macro PR_2CYLINDER
 p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
 
 p3d_read_macro ./Objects/Movable/HumanCylinder.macro HUMCYLINDER
 p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
-
-p3d_read_macro ./Objects/MovableObstacles/carpet_ikea_dragor.macro CARPET
-p3d_set_jnt_dofs_min_max 1 0 11 0 18 -0.2 0.01 0 0.01 0 0.01 -180 180
-
-p3d_read_macro ./Objects/MovableObstacles/fauteuil_ektorp.macro FAUTEUIL_1
-p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
-
-p3d_read_macro ./Objects/MovableObstacles/fauteuil_ektorp.macro FAUTEUIL_2
-p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
-
-p3d_read_macro ./Objects/MovableObstacles/lamp_ikea_orgel.macro LAMP
-p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
-
-p3d_read_macro ./Objects/MovableObstacles/low_table_ikea_lack_large.macro LOW_TABLE_LARGE
-p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
-
-p3d_read_macro ./Objects/MovableObstacles/low_table_ikea_lack_small.macro LOW_TABLE_SMALL
-p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
-
-p3d_read_macro ./Objects/MovableObstacles/sofa_ikea_ektorp.macro SOFA
-p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
-
-p3d_read_macro ./Objects/MovableObstacles/shelf_ikea_expedit_dark.macro IKEA_SHELF_DARK
-p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
-
-p3d_read_macro ./Objects/MovableObstacles/shelf_ikea_expedit_light.macro IKEA_SHELF_LIGHT_1
-p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
-
-p3d_read_macro ./Objects/MovableObstacles/shelf_ikea_expedit_light.macro IKEA_SHELF_LIGHT_2
-p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
-
-p3d_read_macro ./Objects/MovableObstacles/plant.macro PLANT
-p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.1 0 0.01 0 0.01 -180 180
-
-p3d_read_macro ./Objects/MovableObstacles/pillow.macro PILLOW_1
-p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 2 -180 180 -180 180 -180 180
-
-p3d_read_macro ./Objects/MovableObstacles/pillow.macro PILLOW_2
-p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 2 -180 180 -180 180 -180 180
 
 p3d_read_macro ./Objects/MovableObstacles/moving_wall.macro M_WALL_1
 p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
@@ -322,8 +338,6 @@ p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 -180 180 -180 180 -180 180
 
 #p3d_read_macro ./Objects/MovableObstacles/CUPBOARD_TALL_OPPENNED.macro CUPBOARD
 #p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
-
-
 
 
 # ******* MANIPULATION OBJECT ********
@@ -452,16 +466,16 @@ p3d_constraint p3d_pr2_arm_ik 7 6 7 9 10 11 12 13  1 32  0  1 8
 # left
 p3d_constraint p3d_pr2_arm_ik 7 16 17 19 20 21 22 23  1 33 0  1 18
 
-p3d_set_cntrt_Tatt 2 1.000000 0.000000 0.000000 -0.180000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000
-p3d_set_cntrt_Tatt2 2 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 1.000000 0.000000 0.000000 -0.180000
+p3d_set_cntrt_Tatt 2 1 0 0 -0.180000 0 1 0 0 0 0 1 0
+p3d_set_cntrt_Tatt2 2 0 1 0 0 0 0 1 0 1 0 0 -0.180000
 
-p3d_set_cntrt_Tatt 3 1.000000 0.000000 0.000000 -0.180000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000
-p3d_set_cntrt_Tatt2 3 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 1.000000 0.000000 0.000000 -0.180000
+p3d_set_cntrt_Tatt 3 1 0 0 -0.180000 0 1 0 0 0 0 1 0
+p3d_set_cntrt_Tatt2 3 0 1 0 0 0 0 1 0 1 0 0 -0.180000
 
 # head
 #p3d_constraint p3d_head_object_track 2 3 4  1 32  0 0
 
-p3d_set_open_chain_config 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 4.146341 -2.390244 0.000000 0.000000 0.000000 0.000000 0.160000 0.000000 0.000000 0.000000 -15.959833 28.386015 0.551220 -132.652479 -163.281034 -103.821279 -176.400661 1.463272 1.463272 15.959834 28.386015 -0.551220 -132.652479 163.281034 -103.821279 176.400660 0.946148 0.946148 0.885356 2.126606 0.627320 4.634146 -2.682927 1.082927 0.000000 0.000000 0.000000 4.634146 -2.097561 1.082927 0.000000 0.000000 0.000000
+p3d_set_open_chain_config 0 0 0 0 0 0 4.146341 -2.390244 0 0 0 0 0.160000 0 0 0 -15.959833 28.386015 0.551220 -132.652479 -163.281034 -103.821279 -176.400661 1.463272 1.463272 15.959834 28.386015 -0.551220 -132.652479 163.281034 -103.821279 176.400660 0.946148 0.946148 0.885356 2.126606 0.627320 4.634146 -2.682927 1.082927 0 0 0 4.634146 -2.097561 1.082927 0 0 0
 
 ##############################
 ## MULTILOCALPATHGROUP #######
