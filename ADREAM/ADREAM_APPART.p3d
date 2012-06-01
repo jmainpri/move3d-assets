@@ -321,7 +321,8 @@ p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
 p3d_read_macro ./Objects/MovableObstacles/moving_wall.macro M_WALL_3
 p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
 
-
+p3d_read_macro hrp2table.macro HRP2TABLE
+p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
 
 
 #p3d_read_macro ./Objects/MovableObstacles/DESK_ADREAM.macro DESK
