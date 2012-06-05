@@ -327,6 +327,11 @@ p3d_read_macro ./Objects/MovableObstacles/TABLE_ADREAM.macro TABLE_4
 #p3d_read_macro ./Objects/MovableObstacles/CUPBOARD_TALL_OPPENNED.macro CUPBOARD
 #p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
 
+# ************* INTERNAL OBJECTS ***************
+
+p3d_read_macro pr2_gripper_robot.macro PR2_GRIPPER
+p3d_read_macro pr2_gripper_robot.macro PR2_GRIPPER_LEFT
+
 
 # ******* MANIPULATION OBJECT ********
 
@@ -337,6 +342,7 @@ p3d_read_macro ./Objects/Movable/placeMat_red.macro PLACEMAT_RED
 p3d_read_macro ./Objects/Movable/placeMat_blue.macro PLACEMAT_BLUE
 p3d_read_macro ./Objects/Movable/placeMat_green.macro PLACEMAT_GREEN
 #p3d_read_macro ./Objects/Movable/placeMat_purple.macro PLACEMAT_PURPLE
+
 
 # ************* ROBOTS ***************
 
