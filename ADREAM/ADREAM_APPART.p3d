@@ -229,24 +229,20 @@ p3d_beg_desc P3D_ENV ADREAM
 # ************* HUMANS ***************
 
 p3d_read_macro AchileMKinect.macro HERAKLES_HUMAN1
-p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 2 0 0.01 0 0.01 -180 180
 p3d_read_macro AchileMKinect.macro HERAKLES_HUMAN2
 p3d_read_macro AchileMKinect.macro HERAKLES_HUMAN3
 
 # ************* APPART FURNITURE ************
 
 p3d_read_macro ./Objects/MovableObstacles/carpet_ikea_dragor.macro CARPET
-p3d_set_jnt_dofs_min_max 1 0 11 0 18 -0.2 0.01 0 0.01 0 0.01 -180 180
 p3d_set_robot_current 0 0 0 0 0 0 4.412000 6.874000 0 0 0 90
 p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
 
 p3d_read_macro ./Objects/MovableObstacles/fauteuil_ektorp.macro FAUTEUIL_1
-p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
 p3d_set_robot_current 0 0 0 0 0 0 4.836000 5.638000 0 0 0 118.692000
 p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
 
 p3d_read_macro ./Objects/MovableObstacles/fauteuil_ektorp.macro FAUTEUIL_2
-p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
 p3d_set_robot_current 0 0 0 0 0 0 3.535000 8.159000 0 0 0 -52.416000
 p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
 
@@ -256,7 +252,6 @@ p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
 #p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
 
 p3d_read_macro ./Objects/MovableObstacles/low_table_ikea_lack_large.macro LOW_TABLE_LARGE
-p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
 p3d_set_robot_current 0 0 0 0 0 0 4.261000 6.824000 0 0 0 -62.316000
 p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
 
@@ -264,7 +259,6 @@ p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
 #p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
 
 p3d_read_macro ./Objects/MovableObstacles/sofa_ikea_ektorp.macro SOFA
-p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
 p3d_set_robot_current 0 0 0 0 0 0 3.475000 6.181000 0 0 0 26.712000
 p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
 
@@ -274,12 +268,10 @@ p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
 #p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
 
 p3d_read_macro ./Objects/MovableObstacles/shelf_ikea_expedit_light.macro IKEA_SHELF_LIGHT_1
-p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
 p3d_set_robot_current 0 0 0 0 0 0 3.663000 4.785000 0 0 0 90
 p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
 
 p3d_read_macro ./Objects/MovableObstacles/shelf_ikea_expedit_light.macro IKEA_SHELF_LIGHT_2
-p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
 p3d_set_robot_current 0 0 0 0 0 0 4.453 4.785 0 0 0 90
 p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
 
@@ -303,14 +295,10 @@ p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
 # ************* FURNITURE ************
 
 p3d_read_macro simplechair.macro SIMPLECHAIR
-p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
-
 
 p3d_read_macro ./Objects/Movable/PR2Cylinder.macro PR_2CYLINDER
-p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
 
 p3d_read_macro ./Objects/Movable/HumanCylinder.macro HUMCYLINDER
-p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
 
 #p3d_read_macro ./Objects/MovableObstacles/moving_wall.macro M_WALL_1
 #p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
@@ -332,7 +320,6 @@ p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
 #p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
 
 p3d_read_macro ./Objects/MovableObstacles/TABLE_ADREAM.macro TABLE_4
-p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 -180 180 -180 180 -180 180
 
 #p3d_read_macro ./Objects/MovableObstacles/DRAWERS.macro DRAWERS_1
 #p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
@@ -364,6 +351,8 @@ p3d_desactivate_col_check larm.larm1 larm.larm3
 p3d_desactivate_col_check rarm.rarm1 rarm.rarm3
 
 p3d_set_env_box 0 11 0 18 0 3
+
+p3d_set_ff_limits_in_env_box
 
 p3d_sel_desc_name P3D_ROBOT PR2_ROBOT
 p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
