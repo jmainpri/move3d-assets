@@ -21,6 +21,7 @@
       <translation> 0 0 -0.05 </translation>
       <YPR_angles> 0 -90 90 </YPR_angles>  
     </transformation>    
+    <collision>  no  </collision>
     <color>  0.4 0.4 0.4 1.0 </color> 
   </body>
   
@@ -30,7 +31,8 @@
   <transformation>
     <translation> 0 0 0 </translation>
     <YPR_angles> 0 90 0 </YPR_angles>  
-  </transformation>                   
+  </transformation>
+  <collision>  no  </collision>
   <qmin> 0 </qmin>
   <qmax>  0.0325 </qmax> 
   
@@ -51,6 +53,7 @@
       <translation> -0.13 0 0.01 </translation>
     </transformation> 
     <display>  no  </display>
+    <collision>  no  </collision>
     <color> 1.0 1.0 0.0 1.0 </color> 
   </body>
   <body name="fingertip1">
@@ -59,6 +62,7 @@
     <transformation>
       <translation> -0.145 0 0 </translation>
     </transformation>    
+    <collision>  no  </collision>
     <color>  1 0 0 1.0 </color> 
   </body>
   
@@ -68,6 +72,7 @@
     <transformation>
       <translation> -0.145 0 0 </translation>
       </transformation>    
+    <collision>  no  </collision>
     <color>  0 1 0 1.0 </color> 
   </body> 
   </joint>
@@ -80,6 +85,7 @@
       <translation> 0 0 0 </translation>
       <YPR_angles> 0 90 0 </YPR_angles>   
     </transformation>  
+    <collision>  no  </collision>
     <qmin> -0.0325 </qmin>
     <qmax>  0 </qmax> 
     
@@ -98,7 +104,8 @@
       <box>  0.065 0.03 0.015  </box>
       <transformation>
         <translation> -0.13 0 -0.01 </translation>
-      </transformation>    
+      </transformation>
+      <collision>  no  </collision>
       <display>  no  </display>
       <color> 1.0 1.0 0.0 1.0 </color> 
   </body>  
@@ -109,6 +116,7 @@
         <translation> -0.157 0 0 </translation>
         <YPR_angles> 0 -180 0 </YPR_angles>  
       </transformation>    
+      <collision>  no  </collision>
       <color>  0 0 1 1.0 </color> 
      </body>
     

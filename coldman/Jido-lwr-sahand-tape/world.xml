@@ -12,36 +12,38 @@
      <robot_directory> ./ </robot_directory>
 
      <robot_file> JidoH.xml </robot_file>
- 
+
      <robot_configuration> 
       <!-- -106.200 37.600 131.500 -17.900 -82.500 -161.100 0.032 -->
       0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0    0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
      </robot_configuration>
-     
-     <obstacle>
+ <!--
+   <obstacle>
        <name> floor </name> 
-       <box> 4 4 1 </box>  
+       <box> 4 4 1 </box>
        <transformation>
          <translation>
              0   0  -0.52
          </translation>
        </transformation>
        <color>  0.4 0.4 0.4 1.0 </color> 
-       <material> metal </material>  
+       <material> metal </material>
        <display> yes </display>
        <shadow> no </shadow>
-    </obstacle>
+    </obstacle> -->
 
-   <obstacle>
-      <name> grayTape </name> 
-      <file> grayTape.obj </file>  
+
+    <obstacle>
+      <name> grayTape </name>
+      <file> grayTape.obj </file>
+      <display>  yes  </display>
+      <shadow> no </shadow>
+      <color>  0 0 0 1.0 </color>
+      <scale> 0.03 </scale>
       <transformation>
-        <translation> 1 -0.27 0.94 </translation>    
-        <YPR_angles> 90 0 -90 </YPR_angles> 
+        <translation> 0.4 -1.0 0.15 </translation>
       </transformation>
-      <color> 0 0 0.5 </color>       
-   </obstacle>   
-
+    </obstacle>
 
 
  <!--   <obstacle>
@@ -63,8 +65,8 @@
         <YPR_angles> 90 0 -90 </YPR_angles> 
       </transformation>
       <color> 0 0 0.5 </color>
-    </obstacle>   --> 
+    </obstacle>   -->
 
   
-    <bounding_box> -2 2 -2 2 0 3 </bounding_box>       
+    <bounding_box> -2 2 -2 2 0 3 </bounding_box>
 </world>

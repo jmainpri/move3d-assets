@@ -15,13 +15,13 @@
   <body name="base">
     <name> base </name> 
     <file>  base.obj  </file>
-    <collision>  no  </collision>
+    <collision>  yes  </collision>
     <color>  0.7 0.7 0.7 1.0 </color>   
   </body>
   <body name="Gbase">
     <name> Gbase </name> 
     <file>  Gbase.obj  </file>
-    <collision>  yes  </collision>
+    <collision>  no  </collision>
     <display>  no  </display>
     <color>  1.0 1.0 0.0 1.0 </color>   
   </body>
@@ -30,13 +30,13 @@
   <body name="computer">
     <name> computer  </name> 
     <file>  computer.obj  </file>
-    <collision>  no  </collision>
+    <collision>  yes  </collision>
     <color>  0.1 0.1 0.1 1.0 </color> 
   </body>   
   <body name="Gcomputer">
     <name> Gcomputer </name> 
     <file>  Gcomputer.obj  </file>
-    <collision>  yes  </collision>
+    <collision>  no  </collision>
     <display>  no  </display>
     <color>  1.0 1.0 0.0 1.0 </color>   
   </body>
@@ -45,14 +45,14 @@
   <body name="frontScreen">
     <name> frontScreen  </name> 
     <file>  frontScreen.obj  </file>
-    <collision>  no  </collision>
+    <collision>  yes  </collision>
     <color>  0.1 0.1 0.3 1.0 </color> 
-  </body>    
+  </body>
 
   <body name="motorWheel">
     <name> motorWheel  </name> 
     <file>  motorWheel.obj  </file>
-    <collision>  no  </collision>
+    <collision>  yes  </collision>
     <color>  0.9 0.1 0.1 1.0 </color> 
   </body>   
   
@@ -72,7 +72,7 @@
      <transformation>
        <translation> 0.243 0 1.244 </translation>
      </transformation>   
-     <collision>  no  </collision>
+     <collision>  yes  </collision>
      <color>  0.2 0.2 0.2 1.0 </color> 
   </body> 
 
@@ -143,7 +143,7 @@
   <body name="Gsicks">
     <name> Gsicks </name> 
     <file>  Gsicks.obj  </file>
-    <collision>  yes  </collision>
+    <collision>  no  </collision>
     <display>  no  </display>
     <color>  1.0 1.0 0.0 1.0 </color>   
   </body>
@@ -152,7 +152,7 @@
    <body name="wheels">
     <name> wheels  </name> 
     <file>  wheels.obj  </file>
-    <collision>  no  </collision>
+    <collision>  yes  </collision>
     <color>  0.9 0.1 0.1 1.0 </color> 
   </body>  
 
@@ -185,7 +185,7 @@
 </subrobot>
 
 
-<subrobot>
+<!-- <subrobot>
   <connection> LWR_right_Joint7 </connection>
   <transformation>
    <translation> 0.0 0.0 0.105 </translation>
@@ -194,7 +194,7 @@
      <collision>  yes  </collision>
     <display>  yes  </display>
   <robot_file> SAHand.xml </robot_file> 
-</subrobot>
+</subrobot> -->
 
 
 <!--<subrobot>
@@ -205,15 +205,18 @@
   <robot_file> SAHand.xml </robot_file> 
 </subrobot> -->
 
-<!--<subrobot>
-  <connection> PA5PA6Joint </connection>
+<subrobot>
+  <connection> LWR_right_Joint7 </connection>
   <transformation>
-    <translation> 0 0 0.12 </translation>
-    <YPR_angles> -112.5 0 0  </YPR_angles> 
+    <translation> 0 0 0.105 </translation>
+    <YPR_angles> 0 0 0  </YPR_angles>
   </transformation>  
+  <collision>  no  </collision>
+  <display>  yes  </display>
   <robot_file> gripper.xml </robot_file> 
-</subrobot> -->
+</subrobot>
 
+<!--
 <deactivate_collision_pair> foreFingerBaseRight  middleFingerBaseRight </deactivate_collision_pair>
 <deactivate_collision_pair> middleFingerBaseRight   ringFingerBaseRight </deactivate_collision_pair>
 
@@ -295,5 +298,29 @@
 <deactivate_collision_pair> thumbFingerPhaDistRight  ringFingerPhaProxRight </deactivate_collision_pair>
 <deactivate_collision_pair> thumbFingerPhaDistRight  ringFingerPhaMidRight </deactivate_collision_pair>
 <deactivate_collision_pair> thumbFingerPhaDistRight  ringFingerPhaDistRight </deactivate_collision_pair>
+-->
+<!--
+<deactivate_collision_pair> palm finger2 </deactivate_collision_pair>
+<deactivate_collision_pair> palm fingertip1 </deactivate_collision_pair>
+<deactivate_collision_pair> palm fingertip2 </deactivate_collision_pair>
+<deactivate_collision_pair> palm finger1 </deactivate_collision_pair>
+<deactivate_collision_pair> palm fingertip3 </deactivate_collision_pair>
+
+<deactivate_collision_pair> finger2 finger1 </deactivate_collision_pair>
+<deactivate_collision_pair> finger2 fingertip3 </deactivate_collision_pair>
+
+<deactivate_collision_pair> fingertip1 finger1 </deactivate_collision_pair>
+<deactivate_collision_pair> fingertip1 fingertip3 </deactivate_collision_pair>
+
+<deactivate_collision_pair> fingertip2 finger1 </deactivate_collision_pair>
+<deactivate_collision_pair> fingertip2 fingertip3 </deactivate_collision_pair>
+
+<deactivate_collision_pair> finger2 fingertip1 </deactivate_collision_pair>
+<deactivate_collision_pair> finger2 fingertip2 </deactivate_collision_pair>
+
+<deactivate_collision_pair> fingertip1 fingertip2 </deactivate_collision_pair>
+
+<deactivate_collision_pair> fingertip1 fingertip3 </deactivate_collision_pair> -->
+
 
 </robot>
