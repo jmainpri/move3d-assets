@@ -9,7 +9,7 @@ p3d_beg_desc_jnt P3D_FREEFLYER  #1
 p3d_end_desc
 
 p3d_beg_desc P3D_BODY PR2CYL
-  p3d_add_desc_cylindre cylinder 0.50 1.75 P3D_GHOST
+  p3d_add_desc_cylindre cylinder 0.44 1.75 P3D_GHOST
   p3d_set_prim_pos cylinder 0 0.00 0.90  0.0 0.0 0.0
 p3d_end_desc
 
