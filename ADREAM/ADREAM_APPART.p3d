@@ -225,12 +225,15 @@ p3d_beg_desc P3D_ENV ADREAM
   p3d_read_macro ./Objects/Static/desk_adream_obs.macro desk_adream_obs3
   p3d_set_obst_pos desk_adream_obs3 9 6.9 0 0.0 0.0 0.0
 
+  p3d_read_macro ./Objects/Static/carpet_ikea_dragor_obs.macro carpet_obs
+  p3d_set_obst_pos carpet_obs 9 6.9 0 0.0 0.0 0.0
 
 # ************* HUMANS ***************
 
 p3d_read_macro AchileMKinect.macro HERAKLES_HUMAN1
-p3d_read_macro AchileMKinect.macro HERAKLES_HUMAN2
-p3d_read_macro AchileMKinect.macro HERAKLES_HUMAN3
+#p3d_read_macro AchileMKinect.macro HERAKLES_HUMAN2
+#p3d_read_macro AchileMKinect.macro HERAKLES_HUMAN3
+
 
 # ************* APPART FURNITURE ************
 
@@ -246,10 +249,9 @@ p3d_read_macro ./Objects/MovableObstacles/fauteuil_ektorp.macro FAUTEUIL_2
 p3d_set_robot_current 0 0 0 0 0 0 3.535000 8.159000 0 0 0 -52.416000
 p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
 
-#p3d_read_macro ./Objects/MovableObstacles/lamp_ikea_orgel.macro LAMP
-#p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
-#p3d_set_robot_current 0 0 0 0 0 0 2.508000 7.319000 0 0 0 0
-#p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
+p3d_read_macro ./Objects/MovableObstacles/lamp_ikea_orgel.macro LAMP
+p3d_set_robot_current 0 0 0 0 0 0 2.508000 7.319000 0 0 0 0
+p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
 
 p3d_read_macro ./Objects/MovableObstacles/low_table_ikea_lack_large.macro LOW_TABLE_LARGE
 p3d_set_robot_current 0 0 0 0 0 0 4.261000 6.824000 0 0 0 -62.316000
@@ -262,10 +264,9 @@ p3d_read_macro ./Objects/MovableObstacles/sofa_ikea_ektorp.macro SOFA
 p3d_set_robot_current 0 0 0 0 0 0 3.475000 6.181000 0 0 0 26.712000
 p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
 
-#p3d_read_macro ./Objects/MovableObstacles/shelf_ikea_expedit_dark.macro IKEA_SHELF_DARK
-#p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 3 0 0.01 0 0.01 -180 180
-#p3d_set_robot_current 0 0 0 0 0 0 3.663000 4.785000 0.791 0 0 90
-#p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
+p3d_read_macro ./Objects/MovableObstacles/shelf_ikea_expedit_dark.macro IKEA_SHELF_DARK
+p3d_set_robot_current 0 0 0 0 0 0 3.663000 4.785000 0.791 0 0 90
+p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
 
 p3d_read_macro ./Objects/MovableObstacles/shelf_ikea_expedit_light.macro IKEA_SHELF_LIGHT_1
 p3d_set_robot_current 0 0 0 0 0 0 3.663000 4.785000 0 0 0 90
@@ -275,21 +276,17 @@ p3d_read_macro ./Objects/MovableObstacles/shelf_ikea_expedit_light.macro IKEA_SH
 p3d_set_robot_current 0 0 0 0 0 0 4.453 4.785 0 0 0 90
 p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
 
-#p3d_read_macro ./Objects/MovableObstacles/plant.macro PLANT
-#p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.1 0 0.01 0 0.01 -180 180
-#p3d_set_robot_current 0 0 0 0 0 0 4.261000 8.505000 0.049000 0 0 0
-#p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
+p3d_read_macro ./Objects/MovableObstacles/plant.macro PLANT
+p3d_set_robot_current 0 0 0 0 0 0 4.261000 8.505000 0.049000 0 0 0
+p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
 
-#p3d_read_macro ./Objects/MovableObstacles/pillow.macro PILLOW_1
-#p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 2 -180 180 -180 180 -180 180
-#p3d_set_robot_current 0 0 0 0 0 0 3.203000 6.527000 0.698000 -40.536000 -50.436000 -124.632000
-#p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
+p3d_read_macro ./Objects/MovableObstacles/pillow.macro PILLOW_1
+p3d_set_robot_current 0 0 0 0 0 0 3.203000 6.527000 0.698000 -40.536000 -50.436000 -124.632000
+p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
 
-#p3d_read_macro ./Objects/MovableObstacles/pillow.macro PILLOW_2
-#p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 2 -180 180 -180 180 -180 180
-#p3d_set_robot_current 0 0 0 0 0 0 4.865000 5.638000 0.577000 -113.724000 0 0
-#p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
-
+p3d_read_macro ./Objects/MovableObstacles/pillow.macro PILLOW_2
+p3d_set_robot_current 0 0 0 0 0 0 4.865000 5.638000 0.577000 -113.724000 0 0
+p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
 
 
 # ************* FURNITURE ************
@@ -300,32 +297,17 @@ p3d_read_macro ./Objects/Movable/PR2Cylinder.macro PR_2CYLINDER
 
 p3d_read_macro ./Objects/Movable/HumanCylinder.macro HUMCYLINDER
 
-#p3d_read_macro ./Objects/MovableObstacles/moving_wall.macro M_WALL_1
-#p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
-
-#p3d_read_macro ./Objects/MovableObstacles/moving_wall.macro M_WALL_2
-#p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
-
-#p3d_read_macro ./Objects/MovableObstacles/moving_wall.macro M_WALL_3
-#p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
-
 #p3d_read_macro hrp2table.macro HRP2TABLE
-#p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
-
 
 #p3d_read_macro ./Objects/MovableObstacles/DESK_ADREAM.macro DESK
-#p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
 
 #p3d_read_macro ./Objects/MovableObstacles/TABLE_ADREAM.macro TABLE_1
-#p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
 
 p3d_read_macro ./Objects/MovableObstacles/TABLE_ADREAM.macro TABLE_4
 
 #p3d_read_macro ./Objects/MovableObstacles/DRAWERS.macro DRAWERS_1
-#p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
 
 #p3d_read_macro ./Objects/MovableObstacles/CUPBOARD_TALL_OPPENNED.macro CUPBOARD
-#p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
 
 # ************* INTERNAL OBJECTS ***************
 
@@ -335,13 +317,13 @@ p3d_read_macro pr2_gripper_robot.macro PR2_GRIPPER_LEFT
 
 # ******* MANIPULATION OBJECT ********
 
-p3d_read_macro ./Objects/Movable/LotrTape.macro       LOTR_TAPE
-p3d_read_macro ./Objects/Movable/WalleTape.macro      WALLE_TAPE
-p3d_read_macro ./Objects/Movable/BlackVideoTape.macro      BLACK_TAPE
-p3d_read_macro ./Objects/Movable/placeMat_red.macro PLACEMAT_RED
-p3d_read_macro ./Objects/Movable/placeMat_blue.macro PLACEMAT_BLUE
-p3d_read_macro ./Objects/Movable/placeMat_green.macro PLACEMAT_GREEN
-#p3d_read_macro ./Objects/Movable/placeMat_purple.macro PLACEMAT_PURPLE
+p3d_read_macro ./Objects/Movable/LotrTape.macro             LOTR_TAPE
+p3d_read_macro ./Objects/Movable/WalleTape.macro            WALLE_TAPE
+p3d_read_macro ./Objects/Movable/BlackVideoTape.macro       BLACK_TAPE
+p3d_read_macro ./Objects/Movable/placeMat_red.macro         PLACEMAT_RED
+p3d_read_macro ./Objects/Movable/placeMat_blue.macro        PLACEMAT_BLUE
+p3d_read_macro ./Objects/Movable/placeMat_green.macro       PLACEMAT_GREEN
+#p3d_read_macro ./Objects/Movable/placeMat_purple.macro     PLACEMAT_PURPLE
 
 
 # ************* ROBOTS ***************
