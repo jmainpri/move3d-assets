@@ -168,10 +168,10 @@ p3d_beg_desc P3D_ENV ADREAM
   p3d_set_obst_pos OB_Parking 29.192579 7.631816 -0.160768 0.0 0.0 0.0
 
   p3d_read_macro OB_C6_plein_ext_P.macro OB_C6_plein_ext_P
-  p3d_set_obst_pos OB_C6_plein_ext_P 5.83 9.049796 -0.00018 0.0 0.0 0.0
+  p3d_set_obst_pos OB_C6_plein_ext_P 5.83 9.149796 -0.00018 0.0 0.0 0.0
 
   #p3d_read_macro OB_C6_plein_ext_P1.macro OB_C6_plein_ext_P1
-  #p3d_set_obst_pos OB_C6_plein_ext_P1 4.818551 6.466207 -0.00018 0.0 0.0 0.0
+  #p3d_set_obst_pos OB_C6_plein_ext_P1 4.818551 6.566207 -0.00018 0.0 0.0 0.0
 
 
 
@@ -217,17 +217,16 @@ p3d_beg_desc P3D_ENV ADREAM
   p3d_set_obst_pos table_adream_obs6 1.84 -4.58 0 0.0 0.0 90.0
 
   p3d_read_macro ./Objects/Static/desk_adream_obs.macro desk_adream_obs1
-  p3d_set_obst_pos desk_adream_obs1 8.6 4.1 0 0.0 0.0 90.0
+  p3d_set_obst_pos desk_adream_obs1 8.7 4.42 0 0.0 0.0 90.0
 
   p3d_read_macro ./Objects/Static/desk_adream_obs.macro desk_adream_obs2
-  p3d_set_obst_pos desk_adream_obs2 9 5.3 0 0.0 0.0 0.0
+  p3d_set_obst_pos desk_adream_obs2 9.1 5.62 0 0.0 0.0 0.0
 
   p3d_read_macro ./Objects/Static/desk_adream_obs.macro desk_adream_obs3
-  p3d_set_obst_pos desk_adream_obs3 9 6.9 0 0.0 0.0 0.0
+  p3d_set_obst_pos desk_adream_obs3 9.1 7.22 0 0.0 0.0 0.0
 
   p3d_read_macro ./Objects/Static/desk_adream_obs.macro desk_adream_obs4
-  p3d_set_obst_pos desk_adream_obs4 7 4.1 0 0.0 0.0 90.0
-
+  p3d_set_obst_pos desk_adream_obs4 7.1 4.42 0 0.0 0.0 90.0
 
 # ************* HUMANS ***************
 
@@ -239,7 +238,7 @@ p3d_read_macro AchileMKinect.macro HERAKLES_HUMAN1
 # ************* APPART FURNITURE ************
 
 p3d_read_macro ./Objects/MovableObstacles/carpet_ikea_dragor.macro CARPET
-p3d_set_robot_current 0 0 0 0 0 0 4.412000 6.874000 0 0 0 90
+p3d_set_robot_current 0 0 0 0 0 0 4.58 7.02 0 0 0 90
 p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
 
 p3d_read_macro ./Objects/MovableObstacles/fauteuil_ektorp.macro FAUTEUIL_1
