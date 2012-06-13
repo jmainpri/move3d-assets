@@ -253,46 +253,46 @@ p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
 p3d_read_macro ./Objects/Movable/HumanCylinder.macro HUMCYLINDER
 p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
 
-p3d_read_macro ./Objects/MovableObstacles/carpet_ikea_dragor.macro CARPET
+p3d_read_macro ./Objects/MovableObstacles/IKEA_carpet_dragor.macro CARPET
 p3d_set_jnt_dofs_min_max 1 0 11 0 18 -0.2 0.01 0 0.01 0 0.01 -180 180
 
-p3d_read_macro ./Objects/MovableObstacles/fauteuil_ektorp.macro FAUTEUIL_1
+p3d_read_macro ./Objects/MovableObstacles/IKEA_armchair_ektorp.macro FAUTEUIL_1
 p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
 
-p3d_read_macro ./Objects/MovableObstacles/fauteuil_ektorp.macro FAUTEUIL_2
+p3d_read_macro ./Objects/MovableObstacles/IKEA_armchair_ektorp.macro FAUTEUIL_2
 p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
 
-p3d_read_macro ./Objects/MovableObstacles/lamp_ikea_orgel.macro LAMP
+p3d_read_macro ./Objects/MovableObstacles/IKEA_lamp_ORGEL.macro LAMP
 p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
 
-p3d_read_macro ./Objects/MovableObstacles/low_table_ikea_lack_large.macro LOW_TABLE_LARGE
+p3d_read_macro ./Objects/MovableObstacles/IKEA_low_table_lack_2.macro LOW_TABLE_LARGE
 p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
 
-p3d_read_macro ./Objects/MovableObstacles/low_table_ikea_lack_small.macro LOW_TABLE_SMALL
+p3d_read_macro ./Objects/MovableObstacles/IKEA_low_table_lack_1.macro LOW_TABLE_SMALL
 p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
 
-p3d_read_macro ./Objects/MovableObstacles/sofa_ikea_ektorp.macro SOFA
+p3d_read_macro ./Objects/MovableObstacles/IKEA_sofa_ektorp.macro SOFA
 p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
 
-p3d_read_macro ./Objects/MovableObstacles/shelf_ikea_expedit_dark.macro IKEA_SHELF_DARK
+p3d_read_macro ./Objects/MovableObstacles/IKEA_shelf_expedit_dark.macro IKEA_SHELF_DARK
 p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
 
-p3d_read_macro ./Objects/MovableObstacles/shelf_ikea_expedit_light.macro IKEA_SHELF_LIGHT_1
+p3d_read_macro ./Objects/MovableObstacles/IKEA_shelf_expedit_light.macro IKEA_SHELF_LIGHT_1
 p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
 
 p3d_read_macro ./Objects/Static/TABLE_ADREAM.macro TABLE_4
 p3d_set_jnt_dofs_min_max 1 0 11 -10 18 0 0.01 -180 180 -180 180 -180 180
 
-p3d_read_macro ./Objects/MovableObstacles/shelf_ikea_expedit_light.macro IKEA_SHELF_LIGHT_2
+p3d_read_macro ./Objects/MovableObstacles/IKEA_shelf_expedit_light.macro IKEA_SHELF_LIGHT_2
 p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.01 0 0.01 0 0.01 -180 180
 
-p3d_read_macro ./Objects/MovableObstacles/plant.macro PLANT
+p3d_read_macro ./Objects/MovableObstacles/IKEA_Plant_1.macro PLANT
 p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 0.1 0 0.01 0 0.01 -180 180
 
-p3d_read_macro ./Objects/MovableObstacles/pillow.macro PILLOW_1
+p3d_read_macro ./Objects/MovableObstacles/basic_pillow.macro PILLOW_1
 p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 2 -180 180 -180 180 -180 180
 
-p3d_read_macro ./Objects/MovableObstacles/pillow.macro PILLOW_2
+p3d_read_macro ./Objects/MovableObstacles/basic_pillow.macro PILLOW_2
 p3d_set_jnt_dofs_min_max 1 0 11 0 18 0 2 -180 180 -180 180 -180 180
 
 p3d_read_macro ./Objects/MovableObstacles/moving_wall.macro M_WALL_1
