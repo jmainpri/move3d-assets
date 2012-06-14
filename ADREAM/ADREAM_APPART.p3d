@@ -168,10 +168,10 @@ p3d_beg_desc P3D_ENV ADREAM
   p3d_set_obst_pos OB_Parking 29.192579 7.631816 -0.160768 0.0 0.0 0.0
 
   p3d_read_macro OB_C6_plein_ext_P.macro OB_C6_plein_ext_P
-  p3d_set_obst_pos OB_C6_plein_ext_P 5.83 9.149796 -0.00018 0.0 0.0 0.0
+  p3d_set_obst_pos OB_C6_plein_ext_P 5.9 9.099796 -0.00018 0.0 0.0 0.0
 
   #p3d_read_macro OB_C6_plein_ext_P1.macro OB_C6_plein_ext_P1
-  #p3d_set_obst_pos OB_C6_plein_ext_P1 4.818551 6.566207 -0.00018 0.0 0.0 0.0
+  #p3d_set_obst_pos OB_C6_plein_ext_P1 4.888551 6.516207 -0.00018 0.0 0.0 0.0
 
 
 
