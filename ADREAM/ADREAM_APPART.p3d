@@ -271,93 +271,93 @@ p3d_read_macro ./Objects/MovableObstacles/IKEA_shelf_expedit_light.macro IKEA_SH
 p3d_set_robot_current 0 0 0 0 0 0 4.453 4.888 0 0 0 90
 p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
 
-p3d_read_macro ./Objects/MovableObstacles/basic_pillow.macro PILLOW_1
-p3d_set_robot_current 0 0 0 0 0 0 3.234000 6.775000 0.560000 0 0 29.664000
-p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
+#p3d_read_macro ./Objects/MovableObstacles/basic_pillow.macro PILLOW_1
+#p3d_set_robot_current 0 0 0 0 0 0 3.234000 6.775000 0.560000 0 0 29.664000
+#p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
 
-p3d_read_macro ./Objects/MovableObstacles/basic_pillow.macro PILLOW_2
-p3d_set_robot_current 0 0 0 0 0 0 3.808 6.082 0.560000 0 0 29.664000
-p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
+#p3d_read_macro ./Objects/MovableObstacles/basic_pillow.macro PILLOW_2
+#p3d_set_robot_current 0 0 0 0 0 0 3.808 6.082 0.560000 0 0 29.664000
+#p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
 
 p3d_read_macro ./Objects/MovableObstacles/IKEA_bed_FJELLSE.macro BED
-p3d_set_robot_current 0 0 0 0 0 0 3.385000 11.176000 0 0 0 90
+p3d_set_robot_current 0 0 0 0 0 0 3.43 11.11 0 0 0 90
 p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
 
-p3d_read_macro ./Objects/MovableObstacles/IKEA_chair_PELLO.macro PELLO_1
-p3d_set_robot_current 0 0 0 0 0 0 7.555000 12.807000 0 0 0 0
-p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
+#p3d_read_macro ./Objects/MovableObstacles/IKEA_chair_PELLO.macro PELLO_1
+#p3d_set_robot_current 0 0 0 0 0 0 7.555000 12.807000 0 0 0 0
+#p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
 
-p3d_read_macro ./Objects/MovableObstacles/IKEA_chair_PELLO.macro PELLO_2
-p3d_set_robot_current 0 0 0 0 0 0 6.799000 11.896 0 0 0 90
-p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
+#p3d_read_macro ./Objects/MovableObstacles/IKEA_chair_PELLO.macro PELLO_2
+#p3d_set_robot_current 0 0 0 0 0 0 6.799000 11.896 0 0 0 90
+#p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
 
-p3d_read_macro ./Objects/MovableObstacles/IKEA_chair_STEFAN.macro STEFAN_1
-p3d_set_robot_current 0 0 0 0 0 0 9.006000 11.671000 0 0 0 0
-p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
+#p3d_read_macro ./Objects/MovableObstacles/IKEA_chair_STEFAN.macro STEFAN_1
+#p3d_set_robot_current 0 0 0 0 0 0 9.006000 11.671000 0 0 0 0
+#p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
 
-p3d_read_macro ./Objects/MovableObstacles/IKEA_chair_STEFAN.macro STEFAN_2
-p3d_set_robot_current 0 0 0 0 0 0 8.582000 11.522000 0 0 0 90
-p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
+#p3d_read_macro ./Objects/MovableObstacles/IKEA_chair_STEFAN.macro STEFAN_2
+#p3d_set_robot_current 0 0 0 0 0 0 8.582000 11.522000 0 0 0 90
+#p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
 
-p3d_read_macro ./Objects/MovableObstacles/IKEA_chair_STEFAN.macro STEFAN_3
-p3d_set_robot_current 0 0 0 0 0 0 8.613000 10.829000 0 0 0 90
-p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
+#p3d_read_macro ./Objects/MovableObstacles/IKEA_chair_STEFAN.macro STEFAN_3
+#p3d_set_robot_current 0 0 0 0 0 0 8.613000 10.829000 0 0 0 90
+#p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
 
-p3d_read_macro ./Objects/MovableObstacles/IKEA_chair_STEFAN.macro STEFAN_4
-p3d_set_robot_current 0 0 0 0 0 0 9.096000 10.681000 0 0 0 180
-p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
+#p3d_read_macro ./Objects/MovableObstacles/IKEA_chair_STEFAN.macro STEFAN_4
+#p3d_set_robot_current 0 0 0 0 0 0 9.096000 10.681000 0 0 0 180
+#p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
 
 p3d_read_macro ./Objects/MovableObstacles/IKEA_chair_STEFAN.macro STEFAN_5
-p3d_set_robot_current 0 0 0 0 0 0 2.599000 10.186000 0 0 0 90
+p3d_set_robot_current 0 0 0 0 0 0 2.68 10.13 0.0 0 0.0 90.0 
 p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
 
 p3d_read_macro ./Objects/MovableObstacles/IKEA_console_HEMNES.macro CONSOLE
-p3d_set_robot_current 0 0 0 0 0 0 4.322000 13.015000 0 0 0 0
+p3d_set_robot_current 0 0 0 0 0 0 4.4 13.015000 0 0 0 0
 p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
 
 p3d_read_macro ./Objects/MovableObstacles/IKEA_low_table_lack_1.macro LOW_TABLE_SMALL_1
-p3d_set_robot_current 0 0 0 0 0 0 2.599000 12.017000 0 0 0 0
+p3d_set_robot_current 0 0 0 0 0 0 2.66 11.91 0 0 0 0
 p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
 
-p3d_read_macro ./Objects/MovableObstacles/IKEA_low_table_lack_1.macro LOW_TABLE_SMALL_2
-p3d_set_robot_current 0 0 0 0 0 0 6.769000 12.906000 0 0 0 0
-p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
+#p3d_read_macro ./Objects/MovableObstacles/IKEA_low_table_lack_1.macro LOW_TABLE_SMALL_2
+#p3d_set_robot_current 0 0 0 0 0 0 6.769000 12.906000 0 0 0 0
+#p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
 
-p3d_read_macro ./Objects/MovableObstacles/IKEA_RUTBO.macro LAMP_2
-p3d_set_robot_current 0 0 0 0 0 0 6.769000 13.005000 0.450000 0 0 0
-p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
+#p3d_read_macro ./Objects/MovableObstacles/IKEA_RUTBO.macro LAMP_2
+#p3d_set_robot_current 0 0 0 0 0 0 6.769000 13.005000 0.450000 0 0 0
+#p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
 
-p3d_read_macro ./Objects/MovableObstacles/IKEA_table_TORSBY.macro TABLE_TORSBY
-p3d_set_robot_current 0 0 0 0 0 0 8.932000 11.176000 0 0 0 90
-p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
+#p3d_read_macro ./Objects/MovableObstacles/IKEA_table_TORSBY.macro TABLE_TORSBY
+#p3d_set_robot_current 0 0 0 0 0 0 8.932000 11.176000 0 0 0 90
+#p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
 
-p3d_read_macro ./Objects/MovableObstacles/IKEA_Plant_1.macro PLANT1
-p3d_set_robot_current 0 0 0 0 0 0 4.291000 5.341000 0 0 0 0
-p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
+#p3d_read_macro ./Objects/MovableObstacles/IKEA_Plant_1.macro PLANT1
+#p3d_set_robot_current 0 0 0 0 0 0 4.291000 5.341000 0 0 0 0
+#p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
 
-p3d_read_macro ./Objects/MovableObstacles/IKEA_Plant_2.macro PLANT2
-p3d_set_robot_current 0 0 0 0 0 0 6.769000 12.413000 0 0 0 -59.328000
-p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
+#p3d_read_macro ./Objects/MovableObstacles/IKEA_Plant_2.macro PLANT2
+#p3d_set_robot_current 0 0 0 0 0 0 6.769000 12.413000 0 0 0 -59.328000
+#p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
 
-p3d_read_macro ./Objects/MovableObstacles/IKEA_cupboard_BILLY_1.macro BILLY_LONG
-p3d_set_robot_current 0 0 0 0 0 0 2.702000 9.326000 0 0 0 180
-p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
+#p3d_read_macro ./Objects/MovableObstacles/IKEA_cupboard_BILLY_1.macro BILLY_LONG
+#p3d_set_robot_current 0 0 0 0 0 0 2.702000 9.326000 0 0 0 180
+#p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
 
-p3d_read_macro ./Objects/MovableObstacles/IKEA_cupboard_BILLY_2.macro BILLY_SMALL1
-p3d_set_robot_current 0 0 0 0 0 0 9.127000 9.325000 0 0 0 180
-p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
+#p3d_read_macro ./Objects/MovableObstacles/IKEA_cupboard_BILLY_2.macro BILLY_SMALL1
+#p3d_set_robot_current 0 0 0 0 0 0 9.127000 9.325000 0 0 0 180
+#p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
 
-p3d_read_macro ./Objects/MovableObstacles/IKEA_cupboard_BILLY_2.macro BILLY_SMALL2
-p3d_set_robot_current 0 0 0 0 0 0 8.725000 9.325000 0 0 0 180
-p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
+#p3d_read_macro ./Objects/MovableObstacles/IKEA_cupboard_BILLY_2.macro BILLY_SMALL2
+#p3d_set_robot_current 0 0 0 0 0 0 8.725000 9.325000 0 0 0 180
+#p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
 
-p3d_read_macro ./Objects/MovableObstacles/IKEA_cupboard_BILLY_3.macro BILLY_LARGE
-p3d_set_robot_current 0 0 0 0 0 0 6.513000 10.767000 0 0 0 90
-p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
+#p3d_read_macro ./Objects/MovableObstacles/IKEA_cupboard_BILLY_3.macro BILLY_LARGE
+#p3d_set_robot_current 0 0 0 0 0 0 6.513000 10.767000 0 0 0 90
+#p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
 
-p3d_read_macro ./Objects/MovableObstacles/IKEA_chest_HEMNES.macro CHEST
-p3d_set_robot_current 0 0 0 0 0 0 6.047000 11.720000 0 0 0 -90
-p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
+#p3d_read_macro ./Objects/MovableObstacles/IKEA_chest_HEMNES.macro CHEST
+#p3d_set_robot_current 0 0 0 0 0 0 6.047000 11.720000 0 0 0 -90
+#p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
 
 
 
