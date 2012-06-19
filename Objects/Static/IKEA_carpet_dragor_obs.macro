@@ -1,7 +1,7 @@
   p3d_beg_desc P3D_OBSTACLE
 
 
-    p3d_add_desc_poly polyhedre1
+    p3d_add_desc_poly polyhedre1 
       p3d_add_desc_vert 0.999999940395 1.49999916553 -0.00499999988824
       p3d_add_desc_vert 0.999999940395 -1.49999916553 -0.00499999988824
       p3d_add_desc_vert -1.00000011921 -1.49999904633 -0.00499999988824
