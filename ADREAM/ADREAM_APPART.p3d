@@ -478,6 +478,7 @@ p3d_read_macro pr2_gripper_robot.macro PR2_GRIPPER_LEFT
 p3d_read_macro ./Objects/Movable/LotrTape.macro             LOTR_TAPE
 p3d_read_macro ./Objects/Movable/WalleTape.macro            WALLE_TAPE
 p3d_read_macro ./Objects/Movable/BlackVideoTape.macro       BLACK_TAPE
+p3d_read_macro ./Objects/Movable/GreyVideoTape.macro        GREY_TAPE
 p3d_read_macro ./Objects/Movable/placeMat_red.macro         PLACEMAT_RED
 p3d_read_macro ./Objects/Movable/placeMat_blue.macro        PLACEMAT_BLUE
 p3d_read_macro ./Objects/Movable/placeMat_green.macro       PLACEMAT_GREEN
