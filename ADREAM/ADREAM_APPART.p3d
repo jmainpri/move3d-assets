@@ -105,10 +105,16 @@ p3d_beg_desc P3D_ENV ADREAM
   p3d_set_obst_pos OB_door_h20_5 11.549311 5.558051 -0.003535 0.0 0.0 0.0
 
   p3d_read_macro OB_door_h20_7.macro OB_door_h20_7
-  p3d_set_obst_pos OB_door_h20_7 11.545981 15.53096 -0.003535 0.0 0.0 0.0
+  p3d_set_obst_pos OB_door_h20_7 11.145981 15.13096 -0.003535 0.0 0.0 90.0
+
+  #p3d_read_macro OB_door_h20_7.macro OB_door_h20_7
+  #p3d_set_obst_pos OB_door_h20_7 11.545981 15.53096 -0.003535 0.0 0.0 0.0
 
   p3d_read_macro OB_door_h20_8.macro OB_door_h20_8
-  p3d_set_obst_pos OB_door_h20_8 11.328913 16.501449 -0.003535 0.0 0.0 0.0
+  p3d_set_obst_pos OB_door_h20_8 11.328913 16.501449 -0.003535 0.0 0.0 -65.0
+
+  #p3d_read_macro OB_door_h20_8.macro OB_door_h20_8
+  #p3d_set_obst_pos OB_door_h20_8 11.328913 16.501449 -0.003535 0.0 0.0 0.0
 
   p3d_read_macro OB_glass_wall_h20_1.macro OB_glass_wall_h20_1
   p3d_set_obst_pos OB_glass_wall_h20_1 11.57964 6.140938 0.000941 0.0 0.0 0.0
