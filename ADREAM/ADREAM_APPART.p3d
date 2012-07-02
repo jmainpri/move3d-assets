@@ -490,8 +490,8 @@ p3d_read_macro ./Objects/Movable/placeMat_blue.macro        PLACEMAT_BLUE
 p3d_read_macro ./Objects/Movable/placeMat_green.macro       PLACEMAT_GREEN
 #p3d_read_macro ./Objects/Movable/placeMat_purple.macro      PLACEMAT_PURPLE
 p3d_read_macro ./Objects/Movable/GreenCan.macro             GREEN_CAN
-p3d_read_macro ./Objects/Movable/WineBottle.macro           WINE_BOTTLE
-
+p3d_read_macro ./Objects/Movable/RedBottle.macro           WINE_BOTTLE
+p3d_read_macro ./Objects/Movable/RedCan.macro               RED_CAN
 # ************* ROBOTS ***************
 
 p3d_read_macro pr2.macro PR2_ROBOT

@@ -8,7 +8,7 @@ p3d_beg_desc_jnt P3D_FREEFLYER  #1
   p3d_set_dof_vmax 12 1 2 180 180 180
 p3d_end_desc
 
- p3d_beg_desc P3D_BODY RedBottle
+ p3d_beg_desc P3D_BODY OrangeBottle
 
 
     p3d_add_desc_poly model
@@ -1928,6 +1928,6 @@ p3d_end_desc
   p3d_end_desc
 p3d_end_desc
 
-p3d_set_body_color RedBottle Red
+p3d_set_body_color OrangeBottle Red
 
-#p3d_set_body_poly_color RedBottle 1 Any 0.2 1 0
+#p3d_set_body_poly_color OrangeBottle 1 Any 1 0 0
