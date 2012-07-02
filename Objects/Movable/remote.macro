@@ -10,8 +10,8 @@ p3d_end_desc
 
 p3d_beg_desc P3D_BODY remote
 
-p3d_add_desc_box  0.215 0.052 0.023
-p3d_set_prim_pos  0.1075 0.026 0 0 0
+p3d_add_desc_box b 0.215 0.052 0.023
+p3d_set_prim_pos b 0 0 0.115 0 0 0
 
 p3d_end_desc
 p3d_end_desc
