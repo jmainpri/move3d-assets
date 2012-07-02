@@ -228,8 +228,8 @@ p3d_beg_desc P3D_ENV ADREAM
   p3d_read_macro ./Objects/Static/desk_adream_obs.macro desk_adream_obs3
   p3d_set_obst_pos desk_adream_obs3 9.1 7.22 0 0.0 0.0 0.0
 
-  p3d_read_macro ./Objects/Static/desk_adream_obs.macro desk_adream_obs4
-  p3d_set_obst_pos desk_adream_obs4 7.1 4.42 0 0.0 0.0 90.0
+#  p3d_read_macro ./Objects/Static/desk_adream_obs.macro desk_adream_obs4
+#  p3d_set_obst_pos desk_adream_obs4 7.1 4.42 0 0.0 0.0 90.0
 
 
 # ************* APPART FIXED FURNITURE ************
@@ -451,6 +451,10 @@ p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
 #p3d_read_macro ./Objects/MovableObstacles/IKEA_chest_HEMNES.macro CHEST
 #p3d_set_robot_current 0 0 0 0 0 0 6.117000 11.671000 0 0 0 -90
 #p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
+
+p3d_read_macro ./Objects/MovableObstacles/DESK_ADREAM.macro CONTROL_DESK
+p3d_set_robot_current 0 0 0 0 0 0 7.1 4.423 0 0 0 -90
+p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
 
 
 # ************* FURNITURE ************
