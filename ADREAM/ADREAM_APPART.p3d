@@ -509,7 +509,7 @@ p3d_desactivate_col_check automatic
 p3d_desactivate_col_check larm.larm1 larm.larm3
 p3d_desactivate_col_check rarm.rarm1 rarm.rarm3
 
-p3d_set_env_box 0 11 0 18 0 3
+p3d_set_env_box 0 9 3 13 0 3
 
 p3d_set_ff_limits_in_env_box
 
