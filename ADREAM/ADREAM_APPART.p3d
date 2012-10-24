@@ -243,8 +243,8 @@ p3d_beg_desc P3D_ENV ADREAM
 #p3d_read_macro ./Objects/Static/IKEA_armchair_ektorp_obs.macro FAUTEUIL_2
 #p3d_set_obst_pos FAUTEUIL_2 3.625 7.92 0.404 0 -90 -42
 
-p3d_read_macro ./Objects/Static/IKEA_lamp_ORGEL_obs.macro LAMP_1
-p3d_set_obst_pos LAMP_1 4.865 5.34 0.739 0 -90 90
+#p3d_read_macro ./Objects/Static/IKEA_lamp_ORGEL_obs.macro LAMP_1
+#p3d_set_obst_pos LAMP_1 4.865 5.34 0.739 0 -90 90
 
 #p3d_read_macro ./Objects/Static/IKEA_low_table_lack_2_obs.macro LOW_TABLE_LARGE
 #p3d_set_obst_pos LOW_TABLE_LARGE 4.297 6.316 0.225 0 -90 -74
@@ -297,8 +297,8 @@ p3d_set_obst_pos LAMP_2 6.74 13.005 1.074 0 -90 0
 p3d_read_macro ./Objects/Static/IKEA_table_TORSBY_obs.macro TABLE_TORSBY
 p3d_set_obst_pos TABLE_TORSBY 9.424 11.206 0.74 0 -90 0
 
-p3d_read_macro ./Objects/Static/IKEA_Plant_1_obs.macro PLANT1
-p3d_set_obst_pos PLANT1 3.914 5.44 1.253 0 -90 0
+#p3d_read_macro ./Objects/Static/IKEA_Plant_1_obs.macro PLANT1
+#p3d_set_obst_pos PLANT1 3.914 5.44 1.253 0 -90 0
 
 p3d_read_macro ./Objects/Static/IKEA_Plant_2_obs.macro PLANT2
 p3d_set_obst_pos PLANT2 9.549 12.413000 0.707 0 -90 0
@@ -321,6 +321,7 @@ p3d_set_obst_pos CHEST 3.853 12.671000 0.52 0 -90 -90
 
 # ************* HUMANS ***************
 
+#p3d_read_macro petitVieux.macro HUMAN_OLDDUDE
 p3d_read_macro AchileMKinect.macro HERAKLES_HUMAN1
 #p3d_read_macro AchileMKinect.macro HERAKLES_HUMAN2
 #p3d_read_macro AchileMKinect.macro HERAKLES_HUMAN3
@@ -509,7 +510,7 @@ p3d_desactivate_col_check automatic
 p3d_desactivate_col_check larm.larm1 larm.larm3
 p3d_desactivate_col_check rarm.rarm1 rarm.rarm3
 
-p3d_set_env_box 0 9 3 13 0 3
+p3d_set_env_box 0 9 0 13 0 3
 
 p3d_set_ff_limits_in_env_box
 
