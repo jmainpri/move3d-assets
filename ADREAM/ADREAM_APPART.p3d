@@ -483,6 +483,13 @@ p3d_read_macro ./Objects/MovableObstacles/TABLE_ADREAM.macro TABLE_4
 p3d_read_macro pr2_gripper_robot.macro PR2_GRIPPER
 p3d_read_macro pr2_gripper_robot.macro PR2_GRIPPER_LEFT
 
+# For Mightability Analysis
+p3d_read_macro ./Objects/Movable/test_cube_Mightability.macro VISBALL_MIGHTABILITY
+p3d_read_macro ./Objects/Movable/test_bar_Mightability.macro HUM_BAR
+
+#For calculating Graspability of Human
+p3d_read_macro SAHandRight_robot.macro SAHandRight2
+
 
 # ******* MANIPULATION OBJECT ********
 
