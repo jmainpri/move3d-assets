@@ -329,9 +329,9 @@ p3d_read_macro AchileMKinect.macro HERAKLES_HUMAN1
 
 # ************* APPART FURNITURE ************
 
-p3d_read_macro ./Objects/MovableObstacles/IKEA_carpet_dragor.macro CARPET
-p3d_set_robot_current 0 0 0 0 0 0 4.58 7.02 0 0 0 0
-p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
+#p3d_read_macro ./Objects/MovableObstacles/IKEA_carpet_dragor.macro CARPET
+#p3d_set_robot_current 0 0 0 0 0 0 4.58 7.02 0 0 0 0
+#p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
 
 p3d_read_macro ./Objects/MovableObstacles/IKEA_armchair_ektorp.macro FAUTEUIL_1
 p3d_set_robot_current 0 0 0 0 0 0 4.35 5.73 0 0 0 -164
@@ -373,9 +373,10 @@ p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
 #p3d_set_robot_current 0 0 0 0 0 0 3.808 6.082 0.560000 0 0 29.664000
 #p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
 
-p3d_read_macro ./Objects/MovableObstacles/IKEA_bed_FJELLSE.macro BED
-p3d_set_robot_current 0 0 0 0 0 0 3.43 11.093 0 0 0 90
-p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
+#temporary
+#p3d_read_macro ./Objects/MovableObstacles/IKEA_bed_FJELLSE.macro BED
+#p3d_set_robot_current 0 0 0 0 0 0 3.43 11.093 0 0 0 90
+#p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
 
 #p3d_read_macro ./Objects/MovableObstacles/IKEA_chair_PELLO.macro PELLO_1
 #p3d_set_robot_current 0 0 0 0 0 0 7.555000 12.807000 0 0 0 0
@@ -504,7 +505,7 @@ p3d_read_macro ./Objects/Movable/placeMat_green.macro       PLACEMAT_GREEN
 p3d_read_macro ./Objects/Movable/GreenCan.macro             GREEN_CAN
 p3d_read_macro ./Objects/Movable/RedBottle.macro            WINE_BOTTLE
 p3d_read_macro ./Objects/Movable/RedCan.macro               RED_CAN
-p3d_read_macro ./Objects/Movable/remote.macro               REMOTE
+#p3d_read_macro ./Objects/Movable/remote.macro               REMOTE
 # ************* ROBOTS ***************
 
 p3d_read_macro pr2.macro PR2_ROBOT
