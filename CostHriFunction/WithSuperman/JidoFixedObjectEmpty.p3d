@@ -114,14 +114,6 @@ p3d_constraint p3d_fixed_jnt 1 2 0 1 2.087020 0
 p3d_constraint p3d_fixed_jnt 1 11 0 1 0.02 0
 p3d_constraint p3d_fixed_jnt 1 12 0 1 0.02 0
 
-p3d_add_desc_rob_col_init jido
-p3d_desactivate_col_check automatic
-p3d_desactivate_col_check hand.object.horse hand.finger1.finger1
-p3d_desactivate_col_check hand.object.horse hand.finger2.finger2
-p3d_desactivate_col_check hand.object.horse hand.finger1.fingertip
-p3d_desactivate_col_check hand.object.horse hand.finger2.fingertip
-p3d_desactivate_col_check hand.object.horse hand.finger3.fingertip
-p3d_desactivate_col_check hand.object.horse hand.palm
 
 p3d_set_env_box 4.000000 -4.000000 6.000000 -6.000000 2.000000 0.000000
 

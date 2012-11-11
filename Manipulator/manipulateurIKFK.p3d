@@ -67,5 +67,5 @@ p3d_set_cntrt_Tatt 0
 	 -0.000000   -1.000000   -0.000000   -0.299010
 	 -0.000000   -0.000000   +1.000000  -292.793251
 	   
-p3d_set_object_base_and_arm_constraints 7 0 0 1 0
+#p3d_set_object_base_and_arm_constraints 7 0 0 1 0
 #p3d_set_random_loop_generator normal_chain 0 1 6

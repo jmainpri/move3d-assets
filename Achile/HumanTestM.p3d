@@ -1,13 +1,19 @@
 p3d_beg_desc P3D_ENV humanTestEnv
 
-  p3d_beg_desc P3D_OBSTACLE BaseSupport1
-    p3d_add_desc_box base_foot_1 2.000 2.000 0.005
-    p3d_set_prim_pos base_foot_1 0 0 -1.200 0 0 0
-  p3d_end_desc
+#  p3d_beg_desc P3D_OBSTACLE BaseSupport1
+#    p3d_add_desc_box base_foot_1 2.000 2.000 0.005
+#    p3d_set_prim_pos base_foot_1 0 0 -1.200 0 0 0
+#  p3d_end_desc
 
-  p3d_read_macro Objects/Movable/visballsmall.macro VISBALL
-  p3d_read_macro AchileM.macro HUMAN_ACHILE
+  p3d_read_macro visballsmall.macro VISBALL
+
+#  p3d_read_macro AchileM.macro HUMAN_ACHILE
+#  p3d_read_macro AchileSafetyZonesM.macro HUMAN_ACHILE
+  p3d_read_macro AchileMKinect.macro HERAKLES_HUMAN1
+#  p3d_read_macro AchileM.macro ACHILE_HUMAN1
+  
+#p3d_CostEnvironment
 
 p3d_end_desc
 
-p3d_set_env_box -5.000 5.000 -5.000 5.000 -5.000 5.000
+p3d_set_env_box -1.500 1.500 -1.500 1.500 -2.000 2.000

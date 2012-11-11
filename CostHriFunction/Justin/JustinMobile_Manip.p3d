@@ -1,0 +1,27 @@
+p3d_beg_desc P3D_ENV iros
+
+#p3d_read_macro AchileSafetyZonesM.macro HUMAN_ACHILE
+p3d_read_macro AchileM.macro HUMAN_ACHILE
+
+#p3d_read_macro Bottle.macro bottle
+#p3d_read_macro Objects/Movable/VerreJusOrange.macro Verre 0.05
+
+p3d_read_macro JustinMobileVirtualBall.macro ROBOT_JUSTIN
+
+p3d_read_macro greencouch.macro ccouch1
+p3d_set_obst_pos ccouch1  0 0 0 0 0 180
+
+p3d_set_env_box -5 5 -5 5 0 4
+
+p3d_sel_desc_name P3D_ROBOT ROBOT_JUSTIN
+
+p3d_set_robot_steering_method Linear
+
+#Left Arm
+p3d_constraint p3d_fixed_jnt 1 29 0 6 0.0 0.0 0.0 0.0 0.0 0.0 0
+
+p3d_set_jnt_dofs_min_max 1 -3 3 -3 3 -180 180
+
+p3d_set_fk_constraint
+
+p3d_end_desc

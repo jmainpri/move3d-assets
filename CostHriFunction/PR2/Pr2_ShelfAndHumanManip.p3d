@@ -1,0 +1,214 @@
+p3d_beg_desc P3D_ENV Ikea
+
+#p3d_read_macro Objects/Static/laasShelf.macro Shelf
+#p3d_set_obst_pos Shelf 0.00 1.00 0.00 0 0 0
+
+#p3d_read_macro Objects/Static/dlrTable.macro Table1 
+#p3d_set_obst_pos Table1 1.00 -1.50 0.00 90 0 180
+
+# ************* FURNITURE **********************
+p3d_read_macro Objects/Movable/Tabouret.macro Tabouret 0.005
+p3d_read_macro Objects/Movable/longTable.macro LONG_TABLE1
+p3d_read_macro Objects/Movable/ikeaShelf.macro IKEA_SHELF
+p3d_read_macro Objects/Movable/trash.macro TRASHBIN
+
+# ************* OBJECTS **********************
+p3d_read_macro Objects/Movable/BlueBottle.macro	    BLUE_BOTTLE
+p3d_read_macro Objects/Movable/OrangeBottle.macro   ORANGE_BOTTLE
+p3d_read_macro Objects/Movable/YellowBottle.macro   YELLOW_BOTTLE
+p3d_read_macro Objects/Movable/MovingBox.macro      MOVING_BOX
+p3d_read_macro Objects/Movable/LotrTape.macro       LOTR_TAPE
+p3d_read_macro Objects/Movable/WalleTape.macro      WALLE_TAPE
+p3d_read_macro Objects/Movable/GreyK7.macro 	    GREY_K7
+p3d_read_macro Objects/Movable/GreyVideoTape.macro  GREY_TAPE
+
+p3d_read_macro Objects/Movable/placeMat_red.macro PLACEMAT_RED
+p3d_read_macro Objects/Movable/placeMat_blue.macro PLACEMAT_BLUE
+p3d_read_macro Objects/Movable/placeMat_green.macro PLACEMAT_GREEN
+p3d_read_macro Objects/Movable/placeMat_purple.macro PLACEMAT_PURPLE
+
+# ************* INTERNAL OBJECTS ***************
+#p3d_read_macro Objects/Movable/visballsmall.macro VISBALL_INTERNAL
+p3d_read_macro pr2_gripper_robot.macro PR2_GRIPPER
+p3d_read_macro pr2_gripper_robot.macro PR2_GRIPPER_LEFT
+
+# ************* ROBOTS *************************
+p3d_read_macro AchileMKinect.macro HERAKLES_HUMAN1
+#p3d_read_macro pr2.macro PR2_SIMUL
+p3d_read_macro pr2.macro PR2_ROBOT
+
+
+p3d_beg_desc P3D_OBSTACLE floor
+p3d_add_desc_box floor 5 5 0.05
+p3d_set_prim_pos floor 0.00 0.00 -0.07 0 0 0
+p3d_end_desc
+
+p3d_end_desc
+
+p3d_set_env_box -2.5 2.5 -2.5 2.5 0 2.5
+p3d_set_ff_limits_in_env_box
+
+p3d_set_obst_color floor Any 0.80 0.80 0.80
+
+#--------------------------------------------------------------------------------------------------
+
+#################################
+###### COLLISION DEACTIVATION ####
+##################################
+
+# For Pr2
+p3d_add_desc_rob_col_init PR2_ROBOT
+p3d_desactivate_col_check automatic
+
+#Base
+p3d_desactivate_col_check base.Gbase head.GpanCamera
+p3d_desactivate_col_check base.Gbase head.Gtilt
+p3d_desactivate_col_check base.Gbase head.Glaser
+
+p3d_desactivate_col_check base.Gbase larm.Glarm1
+p3d_desactivate_col_check base.Gbase rarm.Grarm1
+p3d_desactivate_col_check base.Gbase larm.Glarm2
+p3d_desactivate_col_check base.Gbase rarm.Grarm2
+
+#Torso
+p3d_desactivate_col_check torso.Gtorso head.Gtilt
+p3d_desactivate_col_check torso.Gtorso larm.Glarm2
+p3d_desactivate_col_check torso.Gtorso rarm.Grarm2
+
+#Head
+p3d_desactivate_col_check head.GpanCamera head.Glaser
+p3d_desactivate_col_check head.GpanCamera larm.Glarm1
+p3d_desactivate_col_check head.GpanCamera larm.Glarm2
+p3d_desactivate_col_check head.GpanCamera rarm.Grarm1
+p3d_desactivate_col_check head.GpanCamera rarm.Grarm2
+
+p3d_desactivate_col_check head.Gtilt head.Glaser
+p3d_desactivate_col_check head.Gtilt larm.Glarm1
+p3d_desactivate_col_check head.Gtilt larm.Glarm2
+p3d_desactivate_col_check head.Gtilt rarm.Grarm1
+p3d_desactivate_col_check head.Gtilt rarm.Grarm2
+
+p3d_desactivate_col_check head.Glaser larm.Glarm1
+p3d_desactivate_col_check head.Glaser larm.Glarm2
+p3d_desactivate_col_check head.Glaser rarm.Grarm1
+p3d_desactivate_col_check head.Glaser rarm.Grarm2
+
+#LeftArm
+p3d_desactivate_col_check larm.Glarm1 larm.Glarm3
+p3d_desactivate_col_check larm.Glarm1 larm.Glarm4
+p3d_desactivate_col_check larm.Glarm1 larm.Glarm5
+p3d_desactivate_col_check larm.Glarm1 larm.Glarm7
+
+p3d_desactivate_col_check larm.Glarm2 larm.Glarm4
+p3d_desactivate_col_check larm.Glarm2 larm.Glarm5
+p3d_desactivate_col_check larm.Glarm2 larm.Glarm7
+
+p3d_desactivate_col_check larm.Glarm3 larm.Glarm5
+p3d_desactivate_col_check larm.Glarm3 larm.Glarm7
+p3d_desactivate_col_check larm.Glarm3 hand1.finger1.fingertip
+p3d_desactivate_col_check larm.Glarm3 hand1.finger2.fingertip
+
+p3d_desactivate_col_check larm.Glarm4 larm.Glarm7
+p3d_desactivate_col_check larm.Glarm4 hand1.finger1.fingertip
+p3d_desactivate_col_check larm.Glarm4 hand1.finger2.fingertip
+
+p3d_desactivate_col_check larm.Glarm5 larm.Glarm7
+p3d_desactivate_col_check larm.Glarm5 hand1.finger1.fingertip
+p3d_desactivate_col_check larm.Glarm5 hand1.finger2.fingertip
+
+p3d_desactivate_col_check hand1.finger1.fingertip hand1.finger2.fingertip
+
+#Right Arm
+p3d_desactivate_col_check rarm.Grarm1 rarm.Grarm3
+p3d_desactivate_col_check rarm.Grarm1 rarm.Grarm4
+p3d_desactivate_col_check rarm.Grarm1 rarm.Grarm5
+p3d_desactivate_col_check rarm.Grarm1 rarm.Grarm7
+
+p3d_desactivate_col_check rarm.Grarm2 rarm.Grarm4
+p3d_desactivate_col_check rarm.Grarm2 rarm.Grarm5
+p3d_desactivate_col_check rarm.Grarm2 rarm.Grarm7
+
+p3d_desactivate_col_check rarm.Grarm3 rarm.Grarm5
+p3d_desactivate_col_check rarm.Grarm3 rarm.Grarm7
+p3d_desactivate_col_check rarm.Grarm3 hand0.finger1.fingertip
+p3d_desactivate_col_check rarm.Grarm3 hand0.finger2.fingertip
+
+p3d_desactivate_col_check rarm.Grarm4 rarm.Grarm7
+p3d_desactivate_col_check rarm.Grarm4 hand0.finger1.fingertip
+p3d_desactivate_col_check rarm.Grarm4 hand0.finger2.fingertip
+
+p3d_desactivate_col_check rarm.Grarm5 rarm.Grarm7
+p3d_desactivate_col_check rarm.Grarm5 hand0.finger1.fingertip
+p3d_desactivate_col_check rarm.Grarm5 hand0.finger2.fingertip
+
+p3d_desactivate_col_check hand0.finger1.fingertip hand0.finger2.fingertip
+
+
+#######################
+###### CONSTRAINTS ####
+#######################
+
+# right
+p3d_constraint p3d_pr2_arm_ik 7 6 7 9 10 11 12 13  1 32  0  1 8
+
+# left
+p3d_constraint p3d_pr2_arm_ik 7 16 17 19 20 21 22 23  1 33 0  1 18
+
+p3d_set_cntrt_Tatt 2 1.000000 0.000000 0.000000 -0.180000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000
+p3d_set_cntrt_Tatt2 2 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 1.000000 0.000000 0.000000 -0.180000
+
+p3d_set_cntrt_Tatt 3 1.000000 0.000000 0.000000 -0.180000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000
+p3d_set_cntrt_Tatt2 3 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 1.000000 0.000000 0.000000 -0.180000
+
+p3d_constraint p3d_fix_jnts_relpos 1 32 1 13 0 0
+p3d_set_cntrt_Tatt 4 1.000000 -0.000000 0.000000 0.180000 -0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000
+
+p3d_constraint p3d_fix_jnts_relpos 1 33 1 23 0 0
+p3d_set_cntrt_Tatt 5 1.000000 -0.000000 -0.000000 0.180000 0.000000 1.000000 0.000000 0.000000 0.000000 -0.000000 1.000000 0.000000
+
+# head
+p3d_constraint p3d_head_object_track 2 3 4  1 32  0 0
+p3d_set_cntrt_Tatt 6 -0.000000 -1.000000 0.000000 0.240187 1.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 1.000000 -0.097105
+
+p3d_set_open_chain_config 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 4.146341 -2.390244 0.000000 0.000000 0.000000 0.000000 0.160000 0.000000 0.000000 0.000000 -15.959833 28.386015 0.551220 -132.652479 -163.281034 -103.821279 -176.400661 1.463272 1.463272 15.959834 28.386015 -0.551220 -132.652479 163.281034 -103.821279 176.400660 0.946148 0.946148 0.885356 2.126606 0.627320 4.634146 -2.682927 1.082927 0.000000 0.000000 0.000000 4.634146 -2.097561 1.082927 0.000000 0.000000 0.000000
+
+##############################
+## MULTILOCALPATHGROUP #######
+##############################
+p3d_set_robot_steering_method Multi-Localpath
+
+#DO NOT DESACTIVATE ANY MULTILOCALPATH_GROUP
+p3d_multi_localpath_group 1 33 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33
+p3d_multi_localpath_data pr2 base R&S+linear 1 1
+
+#p3d_multi_localpath_group 1 1 1
+#p3d_multi_localpath_data pr2-base base R&S+linear 1 1
+
+p3d_multi_localpath_group 1 1 1
+p3d_multi_localpath_data base upBodyCart Linear
+
+#p3d_multi_localpath_group 1 1 1
+#p3d_multi_localpath_data baseSm upBodyCart Linear
+
+p3d_multi_localpath_group 1 33 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33
+p3d_multi_localpath_data upBody upBodyCart Linear
+
+p3d_multi_localpath_group 1 33 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33
+p3d_multi_localpath_data upBodySm upBodyCart Soft-Motion
+
+p3d_multi_localpath_group 1 25 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25
+p3d_multi_localpath_data jointsToExport joint Linear
+
+
+#DO NOT REMOVE THE FOLLOWING LINE TO USE MULTILOCALPATH
+p3d_set_robot_steering_method Multi-Localpath
+
+p3d_set_object_base_and_arm_constraints 32 1 0  2 2 3
+
+p3d_set_arm_data 2 3 32
+p3d_set_arm_data 3 3 33
+
+p3d_set_config_cost_threshold 0.20
+
+p3d_set_active_robot PR2_ROBOT
+

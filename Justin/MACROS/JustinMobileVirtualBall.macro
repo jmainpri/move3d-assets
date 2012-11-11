@@ -6,8 +6,16 @@ p3d_beg_desc P3D_ROBOT
     p3d_set_name Platform
     p3d_set_prev_jnt 0
     p3d_set_pos_axe_dh 0 0 0.6783 0
-    p3d_set_dof_vmin 	-5.5 	-5.5  	-180
-    p3d_set_dof_vmax 	5.5 		5.5  	180
+    
+    p3d_set_dof_vmin 	-10 		-10   	-180    
+    p3d_set_dof_vmax 	10 			10	  	 180
+
+#       p3d_set_dof_vmin 	-4.6 		-11.9   	-180    
+#       p3d_set_dof_vmax 	11.88 		1	  	 180
+
+#     p3d_set_dof_vmin 	-3 		-7   	-180    
+#     p3d_set_dof_vmax 	6 		3.5	  	 180
+
   p3d_end_desc
   p3d_beg_desc P3D_BODY GPlatform-1
     p3d_add_desc_cylindre_oval base1 0.3651 0.2644 0.65 P3D_GHOST
@@ -383,16 +391,30 @@ p3d_beg_desc P3D_ROBOT
 #########################
 ####### OBJECT #######
 #########################
-  p3d_beg_desc_jnt P3D_FREEFLYER # J29
-    p3d_set_name virtual_object
-    p3d_set_prev_jnt 0
-    p3d_set_pos_axe 0 0 0 0 0 1
-    p3d_set_dof_vmin -5.5 -5.5 0 -180 -180 -180
-    p3d_set_dof_vmax 5.5 5.5 3 180 180 180
+
+   p3d_beg_desc_jnt P3D_FREEFLYER  #J29
+    p3d_set_name virtual_object_right
+    p3d_set_prev_jnt   0
+    p3d_set_pos_xyz 0 0 0 0 0 0
+    p3d_set_dof 0 0 0 0 0 0
+    p3d_set_dof_vmin -2 -2 0 -180 -180 -180
+    p3d_set_dof_vmax 2 2 3 180 180 180
   p3d_end_desc
-  p3d_beg_desc P3D_BODY fictiveObject
-    p3d_add_desc_sphere sphere 0.01 P3D_GRAPHIC
-#	p3d_add_desc_sphere sphere 0.01
+  p3d_beg_desc P3D_BODY fictiveObject_right
+    p3d_add_desc_sphere sphere 0.02 P3D_GRAPHIC
+    p3d_set_prim_pos sphere 0 0 0 0 0 0
+  p3d_end_desc
+
+  p3d_beg_desc_jnt P3D_FREEFLYER  #J30
+    p3d_set_name virtual_object_left
+    p3d_set_prev_jnt   0
+    p3d_set_pos_xyz 0 0 0 0 0 0
+    p3d_set_dof 0 0 0 0 0 0
+    p3d_set_dof_vmin -2 -2 0 -180 -180 -180
+    p3d_set_dof_vmax 2 2 3 180 180 180
+  p3d_end_desc
+  p3d_beg_desc P3D_BODY fictiveObject_left
+    p3d_add_desc_sphere sphere 0.02 P3D_GRAPHIC
     p3d_set_prim_pos sphere 0 0 0 0 0 0
   p3d_end_desc
 
@@ -613,3 +635,7 @@ p3d_set_body_poly_color lHandThumb.dlr-finger 2 Any 0.75 0.75 0.75
 p3d_set_body_poly_color GlFingers-2 1 Any 1 1 1 0
 #Object
 #p3d_set_body_poly_color tablett.tablett 1 Any 0.87840003 0.949 1
+
+p3d_set_body_poly_color fictiveObject_right 1 Any 0 1 0
+p3d_set_body_poly_color fictiveObject_left 1 Any 0 0 1
+

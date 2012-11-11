@@ -1,0 +1,2768 @@
+p3d_beg_desc P3D_ROBOT
+
+###BATI
+ p3d_add_desc_jnt P3D_FREEFLYER 0 0 0 0 0 1
+	0 -14 14 
+	0 -14 14 
+	0.57 0.57 0.57 
+	0 0 0  
+	0 0 0 
+	0 -180 180
+	0 
+
+   
+    p3d_read_macro Jido/batismall.macro bati
+
+
+###ROUE MOTRICE
+
+    p3d_beg_desc_jnt P3D_FIXED #J2
+      p3d_set_pos_axe 0 0 0 0 1 0
+      p3d_set_prev_jnt 1
+      p3d_set_dof_vmin -180
+      p3d_set_dof_vmax 180
+    p3d_end_desc
+
+    p3d_read_macro Jido/rmotsmall.macro rmot1 
+
+    p3d_beg_desc_jnt P3D_FIXED #J3
+      p3d_set_pos_axe 0 0 0 0 1 0
+      p3d_set_prev_jnt 1
+      p3d_set_dof_vmin -180
+      p3d_set_dof_vmax 180
+    p3d_end_desc
+
+    p3d_read_macro Jido/rmotsmall.macro rmot2 
+
+###BRAS PA10-6
+
+    p3d_beg_desc_jnt P3D_FIXED #J4
+      p3d_set_pos_axe 0.191 0 0 0 1 0
+      p3d_set_prev_jnt 1
+      p3d_set_dof_vmin 0
+      p3d_set_dof_vmax 0
+    p3d_end_desc
+
+    p3d_read_macro Jido/pa1small.macro PA1 
+
+   p3d_beg_desc_jnt P3D_ROTATE #J5
+      p3d_set_pos_axe 0.191 0 0.24 0 0 1
+      p3d_set_prev_jnt 4
+      p3d_set_dof_vmin -177
+      p3d_set_dof_vmax 177
+    p3d_end_desc
+
+    p3d_read_macro Jido/pa2small.macro PA2 
+
+ p3d_beg_desc_jnt P3D_ROTATE #J6
+      p3d_set_pos_axe 0.191 0 0.350315 0 1 0
+      p3d_set_prev_jnt 5
+      p3d_set_dof_vmin -64
+      p3d_set_dof_vmax 124
+    p3d_end_desc
+
+    p3d_read_macro Jido/pa3small.macro PA3 
+
+    p3d_beg_desc_jnt P3D_ROTATE #J7
+      p3d_set_pos_axe 0.191 0 0.800315 0 1 0
+      p3d_set_prev_jnt 6
+      p3d_set_dof_vmin -107
+      p3d_set_dof_vmax 158
+    p3d_end_desc
+
+    p3d_read_macro Jido/pa4small.macro PA4 
+
+    p3d_beg_desc_jnt P3D_ROTATE #J8
+      p3d_set_pos_axe 0.191 0 1.09 0 0 1
+      p3d_set_prev_jnt 7
+      p3d_set_dof_vmin -180	
+      p3d_set_dof_vmax 180
+    p3d_end_desc
+
+    p3d_read_macro Jido/pa5small.macro PA5 
+
+    p3d_beg_desc_jnt P3D_ROTATE #J9
+      p3d_set_pos_axe 0.191 0 1.280315 0 1 0
+      p3d_set_prev_jnt 8
+      p3d_set_dof_vmin -165
+      p3d_set_dof_vmax 165
+    p3d_end_desc
+
+    p3d_read_macro Jido/pa6small.macro PA6 
+
+    p3d_beg_desc_jnt P3D_ROTATE #J10
+      p3d_set_pos_axe 0.191 0 1.35 0 0 1
+      p3d_set_prev_jnt 9
+      p3d_set_dof_vmin -180
+      p3d_set_dof_vmax 180
+    p3d_end_desc
+
+    p3d_read_macro Jido/pa7small.macro PA7 
+
+###STEREO
+
+    p3d_beg_desc_jnt P3D_ROTATE #J11
+      p3d_set_pos_axe -0.229 0 0 0 0 1
+      p3d_set_prev_jnt 1
+      p3d_set_dof_vmin -170
+      p3d_set_dof_vmax 170
+    p3d_end_desc
+
+ p3d_beg_desc_jnt P3D_ROTATE #J12
+      p3d_set_pos_axe -0.191 0 1.13 0 1 0
+      p3d_set_prev_jnt 11
+      p3d_set_dof_vmin -90
+      p3d_set_dof_vmax 90
+    p3d_end_desc	
+
+p3d_read_macro Jido/stereosmall.macro stereo 
+
+p3d_beg_desc_jnt P3D_FREEFLYER  #J13
+  p3d_set_prev_jnt 10
+  p3d_set_pos_xyz 0.0 0.0 0.0 0.0 0.0 0.0
+  p3d_set_dof 0.171 0.01 1.54 0 0 66.9
+  p3d_set_dof_vmin 0.171 0.01 1.6 0 0 66.9
+  p3d_set_dof_vmax 0.171 0.01 1.6 0 0 66.9
+p3d_end_desc
+
+#p3d_read_macro Jido/bottlesmall.macro bottle
+
+## LOOK JOINT Top Cameras
+
+p3d_add_desc_jnt P3D_TRANSLATE -0.209 0 1.18 1 0 0 0 0 8.4 12  #J14
+
+ ##p3d_beg_desc P3D_BODY nose
+ ## p3d_add_desc_cone nosy 0.03 0 0.05
+ ##p3d_end_desc
+ ##p3d_set_prim_pos nosy 0 0.0 0 180 0 0
+
+## LOOK JOINT Arm Cameras
+
+p3d_add_desc_jnt P3D_TRANSLATE 0.07 0.03 1.45 0.5 -0.21 1.6 0 1.5 0.1 10 #J15
+
+ ##p3d_beg_desc P3D_BODY nose
+ ## p3d_add_desc_cone nosy 0.03 0 0.05
+ ##p3d_end_desc
+ ##p3d_set_prim_pos nosy 0 0.0 0 180 0 0
+
+
+p3d_end_desc
+
+###POSITIONS
+
+p3d_set_body_pos_by_mat rmot1.rmot 1 0 0 0 0 1 0 0.250322 0 0 1 -0.57 0 0 0 1
+p3d_set_body_pos_by_mat rmot2.rmot 1 0 0 0 0 1 0 -0.300322 0 0 1 -0.57 0 0 0 1
+
+###CONSTRAINTS
+
+#p3d_constraint p3d_car_front_wheels 2 2 3 1 1 2 196.883 421.644 0
+
+###COLORS
+
+p3d_set_body_poly_color PA1.PA1 1 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA1.PA1 2 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA1.PA1 3 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA1.PA1 4 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA1.PA1 5 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA1.PA1 6 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA1.PA1 7 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA1.PA1 8 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA1.PA1 9 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA1.PA1 10 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA1.PA1 11 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA1.PA1 12 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA1.PA1 13 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA1.PA1 14 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA1.PA1 15 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA1.PA1 16 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA1.PA1 17 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA1.PA1 18 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA1.PA1 19 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA1.PA1 20 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA1.PA1 21 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA1.PA1 22 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA1.PA1 23 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA1.PA1 24 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA1.PA1 25 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA1.PA1 26 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA1.PA1 27 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA1.PA1 28 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA1.PA1 29 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA1.PA1 30 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA1.PA1 31 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA1.PA1 32 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA1.PA1 33 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA1.PA1 34 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA1.PA1 35 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA1.PA1 36 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA1.PA1 37 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA1.PA1 38 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA1.PA1 39 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA1.PA1 40 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA1.PA1 41 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA1.PA1 42 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA1.PA1 43 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA1.PA1 44 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA1.PA1 45 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA1.PA1 46 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA1.PA1 47 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA1.PA1 48 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA1.PA1 49 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA1.PA1 50 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA1.PA1 51 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA1.PA1 52 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA1.PA1 53 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA1.PA1 54 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA1.PA1 55 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA1.PA1 56 Any 0.843137 0.976471 0.992157
+
+p3d_set_body_poly_color PA2.PA2 1 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 2 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 3 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 4 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 5 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 6 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 7 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 8 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 9 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 10 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 11 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 12 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 13 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 14 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 15 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 16 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 17 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 18 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 19 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 20 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 21 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 22 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 23 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 24 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 25 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 26 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 27 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 28 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 29 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 30 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 31 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 32 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 33 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 34 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 35 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 36 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 37 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 38 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 39 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 40 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 41 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 42 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 43 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 44 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 45 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 46 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 47 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 48 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 49 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 50 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 51 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 52 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 53 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 54 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 55 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 56 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 57 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 58 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 59 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 60 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 61 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 62 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 63 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 64 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 65 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 66 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 67 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 68 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 69 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 70 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 71 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 72 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 73 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 74 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 75 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 76 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 77 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 78 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 79 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 80 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 81 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 82 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 83 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 84 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 85 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 86 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 87 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 88 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 89 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 90 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 91 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 92 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 93 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 94 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 95 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 96 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 97 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 98 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 99 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 100 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 101 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 102 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 103 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 104 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 105 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 106 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 107 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 108 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 109 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 110 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 111 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 112 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 113 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 114 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 115 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 116 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 117 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 118 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 119 Any 1 1 1
+p3d_set_body_poly_color PA2.PA2 120 Any 1 1 1
+
+p3d_set_body_poly_color PA3.PA3 1 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 2 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 3 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 4 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 5 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 6 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 7 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 8 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 9 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 10 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 11 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 12 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 13 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 14 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 15 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 16 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 17 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 18 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 19 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 20 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 21 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 22 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 23 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 24 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 25 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 26 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 27 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 28 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 29 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 30 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 31 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 32 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 33 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 34 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 35 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 36 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 37 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 38 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 39 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 40 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 41 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 42 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 43 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 44 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 45 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 46 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 47 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 48 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 49 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 50 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 51 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 52 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 53 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 54 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 55 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 56 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 57 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 58 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 59 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 60 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 61 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 62 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 63 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 64 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 65 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 66 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 67 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 68 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 69 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 70 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 71 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 72 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 73 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 74 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 75 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA3.PA3 76 Any 0.843137 0.976471 0.992157
+
+p3d_set_body_poly_color PA4.PA4 1 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA4.PA4 2 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA4.PA4 3 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA4.PA4 4 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA4.PA4 5 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA4.PA4 6 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA4.PA4 7 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA4.PA4 8 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA4.PA4 9 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA4.PA4 10 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA4.PA4 11 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA4.PA4 12 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA4.PA4 13 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA4.PA4 14 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA4.PA4 15 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA4.PA4 16 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA4.PA4 17 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA4.PA4 18 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA4.PA4 19 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA4.PA4 20 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA4.PA4 21 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA4.PA4 22 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA4.PA4 23 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA4.PA4 24 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA4.PA4 25 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA4.PA4 26 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA4.PA4 27 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA4.PA4 28 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA4.PA4 29 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA4.PA4 30 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA4.PA4 31 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA4.PA4 32 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA4.PA4 33 Any 0.843137 0.976471 0.992157
+
+p3d_set_body_poly_color PA5.PA5 1 Any 1 1 1
+p3d_set_body_poly_color PA5.PA5 2 Any 1 1 1
+p3d_set_body_poly_color PA5.PA5 3 Any 1 1 1
+p3d_set_body_poly_color PA5.PA5 4 Any 1 1 1
+p3d_set_body_poly_color PA5.PA5 5 Any 1 1 1
+p3d_set_body_poly_color PA5.PA5 6 Any 1 1 1
+p3d_set_body_poly_color PA5.PA5 7 Any 1 1 1
+p3d_set_body_poly_color PA5.PA5 8 Any 1 1 1
+p3d_set_body_poly_color PA5.PA5 9 Any 1 1 1
+p3d_set_body_poly_color PA5.PA5 10 Any 1 1 1
+p3d_set_body_poly_color PA5.PA5 11 Any 1 1 1
+p3d_set_body_poly_color PA5.PA5 12 Any 1 1 1
+p3d_set_body_poly_color PA5.PA5 13 Any 1 1 1
+p3d_set_body_poly_color PA5.PA5 14 Any 1 1 1
+p3d_set_body_poly_color PA5.PA5 15 Any 1 1 1
+p3d_set_body_poly_color PA5.PA5 16 Any 1 1 1
+p3d_set_body_poly_color PA5.PA5 17 Any 1 1 1
+p3d_set_body_poly_color PA5.PA5 18 Any 1 1 1
+p3d_set_body_poly_color PA5.PA5 19 Any 1 1 1
+p3d_set_body_poly_color PA5.PA5 20 Any 1 1 1
+p3d_set_body_poly_color PA5.PA5 21 Any 1 1 1
+p3d_set_body_poly_color PA5.PA5 22 Any 1 1 1
+p3d_set_body_poly_color PA5.PA5 23 Any 1 1 1
+p3d_set_body_poly_color PA5.PA5 24 Any 1 1 1
+p3d_set_body_poly_color PA5.PA5 25 Any 1 1 1
+p3d_set_body_poly_color PA5.PA5 26 Any 1 1 1
+p3d_set_body_poly_color PA5.PA5 27 Any 1 1 1
+p3d_set_body_poly_color PA5.PA5 28 Any 1 1 1
+p3d_set_body_poly_color PA5.PA5 29 Any 1 1 1
+p3d_set_body_poly_color PA5.PA5 30 Any 1 1 1
+p3d_set_body_poly_color PA5.PA5 31 Any 1 1 1
+p3d_set_body_poly_color PA5.PA5 32 Any 1 1 1
+p3d_set_body_poly_color PA5.PA5 33 Any 1 1 1
+p3d_set_body_poly_color PA5.PA5 34 Any 1 1 1
+p3d_set_body_poly_color PA5.PA5 35 Any 1 1 1
+p3d_set_body_poly_color PA5.PA5 36 Any 1 1 1
+p3d_set_body_poly_color PA5.PA5 37 Any 1 1 1
+p3d_set_body_poly_color PA5.PA5 38 Any 1 1 1
+p3d_set_body_poly_color PA5.PA5 39 Any 1 1 1
+p3d_set_body_poly_color PA5.PA5 40 Any 1 1 1
+p3d_set_body_poly_color PA5.PA5 41 Any 1 1 1
+p3d_set_body_poly_color PA5.PA5 42 Any 1 1 1
+p3d_set_body_poly_color PA5.PA5 43 Any 1 1 1
+p3d_set_body_poly_color PA5.PA5 44 Any 1 1 1
+p3d_set_body_poly_color PA5.PA5 45 Any 1 1 1
+p3d_set_body_poly_color PA5.PA5 46 Any 1 1 1
+p3d_set_body_poly_color PA5.PA5 47 Any 1 1 1
+p3d_set_body_poly_color PA5.PA5 48 Any 1 1 1
+p3d_set_body_poly_color PA5.PA5 49 Any 1 1 1
+p3d_set_body_poly_color PA5.PA5 50 Any 1 1 1
+p3d_set_body_poly_color PA5.PA5 51 Any 1 1 1
+p3d_set_body_poly_color PA5.PA5 52 Any 1 1 1
+p3d_set_body_poly_color PA5.PA5 53 Any 1 1 1
+p3d_set_body_poly_color PA5.PA5 54 Any 1 1 1
+p3d_set_body_poly_color PA5.PA5 55 Any 1 1 1
+p3d_set_body_poly_color PA5.PA5 56 Any 1 1 1
+p3d_set_body_poly_color PA5.PA5 57 Any 1 1 1
+p3d_set_body_poly_color PA5.PA5 58 Any 1 1 1
+p3d_set_body_poly_color PA5.PA5 59 Any 1 1 1
+p3d_set_body_poly_color PA5.PA5 60 Any 1 1 1
+p3d_set_body_poly_color PA5.PA5 61 Any 1 1 1
+p3d_set_body_poly_color PA5.PA5 62 Any 1 1 1
+p3d_set_body_poly_color PA5.PA5 63 Any 1 1 1
+
+p3d_set_body_poly_color PA6.PA6 1 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA6.PA6 2 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA6.PA6 3 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA6.PA6 4 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA6.PA6 5 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA6.PA6 6 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA6.PA6 7 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA6.PA6 8 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA6.PA6 9 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA6.PA6 10 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA6.PA6 11 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA6.PA6 12 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA6.PA6 13 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA6.PA6 14 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA6.PA6 15 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA6.PA6 16 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA6.PA6 17 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA6.PA6 18 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA6.PA6 19 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA6.PA6 20 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA6.PA6 21 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA6.PA6 22 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA6.PA6 23 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA6.PA6 24 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA6.PA6 25 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA6.PA6 26 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA6.PA6 27 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA6.PA6 28 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA6.PA6 29 Any 0.843137 0.976471 0.992157
+p3d_set_body_poly_color PA6.PA6 30 Any 0.843137 0.976471 0.992157
+
+p3d_set_body_poly_color PA7.PA7 1 DGrey
+p3d_set_body_poly_color PA7.PA7 2 DGrey
+p3d_set_body_poly_color PA7.PA7 3 DGrey
+p3d_set_body_poly_color PA7.PA7 4 DGrey
+p3d_set_body_poly_color PA7.PA7 5 DGrey
+p3d_set_body_poly_color PA7.PA7 6 DGrey
+p3d_set_body_poly_color PA7.PA7 7 DGrey
+p3d_set_body_poly_color PA7.PA7 8 DGrey
+p3d_set_body_poly_color PA7.PA7 9 DGrey
+p3d_set_body_poly_color PA7.PA7 10 DGrey
+p3d_set_body_poly_color PA7.PA7 11 DGrey
+p3d_set_body_poly_color PA7.PA7 12 DGrey
+p3d_set_body_poly_color PA7.PA7 13 DGrey
+p3d_set_body_poly_color PA7.PA7 14 DGrey
+p3d_set_body_poly_color PA7.PA7 15 DGrey
+p3d_set_body_poly_color PA7.PA7 16 DGrey
+p3d_set_body_poly_color PA7.PA7 17 DGrey
+p3d_set_body_poly_color PA7.PA7 18 DGrey
+p3d_set_body_poly_color PA7.PA7 19 DGrey
+p3d_set_body_poly_color PA7.PA7 20 DGrey
+p3d_set_body_poly_color PA7.PA7 21 DGrey
+p3d_set_body_poly_color PA7.PA7 22 DGrey
+p3d_set_body_poly_color PA7.PA7 23 DGrey
+p3d_set_body_poly_color PA7.PA7 24 DGrey
+p3d_set_body_poly_color PA7.PA7 25 DGrey
+p3d_set_body_poly_color PA7.PA7 26 DGrey
+p3d_set_body_poly_color PA7.PA7 27 DGrey
+p3d_set_body_poly_color PA7.PA7 28 DGrey
+p3d_set_body_poly_color PA7.PA7 29 DGrey
+p3d_set_body_poly_color PA7.PA7 30 DGrey
+p3d_set_body_poly_color PA7.PA7 31 DGrey
+p3d_set_body_poly_color PA7.PA7 32 DGrey
+p3d_set_body_poly_color PA7.PA7 33 DGrey
+p3d_set_body_poly_color PA7.PA7 34 DGrey
+p3d_set_body_poly_color PA7.PA7 35 DGrey
+p3d_set_body_poly_color PA7.PA7 36 DGrey
+p3d_set_body_poly_color PA7.PA7 37 DGrey
+p3d_set_body_poly_color PA7.PA7 38 DGrey
+p3d_set_body_poly_color PA7.PA7 39 DGrey
+p3d_set_body_poly_color PA7.PA7 40 DGrey
+p3d_set_body_poly_color PA7.PA7 41 DGrey
+p3d_set_body_poly_color PA7.PA7 42 DGrey
+p3d_set_body_poly_color PA7.PA7 43 DGrey
+p3d_set_body_poly_color PA7.PA7 44 DGrey
+p3d_set_body_poly_color PA7.PA7 45 DGrey
+p3d_set_body_poly_color PA7.PA7 46 DGrey
+p3d_set_body_poly_color PA7.PA7 47 DGrey
+p3d_set_body_poly_color PA7.PA7 48 DGrey
+p3d_set_body_poly_color PA7.PA7 49 DGrey
+p3d_set_body_poly_color PA7.PA7 50 DGrey
+p3d_set_body_poly_color PA7.PA7 51 DGrey
+p3d_set_body_poly_color PA7.PA7 52 DGrey
+p3d_set_body_poly_color PA7.PA7 53 DGrey
+p3d_set_body_poly_color PA7.PA7 54 DGrey
+p3d_set_body_poly_color PA7.PA7 55 DGrey
+p3d_set_body_poly_color PA7.PA7 56 DGrey
+p3d_set_body_poly_color PA7.PA7 57 DGrey
+p3d_set_body_poly_color PA7.PA7 58 DGrey
+p3d_set_body_poly_color PA7.PA7 59 DGrey
+p3d_set_body_poly_color PA7.PA7 60 DGrey
+p3d_set_body_poly_color PA7.PA7 61 DGrey
+p3d_set_body_poly_color PA7.PA7 62 DGrey
+p3d_set_body_poly_color PA7.PA7 63 DGrey
+p3d_set_body_poly_color PA7.PA7 64 DGrey
+p3d_set_body_poly_color PA7.PA7 65 DGrey
+p3d_set_body_poly_color PA7.PA7 66 DGrey
+p3d_set_body_poly_color PA7.PA7 67 DGrey
+p3d_set_body_poly_color PA7.PA7 68 DGrey
+p3d_set_body_poly_color PA7.PA7 69 DGrey
+p3d_set_body_poly_color PA7.PA7 70 DGrey
+p3d_set_body_poly_color PA7.PA7 71 DGrey
+p3d_set_body_poly_color PA7.PA7 72 DGrey
+p3d_set_body_poly_color PA7.PA7 73 DGrey
+p3d_set_body_poly_color PA7.PA7 74 DGrey
+p3d_set_body_poly_color PA7.PA7 75 DGrey
+p3d_set_body_poly_color PA7.PA7 76 DGrey
+p3d_set_body_poly_color PA7.PA7 77 DGrey
+p3d_set_body_poly_color PA7.PA7 78 DGrey
+p3d_set_body_poly_color PA7.PA7 79 DGrey
+p3d_set_body_poly_color PA7.PA7 80 DGrey
+p3d_set_body_poly_color PA7.PA7 81 DGrey
+p3d_set_body_poly_color PA7.PA7 82 DGrey
+p3d_set_body_poly_color PA7.PA7 83 DGrey
+p3d_set_body_poly_color PA7.PA7 84 DGrey
+p3d_set_body_poly_color PA7.PA7 85 DGrey
+p3d_set_body_poly_color PA7.PA7 86 DGrey
+p3d_set_body_poly_color PA7.PA7 87 DGrey
+p3d_set_body_poly_color PA7.PA7 88 DGrey
+p3d_set_body_poly_color PA7.PA7 89 DGrey
+p3d_set_body_poly_color PA7.PA7 90 DGrey
+p3d_set_body_poly_color PA7.PA7 91 DGrey
+p3d_set_body_poly_color PA7.PA7 92 DGrey
+p3d_set_body_poly_color PA7.PA7 93 DGrey
+p3d_set_body_poly_color PA7.PA7 94 DGrey
+p3d_set_body_poly_color PA7.PA7 95 DGrey
+p3d_set_body_poly_color PA7.PA7 96 DGrey
+p3d_set_body_poly_color PA7.PA7 97 DGrey
+p3d_set_body_poly_color PA7.PA7 98 DGrey
+p3d_set_body_poly_color PA7.PA7 99 DGrey
+p3d_set_body_poly_color PA7.PA7 100 DGrey
+p3d_set_body_poly_color PA7.PA7 101 DGrey
+p3d_set_body_poly_color PA7.PA7 102 DGrey
+p3d_set_body_poly_color PA7.PA7 103 DGrey
+p3d_set_body_poly_color PA7.PA7 104 DGrey
+p3d_set_body_poly_color PA7.PA7 105 DGrey
+p3d_set_body_poly_color PA7.PA7 106 DGrey
+p3d_set_body_poly_color PA7.PA7 107 DGrey
+p3d_set_body_poly_color PA7.PA7 108 DGrey
+p3d_set_body_poly_color PA7.PA7 109 DGrey
+p3d_set_body_poly_color PA7.PA7 110 DGrey
+p3d_set_body_poly_color PA7.PA7 111 DGrey
+p3d_set_body_poly_color PA7.PA7 112 DGrey
+p3d_set_body_poly_color PA7.PA7 113 DGrey
+p3d_set_body_poly_color PA7.PA7 114 DGrey
+
+
+p3d_set_body_poly_color stereo.stereo 1 DGrey
+p3d_set_body_poly_color stereo.stereo 2 DGrey
+p3d_set_body_poly_color stereo.stereo 3 DGrey
+p3d_set_body_poly_color stereo.stereo 4 DGrey
+p3d_set_body_poly_color stereo.stereo 5 DGrey
+p3d_set_body_poly_color stereo.stereo 6 DGrey
+p3d_set_body_poly_color stereo.stereo 7 DGrey
+p3d_set_body_poly_color stereo.stereo 8 DGrey
+p3d_set_body_poly_color stereo.stereo 9 DGrey
+p3d_set_body_poly_color stereo.stereo 10 DGrey
+p3d_set_body_poly_color stereo.stereo 11 DGrey
+p3d_set_body_poly_color stereo.stereo 12 DGrey
+p3d_set_body_poly_color stereo.stereo 13 DGrey
+p3d_set_body_poly_color stereo.stereo 14 DGrey
+p3d_set_body_poly_color stereo.stereo 15 DGrey
+p3d_set_body_poly_color stereo.stereo 16 DGrey
+p3d_set_body_poly_color stereo.stereo 17 DGrey
+p3d_set_body_poly_color stereo.stereo 18 DGrey
+p3d_set_body_poly_color stereo.stereo 19 DGrey
+p3d_set_body_poly_color stereo.stereo 20 DGrey
+p3d_set_body_poly_color stereo.stereo 21 DGrey
+p3d_set_body_poly_color stereo.stereo 22 DGrey
+p3d_set_body_poly_color stereo.stereo 23 DGrey
+p3d_set_body_poly_color stereo.stereo 24 DGrey
+p3d_set_body_poly_color stereo.stereo 25 DGrey
+p3d_set_body_poly_color stereo.stereo 26 DGrey
+p3d_set_body_poly_color stereo.stereo 27 DGrey
+p3d_set_body_poly_color stereo.stereo 28 DGrey
+p3d_set_body_poly_color stereo.stereo 29 DGrey
+p3d_set_body_poly_color stereo.stereo 30 DGrey
+p3d_set_body_poly_color stereo.stereo 31 DGrey
+p3d_set_body_poly_color stereo.stereo 32 DGrey
+p3d_set_body_poly_color stereo.stereo 33 DGrey
+p3d_set_body_poly_color stereo.stereo 34 DGrey
+p3d_set_body_poly_color stereo.stereo 35 DGrey
+p3d_set_body_poly_color stereo.stereo 36 DGrey
+p3d_set_body_poly_color stereo.stereo 37 DGrey
+p3d_set_body_poly_color stereo.stereo 38 DGrey
+p3d_set_body_poly_color stereo.stereo 39 DGrey
+p3d_set_body_poly_color stereo.stereo 40 DGrey
+p3d_set_body_poly_color stereo.stereo 41 DGrey
+p3d_set_body_poly_color stereo.stereo 42 DGrey
+p3d_set_body_poly_color stereo.stereo 43 DGrey
+p3d_set_body_poly_color stereo.stereo 44 DGrey
+p3d_set_body_poly_color stereo.stereo 45 DGrey
+p3d_set_body_poly_color stereo.stereo 46 DGrey
+p3d_set_body_poly_color stereo.stereo 47 DGrey
+p3d_set_body_poly_color stereo.stereo 48 DGrey
+p3d_set_body_poly_color stereo.stereo 49 DGrey
+p3d_set_body_poly_color stereo.stereo 50 DGrey
+p3d_set_body_poly_color stereo.stereo 51 DGrey
+p3d_set_body_poly_color stereo.stereo 52 DGrey
+p3d_set_body_poly_color stereo.stereo 53 DGrey
+p3d_set_body_poly_color stereo.stereo 54 DGrey
+p3d_set_body_poly_color stereo.stereo 55 DGrey
+p3d_set_body_poly_color stereo.stereo 56 DGrey
+p3d_set_body_poly_color stereo.stereo 57 DGrey
+p3d_set_body_poly_color stereo.stereo 58 DGrey
+p3d_set_body_poly_color stereo.stereo 59 DGrey
+p3d_set_body_poly_color stereo.stereo 60 DGrey
+p3d_set_body_poly_color stereo.stereo 61 DGrey
+p3d_set_body_poly_color stereo.stereo 62 DGrey
+p3d_set_body_poly_color stereo.stereo 63 DGrey
+p3d_set_body_poly_color stereo.stereo 64 DGrey
+p3d_set_body_poly_color stereo.stereo 65 DGrey
+p3d_set_body_poly_color stereo.stereo 66 DGrey
+p3d_set_body_poly_color stereo.stereo 67 DGrey
+p3d_set_body_poly_color stereo.stereo 68 DGrey
+p3d_set_body_poly_color stereo.stereo 69 DGrey
+p3d_set_body_poly_color stereo.stereo 70 DGrey
+p3d_set_body_poly_color stereo.stereo 71 DGrey
+p3d_set_body_poly_color stereo.stereo 72 DGrey
+p3d_set_body_poly_color stereo.stereo 73 DGrey
+p3d_set_body_poly_color stereo.stereo 74 DGrey
+p3d_set_body_poly_color stereo.stereo 75 DGrey
+p3d_set_body_poly_color stereo.stereo 76 DGrey
+p3d_set_body_poly_color stereo.stereo 77 DGrey
+p3d_set_body_poly_color stereo.stereo 78 DGrey
+p3d_set_body_poly_color stereo.stereo 79 DGrey
+p3d_set_body_poly_color stereo.stereo 80 DGrey
+p3d_set_body_poly_color stereo.stereo 81 DGrey
+p3d_set_body_poly_color stereo.stereo 82 DGrey
+p3d_set_body_poly_color stereo.stereo 83 DGrey
+p3d_set_body_poly_color stereo.stereo 84 DGrey
+p3d_set_body_poly_color stereo.stereo 85 DGrey
+p3d_set_body_poly_color stereo.stereo 86 DGrey
+p3d_set_body_poly_color stereo.stereo 87 DGrey
+p3d_set_body_poly_color stereo.stereo 88 DGrey
+p3d_set_body_poly_color stereo.stereo 89 DGrey
+p3d_set_body_poly_color stereo.stereo 90 DGrey
+p3d_set_body_poly_color stereo.stereo 91 DGrey
+p3d_set_body_poly_color stereo.stereo 92 DGrey
+p3d_set_body_poly_color stereo.stereo 93 DGrey
+p3d_set_body_poly_color stereo.stereo 94 DGrey
+p3d_set_body_poly_color stereo.stereo 95 DGrey
+p3d_set_body_poly_color stereo.stereo 96 DGrey
+p3d_set_body_poly_color stereo.stereo 97 DGrey
+p3d_set_body_poly_color stereo.stereo 98 DGrey
+p3d_set_body_poly_color stereo.stereo 99 DGrey
+p3d_set_body_poly_color stereo.stereo 100 DGrey
+p3d_set_body_poly_color stereo.stereo 101 DGrey
+p3d_set_body_poly_color stereo.stereo 102 DGrey
+p3d_set_body_poly_color stereo.stereo 103 DGrey
+p3d_set_body_poly_color stereo.stereo 104 DGrey
+p3d_set_body_poly_color stereo.stereo 105 DGrey
+p3d_set_body_poly_color stereo.stereo 106 DGrey
+p3d_set_body_poly_color stereo.stereo 107 DGrey
+p3d_set_body_poly_color stereo.stereo 108 DGrey
+p3d_set_body_poly_color stereo.stereo 109 DGrey
+p3d_set_body_poly_color stereo.stereo 110 DGrey
+p3d_set_body_poly_color stereo.stereo 111 DGrey
+p3d_set_body_poly_color stereo.stereo 112 DGrey
+p3d_set_body_poly_color stereo.stereo 113 DGrey
+p3d_set_body_poly_color stereo.stereo 114 DGrey
+p3d_set_body_poly_color stereo.stereo 115 DGrey
+p3d_set_body_poly_color stereo.stereo 116 DGrey
+p3d_set_body_poly_color stereo.stereo 117 DGrey
+p3d_set_body_poly_color stereo.stereo 118 DGrey
+p3d_set_body_poly_color stereo.stereo 119 DGrey
+p3d_set_body_poly_color stereo.stereo 120 DGrey
+p3d_set_body_poly_color stereo.stereo 121 DGrey
+p3d_set_body_poly_color stereo.stereo 122 DGrey
+p3d_set_body_poly_color stereo.stereo 123 DGrey
+p3d_set_body_poly_color stereo.stereo 124 DGrey
+p3d_set_body_poly_color stereo.stereo 125 DGrey
+p3d_set_body_poly_color stereo.stereo 126 DGrey
+
+p3d_set_body_poly_color bati.bati 1 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 2 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 3 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 4 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 5 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 6 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 7 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 8 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 9 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 10 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 11 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 12 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 13 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 14 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 15 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 16 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 17 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 18 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 19 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 20 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 21 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 22 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 23 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 24 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 25 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 26 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 27 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 28 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 29 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 30 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 31 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 32 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 33 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 34 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 35 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 36 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 37 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 38 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 39 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 40 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 41 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 42 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 43 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 44 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 45 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 46 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 47 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 48 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 49 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 50 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 51 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 52 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 53 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 54 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 55 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 56 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 57 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 58 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 59 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 60 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 61 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 62 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 63 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 64 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 65 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 66 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 67 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 68 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 69 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 70 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 71 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 72 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 73 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 74 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 75 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 76 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 77 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 78 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 79 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 80 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 81 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 82 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 83 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 84 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 85 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 86 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 87 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 88 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 89 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 90 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 91 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 92 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 93 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 94 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 95 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 96 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 97 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 98 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 99 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 100 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 101 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 102 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 103 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 104 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 105 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 106 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 107 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 108 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 109 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 110 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 111 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 112 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 113 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 114 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 115 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 116 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 117 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 118 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 119 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 120 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 121 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 122 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 123 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 124 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 125 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 126 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 127 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 128 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 129 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 130 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 131 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 132 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 133 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 134 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 135 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 136 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 137 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 138 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 139 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 140 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 141 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 142 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 143 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 144 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 145 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 146 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 147 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 148 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 149 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 150 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 151 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 152 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 153 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 154 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 155 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 156 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 157 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 158 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 159 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 160 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 161 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 162 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 163 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 164 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 165 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 166 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 167 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 168 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 169 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 170 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 171 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 172 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 173 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 174 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 175 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 176 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 177 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 178 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 179 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 180 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 181 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 182 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 183 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 184 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 185 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 186 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 187 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 188 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 189 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 190 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 191 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 192 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 193 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 194 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 195 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 196 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 197 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 198 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 199 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 200 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 201 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 202 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 203 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 204 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 205 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 206 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 207 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 208 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 209 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 210 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 211 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 212 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 213 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 214 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 215 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 216 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 217 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 218 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 219 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 220 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 221 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 222 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 223 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 224 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 225 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 226 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 227 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 228 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 229 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 230 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 231 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 232 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 233 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 234 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 235 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 236 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 237 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 238 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 239 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 240 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 241 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 242 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 243 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 244 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 245 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 246 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 247 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 248 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 249 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 250 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 251 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 252 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 253 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 254 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 255 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 256 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 257 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 258 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 259 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 260 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 261 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 262 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 263 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 264 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 265 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 266 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 267 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 268 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 269 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 270 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 271 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 272 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 273 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 274 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 275 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 276 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 277 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 278 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 279 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 280 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 281 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 282 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 283 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 284 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 285 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 286 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 287 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 288 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 289 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 290 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 291 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 292 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 293 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 294 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 295 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 296 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 297 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 298 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 299 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 300 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 301 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 302 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 303 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 304 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 305 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 306 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 307 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 308 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 309 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 310 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 311 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 312 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 313 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 314 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 315 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 316 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 317 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 318 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 319 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 320 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 321 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 322 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 323 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 324 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 325 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 326 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 327 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 328 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 329 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 330 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 331 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 332 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 333 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 334 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 335 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 336 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 337 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 338 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 339 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 340 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 341 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 342 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 343 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 344 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 345 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 346 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 347 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 348 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 349 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 350 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 351 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 352 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 353 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 354 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 355 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 356 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 357 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 358 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 359 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 360 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 361 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 362 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 363 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 364 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 365 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 366 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 367 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 368 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 369 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 370 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 371 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 372 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 373 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 374 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 375 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 376 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 377 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 378 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 379 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 380 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 381 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 382 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 383 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 384 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 385 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 386 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 387 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 388 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 389 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 390 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 391 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 392 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 393 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 394 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 395 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 396 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 397 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 398 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 399 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 400 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 401 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 402 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 403 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 404 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 405 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 406 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 407 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 408 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 409 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 410 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 411 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 412 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 413 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 414 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 415 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 416 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 417 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 418 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 419 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 420 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 421 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 422 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 423 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 424 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 425 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 426 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 427 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 428 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 429 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 430 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 431 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 432 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 433 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 434 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 435 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 436 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 437 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 438 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 439 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 440 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 441 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 442 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 443 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 444 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 445 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 446 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 447 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 448 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 449 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 450 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 451 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 452 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 453 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 454 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 455 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 456 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 457 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 458 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 459 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 460 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 461 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 462 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 463 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 464 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 465 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 466 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 467 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 468 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 469 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 470 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 471 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 472 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 473 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 474 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 475 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 476 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 477 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 478 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 479 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 480 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 481 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 482 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 483 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 484 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 485 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 486 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 487 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 488 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 489 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 490 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 491 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 492 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 493 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 494 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 495 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 496 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 497 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 498 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 499 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 500 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 501 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 502 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 503 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 504 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 505 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 506 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 507 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 508 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 509 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 510 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 511 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 512 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 513 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 514 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 515 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 516 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 517 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 518 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 519 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 520 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 521 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 522 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 523 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 524 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 525 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 526 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 527 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 528 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 529 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 530 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 531 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 532 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 533 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 534 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 535 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 536 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 537 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 538 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 539 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 540 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 541 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 542 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 543 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 544 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 545 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 546 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 547 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 548 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 549 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 550 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 551 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 552 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 553 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 554 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 555 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 556 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 557 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 558 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 559 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 560 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 561 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 562 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 563 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 564 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 565 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 566 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 567 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 568 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 569 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 570 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 571 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 572 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 573 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 574 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 575 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 576 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 577 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 578 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 579 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 580 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 581 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 582 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 583 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 584 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 585 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 586 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 587 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 588 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 589 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 590 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 591 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 592 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 593 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 594 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 595 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 596 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 597 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 598 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 599 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 600 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 601 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 602 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 603 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 604 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 605 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 606 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 607 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 608 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 609 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 610 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 611 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 612 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 613 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 614 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 615 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 616 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 617 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 618 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 619 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 620 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 621 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 622 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 623 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 624 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 625 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 626 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 627 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 628 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 629 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 630 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 631 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 632 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 633 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 634 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 635 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 636 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 637 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 638 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 639 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 640 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 641 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 642 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 643 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 644 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 645 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 646 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 647 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 648 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 649 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 650 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 651 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 652 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 653 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 654 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 655 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 656 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 657 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 658 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 659 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 660 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 661 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 662 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 663 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 664 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 665 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 666 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 667 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 668 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 669 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 670 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 671 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 672 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 673 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 674 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 675 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 676 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 677 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 678 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 679 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 680 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 681 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 682 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 683 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 684 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 685 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 686 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 687 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 688 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 689 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 690 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 691 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 692 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 693 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 694 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 695 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 696 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 697 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 698 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 699 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 700 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 701 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 702 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 703 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 704 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 705 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 706 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 707 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 708 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 709 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 710 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 711 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 712 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 713 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 714 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 715 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 716 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 717 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 718 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 719 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 720 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 721 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 722 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 723 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 724 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 725 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 726 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 727 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 728 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 729 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 730 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 731 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 732 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 733 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 734 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 735 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 736 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 737 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 738 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 739 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 740 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 741 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 742 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 743 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 744 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 745 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 746 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 747 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 748 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 749 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 750 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 751 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 752 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 753 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 754 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 755 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 756 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 757 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 758 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 759 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 760 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 761 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 762 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 763 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 764 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 765 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 766 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 767 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 768 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 769 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 770 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 771 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 772 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 773 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 774 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 775 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 776 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 777 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 778 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 779 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 780 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 781 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 782 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 783 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 784 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 785 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 786 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 787 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 788 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 789 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 790 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 791 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 792 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 793 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 794 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 795 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 796 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 797 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 798 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 799 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 800 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 801 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 802 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 803 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 804 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 805 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 806 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 807 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 808 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 809 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 810 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 811 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 812 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 813 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 814 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 815 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 816 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 817 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 818 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 819 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 820 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 821 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 822 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 823 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 824 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 825 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 826 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 827 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 828 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 829 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 830 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 831 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 832 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 833 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 834 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 835 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 836 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 837 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 838 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 839 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 840 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 841 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 842 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 843 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 844 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 845 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 846 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 847 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 848 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 849 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 850 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 851 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 852 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 853 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 854 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 855 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 856 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 857 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 858 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 859 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 860 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 861 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 862 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 863 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 864 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 865 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 866 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 867 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 868 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 869 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 870 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 871 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 872 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 873 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 874 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 875 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 876 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 877 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 878 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 879 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 880 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 881 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 882 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 883 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 884 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 885 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 886 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 887 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 888 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 889 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 890 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 891 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 892 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 893 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 894 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 895 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 896 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 897 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 898 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 899 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 900 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 901 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 902 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 903 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 904 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 905 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 906 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 907 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 908 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 909 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 910 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 911 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 912 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 913 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 914 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 915 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 916 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 917 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 918 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 919 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 920 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 921 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 922 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 923 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 924 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 925 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 926 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 927 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 928 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 929 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 930 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 931 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 932 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 933 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 934 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 935 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 936 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 937 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 938 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 939 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 940 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 941 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 942 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 943 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 944 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 945 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 946 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 947 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 948 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 949 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 950 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 951 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 952 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 953 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 954 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 955 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 956 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 957 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 958 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 959 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 960 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 961 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 962 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 963 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 964 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 965 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 966 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 967 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 968 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 969 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 970 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 971 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 972 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 973 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 974 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 975 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 976 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 977 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 978 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 979 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 980 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 981 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 982 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 983 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 984 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 985 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 986 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 987 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 988 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 989 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 990 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 991 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 992 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 993 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 994 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 995 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 996 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 997 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 998 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 999 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1000 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1001 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1002 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1003 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1004 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1005 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1006 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1007 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1008 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1009 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1010 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1011 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1012 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1013 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1014 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1015 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1016 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1017 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1018 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1019 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1020 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1021 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1022 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1023 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1024 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1025 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1026 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1027 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1028 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1029 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1030 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1031 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1032 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1033 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1034 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1035 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1036 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1037 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1038 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1039 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1040 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1041 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1042 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1043 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1044 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1045 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1046 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1047 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1048 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1049 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1050 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1051 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1052 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1053 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1054 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1055 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1056 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1057 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1058 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1059 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1060 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1061 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1062 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1063 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1064 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1065 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1066 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1067 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1068 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1069 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1070 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1071 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1072 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1073 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1074 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1075 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1076 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1077 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1078 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1079 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1080 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1081 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1082 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1083 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1084 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1085 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1086 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1087 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1088 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1089 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1090 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1091 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1092 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1093 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1094 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1095 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1096 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1097 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1098 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1099 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1100 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1101 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1102 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1103 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1104 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1105 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1106 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1107 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1108 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1109 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1110 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1111 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1112 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1113 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1114 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1115 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1116 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1117 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1118 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1119 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1120 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1121 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1122 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1123 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1124 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1125 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1126 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1127 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1128 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1129 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1130 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1131 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1132 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1133 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1134 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1135 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1136 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1137 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1138 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1139 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1140 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1141 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1142 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1143 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1144 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1145 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1146 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1147 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1148 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1149 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1150 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1151 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1152 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1153 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1154 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1155 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1156 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1157 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1158 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1159 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1160 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1161 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1162 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1163 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1164 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1165 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1166 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1167 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1168 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1169 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1170 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1171 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1172 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1173 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1174 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1175 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1176 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1177 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1178 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1179 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1180 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1181 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1182 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1183 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1184 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1185 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1186 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1187 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1188 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1189 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1190 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1191 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1192 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1193 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1194 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1195 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1196 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1197 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1198 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1199 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1200 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1201 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1202 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1203 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1204 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1205 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1206 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1207 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1208 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1209 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1210 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1211 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1212 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1213 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1214 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1215 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1216 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1217 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1218 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1219 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1220 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1221 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1222 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1223 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1224 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1225 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1226 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1227 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1228 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1229 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1230 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1231 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1232 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1233 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1234 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1235 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1236 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1237 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1238 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1239 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1240 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1241 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1242 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1243 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1244 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1245 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1246 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1247 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1248 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1249 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1250 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1251 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1252 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1253 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1254 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1255 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1256 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1257 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1258 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1259 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1260 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1261 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1262 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1263 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1264 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1265 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1266 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1267 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1268 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1269 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1270 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1271 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1272 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1273 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1274 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1275 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1276 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1277 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1278 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1279 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1280 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1281 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1282 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1283 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1284 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1285 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1286 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1287 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1288 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1289 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1290 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1291 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1292 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1293 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1294 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1295 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1296 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1297 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1298 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1299 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1300 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1301 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1302 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1303 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1304 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1305 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1306 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1307 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1308 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1309 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1310 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1311 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1312 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1313 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1314 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1315 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1316 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1317 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1318 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1319 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1320 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1321 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1322 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1323 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1324 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1325 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1326 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1327 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1328 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1329 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1330 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1331 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1332 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1333 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1334 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1335 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1336 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1337 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1338 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1339 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1340 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1341 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1342 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1343 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1344 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1345 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1346 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1347 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1348 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1349 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1350 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1351 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1352 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1353 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1354 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1355 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1356 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1357 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1358 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1359 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1360 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1361 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1362 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1363 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1364 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1365 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1366 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1367 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1368 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1369 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1370 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1371 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1372 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1373 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1374 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1375 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1376 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1377 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1378 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1379 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1380 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1381 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1382 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1383 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1384 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1385 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1386 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1387 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1388 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1389 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1390 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1391 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1392 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1393 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1394 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1395 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1396 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1397 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1398 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1399 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1400 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1401 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1402 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1403 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1404 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1405 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1406 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1407 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1408 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1409 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1410 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1411 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1412 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1413 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1414 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1415 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1416 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1417 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1418 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1419 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1420 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1421 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1422 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1423 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1424 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1425 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1426 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1427 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1428 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1429 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1430 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1431 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1432 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1433 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1434 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1435 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1436 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1437 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1438 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1439 Any 0.5 0.5 0.5
+p3d_set_body_poly_color bati.bati 1440 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1441 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1442 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1443 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1444 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1445 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1446 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1447 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1448 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1449 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1450 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1451 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1452 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1453 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1454 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1455 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1456 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1457 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1458 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1459 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1460 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1461 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1462 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1463 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1464 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1465 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1466 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1467 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1468 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1469 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1470 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1471 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1472 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1473 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1474 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1475 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1476 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1477 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1478 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1479 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1480 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1481 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1482 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1483 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1484 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1485 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1486 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1487 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1488 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1489 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1490 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1491 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1492 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1493 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1494 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1495 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1496 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1497 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1498 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1499 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1500 Blue
+p3d_set_body_poly_color bati.bati 1501 Blue
+p3d_set_body_poly_color bati.bati 1502 Blue
+p3d_set_body_poly_color bati.bati 1503 Blue
+p3d_set_body_poly_color bati.bati 1504 Blue
+p3d_set_body_poly_color bati.bati 1505 Blue
+p3d_set_body_poly_color bati.bati 1506 Blue
+p3d_set_body_poly_color bati.bati 1507 Blue
+p3d_set_body_poly_color bati.bati 1508 Blue
+p3d_set_body_poly_color bati.bati 1509 Blue
+p3d_set_body_poly_color bati.bati 1510 Blue
+p3d_set_body_poly_color bati.bati 1511 Blue
+p3d_set_body_poly_color bati.bati 1512 Blue
+p3d_set_body_poly_color bati.bati 1513 Blue
+p3d_set_body_poly_color bati.bati 1514 Blue
+p3d_set_body_poly_color bati.bati 1515 Blue
+p3d_set_body_poly_color bati.bati 1516 Blue
+p3d_set_body_poly_color bati.bati 1517 Blue
+p3d_set_body_poly_color bati.bati 1518 Blue
+p3d_set_body_poly_color bati.bati 1519 Blue
+p3d_set_body_poly_color bati.bati 1520 Blue
+p3d_set_body_poly_color bati.bati 1521 Blue
+p3d_set_body_poly_color bati.bati 1522 Blue
+p3d_set_body_poly_color bati.bati 1523 Blue
+p3d_set_body_poly_color bati.bati 1524 Blue
+p3d_set_body_poly_color bati.bati 1525 Blue
+p3d_set_body_poly_color bati.bati 1526 Blue
+p3d_set_body_poly_color bati.bati 1527 Blue
+p3d_set_body_poly_color bati.bati 1528 Blue
+p3d_set_body_poly_color bati.bati 1529 Blue
+p3d_set_body_poly_color bati.bati 1530 Blue
+p3d_set_body_poly_color bati.bati 1531 Blue
+p3d_set_body_poly_color bati.bati 1532 Blue
+p3d_set_body_poly_color bati.bati 1533 Blue
+p3d_set_body_poly_color bati.bati 1534 Blue
+p3d_set_body_poly_color bati.bati 1535 Blue
+p3d_set_body_poly_color bati.bati 1536 Blue
+p3d_set_body_poly_color bati.bati 1537 Blue
+p3d_set_body_poly_color bati.bati 1538 Blue
+p3d_set_body_poly_color bati.bati 1539 Blue
+p3d_set_body_poly_color bati.bati 1540 Blue
+p3d_set_body_poly_color bati.bati 1541 Blue
+p3d_set_body_poly_color bati.bati 1542 Blue
+p3d_set_body_poly_color bati.bati 1543 Blue
+p3d_set_body_poly_color bati.bati 1544 Blue
+p3d_set_body_poly_color bati.bati 1545 Blue
+p3d_set_body_poly_color bati.bati 1546 Blue
+p3d_set_body_poly_color bati.bati 1547 Blue
+p3d_set_body_poly_color bati.bati 1548 Blue
+p3d_set_body_poly_color bati.bati 1549 Blue
+p3d_set_body_poly_color bati.bati 1550 Blue
+p3d_set_body_poly_color bati.bati 1551 Blue
+p3d_set_body_poly_color bati.bati 1552 Blue
+p3d_set_body_poly_color bati.bati 1553 Blue
+p3d_set_body_poly_color bati.bati 1554 Blue
+p3d_set_body_poly_color bati.bati 1555 Blue
+p3d_set_body_poly_color bati.bati 1556 Blue
+p3d_set_body_poly_color bati.bati 1557 Blue
+p3d_set_body_poly_color bati.bati 1558 Blue
+p3d_set_body_poly_color bati.bati 1559 Blue
+p3d_set_body_poly_color bati.bati 1560 Blue
+p3d_set_body_poly_color bati.bati 1561 Blue
+p3d_set_body_poly_color bati.bati 1562 Blue
+p3d_set_body_poly_color bati.bati 1563 Blue
+p3d_set_body_poly_color bati.bati 1564 Blue
+p3d_set_body_poly_color bati.bati 1565 Blue
+p3d_set_body_poly_color bati.bati 1566 Blue
+p3d_set_body_poly_color bati.bati 1567 Blue
+p3d_set_body_poly_color bati.bati 1568 Blue
+p3d_set_body_poly_color bati.bati 1569 Blue
+p3d_set_body_poly_color bati.bati 1570 Blue
+p3d_set_body_poly_color bati.bati 1571 Blue
+p3d_set_body_poly_color bati.bati 1572 Blue
+p3d_set_body_poly_color bati.bati 1573 Blue
+p3d_set_body_poly_color bati.bati 1574 Blue
+p3d_set_body_poly_color bati.bati 1575 Blue
+p3d_set_body_poly_color bati.bati 1576 Blue
+p3d_set_body_poly_color bati.bati 1577 Blue
+p3d_set_body_poly_color bati.bati 1578 Blue
+p3d_set_body_poly_color bati.bati 1579 Blue
+p3d_set_body_poly_color bati.bati 1580 Blue
+p3d_set_body_poly_color bati.bati 1581 Blue
+p3d_set_body_poly_color bati.bati 1582 Blue
+p3d_set_body_poly_color bati.bati 1583 Blue
+p3d_set_body_poly_color bati.bati 1584 Blue
+p3d_set_body_poly_color bati.bati 1585 Blue
+p3d_set_body_poly_color bati.bati 1586 Blue
+p3d_set_body_poly_color bati.bati 1587 Blue
+p3d_set_body_poly_color bati.bati 1588 Blue
+p3d_set_body_poly_color bati.bati 1589 Blue
+p3d_set_body_poly_color bati.bati 1590 Blue
+p3d_set_body_poly_color bati.bati 1591 Blue
+p3d_set_body_poly_color bati.bati 1592 Blue
+p3d_set_body_poly_color bati.bati 1593 Blue
+p3d_set_body_poly_color bati.bati 1594 Blue
+p3d_set_body_poly_color bati.bati 1595 Blue
+p3d_set_body_poly_color bati.bati 1596 Blue
+p3d_set_body_poly_color bati.bati 1597 Blue
+p3d_set_body_poly_color bati.bati 1598 Blue
+p3d_set_body_poly_color bati.bati 1599 Blue
+p3d_set_body_poly_color bati.bati 1600 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1601 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1602 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1603 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1604 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1605 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1606 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1607 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1608 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1609 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1610 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1611 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1612 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1613 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1614 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1615 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1616 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1617 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1618 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1619 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1620 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1621 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1622 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1623 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1624 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1625 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1626 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1627 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1628 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1629 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1630 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1631 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1632 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1633 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1634 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1635 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1636 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1637 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1638 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1639 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1640 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1641 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1642 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1643 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1644 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1645 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1646 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1647 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1648 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1649 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1650 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1651 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1652 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1653 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1654 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1655 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1656 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1657 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1658 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1659 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1660 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1661 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1662 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1663 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1664 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1665 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1666 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1667 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1668 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1669 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1670 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1671 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1672 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1673 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1674 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1675 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1676 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1677 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1678 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1679 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1680 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1681 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1682 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1683 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1684 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1685 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1686 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1687 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1688 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1689 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1690 Any 0 0 0
+p3d_set_body_poly_color bati.bati 1691 Blue
+p3d_set_body_poly_color bati.bati 1692 Blue
+p3d_set_body_poly_color bati.bati 1693 Blue
+p3d_set_body_poly_color bati.bati 1694 Blue
+p3d_set_body_poly_color bati.bati 1695 Blue
+p3d_set_body_poly_color bati.bati 1696 Blue
+p3d_set_body_poly_color bati.bati 1697 Blue
+p3d_set_body_poly_color bati.bati 1698 Blue
+p3d_set_body_poly_color bati.bati 1699 Blue
+p3d_set_body_poly_color bati.bati 1700 Blue
+p3d_set_body_poly_color bati.bati 1701 Blue
+p3d_set_body_poly_color bati.bati 1702 Blue
+p3d_set_body_poly_color bati.bati 1703 Blue
+p3d_set_body_poly_color bati.bati 1704 Blue
+p3d_set_body_poly_color bati.bati 1705 Blue
+p3d_set_body_poly_color bati.bati 1706 Blue
+p3d_set_body_poly_color bati.bati 1707 Blue
+p3d_set_body_poly_color bati.bati 1708 Blue
+p3d_set_body_poly_color bati.bati 1709 Blue
+p3d_set_body_poly_color bati.bati 1710 Blue
+p3d_set_body_poly_color bati.bati 1711 Blue
+p3d_set_body_poly_color bati.bati 1712 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1713 Blue
+p3d_set_body_poly_color bati.bati 1714 Blue
+p3d_set_body_poly_color bati.bati 1715 Blue
+p3d_set_body_poly_color bati.bati 1716 Blue
+p3d_set_body_poly_color bati.bati 1717 Blue
+p3d_set_body_poly_color bati.bati 1718 Blue
+p3d_set_body_poly_color bati.bati 1719 Blue
+p3d_set_body_poly_color bati.bati 1720 Blue
+p3d_set_body_poly_color bati.bati 1721 Blue
+p3d_set_body_poly_color bati.bati 1722 Blue
+p3d_set_body_poly_color bati.bati 1723 Blue
+p3d_set_body_poly_color bati.bati 1724 Blue
+p3d_set_body_poly_color bati.bati 1725 Blue
+p3d_set_body_poly_color bati.bati 1726 Blue
+p3d_set_body_poly_color bati.bati 1727 Blue
+p3d_set_body_poly_color bati.bati 1728 Blue
+p3d_set_body_poly_color bati.bati 1729 Blue
+p3d_set_body_poly_color bati.bati 1730 Blue
+p3d_set_body_poly_color bati.bati 1731 Blue
+p3d_set_body_poly_color bati.bati 1732 Blue
+p3d_set_body_poly_color bati.bati 1733 Blue
+p3d_set_body_poly_color bati.bati 1734 Blue
+p3d_set_body_poly_color bati.bati 1735 Blue
+p3d_set_body_poly_color bati.bati 1736 Blue
+p3d_set_body_poly_color bati.bati 1737 Blue
+p3d_set_body_poly_color bati.bati 1738 Blue
+p3d_set_body_poly_color bati.bati 1739 Blue
+p3d_set_body_poly_color bati.bati 1740 Blue
+p3d_set_body_poly_color bati.bati 1741 Blue
+p3d_set_body_poly_color bati.bati 1742 Blue
+p3d_set_body_poly_color bati.bati 1743 Blue
+p3d_set_body_poly_color bati.bati 1744 Blue
+p3d_set_body_poly_color bati.bati 1745 Blue
+p3d_set_body_poly_color bati.bati 1746 Blue
+p3d_set_body_poly_color bati.bati 1747 Blue
+p3d_set_body_poly_color bati.bati 1748 Blue
+p3d_set_body_poly_color bati.bati 1749 Blue
+p3d_set_body_poly_color bati.bati 1750 Blue
+p3d_set_body_poly_color bati.bati 1751 Blue
+p3d_set_body_poly_color bati.bati 1752 Blue
+p3d_set_body_poly_color bati.bati 1753 Blue
+p3d_set_body_poly_color bati.bati 1754 Blue
+p3d_set_body_poly_color bati.bati 1755 Blue
+p3d_set_body_poly_color bati.bati 1756 Blue
+p3d_set_body_poly_color bati.bati 1757 Blue
+p3d_set_body_poly_color bati.bati 1758 Blue
+p3d_set_body_poly_color bati.bati 1759 Blue
+p3d_set_body_poly_color bati.bati 1760 Blue
+p3d_set_body_poly_color bati.bati 1761 Blue
+p3d_set_body_poly_color bati.bati 1762 Blue
+p3d_set_body_poly_color bati.bati 1763 Blue
+p3d_set_body_poly_color bati.bati 1764 Blue
+p3d_set_body_poly_color bati.bati 1765 Blue
+p3d_set_body_poly_color bati.bati 1766 Blue
+p3d_set_body_poly_color bati.bati 1767 Blue
+p3d_set_body_poly_color bati.bati 1768 Blue
+p3d_set_body_poly_color bati.bati 1769 Blue
+p3d_set_body_poly_color bati.bati 1770 Blue
+p3d_set_body_poly_color bati.bati 1771 Blue
+p3d_set_body_poly_color bati.bati 1772 Blue
+p3d_set_body_poly_color bati.bati 1773 Blue
+p3d_set_body_poly_color bati.bati 1774 Blue
+p3d_set_body_poly_color bati.bati 1775 Blue
+p3d_set_body_poly_color bati.bati 1776 Blue
+p3d_set_body_poly_color bati.bati 1777 Blue
+p3d_set_body_poly_color bati.bati 1778 Blue
+p3d_set_body_poly_color bati.bati 1779 Blue
+p3d_set_body_poly_color bati.bati 1780 Blue
+p3d_set_body_poly_color bati.bati 1781 Blue
+p3d_set_body_poly_color bati.bati 1782 Blue
+p3d_set_body_poly_color bati.bati 1783 Blue
+p3d_set_body_poly_color bati.bati 1784 Blue
+p3d_set_body_poly_color bati.bati 1785 Blue
+p3d_set_body_poly_color bati.bati 1786 Blue
+p3d_set_body_poly_color bati.bati 1787 Blue
+p3d_set_body_poly_color bati.bati 1788 Blue
+p3d_set_body_poly_color bati.bati 1789 Blue
+p3d_set_body_poly_color bati.bati 1790 Blue
+p3d_set_body_poly_color bati.bati 1791 Yellow
+p3d_set_body_poly_color bati.bati 1792 Yellow
+p3d_set_body_poly_color bati.bati 1793 Yellow
+p3d_set_body_poly_color bati.bati 1794 Yellow
+p3d_set_body_poly_color bati.bati 1795 Yellow
+p3d_set_body_poly_color bati.bati 1796 Yellow
+p3d_set_body_poly_color bati.bati 1797 Yellow
+p3d_set_body_poly_color bati.bati 1798 Yellow
+p3d_set_body_poly_color bati.bati 1799 Yellow
+p3d_set_body_poly_color bati.bati 1800 Yellow
+p3d_set_body_poly_color bati.bati 1801 Yellow
+p3d_set_body_poly_color bati.bati 1802 Yellow
+p3d_set_body_poly_color bati.bati 1803 Yellow
+p3d_set_body_poly_color bati.bati 1804 Yellow
+p3d_set_body_poly_color bati.bati 1805 Yellow
+p3d_set_body_poly_color bati.bati 1806 Yellow
+p3d_set_body_poly_color bati.bati 1807 Yellow
+p3d_set_body_poly_color bati.bati 1808 Yellow
+p3d_set_body_poly_color bati.bati 1809 Yellow
+p3d_set_body_poly_color bati.bati 1810 Yellow
+p3d_set_body_poly_color bati.bati 1811 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1812 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1813 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1814 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1815 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1816 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1817 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1818 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1819 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1820 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1821 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1822 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1823 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1824 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1825 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1826 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1827 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1828 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1829 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1830 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1831 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1832 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1833 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1834 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1835 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1836 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1837 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1838 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1839 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1840 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1841 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1842 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1843 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1844 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1845 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1846 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1847 Yellow
+p3d_set_body_poly_color bati.bati 1848 Yellow
+p3d_set_body_poly_color bati.bati 1849 Yellow
+p3d_set_body_poly_color bati.bati 1850 Yellow
+p3d_set_body_poly_color bati.bati 1851 Yellow
+p3d_set_body_poly_color bati.bati 1852 Yellow
+p3d_set_body_poly_color bati.bati 1853 Yellow
+p3d_set_body_poly_color bati.bati 1854 Yellow
+p3d_set_body_poly_color bati.bati 1855 Yellow
+p3d_set_body_poly_color bati.bati 1856 Yellow
+p3d_set_body_poly_color bati.bati 1857 Yellow
+p3d_set_body_poly_color bati.bati 1858 Yellow
+p3d_set_body_poly_color bati.bati 1859 Yellow
+p3d_set_body_poly_color bati.bati 1860 Yellow
+p3d_set_body_poly_color bati.bati 1861 Yellow
+p3d_set_body_poly_color bati.bati 1862 Yellow
+p3d_set_body_poly_color bati.bati 1863 Yellow
+p3d_set_body_poly_color bati.bati 1864 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1865 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1866 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1867 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1868 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1869 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1870 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1871 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1872 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1873 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1874 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1875 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1876 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1877 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1878 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1879 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1880 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1881 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1882 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1883 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1884 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1885 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1886 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1887 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1888 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1889 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1890 Yellow
+p3d_set_body_poly_color bati.bati 1891 Yellow
+p3d_set_body_poly_color bati.bati 1892 Yellow
+p3d_set_body_poly_color bati.bati 1893 Yellow
+p3d_set_body_poly_color bati.bati 1894 Yellow
+p3d_set_body_poly_color bati.bati 1895 Yellow
+p3d_set_body_poly_color bati.bati 1896 Yellow
+p3d_set_body_poly_color bati.bati 1897 Yellow
+p3d_set_body_poly_color bati.bati 1898 Yellow
+p3d_set_body_poly_color bati.bati 1899 Yellow
+p3d_set_body_poly_color bati.bati 1900 Yellow
+p3d_set_body_poly_color bati.bati 1901 Yellow
+p3d_set_body_poly_color bati.bati 1902 Yellow
+p3d_set_body_poly_color bati.bati 1903 Yellow
+p3d_set_body_poly_color bati.bati 1904 Yellow
+p3d_set_body_poly_color bati.bati 1905 Yellow
+p3d_set_body_poly_color bati.bati 1906 Yellow
+p3d_set_body_poly_color bati.bati 1907 Yellow
+p3d_set_body_poly_color bati.bati 1908 Yellow
+p3d_set_body_poly_color bati.bati 1909 Yellow
+p3d_set_body_poly_color bati.bati 1910 Yellow
+p3d_set_body_poly_color bati.bati 1911 Yellow
+p3d_set_body_poly_color bati.bati 1912 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1913 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1914 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1915 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1916 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1917 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1918 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1919 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1920 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1921 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1922 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1923 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1924 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1925 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1926 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1927 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1928 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1929 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1930 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1931 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1932 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1933 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1934 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1935 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1936 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1937 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1938 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1939 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1940 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1941 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1942 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1943 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1944 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1945 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1946 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1947 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1948 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1949 Any 0.8 0.8 0.8
+p3d_set_body_poly_color bati.bati 1950 Any 0.8 0.8 0.8
+
+p3d_set_body_poly_color rmot1.rmot 1 Red
+p3d_set_body_poly_color rmot1.rmot 2 Red
+p3d_set_body_poly_color rmot1.rmot 3 Red
+p3d_set_body_poly_color rmot1.rmot 4 Red
+p3d_set_body_poly_color rmot1.rmot 5 Red
+p3d_set_body_poly_color rmot1.rmot 6 Red
+p3d_set_body_poly_color rmot1.rmot 7 Red
+p3d_set_body_poly_color rmot1.rmot 8 Red
+p3d_set_body_poly_color rmot1.rmot 9 Red
+p3d_set_body_poly_color rmot1.rmot 10 Red
+p3d_set_body_poly_color rmot1.rmot 11 Red
+p3d_set_body_poly_color rmot1.rmot 12 Red
+p3d_set_body_poly_color rmot1.rmot 13 Red
+p3d_set_body_poly_color rmot1.rmot 14 Red
+
+p3d_set_body_poly_color rmot2.rmot 1 Red
+p3d_set_body_poly_color rmot2.rmot 2 Red
+p3d_set_body_poly_color rmot2.rmot 3 Red
+p3d_set_body_poly_color rmot2.rmot 4 Red
+p3d_set_body_poly_color rmot2.rmot 5 Red
+p3d_set_body_poly_color rmot2.rmot 6 Red
+p3d_set_body_poly_color rmot2.rmot 7 Red
+p3d_set_body_poly_color rmot2.rmot 8 Red
+p3d_set_body_poly_color rmot2.rmot 9 Red
+p3d_set_body_poly_color rmot2.rmot 10 Red
+p3d_set_body_poly_color rmot2.rmot 11 Red
+p3d_set_body_poly_color rmot2.rmot 12 Red
+p3d_set_body_poly_color rmot2.rmot 13 Red
+p3d_set_body_poly_color rmot2.rmot 14 Red

@@ -114,6 +114,8 @@ p3d_read_macro pr2.macro PR2_ROBOT
 
 p3d_end_desc
 
+p3d_set_ff_limits_in_env_box
+
 p3d_add_desc_rob_col_init PR2_ROBOT
 p3d_desactivate_col_check automatic
 

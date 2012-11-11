@@ -11,8 +11,6 @@ p3d_end_desc
 
 p3d_set_env_box -5.0 5.0 -5.0 5.0 -0.050 3.000
 
-
-
 #contrainte sur la fermeture de la pince:
 p3d_constraint p3d_lin_rel_dofs 1 13  1 12  2 1 0.0  0
 

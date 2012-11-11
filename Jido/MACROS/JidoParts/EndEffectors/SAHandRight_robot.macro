@@ -51,8 +51,8 @@ p3d_beg_desc P3D_ROBOT
     # R= rotationY(pi/2)*rotationX(-pi/2)*rotationY(-35°)*rotationZ(0.7°);
     # t= [ 0 ; 0.0855 ; -0.10282 ]
     p3d_set_pos_mat -0.0122170 -0.9999254 0 0    0.5735336 -0.0070074 0.8191520 0.0855   -0.8190909 0.0100076    0.5735764 -0.10282   0 0 0 1
-    p3d_set_dof_vmin -15
-    p3d_set_dof_vmax 15
+    p3d_set_dof_vmin -20
+    p3d_set_dof_vmax 20
   p3d_end_desc
   p3d_read_macro ./JidoParts/EndEffectors/SAHandRight/SAHandRight_thumbFingerBase.macro hand.finger1
 
@@ -61,8 +61,8 @@ p3d_beg_desc P3D_ROBOT
     p3d_set_prev_jnt 3
     p3d_set_pos_relative
     p3d_set_pos_axe  0 0 0 0 1 0
-    p3d_set_dof_vmin -4
-    p3d_set_dof_vmax 75
+    p3d_set_dof_vmin -19
+    p3d_set_dof_vmax 90
   p3d_end_desc
   p3d_read_macro ./JidoParts/EndEffectors/SAHandRight/SAHandRight_thumbFingerPhaProx.macro hand.finger1
 
@@ -72,7 +72,7 @@ p3d_beg_desc P3D_ROBOT
     p3d_set_pos_relative
     p3d_set_pos_axe 0.0678 0 0 0 0 1
     p3d_set_dof_vmin 0
-    p3d_set_dof_vmax 75
+    p3d_set_dof_vmax 90
   p3d_end_desc
   p3d_read_macro ./JidoParts/EndEffectors/SAHandRight/SAHandRight_thumbFingerPhaMid.macro hand.finger1
 
@@ -82,7 +82,7 @@ p3d_beg_desc P3D_ROBOT
     p3d_set_pos_relative
     p3d_set_pos_axe 0.03 0 0  0 0 1
     p3d_set_dof_vmin 0
-    p3d_set_dof_vmax 75
+    p3d_set_dof_vmax 90
   p3d_end_desc
   p3d_read_macro ./JidoParts/EndEffectors/SAHandRight/SAHandRight_thumbFingerPhaDist.macro hand.finger1
 #########################################################################
@@ -98,8 +98,8 @@ p3d_beg_desc P3D_ROBOT
     # R= rotationY(-pi/2)*rotationZ(2.033°);
     # t= [ -0.003 ; 0.04025 ; 0.15584 ]
     p3d_set_pos_mat  0 0 -1 -0.003  0.0354751 0.9993706 0 0.04025   0.9993706 -0.0354751 0 0.15584  0 0 0 1 
-    p3d_set_dof_vmin -15
-    p3d_set_dof_vmax 15
+    p3d_set_dof_vmin -20
+    p3d_set_dof_vmax 20
   p3d_end_desc
  p3d_read_macro ./JidoParts/EndEffectors/SAHandRight/SAHandRight_foreFingerBase.macro hand.finger2
 
@@ -109,8 +109,8 @@ p3d_beg_desc P3D_ROBOT
     p3d_set_prev_jnt 7
     p3d_set_pos_relative
     p3d_set_pos_axe  0 0 0 0 1 0
-    p3d_set_dof_vmin -4
-    p3d_set_dof_vmax 75
+    p3d_set_dof_vmin -19
+    p3d_set_dof_vmax 90
   p3d_end_desc
   p3d_read_macro ./JidoParts/EndEffectors/SAHandRight/SAHandRight_foreFingerPhaProx.macro hand.finger2
 
@@ -120,7 +120,7 @@ p3d_beg_desc P3D_ROBOT
     p3d_set_pos_relative
     p3d_set_pos_axe  0.0678 0 0 0 0 1
     p3d_set_dof_vmin 0
-    p3d_set_dof_vmax 75
+    p3d_set_dof_vmax 90
   p3d_end_desc
   p3d_read_macro ./JidoParts/EndEffectors/SAHandRight/SAHandRight_foreFingerPhaMid.macro hand.finger2
 
@@ -130,7 +130,7 @@ p3d_beg_desc P3D_ROBOT
     p3d_set_pos_relative
     p3d_set_pos_axe 0.03 0 0  0 0 1
     p3d_set_dof_vmin 0
-    p3d_set_dof_vmax 75
+    p3d_set_dof_vmax 90
   p3d_end_desc
  p3d_read_macro ./JidoParts/EndEffectors/SAHandRight/SAHandRight_foreFingerPhaDist.macro hand.finger2
 #########################################################################
@@ -144,8 +144,8 @@ p3d_beg_desc P3D_ROBOT
     p3d_set_prev_jnt 1
     p3d_set_pos_relative
     p3d_set_pos_axe -0.003 0 0.16056  -1 0 0
-    p3d_set_dof_vmin -15
-    p3d_set_dof_vmax 15
+    p3d_set_dof_vmin -20
+    p3d_set_dof_vmax 20
   p3d_end_desc
  p3d_read_macro ./JidoParts/EndEffectors/SAHandRight/SAHandRight_middleFingerBase.macro hand.finger3
 
@@ -154,8 +154,8 @@ p3d_beg_desc P3D_ROBOT
     p3d_set_prev_jnt 11
     p3d_set_pos_relative
     p3d_set_pos_axe   0 0 0 0 1 0
-    p3d_set_dof_vmin -4
-    p3d_set_dof_vmax 75
+    p3d_set_dof_vmin -19
+    p3d_set_dof_vmax 90
   p3d_end_desc
  p3d_read_macro ./JidoParts/EndEffectors/SAHandRight/SAHandRight_middleFingerPhaProx.macro hand.finger3
 
@@ -165,7 +165,7 @@ p3d_beg_desc P3D_ROBOT
     p3d_set_pos_relative
     p3d_set_pos_axe   0.0678 0 0 0 0 1
     p3d_set_dof_vmin 0
-    p3d_set_dof_vmax 75
+    p3d_set_dof_vmax 90
   p3d_end_desc
  p3d_read_macro ./JidoParts/EndEffectors/SAHandRight/SAHandRight_middleFingerPhaMid.macro hand.finger3
 
@@ -175,7 +175,7 @@ p3d_beg_desc P3D_ROBOT
     p3d_set_pos_relative
     p3d_set_pos_axe 0.03 0 0  0 0 1
     p3d_set_dof_vmin 0
-    p3d_set_dof_vmax 75
+    p3d_set_dof_vmax 90
   p3d_end_desc
  p3d_read_macro ./JidoParts/EndEffectors/SAHandRight/SAHandRight_middleFingerPhaDist.macro hand.finger3
 #########################################################################
@@ -191,8 +191,8 @@ p3d_beg_desc P3D_ROBOT
     # R= rotationY(-pi/2)*rotationZ(-1.967°);
     # t= [ -0.003 ; -0.04025 ; 0.15584 ]
     p3d_set_pos_mat 0 0 -1 -0.003  -0.0343239 0.9994108 0 -0.04025   0.9994108 0.0343239 0 0.15584   0 0 0 1
-    p3d_set_dof_vmin -15
-    p3d_set_dof_vmax 15
+    p3d_set_dof_vmin -20
+    p3d_set_dof_vmax 20
   p3d_end_desc
  p3d_read_macro ./JidoParts/EndEffectors/SAHandRight/SAHandRight_ringFingerBase.macro hand.finger4
 
@@ -201,8 +201,8 @@ p3d_beg_desc P3D_ROBOT
     p3d_set_prev_jnt 15
     p3d_set_pos_relative
     p3d_set_pos_axe   0 0 0 0 1 0
-    p3d_set_dof_vmin -4
-    p3d_set_dof_vmax 75
+    p3d_set_dof_vmin -19
+    p3d_set_dof_vmax 90
   p3d_end_desc
  p3d_read_macro ./JidoParts/EndEffectors/SAHandRight/SAHandRight_ringFingerPhaProx.macro hand.finger4
 
@@ -212,7 +212,7 @@ p3d_beg_desc P3D_ROBOT
     p3d_set_pos_relative
     p3d_set_pos_axe  0.0678 0 0 0 0 1
     p3d_set_dof_vmin 0
-    p3d_set_dof_vmax 75
+    p3d_set_dof_vmax 90
   p3d_end_desc
  p3d_read_macro ./JidoParts/EndEffectors/SAHandRight/SAHandRight_ringFingerPhaMid.macro hand.finger4
 
@@ -222,7 +222,7 @@ p3d_beg_desc P3D_ROBOT
     p3d_set_pos_relative
     p3d_set_pos_axe 0.03 0 0  0 0 1
     p3d_set_dof_vmin 0
-    p3d_set_dof_vmax 75
+    p3d_set_dof_vmax 90
   p3d_end_desc
  p3d_read_macro ./JidoParts/EndEffectors/SAHandRight/SAHandRight_ringFingerPhaDist.macro hand.finger4
 

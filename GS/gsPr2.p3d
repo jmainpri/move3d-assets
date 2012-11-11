@@ -41,10 +41,10 @@ p3d_read_macro tablebot.macro LOWTABLE
 p3d_read_macro longTable.macro LONG_TABLE1
 p3d_read_macro longTable.macro LONG_TABLE2
 p3d_read_macro squareTable.macro SQUARE_TABLE
-#p3d_read_macro fautbot.macro CHAIR1
-#p3d_read_macro fautbot.macro CHAIR2
-#p3d_read_macro trash.macro TRASHBIN
-#p3d_read_macro shelf.macro SHELF
+p3d_read_macro fautbot.macro CHAIR1
+p3d_read_macro fautbot.macro CHAIR2
+p3d_read_macro trash.macro TRASHBIN
+p3d_read_macro shelf.macro SHELF
 p3d_read_macro hrp2table.macro HRP2TABLE
 p3d_read_macro simplechair.macro SIMPLECHAIR
 p3d_read_macro smallRollingBoard.macro M_WALL_1
@@ -75,7 +75,7 @@ p3d_read_macro ./Objects/Movable/PR2Cylinder.macro PR_2CYLINDER
 p3d_read_macro ./Objects/Movable/HumanCylinder.macro HUMCYLINDER
 
 # ************* INTERNAL OBJECTS ***************
-
+p3d_read_macro visballsmall.macro VISBALL_INTERNAL
 p3d_read_macro pr2_gripper_robot.macro PR2_GRIPPER
 p3d_read_macro pr2_gripper_robot.macro PR2_GRIPPER_LEFT
 # For calculating Mightability Maps
