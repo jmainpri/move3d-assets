@@ -9,7 +9,7 @@ p3d_read_macro AchileMKinect.macro HERAKLES_HUMAN1
 
 # ******* MANIPULATION OBJECT ********
 
-p3d_read_macro ./Objects/Movable/LotrTape.macro             LOTR_TAPE
+#p3d_read_macro ./Objects/Movable/LotrTape.macro             LOTR_TAPE
 p3d_read_macro ./Objects/Movable/WalleTape.macro            WALLE_TAPE
 p3d_read_macro ./Objects/Movable/BlackVideoTape.macro       BLACK_TAPE
 p3d_read_macro ./Objects/Movable/GreyVideoTape.macro        GREY_TAPE
@@ -18,8 +18,8 @@ p3d_read_macro ./Objects/Movable/placeMat_blue.macro        PLACEMAT_BLUE
 p3d_read_macro ./Objects/Movable/placeMat_green.macro       PLACEMAT_GREEN
 #p3d_read_macro ./Objects/Movable/placeMat_purple.macro      PLACEMAT_PURPLE
 p3d_read_macro ./Objects/Movable/GreenCan.macro             GREEN_CAN
-p3d_read_macro ./Objects/Movable/RedBottle.macro            WINE_BOTTLE
-p3d_read_macro ./Objects/Movable/RedCan.macro               RED_CAN
+#p3d_read_macro ./Objects/Movable/RedBottle.macro            WINE_BOTTLE
+#p3d_read_macro ./Objects/Movable/RedCan.macro               RED_CAN
 #p3d_read_macro ./Objects/Movable/remote.macro               REMOTE
 p3d_read_macro ./Objects/Movable/toolbox.macro              ACCESSKIT
 p3d_read_macro ./Objects/Movable/BigPinkBox.macro           PINK_TRASHBIN
@@ -79,17 +79,17 @@ p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
 #p3d_read_macro ./Objects/Static/IKEA_carpet_dragor_obs.macro CARPET
 #p3d_set_obst_pos CARPET 4.58 8.52 0 0 -90 90
 
-p3d_read_macro ./Objects/MovableObstacles/IKEA_armchair_ektorp.macro FAUTEUIL_1
-p3d_set_robot_current 0 0 0 0 0 0 4.35 5.73 0 0 0 -164
-p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
-#p3d_read_macro ./Objects/Static/IKEA_armchair_ektorp_obs.macro FAUTEUIL_1
-#p3d_set_obst_pos FAUTEUIL_1 4.253 6.06 0.404 0 -90 106.052
+#p3d_read_macro ./Objects/MovableObstacles/IKEA_armchair_ektorp.macro FAUTEUIL_1
+#p3d_set_robot_current 0 0 0 0 0 0 4.35 5.73 0 0 0 -164
+#p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
+p3d_read_macro ./Objects/Static/IKEA_armchair_ektorp_obs.macro FAUTEUIL_1
+p3d_set_obst_pos FAUTEUIL_1 4.253 6.06 0.404 0 -90 106.052
 
-p3d_read_macro ./Objects/MovableObstacles/IKEA_armchair_ektorp.macro FAUTEUIL_2
-p3d_set_robot_current 0 0 0 0 0 0 3.37 8.15 0 0 0 48
-p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
-#p3d_read_macro ./Objects/Static/IKEA_armchair_ektorp_obs.macro FAUTEUIL_2
-#p3d_set_obst_pos FAUTEUIL_2 3.625 7.92 0.404 0 -90 -42
+#p3d_read_macro ./Objects/MovableObstacles/IKEA_armchair_ektorp.macro FAUTEUIL_2
+#p3d_set_robot_current 0 0 0 0 0 0 3.37 8.15 0 0 0 48
+#p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
+p3d_read_macro ./Objects/Static/IKEA_armchair_ektorp_obs.macro FAUTEUIL_2
+p3d_set_obst_pos FAUTEUIL_2 3.625 7.92 0.404 0 -90 -42
 
 p3d_read_macro ./Objects/MovableObstacles/IKEA_low_table_lack_2.macro LOW_TABLE_LARGE
 p3d_set_robot_current 0 0 0 0 0 0 4.17 6.76 0 0 0 16
@@ -97,11 +97,11 @@ p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
 #p3d_read_macro ./Objects/Static/IKEA_low_table_lack_2_obs.macro LOW_TABLE_LARGE
 #p3d_set_obst_pos LOW_TABLE_LARGE 4.297 6.316 0.225 0 -90 -74
 
-p3d_read_macro ./Objects/MovableObstacles/IKEA_sofa_ektorp.macro SOFA
-p3d_set_robot_current 0 0 0 0 0 0 3.1 6.6 0 0 0 109
-p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
-#p3d_read_macro ./Objects/Static/IKEA_sofa_ektorp_obs.macro SOFA
-#p3d_set_obst_pos SOFA 3.57 6.764 0.511 0 -90 19
+#p3d_read_macro ./Objects/MovableObstacles/IKEA_sofa_ektorp.macro SOFA
+#p3d_set_robot_current 0 0 0 0 0 0 3.1 6.6 0 0 0 109
+#p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
+p3d_read_macro ./Objects/Static/IKEA_sofa_ektorp_obs.macro SOFA
+p3d_set_obst_pos SOFA 3.57 6.764 0.511 0 -90 19
 
 #p3d_read_macro ./Objects/Static/basic_pillow_obs.macro PILLOW_1
 #p3d_set_obst_pos PILLOW_1 0 0 0 0 0 0
@@ -160,11 +160,11 @@ p3d_set_obst_pos CHEST 3.853 12.671000 0.52 0 -90 -90
 #p3d_set_robot_current 0 0 0 0 0 0 6.117000 11.671000 0 0 0 -90
 #p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
 
-#p3d_read_macro ./Objects/Static/IKEA_low_table_lack_1_obs.macro LOW_TABLE_SMALL_1
-#p3d_set_obst_pos LOW_TABLE_SMALL_1 2.66 11.61 0.225 0 -90 -90
-p3d_read_macro ./Objects/MovableObstacles/IKEA_low_table_lack_1.macro LOW_TABLE_SMALL_1
-p3d_set_robot_current 0 0 0 0 0 0 2.72 10.13 0 0 0 0
-p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
+p3d_read_macro ./Objects/Static/IKEA_low_table_lack_1_obs.macro LOW_TABLE_SMALL_1
+p3d_set_obst_pos LOW_TABLE_SMALL_1 2.66 11.61 0.225 0 -90 -90
+#p3d_read_macro ./Objects/MovableObstacles/IKEA_low_table_lack_1.macro LOW_TABLE_SMALL_1
+#p3d_set_robot_current 0 0 0 0 0 0 2.72 10.13 0 0 0 0
+#p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
 
 p3d_read_macro ./Objects/Static/IKEA_cupboard_BILLY_1_obs.macro BILLY_LONG
 p3d_set_obst_pos BILLY_LONG 2.772000 9.415 1.01 0 -90 90
