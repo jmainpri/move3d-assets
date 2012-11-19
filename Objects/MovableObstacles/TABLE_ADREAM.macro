@@ -10,7 +10,7 @@ p3d_end_desc
 
  p3d_beg_desc P3D_BODY TABLE_ADREAM
 
-  p3d_beg_desc P3D_BODY TABLE_ADREAM-body2_polyhedre1.TABLE_ADREAM-body2_polyhedre1
+  #p3d_beg_desc P3D_BODY TABLE_ADREAM-body2_polyhedre1.TABLE_ADREAM-body2_polyhedre1
 
     p3d_add_desc_poly body2_polyhedre1
       p3d_add_desc_vert -0.600000023842 0.0 -0.34999999404
@@ -66,9 +66,9 @@ p3d_end_desc
       p3d_add_desc_face 11 7 10 14
     p3d_end_desc_poly
     p3d_set_prim_pos_by_mat body2_polyhedre1 0 0 1 0 1 0 0 0 0 1 0 0 0 0 0 1
-  p3d_end_desc
+  #p3d_end_desc
 
-  p3d_beg_desc P3D_BODY TABLE_ADREAM-body3_polyhedre2.TABLE_ADREAM-body3_polyhedre2
+  #p3d_beg_desc P3D_BODY TABLE_ADREAM-body3_polyhedre2.TABLE_ADREAM-body3_polyhedre2
     p3d_add_desc_poly body3_polyhedre2
       p3d_add_desc_vert -0.600000023842 0.0 -0.34999999404
       p3d_add_desc_vert -0.700000047684 0.0 -0.250000029802
@@ -153,5 +153,7 @@ p3d_end_desc
 
 p3d_end_desc
 
-p3d_set_body_poly_color TABLE_ADREAM-body2_polyhedre1.TABLE_ADREAM-body2_polyhedre1 1 Any 0.8 0.5341766 0.3229721
-p3d_set_body_poly_color TABLE_ADREAM-body3_polyhedre2.TABLE_ADREAM-body3_polyhedre2 1 Any 0.8 0.8 0.8
+p3d_set_body_poly_color TABLE_ADREAM 1 Any 0.8 0.5341766 0.3229721
+p3d_set_body_poly_color TABLE_ADREAM 2 Any 0.8 0.8 0.8
+#p3d_set_body_poly_color TABLE_ADREAM-body2_polyhedre1.TABLE_ADREAM-body2_polyhedre1 1 Any 0.8 0.5341766 0.3229721
+#p3d_set_body_poly_color body3_polyhedre2 1 Any 0.8 0.8 0.8
