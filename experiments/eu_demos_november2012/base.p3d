@@ -4,12 +4,12 @@ p3d_beg_desc P3D_ENV ADREAM
 
 #p3d_read_macro petitVieux.macro HUMAN_OLDDUDE
 p3d_read_macro AchileMKinect.macro HERAKLES_HUMAN1
-#p3d_read_macro AchileMKinect.macro HERAKLES_HUMAN2
+p3d_read_macro AchileMKinect.macro HERAKLES_HUMAN2
 #p3d_read_macro AchileMKinect.macro HERAKLES_HUMAN3
 
 # ******* MANIPULATION OBJECT ********
 
-#p3d_read_macro ./Objects/Movable/LotrTape.macro             LOTR_TAPE
+p3d_read_macro ./Objects/Movable/LotrTape.macro             LOTR_TAPE
 p3d_read_macro ./Objects/Movable/WalleTape.macro            WALLE_TAPE
 p3d_read_macro ./Objects/Movable/BlackVideoTape.macro       BLACK_TAPE
 p3d_read_macro ./Objects/Movable/GreyVideoTape.macro        GREY_TAPE
@@ -68,7 +68,8 @@ p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
 p3d_read_macro ./Objects/MovableObstacles/TABLE_ADREAM.macro TABLE_4
 #p3d_read_macro ./Objects/MovableObstacles/DRAWERS.macro DRAWERS_1
 #p3d_read_macro ./Objects/MovableObstacles/CUPBOARD_TALL_OPPENNED.macro CUPBOARD
-
+p3d_read_macro ./Objects/MovableObstacles/M_WALL.macro M_WALL_1
+p3d_read_macro ./Objects/MovableObstacles/M_WALL.macro M_WALL_2
 
 #############################
 #         LOUNGE            #
