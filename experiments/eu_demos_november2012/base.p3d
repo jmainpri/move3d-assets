@@ -23,6 +23,7 @@ p3d_read_macro ./Objects/Movable/GreenCan.macro             GREEN_CAN
 #p3d_read_macro ./Objects/Movable/remote.macro               REMOTE
 p3d_read_macro ./Objects/Movable/toolbox.macro              ACCESSKIT
 p3d_read_macro ./Objects/Movable/BigPinkBox.macro           PINK_TRASHBIN
+p3d_read_macro ./Objects/Movable/surprise_box.macro         SURPRISE_BOX
 
 # ************* INTERNAL OBJECTS ***************
 
