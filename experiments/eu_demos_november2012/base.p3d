@@ -11,7 +11,7 @@ p3d_read_macro AchileMKinect.macro HERAKLES_HUMAN2
 
 p3d_read_macro ./Objects/Movable/LotrTape.macro             LOTR_TAPE
 p3d_read_macro ./Objects/Movable/WalleTape.macro            WALLE_TAPE
-p3d_read_macro ./Objects/Movable/BlackVideoTape.macro       BLACK_TAPE
+#p3d_read_macro ./Objects/Movable/BlackVideoTape.macro       BLACK_TAPE
 p3d_read_macro ./Objects/Movable/GreyVideoTape.macro        GREY_TAPE
 p3d_read_macro ./Objects/Movable/placeMat_red.macro         PLACEMAT_RED
 p3d_read_macro ./Objects/Movable/placeMat_blue.macro        PLACEMAT_BLUE
@@ -23,7 +23,7 @@ p3d_read_macro ./Objects/Movable/GreenCan.macro             GREEN_CAN
 #p3d_read_macro ./Objects/Movable/remote.macro               REMOTE
 p3d_read_macro ./Objects/Movable/toolbox.macro              ACCESSKIT
 p3d_read_macro ./Objects/Movable/BigPinkBox.macro           PINK_TRASHBIN
-p3d_read_macro ./Objects/Movable/surprise_box.macro         SURPRISE_BOX
+#p3d_read_macro ./Objects/Movable/surprise_box.macro         SURPRISE_BOX
 
 # ************* INTERNAL OBJECTS ***************
 
@@ -69,8 +69,8 @@ p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
 p3d_read_macro ./Objects/MovableObstacles/TABLE_ADREAM.macro TABLE_4
 #p3d_read_macro ./Objects/MovableObstacles/DRAWERS.macro DRAWERS_1
 #p3d_read_macro ./Objects/MovableObstacles/CUPBOARD_TALL_OPPENNED.macro CUPBOARD
-p3d_read_macro ./Objects/MovableObstacles/M_WALL.macro M_WALL_1
-p3d_read_macro ./Objects/MovableObstacles/M_WALL.macro M_WALL_2
+#p3d_read_macro ./Objects/MovableObstacles/M_WALL.macro M_WALL_1
+#p3d_read_macro ./Objects/MovableObstacles/M_WALL.macro M_WALL_2
 
 #############################
 #         LOUNGE            #
