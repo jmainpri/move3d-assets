@@ -61,7 +61,7 @@ p3d_read_macro ./Objects/Movable/HumanCylinder.macro HUMCYLINDER
 #p3d_set_obst_pos LAMP_1 4.865 5.34 0.739 0 -90 90
 
 # elements that could be used to set up a particular demo
-p3d_read_macro ./Objects/MovableObstacles/DESK_ADREAM.macro CONTROL_DESK
+p3d_read_macro ./Objects/MovableObstacles/DESK_ADREAM.macro CTL_TABLE
 p3d_set_robot_current 0 0 0 0 0 0 7.099 4.423 0 0 0 -90
 p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
 #p3d_read_macro hrp2table.macro HRP2TABLE
