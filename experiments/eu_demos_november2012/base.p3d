@@ -34,7 +34,9 @@ p3d_read_macro pr2_gripper_robot.macro PR2_GRIPPER_LEFT
 p3d_read_macro ./Objects/Movable/test_cube_Mightability.macro VISBALL_MIGHTABILITY
 p3d_read_macro ./Objects/Movable/test_bar_Mightability.macro HUM_BAR
 
-#For calculating Graspability of Human
+
+#For calculating Graspability of Human. Don't remove any of the below. Both are required at different places of grasp computation
+p3d_read_macro SAHandRight_robot.macro SAHandRight
 p3d_read_macro SAHandRight_robot.macro SAHandRight2
 
 #For calculating OTP
@@ -66,7 +68,7 @@ p3d_set_robot_current 0 0 0 0 0 0 7.099 4.423 0 0 0 -90
 p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
 #p3d_read_macro hrp2table.macro HRP2TABLE
 #p3d_read_macro ./Objects/MovableObstacles/DESK_ADREAM.macro DESK
-p3d_read_macro ./Objects/MovableObstacles/TABLE_ADREAM.macro TABLE_4
+#p3d_read_macro ./Objects/MovableObstacles/TABLE_ADREAM.macro TABLE_4
 #p3d_read_macro ./Objects/MovableObstacles/DRAWERS.macro DRAWERS_1
 #p3d_read_macro ./Objects/MovableObstacles/CUPBOARD_TALL_OPPENNED.macro CUPBOARD
 #p3d_read_macro ./Objects/MovableObstacles/M_WALL.macro M_WALL_1
@@ -81,17 +83,17 @@ p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
 #p3d_read_macro ./Objects/Static/IKEA_carpet_dragor_obs.macro CARPET
 #p3d_set_obst_pos CARPET 4.58 8.52 0 0 -90 90
 
-#p3d_read_macro ./Objects/MovableObstacles/IKEA_armchair_ektorp.macro FAUTEUIL_1
-#p3d_set_robot_current 0 0 0 0 0 0 4.35 5.73 0 0 0 -164
-#p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
-p3d_read_macro ./Objects/Static/IKEA_armchair_ektorp_obs.macro FAUTEUIL_1
-p3d_set_obst_pos FAUTEUIL_1 4.253 6.06 0.404 0 -90 106.052
+p3d_read_macro ./Objects/MovableObstacles/IKEA_armchair_ektorp.macro FAUTEUIL_1
+p3d_set_robot_current 0 0 0 0 0 0 4.35 5.73 0 0 0 -164
+p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
+##p3d_read_macro ./Objects/Static/IKEA_armchair_ektorp_obs.macro FAUTEUIL_1
+##p3d_set_obst_pos FAUTEUIL_1 4.253 6.06 0.404 0 -90 106.052
 
-#p3d_read_macro ./Objects/MovableObstacles/IKEA_armchair_ektorp.macro FAUTEUIL_2
-#p3d_set_robot_current 0 0 0 0 0 0 3.37 8.15 0 0 0 48
-#p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
-p3d_read_macro ./Objects/Static/IKEA_armchair_ektorp_obs.macro FAUTEUIL_2
-p3d_set_obst_pos FAUTEUIL_2 3.625 7.92 0.404 0 -90 -42
+p3d_read_macro ./Objects/MovableObstacles/IKEA_armchair_ektorp.macro FAUTEUIL_2
+p3d_set_robot_current 0 0 0 0 0 0 3.37 8.15 0 0 0 48
+p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
+##p3d_read_macro ./Objects/Static/IKEA_armchair_ektorp_obs.macro FAUTEUIL_2
+##p3d_set_obst_pos FAUTEUIL_2 3.625 7.92 0.404 0 -90 -42
 
 p3d_read_macro ./Objects/MovableObstacles/IKEA_low_table_lack_2.macro LOW_TABLE_LARGE
 p3d_set_robot_current 0 0 0 0 0 0 4.17 6.76 0 0 0 16
@@ -99,11 +101,11 @@ p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
 #p3d_read_macro ./Objects/Static/IKEA_low_table_lack_2_obs.macro LOW_TABLE_LARGE
 #p3d_set_obst_pos LOW_TABLE_LARGE 4.297 6.316 0.225 0 -90 -74
 
-#p3d_read_macro ./Objects/MovableObstacles/IKEA_sofa_ektorp.macro SOFA
-#p3d_set_robot_current 0 0 0 0 0 0 3.1 6.6 0 0 0 109
-#p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
-p3d_read_macro ./Objects/Static/IKEA_sofa_ektorp_obs.macro SOFA
-p3d_set_obst_pos SOFA 3.57 6.764 0.511 0 -90 19
+p3d_read_macro ./Objects/MovableObstacles/IKEA_sofa_ektorp.macro SOFA
+p3d_set_robot_current 0 0 0 0 0 0 3.1 6.6 0 0 0 109
+p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
+##p3d_read_macro ./Objects/Static/IKEA_sofa_ektorp_obs.macro SOFA
+##p3d_set_obst_pos SOFA 3.57 6.764 0.511 0 -90 19
 
 #p3d_read_macro ./Objects/Static/basic_pillow_obs.macro PILLOW_1
 #p3d_set_obst_pos PILLOW_1 0 0 0 0 0 0
