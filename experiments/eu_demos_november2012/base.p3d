@@ -17,7 +17,7 @@ p3d_read_macro ./Objects/Movable/placeMat_red.macro         PLACEMAT_RED
 p3d_read_macro ./Objects/Movable/placeMat_blue.macro        PLACEMAT_BLUE
 p3d_read_macro ./Objects/Movable/placeMat_green.macro       PLACEMAT_GREEN
 #p3d_read_macro ./Objects/Movable/placeMat_purple.macro      PLACEMAT_PURPLE
-p3d_read_macro ./Objects/Movable/GreenCan.macro             GREEN_CAN
+#p3d_read_macro ./Objects/Movable/GreenCan.macro             GREEN_CAN
 #p3d_read_macro ./Objects/Movable/RedBottle.macro            WINE_BOTTLE
 #p3d_read_macro ./Objects/Movable/RedCan.macro               RED_CAN
 #p3d_read_macro ./Objects/Movable/remote.macro               REMOTE
@@ -63,12 +63,12 @@ p3d_read_macro ./Objects/Movable/HumanCylinder.macro HUMCYLINDER
 #p3d_set_obst_pos LAMP_1 4.865 5.34 0.739 0 -90 90
 
 # elements that could be used to set up a particular demo
-p3d_read_macro ./Objects/MovableObstacles/DESK_ADREAM.macro CTL_TABLE
-p3d_set_robot_current 0 0 0 0 0 0 7.099 4.423 0 0 0 -90
-p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
+#p3d_read_macro ./Objects/MovableObstacles/DESK_ADREAM.macro CTL_TABLE
+#p3d_set_robot_current 0 0 0 0 0 0 7.099 4.423 0 0 0 -90
+#p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
 #p3d_read_macro hrp2table.macro HRP2TABLE
 #p3d_read_macro ./Objects/MovableObstacles/DESK_ADREAM.macro DESK
-#p3d_read_macro ./Objects/MovableObstacles/TABLE_ADREAM.macro TABLE_4
+p3d_read_macro ./Objects/MovableObstacles/TABLE_ADREAM.macro TABLE_1
 #p3d_read_macro ./Objects/MovableObstacles/DRAWERS.macro DRAWERS_1
 #p3d_read_macro ./Objects/MovableObstacles/CUPBOARD_TALL_OPPENNED.macro CUPBOARD
 #p3d_read_macro ./Objects/MovableObstacles/M_WALL.macro M_WALL_1
