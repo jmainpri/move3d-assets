@@ -246,6 +246,10 @@ p3d_read_macro ./Objects/Movable/PR2Cylinder.macro PR_2CYLINDER
 
 p3d_read_macro ./Objects/Movable/HumanCylinder.macro HUMCYLINDER
 
+p3d_read_macro ./Objects/Movable/hammer.macro HAMMER 0.15
+
+p3d_read_macro ./Objects/Movable/screwdriver.macro SCREWDRIVER 0.02
+
 # ************* ROBOTS ***************
 
 p3d_read_macro pr2.macro PR2_ROBOT
