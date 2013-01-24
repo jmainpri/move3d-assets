@@ -71,8 +71,8 @@ p3d_read_macro ./Objects/Movable/HumanCylinder.macro HUMCYLINDER
 p3d_read_macro ./Objects/MovableObstacles/TABLE_ADREAM.macro TABLE_1
 #p3d_read_macro ./Objects/MovableObstacles/DRAWERS.macro DRAWERS_1
 #p3d_read_macro ./Objects/MovableObstacles/CUPBOARD_TALL_OPPENNED.macro CUPBOARD
-#p3d_read_macro ./Objects/MovableObstacles/M_WALL.macro M_WALL_1
-#p3d_read_macro ./Objects/MovableObstacles/M_WALL.macro M_WALL_2
+p3d_read_macro ./Objects/MovableObstacles/M_WALL.macro M_WALL_1
+p3d_read_macro ./Objects/MovableObstacles/M_WALL.macro M_WALL_2
 
 #############################
 #         LOUNGE            #

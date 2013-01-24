@@ -1,17 +1,79 @@
-p3d_beg_desc P3D_ENV EADS
+p3d_beg_desc P3D_ENV EADS2
 
+  p3d_read_macro OB_Cube_050.macro OB_Cube_050
+  p3d_set_obst_pos OB_Cube_050 -6.112913 0.491327 1.047142 0.0 0.0 0.0
 
-# ************* ghosts for the holes *************
+  p3d_read_macro OB_Cube_049.macro OB_Cube_049
+  p3d_set_obst_pos OB_Cube_049 -2.857555 0.534469 0.029419 0.0 0.0 0.0
 
-p3d_beg_desc P3D_OBSTACLE HOLEGHoST1
-    p3d_add_desc_box holeghost1 0.9 14 0.4 P3D_GHOST
-    p3d_set_prim_pos holeghost1 -5.1 7 0 0 0 0
-p3d_end_desc
+  p3d_read_macro OB_Cube_048.macro OB_Cube_048
+  p3d_set_obst_pos OB_Cube_048 -2.857555 0.534469 0.400739 0.0 0.0 0.0
 
-p3d_beg_desc P3D_OBSTACLE HOLEGHoST1
-    p3d_add_desc_box holeghost1 0.9 14 0.4 P3D_GHOST
-    p3d_set_prim_pos holeghost1 -9.4 7 0 0 0 0
-p3d_end_desc
+  p3d_read_macro OB_Cube_045.macro OB_Cube_045
+  p3d_set_obst_pos OB_Cube_045 -1.480688 0.524785 0.722125 0.0 0.0 0.0
+
+  p3d_read_macro OB_Cube_044.macro OB_Cube_044
+  p3d_set_obst_pos OB_Cube_044 -1.403843 0.524785 0.497785 0.0 0.0 0.0
+
+  p3d_read_macro OB_Plane_003.macro OB_Plane_003
+  p3d_set_obst_pos OB_Plane_003 -0.66582 4.339804 0.704526 0.0 0.0 0.0
+
+  p3d_read_macro OB_Desk_1_007.macro OB_Desk_1_007
+  p3d_set_obst_pos OB_Desk_1_007 -1.04937 16.028596 0.012406 0.0 0.0 0.0
+
+  p3d_read_macro OB_Desk_1_006.macro OB_Desk_1_006
+  p3d_set_obst_pos OB_Desk_1_006 -0.629365 1.999018 0.012406 0.0 0.0 0.0
+
+  p3d_read_macro OB_Desk_1_005.macro OB_Desk_1_005
+  p3d_set_obst_pos OB_Desk_1_005 -0.629365 3.999018 0.012406 0.0 0.0 0.0
+
+  p3d_read_macro OB_Desk_1_004.macro OB_Desk_1_004
+  p3d_set_obst_pos OB_Desk_1_004 -0.629365 5.999018 0.012406 0.0 0.0 0.0
+
+  p3d_read_macro OB_Desk_1_003.macro OB_Desk_1_003
+  p3d_set_obst_pos OB_Desk_1_003 -0.629365 7.999018 0.012406 0.0 0.0 0.0
+
+  p3d_read_macro OB_Desk_1_002.macro OB_Desk_1_002
+  p3d_set_obst_pos OB_Desk_1_002 -0.629365 9.999018 0.012406 0.0 0.0 0.0
+
+  p3d_read_macro OB_Desk_1_001.macro OB_Desk_1_001
+  p3d_set_obst_pos OB_Desk_1_001 -0.629365 11.999018 0.012406 0.0 0.0 0.0
+
+  p3d_read_macro OB_cupboard_small_001.macro OB_cupboard_small_001
+  p3d_set_obst_pos OB_cupboard_small_001 -1.5 0.472148 0 0.0 0.0 0.0
+
+  p3d_read_macro OB_cupboard_small_009.macro OB_cupboard_small_009
+  p3d_set_obst_pos OB_cupboard_small_009 -4.5 0.472146 0 0.0 0.0 0.0
+
+  p3d_read_macro OB_cupboard_small_008.macro OB_cupboard_small_008
+  p3d_set_obst_pos OB_cupboard_small_008 -6 0.472145 0 0.0 0.0 0.0
+
+  p3d_read_macro OB_cupboard_small_006.macro OB_cupboard_small_006
+  p3d_set_obst_pos OB_cupboard_small_006 -12 0.472141 0 0.0 0.0 0.0
+
+  p3d_read_macro OB_cupboard_small_005.macro OB_cupboard_small_005
+  p3d_set_obst_pos OB_cupboard_small_005 -10.5 0.472142 0 0.0 0.0 0.0
+
+  p3d_read_macro OB_cupboard_small_004.macro OB_cupboard_small_004
+  p3d_set_obst_pos OB_cupboard_small_004 -9 0.472143 0 0.0 0.0 0.0
+
+  p3d_read_macro OB_cupboard_small_003.macro OB_cupboard_small_003
+  p3d_set_obst_pos OB_cupboard_small_003 -3 0.472148 0 0.0 0.0 0.0
+
+  p3d_read_macro OB_cupboard_small_002.macro OB_cupboard_small_002
+  p3d_set_obst_pos OB_cupboard_small_002 -7.5 0.472143 0 0.0 0.0 0.0
+
+  p3d_read_macro OB_Cube_043.macro OB_Cube_043
+  p3d_set_obst_pos OB_Cube_043 -9.23843 0.071654 0 0.0 0.0 0.0
+
+  p3d_read_macro OB_Cube_042.macro OB_Cube_042
+  p3d_set_obst_pos OB_Cube_042 -7.214098 0.071653 0 0.0 0.0 0.0
+
+  p3d_read_macro OB_Cylinder_003.macro OB_Cylinder_003
+  p3d_set_obst_pos OB_Cylinder_003 -7.265266 4.917929 -2.28532 0.0 0.0 0.0
+
+  p3d_read_macro OB_Cylinder_002.macro OB_Cylinder_002
+  p3d_set_obst_pos OB_Cylinder_002 -7.265266 8.368179 -2.285323 0.0 0.0 0.0
 
   p3d_read_macro OB_Cube_041.macro OB_Cube_041
   p3d_set_obst_pos OB_Cube_041 -17.331776 18.921701 -1.017587 0.0 0.0 0.0
@@ -56,19 +118,19 @@ p3d_end_desc
   p3d_set_obst_pos OB_Cube_026 -12.154715 17.889224 -1.79843 0.0 0.0 0.0
 
   p3d_read_macro OB_Plane_001.macro OB_Plane_001
-  p3d_set_obst_pos OB_Plane_001 -7.265269 8.396324 -1.875584 0.0 0.0 0.0
+  p3d_set_obst_pos OB_Plane_001 -7.265269 8.396324 -2.528781 0.0 0.0 0.0
 
   p3d_read_macro OB_Cube_025.macro OB_Cube_025
-  p3d_set_obst_pos OB_Cube_025 -11.236306 0.071653 0 0.0 0.0 0.0
+  p3d_set_obst_pos OB_Cube_025 -11.255334 0.071653 0 0.0 0.0 0.0
 
   p3d_read_macro OB_Cube_028.macro OB_Cube_028
   p3d_set_obst_pos OB_Cube_028 -1.122305 0.071653 0 0.0 0.0 0.0
 
   p3d_read_macro OB_Cube_027.macro OB_Cube_027
-  p3d_set_obst_pos OB_Cube_027 -3.316081 0.071653 0 0.0 0.0 0.0
+  p3d_set_obst_pos OB_Cube_027 -3.151674 0.071653 0 0.0 0.0 0.0
 
   p3d_read_macro OB_Cube_024.macro OB_Cube_024
-  p3d_set_obst_pos OB_Cube_024 -7.308988 0.071653 0 0.0 0.0 0.0
+  p3d_set_obst_pos OB_Cube_024 -5.177224 0.071654 0 0.0 0.0 0.0
 
   p3d_read_macro OB_Cube_023.macro OB_Cube_023
   p3d_set_obst_pos OB_Cube_023 -13.33576 0.071653 0 0.0 0.0 0.0
@@ -145,17 +207,30 @@ p3d_end_desc
   p3d_read_macro OB_Plane.macro OB_Plane
   p3d_set_obst_pos OB_Plane -7.265268 8.396325 -0.01 0.0 0.0 0.0
 
-  p3d_read_macro OB_Cylinder_003.macro OB_Cylinder_003
-  p3d_set_obst_pos OB_Cylinder_003 -7.265266 4.896327 -1.729829 0.0 0.0 0.0
-
-  p3d_read_macro OB_Cylinder_002.macro OB_Cylinder_002
-  p3d_set_obst_pos OB_Cylinder_002 -7.265266 8.396326 -1.729829 0.0 0.0 0.0
-
   p3d_read_macro OB_Cylinder_001.macro OB_Cylinder_001
-  p3d_set_obst_pos OB_Cylinder_001 -7.265266 11.896326 -1.729829 0.0 0.0 0.0
+  p3d_set_obst_pos OB_Cylinder_001 -7.265266 11.896254 -2.285325 0.0 0.0 0.0
 
   p3d_read_macro OB_rsvd_Cylinder.macro OB_rsvd_Cylinder
-  p3d_set_obst_pos OB_rsvd_Cylinder -7.265266 8.396326 -1.820003 0.0 0.0 0.0
+  p3d_set_obst_pos OB_rsvd_Cylinder -7.265266 8.396 -2.500003 0.0 0.0 0.0
+
+  p3d_read_macro OB_cupboard_small.macro OB_cupboard_small
+  p3d_set_obst_pos OB_cupboard_small -13.5 0.472141 0 0.0 0.0 0.0
+
+  p3d_read_macro OB_Desk_1.macro OB_Desk_1
+  p3d_set_obst_pos OB_Desk_1 -0.629365 13.999018 0.012406 0.0 0.0 0.0
+
+  p3d_read_macro OB_Plane_002.macro OB_Plane_002
+  p3d_set_obst_pos OB_Plane_002 -0.692538 1.663087 0.706979 0.0 0.0 0.0
+
+  p3d_read_macro OB_Cylinder_005.macro OB_Cylinder_005
+  p3d_set_obst_pos OB_Cylinder_005 -0.676213 2.418572 0.587476 0.0 0.0 0.0
+
+  p3d_read_macro OB_Cube_046.macro OB_Cube_046
+  p3d_set_obst_pos OB_Cube_046 -1.403843 0.553799 0.400739 0.0 0.0 0.0
+
+  p3d_read_macro OB_Cube_047.macro OB_Cube_047
+  p3d_set_obst_pos OB_Cube_047 -1.322881 0.465686 1.047824 0.0 0.0 0.0
+
 
 # ************* HUMANS ***************
 
@@ -348,6 +423,7 @@ p3d_set_arm_data 3 3 33
 p3d_set_config_cost_threshold 0.20
 
 p3d_set_active_robot PR2_ROBOT
+
 
 
 
