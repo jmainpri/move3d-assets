@@ -69,6 +69,8 @@ p3d_read_macro ./Objects/Movable/HumanCylinder.macro HUMCYLINDER
 #p3d_read_macro hrp2table.macro HRP2TABLE
 #p3d_read_macro ./Objects/MovableObstacles/DESK_ADREAM.macro DESK
 p3d_read_macro ./Objects/MovableObstacles/TABLE_ADREAM.macro TABLE_1
+p3d_set_robot_current 0 0 0 0 0 0 7.16 4.40 0 0 0 -90
+p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
 #p3d_read_macro ./Objects/MovableObstacles/DRAWERS.macro DRAWERS_1
 #p3d_read_macro ./Objects/MovableObstacles/CUPBOARD_TALL_OPPENNED.macro CUPBOARD
 p3d_read_macro ./Objects/MovableObstacles/M_WALL.macro M_WALL_1
@@ -152,11 +154,11 @@ p3d_set_obst_pos BED 4.449 11.107 0.398 0 -90 0
 #p3d_set_robot_current 0 0 0 0 0 0 2.68 10.13 0.0 0 0.0 90.0 
 #p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
 
-p3d_read_macro ./Objects/Static/IKEA_console_HEMNES_obs.macro CONSOLE
-p3d_set_obst_pos CONSOLE 5.984 11.715 0.371 0 -90 -180
-#p3d_read_macro ./Objects/MovableObstacles/IKEA_console_HEMNES.macro CONSOLE
-#p3d_set_robot_current 0 0 0 0 0 0 4.384 12.965 0 0 0 0
-#p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
+#p3d_read_macro ./Objects/Static/IKEA_console_HEMNES_obs.macro CONSOLE
+#p3d_set_obst_pos CONSOLE 5.984 11.715 0.371 0 -90 -180
+p3d_read_macro ./Objects/MovableObstacles/IKEA_console_HEMNES.macro CONSOLE
+p3d_set_robot_current 0 0 0 0 0 0 6.16 11.67 0 0 0 -90
+p3d_set_robot_goto 0 0 0 0 0 0 0 0 0 0 0 0
 
 p3d_read_macro ./Objects/Static/IKEA_chest_HEMNES_obs.macro CHEST
 p3d_set_obst_pos CHEST 3.853 12.671000 0.52 0 -90 -90
