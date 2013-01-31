@@ -1190,7 +1190,7 @@ p3d_beg_desc P3D_ROBOT
       p3d_add_desc_face 331 299 330 362
     p3d_end_desc_poly
 
-    p3d_add_desc_poly body4_polyhedre3
+    p3d_add_desc_poly body4_polyhedre3 P3D_GRAPHIC
       p3d_add_desc_vert 0.279591143131 -0.279822319746 0.457265138626
       p3d_add_desc_vert 0.279591143131 -0.279822319746 0.4372651577
       p3d_add_desc_vert 0.179591134191 -0.279822319746 0.4372651577
@@ -1576,7 +1576,7 @@ p3d_beg_desc P3D_ROBOT
       p3d_add_desc_face 61 64 63 62
     p3d_end_desc_poly
 
-    p3d_add_desc_poly body5_polyhedre4
+    p3d_add_desc_poly body5_polyhedre4 P3D_GRAPHIC
       p3d_add_desc_vert 0.279591143131 -0.279822319746 0.457265138626
       p3d_add_desc_vert 0.279591143131 -0.279822319746 0.4372651577
       p3d_add_desc_vert 0.179591134191 -0.279822319746 0.4372651577
@@ -1968,7 +1968,7 @@ p3d_beg_desc P3D_ROBOT
       p3d_add_desc_face 89 92 91 90
     p3d_end_desc_poly
 
-    p3d_add_desc_poly body6_polyhedre5
+    p3d_add_desc_poly body6_polyhedre5 P3D_GRAPHIC
       p3d_add_desc_vert 0.279591143131 -0.279822319746 0.457265138626
       p3d_add_desc_vert 0.279591143131 -0.279822319746 0.4372651577
       p3d_add_desc_vert 0.179591134191 -0.279822319746 0.4372651577
@@ -2353,7 +2353,7 @@ p3d_beg_desc P3D_ROBOT
       p3d_add_desc_face 93 96 95 94
     p3d_end_desc_poly
 
-    p3d_add_desc_poly body7_polyhedre6
+    p3d_add_desc_poly body7_polyhedre6 P3D_GRAPHIC
       p3d_add_desc_vert 0.279591143131 -0.279822319746 0.457265138626
       p3d_add_desc_vert 0.279591143131 -0.279822319746 0.4372651577
       p3d_add_desc_vert 0.179591134191 -0.279822319746 0.4372651577
@@ -2738,7 +2738,140 @@ p3d_beg_desc P3D_ROBOT
       p3d_add_desc_face 97 100 99 98
     p3d_end_desc_poly
 p3d_end_desc
+
+   p3d_beg_desc_jnt P3D_FIXED # J2
+      p3d_set_name Arm0
+      p3d_set_prev_jnt 1
+      p3d_set_pos_axe -0.35 -0.15 0 0 0 1
+   p3d_end_desc
+   
+   p3d_read_macro JidoParts/kukaArmBody/kukaBase.macro base
+   
+   p3d_beg_desc_jnt P3D_ROTATE # J3
+      p3d_set_name Arm1
+      p3d_set_prev_jnt 2
+      p3d_set_pos_axe -0.35 -0.15 0 0 0 1
+      p3d_set_dof_vmin             -170
+      p3d_set_dof_vmax              170
+      p3d_set_dof_velocity_max      0.475
+      p3d_set_dof_acceleration_max  0.95
+      p3d_set_dof_jerk_max          2.85 
+      p3d_set_dof_torque_max        200 
+   p3d_end_desc
+   
+   p3d_read_macro JidoParts/kukaArmBody/kuka1.macro kuka1
+   
+   p3d_beg_desc_jnt P3D_ROTATE # J4
+      p3d_set_name Arm2
+      p3d_set_prev_jnt 3
+      p3d_set_pos_axe -0.35 -0.15 0.93 0 1 0
+      p3d_set_dof_vmin             -120
+      p3d_set_dof_vmax              120
+      p3d_set_dof_velocity_max      0.475
+      p3d_set_dof_acceleration_max  0.95
+      p3d_set_dof_jerk_max          2.85 
+      p3d_set_dof_torque_max        200
+   p3d_end_desc
+   
+   p3d_read_macro JidoParts/kukaArmBody/kuka2.macro kuka2
+   
+   p3d_beg_desc_jnt P3D_ROTATE # J5
+      p3d_set_name Arm3
+      p3d_set_prev_jnt 4
+      p3d_set_pos_axe -0.35 -0.15 0 0 0 1
+      p3d_set_dof_vmin             -170
+      p3d_set_dof_vmax              170
+      p3d_set_dof_velocity_max      0.475
+      p3d_set_dof_acceleration_max  0.95
+      p3d_set_dof_jerk_max          2.85 
+      p3d_set_dof_torque_max        100
+   p3d_end_desc
+   
+   p3d_read_macro JidoParts/kukaArmBody/kuka3.macro kuka3
+   
+   p3d_beg_desc_jnt P3D_ROTATE # J6
+      p3d_set_name Arm4
+      p3d_set_prev_jnt 5
+      p3d_set_pos_axe -0.35 -0.15 1.33 0 1 0
+      p3d_set_dof_vmin             -120
+      p3d_set_dof_vmax              120
+      p3d_set_dof_velocity_max      0.475
+      p3d_set_dof_acceleration_max  0.95
+      p3d_set_dof_jerk_max          2.85 
+      p3d_set_dof_torque_max        100
+   p3d_end_desc
+   
+   p3d_read_macro JidoParts/kukaArmBody/kuka4.macro kuka4
+   
+   p3d_beg_desc_jnt P3D_ROTATE # J7
+      p3d_set_name Arm5
+      p3d_set_prev_jnt 6
+      p3d_set_pos_axe -0.35 -0.15 0 0 0 1
+      p3d_set_dof_vmin              -170
+      p3d_set_dof_vmax              170
+      p3d_set_dof_velocity_max      0.785
+      p3d_set_dof_acceleration_max  1.57
+      p3d_set_dof_jerk_max          4.71 
+      p3d_set_dof_torque_max        200
+   p3d_end_desc
+   
+   p3d_read_macro JidoParts/kukaArmBody/kuka5.macro kuka5
+   
+   p3d_beg_desc_jnt P3D_ROTATE # J8
+      p3d_set_name Arm6
+      p3d_set_prev_jnt 7
+      p3d_set_pos_axe -0.35 -0.15 1.72 0 1 0
+      p3d_set_dof_vmin             -120
+      p3d_set_dof_vmax              120
+      p3d_set_dof_velocity_max      0.475
+      p3d_set_dof_acceleration_max  0.95
+      p3d_set_dof_jerk_max          2.85
+      p3d_set_dof_torque_max        30
+   p3d_end_desc
+   
+   p3d_read_macro JidoParts/kukaArmBody/kuka6.macro kuka6
+   
+   p3d_beg_desc_jnt P3D_ROTATE # J9
+      p3d_set_name  Arm7
+      p3d_set_prev_jnt 8
+      p3d_set_pos_axe -0.35 -0.15 0 0 0 1
+      p3d_set_dof_vmin             -170
+      p3d_set_dof_vmax              170
+      p3d_set_dof_velocity_max      0.475
+      p3d_set_dof_acceleration_max  0.95
+      p3d_set_dof_jerk_max          2.85
+      p3d_set_dof_torque_max        30
+   p3d_end_desc
+   
+   p3d_read_macro JidoParts/kukaArmBody/kuka7.macro kuka7
+   
+
 p3d_end_desc
+
+p3d_set_body_abs_pos base.base -0.35 -0.15 0.62 0 0 0
+p3d_set_body_abs_pos base.GkukaBase -0.35 -0.15 0.62 0 0 0
+
+p3d_set_body_abs_pos kuka1.kuka1 -0.35 -0.15 0.62 0 0 0
+p3d_set_body_abs_pos kuka1.Gkuka1 -0.35 -0.15 0.62 0 0 0
+
+p3d_set_body_abs_pos kuka2.kuka2 -0.35 -0.15 0.62 0 0 0
+p3d_set_body_abs_pos kuka2.Gkuka2 -0.35 -0.15 0.62 0 0 0
+
+p3d_set_body_abs_pos kuka3.kuka3 -0.35 -0.15 0.62 0 0 0
+p3d_set_body_abs_pos kuka3.Gkuka3 -0.35 -0.15 0.62 0 0 0
+
+p3d_set_body_abs_pos kuka4.kuka4 -0.35 -0.15 0.62 0 0 0
+p3d_set_body_abs_pos kuka4.Gkuka4 -0.35 -0.15 0.62 0 0 0
+
+p3d_set_body_abs_pos kuka5.kuka5 -0.35 -0.15 0.62 0 0 0
+p3d_set_body_abs_pos kuka5.Gkuka5 -0.35 -0.15 0.62 0 0 0
+
+p3d_set_body_abs_pos kuka6.kuka6 -0.35 -0.15 0.62 0 0 0
+p3d_set_body_abs_pos kuka6.Gkuka6 -0.35 -0.15 0.62 0 0 0
+
+p3d_set_body_abs_pos kuka7.kuka7 -0.35 -0.15 0.62 0 0 0
+p3d_set_body_abs_pos kuka7.Gkuka7 -0.35 -0.15 0.62 0 0 0
+
 
 p3d_set_body_poly_color KUKAROBOT 1 Any 0.8 0.8 0.8
 p3d_set_body_poly_color KUKAROBOT 2 Any 1.0 0.3299038 0.0
@@ -2746,3 +2879,17 @@ p3d_set_body_poly_color KUKAROBOT 3 Any 0.8 0.018859 0.0
 p3d_set_body_poly_color KUKAROBOT 4 Any 0.0 0.0 0.0
 p3d_set_body_poly_color KUKAROBOT 5 Any 0.2667542 0.2667542 0.2667542
 p3d_set_body_poly_color KUKAROBOT 6 Any 0.0219777 0.0204764 0.0201953
+
+p3d_set_body_poly_color base.base 1 Any 0.6157 0.5961 0.5961
+p3d_set_body_poly_color base.base 2 Any 0.1765 0.1765 0.1765
+p3d_set_body_poly_color kuka1.kuka1 1 Any 1.0 0.3922 0.0
+p3d_set_body_poly_color kuka1.kuka1 2 Any 0.1765 0.1765 0.1765
+p3d_set_body_poly_color kuka2.kuka2 1 Any 1.0 0.3922 0.0
+p3d_set_body_poly_color kuka2.kuka2 2 Any 0.1765 0.1765 0.1765
+p3d_set_body_poly_color kuka3.kuka3 1 Any 1.0 0.3922 0.0
+p3d_set_body_poly_color kuka3.kuka3 2 Any 0.1765 0.1765 0.1765
+p3d_set_body_poly_color kuka4.kuka4 1 Any 1.0 0.3922 0.0
+p3d_set_body_poly_color kuka4.kuka4 2 Any 0.1765 0.1765 0.1765
+p3d_set_body_poly_color kuka5.kuka5 1 Any 1.0 0.3922 0.0
+p3d_set_body_poly_color kuka6.kuka6 1 Any 0.6157 0.5961 0.5961
+p3d_set_body_poly_color kuka7.kuka7 1 Any 0.1765 0.1765 0.1765
