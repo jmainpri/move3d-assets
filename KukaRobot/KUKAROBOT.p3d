@@ -1,0 +1,18 @@
+p3d_beg_desc P3D_ENV KUKAROBOT
+
+
+# ************* ROBOTS ***************
+
+p3d_read_macro kukaBase.macro KUKA_ROBOT
+
+p3d_end_desc
+
+p3d_set_env_box 0 3 0 3 0 3
+
+
+
+
+p3d_set_active_robot KUKA_ROBOT
+
+
+
