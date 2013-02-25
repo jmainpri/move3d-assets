@@ -1,0 +1,43 @@
+p3d_beg_desc P3D_ENV landscape-2
+
+  p3d_beg_desc P3D_ROBOT CylinderRob
+
+    p3d_beg_desc_jnt P3D_PLAN
+      p3d_set_prev_jnt 0
+      p3d_set_pos_xyz 0 0 0  0 0 0
+      p3d_set_dof_vmin -100 -100 0
+      p3d_set_dof_vmax   98   98 0
+    p3d_end_desc
+
+    p3d_beg_desc P3D_BODY body  
+      p3d_add_desc_cylindre cyl 0.5 1
+      p3d_set_prim_pos cyl 0 0 55  0 0 0
+    p3d_end_desc
+
+  p3d_end_desc
+
+  p3d_CostEnvironment 17
+
+  p3d_read_macro landscape-2.macro OB_Plane
+
+p3d_end_desc
+
+p3d_set_env_box -100 100  -100 100  0 60
+
+# Triple T-RRT
+# p3d_set_robot_current         0 0 0 0 0 0  88 -90 0
+# p3d_set_robot_goto            0 0 0 0 0 0  90  90 0
+# p3d_set_robot_config waypoint 0 0 0 0 0 0 -90  70 0
+
+# Multi-T-RRT
+p3d_set_robot_current          0 0 0 0 0 0  88 -93 0
+p3d_set_robot_goto             0 0 0 0 0 0  90  90 0
+p3d_set_robot_config waypoint1 0 0 0 0 0 0  34 -92 0
+p3d_set_robot_config waypoint2 0 0 0 0 0 0 -45 -45 0
+p3d_set_robot_config waypoint3 0 0 0 0 0 0 -58  22 0
+p3d_set_robot_config waypoint4 0 0 0 0 0 0 -98  72 0
+p3d_set_robot_config waypoint5 0 0 0 0 0 0 -36  76 0
+p3d_set_robot_config waypoint6 0 0 0 0 0 0  18  60 0
+p3d_set_robot_config waypoint7 0 0 0 0 0 0  98 -30 0
+p3d_set_robot_config waypoint8 0 0 0 0 0 0  92  46 0
+
