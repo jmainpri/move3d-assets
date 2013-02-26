@@ -1,0 +1,5 @@
+p3d_beg_desc P3D_BODY rHumerusGhost
+  p3d_add_desc_cylindre_oval base1 0.053 0.06745 0.2475 
+  p3d_set_prim_pos base1 -0.007111 -0.326332 0.437434 0 -92.8 90
+p3d_end_desc
+ 

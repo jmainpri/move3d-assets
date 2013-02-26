@@ -1,0 +1,4 @@
+p3d_beg_desc P3D_BODY lFootGhost
+  p3d_add_desc_box base1 0.1488 0.3286 0.1261 
+  p3d_set_prim_pos base1 0.063501 0.094253 -0.992633 0 0 90
+p3d_end_desc

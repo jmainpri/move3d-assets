@@ -1,0 +1,9 @@
+p3d_beg_desc P3D_BODY torso
+  p3d_add_desc_cylindre_oval base1 0.203 0.1415 0.2574 
+  p3d_set_prim_pos base1 0.026467 -0.002893 0.242837 0 0 90
+  p3d_add_desc_box base2 0.4031 0.2035 0.1515 
+  p3d_set_prim_pos base2 0.010646 -0.004374 0.447362 0 0 90
+  p3d_add_desc_cylindre base3 0.0737 0.1267 
+  p3d_set_prim_pos base3 0.013842 -0.004374 0.540227 0 0 90
+p3d_end_desc
+

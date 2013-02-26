@@ -1,0 +1,8 @@
+p3d_beg_desc P3D_BODY lHand
+  p3d_add_desc_box base1 0.1376 0.096 0.055 
+  p3d_set_prim_pos base1 0.001872 0.753806 0.44719 0 -18.9 90
+  p3d_add_desc_box base2 0.0903 0.0987 0.0304 
+  p3d_set_prim_pos base2 0.001872 0.857954 0.472072 0 0 90
+  p3d_add_desc_box base3 0.0894 0.0248 0.0312 
+  p3d_set_prim_pos base3 0.063221 0.78332 0.437595 0 0 -106.6
+p3d_end_desc

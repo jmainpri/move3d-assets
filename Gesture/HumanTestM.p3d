@@ -1,0 +1,11 @@
+p3d_beg_desc P3D_ENV humanTestEnv
+
+p3d_read_macro AchileMKinect.macro HERAKLES_HUMAN1
+
+p3d_read_macro Objects/Static/dlrTable.macro Table1 
+p3d_set_obst_pos Table1 0.0 0.0 0.0 90 0 180
+
+p3d_end_desc
+
+p3d_set_env_box -2.0 2.00 -2.00 2.00 -0.40 2
+#p3d_set_env_box -3.00 3.000 -3.00 3.00 0.000 2.50
