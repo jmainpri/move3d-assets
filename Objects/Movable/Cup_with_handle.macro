@@ -1,4 +1,15 @@
-p3d_beg_desc P3D_OBSTACLE
+ p3d_beg_desc P3D_ROBOT
+
+p3d_beg_desc_jnt P3D_FREEFLYER  #1
+  p3d_set_prev_jnt   0
+  p3d_set_pos_xyz 0.0 0.0 0.0 0.0 0.0 0.0
+  p3d_set_dof      0 0 0  0   0   0
+  p3d_set_dof_vmin -3 -6 0 -180 -180 -180
+  p3d_set_dof_vmax 12 12 2 180 180 180
+p3d_end_desc
+
+p3d_beg_desc P3D_BODY  cup
+
 	p3d_add_desc_poly model
 		p3d_add_desc_vert -0.031648 0.026682 0.045424 
 		p3d_add_desc_vert -0.027045 0.027477 0.019817 
@@ -802,4 +813,5 @@ p3d_beg_desc P3D_OBSTACLE
 		p3d_add_desc_face 266 58 55 
 		p3d_add_desc_face 140 7 131 
 	p3d_end_desc_poly
+ p3d_end_desc
 p3d_end_desc
