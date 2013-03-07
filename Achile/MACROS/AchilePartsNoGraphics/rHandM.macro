@@ -5,5 +5,9 @@ p3d_beg_desc P3D_BODY rHand
   p3d_set_prim_pos base2 0.001872 -0.864078 0.472072 0 0 90
   p3d_add_desc_box base3 0.0894 0.0248 0.0312 
   p3d_set_prim_pos base3 0.063221 -0.789444 0.437595 0 0 106.6
+  
+   p3d_add_desc_sphere sweeping_sphere 0.15 P3D_GHOST
+   p3d_set_prim_pos sweeping_sphere 0.063221 -0.789444 0.437595 0 0 106.6
+   
 p3d_end_desc
  
