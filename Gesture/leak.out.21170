@@ -1,0 +1,9 @@
+# starting Sat Mar 16 18:04:09 2013
+# memory overrun protection of 4 Bytes
+# initializing new memory with 0xAA
+# sweeping deleted memory with 0xEE
+# aborts on OVERWRITE_MEMORY 
+# thread save
+# finished Sat Mar 16 18:04:33 2013
+# total allocation requests:      0 ; max. mem used 0 kBytes
+# leak      0 Bytes	:-)

@@ -1,0 +1,16 @@
+p3d_beg_desc P3D_ENV humanTestEnv
+
+# ************* The Floor *************
+
+p3d_beg_desc P3D_OBSTACLE floor
+  p3d_add_desc_box floor 4 4 0.05
+  p3d_set_prim_pos floor 0 0 -0.20 0 0 0
+  p3d_set_prim_color floor Any 0.65 0.54 0.34
+p3d_end_desc
+  
+#  p3d_read_urdf box.urdf
+#  p3d_read_urdf simple_arm.urdf
+  p3d_read_urdf baxter_urdf.xml Baxter 1.0
+#p3d_read_urdf torso.urdf torso
+   
+p3d_end_desc
