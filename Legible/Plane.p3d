@@ -1,0 +1,99 @@
+p3d_beg_desc P3D_ENV Legible_plane
+
+#---------------------------------------------
+
+p3d_beg_desc P3D_OBSTACLE Walls
+
+p3d_add_desc_box stone_1 100.0 1.0 5.0
+p3d_set_prim_pos stone_1 -50 0 0 0 0 90
+
+p3d_add_desc_box stone_2 100.0 1.0 5.0
+p3d_set_prim_pos stone_2 50 0 0 0 0 90
+
+p3d_add_desc_box stone_3 100.0 1.0 5.0
+p3d_set_prim_pos stone_3 0 50 0 0 0 0
+
+p3d_add_desc_box stone_4 100.0 1.0 5.0
+p3d_set_prim_pos stone_4 0 -50 0 0 0 0
+
+p3d_end_desc
+
+p3d_set_obst_color Walls Any 0.3 0.3 0.3
+
+#---------------------------------------------
+
+p3d_beg_desc P3D_ROBOT GOAL_0
+
+p3d_beg_desc_jnt P3D_PLAN # J1
+    p3d_set_prev_jnt 0
+    p3d_set_pos_xyz 0 0 0 0 0 0
+    p3d_set_dof 0 0 0 0 0 0
+    p3d_set_dof_vmin -50 -50 0
+    p3d_set_dof_vmax 50 50 0
+p3d_end_desc
+
+p3d_beg_desc P3D_BODY body
+    p3d_add_desc_cylindre cyl 3 1 P3D_GRAPHIC
+    p3d_set_prim_pos cyl 0.0 0.0 0.0 0.0 0.0 0.0
+p3d_end_desc
+
+p3d_end_desc
+
+p3d_set_body_poly_color body 1 Any 1 0.87 0.49
+
+#---------------------------------------------
+
+p3d_beg_desc P3D_ROBOT GOAL_1
+
+p3d_beg_desc_jnt P3D_PLAN # J1
+    p3d_set_prev_jnt 0
+    p3d_set_pos_xyz 0 0 0 0 0 0
+    p3d_set_dof 0 0 0 0 0 0
+    p3d_set_dof_vmin -50 -50 0
+    p3d_set_dof_vmax 50 50 0
+p3d_end_desc
+
+p3d_beg_desc P3D_BODY body
+    p3d_add_desc_cylindre cyl 3 1 P3D_GRAPHIC
+    p3d_set_prim_pos cyl 0.0 0.0 0.0 0.0 0.0 0.0
+p3d_end_desc
+
+p3d_end_desc
+
+p3d_set_body_poly_color body 1 Any 1 0.87 0.49
+
+#---------------------------------------------
+
+p3d_beg_desc P3D_ROBOT ROBOT_cycle
+
+p3d_beg_desc_jnt P3D_PLAN # J1
+   p3d_set_prev_jnt 0
+   p3d_set_pos_xyz 0 0 0 0 0 0
+   p3d_set_dof 0 0 0 0 0 0
+   p3d_set_dof_vmin -50 -50 0
+   p3d_set_dof_vmax 50 50 0
+p3d_end_desc
+
+p3d_beg_desc P3D_BODY body
+p3d_add_desc_cylindre cyl 1 1 
+p3d_set_prim_pos cyl 0.0 0.0 0.0 0.0 0.0 0.0
+p3d_end_desc
+
+p3d_end_desc
+#---------------------------------------------
+
+p3d_set_env_box -50 50 -50 50 -10 10
+
+p3d_sel_desc_name P3D_ROBOT GOAL_0
+p3d_set_robot_steering_method Linear
+p3d_set_robot_current 0. 0. 0. 0. 0. 0. -5 -25 0 
+
+p3d_sel_desc_name P3D_ROBOT GOAL_1
+p3d_set_robot_steering_method Linear
+p3d_set_robot_current 0. 0. 0. 0. 0. 0. -25 0 0 
+
+p3d_sel_desc_name P3D_ROBOT ROBOT_cycle
+p3d_set_robot_steering_method Linear
+p3d_set_robot_current 0. 0. 0. 0. 0. 0. 45 -10 0 
+p3d_set_robot_goto 0. 0. 0. 0. 0. 0. -25 0 0 
+
