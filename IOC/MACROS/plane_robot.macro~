@@ -1,0 +1,18 @@
+p3d_beg_desc P3D_ROBOT
+
+p3d_beg_desc_jnt P3D_PLAN # J1
+    p3d_set_prev_jnt 0
+    p3d_set_pos_xyz 0 0 0 0 0 0
+    p3d_set_dof 0 0 0 0 0 0
+    p3d_set_dof_vmin -50 -50 0
+    p3d_set_dof_vmax 50 50 0
+p3d_end_desc
+
+p3d_beg_desc P3D_BODY body
+    p3d_add_desc_cylindre cyl 3 1
+    p3d_set_prim_pos cyl 0.0 0.0 0.0 0.0 0.0 0.0
+p3d_end_desc
+
+p3d_end_desc
+
+p3d_set_body_poly_color body 2 Any 0.5 0.5 0.5
