@@ -1,0 +1,122 @@
+#************************************************************
+# Scenario of IOC_plane
+#
+# date : Tue Aug 27 18:45:19 2013
+#************************************************************
+
+p3d_sel_desc_name P3D_ENV IOC_plane
+
+
+
+p3d_sel_desc_name P3D_ROBOT ROBOT_cycle
+
+p3d_set_robot_steering_method Linear
+
+p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 40.000000 22.000000 0.000000
+p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -30.000000 -35.000000 0.000000
+
+
+
+
+p3d_sel_desc_name P3D_ROBOT GAUSSIAN_MU_01
+
+p3d_set_robot_steering_method Linear
+
+p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -32.510000 21.800000 0.000000
+p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+
+
+
+
+p3d_sel_desc_name P3D_ROBOT GAUSSIAN_MU_02
+
+p3d_set_robot_steering_method Linear
+
+p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -9.010000 22.060000 0.000000
+p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+
+
+
+
+p3d_sel_desc_name P3D_ROBOT GAUSSIAN_MU_03
+
+p3d_set_robot_steering_method Linear
+
+p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 15.800000 21.020000 0.000000
+p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+
+
+
+
+p3d_sel_desc_name P3D_ROBOT GAUSSIAN_MU_04
+
+p3d_set_robot_steering_method Linear
+
+p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -31.720000 0.000000 0.000000
+p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+
+
+
+
+p3d_sel_desc_name P3D_ROBOT GAUSSIAN_MU_05
+
+p3d_set_robot_steering_method Linear
+
+p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -5.870000 0.000000 0.000000
+p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+
+
+
+
+p3d_sel_desc_name P3D_ROBOT GAUSSIAN_MU_06
+
+p3d_set_robot_steering_method Linear
+
+p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 16.840000 0.000000 0.000000
+p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+
+
+
+
+p3d_sel_desc_name P3D_ROBOT GAUSSIAN_MU_07
+
+p3d_set_robot_steering_method Linear
+
+p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -22.060000 -21.280000 0.000000
+p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+
+
+
+
+p3d_sel_desc_name P3D_ROBOT GAUSSIAN_MU_08
+
+p3d_set_robot_steering_method Linear
+
+p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 6.140000 -24.670000 0.000000
+p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+
+
+
+
+p3d_sel_desc_name P3D_ROBOT GAUSSIAN_MU_09
+
+p3d_set_robot_steering_method Linear
+
+p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 32.250000 -21.280000 0.000000
+p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+
+
+
+
+p3d_sel_desc_name P3D_ROBOT GAUSSIAN_MU_10
+
+p3d_set_robot_steering_method Linear
+
+p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -10.840000 -39.300000 0.000000
+p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+
+
+
+
+p3d_set_camera_pos 0.000000 0.000000 0.000000 153.690857 4.711936 0.987500 0.000000 0.000000 1.000000 0.000000
+
