@@ -1,7 +1,10 @@
 p3d_beg_desc P3D_BODY rFemur
+  
   p3d_add_desc_cylindre_oval base1 0.0871 0.1 0.1867 
   p3d_set_prim_pos base1 0.024098 -0.107529 -0.282207 0 0 90
+  
   p3d_add_desc_cylindre_oval base2 0.067 0.089 0.2149 
   p3d_set_prim_pos base2 0.010046 -0.098554 -0.476062 5.2 0 90
+
 p3d_end_desc
 

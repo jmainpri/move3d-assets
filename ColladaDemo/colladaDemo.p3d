@@ -10,10 +10,10 @@ p3d_end_desc
   
 #p3d_read_collada hus45.dae hus
   p3d_read_collada pr2.dae pr2
-  p3d_read_collada kuka.dae kuka
-  p3d_read_collada unimation-pumaarm.dae unimation-pumaarm
-  p3d_read_collada kawada-hironx.dae kawada-hironx
+#  p3d_read_collada kuka.dae kuka
+#  p3d_read_collada unimation-pumaarm.dae unimation-pumaarm
+#  p3d_read_collada kawada-hironx.dae kawada-hironx
   
-  p3d_read_collada barrett-wam.dae barrett-wam  
+#  p3d_read_collada barrett-wam.dae barrett-wam  
    
 p3d_end_desc

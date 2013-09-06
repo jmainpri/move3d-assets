@@ -86,11 +86,11 @@ p3d_set_env_box -50 50 -50 50 -10 10
 
 p3d_sel_desc_name P3D_ROBOT GOAL_0
 p3d_set_robot_steering_method Linear
-p3d_set_robot_current 0. 0. 0. 0. 0. 0. -5 -25 0 
+p3d_set_robot_current 0. 0. 0. 0. 0. 0. -25 0 0 
 
 p3d_sel_desc_name P3D_ROBOT GOAL_1
 p3d_set_robot_steering_method Linear
-p3d_set_robot_current 0. 0. 0. 0. 0. 0. -25 0 0 
+p3d_set_robot_current 0. 0. 0. 0. 0. 0. -5 -25 0 
 
 p3d_sel_desc_name P3D_ROBOT ROBOT_cycle
 p3d_set_robot_steering_method Linear

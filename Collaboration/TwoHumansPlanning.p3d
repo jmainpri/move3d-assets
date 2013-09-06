@@ -3,7 +3,7 @@ p3d_beg_desc P3D_ENV humanTestEnv
 p3d_read_macro AchileNoGraphics.macro HERAKLES_HUMAN1
 p3d_read_macro AchileNoGraphics.macro HERAKLES_HUMAN2
 
-p3d_read_macro Objects/MovableObstacles/TABLE_ADREAM_NoFeets.macro TABLE 1.8
+p3d_read_macro table_arc_small.macro table
 
 p3d_read_macro Objects/Movable/Cup_with_handle.macro Cup1
 p3d_set_body_poly_color Cup1.cup 1 Blue
@@ -13,12 +13,11 @@ p3d_set_body_poly_color Cup2.cup 1 Red
 
 p3d_end_desc
 
-#p3d_set_env_box -2.0 2.00 -3.00 1.00 -0.40 2
-p3d_set_env_box -3.00 3.000 -3.00 3.00 0.000 2.50
+p3d_set_env_box 0 3.000 -1.0 2.00 0.000 2.3
 
 p3d_set_ff_limits_in_env_box
 
-p3d_set_active_robot HERAKLES_HUMAN1
+p3d_set_active_robot HERAKLES_HUMAN2
 
 #--------------------------------------------------------------------------------------------------
 
