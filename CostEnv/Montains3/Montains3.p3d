@@ -30,7 +30,7 @@ p3d_beg_desc P3D_ENV Montains3
 
 p3d_end_desc
 
-p3d_set_env_box -45 45 -45 45 0 45
+p3d_set_env_box -46 46 -46 46 0 46
 #p3d_set_robot_box -450 100 -100 100 -100 100
 
 p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -45.000000 -42.477875 0.000000

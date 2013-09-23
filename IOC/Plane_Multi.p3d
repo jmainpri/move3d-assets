@@ -106,5 +106,7 @@ p3d_set_robot_steering_method Linear
 p3d_set_robot_current 0. 0. 0. 0. 0. 0. 35 22 0 
 p3d_set_robot_goto 0. 0. 0. 0. 0. 0. -30 -35 0 
 
+p3d_set_ff_limits_in_env_box
+
 p3d_set_active_robot ROBOT_cycle
 
