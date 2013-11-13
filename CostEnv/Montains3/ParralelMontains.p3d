@@ -1,0 +1,165 @@
+p3d_beg_desc P3D_ENV Montains3
+
+ p3d_beg_desc P3D_ROBOT MY_ROBOT  
+ p3d_beg_desc_jnt P3D_PLAN  
+ p3d_set_pos_xyz 0.0 .0 0.0 0.0 0.0 0.0  
+ p3d_set_prev_jnt 0  
+ p3d_set_dof 0.0 0.0 0.0  
+ p3d_set_dof_vmin -45.0 -45.0 0.0
+ p3d_set_dof_vmax 45.0 45.0 0.0 
+ p3d_end_desc 
+ p3d_beg_desc P3D_BODY body1  
+ p3d_add_desc_cylindre englobant 0.5 1.0 P3D_REAL  
+ p3d_set_prim_pos englobant 0.0 0.0 50.0 0.0 0.0 0.0  
+ p3d_end_desc #BODY  
+ p3d_end_desc #ROBOT 
+ 
+ p3d_beg_desc P3D_ROBOT rob1  
+ p3d_beg_desc_jnt P3D_PLAN  
+ p3d_set_pos_xyz 0.0 .0 0.0 0.0 0.0 0.0  
+ p3d_set_prev_jnt 0  
+ p3d_set_dof 0.0 0.0 0.0  
+ p3d_set_dof_vmin -45.0 -45.0 0.0
+ p3d_set_dof_vmax 45.0 45.0 0.0 
+ p3d_end_desc  
+ p3d_beg_desc P3D_BODY body1  
+ p3d_add_desc_cylindre englobant 0.5 1.0 P3D_REAL  
+ p3d_set_prim_pos englobant 0.0 0.0 50.0 0.0 0.0 0.0  
+ p3d_end_desc #BODY  
+ p3d_end_desc #ROBOT  
+ 
+ p3d_beg_desc P3D_ROBOT rob2  
+ p3d_beg_desc_jnt P3D_PLAN  
+ p3d_set_pos_xyz 0.0 .0 0.0 0.0 0.0 0.0  
+ p3d_set_prev_jnt 0  
+ p3d_set_dof 0.0 0.0 0.0  
+ p3d_set_dof_vmin -45.0 -45.0 0.0
+ p3d_set_dof_vmax 45.0 45.0 0.0 
+ p3d_end_desc  
+ p3d_beg_desc P3D_BODY body1  
+ p3d_add_desc_cylindre englobant 0.5 1.0 P3D_REAL  
+ p3d_set_prim_pos englobant 0.0 0.0 50.0 0.0 0.0 0.0  
+ p3d_end_desc #BODY  
+ p3d_end_desc #ROBOT   
+ 
+ p3d_beg_desc P3D_ROBOT rob3  
+ p3d_beg_desc_jnt P3D_PLAN  
+ p3d_set_pos_xyz 0.0 .0 0.0 0.0 0.0 0.0  
+ p3d_set_prev_jnt 0  
+ p3d_set_dof 0.0 0.0 0.0  
+ p3d_set_dof_vmin -45.0 -45.0 0.0
+ p3d_set_dof_vmax 45.0 45.0 0.0 
+ p3d_end_desc  
+ p3d_beg_desc P3D_BODY body1  
+ p3d_add_desc_cylindre englobant 0.5 1.0 P3D_REAL  
+ p3d_set_prim_pos englobant 0.0 0.0 50.0 0.0 0.0 0.0  
+ p3d_end_desc #BODY  
+ p3d_end_desc #ROBOT   
+ 
+ p3d_beg_desc P3D_ROBOT rob4  
+ p3d_beg_desc_jnt P3D_PLAN  
+ p3d_set_pos_xyz 0.0 .0 0.0 0.0 0.0 0.0  
+ p3d_set_prev_jnt 0  
+ p3d_set_dof 0.0 0.0 0.0  
+ p3d_set_dof_vmin -45.0 -45.0 0.0
+ p3d_set_dof_vmax 45.0 45.0 0.0 
+ p3d_end_desc  
+ p3d_beg_desc P3D_BODY body1  
+ p3d_add_desc_cylindre englobant 0.5 1.0 P3D_REAL  
+ p3d_set_prim_pos englobant 0.0 0.0 50.0 0.0 0.0 0.0  
+ p3d_end_desc #BODY  
+ p3d_end_desc #ROBOT   
+ 
+ p3d_beg_desc P3D_ROBOT rob5  
+ p3d_beg_desc_jnt P3D_PLAN  
+ p3d_set_pos_xyz 0.0 .0 0.0 0.0 0.0 0.0  
+ p3d_set_prev_jnt 0  
+ p3d_set_dof 0.0 0.0 0.0  
+ p3d_set_dof_vmin -45.0 -45.0 0.0
+ p3d_set_dof_vmax 45.0 45.0 0.0 
+ p3d_end_desc  
+ p3d_beg_desc P3D_BODY body1  
+ p3d_add_desc_cylindre englobant 0.5 1.0 P3D_REAL  
+ p3d_set_prim_pos englobant 0.0 0.0 50.0 0.0 0.0 0.0  
+ p3d_end_desc #BODY  
+ p3d_end_desc #ROBOT   
+ 
+ p3d_beg_desc P3D_ROBOT rob6  
+ p3d_beg_desc_jnt P3D_PLAN  
+ p3d_set_pos_xyz 0.0 .0 0.0 0.0 0.0 0.0  
+ p3d_set_prev_jnt 0  
+ p3d_set_dof 0.0 0.0 0.0  
+ p3d_set_dof_vmin -45.0 -45.0 0.0
+ p3d_set_dof_vmax 45.0 45.0 0.0 
+ p3d_end_desc  
+ p3d_beg_desc P3D_BODY body1  
+ p3d_add_desc_cylindre englobant 0.5 1.0 P3D_REAL  
+ p3d_set_prim_pos englobant 0.0 0.0 50.0 0.0 0.0 0.0  
+ p3d_end_desc #BODY  
+ p3d_end_desc #ROBOT   
+ 
+ p3d_beg_desc P3D_ROBOT rob7  
+ p3d_beg_desc_jnt P3D_PLAN  
+ p3d_set_pos_xyz 0.0 .0 0.0 0.0 0.0 0.0  
+ p3d_set_prev_jnt 0  
+ p3d_set_dof 0.0 0.0 0.0  
+ p3d_set_dof_vmin -45.0 -45.0 0.0
+ p3d_set_dof_vmax 45.0 45.0 0.0 
+ p3d_end_desc  
+ p3d_beg_desc P3D_BODY body1  
+ p3d_add_desc_cylindre englobant 0.5 1.0 P3D_REAL  
+ p3d_set_prim_pos englobant 0.0 0.0 50.0 0.0 0.0 0.0  
+ p3d_end_desc #BODY  
+ p3d_end_desc #ROBOT   
+
+ p3d_CostEnvironment
+ 
+ p3d_read_macro Montains4.macro OB_Plane
+
+p3d_end_desc
+
+p3d_set_env_box -45 45 -45 45 0 45
+#p3d_set_robot_box -450 100 -100 100 -100 100
+
+p3d_add_desc_rob_col_init MY_ROBOT
+p3d_desactivate_col_check automatic
+p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -45.000000 -42.477875 0.000000
+p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 45.000000 45.000000 0.000000
+
+p3d_add_desc_rob_col_init rob1
+p3d_desactivate_col_check automatic
+p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -45.000000 -42.477875 0.000000
+p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 45.000000 45.000000 0.000000
+
+p3d_add_desc_rob_col_init rob2
+p3d_desactivate_col_check automatic
+p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -45.000000 -42.477875 0.000000
+p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 45.000000 45.000000 0.000000
+
+p3d_add_desc_rob_col_init rob3
+p3d_desactivate_col_check automatic
+p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -45.000000 -42.477875 0.000000
+p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 45.000000 45.000000 0.000000
+
+p3d_add_desc_rob_col_init rob4
+p3d_desactivate_col_check automatic
+p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -45.000000 -42.477875 0.000000
+p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 45.000000 45.000000 0.000000
+
+p3d_add_desc_rob_col_init rob5
+p3d_desactivate_col_check automatic
+p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -45.000000 -42.477875 0.000000
+p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 45.000000 45.000000 0.000000
+
+p3d_add_desc_rob_col_init rob6
+p3d_desactivate_col_check automatic
+p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -45.000000 -42.477875 0.000000
+p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 45.000000 45.000000 0.000000
+
+p3d_add_desc_rob_col_init rob7
+p3d_desactivate_col_check automatic
+p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -45.000000 -42.477875 0.000000
+p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 45.000000 45.000000 0.000000
+
+
+
