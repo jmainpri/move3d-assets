@@ -1,0 +1,48 @@
+p3d_beg_desc P3D_ENV IOC_plane
+
+#---------------------------------------------
+
+p3d_beg_desc P3D_OBSTACLE Walls
+
+p3d_add_desc_box stone_1 80.0 1.0 5.0
+p3d_set_prim_pos stone_1 -40 0 0 0 0 90
+
+p3d_add_desc_box stone_2 80.0 1.0 5.0
+p3d_set_prim_pos stone_2 40 0 0 0 0 90
+
+p3d_add_desc_box stone_3 80.0 1.0 5.0
+p3d_set_prim_pos stone_3 0 40 0 0 0 0
+
+p3d_add_desc_box stone_4 80.0 1.0 5.0
+p3d_set_prim_pos stone_4 0 -40 0 0 0 0
+
+p3d_end_desc
+
+p3d_set_obst_color Walls Any 0.3 0.3 0.3
+
+#---------------------------------------------
+
+p3d_read_macro plane_robot.macro ROBOT_cycle
+
+p3d_read_macro gaussian.macro GAUSSIAN_MU_01
+p3d_set_body_poly_color GAUSSIAN_MU_01.body 2 Any 0.5 0.5 0.5
+p3d_read_macro gaussian.macro GAUSSIAN_MU_02
+p3d_set_body_poly_color GAUSSIAN_MU_02.body 2 Any 0.5 0.5 0.5
+p3d_read_macro gaussian.macro GAUSSIAN_MU_03
+p3d_set_body_poly_color GAUSSIAN_MU_03.body 2 Any 0.5 0.5 0.5
+p3d_read_macro gaussian.macro GAUSSIAN_MU_04
+p3d_set_body_poly_color GAUSSIAN_MU_04.body 2 Any 0.5 0.5 0.5
+
+#---------------------------------------------
+
+p3d_set_env_box 40 -40 40 -40 10 -10
+
+p3d_sel_desc_name P3D_ROBOT ROBOT_cycle
+p3d_set_robot_steering_method Linear
+p3d_set_robot_current 0. 0. 0. 0. 0. 0. 35 22 0 
+p3d_set_robot_goto 0. 0. 0. 0. 0. 0. -30 -35 0 
+
+p3d_set_ff_limits_in_env_box
+
+p3d_set_active_robot ROBOT_cycle
+
