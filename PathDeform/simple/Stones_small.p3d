@@ -40,7 +40,7 @@ p3d_end_desc
 
 p3d_set_env_box -50 450 -50 900 -50 50
 
-p3d_sel_desc_name P3D_ROBOT robot_cycle
+p3d_sel_desc_name P3D_ROBOT ROBOT_cycle
 
 p3d_set_robot_steering_method Linear
 

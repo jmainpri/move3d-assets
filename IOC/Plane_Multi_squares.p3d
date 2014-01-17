@@ -1,0 +1,74 @@
+p3d_beg_desc P3D_ENV IOC_plane
+
+#---------------------------------------------
+
+p3d_beg_desc P3D_OBSTACLE Walls
+
+p3d_add_desc_box stone_1 80.0 1.0 5.0
+p3d_set_prim_pos stone_1 -40 0 0 0 0 90
+
+p3d_add_desc_box stone_2 80.0 1.0 5.0
+p3d_set_prim_pos stone_2 40 0 0 0 0 90
+
+p3d_add_desc_box stone_3 80.0 1.0 5.0
+p3d_set_prim_pos stone_3 0 40 0 0 0 0
+
+p3d_add_desc_box stone_4 80.0 1.0 5.0
+p3d_set_prim_pos stone_4 0 -40 0 0 0 0
+
+p3d_end_desc
+
+p3d_set_obst_color Walls Any 0.3 0.3 0.3
+
+#---------------------------------------------
+
+p3d_read_macro plane_robot.macro ROBOT_cycle
+
+p3d_read_macro square.macro SQUARE_MU_01 4
+#p3d_set_body_poly_color SQUARE_MU_01.body 2 Any 0.5 0.5 0.5
+p3d_read_macro square.macro SQUARE_MU_02 4
+#p3d_set_body_poly_color SQUARE_MU_02.body 2 Any 0.5 0.5 0.5
+p3d_read_macro square.macro SQUARE_MU_03 4
+#p3d_set_body_poly_color SQUARE_MU_03.body 2 Any 0.5 0.5 0.5
+p3d_read_macro square.macro SQUARE_MU_04 4
+#p3d_set_body_poly_color SQUARE_MU_04.body 2 Any 0.5 0.5 0.5
+p3d_read_macro square.macro SQUARE_MU_05 4
+#p3d_set_body_poly_color SQUARE_MU_05.body 2 Any 0.5 0.5 0.5
+p3d_read_macro square.macro SQUARE_MU_06 2
+#p3d_set_body_poly_color SQUARE_MU_06.body 2 Any 0.5 0.5 0.5
+p3d_read_macro square.macro SQUARE_MU_07 1
+#p3d_set_body_poly_color SQUARE_MU_07.body 2 Any 0.5 0.5 0.5
+p3d_read_macro square.macro SQUARE_MU_08 4
+#p3d_set_body_poly_color SQUARE_MU_08.body 2 Any 0.5 0.5 0.5
+
+p3d_read_macro square.macro SQUARE_MU_09 4
+#p3d_set_body_poly_color SQUARE_MU_09.body 2 Any 0.5 0.5 0.5
+p3d_read_macro square.macro SQUARE_MU_10 1
+#p3d_set_body_poly_color SQUARE_MU_10.body 2 Any 0.5 0.5 0.5
+p3d_read_macro square.macro SQUARE_MU_11 2
+#p3d_set_body_poly_color SQUARE_MU_11.body 2 Any 0.5 0.5 0.5
+p3d_read_macro square.macro SQUARE_MU_12 4
+#p3d_set_body_poly_color SQUARE_MU_12.body 2 Any 0.5 0.5 0.5
+p3d_read_macro square.macro SQUARE_MU_13 4
+#p3d_set_body_poly_color SQUARE_MU_13.body 2 Any 0.5 0.5 0.5
+p3d_read_macro square.macro SQUARE_MU_14 4
+#p3d_set_body_poly_color SQUARE_MU_14.body 2 Any 0.5 0.5 0.5
+p3d_read_macro square.macro SQUARE_MU_15 4
+#p3d_set_body_poly_color SQUARE_MU_15.body 2 Any 0.5 0.5 0.5
+p3d_read_macro square.macro SQUARE_MU_16 4
+#p3d_set_body_poly_color SQUARE_MU_16.body 2 Any 0.5 0.5 0.5
+
+
+#---------------------------------------------
+
+p3d_set_env_box 40 -40 40 -40 10 -10
+
+p3d_sel_desc_name P3D_ROBOT ROBOT_cycle
+p3d_set_robot_steering_method Linear
+p3d_set_robot_current 0. 0. 0. 0. 0. 0. 35 22 0 
+p3d_set_robot_goto 0. 0. 0. 0. 0. 0. -30 -35 0 
+
+p3d_set_ff_limits_in_env_box
+
+p3d_set_active_robot ROBOT_cycle
+

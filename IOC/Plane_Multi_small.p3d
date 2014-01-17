@@ -32,6 +32,32 @@ p3d_read_macro gaussian.macro GAUSSIAN_MU_03
 p3d_set_body_poly_color GAUSSIAN_MU_03.body 2 Any 0.5 0.5 0.5
 p3d_read_macro gaussian.macro GAUSSIAN_MU_04
 p3d_set_body_poly_color GAUSSIAN_MU_04.body 2 Any 0.5 0.5 0.5
+p3d_read_macro gaussian.macro GAUSSIAN_MU_05
+p3d_set_body_poly_color GAUSSIAN_MU_05.body 2 Any 0.5 0.5 0.5
+p3d_read_macro gaussian.macro GAUSSIAN_MU_06
+p3d_set_body_poly_color GAUSSIAN_MU_06.body 2 Any 0.5 0.5 0.5
+p3d_read_macro gaussian.macro GAUSSIAN_MU_07
+p3d_set_body_poly_color GAUSSIAN_MU_07.body 2 Any 0.5 0.5 0.5
+p3d_read_macro gaussian.macro GAUSSIAN_MU_08
+p3d_set_body_poly_color GAUSSIAN_MU_08.body 2 Any 0.5 0.5 0.5
+
+p3d_read_macro gaussian.macro GAUSSIAN_MU_09
+p3d_set_body_poly_color GAUSSIAN_MU_09.body 2 Any 0.5 0.5 0.5
+p3d_read_macro gaussian.macro GAUSSIAN_MU_10
+p3d_set_body_poly_color GAUSSIAN_MU_10.body 2 Any 0.5 0.5 0.5
+p3d_read_macro gaussian.macro GAUSSIAN_MU_11
+p3d_set_body_poly_color GAUSSIAN_MU_11.body 2 Any 0.5 0.5 0.5
+p3d_read_macro gaussian.macro GAUSSIAN_MU_12
+p3d_set_body_poly_color GAUSSIAN_MU_12.body 2 Any 0.5 0.5 0.5
+p3d_read_macro gaussian.macro GAUSSIAN_MU_13
+p3d_set_body_poly_color GAUSSIAN_MU_13.body 2 Any 0.5 0.5 0.5
+p3d_read_macro gaussian.macro GAUSSIAN_MU_14
+p3d_set_body_poly_color GAUSSIAN_MU_14.body 2 Any 0.5 0.5 0.5
+p3d_read_macro gaussian.macro GAUSSIAN_MU_15
+p3d_set_body_poly_color GAUSSIAN_MU_15.body 2 Any 0.5 0.5 0.5
+p3d_read_macro gaussian.macro GAUSSIAN_MU_16
+p3d_set_body_poly_color GAUSSIAN_MU_16.body 2 Any 0.5 0.5 0.5
+
 
 #---------------------------------------------
 
