@@ -61,12 +61,12 @@ p3d_read_macro square.macro SQUARE_MU_16 4
 
 #---------------------------------------------
 
-p3d_set_env_box 40 -40 40 -40 10 -10
+p3d_set_env_box 35 -35 35 -35 10 -10
 
 p3d_sel_desc_name P3D_ROBOT ROBOT_cycle
 p3d_set_robot_steering_method Linear
-p3d_set_robot_current 0. 0. 0. 0. 0. 0. 35 22 0 
-p3d_set_robot_goto 0. 0. 0. 0. 0. 0. -30 -35 0 
+p3d_set_robot_current 0. 0. 0. 0. 0. 0. 34 22 0 
+p3d_set_robot_goto 0. 0. 0. 0. 0. 0. -30 -34 0 
 
 p3d_set_ff_limits_in_env_box
 
