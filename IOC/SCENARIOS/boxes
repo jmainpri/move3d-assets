@@ -18,7 +18,7 @@ p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.00000
 
 
 
-p3d_sel_desc_name P3D_ROBOT SQUARE_MU_01
+p3d_sel_desc_name P3D_ROBOT BOX_MU_01
 
 p3d_set_robot_steering_method Linear
 
@@ -28,7 +28,7 @@ p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.00000
 
 
 
-p3d_sel_desc_name P3D_ROBOT SQUARE_MU_02
+p3d_sel_desc_name P3D_ROBOT BOX_MU_02
 
 p3d_set_robot_steering_method Linear
 
@@ -38,7 +38,7 @@ p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.00000
 
 
 
-p3d_sel_desc_name P3D_ROBOT SQUARE_MU_03
+p3d_sel_desc_name P3D_ROBOT BOX_MU_03
 
 p3d_set_robot_steering_method Linear
 

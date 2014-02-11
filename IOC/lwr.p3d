@@ -2,9 +2,9 @@ p3d_beg_desc P3D_ENV env
 
     p3d_read_macro kukaArm.macro kukaArm_ROBOT
 
-    p3d_read_macro box.macro SQUARE_MU_01 4
-    p3d_read_macro box.macro SQUARE_MU_02 2
-    p3d_read_macro box.macro SQUARE_MU_03 1
+    p3d_read_macro box.macro BOX_MU_01 4
+    p3d_read_macro box.macro BOX_MU_02 2
+    p3d_read_macro box.macro BOX_MU_03 1
 #    p3d_read_macro box.macro SQUARE_MU_04 4
 #    p3d_read_macro box.macro SQUARE_MU_05 4
 #    p3d_read_macro box.macro SQUARE_MU_06 2
