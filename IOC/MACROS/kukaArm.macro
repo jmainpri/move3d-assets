@@ -107,6 +107,16 @@ p3d_beg_desc P3D_ROBOT
   p3d_end_desc
   p3d_read_macro ./kukaArmBody/kuka7.macro kuka7
 
+  p3d_beg_desc_jnt P3D_FIXED # J10
+    p3d_set_name End
+    p3d_set_prev_jnt 9
+    p3d_set_pos_axe_dh 0 0 0 0
+  p3d_end_desc
+  p3d_beg_desc P3D_BODY stick
+    p3d_add_desc_cylindre cylinder 0.01 0.10
+    p3d_set_prim_pos cylinder 0 0 2.011  0.0 0.0 0.0
+  p3d_end_desc
+
 
 p3d_end_desc
 ###############################
@@ -161,4 +171,5 @@ p3d_set_body_poly_color kuka4.kuka4 2 Any 0.1765 0.1765 0.1765
 p3d_set_body_poly_color kuka5.kuka5 1 Any 1.0 0.3922 0.0
 p3d_set_body_poly_color kuka6.kuka6 1 Any 1.0 0.3922 0.0
 p3d_set_body_poly_color kuka7.kuka7 1 Any 0.1765 0.1765 0.1765
+p3d_set_body_poly_color stick 1 Any 0.01 0.01 0.01
 
