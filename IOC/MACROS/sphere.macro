@@ -17,5 +17,5 @@ p3d_end_desc
 
 p3d_end_desc
 
-p3d_set_body_poly_color body 1 Any 1 0 0 0.5 
+p3d_set_body_poly_color body 1 Any 1 0 0 0.2 
 # p3d_set_body_poly_color body 2 Any 1 0 0

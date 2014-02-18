@@ -1,0 +1,93 @@
+p3d_beg_desc P3D_ENV env
+
+    p3d_read_macro kukaArm.macro kukaArm_ROBOT
+
+    p3d_read_macro sphere.macro SPHERE_MU_01 3
+    p3d_read_macro sphere.macro SPHERE_MU_02 3
+    p3d_read_macro sphere.macro SPHERE_MU_03 3
+    p3d_read_macro sphere.macro SPHERE_MU_04 3
+    p3d_read_macro sphere.macro SPHERE_MU_05 3
+    p3d_read_macro sphere.macro SPHERE_MU_06 3
+    p3d_read_macro sphere.macro SPHERE_MU_07 3
+    p3d_read_macro sphere.macro SPHERE_MU_08 3
+    p3d_read_macro sphere.macro SPHERE_MU_09 3
+    p3d_read_macro sphere.macro SPHERE_MU_10 3
+    p3d_read_macro sphere.macro SPHERE_MU_11 3
+    p3d_read_macro sphere.macro SPHERE_MU_12 3
+    p3d_read_macro sphere.macro SPHERE_MU_13 3
+    p3d_read_macro sphere.macro SPHERE_MU_14 3
+    p3d_read_macro sphere.macro SPHERE_MU_15 3
+    p3d_read_macro sphere.macro SPHERE_MU_16 3
+
+    p3d_read_macro sphere.macro SPHERE_MU_17 3
+    p3d_read_macro sphere.macro SPHERE_MU_18 3
+    p3d_read_macro sphere.macro SPHERE_MU_19 3
+    p3d_read_macro sphere.macro SPHERE_MU_20 3
+    p3d_read_macro sphere.macro SPHERE_MU_21 3
+    p3d_read_macro sphere.macro SPHERE_MU_22 3
+    p3d_read_macro sphere.macro SPHERE_MU_23 3
+    p3d_read_macro sphere.macro SPHERE_MU_24 3
+    p3d_read_macro sphere.macro SPHERE_MU_25 3
+    p3d_read_macro sphere.macro SPHERE_MU_26 3
+    p3d_read_macro sphere.macro SPHERE_MU_27 3
+
+    p3d_beg_desc P3D_OBSTACLE Stand
+        p3d_add_desc_box stand_1 0.30 0.30 0.50
+        p3d_set_prim_pos stand_1 0 0 0.53 0 0 0
+    p3d_end_desc
+
+p3d_end_desc
+
+######################
+###### COLORS ########
+######################
+
+p3d_set_obst_color Stand Any 0.3 0.3 0.3
+
+
+######################
+##### SCENARIO #######
+######################
+
+p3d_sel_desc_name P3D_ROBOT kukaArm_ROBOT
+
+p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -39.403497 -84.867613 92.048780 81.591663 94.783241 92.768769 42.395662
+p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0 0 0 0 0 0 0
+
+
+######################
+##### COLLISIONS ####
+######################
+
+p3d_add_desc_rob_col_init kukaArm_ROBOT
+p3d_desactivate_col_check automatic
+
+p3d_desactivate_col_check kuka1.Gkuka1 kuka3.Gkuka3
+p3d_desactivate_col_check kuka1.Gkuka1 kuka4.Gkuka4
+p3d_desactivate_col_check kuka1.Gkuka1 kuka5.Gkuka5
+p3d_desactivate_col_check kuka1.Gkuka1 kuka6.Gkuka6
+p3d_desactivate_col_check kuka1.Gkuka1 kuka7.kuka7
+
+p3d_desactivate_col_check kuka2.Gkuka2 kuka4.Gkuka4
+p3d_desactivate_col_check kuka2.Gkuka2 kuka5.Gkuka5
+p3d_desactivate_col_check kuka2.Gkuka2 kuka6.Gkuka6
+p3d_desactivate_col_check kuka2.Gkuka2 kuka7.kuka7
+
+p3d_desactivate_col_check kuka3.Gkuka3 kuka5.Gkuka5
+p3d_desactivate_col_check kuka3.Gkuka3 kuka6.Gkuka6
+p3d_desactivate_col_check kuka3.Gkuka3 kuka7.kuka7
+
+p3d_desactivate_col_check kuka4.Gkuka4 kuka6.Gkuka6
+p3d_desactivate_col_check kuka4.Gkuka4 kuka7.kuka7
+
+p3d_desactivate_col_check kuka5.Gkuka5 kuka7.kuka7
+
+
+######################
+##### MISC ####
+######################
+
+p3d_set_env_box -1.0 1.0 -1.0 1.0 0.30 2.10
+p3d_set_ff_limits_in_env_box
+p3d_set_active_robot kukaArm_ROBOT
+

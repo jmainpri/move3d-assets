@@ -85,8 +85,10 @@ p3d_beg_desc P3D_ROBOT
     p3d_set_name Arm6
     p3d_set_prev_jnt 7
     p3d_set_pos_axe_dh 0 1.57 0 0
-    p3d_set_dof_vmin -120
-    p3d_set_dof_vmax 120
+#    p3d_set_dof_vmin -120
+#    p3d_set_dof_vmax 120
+    p3d_set_dof_vmin -30
+    p3d_set_dof_vmax 30
     p3d_set_dof_velocity_max      0.4
     p3d_set_dof_acceleration_max  0.8
     p3d_set_dof_jerk_max          2.4 
