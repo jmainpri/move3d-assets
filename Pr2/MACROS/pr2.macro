@@ -142,10 +142,11 @@ p3d_beg_desc_jnt P3D_ROTATE # J10
   p3d_set_pos_axe 0.450001 -0.187993 0.802 1 0 0
 #  p3d_set_pos_mat 0 0 1 0.450001  0 -1 0 -0.187993  1 0 0 0.802  0 0 0 1
   p3d_set_dof 0.0
-  p3d_set_dof_vmin -10000
-  p3d_set_dof_vmax 10000
-#  p3d_set_dof_vmin -180
-#  p3d_set_dof_vmax 180
+# MODIF STOMP
+#  p3d_set_dof_vmin -10000
+#  p3d_set_dof_vmax 10000
+  p3d_set_dof_vmin -180
+  p3d_set_dof_vmax 180
   p3d_set_dof_jerk_max          4.5 # 5.4 # max  19.8	
   p3d_set_dof_acceleration_max  1.5 # 1.8 # max   6.6
   p3d_set_dof_velocity_max      1.5 # 0.9 # max   3.3
@@ -172,10 +173,11 @@ p3d_beg_desc_jnt P3D_ROTATE # J12
   p3d_set_pos_axe 0.771001 -0.187993 0.802 1 0 0
 #  p3d_set_pos_mat 0 0 1 0.771001  0 -1 0 -0.187993  1 0 0 0.802  0 0 0 1 
   p3d_set_dof 0.0
-  p3d_set_dof_vmin -10000
-  p3d_set_dof_vmax 10000
-#  p3d_set_dof_vmin -180
-#  p3d_set_dof_vmax 180
+# MODIF STOMP
+#  p3d_set_dof_vmin -10000
+#  p3d_set_dof_vmax 10000
+  p3d_set_dof_vmin -180
+  p3d_set_dof_vmax 180
  p3d_set_dof_jerk_max           4.5 # 5.4 # max   21.6
   p3d_set_dof_acceleration_max  1.5 # 1.8 # max   7.2
   p3d_set_dof_velocity_max      1.5 # 0.9 # max   3.6
