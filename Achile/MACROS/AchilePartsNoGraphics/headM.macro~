@@ -1,5 +1,5 @@
 p3d_beg_desc P3D_BODY head
-  p3d_add_desc_sphere base1 0.12
+  p3d_add_desc_sphere base1 0.13
 #  p3d_add_desc_cylindre_oval base1 0.0986 0.1184 0.2562 
   p3d_set_prim_pos base1 0.057591 -0.004925 0.682654 0 0 90
 p3d_end_desc
