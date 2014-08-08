@@ -2,23 +2,23 @@ p3d_beg_desc P3D_ENV IOC_plane
 
 #---------------------------------------------
 
-p3d_beg_desc P3D_OBSTACLE Walls
+#p3d_beg_desc P3D_OBSTACLE Walls
 
-p3d_add_desc_box stone_1 2.2 0.1 0.1
-p3d_set_prim_pos stone_1 -1.1 0 0 0 0 90
+#p3d_add_desc_box stone_1 2.2 0.1 0.1
+#p3d_set_prim_pos stone_1 -1.1 0 0 0 0 90
 
-p3d_add_desc_box stone_2 2.2 0.1 0.1
-p3d_set_prim_pos stone_2 1.1 0 0 0 0 90
+#p3d_add_desc_box stone_2 2.2 0.1 0.1
+#p3d_set_prim_pos stone_2 1.1 0 0 0 0 90
 
-p3d_add_desc_box stone_3 2.2 0.1 0.1
-p3d_set_prim_pos stone_3 0 1.1 0 0 0 0
+#p3d_add_desc_box stone_3 2.2 0.1 0.1
+#p3d_set_prim_pos stone_3 0 1.1 0 0 0 0
 
-p3d_add_desc_box stone_4 2.2 0.1 0.1
-p3d_set_prim_pos stone_4 0 -1.1 0 0 0 0
+#p3d_add_desc_box stone_4 2.2 0.1 0.1
+#p3d_set_prim_pos stone_4 0 -1.1 0 0 0 0
 
-p3d_end_desc
+#p3d_end_desc
 
-p3d_set_obst_color Walls Any 0.3 0.3 0.3
+#p3d_set_obst_color Walls Any 0.3 0.3 0.3
 
 #---------------------------------------------
 
