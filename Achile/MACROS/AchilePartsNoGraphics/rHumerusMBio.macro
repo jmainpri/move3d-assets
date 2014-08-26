@@ -1,5 +1,5 @@
 p3d_beg_desc P3D_BODY rHumerus
-  p3d_add_desc_cylindre_oval base1 0.053 0.06745 0.2475 
-  p3d_set_prim_pos base1 0.03 0.00 0.02  0 0 0
+  p3d_add_desc_cylindre_oval base1 0.053 0.06745 0.3475 
+  p3d_set_prim_pos base1 0.03 0.00 -0.04  0 0 0
 p3d_end_desc
  

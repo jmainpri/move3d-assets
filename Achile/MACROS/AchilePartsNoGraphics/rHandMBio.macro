@@ -9,15 +9,21 @@ p3d_beg_desc P3D_BODY rHand
 #  p3d_add_desc_box base3 0.0894 0.0248 0.0312 
 #  p3d_set_prim_pos base3 0.06748 -0.092444 0.002815 0 0 106.6
 
-  p3d_add_desc_box base1 0.1376 0.096 0.055 
-  p3d_set_prim_pos base1 0.006131 -0.06293 0.01241 0 18.9 90
+#  p3d_add_desc_box base1 0.1376 0.096 0.055 
+#  p3d_set_prim_pos base1 0.045 -0.10 0.11241 0 0 90
 
-  p3d_add_desc_box base2 0.0903 0.0987 0.0304 
-  p3d_set_prim_pos base2 0.006131 -0.167078 0.037292 0 0 90
+#  p3d_add_desc_box base2 0.0903 0.0987 0.0304 
+#  p3d_set_prim_pos base2 0.045 -0.20 0.137292 0 0 90
 
-  p3d_add_desc_box base3 0.0894 0.0248 0.0312 
-  p3d_set_prim_pos base3 0.06748 -0.092444 0.002815 0 0 106.6
+#  p3d_add_desc_box base3 0.0894 0.0248 0.0312 
+#  p3d_set_prim_pos base3 0.10 -0.13 0.102815 0 0 90
   
+  p3d_add_desc_box base3  0.03   0.03  0.08
+  p3d_set_prim_pos base3 0.03 -0.06 0.03 0 -35 0 
+
+  p3d_add_desc_box base3  0.05   0.08  0.18
+  p3d_set_prim_pos base3 0 0 0 0 0 0
+
   #p3d_add_desc_sphere sweeping_sphere 0.15 P3D_GHOST
   #p3d_set_prim_pos sweeping_sphere 0.063221 -0.789444 0.437595 0 0 106.6
    

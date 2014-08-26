@@ -137,7 +137,7 @@ p3d_beg_desc P3D_ROBOT
    p3d_set_name rElbowZ
    p3d_set_pos_relative 
    p3d_set_prev_jnt 14
-   p3d_set_pos_axe 0 0 0  0 0 1
+   p3d_set_pos_axe 0 0 0  0 -1 0
    p3d_set_dof_vmin -180
    p3d_set_dof_vmax 180
  p3d_end_desc
@@ -145,7 +145,7 @@ p3d_beg_desc P3D_ROBOT
    p3d_set_name rElbowX
    p3d_set_pos_relative 
    p3d_set_prev_jnt 15
-   p3d_set_pos_axe 0 0 0 1 0 0
+   p3d_set_pos_axe 0 0 0 -1 0 0
    p3d_set_dof_vmin -180
    p3d_set_dof_vmax 180
  p3d_end_desc
@@ -153,7 +153,7 @@ p3d_beg_desc P3D_ROBOT
    p3d_set_name rElbowY
    p3d_set_pos_relative 
    p3d_set_prev_jnt 16
-   p3d_set_pos_axe 0 0 0 0 1 0
+   p3d_set_pos_axe 0 0 0 0 -1 0
    p3d_set_dof_vmin -180
    p3d_set_dof_vmax 180
  p3d_end_desc
@@ -163,7 +163,7 @@ p3d_beg_desc_jnt P3D_TRANSLATE # J18
    p3d_set_name lPoint
    p3d_set_pos_relative 
    p3d_set_prev_jnt 17
-   p3d_set_pos_axe 0 0 0 -1 0 0
+   p3d_set_pos_axe 0 0 0 0 0 -1
 #   p3d_set_pos_mat  1 0 0 0   0 0 -1 0   0 1 0 0   0 0 0 1	
    p3d_set_dof_vmin -0.50
    p3d_set_dof_vmax 0.50
@@ -174,7 +174,7 @@ p3d_beg_desc_jnt P3D_ROTATE # J19
    p3d_set_name rWristZ
    p3d_set_pos_relative
    p3d_set_prev_jnt 18
-   p3d_set_pos_axe 0 0 0 0 0 1
+   p3d_set_pos_axe 0 0 0 -1 0 0
    p3d_set_dof_vmin -180
    p3d_set_dof_vmax 180
  p3d_end_desc
@@ -182,7 +182,7 @@ p3d_beg_desc_jnt P3D_ROTATE # J19
    p3d_set_name rWristX
    p3d_set_pos_relative
    p3d_set_prev_jnt 19
-   p3d_set_pos_axe 0 0 0 1 0 0
+   p3d_set_pos_axe 0 0 0 0 1 0
    p3d_set_dof_vmin -180
    p3d_set_dof_vmax 180
  p3d_end_desc
@@ -190,7 +190,7 @@ p3d_beg_desc_jnt P3D_ROTATE # J19
    p3d_set_name rWristY
    p3d_set_pos_relative
    p3d_set_prev_jnt 20
-   p3d_set_pos_axe 0 0 0 0 1 0
+   p3d_set_pos_axe 0 0 0 -1 0 0
    p3d_set_dof_vmin -180
    p3d_set_dof_vmax 180
  p3d_end_desc
@@ -525,7 +525,7 @@ p3d_set_body_poly_color rHumerus.rHumerus 1 Any 0.800 0.000 0.0100
 p3d_set_body_poly_color rRadius.rRadius 1 Any 0.901961 0.772549 0.694118 
 p3d_set_body_poly_color rHand.rHand 1 Any 0.901961 0.772549 0.694118 
 p3d_set_body_poly_color rHand.rHand 2 Any 0.901961 0.772549 0.694118 
-p3d_set_body_poly_color rHand.rHand 3 Any 0.901961 0.772549 0.694118 
+#p3d_set_body_poly_color rHand.rHand 3 Any 0.901961 0.772549 0.694118 
 p3d_set_body_poly_color rFemur.rFemur 1 Any 0.3 0.3 0.3 
 p3d_set_body_poly_color rFemur.rFemur 2 Any 0.3 0.3 0.3 
 p3d_set_body_poly_color rTibia.rTibia 1 Any 0.3 0.3 0.3 
