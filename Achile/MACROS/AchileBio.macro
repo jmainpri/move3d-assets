@@ -11,7 +11,7 @@ p3d_beg_desc P3D_ROBOT
    p3d_set_dof_vmin -10 -10 -2.500 -180 -180 -180
    p3d_set_dof_vmax 10 10 2.500 180 180 180
  p3d_end_desc
- p3d_read_macro ./AchilePartsNoGraphics/pelvisM.macro pelvis
+ p3d_read_macro ./AchilePartsNoGraphics/pelvisMBio.macro pelvis
 
 ########################
 ######## Torso #########
