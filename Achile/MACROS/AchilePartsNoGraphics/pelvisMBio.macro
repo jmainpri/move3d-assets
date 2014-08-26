@@ -1,5 +1,5 @@
 p3d_beg_desc P3D_BODY pelvis
-    p3d_add_desc_cylindre_oval base1 0.13 0.13 0.20
+    p3d_add_desc_cylindre_oval base1 0.14 0.14 0.20
 #   p3d_add_desc_cylindre_oval base1 0.1819 0.1595 0.20
 #   p3d_add_desc_cylindre_oval base1 0.1819 0.1595 0.2974 
   p3d_set_prim_pos base1 0.027581 -0.003062 -0.037279 0 0 90
