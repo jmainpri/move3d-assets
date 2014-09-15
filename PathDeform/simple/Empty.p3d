@@ -1,0 +1,33 @@
+p3d_beg_desc P3D_ENV Stones_plain
+
+# p3d_read_macro diligent_g.macro dili 0.06
+
+p3d_beg_desc P3D_OBSTACLE Stones
+p3d_add_desc_box stone_6 30.0 30.0 20.0
+p3d_set_prim_pos stone_6 100. 600. 0. 0. 0. -20.
+p3d_end_desc
+
+
+p3d_beg_desc P3D_ROBOT ROBOT_cycle
+
+p3d_add_desc_jnt P3D_PLAN 0 0 0 0 0 1  200 -50 450 400 0 800  0 0 0  0
+
+p3d_beg_desc P3D_BODY body
+
+p3d_add_desc_cylindre cyl 20 20 
+p3d_set_prim_pos cyl 0.0 0.0 0.0 0.0 0.0 0.0
+
+p3d_end_desc
+p3d_end_desc
+
+p3d_set_env_box -50 450 -50 900 -50 50
+
+# p3d_sel_desc_name P3D_ROBOT dili
+# p3d_set_robot_pos 250.0 400.0 0.0 0.0 0.0 0.0
+
+p3d_sel_desc_name P3D_ROBOT ROBOT_cycle
+
+p3d_set_robot_steering_method Linear
+
+p3d_set_robot_current 0. 0. 0. 0. 0. 0. 20.000000 50.000000 0.000000 
+p3d_set_robot_goto 0. 0. 0. 0. 0. 0. 200.000000 700.000000 0.000000 
