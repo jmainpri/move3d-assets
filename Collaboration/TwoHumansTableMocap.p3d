@@ -7,7 +7,7 @@ p3d_read_macro table_exp.macro table
 
 p3d_end_desc
 
-p3d_set_env_box -3 3.000 -3.0 3.00 0.000 2.3
+p3d_set_env_box 0 3 0 2 0 2.3
 
 p3d_set_ff_limits_in_env_box
 
