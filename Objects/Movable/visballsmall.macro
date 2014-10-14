@@ -10,8 +10,9 @@ p3d_end_desc
 
 p3d_beg_desc P3D_BODY visball
 p3d_add_desc_sphere visball1 0.03 P3D_GRAPHIC
-p3d_add_desc_cone visball2 0.1 0.03 P3D_GRAPHIC
+p3d_set_prim_pos visball1 .00 .00 .00   0.0 0.0 0.0
+p3d_add_desc_cone visball2 0.00 0.03 0.1 P3D_GRAPHIC
+p3d_set_prim_pos visball2 .00 .00 .05   0.0 0.0 0.0
 p3d_end_desc
-
 
 p3d_end_desc
