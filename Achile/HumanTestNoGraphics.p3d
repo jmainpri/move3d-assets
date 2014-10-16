@@ -7,6 +7,8 @@ p3d_beg_desc P3D_ENV humanTestEnv
 
   p3d_read_macro AchileNoGraphics.macro HERAKLES_HUMAN
 
+  p3d_read_macro Objects/Movable/visballsmall.macro VISBALL
+
 p3d_end_desc
 
 p3d_set_env_box -3 3 -3 3 -3 3

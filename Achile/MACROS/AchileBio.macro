@@ -396,7 +396,7 @@ p3d_beg_desc_jnt P3D_ROTATE # J19
 #---------------------------------------------------------------
 # JOINTS FOR HRI STUFF
 #---------------------------------------------------------------
-p3d_beg_desc_jnt P3D_FIXED #J46
+p3d_beg_desc_jnt P3D_FIXED # J45
 #  p3d_set_pos_axe -0.004259 -0.85 0.43478 1 0 0
    p3d_set_name rPalm
    p3d_set_pos_relative 
@@ -411,7 +411,7 @@ p3d_beg_desc P3D_BODY rightreach
 p3d_end_desc
 p3d_set_prim_pos reachr 0.0 0.0 0 0 180 0
 
-p3d_beg_desc_jnt P3D_FIXED #J47
+p3d_beg_desc_jnt P3D_FIXED # J46
 #  p3d_set_pos_axe -0.004259 0.85 0.43478 0 0 1
    p3d_set_name lPalm
    p3d_set_pos_relative 
@@ -428,7 +428,7 @@ p3d_set_prim_pos reachs 0.0 0.0 0.0 0 180 0
 
 # Right hand pointing joint
 
-p3d_beg_desc_jnt P3D_TRANSLATE #J48
+p3d_beg_desc_jnt P3D_TRANSLATE # J47
    p3d_set_name rPoint
    p3d_set_pos_relative 
    p3d_set_prev_jnt 46
@@ -445,7 +445,7 @@ p3d_end_desc
 
 # Left hand pointing joint
 
-p3d_beg_desc_jnt P3D_TRANSLATE #J49
+p3d_beg_desc_jnt P3D_TRANSLATE # J48
    p3d_set_name lPoint
    p3d_set_pos_relative 
    p3d_set_prev_jnt 47
@@ -461,7 +461,7 @@ p3d_end_desc
 
 # Freeflyers to present human hands for gest
 
- p3d_beg_desc_jnt P3D_FREEFLYER # J50
+ p3d_beg_desc_jnt P3D_FREEFLYER # J59
    p3d_set_name lefthandgest
    p3d_set_prev_jnt 0
    p3d_set_pos_xyz 0 0 0 0 0 0
@@ -475,7 +475,7 @@ p3d_end_desc
 #    p3d_set_prim_pos hand1 0.0 0 0 0.0 0.0 0.0
 # p3d_end_desc
 
-p3d_beg_desc_jnt P3D_FREEFLYER # J51
+p3d_beg_desc_jnt P3D_FREEFLYER # J50
    p3d_set_name righthandgest
    p3d_set_prev_jnt 0
    p3d_set_pos_xyz 0 0 0 0 0 0
@@ -491,14 +491,14 @@ p3d_beg_desc_jnt P3D_FREEFLYER # J51
 
 #Camera joint for perspective
 
-p3d_beg_desc_jnt P3D_FIXED #52
+p3d_beg_desc_jnt P3D_FIXED #51
    p3d_set_name Eyes
    p3d_set_prev_jnt 7
    p3d_set_pos_axe  0.17 0 0.68 0 0 1
 p3d_end_desc
 
 #Virtual HRI Joints
-p3d_beg_desc_jnt P3D_TRANSLATE #J53
+p3d_beg_desc_jnt P3D_TRANSLATE # J52
     p3d_set_name HriLookJoint
     p3d_set_prev_jnt 7
     p3d_set_pos_axe  0.17 0 0.68 1 0 0
