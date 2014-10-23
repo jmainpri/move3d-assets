@@ -13,3 +13,4 @@ p3d_beg_desc P3D_ENV humanTestEnv
 p3d_end_desc
 
 p3d_set_env_box -3 3 -3 3 -3 3
+p3d_set_ff_limits_in_env_box
