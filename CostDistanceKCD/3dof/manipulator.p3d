@@ -9,7 +9,7 @@ p3d_add_desc_box stone_2 2.0 3.0 2.0
 p3d_set_prim_pos stone_2 -2. 7. 0. 0. 0. -60.
 
 p3d_add_desc_box stone_3 2.0 4.0 2.0
-p3d_set_prim_pos stone_3 1. 6. 0. 0. 0. -30.
+p3d_set_prim_pos stone_3 1. 6.5 0. 0. 0. -30.
 
 #p3d_add_desc_box stone_4 2.0 6.0 2.0
 #p3d_set_prim_pos stone_4 32. 71. 0. 0. 0. -30.
