@@ -1,15 +1,13 @@
 p3d_beg_desc P3D_ROBOT
 
- 
-  p3d_beg_desc_jnt P3D_ROTATE   # J2
-    p3d_set_name l_rob_J1
+  p3d_beg_desc_jnt P3D_ROTATE   # J1
+    p3d_set_name J1
     p3d_set_pos_axe 0.0 0.0 0.0 0.0 0.0 0.0 
     p3d_set_prev_jnt 0
     p3d_set_dof_vmin -180.0
     p3d_set_dof_vmax  180.0
   p3d_end_desc
-  
-  
+    
   p3d_beg_desc P3D_BODY l_rob_1
   
     p3d_add_desc_poly l_rob_1.1
@@ -44,8 +42,8 @@ p3d_beg_desc P3D_ROBOT
   p3d_end_desc
   
   
-  p3d_beg_desc_jnt P3D_ROTATE   # J3
-    p3d_set_name l_rob_J2
+  p3d_beg_desc_jnt P3D_ROTATE   # J2
+    p3d_set_name J2
     p3d_set_pos_axe 0.0 30.0 0.0 0.0 0.0 0.0 
     p3d_set_prev_jnt 1
     p3d_set_dof_vmin -160.0
@@ -86,8 +84,8 @@ p3d_beg_desc P3D_ROBOT
   
   p3d_end_desc
   
-  p3d_beg_desc_jnt P3D_ROTATE   # J4
-    p3d_set_name l_rob_J3
+  p3d_beg_desc_jnt P3D_ROTATE   # J3
+    p3d_set_name J3
     p3d_set_pos_axe 0.0 50.0 0.0 0.0 0.0 0.0 
     p3d_set_prev_jnt 2
     p3d_set_dof_vmin -160.0
@@ -138,7 +136,8 @@ p3d_beg_desc P3D_ROBOT
       p3d_add_desc_face  1 5 6 2
       p3d_add_desc_face  2 6 7 3
       p3d_add_desc_face  3 7 8 4
-    p3d_end_desc_poly 
+    p3d_end_desc_poly
+
     p3d_set_prim_pos l_rob_3.2  0.0 60.0 0.0 0.0 0.0 0.0	
     p3d_set_prim_color l_rob_3.2 Black
   
@@ -147,3 +146,20 @@ p3d_beg_desc P3D_ROBOT
     p3d_set_prim_color l_rob_3.3 Black
   
   p3d_end_desc
+
+  p3d_beg_desc_jnt P3D_FIXED # J4
+   p3d_set_name J4
+   p3d_set_pos_relative 
+   p3d_set_prev_jnt 3
+   p3d_set_pos_mat 1 0 0 0.00   0 1 0 62.0   0 0 1 2.0   0 0 0 1	
+   p3d_set_dof_vmin -180
+   p3d_set_dof_vmax 180
+  p3d_end_desc
+
+  p3d_beg_desc P3D_BODY rightreach
+   p3d_add_desc_sphere reachr 1.0 P3D_GRAPHIC
+  p3d_end_desc
+  p3d_set_prim_pos reachr 0.0 00.0 0.0 0.0 0.0 0.0 
+  p3d_set_prim_color reachr Green
+
+p3d_end_desc

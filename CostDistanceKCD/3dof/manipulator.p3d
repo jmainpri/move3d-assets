@@ -8,37 +8,17 @@ p3d_set_prim_pos stone_1 -5. 1. 0. 0. 0. 30.
 p3d_add_desc_box stone_2 2.0 3.0 2.0
 p3d_set_prim_pos stone_2 -2. 7. 0. 0. 0. -60.
 
-p3d_add_desc_box stone_3 2.0 4.0 2.0
-p3d_set_prim_pos stone_3 1. 6.5 0. 0. 0. -30.
+#p3d_add_desc_box stone_3 2.0 4.0 2.0
+#p3d_set_prim_pos stone_3 1. 6.5 0. 0. 0. -30.
 
-#p3d_add_desc_box stone_4 2.0 6.0 2.0
-#p3d_set_prim_pos stone_4 32. 71. 0. 0. 0. -30.
-
-#p3d_add_desc_box stone_5 5.0 5.0 2.0
-#p3d_set_prim_pos stone_5 20. 40. 0. 0. 0. -50.
-
-#p3d_add_desc_box stone_6 3.0 3.0 2.0
-#p3d_set_prim_pos stone_6 10. 60. 0. 0. 0. -20.
-
-#p3d_add_desc_box stone_7 2.0 20.0 2.0
-#p3d_set_prim_pos stone_7 20. 20 0. 0. 0. 90.
-
-#p3d_add_desc_box stone_8 3.0 3.0 2.0
-#p3d_set_prim_pos stone_8 31. 10. 0. 0. 0. 0.
-
-#p3d_add_desc_box stone_9 3.0 3.0 2.0
-#p3d_set_prim_pos stone_9 10. 74. 0. 0. 0. 50.
-
-#p3d_add_desc_box stone_10 3.0 14.0 2.0
-#p3d_set_prim_pos stone_10 33. 43. 0. 0. 0. 10.
-
-#p3d_add_desc_box stone_11 2.0 1.0 2.0
-#p3d_set_prim_pos stone_11 2. 60. 0. 0. 0. 100.
+p3d_add_desc_box stone_4 2.0 4.0 2.0
+p3d_set_prim_pos stone_4 5. 0.5 0. 0. 0. 90.
 
 p3d_end_desc
 
 p3d_set_obst_color stones Brown
 
+p3d_read_macro Objects/Movable/visballsmall.macro VISBALL 3
 p3d_read_macro manip_3dof.macro manip_3dofs_ROBOT 0.1
 
 # p3d_CostEnvironment
@@ -48,6 +28,7 @@ p3d_end_desc
 
 
 ##################################################################
-p3d_set_env_box 	-5.0 5.0 -1.0 10.0 -2.0 2.0
+p3d_set_env_box 	-7.0 7.0 -2.0 10.0 -2.0 2.0
+p3d_set_ff_limits_in_env_box
 
 
