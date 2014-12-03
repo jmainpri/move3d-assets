@@ -5,6 +5,8 @@ p3d_read_macro AchileBio.macro HERAKLES_HUMAN2
 
 p3d_read_macro table_exp.macro table
 
+# p3d_read_macro Objects/Movable/visballsmall.macro VISBALL
+
 p3d_end_desc
 
 p3d_set_env_box 0 3 0 2 0 2.3
