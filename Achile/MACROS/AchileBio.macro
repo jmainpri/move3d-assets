@@ -160,7 +160,7 @@ p3d_beg_desc P3D_ROBOT
  p3d_read_macro ./AchilePartsNoGraphics/rRadiusMBio.macro rRadius
  
 p3d_beg_desc_jnt P3D_TRANSLATE # J18
-   p3d_set_name lPoint
+   p3d_set_name rForeArmTrans
    p3d_set_pos_relative 
    p3d_set_prev_jnt 17
    p3d_set_pos_axe 0 0 0 0 0 -1
