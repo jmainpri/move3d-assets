@@ -3,7 +3,7 @@ p3d_beg_desc P3D_ENV humanTestEnv
 p3d_read_macro AchileBio.macro HERAKLES_HUMAN1
 p3d_read_macro pr2.macro PR2_ROBOT
 
-p3d_read_macro table_exp.macro table
+#p3d_read_macro table_exp.macro table
 
 p3d_end_desc
 
