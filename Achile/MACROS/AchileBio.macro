@@ -524,7 +524,7 @@ p3d_set_body_poly_color head.head 1 Any 0.901961 0.772549 0.694118
 p3d_set_body_poly_color rHumerus.rHumerus 1 Any 0.800 0.000 0.0100 
 p3d_set_body_poly_color rRadius.rRadius 1 Any 0.901961 0.772549 0.694118 
 p3d_set_body_poly_color rHand.rHand 1 Any 0.901961 0.772549 0.694118 
-p3d_set_body_poly_color rHand.rHand 2 Any 0.901961 0.772549 0.694118 
+#p3d_set_body_poly_color rHand.rHand 2 Any 0.901961 0.772549 0.694118 
 #p3d_set_body_poly_color rHand.rHand 3 Any 0.901961 0.772549 0.694118 
 p3d_set_body_poly_color rFemur.rFemur 1 Any 0.3 0.3 0.3 
 p3d_set_body_poly_color rFemur.rFemur 2 Any 0.3 0.3 0.3 

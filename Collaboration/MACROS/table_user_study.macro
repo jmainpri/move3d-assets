@@ -1,0 +1,52 @@
+p3d_beg_desc P3D_ROBOT
+
+p3d_beg_desc_jnt P3D_FREEFLYER  #1
+  p3d_set_prev_jnt   0
+  p3d_set_pos_xyz 0.0 0.0 0.0 0.0 0.0 0.0
+  p3d_set_dof      0 0 0  0   0   0
+  p3d_set_dof_vmin -3 -6 0 -180 -180 -180
+  p3d_set_dof_vmax 12 1 2 180 180 180
+p3d_end_desc
+
+p3d_beg_desc P3D_BODY table
+
+    # Black
+    p3d_add_desc_box table_top 1.22 0.50 0.02 P3D_GRAPHIC
+    p3d_set_prim_pos table_top 0.0 0.0 0.0 0.0 0.0 0.0
+
+    # Grey
+    p3d_add_desc_box central_box1 0.2286 0.3048 0.2210
+    p3d_set_prim_pos central_box1 -0.1143 -0.12 0.1115 0.0 0.0 0.0
+ 
+    # Grey
+    p3d_add_desc_box central_box2 0.2286 0.3048 0.2210
+    p3d_set_prim_pos central_box2 0.1143 -0.12 0.1115 0.0 0.0 0.0
+
+    # Green
+    p3d_add_desc_box left_box 0.1778 0.2286 0.3304
+    p3d_set_prim_pos left_box 0.3175 -0.12 0.1724 0.0 0.0 0.0
+
+    # Blue
+    p3d_add_desc_box right_box 0.1778 0.2286 0.3304
+    p3d_set_prim_pos right_box -0.3175 -0.12 0.1724 0.0 0.0 0.0
+
+    # Yellow
+    p3d_add_desc_box front_left 0.2286 0.1778 0.0236
+    p3d_set_prim_pos front_left 0.1143 0.12 0.0108 0.0 0.0 0.0
+
+    # Red
+    p3d_add_desc_box front_right 0.2286 0.1778 0.0236
+    p3d_set_prim_pos front_right -0.1143 0.12 0.0108 0.0 0.0 0.0
+
+p3d_end_desc
+
+p3d_end_desc
+
+p3d_set_body_poly_color table 1 Any 0.2 0.2 0.2 # Black
+p3d_set_body_poly_color table 2 Any 0.9 0.9 0.9 # Grey
+p3d_set_body_poly_color table 3 Any 0.9 0.9 0.9 # Grey
+p3d_set_body_poly_color table 4 Any 0.2 0.9 0.5 # Green
+p3d_set_body_poly_color table 5 Any 0.2 0.5 0.9 # Blue
+p3d_set_body_poly_color table 6 Any 0.9 0.9 0.2 # Yellow
+p3d_set_body_poly_color table 7 Any 0.9 0.2 0.1 # Red
+

@@ -18,11 +18,11 @@ p3d_beg_desc P3D_BODY rHand
 #  p3d_add_desc_box base3 0.0894 0.0248 0.0312 
 #  p3d_set_prim_pos base3 0.10 -0.13 0.102815 0 0 90
   
-  p3d_add_desc_box thumb 0.025   0.025  0.08
-  p3d_set_prim_pos thumb 0.03 -0.06 0.03 0 -35 0 
+  #p3d_add_desc_box thumb 0.025   0.025  0.06
+  #p3d_set_prim_pos thumb 0.03 -0.06 0.03 0 -35 0 
 
-  p3d_add_desc_box palm 0.025   0.08  0.16
-  p3d_set_prim_pos palm 0 0 0 0 0 0
+  p3d_add_desc_box palm 0.025 0.07 0.10
+  p3d_set_prim_pos palm 0 0 0.07 0 0 0
 
   #p3d_add_desc_sphere sweeping_sphere 0.15 P3D_GHOST
   #p3d_set_prim_pos sweeping_sphere 0.063221 -0.789444 0.437595 0 0 106.6
