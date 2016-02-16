@@ -62,11 +62,11 @@ p3d_set_robot_goto     -180.000000	90 10 0	0 0
 
 p3d_constraint p3d_R6_arm_ik 1 8 1 6 3 465 395 0 3 1 1 1
 
-p3d_set_cntrt_Tatt 0  
-			1 0 0 0 0 
-		   -1 0 0 0 0 
-		   -1 1 2 2 0
+# p3d_set_cntrt_Tatt 0  
+# 			1 0 0 0 0 
+# 		   -1 0 0 0 0 
+# 		   -1 1 2 2 0
 		   
-p3d_set_object_base_and_arm_constraints 8 1 0 1 0
+# p3d_set_object_base_and_arm_constraints 8 1 0 1 0
 
-#p3d_set_random_loop_generator normal_chain 0 1 6 
+# p3d_set_random_loop_generator normal_chain 0 1 6 

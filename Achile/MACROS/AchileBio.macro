@@ -3,15 +3,62 @@ p3d_beg_desc P3D_ROBOT
 ########################
 ####### Pelvis #########
 ########################
- p3d_beg_desc_jnt P3D_FREEFLYER # J1
-   p3d_set_name Pelvis
-   p3d_set_prev_jnt 0
-   p3d_set_pos_xyz 0 0 0 0 0 0
-   p3d_set_dof 0 0 0 0 0 0
-   p3d_set_dof_vmin -10 -10 -2.500 -180 -180 -180
-   p3d_set_dof_vmax 10 10 2.500 180 180 180
- p3d_end_desc
- p3d_read_macro ./AchilePartsNoGraphics/pelvisMBio.macro pelvis
+p3d_beg_desc_jnt P3D_FREEFLYER # J1
+  p3d_set_name Pelvis
+  p3d_set_prev_jnt 0
+  p3d_set_pos_xyz 0 0 0 0 0 0
+  p3d_set_dof 0 0 0 0 0 0
+  p3d_set_dof_vmin -10 -10 -2.500 -180 -180 -180
+  p3d_set_dof_vmax 10 10 2.500 180 180 180
+p3d_end_desc
+
+#  p3d_beg_desc_jnt P3D_TRANSLATE # J1
+#    p3d_set_name PelvisTransX
+#    p3d_set_pos_relative 
+#    p3d_set_prev_jnt 0
+#    p3d_set_pos_axe 0 0 0 1 0 0
+#    p3d_set_dof_vmin -10
+#    p3d_set_dof_vmax 10
+#  p3d_end_desc
+#  p3d_beg_desc_jnt P3D_TRANSLATE # J2
+#    p3d_set_name PelvisTransY
+#    p3d_set_pos_relative
+#    p3d_set_prev_jnt 1
+#    p3d_set_pos_axe 0 0 0 -1 0 0
+#    p3d_set_dof_vmin -10
+#    p3d_set_dof_vmax 10
+#  p3d_end_desc
+#  p3d_beg_desc_jnt P3D_TRANSLATE # J4
+#    p3d_set_name PelvisTransZ
+#    p3d_set_pos_relative 
+#    p3d_set_prev_jnt 2
+#    p3d_set_pos_axe 0 0 0 0 -1 0
+#    p3d_set_dof_vmin -10
+#    p3d_set_dof_vmax 10
+#  p3d_end_desc
+#  p3d_beg_desc_jnt P3D_ROTATE # J5
+#    p3d_set_name PelvisRotX
+#    p3d_set_prev_jnt 3
+#    p3d_set_pos_axe 0 0 0 1 0 0
+#    p3d_set_dof_vmin -180
+#    p3d_set_dof_vmax 180
+#  p3d_end_desc
+#  p3d_beg_desc_jnt P3D_ROTATE # J6
+#    p3d_set_name PelvisRotY
+#    p3d_set_prev_jnt 4
+#    p3d_set_pos_axe 0 0 0 0 -1 0
+#    p3d_set_dof_vmin -180
+#    p3d_set_dof_vmax 180
+#  p3d_end_desc
+#  p3d_beg_desc_jnt P3D_ROTATE # J7
+#    p3d_set_name PelvisRotZ
+#    p3d_set_prev_jnt 5
+#    p3d_set_pos_axe 0 0 0 0 0 1
+#    p3d_set_dof_vmin -180
+#    p3d_set_dof_vmax 180
+#  p3d_end_desc
+
+p3d_read_macro ./AchilePartsNoGraphics/pelvisMBio.macro pelvis
 
 ########################
 ######## Torso #########

@@ -16,7 +16,7 @@ p3d_set_prim_pos b 0 0 0.115 0 0 0
 p3d_end_desc
 p3d_end_desc
 
-p3d_set_body_poly_color remote 1 Black
+p3d_set_body_poly_color remote 1 Any 0 0 0 0.3
 
 
 

@@ -16,9 +16,10 @@ p3d_set_prim_pos stone_4 3.6 1.5 0. 0. 0. 90.
 
 p3d_end_desc
 
-p3d_set_obst_color stones Brown
+p3d_set_obst_color stones Any 1 0.75 0 0.3
 
-p3d_read_macro Objects/Movable/visballsmall.macro VISBALL 3
+# p3d_read_macro Objects/Movable/remote.macro REMOTE 30
+p3d_read_macro Objects/Movable/visballsmall.macro VISBALL 10
 p3d_read_macro manip_3dof.macro manip_3dofs_ROBOT 0.1
 
 # p3d_CostEnvironment
@@ -26,9 +27,13 @@ p3d_read_macro manip_3dof.macro manip_3dofs_ROBOT 0.1
 p3d_end_desc
 
 
-
 ##################################################################
-p3d_set_env_box 	-7.0 7.0 -2.0 10.0 -2.0 2.0
+
+p3d_set_robot_current 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 52.380000 -17.440000 3.872000
+p3d_set_robot_goto 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -67.493634 59.941683 -25.669795
+
+p3d_set_env_box -7.0 7.0 -2.0 10.0 -2.0 2.0
 p3d_set_ff_limits_in_env_box
 
+p3d_set_active_robot manip_3dofs_ROBOT
 
